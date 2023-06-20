@@ -4756,6 +4756,11 @@
                     t.y += 1024
                 if (a.r1.G(0, $.X()))
                     t.y += 2048
+				if (a.xue =! null)
+				{
+				
+				    t.y += a.xue*1024
+				}	
                 u = T.e(C.c.K(O.c("lZqU"), $.ng()), a, b, null, null, 40, 1000, 100)
                 e.a.push(u)
             }
@@ -5643,7 +5648,8 @@ if (a == "patchouli") {
                     g.Y(a, u, t, f)
                     g.at(a, u)
                     return g
-                }if (a == "marisa") {
+                }
+				if (a == "marisa") {
                     t = H.d(a) + H.d($.ah())
                     s = H.a([], [T.H])
                     r = H.a([], [T.y])
@@ -5681,6 +5687,348 @@ if (a == "patchouli") {
                     g.at(a, u)
                     return g
                 }
+				if (a == "letty") {
+                    t = H.d(a) + H.d($.ah())
+                    s = H.a([], [T.H])
+                    r = H.a([], [T.y])
+                    q = P.U(P.f, T.p)
+                    p = new F.b([T.M])
+                    p.c = p
+                    p.b = p
+                    o = new F.b([T.L])
+                    o.c = o
+                    o.b = o
+                    n = new F.b([T.G])
+                    n.c = n
+                    n.b = n
+                    m = new F.b([T.J])
+                    m.c = m
+                    m.b = m
+                    l = new F.b([T.K])
+                    l.c = l
+                    l.b = l
+                    k = new F.b([T.D])
+                    k.c = k
+                    k.b = k
+                    j = new F.b([T.A])
+                    j.c = j
+                    j.b = j
+                    i = new F.b([T.C])
+                    i.c = i
+                    i.b = i
+                    h = new F.b([T.I])
+                    h.c = h
+                    h.b = h
+                    g = [P.j]
+                    g = new T.letty(a,u,t,f,s,r,q,p,o,n,m,l,k,j,i,h,H.a([], g),H.a([], g),H.a([], g),H.a([], g))
+                    g.Y(a, u, t, f)
+                    g.at(a, u)
+                    return g
+					}
+					if (a == "chen") {
+                    t = H.d(a) + H.d($.ah())
+                    s = H.a([], [T.H])
+                    r = H.a([], [T.y])
+                    q = P.U(P.f, T.p)
+                    p = new F.b([T.M])
+                    p.c = p
+                    p.b = p
+                    o = new F.b([T.L])
+                    o.c = o
+                    o.b = o
+                    n = new F.b([T.G])
+                    n.c = n
+                    n.b = n
+                    m = new F.b([T.J])
+                    m.c = m
+                    m.b = m
+                    l = new F.b([T.K])
+                    l.c = l
+                    l.b = l
+                    k = new F.b([T.D])
+                    k.c = k
+                    k.b = k
+                    j = new F.b([T.A])
+                    j.c = j
+                    j.b = j
+                    i = new F.b([T.C])
+                    i.c = i
+                    i.b = i
+                    h = new F.b([T.I])
+                    h.c = h
+                    h.b = h
+                    g = [P.j]
+                    g = new T.chen(a,u,t,f,s,r,q,p,o,n,m,l,k,j,i,h,H.a([], g),H.a([], g),H.a([], g),H.a([], g))
+                    g.Y(a, u, t, f)
+                    g.at(a, u)
+                    return g
+					}
+					if (a == "alice") {
+                    t = H.d(a) + H.d($.ah())
+                    s = H.a([], [T.H])
+                    r = H.a([], [T.y])
+                    q = P.U(P.f, T.p)
+                    p = new F.b([T.M])
+                    p.c = p
+                    p.b = p
+                    o = new F.b([T.L])
+                    o.c = o
+                    o.b = o
+                    n = new F.b([T.G])
+                    n.c = n
+                    n.b = n
+                    m = new F.b([T.J])
+                    m.c = m
+                    m.b = m
+                    l = new F.b([T.K])
+                    l.c = l
+                    l.b = l
+                    k = new F.b([T.D])
+                    k.c = k
+                    k.b = k
+                    j = new F.b([T.A])
+                    j.c = j
+                    j.b = j
+                    i = new F.b([T.C])
+                    i.c = i
+                    i.b = i
+                    h = new F.b([T.I])
+                    h.c = h
+                    h.b = h
+                    g = [P.j]
+                    g = new T.alice(a,u,t,f,s,r,q,p,o,n,m,l,k,j,i,h,H.a([], g),H.a([], g),H.a([], g),H.a([], g))
+                    g.Y(a, u, t, f)
+                    g.at(a, u)
+                    return g
+					}
+					if (a == "lilywhite") {
+                    t = H.d(a) + H.d($.ah())
+                    s = H.a([], [T.H])
+                    r = H.a([], [T.y])
+                    q = P.U(P.f, T.p)
+                    p = new F.b([T.M])
+                    p.c = p
+                    p.b = p
+                    o = new F.b([T.L])
+                    o.c = o
+                    o.b = o
+                    n = new F.b([T.G])
+                    n.c = n
+                    n.b = n
+                    m = new F.b([T.J])
+                    m.c = m
+                    m.b = m
+                    l = new F.b([T.K])
+                    l.c = l
+                    l.b = l
+                    k = new F.b([T.D])
+                    k.c = k
+                    k.b = k
+                    j = new F.b([T.A])
+                    j.c = j
+                    j.b = j
+                    i = new F.b([T.C])
+                    i.c = i
+                    i.b = i
+                    h = new F.b([T.I])
+                    h.c = h
+                    h.b = h
+                    g = [P.j]
+                    g = new T.lilywhite(a,u,t,f,s,r,q,p,o,n,m,l,k,j,i,h,H.a([], g),H.a([], g),H.a([], g),H.a([], g))
+                    g.Y(a, u, t, f)
+                    g.at(a, u)
+                    return g
+					}
+					if (a == "phantom") {
+                    t = H.d(a) + H.d($.ah())
+                    s = H.a([], [T.H])
+                    r = H.a([], [T.y])
+                    q = P.U(P.f, T.p)
+                    p = new F.b([T.M])
+                    p.c = p
+                    p.b = p
+                    o = new F.b([T.L])
+                    o.c = o
+                    o.b = o
+                    n = new F.b([T.G])
+                    n.c = n
+                    n.b = n
+                    m = new F.b([T.J])
+                    m.c = m
+                    m.b = m
+                    l = new F.b([T.K])
+                    l.c = l
+                    l.b = l
+                    k = new F.b([T.D])
+                    k.c = k
+                    k.b = k
+                    j = new F.b([T.A])
+                    j.c = j
+                    j.b = j
+                    i = new F.b([T.C])
+                    i.c = i
+                    i.b = i
+                    h = new F.b([T.I])
+                    h.c = h
+                    h.b = h
+                    g = [P.j]
+                    g = new T.phantom(a,u,t,f,s,r,q,p,o,n,m,l,k,j,i,h,H.a([], g),H.a([], g),H.a([], g),H.a([], g))
+                    g.Y(a, u, t, f)
+                    g.at(a, u)
+                    return g
+					}
+					if (a == "youmu") {
+                    t = H.d(a) + H.d($.ah())
+                    s = H.a([], [T.H])
+                    r = H.a([], [T.y])
+                    q = P.U(P.f, T.p)
+                    p = new F.b([T.M])
+                    p.c = p
+                    p.b = p
+                    o = new F.b([T.L])
+                    o.c = o
+                    o.b = o
+                    n = new F.b([T.G])
+                    n.c = n
+                    n.b = n
+                    m = new F.b([T.J])
+                    m.c = m
+                    m.b = m
+                    l = new F.b([T.K])
+                    l.c = l
+                    l.b = l
+                    k = new F.b([T.D])
+                    k.c = k
+                    k.b = k
+                    j = new F.b([T.A])
+                    j.c = j
+                    j.b = j
+                    i = new F.b([T.C])
+                    i.c = i
+                    i.b = i
+                    h = new F.b([T.I])
+                    h.c = h
+                    h.b = h
+                    g = [P.j]
+                    g = new T.youmu(a,u,t,f,s,r,q,p,o,n,m,l,k,j,i,h,H.a([], g),H.a([], g),H.a([], g),H.a([], g))
+                    g.Y(a, u, t, f)
+                    g.at(a, u)
+                    return g
+					}
+					if (a == "yuyuko") {
+                    t = H.d(a) + H.d($.ah())
+                    s = H.a([], [T.H])
+                    r = H.a([], [T.y])
+                    q = P.U(P.f, T.p)
+                    p = new F.b([T.M])
+                    p.c = p
+                    p.b = p
+                    o = new F.b([T.L])
+                    o.c = o
+                    o.b = o
+                    n = new F.b([T.G])
+                    n.c = n
+                    n.b = n
+                    m = new F.b([T.J])
+                    m.c = m
+                    m.b = m
+                    l = new F.b([T.K])
+                    l.c = l
+                    l.b = l
+                    k = new F.b([T.D])
+                    k.c = k
+                    k.b = k
+                    j = new F.b([T.A])
+                    j.c = j
+                    j.b = j
+                    i = new F.b([T.C])
+                    i.c = i
+                    i.b = i
+                    h = new F.b([T.I])
+                    h.c = h
+                    h.b = h
+                    g = [P.j]
+                    g = new T.yuyuko(a,u,t,f,s,r,q,p,o,n,m,l,k,j,i,h,H.a([], g),H.a([], g),H.a([], g),H.a([], g))
+                    g.Y(a, u, t, f)
+                    g.at(a, u)
+                    return g
+					}
+					if (a == "ran") {
+                    t = H.d(a) + H.d($.ah())
+                    s = H.a([], [T.H])
+                    r = H.a([], [T.y])
+                    q = P.U(P.f, T.p)
+                    p = new F.b([T.M])
+                    p.c = p
+                    p.b = p
+                    o = new F.b([T.L])
+                    o.c = o
+                    o.b = o
+                    n = new F.b([T.G])
+                    n.c = n
+                    n.b = n
+                    m = new F.b([T.J])
+                    m.c = m
+                    m.b = m
+                    l = new F.b([T.K])
+                    l.c = l
+                    l.b = l
+                    k = new F.b([T.D])
+                    k.c = k
+                    k.b = k
+                    j = new F.b([T.A])
+                    j.c = j
+                    j.b = j
+                    i = new F.b([T.C])
+                    i.c = i
+                    i.b = i
+                    h = new F.b([T.I])
+                    h.c = h
+                    h.b = h
+                    g = [P.j]
+                    g = new T.ran(a,u,t,f,s,r,q,p,o,n,m,l,k,j,i,h,H.a([], g),H.a([], g),H.a([], g),H.a([], g))
+                    g.Y(a, u, t, f)
+                    g.at(a, u)
+                    return g
+					}
+					if (a == "yukari") {
+                    t = H.d(a) + H.d($.ah())
+                    s = H.a([], [T.H])
+                    r = H.a([], [T.y])
+                    q = P.U(P.f, T.p)
+                    p = new F.b([T.M])
+                    p.c = p
+                    p.b = p
+                    o = new F.b([T.L])
+                    o.c = o
+                    o.b = o
+                    n = new F.b([T.G])
+                    n.c = n
+                    n.b = n
+                    m = new F.b([T.J])
+                    m.c = m
+                    m.b = m
+                    l = new F.b([T.K])
+                    l.c = l
+                    l.b = l
+                    k = new F.b([T.D])
+                    k.c = k
+                    k.b = k
+                    j = new F.b([T.A])
+                    j.c = j
+                    j.b = j
+                    i = new F.b([T.C])
+                    i.c = i
+                    i.b = i
+                    h = new F.b([T.I])
+                    h.c = h
+                    h.b = h
+                    g = [P.j]
+                    g = new T.yukari(a,u,t,f,s,r,q,p,o,n,m,l,k,j,i,h,H.a([], g),H.a([], g),H.a([], g),H.a([], g))
+                    g.Y(a, u, t, f)
+                    g.at(a, u)
+                    return g
+					}
                 if (a == "nue") {
                     t = H.d(a) + H.d($.ah())
                     s = H.a([], [T.H])
@@ -8512,7 +8860,7 @@ koakuma: function koakuma(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
             _.X = _.W = !1
             _.F = null
         },
-        patchouli: function patchouli(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+patchouli: function patchouli(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
             var _ = this
             _.aI = 0
             _.aP = _.bb = _.af = null
@@ -8789,6 +9137,357 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
             _.X = _.W = !1
             _.F = null
         },
+		letty: function letty(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+            var _ = this
+            _.aI = 0
+            _.aP = _.bb = _.af = null
+            _.a = a
+            _.b = b
+            _.c = c
+            _.d = d
+            _.y = _.x = _.r = _.f = _.e = null
+            _.z = 0
+            _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
+            _.go = 1
+            _.id = e
+            _.xue = 0
+            _.k2 = _.k1 = null
+            _.k3 = f
+            _.k4 = null
+            _.r1 = g
+            _.r2 = h
+            _.rx = i
+            _.ry = j
+            _.x1 = k
+            _.x2 = l
+            _.y1 = m
+            _.y2 = n
+            _.I = o
+            _.N = p
+            _.A = !1
+            _.u = q
+            _.U = null
+            _.D = r
+            _.q = s
+            _.a_ = t
+            _.V = _.O = _.L = 0
+            _.J = 32768
+            _.j = 0
+            _.X = _.W = !1
+            _.F = null
+        },
+		chen: function chen(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+            var _ = this
+            _.aI = 0
+            _.aP = _.bb = _.af = null
+            _.a = a
+            _.b = b
+            _.c = c
+            _.d = d
+            _.y = _.x = _.r = _.f = _.e = null
+            _.z = 0
+            _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
+            _.go = 1
+            _.id = e
+            _.upgrade = true
+            _.k2 = _.k1 = null
+            _.k3 = f
+            _.k4 = null
+            _.r1 = g
+            _.r2 = h
+            _.rx = i
+            _.ry = j
+            _.x1 = k
+            _.x2 = l
+            _.y1 = m
+            _.y2 = n
+            _.I = o
+            _.N = p
+            _.A = !1
+            _.u = q
+            _.U = null
+            _.D = r
+            _.q = s
+            _.a_ = t
+            _.V = _.O = _.L = 0
+            _.J = 32768
+            _.j = 0
+            _.X = _.W = !1
+            _.F = null
+        },
+		alice: function alice(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+            var _ = this
+            _.aI = 0
+            _.aP = _.bb = _.af = null
+            _.a = a
+            _.b = b
+            _.c = c
+            _.d = d
+            _.y = _.x = _.r = _.f = _.e = null
+            _.z = 0
+            _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
+            _.go = 1
+            _.id = e
+            _.upgrade = true
+            _.k2 = _.k1 = null
+            _.k3 = f
+            _.k4 = null
+            _.r1 = g
+            _.r2 = h
+            _.rx = i
+            _.ry = j
+            _.x1 = k
+            _.x2 = l
+            _.y1 = m
+            _.y2 = n
+            _.I = o
+            _.N = p
+            _.A = !1
+            _.u = q
+            _.U = null
+            _.D = r
+            _.q = s
+            _.a_ = t
+            _.V = _.O = _.L = 0
+            _.J = 32768
+            _.j = 0
+            _.X = _.W = !1
+            _.F = null
+        },
+		lilywhite: function lilywhite(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+            var _ = this
+            _.aI = 0
+            _.aP = _.bb = _.af = null
+            _.a = a
+            _.b = b
+            _.c = c
+            _.d = d
+            _.y = _.x = _.r = _.f = _.e = null
+            _.z = 0
+            _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
+            _.go = 1
+            _.id = e
+            _.upgrade = true
+            _.k2 = _.k1 = null
+            _.k3 = f
+            _.k4 = null
+            _.r1 = g
+            _.r2 = h
+            _.rx = i
+            _.ry = j
+            _.x1 = k
+            _.x2 = l
+            _.y1 = m
+            _.y2 = n
+            _.I = o
+            _.N = p
+            _.A = !1
+            _.u = q
+            _.U = null
+            _.D = r
+            _.q = s
+            _.a_ = t
+            _.V = _.O = _.L = 0
+            _.J = 32768
+            _.j = 0
+            _.X = _.W = !1
+            _.F = null
+        },
+		phantom: function phantom(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+            var _ = this
+            _.aI = 0
+            _.aP = _.bb = _.af = null
+            _.a = a
+            _.b = b
+            _.c = c
+            _.d = d
+            _.y = _.x = _.r = _.f = _.e = null
+            _.z = 0
+            _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
+            _.go = 1
+            _.id = e
+            _.upgrade = true
+            _.k2 = _.k1 = null
+            _.k3 = f
+            _.k4 = null
+            _.r1 = g
+            _.r2 = h
+            _.rx = i
+            _.ry = j
+            _.x1 = k
+            _.x2 = l
+            _.y1 = m
+            _.y2 = n
+            _.I = o
+            _.N = p
+            _.A = !1
+            _.u = q
+            _.U = null
+            _.D = r
+            _.q = s
+            _.a_ = t
+            _.V = _.O = _.L = 0
+            _.J = 32768
+            _.j = 0
+            _.X = _.W = !1
+            _.F = null
+        },
+		youmu: function youmu(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+            var _ = this
+            _.aI = 0
+            _.aP = _.bb = _.af = null
+            _.a = a
+            _.b = b
+            _.c = c
+            _.d = d
+            _.y = _.x = _.r = _.f = _.e = null
+            _.z = 0
+            _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
+            _.go = 1
+            _.id = e
+            _.upgrade = true
+            _.k2 = _.k1 = null
+            _.k3 = f
+            _.k4 = null
+            _.r1 = g
+            _.r2 = h
+            _.rx = i
+            _.ry = j
+            _.x1 = k
+            _.x2 = l
+            _.y1 = m
+            _.y2 = n
+            _.I = o
+            _.N = p
+            _.A = !1
+            _.u = q
+            _.U = null
+            _.D = r
+            _.q = s
+            _.a_ = t
+            _.V = _.O = _.L = 0
+            _.J = 32768
+            _.j = 0
+            _.X = _.W = !1
+            _.F = null
+        },
+		yuyuko: function yuyuko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+            var _ = this
+            _.aI = 0
+            _.aP = _.bb = _.af = null
+            _.a = a
+            _.b = b
+            _.c = c
+            _.d = d
+            _.y = _.x = _.r = _.f = _.e = null
+            _.z = 0
+            _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
+            _.go = 1
+            _.id = e
+            _.upgrade = true
+            _.k2 = _.k1 = null
+            _.k3 = f
+            _.k4 = null
+            _.r1 = g
+            _.r2 = h
+            _.rx = i
+            _.ry = j
+            _.x1 = k
+            _.x2 = l
+            _.y1 = m
+            _.y2 = n
+            _.I = o
+            _.N = p
+            _.A = !1
+            _.u = q
+            _.U = null
+            _.D = r
+            _.q = s
+            _.a_ = t
+            _.V = _.O = _.L = 0
+            _.J = 32768
+            _.j = 0
+            _.X = _.W = !1
+            _.F = null
+        },
+		ran: function ran(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+            var _ = this
+            _.aI = 0
+            _.aP = _.bb = _.af = null
+            _.a = a
+            _.b = b
+            _.c = c
+            _.d = d
+            _.y = _.x = _.r = _.f = _.e = null
+            _.z = 0
+            _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
+            _.go = 1
+            _.id = e
+            _.upgrade = true
+            _.k2 = _.k1 = null
+            _.k3 = f
+            _.k4 = null
+            _.r1 = g
+            _.r2 = h
+            _.rx = i
+            _.ry = j
+            _.x1 = k
+            _.x2 = l
+            _.y1 = m
+            _.y2 = n
+            _.I = o
+            _.N = p
+            _.A = !1
+            _.u = q
+            _.U = null
+            _.D = r
+            _.q = s
+            _.a_ = t
+            _.V = _.O = _.L = 0
+            _.J = 32768
+            _.j = 0
+            _.X = _.W = !1
+            _.F = null
+        },
+		yukari: function yukari(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+            var _ = this
+            _.aI = 0
+            _.aP = _.bb = _.af = null
+            _.a = a
+            _.b = b
+            _.c = c
+            _.d = d
+            _.y = _.x = _.r = _.f = _.e = null
+            _.z = 0
+            _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
+            _.go = 1
+            _.id = e
+            _.upgrade = true
+            _.k2 = _.k1 = null
+            _.k3 = f
+            _.k4 = null
+            _.r1 = g
+            _.r2 = h
+            _.rx = i
+            _.ry = j
+            _.x1 = k
+            _.x2 = l
+            _.y1 = m
+            _.y2 = n
+            _.I = o
+            _.N = p
+            _.A = !1
+            _.u = q
+            _.U = null
+            _.D = r
+            _.q = s
+            _.a_ = t
+            _.V = _.O = _.L = 0
+            _.J = 32768
+            _.j = 0
+            _.X = _.W = !1
+            _.F = null
+        },
         nue: function nue(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
             var _ = this
             _.aI = 0
@@ -8802,7 +9501,6 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
             _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
             _.go = 1
             _.id = e
-            _.hongs1 = 0
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -16148,7 +16846,7 @@ T.tha2ak.prototype = {
 
 T.tha2n1.prototype = {
     ar: function(a, b) {
-            if (this.r.bagua > 2+ (a.m() & 3) || this.r.bagua < 1)
+            if (this.r.bagua > 2 + (a.m() & 3) || this.r.bagua < 1)
             { 
                 return !1
             }
@@ -16159,9 +16857,10 @@ T.tha2n1.prototype = {
         t = a[0].a
     s = T.u(u.r, !1, c)
     d.a.push(T.e("[0]使用[恋符「非定向光线」]", u.r, t, null, null, 1, 1000, 100))
+	d.a.push(T.e("[八卦炉]剩余灵力[1]点", this.r, this.r.bagua -1 , null, null, 1, 1000, 100))
 	this.r.bagua = this.r.bagua - 1
-    t.a0(1.75*s, !0, u.r, T.a3(), c, d)
-	d.a.push(T.e("[八卦炉]剩余灵力[1]点", this.r, this.r.bagua, null, null, 1, 1000, 100))
+    t.a0(1.8*s, !0, u.r, T.a3(), c, d)
+	
     }
 }
 T.tha2b1.prototype = {
@@ -16170,8 +16869,8 @@ T.tha2b1.prototype = {
 		u.f = 0
         t = a[0].a
 		n = (c.m() & 7)
-		m = (c.m() & 127)
-		m = C.d.v(m, 2) + 1
+		m = (c.m() & 63)
+		m = C.d.v(m, 2) + 33
 		this.r.bagua = 6
         d.a.push(T.e("[0]：[等我死了再还你~]", u.r, t, null, null, 1, 1000, 100))
         if(n ==0)
@@ -16269,6 +16968,7 @@ T.tha2b1.prototype = {
 		{
 		d.a.push(T.e("[0] [大失败]", u.r, t, null, null, 1, 1000, 100))
 		}
+		this.r.j = this.r.j +1600
      
     }
 }
@@ -16853,7 +17553,7 @@ T.tha9n3.prototype = {
         s = T.u(u.r, !1, c)
         d.a.push(T.e("[0]使用[神枪「冈格尼尔之枪」]", u.r, t, null, null, 1, 1000, 100))
 		if((c.m() & 63) > 31 ){
-        t.bL(3.2*s, !1, u.r, T.q71(), c, d)
+        t.bL(3.1*s, !1, u.r, T.q71(), c, d)
 		}
 		else
 		{
@@ -16873,7 +17573,7 @@ T.tha9n3.prototype = {
 		if(this.r.fr > 0){
 		this.r.fr = 0.85*this.r.fr
 		d.a.push(T.e(O.c("Thtw"), this.r, T.a1(this.r, o), new T.aT(15), null, this.r.fr-C.e.Z(this.r.fr * (100 - 15) / 100), 1000, 100))
-		if(t.fr > 0 && t.fr < 0.2*t.fx)
+		if(t.fr > 0 && t.fr < 0.25*t.fx)
 			{
 			d.a.push($.v())
 			d.a.push(T.e("[0]触发[「掌中的破坏者」]", this.r, t, null, null, 1, 1000, 100))
@@ -17739,7 +18439,7 @@ T.tha4n1.prototype = {
             u.r.E()
             u.id = 5
             r = u.r
-            u.go = 240 + u.r.db * 4
+            u.go = 240
             s = u.r
             s.j = s.j
             s = C.c.K(O.c("PurV"), $.nh())
@@ -18280,7 +18980,7 @@ n.r.bf(n.r.fr, null, c, d)
         },
         t: function(a, a0, a1, a2) {
             var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this, b = null, v
-            c.f = C.d.Z(c.f * 0.6)
+            c.f = C.d.Z(c.f * 0.5)
             u = a2.a
             u.push(T.e("[0]发动[「妖精的声援」]", c.r, b, b, b, 60, 1000, 100))
 			for(v =1 ; v < 3 ; v++){
@@ -18344,7 +19044,7 @@ n.r.bf(n.r.fr, null, c, d)
         },
         t: function(a, b, c, d) {
             var u, t, s, r = this, q = null, p = a[0].a, o = d.a
-            o.push(T.e("[0]发起佯攻", r.r, p, q, q, 0, 1000, 100))
+            o.push(T.e("[0]对[1]发起佯攻", r.r, p, q, q, 0, 1000, 100))
 			p.a0(0, !1, r.r, T.a3(), c, d)
         }
     }
@@ -18431,7 +19131,7 @@ n.r.bf(n.r.fr, null, c, d)
 			d.db = 1
             c.r.x.aU(d)
             u.push(T.e("出现了[1]", c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
-			this.r.j = this.r.j+ 2000
+			this.r.j = this.r.j+ 1600
         }
     }
     T.hha7t1.prototype = {
@@ -18522,15 +19222,15 @@ u[6] = t[6]*10
             d.x = s.x
             d.av()
             d.j = 2048
-            d.fx = 720
-            d.fr = 720
+            d.fx = 600
+            d.fr = 600
             d.Q =  66
-			d.ch = 75
-			d.cx = 72
-			d.cy = 72 
-			d.db = 120
-			d.dx = 90
-            d.dy = 119
+			d.ch = 66
+			d.cx = 66
+			d.cy = 66
+			d.db = 99
+			d.dx = 66
+            d.dy = 66
             c.r.x.aU(d)
             u.push(T.e("召唤出奇怪的[1]？", c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
         }
@@ -18614,14 +19314,14 @@ u[6] = t[6]*10
             d.x = s.x
             s.I.i(0, d.a5)
             d.av()
-			d.fx = C.d.Z(this.r.fx *0.4)
-			d.fr = C.d.Z(this.r.fr *0.4)
-			d.Q =  C.d.Z(this.r.Q  *0.4)
-			d.ch = C.d.Z(this.r.ch *0.4)
+			d.fx = C.d.Z(this.r.fx *0.64)
+			d.fr = C.d.Z(this.r.fr *0.64)
+			d.Q =  C.d.Z(this.r.Q  *0.64)
+			d.ch = C.d.Z(this.r.ch *0.64)
 			d.cx = C.d.Z(this.r.cx *0.64) 
 			d.cy = C.d.Z(this.r.cx *0.64) 
-			d.db = C.d.Z(this.r.db *0.4)
-			d.dx = C.d.Z(this.r.dx *0.4)
+			d.db = C.d.Z(this.r.db *0.64)
+			d.dx = C.d.Z(this.r.dx *0.64)
 			d.dy = this.r.dy
             d.j = - 1024
             c.r.x.aU(d)
@@ -18856,8 +19556,12 @@ d.a.push(T.e("[0]陷入[时停]", o, null, null, r, 1, 1000, 100))
                 t.z += 1}			
 			o = T.u(this.r, !1, c)			
             q.bL(0.72*o, !0, this.r, T.a3(), c, d)
+			if(q.cx > 5)
+			{
+			q.cx = q.cx - 5
+			}
             d.a.push(T.e(C.c.K(O.c("clnM"), $.nk()), s.r, q, r, r, 60, 1000, 100))
-			if(q.fr > 0 && q.fr < 0.2*q.fx)
+			if(q.fr > 0 && q.fr < 0.25*q.fx)
 			{
 			d.a.push($.v())
 			d.a.push(T.e("[0]触发[「掌中的破坏者」]", this.r, t, null, null, 1, 1000, 100))
@@ -19222,12 +19926,12 @@ aK: function(a, b, c, d) {
             r.ae(0)
             t = a[0].a
 			v = t.fr
-			w = 3.4 - (r.r.fr / r.r.fx)
+			w = 3.9 - (r.r.fr / r.r.fx)
 			k.push(T.e("[0]：我是毁灭一切的破坏神！", r.r, t, q, q, 1, 1000, 100))
 			k.push($.v())
             k.push(T.e("[0]使用[禁忌「莱瓦汀」]", r.r, t, q, q, 1, 1000, 100))
             t.a0(C.d.Z(w*T.u(r.r, !1, c)), !1, r.r, T.firea(), c, d)
-			if(t.fr > 0 && t.fr < 0.2*t.fx)
+			if(t.fr > 0 && t.fr < 0.25*t.fx)
 			{
 			d.a.push($.v())
 			d.a.push(T.e("[0]触发[「掌中的破坏者」]", r.r, t, null, null, 1, 1000, 100))
@@ -19265,14 +19969,14 @@ aK: function(a, b, c, d) {
                 r.fy = r.r
                 r.r.ry.i(0, r.fr)
                 k.push(T.e("[0][加速]", r.r, r.fy, q, q, 1, 1000, 100))
-				r.r.cx = 1.4*r.r.cx
+				r.r.cx = 1.5*r.r.cx
                 r.r.j = r.r.j
             }
             else {
             r.ae(0)
             t = a[0].a
 			v = t.fr
-			w = 4.2
+			w = 4.5
 			this.f =0 
             k.push(T.e("[0]使用[彗星「炽热飞星」]", r.r, t, q, q, 1, 1000, 100))
             t.a0(C.d.Z(w*T.u(r.r, !1, c)), !1, r.r, T.a3(), c, d)
@@ -19619,7 +20323,7 @@ T.tha5s1.prototype = {
 q.push($.v())
 o.a0(p, !0, this.r, T.kV(), c, d)}
 else if(o.fr > 0 && H.o(a[u].a.r1.h(0, $.b8()), "$idj") != null ) {
-p=1.99*p
+p=2.44*p
 q.push($.v())
 o.a0(p, !0, this.r, T.kV(), c, d)
 }
@@ -19646,7 +20350,7 @@ T.tha3n1.prototype = {
             r = H.a(n.slice(0), [H.n(n, 0)])
             q = d.a
             q.push(T.e(t, s, null, null, r, 1, 1000, 100))
-            p = T.u(this.r, !0, c) * 0.85
+            p = T.u(this.r, !0, c) * 0.9
             for (u = 0; u < n.length; ++u) {
                 o = n[u]
 if (o.fr > 0 ) {
@@ -19717,7 +20421,8 @@ o.bL(p, !0, this.r, T.a3(), c, d)
             q = d.a
             q.push(T.e(t, s, null, null, r, 1, 1000, 100))
 			this.r.bagua = this.r.bagua - 2
-            p = T.u(this.r, !0, c) * 1.50
+			q.push(T.e("[八卦炉]剩余灵力[1]点", this.r, this.r.bagua, null, null, 1, 1000, 100))
+            p = T.u(this.r, !0, c) * 1.6
             for (u = 0; u < n.length; ++u) {
                 o = n[u]
         if (o.fr > 0 ) {
@@ -19726,8 +20431,7 @@ o.bL(p, !0, this.r, T.a3(), c, d)
 }
                     
                 }
-			q.push($.v())
-			q.push(T.e("[八卦炉]剩余灵力[1]点", this.r, this.r.bagua, null, null, 1, 1000, 100))
+			
             
         }
 }
@@ -19754,8 +20458,9 @@ T.tha2n3.prototype = {
             r = H.a(n.slice(0), [H.n(n, 0)])
             q = d.a
             q.push(T.e(t, s, null, null, r, 1, 1000, 100))
-            p = T.u(this.r, !0, c) * 0.65 * this.r.bagua
+            p = T.u(this.r, !0, c) * 0.7 * this.r.bagua
 			this.r.bagua = 0
+		    d.a.push(T.e("[八卦炉]剩余灵力[1]点", this.r, this.r.bagua, null, null, 1, 1000, 100))
             for (u = 0; u < n.length; ++u) {
                 o = n[u]
         if (o.fr > 0 ) {
@@ -19764,19 +20469,11 @@ T.tha2n3.prototype = {
 }
                     
                 }
-			q.push($.v())
-		    d.a.push(T.e("[八卦炉]剩余灵力[1]点", this.r, this.r.bagua, null, null, 1, 1000, 100))
+			
             
         }
 }
-T.tha1s1.prototype = {
-        ar: function(a, b) {
-            if (this.r.meng < 7||this.r.meng > 0)
-            { 
-                return !1
-            }
-			return this.aS(a, b)
-		},             
+T.tha1s1.prototype = {      
 		b5: function(a) {
             return a.b1(this.r.x.a.e)
         },
@@ -19789,10 +20486,17 @@ T.tha1s1.prototype = {
         gb4: function() {
             return 12
         },
+		ar: function(a, b) {
+            if (this.r.meng > 0 && this.r.meng < 7 )
+            { 
+                return !1
+            }
+			return this.aS(a, b)
+		},
         t: function(a, b, c, d) {
 		if(this.r.meng == 0)
 		{this.r.meng = 1
-		d.a.push(T.e("[0] [-_-#]", this.r, null, null, null, 1, 1000, 100))
+		d.a.push(T.e("[0] [ᗜ˰ᗜ#]", this.r, null, null, null, 1, 1000, 100))
 		this.f = 700
 		return 0
 		}
@@ -21069,10 +21773,10 @@ T.sakuya.prototype = {
             this.k2 = t
             t = this.id 
             u = new T.tha9s1()
-            u.f = 60
+            u.f = 50
             t.push(u)
 			u = new T.tha9n2()
-            u.f = 50
+            u.f = 35
             t.push(u)
 			u = new T.tha9n1()
             u.f = 45
@@ -21232,6 +21936,159 @@ T.marisa.prototype = {
 
 }
 }
+T.letty.prototype = {
+    gah: function() {
+        return C.letty
+    },
+    gaQ: function() {
+        return H.a([], [P.f])
+    },
+    aa: function() {
+        var u, t = new T.aK()
+        t.r = this
+        this.k2 = t
+        t = this.id
+		
+        
+        
+}
+}
+T.chen.prototype = {
+    gah: function() {
+        return C.chen
+    },
+    gaQ: function() {
+        return H.a([], [P.f])
+    },
+    aa: function() {
+        var u, t = new T.aK()
+        t.r = this
+        this.k2 = t
+        t = this.id
+		
+        
+        
+}
+}
+T.alice.prototype = {
+    gah: function() {
+        return C.alice
+    },
+    gaQ: function() {
+        return H.a([], [P.f])
+    },
+    aa: function() {
+        var u, t = new T.aK()
+        t.r = this
+        this.k2 = t
+        t = this.id
+		
+        
+        
+}
+}
+T.lilywhite.prototype = {
+    gah: function() {
+        return C.lilywhite
+    },
+    gaQ: function() {
+        return H.a([], [P.f])
+    },
+    aa: function() {
+        var u, t = new T.aK()
+        t.r = this
+        this.k2 = t
+        t = this.id
+		
+        
+        
+}
+}
+T.phantom.prototype = {
+    gah: function() {
+        return C.phantom
+    },
+    gaQ: function() {
+        return H.a([], [P.f])
+    },
+    aa: function() {
+        var u, t = new T.aK()
+        t.r = this
+        this.k2 = t
+        t = this.id
+		
+        
+        
+}
+}
+T.youmu.prototype = {
+    gah: function() {
+        return C.youmu
+    },
+    gaQ: function() {
+        return H.a([], [P.f])
+    },
+    aa: function() {
+        var u, t = new T.aK()
+        t.r = this
+        this.k2 = t
+        t = this.id
+		
+        
+        
+}
+}
+T.yuyuko.prototype = {
+    gah: function() {
+        return C.yuyuko
+    },
+    gaQ: function() {
+        return H.a([], [P.f])
+    },
+    aa: function() {
+        var u, t = new T.aK()
+        t.r = this
+        this.k2 = t
+        t = this.id
+		
+        
+        
+}
+}
+T.ran.prototype = {
+    gah: function() {
+        return C.ran
+    },
+    gaQ: function() {
+        return H.a([], [P.f])
+    },
+    aa: function() {
+        var u, t = new T.aK()
+        t.r = this
+        this.k2 = t
+        t = this.id
+		
+        
+        
+}
+}
+T.yukari.prototype = {
+    gah: function() {
+        return C.yukari
+    },
+    gaQ: function() {
+        return H.a([], [P.f])
+    },
+    aa: function() {
+        var u, t = new T.aK()
+        t.r = this
+        this.k2 = t
+        t = this.id
+		
+        
+        
+}
+}
 T.nue.prototype = {
     gah: function() {
         return C.nue
@@ -21244,9 +22101,12 @@ T.nue.prototype = {
         t.r = this
         this.k2 = t
         t = this.id
-        u = new T.thj7b1()
-        u.f = 1100
+		u = new T.hZ()
+        u.ch = new T.aN(u)
+        u.Q = new T.bP(u)
+        u.f = 2560
         t.push(u)
+        
         
 }
 }
@@ -23252,7 +24112,7 @@ s.push(u)
             if (s.f <= 0 || s.ch.a != null)
                 return
             u = s.r
-            if (u.fr > 0 && !u.A && u.y.f.length > 1 && (c.m() & 63) < s.f) {
+            if (u.fr > 0 && !u.A && u.y.f.length > 0 && (c.m() & 63) < s.f) {
                 s.r.r2.i(0, s.ch)
                 s.r.E()
                 u = O.c("cAAA")
@@ -23263,6 +24123,7 @@ s.push(u)
         aK: function(a, b, c, d) {
             var u = this.ch
             if (u.a != null) {
+			    d.a.push(T.e("[0]从隐匿中解除", this.r, this.r, null, null, 10, 1000, 100))
                 u.C()
                 this.r.E()
             }
@@ -23538,11 +24399,11 @@ dk: function(a, b, c, d, e, f, g) {
         if (c.fr <= 0)
             return a
         if ( s.r.fr > 0 ) {
-            u = 12*(s.r.dx + s.r.ch)
+            u = 16*(s.r.dx + s.r.ch)
             g.a.push(T.e(C.c.K("[0]触发[黑雾]", $.nj()), s.r, c, null, null, 20, 1500, 100))
             c.bL(u, !1, s.r, T.a3(), f, g)
             t = s.r
-            t.j = t.j - 480
+            t.j = t.j
             g.a.push($.v())
             return a
         }
@@ -23827,8 +24688,7 @@ T.i9m.prototype = {
                 s = C.c.K("[0]：[!毁灭模式!]，启动", $.nl())
                 t = r.r
                 d.a.push(T.e(s, t, t, q, q, 0, 1000, 100))
-                t = r.r
-                t.j = t.j + 400
+                r.r.j = r.r.j + 4096            
             }
         },
         gR: function() {
@@ -23851,7 +24711,7 @@ T.i9m.prototype = {
             u.ch = u.ch * 5
             u.db = u.db * 5
             u.dx = u.dx * 5
-            u.j = u.j + 2048
+            u.dy = u.dy * 5
         },
         $ip: 1,
         $iA: 1
@@ -24758,7 +25618,7 @@ T.i9m.prototype = {
         s(T.D, [T.cg, T.dF, T.el])
         s(T.J, [T.dE, T.fire, T.ay])
         s(T.av, [T.hh,T.hha4n2, T.hha7t1, T.hha11t1 ,T.hha9n2, T.hi, T.ho])
-        s(T.cA, [T.eY, T.eZ, T.f_, T.f0, T.d7, T.d8, T.f1, T.f2, T.bA, T.f4, T.f6, T.tigershark, T.dark, T.hell, T.yuri2, T.yuriy, T.megia, T.testa, T.rumia, T.daiyousei, T.cirno , T.hong , T.testa , T.koakuma , T.patchouli , T.sakuya, T.reimu, T.marisa, T.remilia, T.flandre, T.rin, T.nue])
+        s(T.cA, [T.eY, T.eZ, T.f_, T.f0, T.d7, T.d8, T.f1, T.f2, T.bA, T.f4, T.f6, T.tigershark, T.dark, T.hell, T.yuri2, T.yuriy, T.megia, T.testa, T.rumia, T.daiyousei, T.cirno , T.hong , T.testa , T.koakuma , T.patchouli , T.sakuya, T.reimu, T.marisa, T.remilia, T.flandre, T.rin, T.letty, T.chen, T.alice, T.lilywhite, T.phantom, T.youmu, T.yuyuko, T.ran, T.yukari, T.nue])
         t(T.hg, T.cy)
         t(T.f3, T.bA)
         t(T.e_, T.dN, T.yuriSuperControl)
@@ -25115,19 +25975,28 @@ T.i9m.prototype = {
         C.hell = H.a(u([20, 20, 60, 50, 20, 20, 90, 120]), [P.j])
 C.megia = H.a(u([11, 45, 33, 18, 41, 10, 38, 120]), [P.j])
 C.testa = H.a(u([-4, 31, 39, -2, 28, 45, 835, 37]), [P.j])
-C.rumia = H.a(u([17, 35, 20, 1, -8, 25, 7, 685]), [P.j])
+C.rumia = H.a(u([18, 35, 20, 1, -8, 25, 7, 685]), [P.j])
 C.daiyousei = H.a(u([0, 17, 28, 1, 2, 15, 35, 952]), [P.j])
-C.cirno = H.a(u([-6, 29, 16, 17, 29, 1, 57, 764]), [P.j])
+C.cirno = H.a(u([-6, 29, 16, 17, 29, 1, 57, 575]), [P.j])
 C.hong = H.a(u([33, 26, 12, 7, -16, 1, 28, 708]), [P.j])
 C.koakuma = H.a(u([0, 9, 19, -3, 7, 32, 31, 700]), [P.j])
-C.patchouli = H.a(u([21, -5, -20, 19, 36, 34, 39, 438]), [P.j])
+C.patchouli = H.a(u([21, -10, -25, 19, 36, 34, 39, 438]), [P.j])
 C.sakuya = H.a(u([-9, 18, 6, 51, 3, 29, 57, 474]), [P.j])
-C.nue = H.a(u([47, 32, 26, 51, 59, 37, 13, 791]), [P.j])
-C.reimu = H.a(u([31, 38, 6, 16, 44, 25, 32, 704]), [P.j])
+C.nue = H.a(u([36, 21, 15, 40, 38, 26, 2, 690]), [P.j])
+C.reimu = H.a(u([31, 43, 6, 16, 44, 30, 37, 704]), [P.j])
 C.marisa = H.a(u([19, 8, 15, 29, 56, 17, 30, 625]), [P.j])
 C.remilia = H.a(u([15, 36, 40, 30, 21, 21, 21, 764]), [P.j])
 C.flandre = H.a(u([30, 26, 24, 25, -21, 20, 1, 791]), [P.j])
 C.rin = H.a(u([ -40, 934, 6, 943, -82, 908, 9 , 723]), [P.j])
+C.letty = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.chen = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.alice = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.lilywhite = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.phantom = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.youmu = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.yuyuko = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.ran = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.yukari = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
         C.V = H.a(u(["*::class", "*::dir", "*::draggable", "*::hidden", "*::id", "*::inert", "*::itemprop", "*::itemref", "*::itemscope", "*::lang", "*::spellcheck", "*::title", "*::translate", "A::accesskey", "A::coords", "A::hreflang", "A::name", "A::shape", "A::tabindex", "A::target", "A::type", "AREA::accesskey", "AREA::alt", "AREA::coords", "AREA::nohref", "AREA::shape", "AREA::tabindex", "AREA::target", "AUDIO::controls", "AUDIO::loop", "AUDIO::mediagroup", "AUDIO::muted", "AUDIO::preload", "BDO::dir", "BODY::alink", "BODY::bgcolor", "BODY::link", "BODY::text", "BODY::vlink", "BR::clear", "BUTTON::accesskey", "BUTTON::disabled", "BUTTON::name", "BUTTON::tabindex", "BUTTON::type", "BUTTON::value", "CANVAS::height", "CANVAS::width", "CAPTION::align", "COL::align", "COL::char", "COL::charoff", "COL::span", "COL::valign", "COL::width", "COLGROUP::align", "COLGROUP::char", "COLGROUP::charoff", "COLGROUP::span", "COLGROUP::valign", "COLGROUP::width", "COMMAND::checked", "COMMAND::command", "COMMAND::disabled", "COMMAND::label", "COMMAND::radiogroup", "COMMAND::type", "DATA::value", "DEL::datetime", "DETAILS::open", "DIR::compact", "DIV::align", "DL::compact", "FIELDSET::disabled", "FONT::color", "FONT::face", "FONT::size", "FORM::accept", "FORM::autocomplete", "FORM::enctype", "FORM::method", "FORM::name", "FORM::novalidate", "FORM::target", "FRAME::name", "H1::align", "H2::align", "H3::align", "H4::align", "H5::align", "H6::align", "HR::align", "HR::noshade", "HR::size", "HR::width", "HTML::version", "IFRAME::align", "IFRAME::frameborder", "IFRAME::height", "IFRAME::marginheight", "IFRAME::marginwidth", "IFRAME::width", "IMG::align", "IMG::alt", "IMG::border", "IMG::height", "IMG::hspace", "IMG::ismap", "IMG::name", "IMG::usemap", "IMG::vspace", "IMG::width", "INPUT::accept", "INPUT::accesskey", "INPUT::align", "INPUT::alt", "INPUT::autocomplete", "INPUT::autofocus", "INPUT::checked", "INPUT::disabled", "INPUT::inputmode", "INPUT::ismap", "INPUT::list", "INPUT::max", "INPUT::maxlength", "INPUT::min", "INPUT::multiple", "INPUT::name", "INPUT::placeholder", "INPUT::readonly", "INPUT::required", "INPUT::size", "INPUT::step", "INPUT::tabindex", "INPUT::type", "INPUT::usemap", "INPUT::value", "INS::datetime", "KEYGEN::disabled", "KEYGEN::keytype", "KEYGEN::name", "LABEL::accesskey", "LABEL::for", "LEGEND::accesskey", "LEGEND::align", "LI::type", "LI::value", "LINK::sizes", "MAP::name", "MENU::compact", "MENU::label", "MENU::type", "METER::high", "METER::low", "METER::max", "METER::min", "METER::value", "OBJECT::typemustmatch", "OL::compact", "OL::reversed", "OL::start", "OL::type", "OPTGROUP::disabled", "OPTGROUP::label", "OPTION::disabled", "OPTION::label", "OPTION::selected", "OPTION::value", "OUTPUT::for", "OUTPUT::name", "P::align", "PRE::width", "PROGRESS::max", "PROGRESS::min", "PROGRESS::value", "SELECT::autocomplete", "SELECT::disabled", "SELECT::multiple", "SELECT::name", "SELECT::required", "SELECT::size", "SELECT::tabindex", "SOURCE::type", "TABLE::align", "TABLE::bgcolor", "TABLE::border", "TABLE::cellpadding", "TABLE::cellspacing", "TABLE::frame", "TABLE::rules", "TABLE::summary", "TABLE::width", "TBODY::align", "TBODY::char", "TBODY::charoff", "TBODY::valign", "TD::abbr", "TD::align", "TD::axis", "TD::bgcolor", "TD::char", "TD::charoff", "TD::colspan", "TD::headers", "TD::height", "TD::nowrap", "TD::rowspan", "TD::scope", "TD::valign", "TD::width", "TEXTAREA::accesskey", "TEXTAREA::autocomplete", "TEXTAREA::cols", "TEXTAREA::disabled", "TEXTAREA::inputmode", "TEXTAREA::name", "TEXTAREA::placeholder", "TEXTAREA::readonly", "TEXTAREA::required", "TEXTAREA::rows", "TEXTAREA::tabindex", "TEXTAREA::wrap", "TFOOT::align", "TFOOT::char", "TFOOT::charoff", "TFOOT::valign", "TH::abbr", "TH::align", "TH::axis", "TH::bgcolor", "TH::char", "TH::charoff", "TH::colspan", "TH::headers", "TH::height", "TH::nowrap", "TH::rowspan", "TH::scope", "TH::valign", "TH::width", "THEAD::align", "THEAD::char", "THEAD::charoff", "THEAD::valign", "TR::align", "TR::bgcolor", "TR::char", "TR::charoff", "TR::valign", "TRACK::default", "TRACK::kind", "TRACK::label", "TRACK::srclang", "UL::compact", "UL::type", "VIDEO::controls", "VIDEO::height", "VIDEO::loop", "VIDEO::mediagroup", "VIDEO::muted", "VIDEO::preload", "VIDEO::width"]), [P.f])
         C.W = H.a(u([10, -6, 1000, 0, 10, -15, 6, 0]), [P.j])
         C.X = H.a(u(["", "", "", "", "", "", "", "", "", ""]), [P.f])
