@@ -4759,7 +4759,7 @@
 				if (a.xue =! null)
 				{
 				
-				    t.y += a.xue*10240
+				    t.y += a.xue*2048
 				}	
                 u = T.e(C.c.K(O.c("lZqU"), $.ng()), a, b, null, null, 40, 1000, 100)
 				
@@ -22075,16 +22075,16 @@ T.letty.prototype = {
         this.k2 = t
         t = this.id
 		u = new T.thb1n1()
-        u.f = 4
+        u.f = 0
         t.push(u)
 		u = new T.thb1s1()
         u.f = 3000
         t.push(u)
 		u = new T.thb1n2()
-        u.f = 6
+        u.f = 0
         t.push(u)
 		u = new T.thb1n3()
-        u.f = 13
+        u.f = 0
         t.push(u)
         
         
