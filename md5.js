@@ -17085,16 +17085,15 @@ T.thb1s1.prototype = {
     t: function(a, b, c, d) {
         var u = this,o
 		o = this.r.fr
-		u.r.xue = 13
+		u.r.xue = 130
         t = a[0].a
 s = T.u(u.r, !1, c)
 d.a.push(T.e("[0]使用[寒符「延长的冬日」]", u.r, t, null, null, 1, 1000, 100))
 t.a0(0.19*s, !0, u.r, T.kV(), c, d)     
         u.r.xue = 0
-		u.r.cy = 0.3 * u.r.cy
+		u.r.cy = 1.3 * u.r.cy
 		u.r.fr = 0.3 * u.r.fr
 d.a.push(T.e("[1]的生命大幅减少", this.r, T.a1(this.r, o), new T.aT(15), null, this.r.fr-C.e.Z(3 / 10), 1000, 100))
-d.a.push($.v())
 d.a.push(T.e("[0]的敏捷大幅减少", u.r, t, null, null, 1, 1000, 100))
     }
 }
@@ -22067,16 +22066,16 @@ T.letty.prototype = {
         this.k2 = t
         t = this.id
 		u = new T.thb1n1()
-        u.f = 45
+        u.f = 4
         t.push(u)
 		u = new T.thb1s1()
-        u.f = 30
+        u.f = 3000
         t.push(u)
 		u = new T.thb1n2()
-        u.f = 60
+        u.f = 6
         t.push(u)
 		u = new T.thb1n3()
-        u.f = 130
+        u.f = 13
         t.push(u)
         
         
@@ -26117,7 +26116,7 @@ C.marisa = H.a(u([19, 8, 15, 29, 56, 17, 30, 625]), [P.j])
 C.remilia = H.a(u([15, 36, 40, 30, 21, 21, 21, 764]), [P.j])
 C.flandre = H.a(u([30, 26, 24, 25, -21, 20, 1, 791]), [P.j])
 C.rin = H.a(u([ -40, 934, 6, 943, -82, 908, 9 , 723]), [P.j])
-C.letty = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.letty = H.a(u([0, 0, 0, 0, 0, 0, 40, 500]), [P.j])
 C.chen = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.alice = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.lilywhite = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
