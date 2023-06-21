@@ -4759,10 +4759,10 @@
 				if (a.xue =! null)
 				{
 				
-				    t.y += a.xue*1024
+				    t.y += a.xue*10240
 				}	
                 u = T.e(C.c.K(O.c("lZqU"), $.ng()), a, b, null, null, 40, 1000, 100)
-				u = T.e(C.c.K(O.c("lZqU"), $.ng()), a.xue, a.xue, null, null, 40, 1000, 100)
+				
                 e.a.push(u)
             }
         },
@@ -17084,7 +17084,7 @@ t.a0(0.78*s, !0, u.r, T.kV(), c, d)
 }
 T.thb1s1.prototype = {
 ar: function(a, b) {
-            if (this.r.fr > 0.49*this.r.fx)
+            if (this.r.fr > 1.49*this.r.fx)
             { 
                 return !1
             }
@@ -22081,7 +22081,7 @@ T.letty.prototype = {
         u.f = 3000
         t.push(u)
 		u = new T.thb1n2()
-        u.f = 600
+        u.f = 6
         t.push(u)
 		u = new T.thb1n3()
         u.f = 13
