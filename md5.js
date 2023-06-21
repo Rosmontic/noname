@@ -4759,7 +4759,7 @@
 				if (a.xue =! null)
 				{
 				
-				    t.y += a.xue*2048
+				    t.y += a.xue*6144
 				}	
                 u = T.e(C.c.K(O.c("lZqU"), $.ng()), a, b, null, null, 40, 1000, 100)
 				
@@ -17074,7 +17074,7 @@ t.a0(1.6*s, !1, u.r, T.a3(), c, d)
 T.thb1n2.prototype = {
     t: function(a, b, c, d) {
         var u = this
-		u.r.xue = 1
+		u.r.xue = 2
         t = a[0].a
 s = T.u(u.r, !1, c)
 d.a.push(T.e("[0]使用[冬符「花之凋零」]", u.r, t, null, null, 1, 1000, 100))
@@ -17084,7 +17084,7 @@ t.a0(0.78*s, !0, u.r, T.kV(), c, d)
 }
 T.thb1s1.prototype = {
 ar: function(a, b) {
-            if (this.r.fr > 1.49*this.r.fx)
+            if (this.r.fr > 0.49*this.r.fx)
             { 
                 return !1
             }
@@ -17093,7 +17093,7 @@ ar: function(a, b) {
     t: function(a, b, c, d) {
         var u = this,o
 		o = this.r.fr
-		u.r.xue = 13
+		u.r.xue = 14
         t = a[0].a
 s = T.u(u.r, !1, c)
 d.a.push(T.e("[0]使用[寒符「延长的冬日」]", u.r, t, null, null, 1, 1000, 100))
@@ -22075,16 +22075,16 @@ T.letty.prototype = {
         this.k2 = t
         t = this.id
 		u = new T.thb1n1()
-        u.f = 0
+        u.f = 40
         t.push(u)
 		u = new T.thb1s1()
-        u.f = 3000
+        u.f = 170
         t.push(u)
 		u = new T.thb1n2()
-        u.f = 0
+        u.f = 66
         t.push(u)
 		u = new T.thb1n3()
-        u.f = 0
+        u.f = 150
         t.push(u)
         
         
@@ -26125,7 +26125,7 @@ C.marisa = H.a(u([19, 8, 15, 29, 56, 17, 30, 625]), [P.j])
 C.remilia = H.a(u([15, 36, 40, 30, 21, 21, 21, 764]), [P.j])
 C.flandre = H.a(u([30, 26, 24, 25, -21, 20, 1, 791]), [P.j])
 C.rin = H.a(u([ -40, 934, 6, 943, -82, 908, 9 , 723]), [P.j])
-C.letty = H.a(u([0, 0, 50, 0, 0, 0, 40, 500]), [P.j])
+C.letty = H.a(u([-4, 30, 22, 17, 33, 19, 40, 400]), [P.j])
 C.chen = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.alice = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.lilywhite = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
