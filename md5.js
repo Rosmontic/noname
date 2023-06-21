@@ -17083,16 +17083,19 @@ t.a0(0.78*s, !0, u.r, T.kV(), c, d)
 }
 T.thb1s1.prototype = {
     t: function(a, b, c, d) {
-        var u = this
+        var u = this,o
+		o = this.r.fr
 		u.r.xue = 13
         t = a[0].a
 s = T.u(u.r, !1, c)
 d.a.push(T.e("[0]使用[寒符「延长的冬日」]", u.r, t, null, null, 1, 1000, 100))
 t.a0(0.19*s, !0, u.r, T.kV(), c, d)     
         u.r.xue = 0
-		u.r.cy = 7
-		u.r.fr = 7
-d.a.push(T.e("[0]的生命、敏捷大幅减少」]", u.r, t, null, null, 1, 1000, 100))
+		u.r.cy = 0.3 * u.r.cy
+		u.r.fr = 0.3 * u.r.fr
+d.a.push(T.e("[1]的生命大幅减少", this.r, T.a1(this.r, o), new T.aT(15), null, this.r.fr-C.e.Z(3 / 10), 1000, 100))
+d.a.push($.v())
+d.a.push(T.e("[0]的敏捷大幅减少", u.r, t, null, null, 1, 1000, 100))
     }
 }
 T.tha8n1.prototype = {
