@@ -4753,7 +4753,7 @@
                     b.rx.i(0, t.x)
                     b.E()
                 } else
-                    t.y += 102400
+                    t.y += 1024
                 if (a.r1.G(0, $.X()))
                     t.y += 2048
 				if (a.xue =! null)
@@ -4762,6 +4762,7 @@
 				    t.y += a.xue*1024
 				}	
                 u = T.e(C.c.K(O.c("lZqU"), $.ng()), a, b, null, null, 40, 1000, 100)
+				u = T.e(C.c.K(O.c("lZqU"), $.ng()), a.xue, a.xue, null, null, 40, 1000, 100)
                 e.a.push(u)
             }
         },
