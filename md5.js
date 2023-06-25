@@ -4832,7 +4832,7 @@
                     t.z = 2
                     t.r = a
                 }
-                e.a.push(T.e(C.c.K("[1]被点燃了", $.ni()), a, b, null, null, 60, 1000, 100))
+                e.a.push(T.e(C.c.K("[1]被[点燃]了", $.ni()), a, b, null, null, 60, 1000, 100))
             }
         },
         u: function(a, b, c) {
@@ -18705,7 +18705,7 @@ T.tha4n1.prototype = {
             if (t.fr > 0) {
                 u = b.a
                 u.push($.v())
-                u.push(T.ap("[1]从燃烧中解除", a, t))
+                u.push(T.ap("[1]从[燃烧]中解除", a, t))
             }
         },
         $ip: 1
@@ -20270,7 +20270,7 @@ T.tha12b1.prototype = {
     ak: function(a, b, c, d, e) {
         var u = a > 0 
 		
-        return u && J.Q(c, T.mA()) ? a : a
+        return u && J.Q(c, T.mA()) ? 0 : 0
     },
     T: function() {
         this.r.y1.i(0, this)
@@ -24587,15 +24587,9 @@ T.tha4b1.prototype = {
         dk: function(a, b, c, d, e, f, g) {
             var u, t, s = this, r = null, p = g.a
             if (f.m() < 128) {
-            p.push(T.e(C.c.K("[0]触发「结晶之银」", $.nj()), s.r, c, null, null, 20, 1500, 100))
+            p.push(T.e(C.c.K("[0]触发[「结晶之银」]", $.nj()), s.r, c, null, null, 20, 1500, 100))
             if (!c.a6($.aC(), c))
-                u = c.fr > 0
-            else
-                u = !0
-            if (u) {
-                p.push(T.e(O.c("vVob"), c, s.r, r, r, 20, 1000, 100))
-                return
-            }
+                {
             c.j = c.j - (c.cx + 64)
             u = c.r1
             t = H.o(u.h(0, $.aC()), "$icG")
@@ -24606,10 +24600,11 @@ T.tha4b1.prototype = {
                 c.r2.i(0, t)
                 c.x1.i(0, t.y)
                 c.E()
+				return a
             } else
                 t.z += 2            
                 return a
-            }
+            }}
             return a
         },
         T: function() {
