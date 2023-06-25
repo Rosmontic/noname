@@ -24589,23 +24589,15 @@ T.tha4b1.prototype = {
         dk: function(a, b, c, d, e, f, g) {
             var u, t, s, r = this
             if (f.m() < 128) {
-            g.a.push(T.e(C.c.K("[0]触发[「结晶之银」]", $.nj()), r.r, c, null, null, 20, 1500, 100))
-			
-            
+            g.a.push(T.e(C.c.K("[0]触发[「结晶之银」]", $.nj()), r.r, c, null, null, 20, 1500, 100))          
                 u = H.o(r.r.r1.h(0, $.kl()), "$idK")
-			g.a.push(T.e(C.c.K("[0]触发[「结晶之银1」]", $.nj()), r.r, c, null, null, 20, 1500, 100))
                 if (u == null) {
                     t = r.r
                     u = new T.dK(t)
                     t.r1.k(0, $.kl(), u)
                     r.r.y1.i(0, u)
                 }
-				g.a.push(T.e(C.c.K("[0]触发[「结晶之银2」]", $.nj()), r.r, c, null, null, 20, 1500, 100))
-                t = r.f
-                s = u.x
-                if (t >= s){
-                    u.x = s + (c.au(1 + C.b.v(t * 3, 4)) + 1)}
-                g.a.push(T.e(C.c.K("[0]触发[「结晶之银3」]", $.nj()), r.r, c, null, null, 20, 1500, 100))
+				
 			return a
             }
             return a
