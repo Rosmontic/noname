@@ -17074,7 +17074,7 @@ t.a0(1.6*s, !1, u.r, T.a3(), c, d)
 T.thb1n2.prototype = {
     t: function(a, b, c, d) {
         var u = this
-		u.r.xue = 2
+		u.r.xue = 1
         t = a[0].a
 s = T.u(u.r, !1, c)
 d.a.push(T.e("[0]使用[冬符「花之凋零」]", u.r, t, null, null, 1, 1000, 100))
@@ -17093,7 +17093,7 @@ ar: function(a, b) {
     t: function(a, b, c, d) {
         var u = this,o
 		o = this.r.fr
-		u.r.xue = 14
+		u.r.xue = 21
         t = a[0].a
 s = T.u(u.r, !1, c)
 d.a.push(T.e("[0]使用[寒符「延长的冬日」]", u.r, t, null, null, 1, 1000, 100))
@@ -22078,10 +22078,10 @@ T.letty.prototype = {
         u.f = 0
         t.push(u)
 		u = new T.thb1s1()
-        u.f = 1700
+        u.f = 0
         t.push(u)
 		u = new T.thb1n2()
-        u.f = 0
+        u.f = 100
         t.push(u)
 		u = new T.thb1n3()
         u.f = 0
