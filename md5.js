@@ -17098,7 +17098,7 @@ ar: function(a, b) {
     t: function(a, b, c, d) {
         var u = this,o
 		o = this.r.fr
-		u.r.xue = 60
+		u.r.xue = 13
         t = a[0].a
 s = T.u(u.r, !1, c)
 d.a.push(T.e("[0]使用[寒符「延长的冬日」]", u.r, t, null, null, 1, 1000, 100))
