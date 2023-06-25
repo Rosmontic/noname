@@ -22078,10 +22078,10 @@ T.letty.prototype = {
         u.f = 0
         t.push(u)
 		u = new T.thb1s1()
-        u.f = 0
+        u.f = 1000
         t.push(u)
 		u = new T.thb1n2()
-        u.f = 100
+        u.f = 0
         t.push(u)
 		u = new T.thb1n3()
         u.f = 0
