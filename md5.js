@@ -4759,7 +4759,7 @@
 				if (a.xue =! null)
 				{
 				
-				    t.y += a.xue*6144
+				    t.y += a.xue*1024
 				}	
                 u = T.e(C.c.K(O.c("lZqU"), $.ng()), a, b, null, null, 40, 1000, 100)
 				
@@ -17074,7 +17074,7 @@ t.a0(1.6*s, !1, u.r, T.a3(), c, d)
 T.thb1n2.prototype = {
     t: function(a, b, c, d) {
         var u = this
-		u.r.xue = 0.5
+		u.r.xue = 1
         t = a[0].a
 s = T.u(u.r, !1, c)
 d.a.push(T.e("[0]使用[冬符「花之凋零」]", u.r, t, null, null, 1, 1000, 100))
@@ -17093,7 +17093,7 @@ ar: function(a, b) {
     t: function(a, b, c, d) {
         var u = this,o
 		o = this.r.fr
-		u.r.xue = 21
+		u.r.xue = 60
         t = a[0].a
 s = T.u(u.r, !1, c)
 d.a.push(T.e("[0]使用[寒符「延长的冬日」]", u.r, t, null, null, 1, 1000, 100))
