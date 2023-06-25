@@ -4756,11 +4756,16 @@
                     t.y += 1024
                 if (a.r1.G(0, $.X()))
                     t.y += 2048
-				if (a.xue =! null)
+				if (a.xue == 1)
 				{
 				
-				    t.y += a.xue*1024
+				    t.y += 1024
 				}	
+				if (a.xue == 13)
+				{
+				
+				    t.y += 13312
+				}
                 u = T.e(C.c.K(O.c("lZqU"), $.ng()), a, b, null, null, 40, 1000, 100)
 				
                 e.a.push(u)
@@ -17098,7 +17103,7 @@ ar: function(a, b) {
 s = T.u(u.r, !1, c)
 d.a.push(T.e("[0]使用[寒符「延长的冬日」]", u.r, t, null, null, 1, 1000, 100))
 t.a0(1.29*s, !0, u.r, T.kV(), c, d)     
-		u.r.cy = 0.3 * u.r.cy
+		u.r.cy = 1.3 * u.r.cy
 		u.r.fr = 0.3 * u.r.fr
 		this.f = 0
 d.a.push(T.e("[1]的生命大幅减少", this.r, T.a1(this.r, o), new T.aT(15), null, this.r.fr-C.e.Z(3 / 10), 1000, 100))
