@@ -22087,7 +22087,9 @@ T.letty.prototype = {
         t.r = this
         this.k2 = t
         t = this.id
-		t.push(new T.thb1b1())
+		u = new T.thb1b1()
+        u.f = 48
+        t.push(u)
 		u = new T.thb1n1()
         u.f = 48
         t.push(u)
@@ -24585,26 +24587,25 @@ T.tha4b1.prototype = {
     }
 	T.thb1b1.prototype = {
         dk: function(a, b, c, d, e, f, g) {
-            var u, t, s = this, r = null, p = g.a
+            var u, t, s, r = this
             if (f.m() < 128) {
-            p.push(T.e(C.c.K("[0]触发[「结晶之银」]", $.nj()), s.r, c, null, null, 20, 1500, 100))
-            if (!c.a6($.aC(), c))
-                {
-            c.j = c.j - (c.cx + 64)
-            u = c.r1
-            t = H.o(u.h(0, $.aC()), "$icG")
-            if (t == null) {
-                t = new T.cG(c)
-                t.y = new T.ay(t)
-                u.k(0, $.aC(), t)
-                c.r2.i(0, t)
-                c.x1.i(0, t.y)
-                c.E()
-				return a
-            } else
-                t.z += 2            
-                return a
-            }}
+            g.a.push(T.e(C.c.K("[0]触发[「结晶之银」]", $.nj()), r.r, c, null, null, 20, 1500, 100))
+			
+            if (r.f > 0) {
+                u = H.o(r.r.r1.h(0, $.kl()), "$idK")
+                if (u == null) {
+                    t = r.r
+                    u = new T.dK(t)
+                    t.r1.k(0, $.kl(), u)
+                    r.r.y1.i(0, u)
+                }
+                t = r.f
+                s = u.x
+                if (t >= s)
+                    u.x = s + (c.au(1 + C.b.v(t * 3, 4)) + 1)
+            }
+			return a
+            }
             return a
         },
         T: function() {
