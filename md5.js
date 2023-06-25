@@ -17084,7 +17084,7 @@ t.a0(0.78*s, !0, u.r, T.kV(), c, d)
 }
 T.thb1s1.prototype = {
 ar: function(a, b) {
-            if (this.r.fr > 0.49*this.r.fx)
+            if (this.r.fr > 1.49*this.r.fx)
             { 
                 return !1
             }
@@ -17097,13 +17097,13 @@ ar: function(a, b) {
         t = a[0].a
 s = T.u(u.r, !1, c)
 d.a.push(T.e("[0]使用[寒符「延长的冬日」]", u.r, t, null, null, 1, 1000, 100))
-t.a0(0.19*s, !0, u.r, T.kV(), c, d)     
-        u.r.xue = 0
+t.a0(1.29*s, !0, u.r, T.kV(), c, d)     
 		u.r.cy = 0.3 * u.r.cy
 		u.r.fr = 0.3 * u.r.fr
 		this.f = 0
 d.a.push(T.e("[1]的生命大幅减少", this.r, T.a1(this.r, o), new T.aT(15), null, this.r.fr-C.e.Z(3 / 10), 1000, 100))
 d.a.push(T.e("[0]的敏捷大幅减少", u.r, t, null, null, 1, 1000, 100))
+        
     }
 }
 T.tha8n1.prototype = {
@@ -22075,16 +22075,16 @@ T.letty.prototype = {
         this.k2 = t
         t = this.id
 		u = new T.thb1n1()
-        u.f = 40
+        u.f = 0
         t.push(u)
 		u = new T.thb1s1()
-        u.f = 170
+        u.f = 1700
         t.push(u)
 		u = new T.thb1n2()
-        u.f = 66
+        u.f = 0
         t.push(u)
 		u = new T.thb1n3()
-        u.f = 150
+        u.f = 0
         t.push(u)
         
         
