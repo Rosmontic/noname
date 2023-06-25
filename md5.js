@@ -17074,7 +17074,7 @@ t.a0(1.6*s, !1, u.r, T.a3(), c, d)
 T.thb1n2.prototype = {
     t: function(a, b, c, d) {
         var u = this
-		u.r.xue = 1
+		u.r.xue = 0.5
         t = a[0].a
 s = T.u(u.r, !1, c)
 d.a.push(T.e("[0]使用[冬符「花之凋零」]", u.r, t, null, null, 1, 1000, 100))
