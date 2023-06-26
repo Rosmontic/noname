@@ -22087,6 +22087,9 @@ T.letty.prototype = {
         t.r = this
         this.k2 = t
         t = this.id
+		u = new T.thb1b1()
+        u.f = 480
+        t.push(u)
 		u = new T.thb1n1()
         u.f = 48
         t.push(u)
