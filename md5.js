@@ -24685,9 +24685,9 @@ T.tha4b1.prototype = {
     }
 	T.thb1b1.prototype = {
         dk: function(a, b, c, d, e, f, g) {
-            var u, t, s, r = this
+            var u, t, s, r = this ,v
             if (f.m() < 128) {
-            g.a.push(T.e(C.c.K("[0]触发[「结晶之银」]", $.nj()), r.r, c, null, null, 20, 1500, 100))          
+            g.a.push(T.e("[0]触发[结晶之银」]", r.r, c, null, null, 1, 1000, 100)          
                 u = H.o(r.r.r1.h(0, $.kl()), "$idK")
                 if (u == null) {
                     t = r.r
@@ -24695,7 +24695,8 @@ T.tha4b1.prototype = {
                     t.r1.k(0, $.kl(), u)
                     r.r.y1.i(0, u)
                 }
-				u.x = 60*C.b.v(r.r.fx - r.r.fr , r.r.fx)
+				v = r.r.fx - r.r.fr 
+				u.x = 75*C.b.v(v , r.r.fx)
 				
 			return a
             }
@@ -26264,7 +26265,7 @@ C.remilia = H.a(u([15, 36, 40, 30, 21, 21, 21, 764]), [P.j])
 C.flandre = H.a(u([30, 26, 24, 25, -21, 20, 1, 791]), [P.j])
 C.rin = H.a(u([ -40, 934, 6, 943, -82, 908, 9 , 723]), [P.j])
 C.letty = H.a(u([-4, 30, 22, 17, 33, 19, 40, 400]), [P.j])
-C.chen = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.chen = H.a(u([12, 15, 30, 20, 0, 11, 19, 554]), [P.j])
 C.alice = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.lilywhite = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.phantom = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
