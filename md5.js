@@ -9243,7 +9243,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
             _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
             _.go = 1
             _.id = e
-            _.upgrade = true
+            _.cat = 0
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -10234,6 +10234,12 @@ i9m: function i9m() {
             _.c = _.b = _.a = _.r = null
         },
 		tha9b1: function tha9b1() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
+		thb2b1: function thb2b1() {
             var _ = this
             _.e = !1
             _.f = 0
@@ -19926,6 +19932,13 @@ else
         }
     }
 	T.thb2n1.prototype = {
+	    ar: function(a, b) {
+            if (this.r.cat == 1)
+            { 
+                return !1
+            }
+			return this.aS(a, b)
+		},
         t: function(a, b, c, d) {
             var u, t, s, r, q, p, o, n = this, m = null, l = a[0].a, k = d.a
             k.push(T.e("[0]使用[仙符「凤凰卵」]", n.r, l, m, m, 1, 1000, 100))
@@ -19954,17 +19967,24 @@ else
             }
         }
 }
-T.thb2n2.prototype = {
+    T.thb2n2.prototype = {
+	    ar: function(a, b) {
+            if (this.r.cat == 1)
+            { 
+                return !1
+            }
+			return this.aS(a, b)
+		},
         t: function(a, b, c, d) {
             var u, t, s, r, q, p, o, n = this, m = null, l = a[0].a, k = d.a
             k.push(T.e("[0]使用[翔符「飞翔韦驮天」]", n.r, n.r, m, m, 1, 1000, 100))
-            n.r.cx = 1.3*n.r.cx
-			n.r.cy = 1.3*n.r.cy
+            n.r.cx = 1.35*n.r.cx
+			n.r.cy = 1.35*n.r.cy
 			k.push($.v())
 			k.push(T.e("[0]的速度和敏捷增加了", n.r, n.r, m, m, 1, 1000, 100))
         }
 }
-     T.tha6s1.prototype = {
+    T.tha6s1.prototype = {
         t: function(a, b, c, d) {
             var u, s, r = this, q = null, p = r.fy, l ,n, m , o , k=d.a, w ,t
             if (p == null) {
@@ -20536,6 +20556,13 @@ T.thb2n3.prototype = {
         gb4: function() {
             return 2
         },
+		ar: function(a, b) {
+            if (this.r.cat == 1)
+            { 
+                return !1
+            }
+			return this.aS(a, b)
+		},
         t: function(a, b, c, d) {
             var u, t, s, r, q, p, o, v ,n = H.a([], [T.aU])
 			
@@ -20570,6 +20597,13 @@ T.thb2s1.prototype = {
         gb4: function() {
             return 5
         },
+		ar: function(a, b) {
+            if (this.f > 100 || this.r.cat ==1)
+            { 
+                return !1
+            }
+			return this.aS(a, b)
+		},
         t: function(a, b, c, d) {
             var u, t, s, r, q, p, o, v, w ,l ,n = H.a([], [T.aU])
 			v = 2 + (c.m() & 3)
@@ -20578,7 +20612,7 @@ T.thb2s1.prototype = {
                 n.push(a[u].a)
             t = "[0]使用[童符「护法天童乱舞」]"
             s = this.r
-			this.f = this.f -100
+			this.f = this.f * 1.5 
             r = H.a(n.slice(0), [H.n(n, 0)])
             q = d.a
             q.push(T.e(t, s, null, null, r, 1, 1000, 100))
@@ -22249,18 +22283,20 @@ T.chen.prototype = {
         t.r = this
         this.k2 = t
         t = this.id
+		t.push(new T.thb2b1())
+		u = new T.thb2n2()
+        u.f = 30
+        t.push(u)
 		u = new T.thb2n1()
         u.f = 55
-        t.push(u)		
-		u = new T.thb2n2()
-        u.f = 50
+        t.push(u)				
+		u = new T.thb2s1()
+        u.f = 60
         t.push(u)
 		u = new T.thb2n3()
-        u.f = 100
+        u.f = 140
         t.push(u)
-		u = new T.thb2s1()
-        u.f = 200
-        t.push(u)
+		
         
         
 }
@@ -24709,7 +24745,7 @@ dk: function(a, b, c, d, e, f, g) {
     
     $iK: 1
 }
-T.tha4b1.prototype = {
+    T.tha4b1.prototype = {
         dk: function(a, b, c, d, e, f, g) {
             var u, t, s = this
             if (c.fr <= 0)
@@ -24740,7 +24776,7 @@ T.tha4b1.prototype = {
                     r.r.y1.i(0, u)
                 }
 				v = r.r.fx - r.r.fr 
-				u.x = 100*C.b.v(v , r.r.fx)
+				u.x = 1000*C.b.v(v , r.r.fx)
 				
 			return a
             }
@@ -24927,6 +24963,35 @@ T.i9m.prototype = {
             if(r.r.meng > 0)
 			{
             r.r.meng = r.r.meng + 1
+			return a
+			}
+			return a
+        },
+		T: function() {
+            this.r.ry.i(0, this)
+        },
+        $iG: 1
+        }
+	T.thb2b1.prototype = {
+        aK: function(a, b, c, d) {
+            var u, t, s, r = this , v ,w
+			v = (c.m() & 15)
+    		w = (c.m() & 7)	
+            if(r.r.cat == 0 && v == 0)
+			{
+			r.r.cx = 2.1*r.r.cx
+			r.r.cy = 2.1*r.r.cy
+			d.a.push(T.e("[0][化猫]", s, s, q, q, 60, 1500, 100))
+            r.r.cat = 1
+			
+			return a
+			}
+			if(r.r.cat == 1 && w == 0)
+			{
+			r.r.cx = r.r.cx / 2
+			r.r.cy = r.r.cy / 2
+			d.a.push(T.e("[0]变回人", s, s, q, q, 60, 1500, 100))
+            r.r.cat = 0
 			return a
 			}
 			return a
@@ -25930,7 +25995,7 @@ T.i9m.prototype = {
         t(P.cD, P.l)
         t(Z.hl, Z.ax)
         s(F.ab, [T.H, T.M, T.D, T.J, T.L, T.K, T.A, T.G, T.C, T.I])
-        s(T.H, [T.y, T.hJ, T.tha1b1, T.tha5b1, T.tha6b1, T.tha7b1, T.tha10b1,T.tha12b1, T.hR, T.i0, T.i3, T.dU, T.dZ, T.bU, T.dQ, T.hZ, T.i5, T.thj7b1, T.dV, T.dX, T.tha4b1,T.tha3b2,T.thb1b1, T.i9 , T.i9m, T.ih, T.tha9b1,T.tha1b2, T.im, T.tha3b1, T.io, T.tigerMillionPunch, T.darkRevive, T.hellDefend])
+        s(T.H, [T.y, T.hJ, T.tha1b1, T.tha5b1, T.tha6b1, T.tha7b1, T.tha10b1,T.tha12b1, T.hR, T.i0, T.i3, T.dU, T.dZ, T.bU, T.dQ, T.hZ, T.i5, T.thj7b1, T.dV, T.dX, T.tha4b1,T.tha3b2,T.thb1b1, T.i9 , T.i9m, T.ih, T.tha9b1,T.tha1b2, T.thb2b1 , T.im, T.tha3b1, T.io, T.tigerMillionPunch, T.darkRevive, T.hellDefend])
         s(T.y, [T.dL, T.hI ,T.tha6n1, T.tha10t1, T.hK, T.hKm, T.bx, T.hL, T.hM, T.dN, T.dO, T.dP, T.tha2n1, T.tha2ak, T.tha12ak, T.tha2n2, T.tha2n3, T.tha2b1, T.tha1n3, T.tha3n1, T.thb1n1, T.thb1s1, T.thb1n2, T.thb1n3, T.thb2n1, T.thb2n2 ,T.thb2n3, T.thb2s1,  T.tha3n2, T.tha3s1, T.tha6n2, T.tha6n3, T.tha5n1, T.tha7n1 ,T.tha7n2,T.tha8n1 ,T.tha8t1 ,T.tha8n2 ,T.tha8t2 ,T.tha8n3 ,T.tha8t3 ,T.tha8n4 ,T.tha8t4 ,T.tha8n5 ,T.tha8t5 ,T.tha8s1 ,T.tha9n1,T.tha9n3,T.tha10n1,T.tha10n2,T.tha10s1,T.tha11n1,T.tha11n2, T.tha11n1t, T.tha11n2t, T.tha11t1, T.hS, T.hU, T.tha1n2, T.hV, T.bV, T.dR, T.hX, T.tha4n3, T.dS, T.tha4n1, T.tha4n2, T.tha4n2x, T.tha7t1, T.dT, T.i1, T.tha1n1, T.i6, T.i8, T.dW, T.ia ,T.tha4s1, T.i7, T.ig, T.tha9n2, T.tha9n2t, T.ij,T.tha1s1, T.tha9s1, T.hW, T.ik, T.il, T.tha5n3, T.tha6s1t,T.tha6s1, T.tha11s1,T.tha2s1, T.dM, T.tha5n2, T.tha5s1, T.tha7s1, T.hO, T.dc, T.hQ, T.i_, T.bI, T.i2, T.i4, T.ie, T.aK, T.bm, T.bn, T.hT, T.dY, T.ic, T.tigerAttack, T.tigerCheckHP, T.tigerIceAttack, T.tigerBlastPunch, T.tigerBlade, T.tigerRecover, T.tigerFastPunch, T.tigerWindAttack, T.tigerBlastKick, T.darkRecover, T.darkFastAttack, T.darkIron, T.darkHaste, T.darkLock, T.darkDemonSword, T.darkAttack, T.hellFireAttack, T.hellWindAttack, T.hellCutter, T.hellBehead, T.hellCheckHP])
         s(T.M, [T.bf, T.co, T.dj ,T.sl , T.cG, T.aN, T.hz, T.darkHasteRun, T.darkSuperUpgrade])
         s(T.p, [T.dt, T.aQ, T.ii, T.h0, T.iT])
@@ -26309,7 +26374,7 @@ C.remilia = H.a(u([15, 36, 40, 30, 21, 21, 21, 764]), [P.j])
 C.flandre = H.a(u([30, 26, 24, 25, -21, 20, 1, 791]), [P.j])
 C.rin = H.a(u([ -40, 934, 6, 943, -82, 908, 9 , 723]), [P.j])
 C.letty = H.a(u([-4, 30, 22, 17, 33, 19, 40, 400]), [P.j])
-C.chen = H.a(u([12, 15, 30, 20, 0, 11, 19, 554]), [P.j])
+C.chen = H.a(u([12, 15, 30, 20, 0, 11, 14, 524]), [P.j])
 C.alice = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.lilywhite = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.phantom = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
