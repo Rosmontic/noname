@@ -20583,7 +20583,7 @@ o.a0(p, !1, this.r, T.a3(), c, d)
 }
                     
                 }
-			
+		q.push($.v())
         this.j = this.j + 1024
 		q.push(T.e("[0]的行动提前了", s, null, null, r, 1, 1000, 100))
         }
@@ -20625,7 +20625,8 @@ if (o.fr > 0 ) {
 o.a0(p, !1, this.r, T.a3(), c, d)
 }
 }
-}			
+}		
+        q.push($.v())
         this.j = this.j + 4096
 		q.push(T.e("[0]的行动提前了", s, null, null, r, 1, 1000, 100))
         }
@@ -24974,14 +24975,14 @@ T.i9m.prototype = {
         }
 	T.thb2b1.prototype = {
         aK: function(a, b, c, d) {
-            var u, t, s, r = this , v ,w
+            var u, t, s, r = this , v ,w ,q = null 
 			v = (c.m() & 15)
     		w = (c.m() & 7)	
             if(r.r.cat == 0 && v == 0)
 			{
 			r.r.cx = 2.1*r.r.cx
 			r.r.cy = 2.1*r.r.cy
-			d.a.push(T.e("[0][化猫]", s, s, q, q, 60, 1500, 100))
+			d.a.push(T.e("[0][化猫]", this.r, this.r, q, q, 60, 1500, 100))
             r.r.cat = 1
 			
 			return a
@@ -24990,7 +24991,7 @@ T.i9m.prototype = {
 			{
 			r.r.cx = r.r.cx / 2
 			r.r.cy = r.r.cy / 2
-			d.a.push(T.e("[0]变回人", s, s, q, q, 60, 1500, 100))
+			d.a.push(T.e("[0]变回人", this.r, this.r, q, q, 60, 1500, 100))
             r.r.cat = 0
 			return a
 			}
