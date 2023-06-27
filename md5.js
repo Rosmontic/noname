@@ -19130,7 +19130,7 @@ n.r.bf(n.r.fr, null, c, d)
 		
         ay: function(a, b, c, d) {
 		      if(this.fr <= 0){		
-            this.af.r.fr = 0    }		
+            this.af.r.dolla = 0    }		
         },
 		
     }
