@@ -19137,9 +19137,11 @@ n.r.bf(n.r.fr, null, c, d)
             t.y2.i(0, u)
         },
         ay: function(a, b, c, d) {
+		    d.a.push(T.ap("[0]：[1]！", this.af.r, this.af.r.dolla))
             if(this.r.fr < 1){			
             this.af.r.dolla = 0    
-			}      
+			}
+            d.a.push(T.ap("[0]：[1]！", this.af.r, this.af.r.dolla))		
         },
 		
     }
