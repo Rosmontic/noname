@@ -19776,13 +19776,13 @@ d.a.push(T.e("[0]陷入[时停]", o, null, null, r, 1, 1000, 100))
         ay: function(a, b, c, d) {
             this.aP = !0
             this.af.r.aA(C.b.v(a, 2), b, T.a3(), c, d)
+			d.a.push(T.ap("[0]：！", this.af.r, this.fy))
             this.aP = !1
         },
         aX: function(a, b, c, d) {
             var u = this
               , t = u.fr
-			b.fx =100000
-			b.fr =100000
+			
             if (t > 0) {
                 u.fr = 0
                 if (!u.aP)
