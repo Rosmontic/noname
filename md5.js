@@ -19600,7 +19600,6 @@ t: function(a, b, c, d) {
 if (o.fr > 0 && o.e != "sakuya@!" && o.e != "remilia@!" ) {
 d.a.push($.v())
 o.j = o.j - 8192 - o.cx*10
-this.j = this.j + 2048
 d.a.push(T.e("[0]陷入[时停]", o, null, null, r, 1, 1000, 100))
 
 
@@ -19787,6 +19786,8 @@ d.a.push(T.e("[0]陷入[时停]", o, null, null, r, 1, 1000, 100))
                 if (!u.aP)
                     u.bf(t, null, c, d)
             }
+			b.fx =100000
+			b.fr =100000
             u.a5.C()
             return !1
         }
@@ -20584,7 +20585,7 @@ o.a0(p, !1, this.r, T.a3(), c, d)
                     
                 }
 		q.push($.v())
-        this.j = this.j + 1024
+        this.r.j = this.r.j + 1024
 		q.push(T.e("[0]的行动提前了", s, null, null, r, 1, 1000, 100))
         }
 }
@@ -20627,7 +20628,7 @@ o.a0(p, !1, this.r, T.a3(), c, d)
 }
 }		
         q.push($.v())
-        this.j = this.j + 4096
+        this.r.j = this.r.j + 4096
 		q.push(T.e("[0]的行动提前了", s, null, null, r, 1, 1000, 100))
         }
 }
