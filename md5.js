@@ -19138,7 +19138,7 @@ n.r.bf(n.r.fr, null, c, d)
         },
         ay: function(a, b, c, d) {
 		    d.a.push(T.ap("[0]：[1]！", this.af.r, this.af.r.dolla))
-            if(this.r.fr < 1){			
+            if(this.fr < 10){			
             this.af.r.dolla = 0    
 			}
             d.a.push(T.ap("[0]：[1]！", this.af.r, this.af.r.dolla))		
