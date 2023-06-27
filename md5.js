@@ -19127,7 +19127,20 @@ n.r.bf(n.r.fr, null, c, d)
             var u = this.u
             u[7] = C.d.v(u[7], 1)
 			this.id.push(new T.tha11n2)
-        }
+        },
+		bM: function() {
+            var u, t = this
+            t.dK()
+            u = t.bb
+            if (u == null)
+                u = t.bb = new T.cB(t)
+            t.y2.i(0, u)
+        },
+        ay: function(a, b, c, d) {
+            if(this.r.fr < 1){			
+            this.af.r.dolla = 0    
+			}      
+        },
 		
     }
     T.tha4n2.prototype = {
@@ -19633,6 +19646,7 @@ u[6] = t[6]*10
             d.j = - 2048
             c.r.x.aU(d)
             u.push(T.e("召唤出[1]", c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
+			this.r.dolla = 1
         
 		    
 		}
@@ -22452,7 +22466,7 @@ T.alice.prototype = {
         t.r = this
         this.k2 = t
         t = this.id
-		u = new T.ik()
+		u = new T.thb3n1()
         u.f = 100
         t.push(u)
 		
