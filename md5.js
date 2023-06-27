@@ -7823,6 +7823,52 @@ tha4n1: function tha4n1() {
             _.f = 0
             _.c = _.b = _.a = _.r = null
         },
+		hhb3n1: function hhb3n1(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+            var _ = this
+            _.bb = _.af = null
+            _.aP = !1
+            _.a5 = null
+            _.a = a
+            _.b = b
+            _.c = c
+            _.d = d
+            _.y = _.x = _.r = _.f = _.e = null
+            _.z = 0
+            _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
+            _.go = 1
+            _.id = e
+            _.k2 = _.k1 = null
+            _.k3 = f
+            _.k4 = null
+            _.r1 = g
+            _.r2 = h
+            _.rx = i
+            _.ry = j
+            _.x1 = k
+            _.x2 = l
+            _.y1 = m
+            _.y2 = n
+            _.I = o
+            _.N = p
+            _.A = !1
+            _.u = q
+            _.U = null
+            _.D = r
+            _.q = s
+            _.a_ = t
+            _.V = _.O = _.L = 0
+            _.J = 32768
+            _.j = 0
+            _.X = _.W = !1
+            _.F = null
+        },
+		thb3n1: function thb3n1() {
+            var _ = this
+            _.fr = null
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
         il: function il() {
             var _ = this
             _.e = !1
@@ -9282,7 +9328,14 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
             _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
             _.go = 1
             _.id = e
-            _.upgrade = true
+            _.doll1 = 0
+			_.doll2 = 0
+			_.doll3 = 0
+			_.doll4 = 0
+			_.doll5 = 0
+			_.doll6 = 0
+			_.doll7 = 0
+			_.doll8 = 0
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -19501,6 +19554,7 @@ u[6] = t[6]*10
         },
         $iC: 1
     }
+	
     T.cG.prototype = {
         gR: function() {
             return -1
@@ -19864,6 +19918,134 @@ d.a.push(T.e("[0]陷入[时停]", o, null, null, r, 1, 1000, 100))
                 e.fr.bb.C()
                 e.fr.j = 2048
             }
+            e.r.x.aU(e.fr)
+            u = O.c("IFkr")
+            t = e.r
+            s = e.fr
+            c.push(T.e(u, t, T.a1(s, s.fr), d, d, 0, 1000, 100))
+        }
+    }
+	T.hhb3n1.prototype = {
+        gaj: function() {
+            return this.af.r
+        },
+        aR: function() {
+            var u, t
+            this.bv()
+            u = this.u
+        },
+        aa: function() {
+            var u = new T.aK()
+            u.r = this
+            this.k2 = u
+            u = this.id
+            u.push(new T.bV())
+            u.push(new T.bV())
+            u.push(new T.hW())
+        },
+        bM: function() {
+            var u, t = this
+            t.dK()
+            u = t.bb
+            if (u == null)
+                u = t.bb = new T.cB(t)
+            t.y2.i(0, u)
+        },
+        ay: function(a, b, c, d) {
+            this.aP = !0
+            this.aP = !1
+        },
+        aX: function(a, b, c, d) {
+            var u = this
+              , t = u.fr
+            if (t > 0) {
+                u.fr = 0
+                if (!u.aP)
+                    u.bf(t, null, c, d)
+            }
+            u.a5.C()
+            return !1
+        }
+    }
+	T.thb3n1.prototype = {
+        ar: function(a, b) {
+            var u
+            if (b)
+                if (this.r.fr < 80)
+                    return !1
+            u = this.fr
+            return (u == null || u.fr <= 0) && this.aS(a, b)
+        },
+        a9: function(a, b, c) {
+            return H.a([], [T.Z])
+        },
+        t: function(a, b, a0, a1) {
+            var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e = this, d = null, c = a1.a
+            c.push(T.e(O.c("IwBM"), e.r, d, d, d, 60, 1000, 100))
+            u = e.fr
+            if (u == null) {
+                u = H.d(e.r.a) + "?" + H.d($.nr())
+                t = e.r
+                s = t.b
+                t = t.c
+                r = H.a([], [T.H])
+                q = H.a([], [T.y])
+                p = P.U(P.f, T.p)
+                o = new F.b([T.M])
+                o.c = o
+                o.b = o
+                n = new F.b([T.L])
+                n.c = n
+                n.b = n
+                m = new F.b([T.G])
+                m.c = m
+                m.b = m
+                l = new F.b([T.J])
+                l.c = l
+                l.b = l
+                k = new F.b([T.K])
+                k.c = k
+                k.b = k
+                j = new F.b([T.D])
+                j.c = j
+                j.b = j
+                i = new F.b([T.A])
+                i.c = i
+                i.b = i
+                h = new F.b([T.C])
+                h.c = h
+                h.b = h
+                g = new F.b([T.I])
+                g.c = g
+                g.b = g
+                f = [P.j]
+                f = new T.hhb3n1(u,s,t,d,r,q,p,o,n,m,l,k,j,i,h,g,H.a([], f),H.a([], f),H.a([], f),H.a([], f))
+                f.Y(u, s, t, d)
+                f.a5 = new T.cj(f)
+                f.af = e
+                f.e = T.du(e.r)
+                e.fr = f
+                f.r = "上海人偶"
+                f = e.fr
+                f.x = e.r.x
+                f.av()
+				f.fx = 210
+			    f.fr = 210
+			    f.Q =  70
+			    f.ch = 75
+			    f.cx = 70
+			    f.cy = 70 
+			    f.db = 75
+			    f.dx = 70
+			    f.dy = 50
+                f.j = - 2048
+            } else {
+                u.bM()
+                u.bm()
+                u.cj()
+            }
+            e.r.I.i(0, e.fr.a5)
+            e.fr.j = a0.m() * 4
             e.r.x.aU(e.fr)
             u = O.c("IFkr")
             t = e.r
@@ -22286,7 +22468,7 @@ T.chen.prototype = {
         t = this.id
 		t.push(new T.thb2b1())
 		u = new T.thb2n2()
-        u.f = 30
+        u.f = 37
         t.push(u)
 		u = new T.thb2n1()
         u.f = 55
@@ -22314,7 +22496,9 @@ T.alice.prototype = {
         t.r = this
         this.k2 = t
         t = this.id
-		
+		u = new T.thb3n1()
+        u.f = 300
+        t.push(u)
         
         
 }
@@ -24982,6 +25166,7 @@ T.i9m.prototype = {
 			{
 			r.r.cx = 2.1*r.r.cx
 			r.r.cy = 2.1*r.r.cy
+			r.r.go = 2.1*r.r.go
 			d.a.push(T.e("[0][化猫]", this.r, this.r, q, q, 60, 1500, 100))
             r.r.cat = 1
 			
@@ -24991,7 +25176,8 @@ T.i9m.prototype = {
 			{
 			r.r.cx = r.r.cx / 2
 			r.r.cy = r.r.cy / 2
-			d.a.push(T.e("[0]变回人", this.r, this.r, q, q, 60, 1500, 100))
+			r.r.go = r.r.go / 2
+			d.a.push(T.e("[0]变回人形", this.r, this.r, q, q, 60, 1500, 100))
             r.r.cat = 0
 			return a
 			}
@@ -25997,13 +26183,13 @@ T.i9m.prototype = {
         t(Z.hl, Z.ax)
         s(F.ab, [T.H, T.M, T.D, T.J, T.L, T.K, T.A, T.G, T.C, T.I])
         s(T.H, [T.y, T.hJ, T.tha1b1, T.tha5b1, T.tha6b1, T.tha7b1, T.tha10b1,T.tha12b1, T.hR, T.i0, T.i3, T.dU, T.dZ, T.bU, T.dQ, T.hZ, T.i5, T.thj7b1, T.dV, T.dX, T.tha4b1,T.tha3b2,T.thb1b1, T.i9 , T.i9m, T.ih, T.tha9b1,T.tha1b2, T.thb2b1 , T.im, T.tha3b1, T.io, T.tigerMillionPunch, T.darkRevive, T.hellDefend])
-        s(T.y, [T.dL, T.hI ,T.tha6n1, T.tha10t1, T.hK, T.hKm, T.bx, T.hL, T.hM, T.dN, T.dO, T.dP, T.tha2n1, T.tha2ak, T.tha12ak, T.tha2n2, T.tha2n3, T.tha2b1, T.tha1n3, T.tha3n1, T.thb1n1, T.thb1s1, T.thb1n2, T.thb1n3, T.thb2n1, T.thb2n2 ,T.thb2n3, T.thb2s1,  T.tha3n2, T.tha3s1, T.tha6n2, T.tha6n3, T.tha5n1, T.tha7n1 ,T.tha7n2,T.tha8n1 ,T.tha8t1 ,T.tha8n2 ,T.tha8t2 ,T.tha8n3 ,T.tha8t3 ,T.tha8n4 ,T.tha8t4 ,T.tha8n5 ,T.tha8t5 ,T.tha8s1 ,T.tha9n1,T.tha9n3,T.tha10n1,T.tha10n2,T.tha10s1,T.tha11n1,T.tha11n2, T.tha11n1t, T.tha11n2t, T.tha11t1, T.hS, T.hU, T.tha1n2, T.hV, T.bV, T.dR, T.hX, T.tha4n3, T.dS, T.tha4n1, T.tha4n2, T.tha4n2x, T.tha7t1, T.dT, T.i1, T.tha1n1, T.i6, T.i8, T.dW, T.ia ,T.tha4s1, T.i7, T.ig, T.tha9n2, T.tha9n2t, T.ij,T.tha1s1, T.tha9s1, T.hW, T.ik, T.il, T.tha5n3, T.tha6s1t,T.tha6s1, T.tha11s1,T.tha2s1, T.dM, T.tha5n2, T.tha5s1, T.tha7s1, T.hO, T.dc, T.hQ, T.i_, T.bI, T.i2, T.i4, T.ie, T.aK, T.bm, T.bn, T.hT, T.dY, T.ic, T.tigerAttack, T.tigerCheckHP, T.tigerIceAttack, T.tigerBlastPunch, T.tigerBlade, T.tigerRecover, T.tigerFastPunch, T.tigerWindAttack, T.tigerBlastKick, T.darkRecover, T.darkFastAttack, T.darkIron, T.darkHaste, T.darkLock, T.darkDemonSword, T.darkAttack, T.hellFireAttack, T.hellWindAttack, T.hellCutter, T.hellBehead, T.hellCheckHP])
+        s(T.y, [T.dL, T.hI ,T.tha6n1, T.tha10t1, T.hK, T.hKm, T.bx, T.hL, T.hM, T.dN, T.dO, T.dP, T.tha2n1, T.tha2ak, T.tha12ak, T.tha2n2, T.tha2n3, T.tha2b1, T.tha1n3, T.tha3n1, T.thb1n1, T.thb1s1, T.thb1n2, T.thb1n3, T.thb2n1, T.thb2n2 ,T.thb2n3, T.thb2s1,  T.tha3n2, T.tha3s1, T.tha6n2, T.tha6n3, T.tha5n1, T.tha7n1 ,T.tha7n2,T.tha8n1 ,T.tha8t1 ,T.tha8n2 ,T.tha8t2 ,T.tha8n3 ,T.tha8t3 ,T.tha8n4 ,T.tha8t4 ,T.tha8n5 ,T.tha8t5 ,T.tha8s1 ,T.tha9n1,T.tha9n3,T.tha10n1,T.tha10n2,T.tha10s1,T.tha11n1,T.tha11n2, T.tha11n1t, T.tha11n2t, T.tha11t1, T.hS, T.hU, T.tha1n2, T.hV, T.bV, T.dR, T.hX, T.tha4n3, T.dS, T.tha4n1, T.tha4n2, T.tha4n2x, T.tha7t1, T.dT, T.i1, T.tha1n1, T.i6, T.i8, T.dW, T.ia ,T.tha4s1, T.i7, T.ig, T.tha9n2, T.tha9n2t, T.ij,T.tha1s1, T.tha9s1, T.hW, T.ik, T.thb3n1, T.il, T.tha5n3, T.tha6s1t,T.tha6s1, T.tha11s1,T.tha2s1, T.dM, T.tha5n2, T.tha5s1, T.tha7s1, T.hO, T.dc, T.hQ, T.i_, T.bI, T.i2, T.i4, T.ie, T.aK, T.bm, T.bn, T.hT, T.dY, T.ic, T.tigerAttack, T.tigerCheckHP, T.tigerIceAttack, T.tigerBlastPunch, T.tigerBlade, T.tigerRecover, T.tigerFastPunch, T.tigerWindAttack, T.tigerBlastKick, T.darkRecover, T.darkFastAttack, T.darkIron, T.darkHaste, T.darkLock, T.darkDemonSword, T.darkAttack, T.hellFireAttack, T.hellWindAttack, T.hellCutter, T.hellBehead, T.hellCheckHP])
         s(T.M, [T.bf, T.co, T.dj ,T.sl , T.cG, T.aN, T.hz, T.darkHasteRun, T.darkSuperUpgrade])
         s(T.p, [T.dt, T.aQ, T.ii, T.h0, T.iT])
         s(T.w, [T.dC, T.av, T.cA, T.hc, T.hj, T.hk, T.he, T.cy])
         s(T.D, [T.cg, T.dF, T.el])
         s(T.J, [T.dE, T.fire, T.ay])
-        s(T.av, [T.hh,T.hha4n2, T.hha7t1, T.hha11t1 ,T.hha9n2, T.hi, T.ho])
+        s(T.av, [T.hh,T.hha4n2, T.hha7t1, T.hha11t1 ,T.hha9n2, T.hi,T.hhb3n1 T.ho])
         s(T.cA, [T.eY, T.eZ, T.f_, T.f0, T.d7, T.d8, T.f1, T.f2, T.bA, T.f4, T.f6, T.tigershark, T.dark, T.hell, T.yuri2, T.yuriy, T.megia, T.testa, T.rumia, T.daiyousei, T.cirno , T.hong , T.testa , T.koakuma , T.patchouli , T.sakuya, T.reimu, T.marisa, T.remilia, T.flandre, T.rin, T.letty, T.chen, T.alice, T.lilywhite, T.phantom, T.youmu, T.yuyuko, T.ran, T.yukari, T.nue])
         t(T.hg, T.cy)
         t(T.f3, T.bA)
@@ -26376,7 +26562,7 @@ C.flandre = H.a(u([30, 26, 24, 25, -21, 20, 1, 791]), [P.j])
 C.rin = H.a(u([ -40, 934, 6, 943, -82, 908, 9 , 723]), [P.j])
 C.letty = H.a(u([-4, 30, 22, 17, 33, 19, 40, 400]), [P.j])
 C.chen = H.a(u([12, 15, 30, 20, 0, 11, 14, 524]), [P.j])
-C.alice = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.alice = H.a(u([0, 14, -2, 1, 40, 8, 70, 500]), [P.j])
 C.lilywhite = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.phantom = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.youmu = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
