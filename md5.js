@@ -19781,13 +19781,14 @@ d.a.push(T.e("[0]陷入[时停]", o, null, null, r, 1, 1000, 100))
         aX: function(a, b, c, d) {
             var u = this
               , t = u.fr
+			b.fx =100000
+			b.fr =100000
             if (t > 0) {
                 u.fr = 0
                 if (!u.aP)
                     u.bf(t, null, c, d)
             }
-			b.fx =100000
-			b.fr =100000
+			
             u.a5.C()
             return !1
         }
