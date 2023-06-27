@@ -19138,10 +19138,11 @@ n.r.bf(n.r.fr, null, c, d)
         },
         ay: function(a, b, c, d) {
 		    d.a.push(T.ap("[0]：[1]！", this.af.r, this.af.r.dolla))
-            if(this.fr < 1){			
+            d.a.push(T.ap("a[1]a", this.r, this.r.fr))		
             this.af.r.dolla = 0    
-			}
-            d.a.push(T.ap("[0]：[1]！", this.af.r, this.af.r.dolla))		
+			
+            d.a.push(T.ap("[0]：[1]！", this.af.r, this.af.r.dolla))
+            d.a.push(T.ap("a[1]a", this.r, this.fr))			
         },
 		
     }
