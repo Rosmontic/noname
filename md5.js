@@ -19600,6 +19600,7 @@ t: function(a, b, c, d) {
 if (o.fr > 0 && o.e != "sakuya@!" && o.e != "remilia@!" ) {
 d.a.push($.v())
 o.j = o.j - 8192 - o.cx*10
+this.j = this.j + 2048
 d.a.push(T.e("[0]陷入[时停]", o, null, null, r, 1, 1000, 100))
 
 
@@ -19776,19 +19777,16 @@ d.a.push(T.e("[0]陷入[时停]", o, null, null, r, 1, 1000, 100))
         ay: function(a, b, c, d) {
             this.aP = !0
             this.af.r.aA(C.b.v(a, 2), b, T.a3(), c, d)
-			d.a.push(T.ap("[0]：！", this.af.r, this.fy))
             this.aP = !1
         },
         aX: function(a, b, c, d) {
             var u = this
               , t = u.fr
-			
             if (t > 0) {
                 u.fr = 0
                 if (!u.aP)
                     u.bf(t, null, c, d)
             }
-			
             u.a5.C()
             return !1
         }
@@ -20586,7 +20584,7 @@ o.a0(p, !1, this.r, T.a3(), c, d)
                     
                 }
 		q.push($.v())
-        this.r.j = this.r.j + 1024
+        this.j = this.j + 1024
 		q.push(T.e("[0]的行动提前了", s, null, null, r, 1, 1000, 100))
         }
 }
@@ -20629,7 +20627,7 @@ o.a0(p, !1, this.r, T.a3(), c, d)
 }
 }		
         q.push($.v())
-        this.r.j = this.r.j + 4096
+        this.j = this.j + 4096
 		q.push(T.e("[0]的行动提前了", s, null, null, r, 1, 1000, 100))
         }
 }
@@ -22316,9 +22314,6 @@ T.alice.prototype = {
         t.r = this
         this.k2 = t
         t = this.id
-		u = new T.ik()
-        u.f = 100
-        t.push(u)
 		
         
         
@@ -24985,9 +24980,8 @@ T.i9m.prototype = {
     		w = (c.m() & 7)	
             if(r.r.cat == 0 && v == 0)
 			{
-			r.r.cx = 2*r.r.cx
-			r.r.cy = 2*r.r.cy
-			r.r.go = 2*r.r.go
+			r.r.cx = 2.1*r.r.cx
+			r.r.cy = 2.1*r.r.cy
 			d.a.push(T.e("[0][化猫]", this.r, this.r, q, q, 60, 1500, 100))
             r.r.cat = 1
 			
@@ -24997,8 +24991,7 @@ T.i9m.prototype = {
 			{
 			r.r.cx = r.r.cx / 2
 			r.r.cy = r.r.cy / 2
-			r.r.go = r.r.go / 2
-			d.a.push(T.e("[0]变回人形", this.r, this.r, q, q, 60, 1500, 100))
+			d.a.push(T.e("[0]变回人", this.r, this.r, q, q, 60, 1500, 100))
             r.r.cat = 0
 			return a
 			}
@@ -26383,7 +26376,7 @@ C.flandre = H.a(u([30, 26, 24, 25, -21, 20, 1, 791]), [P.j])
 C.rin = H.a(u([ -40, 934, 6, 943, -82, 908, 9 , 723]), [P.j])
 C.letty = H.a(u([-4, 30, 22, 17, 33, 19, 40, 400]), [P.j])
 C.chen = H.a(u([12, 15, 30, 20, 0, 11, 14, 524]), [P.j])
-C.alice = H.a(u([0, 14, -2, 1, 40, 8, 70, 500]), [P.j])
+C.alice = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.lilywhite = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.phantom = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.youmu = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
