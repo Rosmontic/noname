@@ -19635,7 +19635,7 @@ u[6] = t[6]*10
 			d.db = 70
 			d.dx = 70
 			d.dy = 70
-			d.r.x.aU(d.fr)
+            c.r.x.aU(d)
             u.push(T.e("召唤出[1]", c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
 			this.r.dolla = 1
         
