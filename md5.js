@@ -19399,22 +19399,6 @@ n.r.bf(n.r.fr, null, c, d)
             u[7] = C.d.v(u[7], 1)
         }
     }
-	T.hha11t1.prototype = {
-        gaj: function() {
-            return this.af.r
-        },
-        aa: function() {
-            var u = new T.tha11n1()
-            u.r = this
-            this.k2 = u
-        },
-        aR: function() {
-            this.bv()
-            var u = this.u
-            u[7] = C.d.v(u[7], 1)
-			this.id.push(new T.tha11n2)
-        }
-    }
 	T.hhb3n1.prototype = {
         gaj: function() {
             return this.af.r
@@ -20001,14 +19985,14 @@ u[6] = t[6]*10
             d.x = s.x
             s.I.i(0, d.a5)
             d.av()
-			d.fx = C.d.Z(this.r.fx *0.64)
-			d.fr = C.d.Z(this.r.fr *0.64)
-			d.Q =  C.d.Z(this.r.Q  *0.64)
-			d.ch = C.d.Z(this.r.ch *0.64)
-			d.cx = C.d.Z(this.r.cx *0.64) 
-			d.cy = C.d.Z(this.r.cx *0.64) 
-			d.db = C.d.Z(this.r.db *0.64)
-			d.dx = C.d.Z(this.r.dx *0.64)
+			d.fx = C.d.Z(this.r.fx *0.6)
+			d.fr = C.d.Z(this.r.fr *0.6)
+			d.Q =  C.d.Z(this.r.Q *0.6)
+			d.ch = C.d.Z(this.r.ch *0.6)
+			d.cx = C.d.Z(this.r.cx *0.6) 
+			d.cy = C.d.Z(this.r.cx *0.6) 
+			d.db = C.d.Z(this.r.db *0.6)
+			d.dx = C.d.Z(this.r.dx *0.6)
 			d.dy = this.r.dy
             d.j = - 1024
             c.r.x.aU(d)
@@ -23428,16 +23412,16 @@ T.alice.prototype = {
         this.k2 = t
         t = this.id
 		u = new T.thb3n1()
-        u.f = 25
+        u.f = 26
         t.push(u)
 		u = new T.thb3n2()
         u.f = 32
         t.push(u)
 		u = new T.thb3n3()
-        u.f = 25
+        u.f = 27
         t.push(u)
 		u = new T.thb3n4()
-        u.f = 33
+        u.f = 32
         t.push(u)
 		u = new T.thb3n5()
         u.f = 50
