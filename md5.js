@@ -17557,21 +17557,44 @@ t.a0(0.8*s, !0, u.r, T.a3(), c, d)
 }
 T.thb3t4.prototype = {
     t: function(a, b, c, d) {
-        var u = this
+        var s, u = this
         t = a[0].a
-s = T.u(u.r, !1, c)
-d.a.push(T.e("[0]使用[「急速激光」]", u.r, t, null, null, 1, 1000, 100))
-t.bL(1.1*s, !0, u.r, T.a3(), c, d)     
+d.a.push(T.e("[0]使用[「命之型」]", u.r, t, null, null, 1, 1000, 100))
+s = u.r.fr
+u.r.fr = u.r.fx
+d.a.push(T.e"[1]回复所有生命", u.r, T.a1(u.r, s), null, null, 0, 1000, 100))
     }
 }
 T.thb3t5.prototype = {
+    a8: function(a, b, c) {
+            var u = this.bX(a, b, c, !0)
+            return a.r1.h(0, $.aC()) != null ? u / 2 : u
+        },
     t: function(a, b, c, d) {
-        var u = this
-        t = a[0].a
-s = T.u(u.r, !1, c)
-d.a.push(T.e("[0]使用[「急速激光」]", u.r, t, null, null, 1, 1000, 100))
-t.bL(1.1*s, !0, u.r, T.a3(), c, d)     
-    }
+            var u, t, s = this, r = null, q = a[0].a, p = d.a
+            p.push(T.e("[0]使用[「霭之阵」]", s.r, q, r, r, 1, 1000, 100))
+            if (!q.a6($.aC(), c))
+                u = q.fr > 0 && !q.A && T.bd(s.r.db, q.dx, c)
+            else
+                u = !0
+            if (u) {
+                p.push(T.e(O.c("vVob"), q, s.r, r, r, 20, 1000, 100))
+                return
+            }
+            q.j = q.j - (q.cx + 64)
+            u = q.r1
+            t = H.o(u.h(0, $.aC()), "$icG")
+            if (t == null) {
+                t = new T.cG(q)
+                t.y = new T.ay(t)
+                u.k(0, $.aC(), t)
+                q.r2.i(0, t)
+                q.x1.i(0, t.y)
+                q.E()
+            } else
+                t.z += 2
+            p.push(T.e(C.c.K(O.c("clnM"), $.nk()), s.r, q, r, r, 60, 1000, 100))
+        }
 }
 T.thb3t6.prototype = {
     t: function(a, b, c, d) {
