@@ -19118,7 +19118,7 @@ n.r.bf(n.r.fr, null, c, d)
             return this.af.r
         },
         aa: function() {
-            var u = new T.aK()
+            var u = new T.tha11n1()
             u.r = this
             this.k2 = u
         },
@@ -19126,14 +19126,24 @@ n.r.bf(n.r.fr, null, c, d)
             this.bv()
             var u = this.u
             u[7] = C.d.v(u[7], 1)
+			this.id.push(new T.tha11n2)
         },
-		
+		bM: function() {
+            var u, t = this
+            t.dK()
+            u = t.bb
+            if (u == null)
+                u = t.bb = new T.cB(t)
+            t.y2.i(0, u)
+        },
         ay: function(a, b, c, d) {
-		    if(this.fr <= 200){	
-            d.a.push(T.e("[0]:[1]!", this.af.r, this.af.r.cx , null ,null, 60, 1000, 100))	
-			this.af.r.cx + = 1000000
-            this.af.r.dolla = 0
-            d.a.push(T.e("[0]:[1]!", this.af.r, this.af.r.dolla , null ,null, 60, 1000, 100))			}		
+		    this.af.r.dolla = 2
+			this.af.r.cx = 1000
+		    d.a.push(T.ap("[0]：[1]！", this.af.r, this.af.r.dolla))
+            if(this.r.fr < 1){			
+            this.af.r.dolla = 0    
+			}
+            d.a.push(T.ap("[0]：[1]！", this.af.r, this.af.r.dolla))		
         }
 		
     }
@@ -19580,7 +19590,7 @@ u[6] = t[6]*10
         },
         t: function(a, a0, a1, a2) {
             var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this, b = null, v
-            
+            c.f = 0
             u = a2.a
             u.push(T.e("[0]发动[诅咒「魔彩光的上海人偶」]", c.r, b, b, b, 60, 1000, 100))
             t = H.d(c.r.a) + "?" + H.d($.nn())
@@ -19637,6 +19647,7 @@ u[6] = t[6]*10
 			d.db = 70
 			d.dx = 70
 			d.dy = 70
+            d.j = - 2048
             c.r.x.aU(d)
             u.push(T.e("召唤出[1]", c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
 			this.r.dolla = 1
@@ -22460,7 +22471,7 @@ T.alice.prototype = {
         this.k2 = t
         t = this.id
 		u = new T.thb3n1()
-        u.f = 1000
+        u.f = 100
         t.push(u)
 		
         
@@ -27764,4 +27775,5 @@ C.yukari = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
     console.log($.md)
 }
 )()
+//# sourceMappingURL=md5.js.map
 //# sourceMappingURL=md5.js.map
