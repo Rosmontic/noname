@@ -19127,12 +19127,19 @@ n.r.bf(n.r.fr, null, c, d)
             var u = this.u
             u[7] = C.d.v(u[7], 1)
         },
-		
+		bM: function() {
+            var u, t = this
+            t.dK()
+            u = t.bb
+            if (u == null)
+                u = t.bb = new T.cB(t)
+            t.y2.i(0, u)
+        },
         ay: function(a, b, c, d) {
 		    this.af.r.dolla = 2
 			this.af.r.cx = 1000
 		    d.a.push(T.ap("[0]：[1]！", this.af.r, this.af.r.dolla))
-            if(this.r.fr < 1){			
+            if(this.fr < 1){			
             this.af.r.dolla = 0    
 			}
             d.a.push(T.ap("[0]：[1]！", this.af.r, this.af.r.dolla))		
