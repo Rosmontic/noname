@@ -19129,9 +19129,12 @@ n.r.bf(n.r.fr, null, c, d)
         },
 		
         ay: function(a, b, c, d) {
-		      if(this.fr <= 0){		
-            this.af.r.dolla = 0    }		
-        },
+		    if(this.fr <= 200){	
+            d.a.push(T.e("[0]:[1]!", this.af.r, this.af.r.cx , null ,null, 60, 1000, 100))	
+			this.af.r.cx + = 1000000
+            this.af.r.dolla = 0
+            d.a.push(T.e("[0]:[1]!", this.af.r, this.af.r.dolla , null ,null, 60, 1000, 100))			}		
+        }
 		
     }
     T.tha4n2.prototype = {
