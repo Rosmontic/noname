@@ -19567,11 +19567,7 @@ u[6] = t[6]*10
         $iC: 1
     }
 	T.thb3n1.prototype = {
-        ar: function(a, b) {
-                if (this.r.dolla == 1){
-                    return !1}
-            return this.aS(a, b)
-        },
+        
         a9: function(a, b, c) {
             return H.a([], [T.Z])
         },
