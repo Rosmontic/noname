@@ -20604,7 +20604,7 @@ u[6] = t[6]*10
     }
 	T.thb3n8.prototype = {
         ar: function(a, b) {
-                if (this.r.dollg == 1){
+                if (this.r.dollh == 1){
                     return !1}
             return this.aS(a, b)
         },
@@ -20672,7 +20672,7 @@ u[6] = t[6]*10
             d.j = - 2048
             c.r.x.aU(d)
             u.push(T.e("召唤出[1]", c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
-			this.r.dollg = 1
+			this.r.dollh = 1
         
 		    
 		}
@@ -23508,10 +23508,10 @@ T.alice.prototype = {
         u.f = 50
         t.push(u)
 		u = new T.thb3n6()
-        u.f = 90
+        u.f = 78
         t.push(u)
 		u = new T.thb3n7()
-        u.f = 140
+        u.f = 120
         t.push(u)
 		u = new T.thb3n8()
         u.f = 400
