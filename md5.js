@@ -9622,6 +9622,13 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
             _.go = 1
             _.id = e
             _.dolla = 0
+			_.dollb = 0
+			_.dollc = 0
+			_.dolld = 0
+			_.dolle = 0
+			_.dollf = 0
+			_.dollg = 0
+			_.dollh = 0
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -19463,37 +19470,7 @@ n.r.bf(n.r.fr, null, c, d)
         ay: function(a, b, c, d) {
 		    
             if(this.fr <= 0){			
-            this.af.r.dolla = 0    
-			}		
-        }
-		
-    }
-	T.hhb3n2.prototype = {
-        gaj: function() {
-            return this.af.r
-        },
-        aa: function() {
-            var u = new T.aK()
-            u.r = this
-            this.k2 = u
-        },
-        aR: function() {
-            this.bv()
-            var u = this.u
-            u[7] = C.d.v(u[7], 1)
-        },
-		bM: function() {
-            var u, t = this
-            t.dK()
-            u = t.bb
-            if (u == null)
-                u = t.bb = new T.cB(t)
-            t.y2.i(0, u)
-        },
-        ay: function(a, b, c, d) {
-		    
-            if(this.fr <= 0){			
-            this.af.r.dolla = 0    
+            this.af.r.dollb = 0    
 			}		
         }
 		
@@ -19523,7 +19500,7 @@ n.r.bf(n.r.fr, null, c, d)
         ay: function(a, b, c, d) {
 		    
             if(this.fr <= 0){			
-            this.af.r.dolla = 0    
+            this.af.r.dollc = 0    
 			}		
         }
 		
@@ -19553,7 +19530,7 @@ n.r.bf(n.r.fr, null, c, d)
         ay: function(a, b, c, d) {
 		    
             if(this.fr <= 0){			
-            this.af.r.dolla = 0    
+            this.af.r.dolld = 0    
 			}		
         }
 		
@@ -19583,7 +19560,7 @@ n.r.bf(n.r.fr, null, c, d)
         ay: function(a, b, c, d) {
 		    
             if(this.fr <= 0){			
-            this.af.r.dolla = 0    
+            this.af.r.dolle = 0    
 			}		
         }
 		
@@ -19613,7 +19590,7 @@ n.r.bf(n.r.fr, null, c, d)
         ay: function(a, b, c, d) {
 		    
             if(this.fr <= 0){			
-            this.af.r.dolla = 0    
+            this.af.r.dollf = 0    
 			}		
         }
 		
@@ -19643,7 +19620,7 @@ n.r.bf(n.r.fr, null, c, d)
         ay: function(a, b, c, d) {
 		    
             if(this.fr <= 0){			
-            this.af.r.dolla = 0    
+            this.af.r.dollg = 0    
 			}		
         }
 		
@@ -19673,7 +19650,7 @@ n.r.bf(n.r.fr, null, c, d)
         ay: function(a, b, c, d) {
 		    
             if(this.fr <= 0){			
-            this.af.r.dolla = 0    
+            this.af.r.dollh = 0    
 			}		
         }
 		
@@ -20187,7 +20164,7 @@ u[6] = t[6]*10
     }
 	T.thb3n2.prototype = {
         ar: function(a, b) {
-                if (this.r.dolla == 1){
+                if (this.r.dollb == 1){
                     return !1}
             return this.aS(a, b)
         },
@@ -20255,14 +20232,14 @@ u[6] = t[6]*10
             d.j = - 2048
             c.r.x.aU(d)
             u.push(T.e("召唤出[1]", c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
-			this.r.dolla = 1
+			this.r.dollb = 1
         
 		    
 		}
     }
 	T.thb3n3.prototype = {
         ar: function(a, b) {
-                if (this.r.dolla == 1){
+                if (this.r.dollc == 1){
                     return !1}
             return this.aS(a, b)
         },
@@ -20330,14 +20307,14 @@ u[6] = t[6]*10
             d.j = - 2048
             c.r.x.aU(d)
             u.push(T.e("召唤出[1]", c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
-			this.r.dolla = 1
+			this.r.dollc = 1
         
 		    
 		}
     }
 	T.thb3n4.prototype = {
         ar: function(a, b) {
-                if (this.r.dolla == 1){
+                if (this.r.dolld == 1){
                     return !1}
             return this.aS(a, b)
         },
@@ -20405,14 +20382,14 @@ u[6] = t[6]*10
             d.j = - 2048
             c.r.x.aU(d)
             u.push(T.e("召唤出[1]", c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
-			this.r.dolla = 1
+			this.r.dolld = 1
         
 		    
 		}
     }
 	T.thb3n5.prototype = {
         ar: function(a, b) {
-                if (this.r.dolla == 1){
+                if (this.r.dolle == 1){
                     return !1}
             return this.aS(a, b)
         },
@@ -20480,14 +20457,14 @@ u[6] = t[6]*10
             d.j = - 2048
             c.r.x.aU(d)
             u.push(T.e("召唤出[1]", c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
-			this.r.dolla = 1
+			this.r.dolle = 1
         
 		    
 		}
     }
 	T.thb3n6.prototype = {
         ar: function(a, b) {
-                if (this.r.dolla == 1){
+                if (this.r.dollf == 1){
                     return !1}
             return this.aS(a, b)
         },
@@ -20555,14 +20532,14 @@ u[6] = t[6]*10
             d.j = - 2048
             c.r.x.aU(d)
             u.push(T.e("召唤出[1]", c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
-			this.r.dolla = 1
+			this.r.dollf = 1
         
 		    
 		}
     }
 	T.thb3n7.prototype = {
         ar: function(a, b) {
-                if (this.r.dolla == 1){
+                if (this.r.dollg == 1){
                     return !1}
             return this.aS(a, b)
         },
@@ -20630,7 +20607,7 @@ u[6] = t[6]*10
             d.j = - 2048
             c.r.x.aU(d)
             u.push(T.e("召唤出[1]", c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
-			this.r.dolla = 1
+			this.r.dollg = 1
         
 		    
 		}
@@ -23451,25 +23428,25 @@ T.alice.prototype = {
         this.k2 = t
         t = this.id
 		u = new T.thb3n1()
-        u.f = 20
+        u.f = 25
         t.push(u)
 		u = new T.thb3n2()
-        u.f = 25
+        u.f = 32
         t.push(u)
 		u = new T.thb3n3()
-        u.f = 20
-        t.push(u)
-		u = new T.thb3n4()
         u.f = 25
         t.push(u)
-		u = new T.thb3n5()
+		u = new T.thb3n4()
         u.f = 33
         t.push(u)
-		u = new T.thb3n6()
+		u = new T.thb3n5()
         u.f = 50
         t.push(u)
-		u = new T.thb3n7()
+		u = new T.thb3n6()
         u.f = 100
+        t.push(u)
+		u = new T.thb3n7()
+        u.f = 200
         t.push(u)
 		
         
