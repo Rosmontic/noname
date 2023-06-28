@@ -19580,7 +19580,7 @@ u[6] = t[6]*10
             var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this, b = null, v           
             u = a2.a	
             u.push(T.e("[0]发动[诅咒「魔彩光的上海人偶」]", c.r, b, b, b, 60, 1000, 100))
-			v = e.fr
+			v = c.fr
             if (v == null) {
             t = H.d(c.r.a) + "?" + H.d($.nn())
             s = c.r
