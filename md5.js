@@ -19568,20 +19568,18 @@ u[6] = t[6]*10
     }
 	T.thb3n1.prototype = {
         ar: function(a, b) {
-                if (this.r.dolla == 2){
+                if (this.r.dolla == 1){
                     return !1}
-            u = this.fr
-            return (u == null || u.fr <= 0) && this.aS(a, b)
+            return this.aS(a, b)
         },
         a9: function(a, b, c) {
             return H.a([], [T.Z])
         },
         t: function(a, a0, a1, a2) {
-            var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this, b = null, v           
-            u = a2.a	
+            var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this, b = null, v
+            
+            u = a2.a
             u.push(T.e("[0]发动[诅咒「魔彩光的上海人偶」]", c.r, b, b, b, 60, 1000, 100))
-			v = c.fr
-            if (v == null) {
             t = H.d(c.r.a) + "?" + H.d($.nn())
             s = c.r
             r = s.b
@@ -19626,12 +19624,7 @@ u[6] = t[6]*10
             s = c.r
             d.x = s.x
             s.I.i(0, d.a5)
-            d.av()}
-			else {
-                v.bM()
-                v.bm()
-                v.cj()
-            }
+            d.av()
 			d.fx = 210
 			d.fr = 210
 			d.Q =  70
@@ -19644,7 +19637,7 @@ u[6] = t[6]*10
             c.r.x.aU(d)
             u.push(T.e("召唤出[1]", c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
 			this.r.dolla = 1
-            
+        
 		    
 		}
     }
