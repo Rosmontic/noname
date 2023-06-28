@@ -19567,7 +19567,12 @@ u[6] = t[6]*10
         $iC: 1
     }
 	T.thb3n1.prototype = {
-        
+        ar: function(a, b) {
+                if (this.r.dolla == 2){
+                    return !1}
+            u = this.fr
+            return (u == null || u.fr <= 0) && this.aS(a, b)
+        },
         a9: function(a, b, c) {
             return H.a([], [T.Z])
         },
@@ -19630,7 +19635,7 @@ u[6] = t[6]*10
 			d.db = 70
 			d.dx = 70
 			d.dy = 70
-            c.r.x.aU(d)
+			d.r.x.aU(d.fr)
             u.push(T.e("召唤出[1]", c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
 			this.r.dolla = 1
         
