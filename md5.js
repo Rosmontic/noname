@@ -17512,7 +17512,7 @@ T.thb3t1.prototype = {
         t = a[0].a
 s = T.u(u.r, !1, c)
 d.a.push(T.e("[0]使用[「急速激光」]", u.r, t, null, null, 1, 1000, 100))
-t.bl(1.1*s, !0, u.r, T.a3(), c, d)     
+t.bL(1.1*s, !0, u.r, T.a3(), c, d)     
     }
 }
 T.thb3t2.prototype = {
@@ -17561,7 +17561,7 @@ T.thb3t4.prototype = {
         t = a[0].a
 s = T.u(u.r, !1, c)
 d.a.push(T.e("[0]使用[「急速激光」]", u.r, t, null, null, 1, 1000, 100))
-t.bl(1.1*s, !0, u.r, T.a3(), c, d)     
+t.bL(1.1*s, !0, u.r, T.a3(), c, d)     
     }
 }
 T.thb3t5.prototype = {
@@ -17570,7 +17570,7 @@ T.thb3t5.prototype = {
         t = a[0].a
 s = T.u(u.r, !1, c)
 d.a.push(T.e("[0]使用[「急速激光」]", u.r, t, null, null, 1, 1000, 100))
-t.bl(1.1*s, !0, u.r, T.a3(), c, d)     
+t.bL(1.1*s, !0, u.r, T.a3(), c, d)     
     }
 }
 T.thb3t6.prototype = {
@@ -17579,7 +17579,7 @@ T.thb3t6.prototype = {
         t = a[0].a
 s = T.u(u.r, !1, c)
 d.a.push(T.e("[0]使用[「急速激光」]", u.r, t, null, null, 1, 1000, 100))
-t.bl(1.1*s, !0, u.r, T.a3(), c, d)     
+t.bL(1.1*s, !0, u.r, T.a3(), c, d)     
     }
 }
 T.thb3t7.prototype = {
@@ -17588,7 +17588,7 @@ T.thb3t7.prototype = {
         t = a[0].a
 s = T.u(u.r, !1, c)
 d.a.push(T.e("[0]使用[「急速激光」]", u.r, t, null, null, 1, 1000, 100))
-t.bl(1.1*s, !0, u.r, T.a3(), c, d)     
+t.bL(1.1*s, !0, u.r, T.a3(), c, d)     
     }
 }
 T.thb1n2.prototype = {
