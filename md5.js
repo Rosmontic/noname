@@ -20197,7 +20197,7 @@ u[6] = t[6]*10
         t: function(a, a0, a1, a2) {
             var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this, b = null, v
             u = a2.a
-            u.push(T.e("[0]发动[诅咒「魔彩光的上海人偶」]", c.r, b, b, b, 60, 1000, 100))
+            u.push(T.e("[0]发动[诅咒「上吊的蓬莱人偶」]", c.r, b, b, b, 60, 1000, 100))
             t = H.d(c.r.a) + "?" + H.d($.nn())
             s = c.r
             r = s.b
@@ -20238,7 +20238,7 @@ u[6] = t[6]*10
             d.a5 = new T.cj(d)
             d.af = c
             d.e = T.du(c.r)
-            d.r = "上海人偶"
+            d.r = "蓬莱人偶"
             s = c.r
             d.x = s.x
             s.I.i(0, d.a5)
@@ -20272,7 +20272,7 @@ u[6] = t[6]*10
         t: function(a, a0, a1, a2) {
             var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this, b = null, v
             u = a2.a
-            u.push(T.e("[0]发动[诅咒「魔彩光的上海人偶」]", c.r, b, b, b, 60, 1000, 100))
+            u.push(T.e("[0]发动[红符「红发的荷兰人偶」]", c.r, b, b, b, 60, 1000, 100))
             t = H.d(c.r.a) + "?" + H.d($.nn())
             s = c.r
             r = s.b
@@ -20313,7 +20313,7 @@ u[6] = t[6]*10
             d.a5 = new T.cj(d)
             d.af = c
             d.e = T.du(c.r)
-            d.r = "上海人偶"
+            d.r = "荷兰人偶"
             s = c.r
             d.x = s.x
             s.I.i(0, d.a5)
@@ -20347,7 +20347,7 @@ u[6] = t[6]*10
         t: function(a, a0, a1, a2) {
             var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this, b = null, v
             u = a2.a
-            u.push(T.e("[0]发动[诅咒「魔彩光的上海人偶」]", c.r, b, b, b, 60, 1000, 100))
+            u.push(T.e("[0]发动[苍符「博爱的法兰西人偶」]", c.r, b, b, b, 60, 1000, 100))
             t = H.d(c.r.a) + "?" + H.d($.nn())
             s = c.r
             r = s.b
@@ -20388,7 +20388,7 @@ u[6] = t[6]*10
             d.a5 = new T.cj(d)
             d.af = c
             d.e = T.du(c.r)
-            d.r = "上海人偶"
+            d.r = "法兰西人偶"
             s = c.r
             d.x = s.x
             s.I.i(0, d.a5)
@@ -20422,7 +20422,7 @@ u[6] = t[6]*10
         t: function(a, a0, a1, a2) {
             var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this, b = null, v
             u = a2.a
-            u.push(T.e("[0]发动[诅咒「魔彩光的上海人偶」]", c.r, b, b, b, 60, 1000, 100))
+            u.push(T.e("[0]发动[回符「轮回的西藏人偶」]", c.r, b, b, b, 60, 1000, 100))
             t = H.d(c.r.a) + "?" + H.d($.nn())
             s = c.r
             r = s.b
@@ -20463,7 +20463,7 @@ u[6] = t[6]*10
             d.a5 = new T.cj(d)
             d.af = c
             d.e = T.du(c.r)
-            d.r = "上海人偶"
+            d.r = "西藏人偶"
             s = c.r
             d.x = s.x
             s.I.i(0, d.a5)
@@ -20497,7 +20497,7 @@ u[6] = t[6]*10
         t: function(a, a0, a1, a2) {
             var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this, b = null, v
             u = a2.a
-            u.push(T.e("[0]发动[诅咒「魔彩光的上海人偶」]", c.r, b, b, b, 60, 1000, 100))
+            u.push(T.e("[0]发动[暗符「雾之伦敦人偶」]", c.r, b, b, b, 60, 1000, 100))
             t = H.d(c.r.a) + "?" + H.d($.nn())
             s = c.r
             r = s.b
@@ -20538,7 +20538,7 @@ u[6] = t[6]*10
             d.a5 = new T.cj(d)
             d.af = c
             d.e = T.du(c.r)
-            d.r = "上海人偶"
+            d.r = "伦敦人偶"
             s = c.r
             d.x = s.x
             s.I.i(0, d.a5)
@@ -20572,7 +20572,7 @@ u[6] = t[6]*10
         t: function(a, a0, a1, a2) {
             var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this, b = null, v
             u = a2.a
-            u.push(T.e("[0]发动[诅咒「魔彩光的上海人偶」]", c.r, b, b, b, 60, 1000, 100))
+            u.push(T.e("[0]发动[雅符「春之京都人偶」]", c.r, b, b, b, 60, 1000, 100))
             t = H.d(c.r.a) + "?" + H.d($.nn())
             s = c.r
             r = s.b
@@ -20613,7 +20613,7 @@ u[6] = t[6]*10
             d.a5 = new T.cj(d)
             d.af = c
             d.e = T.du(c.r)
-            d.r = "上海人偶"
+            d.r = "京都人偶"
             s = c.r
             d.x = s.x
             s.I.i(0, d.a5)
@@ -23451,7 +23451,25 @@ T.alice.prototype = {
         this.k2 = t
         t = this.id
 		u = new T.thb3n1()
-        u.f = 1000
+        u.f = 20
+        t.push(u)
+		u = new T.thb3n2()
+        u.f = 25
+        t.push(u)
+		u = new T.thb3n3()
+        u.f = 20
+        t.push(u)
+		u = new T.thb3n4()
+        u.f = 25
+        t.push(u)
+		u = new T.thb3n5()
+        u.f = 33
+        t.push(u)
+		u = new T.thb3n6()
+        u.f = 50
+        t.push(u)
+		u = new T.thb3n7()
+        u.f = 100
         t.push(u)
 		
         
