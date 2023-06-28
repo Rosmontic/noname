@@ -23496,13 +23496,13 @@ T.alice.prototype = {
         u.f = 28
         t.push(u)
 		u = new T.thb3n2()
-        u.f = 33
+        u.f = 32
         t.push(u)
 		u = new T.thb3n3()
-        u.f = 34
+        u.f = 35
         t.push(u)
 		u = new T.thb3n4()
-        u.f = 36
+        u.f = 38
         t.push(u)
 		u = new T.thb3n5()
         u.f = 50
@@ -23511,7 +23511,7 @@ T.alice.prototype = {
         u.f = 75
         t.push(u)
 		u = new T.thb3n7()
-        u.f = 110
+        u.f = 95
         t.push(u)
 		u = new T.thb3n8()
         u.f = 400
