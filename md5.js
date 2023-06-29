@@ -17550,9 +17550,9 @@ T.thb3t3.prototype = {
 s = T.u(u.r, !1, c)
 d.a.push(T.e("[0]使用[「赤之十」]", u.r, t, null, null, 1, 1000, 100))
 d.a.push($.v())
-t.a0(0.7*s, !0, u.r, T.a3(), c, d)
+t.bL(0.6*s, !0, u.r, T.a3(), c, d)
 d.a.push($.v())
-t.a0(0.8*s, !0, u.r, T.a3(), c, d)
+t.a0(0.7*s, !0, u.r, T.a3(), c, d)
     }
 }
 T.thb3t4.prototype = {
@@ -17581,7 +17581,7 @@ T.thb3t5.prototype = {
                 p.push(T.e(O.c("vVob"), q, s.r, r, r, 20, 1000, 100))
                 return
             }
-            q.j = q.j - (q.cx + 64)
+            q.j = q.j - 256
             u = q.r1
             t = H.o(u.h(0, $.aC()), "$icG")
             if (t == null) {
@@ -17597,21 +17597,42 @@ T.thb3t5.prototype = {
         }
 }
 T.thb3t6.prototype = {
-    t: function(a, b, c, d) {
-        var u = this
-        t = a[0].a
-s = T.u(u.r, !1, c)
-d.a.push(T.e("[0]使用[「急速激光」]", u.r, t, null, null, 1, 1000, 100))
-t.bL(1.1*s, !0, u.r, T.a3(), c, d)     
+        b5: function(a) {
+            return a.b1(this.r.y.f)
+        },
+        a8: function(a, b, c) {
+            var u = {}
+            if (b) {
+                u.a = a.fx - a.fr
+                a.r1.ap(0, new T.hY(u))
+                return u.a = u.a * a.L
+            }
+            return c.gbh()
+        },
+        t: function(a, b, c, d) {
+            var u, t, s, r, q = this, p = q.f
+            if (p > 8)
+               q.f = p - 1
+            u = a[0].a
+            t = 80
+            s = u.fx - u.fr
+            if (t > s)
+                t = s
+            p = d.a
+            p.push(T.e("[0]使用[「华之仪」]", q.r, u, null, null, t, 1000, 100))
+            r = u.fr
+            u.fr = r + t
+            p.push(T.e(O.c("YmSv"), q.r, T.a1(u, r), new T.aG(t), null, 0, 1000, 100))
+            u.bI(q.r, d)
+        }    
     }
-}
 T.thb3t7.prototype = {
     t: function(a, b, c, d) {
         var u = this
         t = a[0].a
 s = T.u(u.r, !1, c)
-d.a.push(T.e("[0]使用[「急速激光」]", u.r, t, null, null, 1, 1000, 100))
-t.bL(1.1*s, !0, u.r, T.a3(), c, d)     
+d.a.push(T.e("[0]使用[「垩之一」]", u.r, t, null, null, 1, 1000, 100))
+t.bL(0.65*s, !0, u.r, T.kV(), c, d)     
     }
 }
 T.thb1n2.prototype = {
