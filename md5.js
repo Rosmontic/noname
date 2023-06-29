@@ -17632,7 +17632,7 @@ T.thb3t7.prototype = {
         t = a[0].a
 s = T.u(u.r, !1, c)
 d.a.push(T.e("[0]使用[「垩之一」]", u.r, t, null, null, 1, 1000, 100))
-t.bL(0.65*s, !0, u.r, T.kV(), c, d)     
+t.a0(0.6*s, !0, u.r, T.kV(), c, d)     
     }
 }
 T.thb1n2.prototype = {
