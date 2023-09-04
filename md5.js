@@ -12449,6 +12449,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
             _.id = e
 			_.fo = 0
 			_.SRTs = 2
+			_.BARi = null
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -28205,6 +28206,38 @@ T.tha1b1.prototype = {
         this.r.y1.i(0, this)
     },
     $iD: 1
+    }	
+    T.ribbit1b1.prototype = {
+    ak: function(a, b, c, d, e) {
+        var u = a > 0 , n ,m
+		this.f = 0
+		e.a.push(T.e("[0]：[见识一下SRT的CQB技巧吧！]", this.r, null, null, null, 0, 1000, 100))
+		this.r.cy =  this.r.cy * 2
+		this.r.cx =  this.r.cx * 1.5
+		e.a.push(T.e("[0]使用[战术机动]", this.r, null, null, null, 1, 1000, 100))		
+        return u && 0
+    },
+    T: function() {
+        this.r.y1.i(0, this)
+    },
+    $iD: 1
+    }
+	
+    T.ribbit4b1.prototype = {
+    ak: function(a, b, c, d, e) {
+        var u = a > 0 , n ,m
+		n = (c.m() & 3)
+		if (n == 0)
+		{
+		e.a.push(T.e("[0]进行[反制速射]", this.r, null, null, null, 1, 1000, 100))
+		c.a0(12800, !1, this.r, T.a3(), d, e)
+		}		
+        return u && C.b.v (a, 2)
+    },
+    T: function() {
+        this.r.y1.i(0, this)
+    },
+    $iD: 1
     }
 T.baals1b2.prototype = {
     ak: function(a, b, c, d, e) {
@@ -31433,6 +31466,7 @@ T.yuzu.prototype = {
 		u =new T.ribbit1n3()
         u.f = 1500
         t.push(u)
+		t.push(new T.ribbit1b1())
 
     }, 
     bM: function() {
@@ -31463,6 +31497,7 @@ T.yuzu.prototype = {
         t.r = this
         this.k2 = t
         t = this.id
+		t.push(new T.ribbit2b1())
 
     }, 
     bM: function() {
@@ -31485,11 +31520,6 @@ T.yuzu.prototype = {
     gah: function() {
         return C.ribbit3
     },
-	E: function() {
-            this.cx *= 1500
-		    this.cy *= 2
-				
-    },
     gaQ: function() {
         return H.a([$.ai(), $.am(), $.kj()], [P.f])
     },
@@ -31509,7 +31539,7 @@ T.yuzu.prototype = {
         t.push(u)
         t.push(new T.ribbit3b1())
 
-    }, 
+    },
     bM: function() {
             var u, t = this
             t.dK()
