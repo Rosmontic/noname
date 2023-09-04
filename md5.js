@@ -31486,9 +31486,9 @@ T.yuzu.prototype = {
         return C.ribbit3
     },
 	E: function() {
-            this.go *= 1500
+            this.cx *= 1500
 		    this.cy *= 2
-				}
+				
     },
     gaQ: function() {
         return H.a([$.ai(), $.am(), $.kj()], [P.f])
