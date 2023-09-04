@@ -31486,10 +31486,8 @@ T.yuzu.prototype = {
         return C.ribbit3
     },
 	E: function() {
-            this.dL()
-            if (this.heli != null){
-                this.cx *= 1500
-				this.cy *= 2
+            this.go *= 1500
+		    this.cy *= 2
 				}
     },
     gaQ: function() {
@@ -31504,7 +31502,7 @@ T.yuzu.prototype = {
         u.f = 200
         t.push(u)
         u = new T.ribbit3n2()
-        u.f = 30
+        u.f = 300
         t.push(u)
 		u =new T.ribbit3b2()
         u.f = 100
