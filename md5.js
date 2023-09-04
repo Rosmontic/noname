@@ -28220,20 +28220,18 @@ T.tha1b1.prototype = {
     $iD: 1
     }	
     T.ribbit1b1.prototype = {
-	ar: function(a, b) {
-            if (this.r.jd > 0  )
-            { 
-                return !1
-            }
-			return this.aS(a, b)
-		},
     ak: function(a, b, c, d, e) {
+	    if (this.r.jd != 0)
+		{
+		return u && a
+		}
         var u = a > 0 , n ,m
-		this.r.jd = 1
+		this.r.jd = this.r.jd + 1
 		e.a.push(T.e("[0]：[见识一下SRT的CQB技巧吧！]", this.r, null, null, null, 0, 1000, 100))
 		this.r.cy =  this.r.cy * 2
 		this.r.cx =  this.r.cx * 1.5
-		e.a.push(T.e("[0]使用[战术机动]", this.r, null, null, null, 1, 1000, 100))		
+		e.a.push(T.e("[0]使用[战术机动]", this.r, null, null, null, 1, 1000, 100))
+        e.a.push(T.e("[0]使用[战术机动]", this.r.jd, null, null, null, 1, 1000, 100))		
         return u && 0
     },
     T: function() {
@@ -28249,7 +28247,7 @@ T.tha1b1.prototype = {
 		if (n == 0)
 		{
 		e.a.push(T.e("[0]进行[反制速射]", this.r, null, null, null, 1, 1000, 100))
-		c.a0(12800, !1, this.r, T.a3(), d, e)
+		b.a0(12800, !1, this.r, T.a3(), d, e)
 		}
         return u && C.b.v (a, 2)
     },
