@@ -28221,12 +28221,12 @@ T.tha1b1.prototype = {
     }	
     T.ribbit1b1.prototype = {
     ak: function(a, b, c, d, e) {
-	    if (this.r.jd != 0)
+	    if (this.r.jd == 1)
 		{
-		return u && a
+		return u && C.b.v (a, 1)
 		}
         var u = a > 0 , n ,m
-		this.r.jd = this.r.jd + 1
+		this.r.jd = 1
 		e.a.push(T.e("[0]：[见识一下SRT的CQB技巧吧！]", this.r, null, null, null, 0, 1000, 100))
 		this.r.cy =  this.r.cy * 2
 		this.r.cx =  this.r.cx * 1.5
