@@ -28231,7 +28231,6 @@ T.tha1b1.prototype = {
 		this.r.cy =  this.r.cy * 2
 		this.r.cx =  this.r.cx * 1.5
 		e.a.push(T.e("[0]使用[战术机动]", this.r, null, null, null, 1, 1000, 100))
-        e.a.push(T.e("[0]使用[战术机动]", this.r.jd, null, null, null, 1, 1000, 100))		
         return u && 0
     },
     T: function() {
