@@ -28185,6 +28185,7 @@ T.tha1b1.prototype = {
 		b.a0(25600, !1 , this.r, T.a3(), d, e)
 		this.r.fr = 0
 		this.r.bf(this.r.fr, null, d, e)
+		bug = tnt
         return u && 0
     },
     T: function() {
