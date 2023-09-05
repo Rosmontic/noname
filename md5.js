@@ -34696,7 +34696,7 @@ dk: function(a, b, c, d, e, f, g) {
         },
         $iG: 1
     }
-	T.ribbit4b2.prototype = {s
+	T.ribbit4b2.prototype = {
         aK: function(a, b, c, d) {
             var u, t, s, r = this
 			d.a.push(T.e("[1]：Ribbit4...隐蔽中...", this.r , this.r, null, null, 0, 1000, 100))
