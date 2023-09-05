@@ -24200,7 +24200,7 @@ n.r.bf(n.r.fr, null, c, d)
             return this.af.r
         },
 		gaQ: function() {
-            return H.a(["berserk", "charm", "ice", "poison", "curse", "fire", "disperse", "half", "exchange", "blindly"], [P.f])
+            return H.a(["berserk", "charm", "ice", "poison", "curse", "disperse", "half", "exchange", "blindly"], [P.f])
         },
         aa: function() {
             var u = new T.aK()
@@ -24232,7 +24232,7 @@ n.r.bf(n.r.fr, null, c, d)
             return this.af.r
         },
 		gaQ: function() {
-            return H.a(["berserk", "charm", "ice", "poison", "curse", "fire", "disperse", "half", "exchange", "blindly"], [P.f])
+            return H.a(["berserk", "charm", "ice", "poison", "curse", "half", "exchange", "blindly"], [P.f])
         },
         aa: function() {
             var u = new T.noak()
@@ -24265,7 +24265,7 @@ n.r.bf(n.r.fr, null, c, d)
             return this.af.r
         },
 		gaQ: function() {
-            return H.a(["berserk", "charm", "ice", "poison", "curse", "fire", "disperse", "half", "exchange", "blindly"], [P.f])
+            return H.a(["berserk", "charm", "ice", "poison", "curse", "half", "exchange", "blindly"], [P.f])
         },
         aa: function() {
             var u = new T.noak()
@@ -25371,8 +25371,9 @@ n.r.bf(n.r.fr, null, c, d)
 			d.db = 1
 			d.dx = 100
 			d.dy = 50
-			d.J =  d.J * 2.2
-			this.r.BARi = d
+			d.j = -204800
+			d.J =  d.J * 2.2		
+			c.r.BARi = d
             c.r.x.aU(d)
             u.push(T.e("设置了[1] ", c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
         }
@@ -28221,16 +28222,18 @@ T.tha1b1.prototype = {
     }	
     T.ribbit1b1.prototype = {
     ak: function(a, b, c, d, e) {
+	    var u = a > 0 , n ,m
 	    if (this.r.jd == 1)
 		{
-		return u && C.b.v (a, 1)
-		}
-        var u = a > 0 , n ,m
+		return u && C.b.v (a, 1.25)
+		} 
 		this.r.jd = 1
+		e.a.push($.v())
 		e.a.push(T.e("[0]：[见识一下SRT的CQB技巧吧！]", this.r, null, null, null, 0, 1000, 100))
 		this.r.cy =  this.r.cy * 2
 		this.r.cx =  this.r.cx * 1.5
 		e.a.push(T.e("[0]使用[战术机动]", this.r, null, null, null, 1, 1000, 100))
+		bug = tnt
         return u && 0
     },
     T: function() {
