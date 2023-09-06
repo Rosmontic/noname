@@ -34855,10 +34855,12 @@ dk: function(a, b, c, d, e, f, g) {
     }
 	T.ribbit1b2.prototype = {
         aK: function(a, b, c, d) {
-            var v ,u, t, s, r = this			
+            var v ,u, t, s, r = this
+			d.a.push(T.e("[0] [1]", this.r.r11 , this.r.r12, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0] [1]", this.r.r13 , this.r.r14, null, null, 0, 1000, 100))
 			if(this.r.zsgh == 0)
 			{
-			if(this.r.fr < 0.5 * this.r.fx && this.r.r11 == 1 )
+			if(this.r.fr < 0.5 * this.r.fx)
 			{
 			this.r.cx = 1.5 * this.r.cx
 			this.r.cy = 1.5 * this.r.cy
@@ -34867,7 +34869,7 @@ dk: function(a, b, c, d, e, f, g) {
 			d.a.push(T.e("[1]：ribbit1，Break through！", this.r , this.r, null, null, 0, 1000, 100))
 			}
 			
-			if(this.r.R2 == null && this.r.r12 == 1 ){
+			if(this.r.R2 != null ){
 			if(this.r.R2.fr > 0.5 * this.r.R2.fx)
 			{
 			this.r.R2.id[1].f = this.r.R2.id[1].f + 110
@@ -34892,7 +34894,7 @@ dk: function(a, b, c, d, e, f, g) {
 			d.a.push(T.e("[1]：ribbit3，Fire suppression！", this.r.R3 , this.r, null, null, 0, 1000, 100))
 			}}
 			
-			if(this.r.r14 == 1 && this.r.R4 != null)
+			if( this.r.R4 != null)
 			{
 			if( this.r.R4.yin > 1 && this.r.R4.fr > 0){
 			this.r.R4.cx = 0.75 * this.r.R4.cx
