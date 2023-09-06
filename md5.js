@@ -22357,39 +22357,38 @@ T.ribbit3n2.prototype = {
 
 T.ribbit3n3.prototype = {
     ar: function(a, b) {
-        if (this.r.heli != null || this.r.dan = 0)
-        {
-		    if (this.r.heli == null){
-		    this.r.dan = this.r.dan + 4		
-			}
+        if (this.r.heli == null)
+        { 
             return !1
-        } 
-            return this.aS(a, b)
-    },
-    gb3: function() {
+        }
+    
+    return this.aS(a, b)
+},
+            gb3: function() {
                 return 4
             },
-    gb4: function() {
+            gb4: function() {
                 return 4
             },
-    t: function(a, b, c, d) {
-        var u, t, s, r, q, p, o, n = H.a([], [T.aU])
-        for (u = 0; u < a.length; ++u)
-            n.push(a[u].a)
-        s = this.r
-        r = H.a(n.slice(0), [H.n(n, 0)])
-        q = d.a
-		q.push(T.e("[0]；[诶嘿嘿...全弹发射]", s, null, null, r, 1, 1000, 100))
-        p = T.u(this.r, !0, c) * C.d.v(this.r.dan, 2)
-		this.r.dan = 0
-        for (u = 0; u < n.length; ++u) {
-            o = n[u]
-            if (o.fr > 0 ) {
-            q.push($.v())
-            o.a0(p, !1, this.r, T.a3(), c, d)
+            t: function(a, b, c, d) {
+                var u, t, s, r, q, p, o, n = H.a([], [T.aU])
+                for (u = 0; u < a.length; ++u)
+                    n.push(a[u].a)
+                t = "[0]使用[钢铁之雨]"
+                s = this.r
+                r = H.a(n.slice(0), [H.n(n, 0)])
+                q = d.a
+				q.push(T.e("[0]；[呼...呼...我要忍不住了]", s, null, null, r, 1, 1000, 100))
+                q.push(T.e(t, s, null, null, r, 1, 1000, 100))
+                p = T.u(this.r, !0, c) * 1.75
+                for (u = 0; u < n.length; ++u) {
+                    o = n[u]
+    if (o.fr > 0 ) {
+    q.push($.v())
+    o.a0(p, !1, this.r, T.firea(), c, d)
     }                    
     }
-    }
+    }   
     }
 T.tha7n1.prototype = {
     t: function(a, b, c, d) {
@@ -34816,8 +34815,9 @@ dk: function(a, b, c, d, e, f, g) {
             } 
 			else {
                 this.x = u - a
-				a = 0
+				
                 e.a.push(T.e("[护盾]抵挡了[0]点伤害", a, null, null, null, 0, 1000, 100))
+				a = 0
 				return a
             }
             
