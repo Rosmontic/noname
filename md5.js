@@ -12273,10 +12273,10 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
 			_.R2 = null
 			_.R3 = null
 			_.R4 = null
-			_.r1 = 1
-			_.r2 = 1
-			_.r3 = 1
-			_.r4 = 1
+			_.r11 = 1
+			_.r12 = 1
+			_.r13 = 1
+			_.r14 = 1
 			_.UAVi = null
 			_.LANi = null
 			_.zsgh = 1
@@ -12364,6 +12364,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
 			_.heli = null
 			_.BAR = null
 			_.ri = 0
+			_.dan = 0
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -34812,12 +34813,14 @@ dk: function(a, b, c, d, e, f, g) {
 			    this.r.dx = this.r.dx / 2
 				}
                 e.a.push(T.e("[0]的[护盾]被打破了", this.r, null, null, null, 0, 1000, 100))
-            } else {
+				return a
+            } 
+			else {
                 this.x = u - a
                 e.a.push(T.e("[护盾]抵挡了[0]点伤害", a, null, null, null, 0, 1000, 100))
-                a = 0
+				return 0
             }
-            return a
+            
         },
         H: function(a, b) {
             this.C()
@@ -34870,12 +34873,12 @@ dk: function(a, b, c, d, e, f, g) {
             var v ,u, t, s, r = this			
 			if(this.r.zsgh == 0)
 			{
-			if(this.r.fr < 0.5 * this.r.fx && this.r.r1 == 1 )
+			if(this.r.fr < 0.5 * this.r.fx && this.r.r11 > 1 )
 			{
 			this.r.cx = 1.5 * this.r.cx
 			this.r.cy = 1.5 * this.r.cy
 			this.r.ch = 0.5 * this.r.ch
-			this.r.r1 = 0
+			this.r.r11 = 0
 			d.a.push(T.e("[1]：Break through！", this.r , this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
 			}
@@ -34885,13 +34888,13 @@ dk: function(a, b, c, d, e, f, g) {
 			d.a.push(T.e("[1]：[0]，Support shoot！", this.r.R2 , this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
 			}
-			if(this.r.R2.fr < 0.5 * this.r.R2.fx  && this.r.R2.fr > 0 && this.r.r2 == 1)
+			if(this.r.R2.fr < 0.5 * this.r.R2.fx  && this.r.R2.fr > 0 && this.r.r12 == 1)
 			{
 			this.r.R2.cx = C.d.Z(this.r.R2.cx *0.5)
 			this.r.R2.ch = this.r.R2.ch * 2
 			this.r.R2.dx = this.r.R2.dx * 2
 			this.r.R2.id[0].f = 150
-			this.r.r2 = 0
+			this.r.r12 = 0
 			d.a.push(T.e("[1]：[0]，Volume up！", this.r.R2 , this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
 			}
@@ -34901,13 +34904,20 @@ dk: function(a, b, c, d, e, f, g) {
 			d.a.push(T.e("[1]：[0]，Fire！", this.r.R3 , this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
 			}
-			if(this.r.R4.yin > 0 && this.r.R4.fr > 0 && this.r.r4 == 1)
+			if(this.r.R3.heli == null && this.r.R3.fr > 0 && this.r.r13 == 1)
+			{
+			this.r.R3.dan = this.r.R3.dan + 4
+			this.r.r13 == 0
+			d.a.push(T.e("[1]：[0]，Cinch bombing zone！", this.r.R3 , this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			}
+			if(this.r.R4.yin > 0 && this.r.R4.fr > 0 && this.r.r14 == 1)
 			{
 			this.r.R4.cx = 0.75 * this.r.R4.cx
 			this.r.R4.Q = 2 * this.r.R4.Q
 			this.r.R4.yin = this.r.R4.yin + 2
 			this.r.R3.j = this.r.R3.j  - 1024
-			this.r.r4 = 0
+			this.r.r14 = 0
 			d.a.push(T.e("[1]：[0]，Dormant！", this.r.R4 , this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
 			}}
