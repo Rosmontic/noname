@@ -34879,7 +34879,34 @@ dk: function(a, b, c, d, e, f, g) {
 			this.r.r11 = 0
 			d.a.push(T.e("[1]：Break through！", this.r , this.r, null, null, 0, 1000, 100))
 			}
+			if(this.r.R2.fr > 0.5 * this.r.R2.fx )
+			{
+			this.r.R2.j = this.r.R2.j + 1024
+			d.a.push(T.e("[1]：[0]，Support shoot！", this.r.R2 , this.r, null, null, 0, 1000, 100))
 			}
+			if(this.r.R2.fr < 0.5 * this.r.R2.fx  && this.r.R2.fr > 0 && this.r.r12 == 1)
+			{
+			this.r.R2.cx = C.d.Z(this.r.R2.cx *0.5)
+			this.r.R2.ch = this.r.R2.ch * 2
+			this.r.R2.dx = this.r.R2.dx * 2
+			this.r.R2.id[0].f = 255
+			this.r.r12 = 0
+			d.a.push(T.e("[1]：[0]，Volume up！", this.r.R2 , this.r, null, null, 0, 1000, 100))
+			}
+			if(this.r.R3.heli != null && this.r.R3.fr > 0)
+			{
+			this.r.R3.j = this.r.R3.j +1024
+			d.a.push(T.e("[1]：[0]，Fire！", this.r.R3 , this.r, null, null, 0, 1000, 100))
+			}
+			if(this.r.R4.yin > 0 && this.r.R4.fr > 0 && this.r.r14 == 1)
+			{
+			this.r.R4.cx = 0.75 * this.r.R4.cx
+			this.r.R4.Q = 2 * this.r.R4.Q
+			this.r.R4.yin = this.r.R4.yin + 2
+			this.r.R3.j = this.r.R3.j  - 1024
+			this.r.r14 = 0
+			d.a.push(T.e("[1]：[0]，Dormant！", this.r.R4 , this.r, null, null, 0, 1000, 100))
+			}}
             return a
         },
         T: function() {
