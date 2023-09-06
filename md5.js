@@ -12321,6 +12321,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
             _.go = 1
             _.id = e
 			_.SRT = 2
+            _.xh = 0
 			_.ri = 0
             _.k2 = _.k1 = null
             _.k3 = f
@@ -21160,6 +21161,7 @@ T.thb8s1.prototype = {
             k = "[0]: [其疾如风！]"
             w = "[0]使用[信号弹]"		
             s = this.r
+            s.xh =  s.xh + 1
 			this.f = this.f - 55
             r = H.a(n.slice(0), [H.n(n, 0)])
             q = d.a
@@ -21171,29 +21173,29 @@ T.thb8s1.prototype = {
 			if(o.SRT != null){
 			if(o.SRT == 1){
 			this.r.R1 = o
-			o.cx = o.cx * 1.2
-			o.cy = o.cy * 1.2
+			o.cx = o.cx * 1.25
+			o.cy = o.cy * 1.25
 			o.f = o.f + 1024
 			
 			}
 			if(o.SRT == 2){
 			this.r.R2 = o
 			o.J = 1.5 * o.J
-			o.cy = o.cy * 1.2
+			o.cy = o.cy * 1.25
 			o.f = o.f + 1024
 			
 			}
 			if(o.SRT == 3){
 			this.r.R3 = o
-            o.cx = o.cx * 1.2
-			o.cy = o.cy * 1.2
+            o.cx = o.cx * 1.25
+			o.cy = o.cy * 1.25
 			o.f = o.f + 2048
 			
 			}
 			if(o.SRT == 4){
 			this.r.R4 = o
-			o.cx = o.cx * 1.2
-			o.cy = o.cy * 1.2
+			o.cx = o.cx * 1.25
+			o.cy = o.cy * 1.25
 			o.f = o.f + 2048
 			
 			}
@@ -21600,7 +21602,7 @@ T.thb9t2.prototype = {
         var u = this ,v
         t = a[0].a
         s = T.u(u.r, !1, c)      
-		v = 0.5 + C.d.Z(u.r.yin *0.75)
+		v = 0.6 + C.d.Z(u.r.yin *0.6)
 		if(u.r.yin > 2)
 		{        
         d.a.push(T.e("[0]发起狙击", u.r, t, null, null, 0, 1000, 100))
