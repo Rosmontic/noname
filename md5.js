@@ -12303,7 +12303,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
             _.a_ = t
             _.V = _.O = _.L = 0
             _.J = 32768
-            _.j = 4096
+            _.j = 0
             _.X = _.W = !1
             _.F = null
         },
@@ -31711,7 +31711,7 @@ T.yuzu.prototype = {
         u.f = 65
         t.push(u)
 		u =new T.ribbit2n2()
-        u.f = 165
+        u.f = 110
         t.push(u)
 		t.push(new T.ribbit2b1())
 
@@ -34877,12 +34877,14 @@ dk: function(a, b, c, d, e, f, g) {
 			this.r.cy = 1.5 * this.r.cy
 			this.r.ch = 0.5 * this.r.ch
 			this.r.r11 = 0
-			d.a.push(T.e("[1]：Break through！", this.r , this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[1]：ribbit1，Break through！", this.r , this.r, null, null, 0, 1000, 100))
 			}
-			if(this.r.R2.fr > 0.5 * this.r.R2.fx )
+			if(this.r.R2 != null){
+			if(this.r.R2.fr > 0.5 * this.r.R2.fx)
 			{
+			this.r.R2.id[1].f = this.r.R2.id[1].f + 110
 			this.r.R2.j = this.r.R2.j + 1024
-			d.a.push(T.e("[1]：[0]，Support shoot！", this.r.R2 , this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[1]：ribbit2，Volume up！", this.r.R2 , this.r, null, null, 0, 1000, 100)&& this.r.R2 != null)
 			}
 			if(this.r.R2.fr < 0.5 * this.r.R2.fx  && this.r.R2.fr > 0 && this.r.r12 == 1)
 			{
@@ -34891,22 +34893,25 @@ dk: function(a, b, c, d, e, f, g) {
 			this.r.R2.dx = this.r.R2.dx * 2
 			this.r.R2.id[0].f = 255
 			this.r.r12 = 0
-			d.a.push(T.e("[1]：[0]，Volume up！", this.r.R2 , this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[1]：ribbit2，Cover！", this.r.R2 , this.r, null, null, 0, 1000, 100))
 			}
-			if(this.r.R3.heli != null && this.r.R3.fr > 0)
+			}
+			if(this.r.R3 != null)
 			{
+			if(this.r.R3.heli != null && this.r.R3.fr > 0){
 			this.r.R3.j = this.r.R3.j +1024
-			d.a.push(T.e("[1]：[0]，Fire！", this.r.R3 , this.r, null, null, 0, 1000, 100))
-			}
-			if(this.r.R4.yin > 0 && this.r.R4.fr > 0 && this.r.r14 == 1)
+			d.a.push(T.e("[1]：ribbit3，Fire suppression！", this.r.R3 , this.r, null, null, 0, 1000, 100))
+			}}
+			if(this.r.r14 == 1 && this.r.R4 != null)
 			{
+			if(this.r.R4.yin > 1 && this.r.R4.fr > 0){
 			this.r.R4.cx = 0.75 * this.r.R4.cx
 			this.r.R4.Q = 2 * this.r.R4.Q
 			this.r.R4.yin = this.r.R4.yin + 2
 			this.r.R3.j = this.r.R3.j  - 1024
 			this.r.r14 = 0
-			d.a.push(T.e("[1]：[0]，Dormant！", this.r.R4 , this.r, null, null, 0, 1000, 100))
-			}}
+			d.a.push(T.e("[1]：ribbit4，Dormant！", this.r.R4 , this.r, null, null, 0, 1000, 100))
+			}}}
             return a
         },
         T: function() {
