@@ -34871,7 +34871,6 @@ dk: function(a, b, c, d, e, f, g) {
 			{
 			if(this.r.R2.fr > 0.5 * this.r.R2.fx)
 			{
-			this.r.R2.id[1].f = 110
 			this.r.R2.j = this.r.R2.j + 1024
 			d.a.push(T.e("[1]：ribbit2，Volume up！", this.r.R2 , this.r, null, null, 0, 1000, 100)&& this.r.R2 != null)
 			}
