@@ -34797,25 +34797,12 @@ dk: function(a, b, c, d, e, f, g) {
             if (a > u) {
                 this.x = 0
                 a -= 0
-				if (this.r.abs === 1)
-				{
-				this.r.abs = 0
-				this.r.abst = 0
-				this.r.cx = this.r.cx / 2
-			    this.r.cy = this.r.cy / 4
-			    this.r.go = this.r.go / 2
-				this.r.ch = this.r.ch / 2
-			    this.r.dx = this.r.dx / 2
-				}
                 e.a.push(T.e("[0]的[护盾]被打破了", this.r, null, null, null, 0, 1000, 100))
 				return a
             } 
 			else {
-                this.x = u - a
-				
-                e.a.push(T.e("[护盾]抵挡了[0]点伤害", a, null, null, null, 0, 1000, 100))
+                this.x = u - a			
 				a = 0
-				dfa = wF
 				return a
             }
             
@@ -34879,14 +34866,15 @@ dk: function(a, b, c, d, e, f, g) {
 			this.r.r11 = 0
 			d.a.push(T.e("[1]：ribbit1，Break through！", this.r , this.r, null, null, 0, 1000, 100))
 			}
-			if(this.r.R2 != null){
+			
+			if(this.r.R2 == null && this.r.r12 == 1 ){
 			if(this.r.R2.fr > 0.5 * this.r.R2.fx)
 			{
 			this.r.R2.id[1].f = this.r.R2.id[1].f + 110
 			this.r.R2.j = this.r.R2.j + 1024
 			d.a.push(T.e("[1]：ribbit2，Volume up！", this.r.R2 , this.r, null, null, 0, 1000, 100)&& this.r.R2 != null)
 			}
-			if(this.r.R2.fr < 0.5 * this.r.R2.fx  && this.r.R2.fr > 0 && this.r.r12 == 1)
+			if(this.r.R2.fr < 0.5 * this.r.R2.fx  && this.r.R2.fr > 0 )
 			{
 			this.r.R2.cx = C.d.Z(this.r.R2.cx *0.5)
 			this.r.R2.ch = this.r.R2.ch * 2
@@ -34896,22 +34884,25 @@ dk: function(a, b, c, d, e, f, g) {
 			d.a.push(T.e("[1]：ribbit2，Cover！", this.r.R2 , this.r, null, null, 0, 1000, 100))
 			}
 			}
+			
 			if(this.r.R3 != null)
 			{
 			if(this.r.R3.heli != null && this.r.R3.fr > 0){
 			this.r.R3.j = this.r.R3.j +1024
 			d.a.push(T.e("[1]：ribbit3，Fire suppression！", this.r.R3 , this.r, null, null, 0, 1000, 100))
 			}}
+			
 			if(this.r.r14 == 1 && this.r.R4 != null)
 			{
-			if(this.r.R4.yin > 1 && this.r.R4.fr > 0){
+			if( this.r.R4.yin > 1 && this.r.R4.fr > 0){
 			this.r.R4.cx = 0.75 * this.r.R4.cx
 			this.r.R4.Q = 2 * this.r.R4.Q
 			this.r.R4.yin = this.r.R4.yin + 2
 			this.r.R3.j = this.r.R3.j  - 1024
 			this.r.r14 = 0
 			d.a.push(T.e("[1]：ribbit4，Dormant！", this.r.R4 , this.r, null, null, 0, 1000, 100))
-			}}}
+			}}
+			}
             return a
         },
         T: function() {
