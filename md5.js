@@ -24413,7 +24413,6 @@ n.r.bf(n.r.fr, null, c, d)
             this.bv()
             var u = this.u
             u[7] = C.d.v(u[7], 1)
-			this.id.push(T.zhsh())
         },
 		bM: function() {
             var u, t = this
@@ -28368,7 +28367,7 @@ T.tha1b1.prototype = {
 		this.r.jd = 1
 		e.a.push($.v())
 		e.a.push(T.e("[0]：[见识一下SRT的CQB技巧吧！]", this.r, null, null, null, 0, 1000, 100))
-		this.r.cy =  this.r.cy * 2
+		this.r.cy =  this.r.cy * 1.5
 		this.r.cx =  this.r.cx * 1.5
 		e.a.push(T.e("[0]使用[战术机动]", this.r, null, null, null, 1, 1000, 100))
 		bug = tnt
@@ -31676,6 +31675,7 @@ T.yuzu.prototype = {
 		u =new T.ribbit1b2()
         u.f = 100
         t.push(u)
+		
 		t.push(new T.ribbit1b1())
 
     }, 
@@ -31710,7 +31710,7 @@ T.yuzu.prototype = {
 		u =new T.ribbit2n1()
         u.f = 65
         t.push(u)
-		u =new T.ribbit1n3()
+		u =new T.ribbit2n2()
         u.f = 165
         t.push(u)
 		t.push(new T.ribbit2b1())
@@ -31745,7 +31745,7 @@ T.yuzu.prototype = {
         this.k2 = t
         t = this.id
         u =new T.ribbit3n1()
-        u.f = 200
+        u.f = 2
         t.push(u)
         u = new T.ribbit3n2()
         u.f = 300
@@ -34870,7 +34870,7 @@ dk: function(a, b, c, d, e, f, g) {
             var v ,u, t, s, r = this			
 			if(this.r.zsgh == 0)
 			{
-			if(this.r.fr < 0.5 * this.r.fx & this.r.r1 == 1 )
+			if(this.r.fr < 0.5 * this.r.fx && this.r.r1 == 1 )
 			{
 			this.r.cx = 1.5 * this.r.cx
 			this.r.cy = 1.5 * this.r.cy
@@ -34906,6 +34906,7 @@ dk: function(a, b, c, d, e, f, g) {
 			this.r.R4.cx = 0.75 * this.r.R4.cx
 			this.r.R4.Q = 2 * this.r.R4.Q
 			this.r.R4.yin = this.r.R4.yin + 2
+			this.r.R3.j = this.r.R3.j  - 1024
 			this.r.r4 = 0
 			d.a.push(T.e("[1]：[0]，Dormant！", this.r.R4 , this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
@@ -36589,9 +36590,9 @@ C.momori = H.a(u([6, 28, 54, 40, 30, 19, 42, 421]), [P.j])
 C.midori = H.a(u([22, 26, 4, 16, 42, 14, 35, 423]), [P.j])
 C.yuzu = H.a(u([7, 21, 7, -10, -10, 22, 13, 577]), [P.j])
 C.ribbit1 = H.a(u([-12, 7, 30, 30, -13, 39, 36, 430]), [P.j])
-C.ribbit2 = H.a(u([15, 0, 26, 32, 10, 31, 30, 450]), [P.j])
-C.ribbit3 = H.a(u([47, 9, 39, 30, 12, -11, 20, 392]), [P.j])
-C.ribbit4 = H.a(u([10, 10, 10, 45, 20, 50, 8, 359]), [P.j])
+C.ribbit2 = H.a(u([15, 0, 26, 32, 10, 31, 30, 470]), [P.j])
+C.ribbit3 = H.a(u([47, 9, 39, 30, 12, -11, 20, 292]), [P.j])
+C.ribbit4 = H.a(u([10, 10, 10, 45, 20, 50, 8, 259]), [P.j])
 C.fox1 = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.fox2 = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.fox3 = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
