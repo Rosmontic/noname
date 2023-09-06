@@ -21107,30 +21107,7 @@ T.thb8s1.prototype = {
             for (u = 0; u < n.length; ++u) {
             o = n[u]
 			d.a.push($.v())
-			if(o.SRT != null){
-			if(o.SRT == 1){
-			this.r.R1 = o
-			o.go = o.go * 1.25
-			o.cy = o.cy * 1.75
-			o.cx = o.cx * 1.25
-			o.f = o.f + 2048
-			d.a.push(T.e("[0]：[Ribbit1，突击手，已就位。]", o, o, null, null, 0, 1000, 100))
-			}
-			if(o.SRT == 2){
-			this.r.R2 = o
-            o.ch = o.ch * 2
-			o.dx = o.dx * 2
-			o.cx = o.cx * 1.5
-			o.f = o.f + 4096
-			d.a.push(T.e("[0]：[Ribbit2，开始进行战地侦察。]", o, o, null, null, 0, 1000, 100))
-			}
-			if(o.SRT == 3){
-			this.r.R3 = o
-            o.Q = o.Q * 2
-			o.f = o.f + 1024
-			o.J = o.J * 0.25
-			d.a.push(T.e("[0]：[Ribbit3，随时准备开火哦 ~]", o, o, null, null, 0, 1000, 100))
-			}
+			if(o.SRT != null){			
 			if(o.SRT == 4){
 			this.r.R4 = o
 			o.go = o.go * 1.5
@@ -21139,6 +21116,29 @@ T.thb8s1.prototype = {
 			o.f = o.f + 1024
 			d.a.push(T.e("[0]：[Ribbit4，掩护射击...交给我吧...]", o, o, null, null, 0, 1000, 100))
 			}
+            if(o.SRT == 3){
+                this.r.R3 = o
+                o.Q = o.Q * 2
+                o.f = o.f + 1024
+                o.J = o.J * 0.25
+                d.a.push(T.e("[0]：[Ribbit3，随时准备开火哦 ~]", o, o, null, null, 0, 1000, 100))
+                }  
+            if(o.SRT == 2){
+                this.r.R2 = o
+                o.ch = o.ch * 2
+                o.dx = o.dx * 2
+                o.cx = o.cx * 1.5
+                o.f = o.f + 4096
+                d.a.push(T.e("[0]：[Ribbit2，开始进行战地侦察。]", o, o, null, null, 0, 1000, 100))
+                    }
+            if(o.SRT == 1){
+                this.r.R1 = o
+                o.go = o.go * 1.25
+                o.cy = o.cy * 1.75
+                o.cx = o.cx * 1.25
+                o.f = o.f + 2048
+                d.a.push(T.e("[0]：[Ribbit1，突击手，已就位。]", o, o, null, null, 0, 1000, 100)) 
+            }
             }
             
         }
