@@ -12321,7 +12321,6 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
             _.go = 1
             _.id = e
 			_.SRT = 2
-            _.xh = 0
 			_.ri = 0
             _.k2 = _.k1 = null
             _.k3 = f
@@ -21161,7 +21160,6 @@ T.thb8s1.prototype = {
             k = "[0]: [其疾如风！]"
             w = "[0]使用[信号弹]"		
             s = this.r
-            s.xh =  s.xh + 1
 			this.f = this.f - 55
             r = H.a(n.slice(0), [H.n(n, 0)])
             q = d.a
@@ -21173,29 +21171,29 @@ T.thb8s1.prototype = {
 			if(o.SRT != null){
 			if(o.SRT == 1){
 			this.r.R1 = o
-			o.cx = o.cx * 1.25
-			o.cy = o.cy * 1.25
+			o.cx = o.cx * 1.2
+			o.cy = o.cy * 1.2
 			o.f = o.f + 1024
 			
 			}
 			if(o.SRT == 2){
 			this.r.R2 = o
 			o.J = 1.5 * o.J
-			o.cy = o.cy * 1.25
+			o.cy = o.cy * 1.2
 			o.f = o.f + 1024
 			
 			}
 			if(o.SRT == 3){
 			this.r.R3 = o
-            o.cx = o.cx * 1.25
-			o.cy = o.cy * 1.25
+            o.cx = o.cx * 1.2
+			o.cy = o.cy * 1.2
 			o.f = o.f + 2048
 			
 			}
 			if(o.SRT == 4){
 			this.r.R4 = o
-			o.cx = o.cx * 1.25
-			o.cy = o.cy * 1.25
+			o.cx = o.cx * 1.2
+			o.cy = o.cy * 1.2
 			o.f = o.f + 2048
 			
 			}
@@ -21602,7 +21600,7 @@ T.thb9t2.prototype = {
         var u = this ,v
         t = a[0].a
         s = T.u(u.r, !1, c)      
-		v = 0.6 + C.d.Z(u.r.yin *0.6)
+		v = 0.5 + C.d.Z(u.r.yin *0.75)
 		if(u.r.yin > 2)
 		{        
         d.a.push(T.e("[0]发起狙击", u.r, t, null, null, 0, 1000, 100))
@@ -34860,21 +34858,34 @@ dk: function(a, b, c, d, e, f, g) {
             var v ,u, t, s, r = this
 			if(this.r.zsgh == 0)
 			{
-			if(this.r.fr < 0.5 * this.r.fx)
+            d.a.push(T.e("[1]:各单位，注意", this.r , this.r, null, null, 0, 1000, 100))
+			if(this.r.fr < 0.5 * this.r.fx && this.r.r11 == 1)
 			{
 			this.r.cx = 1.5 * this.r.cx
 			this.r.cy = 1.5 * this.r.cy
 			this.r.ch = 0.5 * this.r.ch
 			this.r.r11 = 0
-			d.a.push(T.e("[1]：ribbit1，Break through！", this.r , this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("ribbit1，Break through！", this.r , this.r, null, null, 0, 1000, 100))
 			}
 			
 			if(this.r.R2 != null )
 			{
-			if(this.r.R2.xh > 0)
+			if(this.r.R2.fr > 0.5 * this.r.R2.fx)
 			{
-			this.r.R2.j = this.r.R2.j + 2048
-			d.a.push(T.e("[1]：ribbit2，Volume up！", this.r.R2 , this.r, null, null, 0, 1000, 100)&& this.r.R2 != null)
+			this.r.R2.id[1].f = 110
+			this.r.R2.j = this.r.R2.j + 1024
+			d.a.push(T.e("ribbit2，Volume up！", this.r.R2 , this.r, null, null, 0, 1000, 100))
+			}
+			
+			else if(this.r.R2.fr < 0.5 * this.r.R2.fx && this.r.r12 == 1)
+			{
+			
+			this.r.R2.cx = C.d.Z(this.r.R2.cx *0.5)
+			this.r.R2.ch = this.r.R2.ch * 2
+			this.r.R2.dx = this.r.R2.dx * 2
+			this.r.R2.id[0].f = 200
+            this.r.r12 = 0
+			d.a.push(T.e("ribbit2，Cover！", this.r.R2 , this.r, null, null, 0, 1000, 100))
 			}
 			}
 			
@@ -34882,12 +34893,12 @@ dk: function(a, b, c, d, e, f, g) {
 			{
 			if(this.r.R3.heli != null && this.r.R3.fr > 0){
 			this.r.R3.j = this.r.R3.j +1024
-			d.a.push(T.e("[1]：ribbit3，Fire suppression！", this.r.R3 , this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("ribbit3，Fire suppression！", this.r.R3 , this.r, null, null, 0, 1000, 100))
 			}}
 			
 			if( this.r.R4 != null)
 			{
-			if( this.r.R4.yin > 1 && this.r.R4.fr > 0 && this.r.r14 > 0 ){
+			if( this.r.R4.yin > 1 && this.r.r14 == 1){
 			this.r.R4.cx = 0.75 * this.r.R4.cx
 			this.r.R4.Q = 2 * this.r.R4.Q
 			this.r.R4.yin = this.r.R4.yin + 2
@@ -34896,6 +34907,7 @@ dk: function(a, b, c, d, e, f, g) {
 			d.a.push(T.e("[1]：ribbit4，Dormant！", this.r.R4 , this.r, null, null, 0, 1000, 100))
 			}}
 			}
+            d.a.push($.v())
             return a
         },
         T: function() {
