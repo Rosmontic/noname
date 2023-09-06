@@ -21111,8 +21111,8 @@ T.thb8s1.prototype = {
 			if(o.SRT == 1){
 			this.r.R1 = o
 			o.go = o.go * 1.25
-			o.cy = o.cy * 2
-			o.cx = o.cx * 1.5
+			o.cy = o.cy * 1.75
+			o.cx = o.cx * 1.25
 			o.f = o.f + 2048
 			d.a.push(T.e("[0]：[Ribbit1，突击手，已就位。]", o, o, null, null, 0, 1000, 100))
 			}
@@ -21120,7 +21120,7 @@ T.thb8s1.prototype = {
 			this.r.R2 = o
             o.ch = o.ch * 2
 			o.dx = o.dx * 2
-			o.cx = o.cx * 2
+			o.cx = o.cx * 1.5
 			o.f = o.f + 4096
 			d.a.push(T.e("[0]：[Ribbit2，开始进行战地侦察。]", o, o, null, null, 0, 1000, 100))
 			}
@@ -21128,7 +21128,7 @@ T.thb8s1.prototype = {
 			this.r.R3 = o
             o.Q = o.Q * 2
 			o.f = o.f + 1024
-			o.J = o.J * 0.5
+			o.J = o.J * 0.25
 			d.a.push(T.e("[0]：[Ribbit3，随时准备开火哦 ~]", o, o, null, null, 0, 1000, 100))
 			}
 			if(o.SRT == 4){
@@ -21164,7 +21164,6 @@ T.thb8s1.prototype = {
             r = H.a(n.slice(0), [H.n(n, 0)])
             q = d.a
             q.push(T.e(k, s, null, null, r, 0, 1000, 100))
-			q.push($.v())
             q.push(T.e(w, s, null, null, r, 1, 1000, 100))
             for (u = 0; u < n.length; ++u) {
             o = n[u]
@@ -21172,29 +21171,29 @@ T.thb8s1.prototype = {
 			if(o.SRT != null){
 			if(o.SRT == 1){
 			this.r.R1 = o
-			o.cx = o.cx * 1.25
-			o.cy = o.cy * 1.25
-			o.f = o.f + 2048
+			o.cx = o.cx * 1.2
+			o.cy = o.cy * 1.2
+			o.f = o.f + 1024
 			
 			}
 			if(o.SRT == 2){
 			this.r.R2 = o
 			o.J = 1.5 * o.J
-			o.cy = o.cy * 1.25
+			o.cy = o.cy * 1.2
 			o.f = o.f + 1024
 			
 			}
 			if(o.SRT == 3){
 			this.r.R3 = o
-            o.cx = o.cx * 1.25
-			o.cy = o.cy * 1.25
+            o.cx = o.cx * 1.2
+			o.cy = o.cy * 1.2
 			o.f = o.f + 2048
 			
 			}
 			if(o.SRT == 4){
 			this.r.R4 = o
-			o.cx = o.cx * 1.25
-			o.cy = o.cy * 1.25
+			o.cx = o.cx * 1.2
+			o.cy = o.cy * 1.2
 			o.f = o.f + 2048
 			
 			}
@@ -21269,42 +21268,7 @@ T.thb8s1.prototype = {
             
         }
 }}
-    T.ribbit3n3.prototype = {
-        gb3: function() {
-            return 4
-        },
-        gb4: function() {
-            return 4
-        },
-		ar: function(a, b) {
-        if (this.r.heli != null)
-        { 
-            return !1
-        }   
-         return this.aS(a, b)
-        },
-        t: function(a, b, c, d) {
-            var w, k ,l, v, u, t, s, r, q, p, o, n = H.a([], [T.aU])
-            for (u = 0; u < a.length; ++u)
-                n.push(a[u].a)
-            k = "[0]: [欸嘿嘿...全弹发射！]"	
-            s = this.r
-            r = H.a(n.slice(0), [H.n(n, 0)])
-            q = d.a
-			w = (c.m() & 3)
-			this.r.dan = this.r.dan + 2
-			if(this.r.dan >= w + 2){
-            q.push(T.e(k, s, null, null, r, 0, 1000, 100))
-			p = T.u(this.r, !0, c) * C.d.v(this.r.dan, 1.25)
-            for (u = 0; u < n.length; ++u) {
-            o = n[u]
-			d.a.push($.v())
-			o.a0(p, !1, this.r, T.a3(), c, d)
-			}
-            }
-            return
-        }
-}
+    
 T.thb5s1.prototype = {
         b5: function(a) {
             return a.b1(this.r.x.a.e)
@@ -21636,8 +21600,8 @@ T.thb9t2.prototype = {
         var u = this ,v
         t = a[0].a
         s = T.u(u.r, !1, c)      
-		v = 0.5 + u.r.yin
-		if(u.r.yin > 1)
+		v = 0.5 + C.d.Z(u.r.yin *0.75)
+		if(u.r.yin > 2)
 		{        
         d.a.push(T.e("[0]发起狙击", u.r, t, null, null, 0, 1000, 100))
         t.bL(v*s, !0, u.r, T.a3(), c, d)
@@ -22391,6 +22355,42 @@ T.ribbit3n2.prototype = {
     }   
     }
 
+T.ribbit3n3.prototype = {
+    ar: function(a, b) {
+        if (this.r.heli != null || this.r.dan = 0)
+        {
+		    if (this.r.heli == null){
+		    this.r.dan = this.r.dan + 4		
+			}
+            return !1
+        } 
+            return this.aS(a, b)
+    },
+    gb3: function() {
+                return 4
+            },
+    gb4: function() {
+                return 4
+            },
+    t: function(a, b, c, d) {
+        var u, t, s, r, q, p, o, n = H.a([], [T.aU])
+        for (u = 0; u < a.length; ++u)
+            n.push(a[u].a)
+        s = this.r
+        r = H.a(n.slice(0), [H.n(n, 0)])
+        q = d.a
+		q.push(T.e("[0]；[诶嘿嘿...全弹发射]", s, null, null, r, 1, 1000, 100))
+        p = T.u(this.r, !0, c) * C.d.v(this.r.dan, 2)
+		this.r.dan = 0
+        for (u = 0; u < n.length; ++u) {
+            o = n[u]
+            if (o.fr > 0 ) {
+            q.push($.v())
+            o.a0(p, !1, this.r, T.a3(), c, d)
+    }                    
+    }
+    }
+    }
 T.tha7n1.prototype = {
     t: function(a, b, c, d) {
         var u = this, v
@@ -29231,7 +29231,7 @@ T.youzi1.prototype = {
                 if (t >= s)
                 {
                     v = 200
-					d.a.push(T.e("[0]使用[1]点[特殊防弹装备]", this.r , v, null, null, 1, 1000, 100))
+					d.a.push(T.e("[0]使用[特殊防弹装备]", this.r , v, null, null, 1, 1000, 100))
                     u.x = s + v
                     d.a.push(T.e("[0]获得[1]点[护盾]", this.r , v, null, null, 0, 1000, 100))
                 }
@@ -29538,7 +29538,7 @@ o.bL(p, !0, this.r, T.a3(), c, d)}
                 }
             
         }
-}
+}  
    T.tha2n2.prototype = {
         ar: function(a, b) {
             if (this.r.bagua > 4 + (a.m() & 3)|| this.r.bagua < 2)
@@ -34235,9 +34235,8 @@ t.push(u)
 			u = c.a
 			u.push($.v())
 			u.push(T.e("[0]：[Tango Down!]", m.r, a, l, l, 1, 1000, 100))
-            this.r.go = this.r.go * 1.5
+            this.r.go = this.r.go * 1.25
 			this.r.j = this.r.j + 2048
-			this.r.cx = this.r.cx * 1.5
             return !0
         },
         $iI: 1
@@ -34817,8 +34816,9 @@ dk: function(a, b, c, d, e, f, g) {
             } 
 			else {
                 this.x = u - a
+				a = 0
                 e.a.push(T.e("[护盾]抵挡了[0]点伤害", a, null, null, null, 0, 1000, 100))
-				return 0
+				return a
             }
             
         },
@@ -34859,7 +34859,7 @@ dk: function(a, b, c, d, e, f, g) {
 	T.ribbit4b2.prototype = {
         aK: function(a, b, c, d) {
             var u, t, s, r = this
-			d.a.push(T.e("[1]：Ribbit4...隐蔽中...", this.r , this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[1]...隐蔽中...", this.r , this.r, null, null, 0, 1000, 100))
 			r.r.yin  = r.r.yin + 1
             return a
         },
@@ -34880,36 +34880,31 @@ dk: function(a, b, c, d, e, f, g) {
 			this.r.ch = 0.5 * this.r.ch
 			this.r.r11 = 0
 			d.a.push(T.e("[1]：Break through！", this.r , this.r, null, null, 0, 1000, 100))
-			d.a.push($.v())
 			}
 			if(this.r.R2.fr > 0.5 * this.r.R2.fx )
 			{
 			this.r.R2.j = this.r.R2.j + 1024
 			d.a.push(T.e("[1]：[0]，Support shoot！", this.r.R2 , this.r, null, null, 0, 1000, 100))
-			d.a.push($.v())
 			}
 			if(this.r.R2.fr < 0.5 * this.r.R2.fx  && this.r.R2.fr > 0 && this.r.r12 == 1)
 			{
 			this.r.R2.cx = C.d.Z(this.r.R2.cx *0.5)
 			this.r.R2.ch = this.r.R2.ch * 2
 			this.r.R2.dx = this.r.R2.dx * 2
-			this.r.R2.id[0].f = 150
+			this.r.R2.id[0].f = 255
 			this.r.r12 = 0
 			d.a.push(T.e("[1]：[0]，Volume up！", this.r.R2 , this.r, null, null, 0, 1000, 100))
-			d.a.push($.v())
 			}
 			if(this.r.R3.heli != null && this.r.R3.fr > 0)
 			{
 			this.r.R3.j = this.r.R3.j +1024
 			d.a.push(T.e("[1]：[0]，Fire！", this.r.R3 , this.r, null, null, 0, 1000, 100))
-			d.a.push($.v())
 			}
 			if(this.r.R3.heli == null && this.r.R3.fr > 0 && this.r.r13 == 1)
 			{
-			this.r.R3.dan = this.r.R3.dan + 4
+			this.r.R3.dan = this.r.R3.dan + 6
 			this.r.r13 == 0
 			d.a.push(T.e("[1]：[0]，Cinch bombing zone！", this.r.R3 , this.r, null, null, 0, 1000, 100))
-			d.a.push($.v())
 			}
 			if(this.r.R4.yin > 0 && this.r.R4.fr > 0 && this.r.r14 == 1)
 			{
@@ -34919,8 +34914,8 @@ dk: function(a, b, c, d, e, f, g) {
 			this.r.R3.j = this.r.R3.j  - 1024
 			this.r.r14 = 0
 			d.a.push(T.e("[1]：[0]，Dormant！", this.r.R4 , this.r, null, null, 0, 1000, 100))
-			d.a.push($.v())
 			}}
+			
             return a
         },
         T: function() {
