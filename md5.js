@@ -31745,12 +31745,9 @@ T.yuzu.prototype = {
         this.k2 = t
         t = this.id
         u =new T.ribbit3n1()
-        u.f = 2
+        u.f = 200
         t.push(u)
         u = new T.ribbit3n2()
-        u.f = 300
-        t.push(u)
-		u = new T.ribbit3n3()
         u.f = 300
         t.push(u)
 		u =new T.ribbit3b2()
@@ -34873,7 +34870,7 @@ dk: function(a, b, c, d, e, f, g) {
             var v ,u, t, s, r = this			
 			if(this.r.zsgh == 0)
 			{
-			if(this.r.fr < 0.5 * this.r.fx && this.r.r11 > 1 )
+			if(this.r.fr < 0.5 * this.r.fx && this.r.r11 == 1 )
 			{
 			this.r.cx = 1.5 * this.r.cx
 			this.r.cy = 1.5 * this.r.cy
