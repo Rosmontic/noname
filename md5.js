@@ -34869,21 +34869,11 @@ dk: function(a, b, c, d, e, f, g) {
 			
 			if(this.r.R2 != null )
 			{
-			if(this.r.R2.fr > 0.5 * this.r.R2.fx)
+			if(this.r.R2.xh > 0)
 			{
-			this.r.R2.j = this.r.R2.j + 1024
+			this.r.R2.j = this.r.R2.j + 2048
 			d.a.push(T.e("[1]：ribbit2，Volume up！", this.r.R2 , this.r, null, null, 0, 1000, 100)&& this.r.R2 != null)
 			}
-			
-			else if(this.r.R2.fr < 0.5 * this.r.R2.fx  )
-			{
-			if (this.r.R2.fr > 0){
-			this.r.R2.cx = C.d.Z(this.r.R2.cx *0.5)
-			this.r.R2.ch = this.r.R2.ch * 2
-			this.r.R2.dx = this.r.R2.dx * 2
-			this.r.R2.id[0].f = 200
-			d.a.push(T.e("[1]：ribbit2，Cover！", this.r.R2 , this.r, null, null, 0, 1000, 100))
-			}}
 			}
 			
 			if(this.r.R3 != null)
@@ -34895,7 +34885,7 @@ dk: function(a, b, c, d, e, f, g) {
 			
 			if( this.r.R4 != null)
 			{
-			if( this.r.R4.yin > 1 && this.r.R4.fr > 0){
+			if( this.r.R4.yin > 1 && this.r.R4.fr > 0 && this.r.r14 > 0 ){
 			this.r.R4.cx = 0.75 * this.r.R4.cx
 			this.r.R4.Q = 2 * this.r.R4.Q
 			this.r.R4.yin = this.r.R4.yin + 2
