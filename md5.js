@@ -34856,8 +34856,6 @@ dk: function(a, b, c, d, e, f, g) {
 	T.ribbit1b2.prototype = {
         aK: function(a, b, c, d) {
             var v ,u, t, s, r = this
-			d.a.push(T.e("[0] [1]", this.r.r11 , this.r.r12, null, null, 0, 1000, 100))
-			d.a.push(T.e("[0] [1]", this.r.r13 , this.r.r14, null, null, 0, 1000, 100))
 			if(this.r.zsgh == 0)
 			{
 			if(this.r.fr < 0.5 * this.r.fx)
@@ -34869,22 +34867,24 @@ dk: function(a, b, c, d, e, f, g) {
 			d.a.push(T.e("[1]：ribbit1，Break through！", this.r , this.r, null, null, 0, 1000, 100))
 			}
 			
-			if(this.r.R2 != null ){
+			if(this.r.R2 != null )
+			{
 			if(this.r.R2.fr > 0.5 * this.r.R2.fx)
 			{
-			this.r.R2.id[1].f = this.r.R2.id[1].f + 110
+			this.r.R2.id[1].f = 110
 			this.r.R2.j = this.r.R2.j + 1024
 			d.a.push(T.e("[1]：ribbit2，Volume up！", this.r.R2 , this.r, null, null, 0, 1000, 100)&& this.r.R2 != null)
 			}
-			if(this.r.R2.fr < 0.5 * this.r.R2.fx  && this.r.R2.fr > 0 )
+			
+			else if(this.r.R2.fr < 0.5 * this.r.R2.fx  )
 			{
+			if (this.r.R2.fr > 0){
 			this.r.R2.cx = C.d.Z(this.r.R2.cx *0.5)
 			this.r.R2.ch = this.r.R2.ch * 2
 			this.r.R2.dx = this.r.R2.dx * 2
-			this.r.R2.id[0].f = 255
-			this.r.r12 = 0
+			this.r.R2.id[0].f = 200
 			d.a.push(T.e("[1]：ribbit2，Cover！", this.r.R2 , this.r, null, null, 0, 1000, 100))
-			}
+			}}
 			}
 			
 			if(this.r.R3 != null)
