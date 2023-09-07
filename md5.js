@@ -8461,7 +8461,7 @@ tha7n1: function tha7n1() {
             _.x = a
             _.y = null
             _.z = 3
-            _.Q = 3
+            _.Q = 4
             _.c = _.b = _.a = null
         },
         blindlyx: function blindlyx(a) {
@@ -12335,7 +12335,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
             _.go = 1
             _.id = e
 			_.SRT = 2
-			_.fd = 2
+			_.fd = 0
 			_.ri = 0
             _.k2 = _.k1 = null
             _.k3 = f
@@ -21141,7 +21141,7 @@ T.thb8s1.prototype = {
                 this.r.R2 = o
                 o.ch = o.ch * 1.5
                 o.dx = o.dx * 1.5
-                o.cx = o.cx * 1.25
+                o.cx = o.cx * 1.5
                 o.f = o.f + 4096
                 d.a.push(T.e("[0]：[Ribbit2，开始进行战地侦察。]", o, o, null, null, 0, 1000, 100))
                     }
@@ -28428,11 +28428,11 @@ T.tha1b1.prototype = {
 		if (n == 0)
 		{
 		e.a.push(T.e("[0]进行[反制速射]", this.r, null, null, null, 1, 1000, 100))
-		b.a0(16000, !1, this.r, T.a3(), d, e)
+		b.a0(19200, !1, this.r, T.a3(), d, e)
 		}
-		if(this.r.df == 1)
+		if(this.r.fd == 1)
 		{
-		return u && C.d.Z(a *0.33)
+		return u && C.d.Z(a *0.2)
 		}
         return u && a
     },
@@ -29265,7 +29265,7 @@ T.youzi1.prototype = {
         var u ,t ,o = this.r ,s ,v
 		this.f = 0
        	d.a.push(T.e("[0]使用[防弹挡板]", this.r ,o, null, null, 1, 1000, 100))
-		o.ch = o.ch * 2.5
+		o.ch = o.ch * 4
         o.fd = 1		
 		o.go = o.go * 0.75
     }
@@ -29280,7 +29280,7 @@ T.youzi1.prototype = {
         v = C.d.v(s, 37)	
         q.bL(v, !1, this.r, T.a3(), c, d)
 		d.a.push($.v())
-		d.a.push(T.e("[迫击炮]伤害过低，[0]，[愤怒了]！", this.r ,this.r, null, null, 0, 1000, 100))
+		d.a.push(T.e("迫击炮伤害过低，[0]，[愤怒了]！", this.r ,this.r, null, null, 0, 1000, 100))
 		
 		t = H.o(this.r.r1.h(0, "anger"), "$iangerx")
             if (t == null) {
@@ -31760,13 +31760,13 @@ T.yuzu.prototype = {
         this.k2 = t
         t = this.id
 		u =new T.ribbit2n3()
-        u.f = 15
+        u.f = 25
         t.push(u)
 		u =new T.ribbit2n1()
         u.f = 0
         t.push(u)
 		u =new T.ribbit2n2()
-        u.f = 65
+        u.f = 110
         t.push(u)
 		t.push(new T.ribbit2b1())
         
