@@ -22381,7 +22381,7 @@ T.ribbit3n3.prototype = {
                 q = d.a
 				this.f = 0
 				q.push(T.e("[0]；[诶嘿嘿...全弹发射！]", s, null, null, r, 1, 1000, 100))
-                p = T.u(this.r, !0, c) * 3.5
+                p = T.u(this.r, !0, c) * 4
                 for (u = 0; u < n.length; ++u) {
                     o = n[u]
     if (o.fr > 0 ) {
@@ -34975,11 +34975,11 @@ dk: function(a, b, c, d, e, f, g) {
         aK: function(a, b, c, d) {
             var v ,u, t, s, r = this
 			u = (c.m() & 1)
-			if(u ==1 && this.r.fr < 0.75 * this.r.fx)
+			if(u ==1 && this.r.fr < 0.5 * this.r.fx && this.r.heli == null)
 			{
 			d.a.push(T.e("[1]：食用了[高热量浓缩糖果]", this.r , this.r, null, null, 0, 1000, 100))
 			t = this.r.fr
-			v = C.d.Z(this.r.fx *0.25)
+			v = C.d.Z(this.r.fx *0.15)
 		    this.r.fr = t + v
 			d.a.push(T.e("[1]回复生命[2]点", r.r, T.a1(r.r, t), new T.aG(v), null, 0, 1000, 100))
 			}
