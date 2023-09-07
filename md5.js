@@ -12320,8 +12320,11 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
             _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
             _.go = 1
             _.id = e
-			_.SRT = 2
+			_.SRT = 3
+			_.heli = null
+			_.BAR = null
 			_.ri = 0
+			_.dan = 0
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -21438,7 +21441,7 @@ T.thb5n2.prototype = {
                     o.r1.k(0, $.kl(), v)
                     o.y1.i(0, v)
                 }
-                    v.x = 800
+                    v.x = 80
 				    q.push(T.e("[0]获得[1]点[护盾]", o , v.x, null, null, 0, 1000, 100))
 			}
 			if(o.y != this.r.y){
