@@ -28383,6 +28383,7 @@ T.tha1b1.prototype = {
 		n = (d.m() & 3)
 		if (n == 0)
 		{
+		e.a.push(T.e("[0]", a, null, null, null, 1, 1000, 100))
 		e.a.push(T.e("[0]进行[反制速射]", this.r, null, null, null, 1, 1000, 100))
 		b.a0(16000, !1, this.r, T.a3(), d, e)
 		}
@@ -29236,7 +29237,7 @@ T.youzi1.prototype = {
             for (u = 0; u < n.length; ++u) {
                 o = n[u]
 				l = o.fr
-            if(o.e == "ribbit2@!" ){
+            if(o.e != "ribbit2@!" ){
             
                 v = H.o(o.r1.h(0, $.kl()), "$idK")
                 if (v == null) {
@@ -31678,9 +31679,6 @@ T.yuzu.prototype = {
         t = this.id
 		u =new T.ribbit1n0()
         u.f = 1000
-        t.push(u)
-		u =new T.ribbit2n1()
-        u.f = 65
         t.push(u)
 		u =new T.ribbit1n2()
         u.f = 70
