@@ -21314,7 +21314,7 @@ T.thb5s1.prototype = {
                     o.r1.k(0, $.kl(), v)
                     o.y1.i(0, v)
                 }
-                    v.x = 80
+                    v.x = 800
 		    q.push(T.e("[0]获得[1]点[护盾]", o , v.x, null, null, 0, 1000, 100))
 			o.j = o.j + 1024
             q.push(T.e("[0]的行动提前了", o , o, null, null, 0, 1000, 100))
@@ -21438,7 +21438,7 @@ T.thb5n2.prototype = {
                     o.r1.k(0, $.kl(), v)
                     o.y1.i(0, v)
                 }
-                    v.x = 80
+                    v.x = 800
 				    q.push(T.e("[0]获得[1]点[护盾]", o , v.x, null, null, 0, 1000, 100))
 			}
 			if(o.y != this.r.y){
@@ -28383,7 +28383,6 @@ T.tha1b1.prototype = {
 		n = (d.m() & 3)
 		if (n == 0)
 		{
-		e.a.push(T.e("[0]", a, null, null, null, 1, 1000, 100))
 		e.a.push(T.e("[0]进行[反制速射]", this.r, null, null, null, 1, 1000, 100))
 		b.a0(16000, !1, this.r, T.a3(), d, e)
 		}
@@ -29237,7 +29236,7 @@ T.youzi1.prototype = {
             for (u = 0; u < n.length; ++u) {
                 o = n[u]
 				l = o.fr
-            if(o.e != "ribbit2@!" ){
+            if(o.e == "ribbit2@!" ){
             
                 v = H.o(o.r1.h(0, $.kl()), "$idK")
                 if (v == null) {
