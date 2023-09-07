@@ -28367,7 +28367,7 @@ T.tha1b1.prototype = {
 		e.a.push(T.e("[0]：[见识一下SRT的CQB技巧吧！]", this.r, null, null, null, 0, 1000, 100))
 		this.r.cy =  this.r.cy * 1.5
 		this.r.cx =  this.r.cx * 1.5
-		e.a.push(T.e("[0]使用[战术机动]", this.r, null, null, null, 1, 1000, 100))
+		e.a.push(T.e("[0]使用[战术机动]回避了攻击", this.r, null, null, null, 1, 1000, 100))
 		bug = tnt
         return u && 0
     },
@@ -29211,38 +29211,25 @@ T.youzi1.prototype = {
 		
     }
     }
-	T.ribbit2n1.prototype = {
+    T.ribbit2n1.prototype = {
 	ar: function(a, b) {
-	        var u = H.o(this.r.r1.h(0, $.kl()), "$idK")
-            if (u != null)
+	        var v = H.o(this.r.r1.h(0, $.kl()), "$idK")
+            if (v != null)
             { 
                 return !1
             }
 			return this.aS(a, b)
 		},
     t: function(a, b, c, d) {
-        var u ,t ,r = this ,s ,v
-            u = H.o(this.r.r1.h(0, $.kl()), "$idK")
-                if (u == null) {
-                    u = new T.dK(this.r)
-                    this.r.r1.k(0, $.kl(), u)
-                    this.r.y1.i(0, u)
-                    
+        var u ,t ,o = this.r ,s ,v
+       			v = H.o(o.r1.h(0, $.kl()), "$idK")
+                if (v == null) {
+                    v = new T.dK(o)
+                    o.r1.k(0, $.kl(), v)
+                    o.y1.i(0, v)
                 }
-                    s = u.x
-                    v = 200
-					d.a.push(T.e("[0]使用[防弹挡板]", this.r , v, null, null, 1, 1000, 100))
-                    u.x = v
-					if (s == 0)
-					{
-                    d.a.push(T.e("[0]获得[1]点[护盾]", this.r , v, null, null, 0, 1000, 100))
-					}
-					else
-					{
-					d.a.push(T.e("[0]刷新了[护盾]", this.r , v, null, null, 0, 1000, 100))
-					}
-                    
-	
+                    v.x = 200
+				    q.push(T.e("[0]获得[1]点[护盾]", o , v.x, null, null, 0, 1000, 100))
 		
     }
     }
