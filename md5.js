@@ -31719,13 +31719,11 @@ T.yuzu.prototype = {
         t.r = this
         this.k2 = t
         t = this.id
-		u =new T.ribbit2n1()
-        u.f = 65
+		u =new T.ih()
+        u.f = 650
         t.push(u)
 		u =new T.ribbit2n2()
         u.f = 0
-        t.push(u)
-		t.push(new T.ribbit2b1())
 
     }   
     }
