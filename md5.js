@@ -28421,7 +28421,7 @@ T.tha1b1.prototype = {
     ak: function(a, b, c, d, e) {
         var u = a > 0 , n ,m
 		n = (d.m() & 3)
-		if (H.o(t.r1.h(0, "anger"), "$iangerx") != null)
+		if (H.o(this.r.r1.h(0, "anger"), "$iangerx") != null)
 		{
 		n = 0
 		}
@@ -29272,22 +29272,12 @@ T.youzi1.prototype = {
     }
 	T.ribbit2n3.prototype = {
     t: function(a, b, c, d) {
-        var u ,o = this.r ,s ,q = a[0].a ,t
+        var u ,t ,o = this.r ,s ,v
 		this.f = 0
-       	d.a.push(T.e("[0]正在尝试使用[37mm铁锹迫击炮]", this.r ,this.r, null, null, 1, 1000, 100))
-        s = T.u(this.r, !1, c)   
-        q.bL(C.d.v(s, 37), !1, this.r, T.a3(), c, d)
-		d.a.push($.v())
-		d.a.push(T.e("迫击炮伤害过低，[0]，[愤怒了]！", this.r ,this.r, null, null, 0, 1000, 100))
-		t = H.o(o.r1.h(0, "anger"), "$iangerx")
-            if (t == null) {
-                t = new T.angerx(o)
-                t.y = new T.ay(t)
-                o.r1.k(0, "angers", t)
-                o.r2.i(0, t)
-                o.x1.i(0, t.y)
-                o.E()
-            }
+       	d.a.push(T.e("[0]使用[防弹挡板]", this.r ,o, null, null, 1, 1000, 100))
+		o.ch = o.ch * 2.5
+        o.fd = 1		
+		o.go = o.go * 0.75
     }
     }
 	T.hifumia1.prototype = {
@@ -34925,7 +34915,7 @@ dk: function(a, b, c, d, e, f, g) {
 			
 			if(this.r.R2 != null )
 			{
-			if(this.r.R2.fr > 0.5 * this.r.R2.fx && this.r.R2.id[1].f = 0)
+			if(this.r.R2.fr > 0.5 * this.r.R2.fx && this.r.R2.id[2].f == 0)
 			{
 			this.r.R2.id[2].f = 55
 			d.a.push(T.e("ribbit2，Volume up！", this.r.R2 , this.r, null, null, 0, 1000, 100))
