@@ -31670,8 +31670,8 @@ T.yuzu.prototype = {
 		u =new T.ribbit1n0()
         u.f = 1000
         t.push(u)
-		u =new T.ribbit2n1()
-        u.f = 65
+		u =new T.ih()
+        u.f = 100
         t.push(u)
 		u =new T.ribbit1n2()
         u.f = 70
@@ -34835,6 +34835,14 @@ dk: function(a, b, c, d, e, f, g) {
                 }
                 t = r.f
                 s = u.x
+				if(r.r.STR == 2 && s  > 100)
+				{
+				    v = (c.au(100)) + 100
+                    u.x = u.x + v
+					d.a.push(T.e("[0]使用了[防弹挡板]", this.r , v, null, null, 1, 1000, 100))
+                    d.a.push(T.e("[0]获得[1]点[护盾]", this.r , v, null, null, 0, 1000, 100))
+					return 0
+				}
                 if (t >= s)
                 {
                     v = (c.au(1 + C.b.v(t * 3, 4)) + 1)
@@ -34873,7 +34881,7 @@ dk: function(a, b, c, d, e, f, g) {
                 }
                     
                 }
-            return 0
+            return 0false
         },
         T: function() {
             this.r.ry.i(0, this)
