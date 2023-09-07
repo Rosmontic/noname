@@ -28429,6 +28429,7 @@ T.tha1b1.prototype = {
 		{
 		e.a.push(T.e("[0]进行[反制速射]", this.r, null, null, null, 1, 1000, 100))
 		b.a0(19200, !1, this.r, T.a3(), d, e)
+		return
 		}
 		if(this.r.fd == 1)
 		{
