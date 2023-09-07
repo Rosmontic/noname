@@ -28385,7 +28385,7 @@ T.tha1b1.prototype = {
     $iD: 1
     }
 	
-    T.ribbit2b1.prototype = {
+   T.ribbit2b1.prototype = {
     ak: function(a, b, c, d, e) {
         var u = a > 0 , n ,m
 		n = (d.m() & 3)
@@ -28393,11 +28393,6 @@ T.tha1b1.prototype = {
 		{
 		e.a.push(T.e("[0]进行[反制速射]", this.r, null, null, null, 1, 1000, 100))
 		b.a0(16000, !1, this.r, T.a3(), d, e)
-		if(a == 0)
-		{
-		return u && a
-		}
-		return u && C.b.v (a, 2)
 		}
         return u && a
     },
@@ -29224,31 +29219,7 @@ T.youzi1.prototype = {
 		
     }
     }
-	T.ribbit2n1.prototype = {
-	ar: function(a, b) {
-            if (H.o(this.r.r1.h(0, $.kl()), "$idK") != null)
-            { 
-                return !1
-            }
-			return this.aS(a, b)
-		},
-    t: function(a, b, c, d) {
-        var v ,u, t, s, r = this
-                u = H.o(r.r.r1.h(0, $.kl()), "$idK")
-                if (u == null) {
-                    t = r.r
-                    u = new T.dK(t)
-                    t.r1.k(0, $.kl(), u)
-                    r.r.y1.i(0, u)
-                    
-                }
-                s = u.x
-                    v = (c.au(100) + 100)
-                    u.x = s + v
-					d.a.push(T.e("[0]使用[防弹挡板]", this.r , v, null, null, 1, 1000, 100))
-                    d.a.push(T.e("[0]获得[1]点[护盾]", this.r , v, null, null, 0, 1000, 100))  		
-    }
-    }
+	
     T.ribbit2n1.prototype = {
 	ar: function(a, b) {
 	        var v = H.o(this.r.r1.h(0, $.kl()), "$idK")
@@ -31708,9 +31679,6 @@ T.yuzu.prototype = {
 		u =new T.ribbit1n0()
         u.f = 1000
         t.push(u)
-		u =new T.ih()
-        u.f = 100
-        t.push(u)
 		u =new T.ribbit1n2()
         u.f = 70
         t.push(u)
@@ -31719,8 +31687,7 @@ T.yuzu.prototype = {
         t.push(u)
 		u =new T.ribbit1b2()
         u.f = 100
-        t.push(u)
-		
+        t.push(u)	
 		t.push(new T.ribbit1b1())
 
     }, 
@@ -31752,7 +31719,7 @@ T.yuzu.prototype = {
         t.r = this
         this.k2 = t
         t = this.id
-		u =new T.ih()
+		u =new T.ribbit2n1()
         u.f = 65
         t.push(u)
 		u =new T.ribbit2n2()
