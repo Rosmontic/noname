@@ -31714,7 +31714,7 @@ T.yuzu.prototype = {
         t.r = this
         this.k2 = t
         t = this.id
-		u =new T.ribbit2n1()
+		u =new T.ih()
         u.f = 65
         t.push(u)
 		u =new T.ribbit2n2()
@@ -34839,7 +34839,7 @@ dk: function(a, b, c, d, e, f, g) {
 				{
 				    v = ((c.au(100)) + 100)
                     u.x = u.x + v
-					d.a.push(T.e("[0]使用了[防弹挡板1]", this.r , v, null, null, 1, 1000, 100))
+					d.a.push(T.e("[0]使用了[防弹挡板]", this.r , v, null, null, 1, 1000, 100))
                     d.a.push(T.e("[0]获得[1]点[护盾]", this.r , v, null, null, 0, 1000, 100))
 					return 0
 				}
