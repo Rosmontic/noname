@@ -21107,30 +21107,7 @@ T.thb8s1.prototype = {
             for (u = 0; u < n.length; ++u) {
             o = n[u]
 			d.a.push($.v())
-			if(o.SRT != null){
-			if(o.SRT == 1){
-			this.r.R1 = o
-			o.go = o.go * 1.25
-			o.cy = o.cy * 1.75
-			o.cx = o.cx * 1.25
-			o.f = o.f + 2048
-			d.a.push(T.e("[0]：[Ribbit1，突击手，已就位。]", o, o, null, null, 0, 1000, 100))
-			}
-			if(o.SRT == 2){
-			this.r.R2 = o
-            o.ch = o.ch * 2
-			o.dx = o.dx * 2
-			o.cx = o.cx * 1.5
-			o.f = o.f + 4096
-			d.a.push(T.e("[0]：[Ribbit2，开始进行战地侦察。]", o, o, null, null, 0, 1000, 100))
-			}
-			if(o.SRT == 3){
-			this.r.R3 = o
-            o.Q = o.Q * 2
-			o.f = o.f + 1024
-			o.J = o.J * 0.25
-			d.a.push(T.e("[0]：[Ribbit3，随时准备开火哦 ~]", o, o, null, null, 0, 1000, 100))
-			}
+			if(o.SRT != null){			
 			if(o.SRT == 4){
 			this.r.R4 = o
 			o.go = o.go * 1.5
@@ -21139,6 +21116,28 @@ T.thb8s1.prototype = {
 			o.f = o.f + 1024
 			d.a.push(T.e("[0]：[Ribbit4，掩护射击...交给我吧...]", o, o, null, null, 0, 1000, 100))
 			}
+            if(o.SRT == 3){
+                this.r.R3 = o
+                o.Q = o.Q * 2
+                o.J = o.J * 0.5
+                d.a.push(T.e("[0]：[Ribbit3，随时准备开火哦 ~]", o, o, null, null, 0, 1000, 100))
+                }  
+            if(o.SRT == 2){
+                this.r.R2 = o
+                o.ch = o.ch * 1.5
+                o.dx = o.dx * 1.5
+                o.cx = o.cx * 1.25
+                o.f = o.f + 4096
+                d.a.push(T.e("[0]：[Ribbit2，开始进行战地侦察。]", o, o, null, null, 0, 1000, 100))
+                    }
+            if(o.SRT == 1){
+                this.r.R1 = o
+                o.go = o.go * 1.25
+                o.cy = o.cy * 1.25
+                o.cx = o.cx * 1.25
+                o.f = o.f + 2048
+                d.a.push(T.e("[0]：[Ribbit1，突击手，已就位。]", o, o, null, null, 0, 1000, 100)) 
+            }
             }
             
         }
@@ -25379,7 +25378,6 @@ n.r.bf(n.r.fr, null, c, d)
             u = a2.a
             u.push(T.e("[0]: [已抵达，准备潜入。]", c.r, b, b, b, 60, 1000, 100))
 			for(v =0 ; v < 1 ; v++){
-			u.push($.v())
             t = H.d(c.r.a) + "?" + H.d($.nn())
             s = c.r
             r = s.b
@@ -25424,20 +25422,20 @@ n.r.bf(n.r.fr, null, c, d)
             s = c.r
             d.x = s.x
             d.av()
-			d.fx = 120
-			d.fr = 120
+			d.fx = 60
+			d.fr = 60
 			d.Q =  10
 			d.ch = 10
-			d.cx = 150 
-			d.cy = 100 
+			d.cx = 180 
+			d.cy = 180 
 			d.db = 10
 			d.dx = 10
-			d.dy = 50
+			d.dy = 60
 			d.j =  2048
 			d.J =  d.J * 0.25
 			this.r.UAVi = d
             c.r.x.aU(d)
-            u.push(T.e("[1]登场 ", c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
+            u.push(T.e("[0]使用了[1] ", c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
         }
     }}
 	T.fox2n2.prototype = {
@@ -25509,7 +25507,7 @@ n.r.bf(n.r.fr, null, c, d)
 			d.dx = 100
 			d.dy = 50
 			d.j = -204800
-			d.J =  d.J * 22		
+			d.J =  d.J * 25		
 			c.r.BARi = d
             c.r.x.aU(d)
             u.push(T.e("设置了[1] ", c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
@@ -28386,7 +28384,7 @@ T.tha1b1.prototype = {
 		if (n == 0)
 		{
 		e.a.push(T.e("[0]进行[反制速射]", this.r, null, null, null, 1, 1000, 100))
-		b.a0(12800, !1, this.r, T.a3(), d, e)
+		b.a0(16000, !1, this.r, T.a3(), d, e)
 		}
         return u && C.b.v (a, 2)
     },
@@ -29225,15 +29223,17 @@ T.youzi1.prototype = {
                     r.r.y1.i(0, u)
                     
                 }
-                    s = u.x               
-                    v = 160
-					d.a.push(T.e("[0]使用[防弹挡板]", this.r , v, null, null, 1, 1000, 100))
-                    u.x = 150
-					if(s == 0){
+                    s = u.x
+                    v = 200
+					d.a.push(T.e("[0]使用[特殊防弹装备]", this.r , v, null, null, 1, 1000, 100))
+                    u.x = v
+					if (s > 0)
+					{
                     d.a.push(T.e("[0]获得[1]点[护盾]", this.r , v, null, null, 0, 1000, 100))
 					}
-					else{
-					d.a.push(T.e("[0]重新获得[1]点[护盾]", this.r , v, null, null, 0, 1000, 100))
+					else
+					{
+					d.a.push(T.e("[0]获得刷新了[护盾]", this.r , v, null, null, 0, 1000, 100))
 					}
                     
         }
@@ -34859,45 +34859,47 @@ dk: function(a, b, c, d, e, f, g) {
             var v ,u, t, s, r = this
 			if(this.r.zsgh == 0)
 			{
-			if(this.r.fr < 0.5 * this.r.fx)
+            d.a.push(T.e("[1]:各单位，注意", this.r , this.r, null, null, 0, 1000, 100))
+			if(this.r.fr < 0.5 * this.r.fx && this.r.r11 == 1)
 			{
-			this.r.cx = 1.5 * this.r.cx
-			this.r.cy = 1.5 * this.r.cy
+			this.r.cx = 1.25 * this.r.cx
+			this.r.cy = 1.25 * this.r.cy
 			this.r.ch = 0.5 * this.r.ch
 			this.r.r11 = 0
-			d.a.push(T.e("[1]：ribbit1，Break through！", this.r , this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("ribbit1，Break through！", this.r , this.r, null, null, 0, 1000, 100))
 			}
 			
 			if(this.r.R2 != null )
 			{
 			if(this.r.R2.fr > 0.5 * this.r.R2.fx)
 			{
-			this.r.R2.id[1].f = 110
+			this.r.R2.id[1].f = 155
 			this.r.R2.j = this.r.R2.j + 1024
-			d.a.push(T.e("[1]：ribbit2，Volume up！", this.r.R2 , this.r, null, null, 0, 1000, 100)&& this.r.R2 != null)
+			d.a.push(T.e("ribbit2，Volume up！", this.r.R2 , this.r, null, null, 0, 1000, 100))
 			}
 			
-			else if(this.r.R2.fr < 0.5 * this.r.R2.fx  )
+			else if(this.r.R2.fr < 0.5 * this.r.R2.fx && this.r.r12 == 1)
 			{
-			if (this.r.R2.fr > 0){
+			
 			this.r.R2.cx = C.d.Z(this.r.R2.cx *0.5)
-			this.r.R2.ch = this.r.R2.ch * 2
-			this.r.R2.dx = this.r.R2.dx * 2
+			this.r.R2.ch = this.r.R2.ch * 1.5
+			this.r.R2.dx = this.r.R2.dx * 1.5
 			this.r.R2.id[0].f = 200
-			d.a.push(T.e("[1]：ribbit2，Cover！", this.r.R2 , this.r, null, null, 0, 1000, 100))
-			}}
+            this.r.r12 = 0
+			d.a.push(T.e("ribbit2，Cover！", this.r.R2 , this.r, null, null, 0, 1000, 100))
+			}
 			}
 			
 			if(this.r.R3 != null)
 			{
 			if(this.r.R3.heli != null && this.r.R3.fr > 0){
 			this.r.R3.j = this.r.R3.j +1024
-			d.a.push(T.e("[1]：ribbit3，Fire suppression！", this.r.R3 , this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("ribbit3，Fire suppression！", this.r.R3 , this.r, null, null, 0, 1000, 100))
 			}}
 			
 			if( this.r.R4 != null)
 			{
-			if( this.r.R4.yin > 1 && this.r.R4.fr > 0){
+			if( this.r.R4.yin > 1 && this.r.r14 == 1){
 			this.r.R4.cx = 0.75 * this.r.R4.cx
 			this.r.R4.Q = 2 * this.r.R4.Q
 			this.r.R4.yin = this.r.R4.yin + 2
@@ -34906,6 +34908,7 @@ dk: function(a, b, c, d, e, f, g) {
 			d.a.push(T.e("[1]：ribbit4，Dormant！", this.r.R4 , this.r, null, null, 0, 1000, 100))
 			}}
 			}
+            d.a.push($.v())
             return a
         },
         T: function() {
