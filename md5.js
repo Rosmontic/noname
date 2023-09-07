@@ -12321,6 +12321,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
             _.go = 1
             _.id = e
 			_.SRT = 2
+			_.fd = 2
 			_.ri = 0
             _.k2 = _.k1 = null
             _.k3 = f
@@ -28364,17 +28365,13 @@ T.tha1b1.prototype = {
 	    var u = a > 0 , n ,m
 	    if (this.r.jd == 1)
 		{
-		if(a == 0)
-		{
-		return u && a
-		}
 		return u && C.b.v (a, 1.25)
-		} 
+		}
 		this.r.jd = 1
 		e.a.push($.v())
 		e.a.push(T.e("[0]：[见识一下SRT的CQB技巧吧！]", this.r, null, null, null, 0, 1000, 100))
-		this.r.cy =  this.r.cy * 1.5
-		this.r.cx =  this.r.cx * 1.5
+		this.r.cy =  this.r.cy * 1.25
+		this.r.cx =  this.r.cx * 1.25
 		e.a.push(T.e("[0]使用[战术机动]回避了攻击", this.r, null, null, null, 1, 1000, 100))
 		bug = tnt
         return u && 0
@@ -28393,6 +28390,10 @@ T.tha1b1.prototype = {
 		{
 		e.a.push(T.e("[0]进行[反制速射]", this.r, null, null, null, 1, 1000, 100))
 		b.a0(16000, !1, this.r, T.a3(), d, e)
+		}
+		if(this.r.df == 1)
+		{
+		return u && C.d.Z(a *0.33)
 		}
         return u && a
     },
@@ -29221,36 +29222,13 @@ T.youzi1.prototype = {
     }
 	
     T.ribbit2n1.prototype = {
-	ar: function(a, b) {
-	        var v = H.o(this.r.r1.h(0, $.kl()), "$idK")
-            if (v != null)
-            { 
-                return !1
-            }
-			return this.aS(a, b)
-		},
     t: function(a, b, c, d) {
         var u ,t ,o = this.r ,s ,v
-       			u = H.o(this.r.r1.h(0, $.kl()), "$idK")
-                if (u == null) {
-                    u = new T.dK(this.r)
-                    this.r.r1.k(0, $.kl(), u)
-                    this.r.y1.i(0, u)
-                    
-                }
-                    s = u.x
-                    v = 200
-					d.a.push(T.e("[0]使用[防弹挡板]", this.r , v, null, null, 1, 1000, 100))
-                    u.x = v
-					if (s == 0)
-					{
-                    d.a.push(T.e("[0]获得[1]点[护盾]", this.r , v, null, null, 0, 1000, 100))
-					}
-					else
-					{
-					d.a.push(T.e("[0]刷新了[护盾]", this.r , v, null, null, 0, 1000, 100))
-					}
-		
+		this.f = 0
+       	d.a.push(T.e("[0]使用[防弹挡板]", this.r ,o, null, null, 1, 1000, 100))
+		o.ch = o.ch * 2.5
+        o.fd = 1		
+		o.go = o.go * 0.75
     }
     }
 	T.hifumia1.prototype = {
@@ -31720,10 +31698,10 @@ T.yuzu.prototype = {
         this.k2 = t
         t = this.id
 		u =new T.ribbit2n1()
-        u.f = 65
+        u.f = 0
         t.push(u)
 		u =new T.ribbit2n2()
-        u.f = 110
+        u.f = 65
         t.push(u)
 		t.push(new T.ribbit2b1())
 
@@ -34890,15 +34868,14 @@ dk: function(a, b, c, d, e, f, g) {
 			this.r.R2.id[1].f = 155
 			this.r.R2.j = this.r.R2.j + 1024
 			d.a.push(T.e("ribbit2，Volume up！", this.r.R2 , this.r, null, null, 0, 1000, 100))
-			}
-			
+			}		
 			else if(this.r.R2.fr < 0.5 * this.r.R2.fx && this.r.r12 == 1)
 			{
 			
 			this.r.R2.cx = C.d.Z(this.r.R2.cx *0.5)
 			this.r.R2.ch = this.r.R2.ch * 1.5
 			this.r.R2.dx = this.r.R2.dx * 1.5
-			this.r.R2.id[0].f = 200
+			this.r.R2.id[0].f = 300
             this.r.r12 = 0
 			d.a.push(T.e("ribbit2，Cover！", this.r.R2 , this.r, null, null, 0, 1000, 100))
 			}
