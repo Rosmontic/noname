@@ -31722,8 +31722,7 @@ T.yuzu.prototype = {
 		u =new T.ih()
         u.f = 650
         t.push(u)
-		u =new T.ribbit2n2()
-        u.f = 0
+
 
     }   
     }
