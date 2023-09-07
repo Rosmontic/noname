@@ -28383,7 +28383,6 @@ T.tha1b1.prototype = {
 		n = (d.m() & 3)
 		if (n == 0)
 		{
-		e.a.push(T.e("[0]", a, null, null, null, 1, 1000, 100))
 		e.a.push(T.e("[0]进行[反制速射]", this.r, null, null, null, 1, 1000, 100))
 		b.a0(16000, !1, this.r, T.a3(), d, e)
 		}
@@ -34829,12 +34828,12 @@ dk: function(a, b, c, d, e, f, g) {
                     
                 }
                     s = u.x
-                    v = 120
+                    v = 100
                     u.x = s + v
 					d.a.push(T.e("[0]使用[防弹挡板]", this.r , v, null, null, 1 1000, 100))
                     d.a.push(T.e("[0]获得[1]点[护盾]", this.r , v, null, null, 0, 1000, 100))
                 }
-            return 0
+            return a
         },
         T: function() {
             this.r.ry.i(0, this)
