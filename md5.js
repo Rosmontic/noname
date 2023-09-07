@@ -29280,8 +29280,17 @@ T.youzi1.prototype = {
         v = C.d.v(s, 37)	
         q.bL(v, !1, this.r, T.a3(), c, d)
 		d.a.push($.v())
-		d.a.push(T.e("迫击炮伤害过低，[0]，[愤怒了]！", this.r ,this.r, null, null, 0, 1000, 100))
+		d.a.push(T.e("[迫击炮]伤害过低，[0]，[愤怒了]！", this.r ,this.r, null, null, 0, 1000, 100))
 		
+		t = H.o(this.r.r1.h(0, "anger"), "$iangerx")
+            if (t == null) {
+                t = new T.angerx(this.r)
+                t.y = new T.ay(t)
+                this.r.r1.k(0, "anger", t)
+                this.r.r2.i(0, t)
+                this.r.x1.i(0, t.y)
+                this.r.E()
+            }
     }
     }
 	T.hifumia1.prototype = {
