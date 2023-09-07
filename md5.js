@@ -34946,7 +34946,7 @@ dk: function(a, b, c, d, e, f, g) {
 			d.a.push(T.e("ribbit3，Fire suppression！", this.r.R3 , this.r, null, null, 0, 1000, 100))
 			}
 			if(this.r.R3.heli == null && this.r.R3.fr > 0 && this.r.R2.id[1].f == 0 && this.r.r13 == 1){
-			this.r.R2.id[0].f = 500
+			this.r.R3.id[0].f = 500
 			this.r.R3.j = this.r.R3.j -1024
 			this.r.r13 = 0
 			d.a.push(T.e("ribbit3，Maximum firepower！", this.r.R3 , this.r, null, null, 0, 1000, 100))
