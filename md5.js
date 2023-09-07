@@ -31727,8 +31727,9 @@ T.yuzu.prototype = {
         t.push(u)
 		t.push(new T.ribbit2b1())
 
+    }, 
+    
     }
-   
 	T.ribbit3.prototype = {
     gah: function() {
         return C.ribbit3
