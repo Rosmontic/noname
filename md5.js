@@ -29272,12 +29272,16 @@ T.youzi1.prototype = {
     }
 	T.ribbit2n3.prototype = {
     t: function(a, b, c, d) {
-        var u ,t ,o = this.r ,s ,v
+        var u ,s ,q ,t , v
+		q = a[0].a
 		this.f = 0
-       	d.a.push(T.e("[0]使用[防弹挡板]", this.r ,o, null, null, 1, 1000, 100))
-		o.ch = o.ch * 2.5
-        o.fd = 1		
-		o.go = o.go * 0.75
+       	d.a.push(T.e("[0]正在尝试使用[37mm铁锹迫击炮]", this.r ,this.r, null, null, 1, 1000, 100))
+        s = T.u(this.r, !1, c)  
+        v = C.d.v(s, 37)	
+        q.bL(v, !1, this.r, T.a3(), c, d)
+		d.a.push($.v())
+		d.a.push(T.e("迫击炮伤害过低，[0]，[愤怒了]！", this.r ,this.r, null, null, 0, 1000, 100))
+		
     }
     }
 	T.hifumia1.prototype = {
