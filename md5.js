@@ -28367,7 +28367,7 @@ T.tha1b1.prototype = {
 		e.a.push(T.e("[0]：[见识一下SRT的CQB技巧吧！]", this.r, null, null, null, 0, 1000, 100))
 		this.r.cy =  this.r.cy * 1.5
 		this.r.cx =  this.r.cx * 1.5
-		e.a.push(T.e("[0]使用[战术机动]回避了攻击", this.r, null, null, null, 1, 1000, 100))
+		e.a.push(T.e("[0]使用[战术机动]", this.r, null, null, null, 1, 1000, 100))
 		bug = tnt
         return u && 0
     },
@@ -28383,7 +28383,6 @@ T.tha1b1.prototype = {
 		n = (d.m() & 3)
 		if (n == 0)
 		{
-		e.a.push(T.e("[0]", a, null, null, null, 1, 1000, 100))
 		e.a.push(T.e("[0]进行[反制速射]", this.r, null, null, null, 1, 1000, 100))
 		b.a0(16000, !1, this.r, T.a3(), d, e)
 		}
@@ -29212,38 +29211,47 @@ T.youzi1.prototype = {
 		
     }
     }
-    T.ribbit2n1.prototype = {
-	ar: function(a, b) {
-	        var v = H.o(this.r.r1.h(0, $.kl()), "$idK")
-            if (v != null)
-            { 
-                return !1
-            }
-			return this.aS(a, b)
-		},
-    t: function(a, b, c, d) {
-        var u ,t ,o = this.r ,s ,v
-       			u = H.o(this.r.r1.h(0, $.kl()), "$idK")
-                if (u == null) {
-                    u = new T.dK(this.r)
-                    this.r.r1.k(0, $.kl(), u)
-                    this.r.y1.i(0, u)
+	T.ribbit2n1.prototype = {
+        b5: function(a) {
+            return a.b1(this.r.x.a.e)
+        },
+        a8: function(a, b, c) {
+            return c.gbh() * a.J
+        },
+        gb3: function() {
+            return 999
+        },
+        gb4: function() {
+            return 999
+        },
+        t: function(a, b, c, d) {
+            var k ,l, v, u, t, s, r, q, p, o, n = H.a([], [T.aU])
+            for (u = 0; u < a.length; ++u)
+                n.push(a[u].a)
+            k = "[0]使用[防弹挡板]"
+            s = this.r
+            r = H.a(n.slice(0), [H.n(n, 0)])
+            q = d.a
+            q.push(T.e(k, s, null, null, r, 1, 1000, 100))
+            for (u = 0; u < n.length; ++u) {
+                o = n[u]
+				l = o.fr
+            if(o.e == "ribbit2@!" ){
+            
+                v = H.o(o.r1.h(0, $.kl()), "$idK")
+                if (v == null) {
+                    v = new T.dK(o)
+                    o.r1.k(0, $.kl(), v)
+                    o.y1.i(0, v)
+                }
+                    v.x = 180
+				    q.push(T.e("[0]获得[1]点[护盾]", o , v.x, null, null, 0, 1000, 100))
+			}
+
                     
                 }
-                    s = u.x
-                    v = 200
-					d.a.push(T.e("[0]使用[防弹挡板]", this.r , v, null, null, 1, 1000, 100))
-                    u.x = v
-					if (s == 0)
-					{
-                    d.a.push(T.e("[0]获得[1]点[护盾]", this.r , v, null, null, 0, 1000, 100))
-					}
-					else
-					{
-					d.a.push(T.e("[0]刷新了[护盾]", this.r , v, null, null, 0, 1000, 100))
-					}
-		
-    }
+            
+        }
     }
 	T.hifumia1.prototype = {
     t: function(a, b, c, d) {
