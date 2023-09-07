@@ -29212,20 +29212,26 @@ T.youzi1.prototype = {
     }
     }
 	T.ribbit2n1.prototype = {
+	ar: function(a, b) {
+	        var u = H.o(this.r.r1.h(0, $.kl()), "$idK")
+            if (u != null)
+            { 
+                return !1
+            }
+			return this.aS(a, b)
+		},
     t: function(a, b, c, d) {
-        var u ,t ,r =this ,s ,v
-		if (r.f > 0) {
-            u = H.o(r.r.r1.h(0, $.kl()), "$idK")
+        var u ,t ,r = this ,s ,v
+            u = H.o(this.r.r1.h(0, $.kl()), "$idK")
                 if (u == null) {
-                    t = r.r
-                    u = new T.dK(t)
-                    t.r1.k(0, $.kl(), u)
-                    r.r.y1.i(0, u)
+                    u = new T.dK(this.r)
+                    this.r.r1.k(0, $.kl(), u)
+                    this.r.y1.i(0, u)
                     
                 }
                     s = u.x
                     v = 200
-					d.a.push(T.e("[0]使用[特殊防弹装备]", this.r , v, null, null, 1, 1000, 100))
+					d.a.push(T.e("[0]使用[防弹挡板]", this.r , v, null, null, 1, 1000, 100))
                     u.x = v
 					if (s > 0)
 					{
@@ -29233,10 +29239,9 @@ T.youzi1.prototype = {
 					}
 					else
 					{
-					d.a.push(T.e("[0]获得刷新了[护盾]", this.r , v, null, null, 0, 1000, 100))
+					d.a.push(T.e("[0]刷新了[护盾]", this.r , v, null, null, 0, 1000, 100))
 					}
                     
-        }
 	
 		
     }
