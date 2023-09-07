@@ -12320,11 +12320,11 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
             _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
             _.go = 1
             _.id = e
-			_.SRT = 3
-			_.heli = null
-			_.BAR = null
-			_.ri = 0
-			_.dan = 0
+			_.al1s1 = 0
+			_.tai = 1
+			_.zhao = 1
+			_.alfn = 0
+			_.yxb = 4
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
