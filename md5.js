@@ -12320,11 +12320,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
             _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
             _.go = 1
             _.id = e
-			_.al1s1 = 0
-			_.tai = 1
-			_.zhao = 1
-			_.alfn = 0
-			_.yxb = 4
+			_.SRT = 2
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -31731,23 +31727,8 @@ T.yuzu.prototype = {
         t.push(u)
 		t.push(new T.ribbit2b1())
 
-    }, 
-    bM: function() {
-            var u, t = this
-            t.dK()
-            u = t.bb
-            if (u == null)
-                u = t.bb = new T.cB(t)
-            t.y2.i(0, u)
-        },
-    ay: function(a, b, c, d) {
-		    
-            if(this.fr <= 0){
-		    d.a.push($.v())
-			d.a.push(T.e("[0]: [因为我失误...拖累了小队...]", this, this.r, null, null, 0, 1000, 100))
-			}	
-        }
     }
+   
 	T.ribbit3.prototype = {
     gah: function() {
         return C.ribbit3
