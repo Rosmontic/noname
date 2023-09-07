@@ -34835,7 +34835,7 @@ dk: function(a, b, c, d, e, f, g) {
                 }
                 t = r.f
                 s = u.x
-				if(r.r.STR == 2 && s  > 100)
+				if(r.r.STR != null && s  > 100)
 				{
 				    v = (c.au(100)) + 100
                     u.x = u.x + v
@@ -34881,7 +34881,7 @@ dk: function(a, b, c, d, e, f, g) {
                 }
                     
                 }
-            return 0false
+            return 0
         },
         T: function() {
             this.r.ry.i(0, this)
