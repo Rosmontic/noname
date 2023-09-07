@@ -29239,7 +29239,7 @@ T.youzi1.prototype = {
             for (u = 0; u < n.length; ++u) {
                 o = n[u]
 				l = o.fr
-            if(o.e == "ribbit2@!" ){
+            if(o.SRT > 0  ){
             
                 v = H.o(o.r1.h(0, $.kl()), "$idK")
                 if (v == null) {
@@ -31727,7 +31727,7 @@ T.yuzu.prototype = {
         u.f = 65
         t.push(u)
 		u =new T.ribbit2n2()
-        u.f = 110
+        u.f = 0
         t.push(u)
 		t.push(new T.ribbit2b1())
 
