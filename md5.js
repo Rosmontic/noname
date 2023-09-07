@@ -29233,7 +29233,7 @@ T.youzi1.prototype = {
                     v = 200
 					d.a.push(T.e("[0]使用[防弹挡板]", this.r , v, null, null, 1, 1000, 100))
                     u.x = v
-					if (s > 0)
+					if (s == 0)
 					{
                     d.a.push(T.e("[0]获得[1]点[护盾]", this.r , v, null, null, 0, 1000, 100))
 					}
@@ -31671,6 +31671,9 @@ T.yuzu.prototype = {
         t = this.id
 		u =new T.ribbit1n0()
         u.f = 1000
+        t.push(u)
+		u =new T.ribbit2n1()
+        u.f = 65
         t.push(u)
 		u =new T.ribbit1n2()
         u.f = 70
@@ -34235,10 +34238,12 @@ t.push(u)
         bP: function(a, b, c) {
             var u, t, s, r, q, p, o, n, m = this, l = null
 			u = c.a
+			if (!a.$iav){
 			u.push($.v())
 			u.push(T.e("[0]：[Tango Down!]", m.r, a, l, l, 1, 1000, 100))
-            this.r.go = this.r.go * 1.25
+            this.r.go = this.r.go * 1.5
 			this.r.j = this.r.j + 2048
+			}
             return !0
         },
         $iI: 1
