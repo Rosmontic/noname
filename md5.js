@@ -21610,9 +21610,9 @@ T.thb9t2.prototype = {
         var u = this ,v
         t = a[0].a
         s = T.u(u.r, !1, c)      
-		v = 0.5 + C.d.Z(u.r.yin *0.75)
+		v = 0.5 + C.d.Z(u.r.yin *0.5)
 		if(u.r.yin > 2)
-		{        
+		{   
         d.a.push(T.e("[0]发起狙击", u.r, t, null, null, 0, 1000, 100))
         t.bL(v*s, !0, u.r, T.a3(), c, d)
 		}
@@ -22354,7 +22354,7 @@ T.ribbit3n2.prototype = {
                 q = d.a
 				q.push(T.e("[0]；[呼...呼...我要忍不住了]", s, null, null, r, 1, 1000, 100))
                 q.push(T.e(t, s, null, null, r, 1, 1000, 100))
-                p = T.u(this.r, !0, c) * 1.75
+                p = T.u(this.r, !0, c) * 1.5
                 for (u = 0; u < n.length; ++u) {
                     o = n[u]
     if (o.fr > 0 ) {
@@ -22366,36 +22366,27 @@ T.ribbit3n2.prototype = {
     }
 
 T.ribbit3n3.prototype = {
-    ar: function(a, b) {
-        if (this.r.heli == null)
-        { 
-            return !1
-        }
-    
-    return this.aS(a, b)
-},
             gb3: function() {
-                return 4
+                return 5
             },
             gb4: function() {
-                return 4
+                return 5
             },
             t: function(a, b, c, d) {
                 var u, t, s, r, q, p, o, n = H.a([], [T.aU])
                 for (u = 0; u < a.length; ++u)
                     n.push(a[u].a)
-                t = "[0]使用[钢铁之雨]"
                 s = this.r
                 r = H.a(n.slice(0), [H.n(n, 0)])
                 q = d.a
-				q.push(T.e("[0]；[呼...呼...我要忍不住了]", s, null, null, r, 1, 1000, 100))
-                q.push(T.e(t, s, null, null, r, 1, 1000, 100))
-                p = T.u(this.r, !0, c) * 1.75
+				this.f = 0
+				q.push(T.e("[0]；[诶嘿嘿...全弹发射！]", s, null, null, r, 1, 1000, 100))
+                p = T.u(this.r, !0, c) * 3.5
                 for (u = 0; u < n.length; ++u) {
                     o = n[u]
     if (o.fr > 0 ) {
     q.push($.v())
-    o.a0(p, !1, this.r, T.firea(), c, d)
+    o.a0(p, !1, this.r, T.a3(), c, d)
     }                    
     }
     }   
@@ -28428,12 +28419,12 @@ T.tha1b1.prototype = {
 		if (n == 0)
 		{
 		e.a.push(T.e("[0]进行[反制速射]", this.r, null, null, null, 1, 1000, 100))
-		b.a0(19200, !1, this.r, T.a3(), d, e)
+		b.a0(14400, !1, this.r, T.a3(), d, e)
 		bug = tnt
 		}
 		if(this.r.fd == 1)
 		{
-		return u && C.d.Z(a *0.2)
+		return u && C.d.Z(a *0.33)
 		}
         return u && a
     },
@@ -31800,7 +31791,10 @@ T.yuzu.prototype = {
         t.r = this
         this.k2 = t
         t = this.id
-        u =new T.ribbit3n1()
+		u = new T.ribbit3n3()
+        u.f = 0
+        t.push(u)
+        u = new T.ribbit3n1()
         u.f = 200
         t.push(u)
         u = new T.ribbit3n2()
@@ -34932,17 +34926,16 @@ dk: function(a, b, c, d, e, f, g) {
 			if(this.r.R2.fr > 0.5 * this.r.R2.fx && this.r.R2.id[2].f == 0)
 			{
 			this.r.R2.id[2].f = 55
+			this.r.R3.j = this.r.R3.j +1024
 			d.a.push(T.e("ribbit2，Volume up！", this.r.R2 , this.r, null, null, 0, 1000, 100))
 			}	
 			else if(this.r.R2.fr < 0.5 * this.r.R2.fx && this.r.r12 == 1)
 			{
-			
-			this.r.R2.cx = C.d.Z(this.r.R2.cx *0.5)
-			this.r.R2.ch = this.r.R2.ch * 1.5
-			this.r.R2.dx = this.r.R2.dx * 1.5
+			this.r.R2.ch = this.r.R2.ch * 1.25
+			this.r.R2.dx = this.r.R2.dx * 1.25
 			this.r.R2.id[1].f = 300
             this.r.r12 = 0
-			d.a.push(T.e("ribbit2，Cover me！", this.r.R2 , this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("ribbit2，Cover！", this.r.R2 , this.r, null, null, 0, 1000, 100))
 			}
 			}
 			
@@ -34951,7 +34944,14 @@ dk: function(a, b, c, d, e, f, g) {
 			if(this.r.R3.heli != null && this.r.R3.fr > 0){
 			this.r.R3.j = this.r.R3.j +1024
 			d.a.push(T.e("ribbit3，Fire suppression！", this.r.R3 , this.r, null, null, 0, 1000, 100))
-			}}
+			}
+			if(this.r.R3.heli == null && this.r.R3.fr > 0 && this.r.R2.id[1].f == 0 && this.r.r13 == 1){
+			this.r.R2.id[0].f = 500
+			this.r.R3.j = this.r.R3.j -1024
+			this.r.r13 = 0
+			d.a.push(T.e("ribbit3，Maximum firepower！", this.r.R3 , this.r, null, null, 0, 1000, 100))
+			}
+			}
 			
 			if( this.r.R4 != null)
 			{
@@ -34960,7 +34960,7 @@ dk: function(a, b, c, d, e, f, g) {
 			this.r.R4.Q = 2 * this.r.R4.Q
 			this.r.R4.yin = this.r.R4.yin + 2
 			this.r.r14 = 0
-			d.a.push(T.e("[1]：ribbit4，Dormant！", this.r.R4 , this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("ribbit4，Dormant！", this.r.R4 , this.r, null, null, 0, 1000, 100))
 			}}
 			}
             d.a.push($.v())
