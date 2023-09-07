@@ -28383,6 +28383,7 @@ T.tha1b1.prototype = {
 		n = (d.m() & 3)
 		if (n == 0)
 		{
+		e.a.push(T.e("[0]", a, null, null, null, 1, 1000, 100))
 		e.a.push(T.e("[0]进行[反制速射]", this.r, null, null, null, 1, 1000, 100))
 		b.a0(16000, !1, this.r, T.a3(), d, e)
 		}
@@ -29222,14 +29223,25 @@ T.youzi1.prototype = {
 		},
     t: function(a, b, c, d) {
         var u ,t ,o = this.r ,s ,v
-       			v = H.o(o.r1.h(0, $.kl()), "$idK")
-                if (v == null) {
-                    v = new T.dK(o)
-                    o.r1.k(0, $.kl(), v)
-                    o.y1.i(0, v)
+       			u = H.o(this.r.r1.h(0, $.kl()), "$idK")
+                if (u == null) {
+                    u = new T.dK(this.r)
+                    this.r.r1.k(0, $.kl(), u)
+                    this.r.y1.i(0, u)
+                    
                 }
-                    v.x = 200
-				    q.push(T.e("[0]获得[1]点[护盾]", o , v.x, null, null, 0, 1000, 100))
+                    s = u.x
+                    v = 200
+					d.a.push(T.e("[0]使用[防弹挡板]", this.r , v, null, null, 1, 1000, 100))
+                    u.x = v
+					if (s == 0)
+					{
+                    d.a.push(T.e("[0]获得[1]点[护盾]", this.r , v, null, null, 0, 1000, 100))
+					}
+					else
+					{
+					d.a.push(T.e("[0]刷新了[护盾]", this.r , v, null, null, 0, 1000, 100))
+					}
 		
     }
     }
