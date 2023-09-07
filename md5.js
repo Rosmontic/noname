@@ -34866,9 +34866,9 @@ dk: function(a, b, c, d, e, f, g) {
                 s = u.x
                 if (t >= 0)
                 {
-                    v = 100
-                    u.x = s + v
-					d.a.push(T.e("[0]使用了[防弹挡板]", this.r , v, null, null, 0, 1000, 100))
+                    v = (c.au(100))
+                    u.x = v
+					d.a.push(T.e("[0]使用了[防弹挡板]", this.r , v, null, null, 1, 1000, 100))
                     d.a.push(T.e("[0]获得[1]点[护盾]", this.r , v, null, null, 0, 1000, 100))
                 }
                     
