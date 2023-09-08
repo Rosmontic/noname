@@ -23648,21 +23648,7 @@ T.tha4n1.prototype = {
             for (v = 0; v < a.length; ++v){
                 n.push(a[v].a)}
             q.push(T.e("[0]：[看，茄子！]", r, r, null, null, 60, 1000, 100))
-            u.r.y1.i(0, u.fr)
-            u.r.x1.i(0, u.fx)
-            u.r.r2.i(0, u.fy)
-            u.r.r1.k(0, $.l2(), u)
-            u.r.E()
-            u.id = 3
-            r = u.r
-            u.go = 200
-            if (r.r1.G(0, $.X())) {
-                u.id += 4
-                u.go = u.go + (240 + u.r.db * 4)
-            }
-            q.push(T.e("[0]使用了[闪光盾]", u.r, u.r, null, null, 0, 1000, 100))
-			
-            for (v = 0; v < n.length; ++v) {
+			for (v = 0; v < n.length; ++v) {
                 o = n[v]              
             q.push($.v())        
                 t = H.o(o.r1.h(0, "blindly"), "$iblindlyx")
@@ -23681,6 +23667,20 @@ T.tha4n1.prototype = {
                 d.a.push(T.e("[0]陷入[目盲]", o, o, null, null, 0, 1000, 100))   
                 }
                 }
+            u.r.y1.i(0, u.fr)
+            u.r.x1.i(0, u.fx)
+            u.r.r2.i(0, u.fy)
+            u.r.r1.k(0, $.l2(), u)
+            u.r.E()
+            u.id = 3
+            r = u.r
+            u.go = 200
+            if (r.r1.G(0, $.X())) {
+                u.id += 4
+                u.go = u.go + (240 + u.r.db * 4)
+            }
+            q.push(T.e("[0]使用了[闪光盾]", u.r, u.r, null, null, 0, 1000, 100))		
+            
 			
         },
         ak: function(a, b, c, d, e) {
