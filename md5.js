@@ -8643,14 +8643,6 @@ tha4n1: function tha4n1() {
             _.f = 0
             _.c = _.b = _.a = _.r = null
         },
-		fox3n1: function fox3n1() {
-            var _ = this
-            _.fy = _.fx = _.fr = null
-            _.id = _.go = 0
-            _.e = !1
-            _.f = 0
-            _.c = _.b = _.a = _.r = null
-        },
 		tha1n1: function tha1n1() {
             var _ = this
             _.fy = _.fx = _.fr = null
@@ -9179,6 +9171,12 @@ tha4n1: function tha4n1() {
             _.c = _.b = _.a = _.r = null
         },
 		fox2n1: function fox2n1() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
+		fox3n1: function fox3n1() {
             var _ = this
             _.e = !1
             _.f = 0
@@ -21484,7 +21482,7 @@ T.thb5n2.prototype = {
 }
     T.fox2n1.prototype = {
         b5: function(a) {
-            return a.b1(this.r.x.a.e)
+            return a.b1(this.r.x.a.e) && !a.$iav
         },
         a8: function(a, b, c) {
             return c.gbh() * a.J
@@ -21496,7 +21494,7 @@ T.thb5n2.prototype = {
             return 5
         },
         t: function(a, b, c, d) {
-            var k ,l, v, u, t, s, r, q, p, o, n = H.a([], [T.aU])
+            var h ,k ,l, v, u, t, s, r, q, p, o, n = H.a([], [T.aU])
             for (u = 0; u < a.length; ++u)
                 n.push(a[u].a)
             k = "[0]使用[后勤整备]"
@@ -21516,12 +21514,57 @@ T.thb5n2.prototype = {
                     o.y1.i(0, v)
                 }
                     v.x = v.x + 75
-				    q.push(T.e("[0]获得[1]点[护盾]", o , v.x, null, null, 0, 1000, 100))
+					h = 75
+				    q.push(T.e("[0]获得[1]点[护盾]", o , h, null, null, 0, 1000, 100))
 			}             
                 }
             
         }
 	}
+	T.fox3n1.prototype = {
+        gb3: function() {
+            return 4
+        },
+        gb4: function() {
+            return 4
+        },
+        t: function(a, b, c, d) {
+            var h ,k ,l, v, u, t, s, r, q, p, o, n = H.a([], [T.aU])
+            for (u = 0; u < a.length; ++u)
+                n.push(a[u].a)
+            k = "[0]使用[闪光盾]"
+            s = this.r
+            r = H.a(n.slice(0), [H.n(n, 0)])
+            q = d.a
+            q.push(T.e(k, s, null, null, r, 1, 1000, 100))
+            for (u = 0; u < n.length; ++u) {
+                o = n[u]
+				l = o.fr
+            q.push($.v())		
+            if (!o.a6("blindly", c)){
+                v = o.fr > 0 && !o.A && T.bd(s.db, o.dy + o.dx, c)}
+            else{
+                v = !0}
+            if (v) {
+			    d.a.push(T.e("[0]闪避了效果", o, o, null, null, 20, 1000, 100))
+            }
+			else{
+            t = H.o(o.r1.h(0, "blindly"), "$iblindlyx")
+            if (t == null) {
+                t = new T.blindlyx(o)
+                t.y = new T.ay(t)
+                o.r1.k(0, "blindly", t)
+                o.r2.i(0, t)
+                o.x1.i(0, t.y)
+                o.E()
+				d.a.push(T.e("[0]陷入[目盲]", o, o, null, null, 0, 1000, 100))
+            } 
+			else{
+                t.Q += 3
+				t.z += 10
+                d.a.push(T.e("[0]陷入[目盲]", o, o, null, null, 0, 1000, 100))}          
+        }}
+	}}
 T.thb5n3.prototype = {
         b5: function(a) {
             return a.b1(this.r.x.a.e)
@@ -23574,119 +23617,6 @@ T.tha4n1.prototype = {
             s = C.c.K(O.c("PurV"), $.nh())
             r = u.r
             q.push(T.e(s, r, r, t, t, 0, 1000, 100))
-        },
-        ak: function(a, b, c, d, e) {
-            var u
-            if (a > 0) {
-                u = b.millionPower ? 0 : this.go
-                if (a <= u) {
-                    this.go = u - 0
-                    a = 1
-                } else {
-                    a -= u
-                    this.H(b, e)
-                }
-                return a
-            }
-            return 0
-        },
-        aq: function(a, b) {
-            var u
-            if (--this.id === 0) {
-                this.H(null, b)
-                u = this.r
-                u.j = u.j - 128
-            }
-        },
-        al: function(a) {
-            this.r.J *= 1.12
-        },
-        gR: function() {
-            return this.id
-        },
-        H: function(a, b) {
-            var u, t, s, r = this
-            r.fr.C()
-            r.fx.C()
-            r.fy.C()
-            r.r.r1.S(0, $.l2())
-            r.r.E()
-            u = b.a
-            if (a != null) {
-                u.push($.v())
-                u.push(T.ap(O.c("Cwah"), a, r.r))
-            } else {
-                u.push($.v())
-                t = O.c("Yksv")
-                s = r.r
-                u.push(T.ap(t, s, s))
-            }
-            r.go = r.id = 0
-        },
-        $ip: 1
-    }
-	T.fox3n1.prototype = {
-        ga1: function() {
-            return 4000
-        },
-		gb3: function() {
-            return 5
-        },
-        gb4: function() {
-            return 5
-        },
-        ar: function(a, b) {
-            if (this.fr.a != null)
-                return !1
-            return this.aS(a, b)
-        },
-        a9: function(a, b, c) {
-            return H.a([], [T.Z])
-        },
-        t: function(a, b, c, d) {
-            var v ,n, o, u = this
-              , t
-              , s
-              , r = u.r
-              , q = d.a
-			n = H.a([], [T.aU])
-            for (v = 0; v < a.length; ++v){
-                n.push(a[v].a)}
-            q.push(T.e("[0]：[看，茄子！]", r, r, null, null, 60, 1000, 100))
-            u.r.y1.i(0, u.fr)
-            u.r.x1.i(0, u.fx)
-            u.r.r2.i(0, u.fy)
-            u.r.r1.k(0, $.l2(), u)
-            u.r.E()
-            u.id = 3
-            r = u.r
-            u.go = 200
-            if (r.r1.G(0, $.X())) {
-                u.id += 4
-                u.go = u.go + (240 + u.r.db * 4)
-            }
-			for (v = 0; v < n.length; ++v) {
-                o = n[v]              
-            q.push($.v())        
-                t = H.o(o.r1.h(0, "blindly"), "$iblindlyx")
-            if (t == null) {
-                t = new T.blindlyx(o)
-                t.y = new T.ay(t)
-                o.r1.k(0, "blindly", t)
-                o.r2.i(0, t)
-                o.x1.i(0, t.y)
-                o.E()
-				d.a.push(T.e("[0]陷入[目盲]", o, o, null, null, 0, 1000, 100))
-            } 
-			else{
-                t.Q += 3
-				t.z += 10
-                d.a.push(T.e("[0]陷入[目盲]", o, o, null, null, 0, 1000, 100))   
-                }
-            }
-            q.push(T.e("[0]使用了[闪光盾]", u.r, u.r, null, null, 0, 1000, 100))		
-            
-			
         },
         ak: function(a, b, c, d, e) {
             var u
@@ -32132,13 +32062,8 @@ T.yuzu.prototype = {
         t.r = this
         this.k2 = t
         t = this.id
-		u = new T.fox3n1()
-        f = new T.dF(1 / 0,u)
-        u.fr = f
-        u.fx = new T.ay(u)
-        u.fy = new T.aN(u)
-        f.r = 10
-        u.f = 45
+		u =new T.fox3n1()
+        u.f = 100
         t.push(u)
 
     }, 
@@ -36845,10 +36770,10 @@ C.ribbit1 = H.a(u([-12, 7, 30, 30, -13, 39, 36, 430]), [P.j])
 C.ribbit2 = H.a(u([15, 0, 26, 32, 10, 31, 30, 470]), [P.j])
 C.ribbit3 = H.a(u([47, 9, 39, 30, 12, -11, 20, 292]), [P.j])
 C.ribbit4 = H.a(u([10, 10, 10, 45, 20, 50, 8, 259]), [P.j])
-C.fox1 = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
-C.fox2 = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
-C.fox3 = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
-C.fox4 = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.fox1 = H.a(u([-1, 1, 0, 32, 40, 12, 28, 402]), [P.j])
+C.fox2 = H.a(u([30, 22, 41, 42, 34, 30, 36, 399]), [P.j])
+C.fox3 = H.a(u([40, 25, 20, 21, 13, 20, 44, 687]), [P.j])
+C.fox4 = H.a(u([3, 1, 24, 3, 30, -16, 33, 302]), [P.j])
 C.rio = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.yuuka = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.noa = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
