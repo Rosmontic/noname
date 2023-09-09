@@ -29983,17 +29983,20 @@ T.youzi1.prototype = {
     }
 	T.squalln6.prototype = {
     t: function(a, b, c, d) {
-        var u ，s , t
+        var s , u , t
         t = a[0].a
-	    d.a.push(T.e("[0]使用[信息技术]", this.r, t, null, null, 1, 1000, 100))
-		this.r.Q + = t.Q
-		this.r.ch + = t.ch
-		this.r.cx + = t.cx
-		this.r.cy + = t.cy
-		this.r.db + = t.db
-		this.r.dx + = t.dx
-		this.r.dy + = t.dy
-		d.a.push(T.e("[0]获得了[1]的属性", this.r, t, null, null, 0, 1000, 100))
+		s = t.fr
+		t.fr = 0
+			d.a.push(T.e("[0]吸走了[1]的rp", this.r, t, null, null, 1, 1000, 100))
+            t.bf(t.fr, null, c, d)
+			u = this.r.fr
+			this.r.fr = this.r.fr + s
+			if(this.r.fr > this.r.fx){
+			s = this.r.fx - u
+			this.r.fr = this.r.fx
+			}
+			d.a.push(T.e("[1]恢复了[0]生命", s, T.a1(this.r, u), null, null, 0, 1000, 100))
+		
     }
     }
 	T.squalln7.prototype = {
@@ -30008,7 +30011,7 @@ T.youzi1.prototype = {
         aK: function(a, b, c, d) {
             var u, t, s , q = (c.m() & 3)
 			if(this.r.syl != null)
-			{	
+			{
 			this.r.syln = this.r.syln + 1
 			if(this.r.syln > 1 )
 			{
