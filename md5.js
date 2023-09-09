@@ -29960,23 +29960,40 @@ T.youzi1.prototype = {
         var u = this
         t = a[0].a
 	    this.r.tyx = 1
-		d.a.push(T.e("[0][退游了]", this.r, this.r, null, null, 1, 1000, 100))	
+		d.a.push(T.e("[0][退游了]", this.r, this.r, null, null, 1, 1000, 100))
     }
     }
 	T.squalln5.prototype = {
     t: function(a, b, c, d) {
-        var u = this
+        var s , u
         t = a[0].a
-	
+		s = t.fr
+		t.fr = 0
+			d.a.push(T.e("[0]吸走了[1]的[rp]", this.r, t, null, null, 1, 1000, 100))
+            t.fr.bf(t.fr.fr, null, c, d)
+			u = this.r.fr 
+			this.r.fr = this.r.fr + s
+			if(this.r.fr > this.r.fx){
+			s = this.r.fx - u
+			this.r.fr = this.r.fx
+			}
+			d.a.push(T.e("[1]恢复了[0]生命", s, T.a1(this.r, u), null, null, 0, 1000, 100))
 		
     }
     }
 	T.squalln6.prototype = {
     t: function(a, b, c, d) {
-        var u = this
+        var u ，s
         t = a[0].a
-	
-		
+	    d.a.push(T.e("[0]使用[信息技术]", this.r, t, null, null, 1, 1000, 100))
+		u = this.r.fr 
+		s = t.Q +t.ch +t.cy + t.cx + t.db + t.dx + t.dy
+			this.r.fr = this.r.fr + s
+			if(this.r.fr > this.r.fx){
+			s = this.r.fx - u
+			this.r.fr = this.r.fx
+			}
+		d.a.push(T.e("[1]恢复了[0]生命", s, T.a1(this.r, u), null, null, 0, 1000, 100))
     }
     }
 	T.squalln7.prototype = {
@@ -30008,7 +30025,9 @@ T.youzi1.prototype = {
 			}
 			d.a.push(T.e("[1]恢复了[0]生命", s, T.a1(this.r, u), null, null, 0, 1000, 100))
 			d.a.push($.v())
-			}  
+			return 0
+			}
+			return a
 			}
 			else
 			{
@@ -30018,22 +30037,25 @@ T.youzi1.prototype = {
 			if (q == 0)
 		    {
 		    d.a.push(T.e("[0]在[打音游]", this.r, this.r, null, null, 0, 1000, 100))
+			return 0
 		    }
 		    if (q == 1)
 		    {
 		    d.a.push(T.e("[0]在[睡觉]", this.r, this.r, null, null, 0, 1000, 100))
+			return 0
 		    }
 		    if (q == 2)
 		    {
 		    d.a.push(T.e("[0]在[上课]", this.r, this.r, null, null, 0, 1000, 100))
+			return 0
 		    }
 		    if (q == 3)
 		    {
 		    d.a.push(T.e("[0][无所事事，决定回坑]", this.r, this.r, null, null, 0, 1000, 100))
 			this.r.tyx = 0
-		    }
-			return 0
+		    }			
 			}
+			return a
 			}
             return a
         },
@@ -30044,10 +30066,10 @@ T.youzi1.prototype = {
     }
 	T.squallt4.prototype = {
     ak: function(a, b, c, d, e) {
-        var u = a > 0 , n ,m
+        var u = a > 0
 		if(this.r.tyx > 0)
 		{
-		a = 0
+		return u && 0
 		}
         return u && a
     },
