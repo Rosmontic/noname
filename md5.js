@@ -29533,10 +29533,27 @@ T.youzi1.prototype = {
     }
 	T.squalla1.prototype = {
     t: function(a, b, c, d) {
-        var u = this
+        var u = this ,p , q
         t = a[0].a
-	
-		
+		q = (c.m() & 3)
+	    d.a.push(T.e("[0]发起攻击", this.r, this.r, null, null, 1, 1000, 100))
+		if (q == 0)
+		{
+		p = 6584
+		}
+		if (q == 1)
+		{
+		p = 7230
+		}
+		if (q == 2)
+		{
+		p = 8802
+		}
+		if (q == 3)
+		{
+		p = 9332
+		}
+		t.a0(p, !1, this.r, T.a3(), c, d)
     }
     }
 	T.squalln1.prototype = {
