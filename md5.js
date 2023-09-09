@@ -29986,14 +29986,7 @@ T.youzi1.prototype = {
         var u ，s , t
         t = a[0].a
 	    d.a.push(T.e("[0]使用[信息技术]", this.r, t, null, null, 1, 1000, 100))
-		this.r.Q + = t.Q
-		this.r.ch + = t.ch
-		this.r.cx + = t.cx
-		this.r.cy + = t.cy
-		this.r.db + = t.db
-		this.r.dx + = t.dx
-		this.r.dy + = t.dy
-		d.a.push(T.e("[0]获得了[1]的属性", this.r, t, null, null, 1, 1000, 100))
+		d.a.push(T.e("[0]获得了[1]的属性", this.r, t, null, null, 0, 1000, 100))
     }
     }
 	T.squalln7.prototype = {
