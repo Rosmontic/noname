@@ -29795,7 +29795,7 @@ T.youzi1.prototype = {
             d.x = s.x
             d.av()
 			d.fx = 299
-			d.fr = 99
+			d.fr = 299
 			d.Q =  99
 			d.ch = 99
 			d.cx = 99 
@@ -29989,12 +29989,11 @@ T.youzi1.prototype = {
     }
 	T.squallt2.prototype = {
         aK: function(a, b, c, d) {
-            var u, t, s , q
-			q = (c.m() & 3)
-			if(this.r.syl != null)
+            var u, t, s , q = (c.m() & 3)
+			if(this.r.syl != null && this.r.tyx == 0)
 			{
 			this.r.syln = this.r.syln + 1
-			if(this.r.syln > 1 && this.r.tyx == 0)
+			if(this.r.syln > 1 )
 			{
 			s = this.r.syl.fr
 			d.a.push(T.e("[0]开始超市[1]", this.r, this.r.syl, null, null, 1, 1000, 100))
@@ -30033,7 +30032,7 @@ T.youzi1.prototype = {
 		    d.a.push(T.e("[0][无所事事，决定回坑]", this.r, this.r, null, null, 0, 1000, 100))
 			this.r.tyx = 0
 		    }
-			return a
+			return 0
 			}
 			}
             return a
