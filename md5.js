@@ -29983,17 +29983,10 @@ T.youzi1.prototype = {
     }
 	T.squalln6.prototype = {
     t: function(a, b, c, d) {
-        var u ，s , t
+        var u = this
         t = a[0].a
-	    d.a.push(T.e("[0]使用[信息技术]", this.r, t, null, null, 1, 1000, 100))
-		u = this.r.fr 
-		s = t.Q + t.ch +t.cy + t.cx + t.db + t.dx + t.dy
-			this.r.fr = this.r.fr + s
-			if(this.r.fr > this.r.fx){
-			s = this.r.fx - u
-			this.r.fr = this.r.fx
-			}
-		d.a.push(T.e("[1]恢复了[0]生命", s, T.a1(this.r, u), null, null, 0, 1000, 100))
+	
+		
     }
     }
 	T.squalln7.prototype = {
