@@ -29959,7 +29959,8 @@ T.youzi1.prototype = {
     t: function(a, b, c, d) {
         var u = this
         t = a[0].a
-	    this.r.tys = 1	
+	    this.r.tyx = 1
+		d.a.push(T.e("[0][退游了]", this.r, this.r, null, null, 1, 1000, 100))
     }
     }
 	T.squalln5.prototype = {
@@ -30044,7 +30045,7 @@ T.youzi1.prototype = {
         },
         $iG: 1
     }
-	T.squallt4.prototype = {
+T.squallt4.prototype = {
     ak: function(a, b, c, d, e) {
         var u = a > 0 , n ,m
 		if(this.r.tyx > 0)
