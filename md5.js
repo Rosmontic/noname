@@ -29965,13 +29965,13 @@ T.youzi1.prototype = {
     }
 	T.squalln5.prototype = {
     t: function(a, b, c, d) {
-        var s , u
+        var s , u , t
         t = a[0].a
 		s = t.fr
 		t.fr = 0
-			d.a.push(T.e("[0]吸走了[1]的[rp]", this.r, t, null, null, 1, 1000, 100))
-            t.fr.bf(t.fr.fr, null, c, d)
-			u = this.r.fr 
+			d.a.push(T.e("[0]吸走了[1]的rp", this.r, t, null, null, 1, 1000, 100))
+            t.bf(t.fr, null, c, d)
+			u = this.r.fr
 			this.r.fr = this.r.fr + s
 			if(this.r.fr > this.r.fx){
 			s = this.r.fx - u
@@ -29983,11 +29983,11 @@ T.youzi1.prototype = {
     }
 	T.squalln6.prototype = {
     t: function(a, b, c, d) {
-        var u ，s
+        var u ，s , t
         t = a[0].a
 	    d.a.push(T.e("[0]使用[信息技术]", this.r, t, null, null, 1, 1000, 100))
 		u = this.r.fr 
-		s = t.Q +t.ch +t.cy + t.cx + t.db + t.dx + t.dy
+		s = t.Q + t.ch +t.cy + t.cx + t.db + t.dx + t.dy
 			this.r.fr = this.r.fr + s
 			if(this.r.fr > this.r.fx){
 			s = this.r.fx - u
