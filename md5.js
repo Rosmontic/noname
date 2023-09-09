@@ -9600,6 +9600,117 @@ tha4n1: function tha4n1() {
             _.X = _.W = !1
             _.F = null
         },
+		E8s: function E8s(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+            var _ = this
+            _.a5 = _.af = null
+            _.a = a
+            _.b = b
+            _.c = c
+            _.d = d
+            _.y = _.x = _.r = _.f = _.e = null
+            _.z = 0
+            _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
+            _.go = 1
+            _.id = e
+            _.k2 = _.k1 = null
+            _.k3 = f
+            _.k4 = null
+            _.r1 = g
+            _.r2 = h
+            _.rx = i
+            _.ry = j
+            _.x1 = k
+            _.x2 = l
+            _.y1 = m
+            _.y2 = n
+            _.I = o
+            _.N = p
+            _.A = !1
+            _.u = q
+            _.U = null
+            _.D = r
+            _.q = s
+            _.a_ = t
+            _.V = _.O = _.L = 0
+            _.J = 32768
+            _.j = 0
+            _.X = _.W = !1
+            _.F = null
+        },
+		Syl: function Syl(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+            var _ = this
+            _.a5 = _.af = null
+            _.a = a
+            _.b = b
+            _.c = c
+            _.d = d
+            _.y = _.x = _.r = _.f = _.e = null
+            _.z = 0
+            _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
+            _.go = 1
+            _.id = e
+            _.k2 = _.k1 = null
+            _.k3 = f
+            _.k4 = null
+            _.r1 = g
+            _.r2 = h
+            _.rx = i
+            _.ry = j
+            _.x1 = k
+            _.x2 = l
+            _.y1 = m
+            _.y2 = n
+            _.I = o
+            _.N = p
+            _.A = !1
+            _.u = q
+            _.U = null
+            _.D = r
+            _.q = s
+            _.a_ = t
+            _.V = _.O = _.L = 0
+            _.J = 32768
+            _.j = 0
+            _.X = _.W = !1
+            _.F = null
+        },
+		Windows: function Windows(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+            var _ = this
+            _.a5 = _.af = null
+            _.a = a
+            _.b = b
+            _.c = c
+            _.d = d
+            _.y = _.x = _.r = _.f = _.e = null
+            _.z = 0
+            _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
+            _.go = 1
+            _.id = e
+            _.k2 = _.k1 = null
+            _.k3 = f
+            _.k4 = null
+            _.r1 = g
+            _.r2 = h
+            _.rx = i
+            _.ry = j
+            _.x1 = k
+            _.x2 = l
+            _.y1 = m
+            _.y2 = n
+            _.I = o
+            _.N = p
+            _.A = !1
+            _.u = q
+            _.U = null
+            _.D = r
+            _.q = s
+            _.a_ = t
+            _.V = _.O = _.L = 0
+            _.J = 32768
+            _.j = 0
+            _.X = _.W = !1
+            _.F = null
+        },
 	    hel: function hel(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
             var _ = this
             _.a5 = _.af = null
@@ -24579,6 +24690,60 @@ n.r.bf(n.r.fr, null, c, d)
 			}		
         }
     }
+	T.E8s.prototype = {
+        gaj: function() {
+            return this.af.r
+        },
+		gaQ: function() {
+            return H.a([], [P.f])
+        },
+        aa: function() {
+            var u = new T.aK()
+            u.r = this
+            this.k2 = u
+        },
+        aR: function() {
+            this.bv()
+            var u = this.u
+            u[7] = C.d.v(u[7], 1)
+        }	
+    }
+	T.Syl.prototype = {
+        gaj: function() {
+            return this.af.r
+        },
+		gaQ: function() {
+            return H.a([], [P.f])
+        },
+        aa: function() {
+            var u = new T.aK()
+            u.r = this
+            this.k2 = u
+        },
+        aR: function() {
+            this.bv()
+            var u = this.u
+            u[7] = C.d.v(u[7], 1)
+        }
+    }
+	T.Windows.prototype = {
+        gaj: function() {
+            return this.af.r
+        },
+		gaQ: function() {
+            return H.a([], [P.f])
+        },
+        aa: function() {
+            var u = new T.aK()
+            u.r = this
+            this.k2 = u
+        },
+        aR: function() {
+            this.bv()
+            var u = this.u
+            u[7] = C.d.v(u[7], 1)
+        }
+    }
 	T.hel.prototype = {
         gaj: function() {
             return this.af.r
@@ -29557,29 +29722,222 @@ T.youzi1.prototype = {
     }
     }
 	T.squalln1.prototype = {
-    t: function(a, b, c, d) {
-        var u = this
-        t = a[0].a
-	
-		
-    }
-    }
+        ar: function(a, b) {
+                if (this.r.e8s != null )
+                    return !1
+            return this.aS(a, b)
+        },
+        a9: function(a, b, c) {
+            return H.a([], [T.Z])
+        },
+        t: function(a, a0, a1, a2) {
+            var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this, b = null, v
+            u = a2.a
+            u.push(T.e("[0]使用了[帮测]", c.r, b, b, b, 60, 1000, 100))
+			for(v =0 ; v < 1 ; v++){
+            t = H.d(c.r.a) + "?" + H.d($.nn())
+            s = c.r
+            r = s.b
+            s = s.c
+            q = H.a([], [T.H])
+            p = H.a([], [T.y])
+            o = P.U(P.f, T.p)
+            n = new F.b([T.M])
+            n.c = n
+            n.b = n
+            m = new F.b([T.L])
+            m.c = m
+            m.b = m
+            l = new F.b([T.G])
+            l.c = l
+            l.b = l
+            k = new F.b([T.J])
+            k.c = k
+            k.b = k
+            j = new F.b([T.K])
+            j.c = j
+            j.b = j
+            i = new F.b([T.D])
+            i.c = i
+            i.b = i
+            h = new F.b([T.A])
+            h.c = h
+            h.b = h
+            g = new F.b([T.C])
+            g.c = g
+            g.b = g
+            f = new F.b([T.I])
+            f.c = f
+            f.b = f
+            e = [P.j]
+            d = new T.E8s(t,r,s,b,q,p,o,n,m,l,k,j,i,h,g,f,H.a([], e),H.a([], e),H.a([], e),H.a([], e))
+            d.Y(t, r, s, b)
+            d.a5 = new T.cj(d)
+            d.af = c
+            d.e = T.du(c.r)
+            d.r = "e8s"
+            s = c.r
+            d.x = s.x
+            d.av()
+			d.fx = 399
+			d.fr = 99
+			d.Q =  99
+			d.ch = 99
+			d.cx = 99 
+			d.cy = 99
+			d.db = 99
+			d.dx = 99
+			d.dy = 99
+			d.j =  2048
+			d.J =  d.J * 2.5
+			this.r.e8s = d
+            c.r.x.aU(d)
+            u.push(T.e("[0]召唤出[1] ", c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
+        }
+    }}
 	T.squalln2.prototype = {
-    t: function(a, b, c, d) {
-        var u = this
-        t = a[0].a
-	
-		
-    }
-    }
+        ar: function(a, b) {
+                if (this.r.syl != null )
+                    return !1
+            return this.aS(a, b)
+        },
+        a9: function(a, b, c) {
+            return H.a([], [T.Z])
+        },
+        t: function(a, a0, a1, a2) {
+            var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this, b = null, v
+            u = a2.a
+            u.push(T.e("[0]使用了[超市]", c.r, b, b, b, 60, 1000, 100))
+			for(v =0 ; v < 1 ; v++){
+            t = H.d(c.r.a) + "?" + H.d($.nn())
+            s = c.r
+            r = s.b
+            s = s.c
+            q = H.a([], [T.H])
+            p = H.a([], [T.y])
+            o = P.U(P.f, T.p)
+            n = new F.b([T.M])
+            n.c = n
+            n.b = n
+            m = new F.b([T.L])
+            m.c = m
+            m.b = m
+            l = new F.b([T.G])
+            l.c = l
+            l.b = l
+            k = new F.b([T.J])
+            k.c = k
+            k.b = k
+            j = new F.b([T.K])
+            j.c = j
+            j.b = j
+            i = new F.b([T.D])
+            i.c = i
+            i.b = i
+            h = new F.b([T.A])
+            h.c = h
+            h.b = h
+            g = new F.b([T.C])
+            g.c = g
+            g.b = g
+            f = new F.b([T.I])
+            f.c = f
+            f.b = f
+            e = [P.j]
+            d = new T.Syl(t,r,s,b,q,p,o,n,m,l,k,j,i,h,g,f,H.a([], e),H.a([], e),H.a([], e),H.a([], e))
+            d.Y(t, r, s, b)
+            d.a5 = new T.cj(d)
+            d.af = c
+            d.e = T.du(c.r)
+            d.r = "SYL"
+            s = c.r
+            d.x = s.x
+            d.av()
+			d.fx = 299
+			d.fr = 0
+			d.Q =  0
+			d.ch = 0
+			d.cx = 99 
+			d.cy = 0
+			d.db = 0
+			d.dx = 0
+			d.dy = 99
+			d.j =  2048
+			d.J =  d.J * 0.25
+			this.r.syl = d
+            c.r.x.aU(d)
+            u.push(T.e("[0]召唤出[1] ", c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
+        }
+    }}
 	T.squalln3.prototype = {
-    t: function(a, b, c, d) {
-        var u = this
-        t = a[0].a
-	
-		
-    }
-    }
+        a9: function(a, b, c) {
+            return H.a([], [T.Z])
+        },
+        t: function(a, a0, a1, a2) {
+            var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this, b = null, v
+            u = a2.a
+            u.push(T.e("[0]使用了[多开测号]", c.r, b, b, b, 60, 1000, 100))
+			for(v =0 ; v < this.r.cks ; v++){
+            t = H.d(c.r.a) + "?" + H.d($.nn())
+            s = c.r
+            r = s.b
+            s = s.c
+            q = H.a([], [T.H])
+            p = H.a([], [T.y])
+            o = P.U(P.f, T.p)
+            n = new F.b([T.M])
+            n.c = n
+            n.b = n
+            m = new F.b([T.L])
+            m.c = m
+            m.b = m
+            l = new F.b([T.G])
+            l.c = l
+            l.b = l
+            k = new F.b([T.J])
+            k.c = k
+            k.b = k
+            j = new F.b([T.K])
+            j.c = j
+            j.b = j
+            i = new F.b([T.D])
+            i.c = i
+            i.b = i
+            h = new F.b([T.A])
+            h.c = h
+            h.b = h
+            g = new F.b([T.C])
+            g.c = g
+            g.b = g
+            f = new F.b([T.I])
+            f.c = f
+            f.b = f
+            e = [P.j]
+            d = new T.Windows(t,r,s,b,q,p,o,n,m,l,k,j,i,h,g,f,H.a([], e),H.a([], e),H.a([], e),H.a([], e))
+            d.Y(t, r, s, b)
+            d.a5 = new T.cj(d)
+            d.af = c
+            d.e = T.du(c.r)
+            d.r = "窗口"
+            s = c.r
+            d.x = s.x
+            d.av()
+			d.fx = 99
+			d.fr = 99
+			d.Q =  99
+			d.ch = 99
+			d.cx = 99 
+			d.cy = 99
+			d.db = 99
+			d.dx = 99
+			d.dy = 99
+			d.j =  2048
+			d.J =  d.J
+            c.r.x.aU(d)
+            u.push(T.e("[0]召唤出[1] ", c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
+        }
+		this.r.cks = this.r.cks + 1
+    }}
 	T.squalln4.prototype = {
     t: function(a, b, c, d) {
         var u = this
@@ -36664,7 +37022,7 @@ dk: function(a, b, c, d, e, f, g) {
         s(T.w, [T.dC, T.av, T.cA, T.hc, T.hj, T.hk, T.he, T.cy])
         s(T.D, [T.cg, T.dF, T.el])
         s(T.J, [T.dE, T.fire, T.ay])
-        s(T.av, [T.hh,T.hha4n2, T.alf, T.youzi, T.tao, T.lv, T.pll, T.hel, T.UAV1, T.UAV2, T.LAN, T.BAR, T.szj, T.hha7t1, T.hha11t1 ,T.hha9n2,T.hhb3n1 ,T.hhb3n2 ,T.hhb3n3 ,T.hhb3n4 ,T.hhb3n5 ,T.hhb3n6 ,T.hhb3n7 ,T.hhb3n8 ,T.hhb3n9 ,T.hhb8n1 ,T.hhb8t1a ,T.hhb8t1b ,T.hhb8t2 , T.hi, T.ho])
+        s(T.av, [T.hh,T.hha4n2, T.alf, T.youzi, T.tao, T.lv, T.pll, T.hel, T.UAV1, T.UAV2, T.LAN, T.BAR, T.szj, T.hha7t1, T.hha11t1 ,T.hha9n2,T.hhb3n1 ,T.hhb3n2 ,T.hhb3n3 ,T.hhb3n4 ,T.hhb3n5 ,T.hhb3n6 ,T.hhb3n7 ,T.hhb3n8 ,T.hhb3n9 ,T.hhb8n1 ,T.hhb8t1a ,T.hhb8t1b ,T.hhb8t2 , T.hi, T.ho, T.E8s, T.Syl, T.Windows])
         s(T.cA, [T.eY, T.eZ, T.f_, T.f0, T.d7, T.d8, T.f1, T.f2, T.bA, T.f4, T.f6, T.tigershark, T.dark, T.hell, T.yuri2, T.yuriy, T.megia, T.tomb, T.testa, T.rumia, T.daiyousei, T.cirno , T.hong , T.testa , T.koakuma , T.patchouli , T.sakuya, T.reimu, T.Squall, T.marisa, T.remilia, T.flandre, T.rin, T.letty, T.chen, T.alice, T.lilywhite, T.phantom, T.youmu, T.yuyuko, T.ran, T.yukari, T.nue, T.AL1S, T.aris ,T.momori, T.midori, T.yuzu, T.rio, T.yuuka, T.noa, T.koyuki, T.hifumi, T.azusa, T.ribbit1, T.ribbit2, T.ribbit3, T.ribbit4, T.fox1, T.fox2, T.fox3, T.fox4, T.yeya])
         t(T.hg, T.cy)
         t(T.f3, T.bA)
