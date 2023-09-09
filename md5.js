@@ -5731,6 +5731,44 @@ if (a == "patchouli") {
                     g.at(a, u)
                     return g
                 }
+				if (a == "Squall") {
+                    t = H.d(a) + H.d($.ah())
+                    s = H.a([], [T.H])
+                    r = H.a([], [T.y])
+                    q = P.U(P.f, T.p)
+                    p = new F.b([T.M])
+                    p.c = p
+                    p.b = p
+                    o = new F.b([T.L])
+                    o.c = o
+                    o.b = o
+                    n = new F.b([T.G])
+                    n.c = n
+                    n.b = n
+                    m = new F.b([T.J])
+                    m.c = m
+                    m.b = m
+                    l = new F.b([T.K])
+                    l.c = l
+                    l.b = l
+                    k = new F.b([T.D])
+                    k.c = k
+                    k.b = k
+                    j = new F.b([T.A])
+                    j.c = j
+                    j.b = j
+                    i = new F.b([T.C])
+                    i.c = i
+                    i.b = i
+                    h = new F.b([T.I])
+                    h.c = h
+                    h.b = h
+                    g = [P.j]
+                    g = new T.Squall(a,u,t,f,s,r,q,p,o,n,m,l,k,j,i,h,H.a([], g),H.a([], g),H.a([], g),H.a([], g))
+                    g.Y(a, u, t, f)
+                    g.at(a, u)
+                    return g
+                }
 				if (a == "letty") {
                     t = H.d(a) + H.d($.ah())
                     s = H.a([], [T.H])
@@ -11467,6 +11505,48 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
             _.go = 1
             _.id = e
 			_.meng = 0
+            _.k2 = _.k1 = null
+            _.k3 = f
+            _.k4 = null
+            _.r1 = g
+            _.r2 = h
+            _.rx = i
+            _.ry = j
+            _.x1 = k
+            _.x2 = l
+            _.y1 = m
+            _.y2 = n
+            _.I = o
+            _.N = p
+            _.A = !1
+            _.u = q
+            _.U = null
+            _.D = r
+            _.q = s
+            _.a_ = t
+            _.V = _.O = _.L = 0
+            _.J = 32768
+            _.j = 0
+            _.X = _.W = !1
+            _.F = null
+        },
+		Squall: function Squall(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+            var _ = this
+            _.aI = 0
+            _.aP = _.bb = _.af = null
+            _.a = a
+            _.b = b
+            _.c = c
+            _.d = d
+            _.y = _.x = _.r = _.f = _.e = null
+            _.z = 0
+            _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
+            _.go = 1
+            _.id = e
+			_.e8s = null
+			_.syl = null
+			_.tyx = 0
+			_.cks = 1
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -31291,6 +31371,45 @@ T.marisa.prototype = {
 
 }
 }
+T.Squall.prototype = {
+        gah: function() {
+            return C.Squall
+        },
+        gaQ: function() {
+            return H.a([], [P.f])
+        },
+        gaB: function() {
+            return H.a([], [P.f])
+        },
+        aa: function() {
+            var u, t = new T.aK()
+            t.r = this
+            this.k2 = t
+            t = this.id 
+			t.push(new T.tha1b1())
+            u = new T.tha1s1()
+            u.f = 20
+            t.push(u)			
+            u = new T.tha1n1()
+            f = new T.dF(1 / 0,u)
+            u.fr = f
+            u.fx = new T.ay(u)
+            u.fy = new T.aN(u)
+            f.r = 10
+            u.f = 45
+            t.push(u)
+            u = new T.tha1n2()
+            u.f = 65
+            t.push(u)
+			u = new T.tha1n3()
+            u.f = 100
+            t.push(u)
+		
+			u = new T.tha1b2()
+            u.f = 100
+            t.push(u)
+}
+}
 T.letty.prototype = {
     gah: function() {
         return C.letty
@@ -36419,7 +36538,7 @@ dk: function(a, b, c, d, e, f, g) {
         s(T.D, [T.cg, T.dF, T.el])
         s(T.J, [T.dE, T.fire, T.ay])
         s(T.av, [T.hh,T.hha4n2, T.alf, T.youzi, T.tao, T.lv, T.pll, T.hel, T.UAV1, T.UAV2, T.LAN, T.BAR, T.szj, T.hha7t1, T.hha11t1 ,T.hha9n2,T.hhb3n1 ,T.hhb3n2 ,T.hhb3n3 ,T.hhb3n4 ,T.hhb3n5 ,T.hhb3n6 ,T.hhb3n7 ,T.hhb3n8 ,T.hhb3n9 ,T.hhb8n1 ,T.hhb8t1a ,T.hhb8t1b ,T.hhb8t2 , T.hi, T.ho])
-        s(T.cA, [T.eY, T.eZ, T.f_, T.f0, T.d7, T.d8, T.f1, T.f2, T.bA, T.f4, T.f6, T.tigershark, T.dark, T.hell, T.yuri2, T.yuriy, T.megia, T.tomb, T.testa, T.rumia, T.daiyousei, T.cirno , T.hong , T.testa , T.koakuma , T.patchouli , T.sakuya, T.reimu, T.marisa, T.remilia, T.flandre, T.rin, T.letty, T.chen, T.alice, T.lilywhite, T.phantom, T.youmu, T.yuyuko, T.ran, T.yukari, T.nue, T.AL1S, T.aris ,T.momori, T.midori, T.yuzu, T.rio, T.yuuka, T.noa, T.koyuki, T.hifumi, T.azusa, T.ribbit1, T.ribbit2, T.ribbit3, T.ribbit4, T.fox1, T.fox2, T.fox3, T.fox4, T.yeya])
+        s(T.cA, [T.eY, T.eZ, T.f_, T.f0, T.d7, T.d8, T.f1, T.f2, T.bA, T.f4, T.f6, T.tigershark, T.dark, T.hell, T.yuri2, T.yuriy, T.megia, T.tomb, T.testa, T.rumia, T.daiyousei, T.cirno , T.hong , T.testa , T.koakuma , T.patchouli , T.sakuya, T.reimu, T.Squall, T.marisa, T.remilia, T.flandre, T.rin, T.letty, T.chen, T.alice, T.lilywhite, T.phantom, T.youmu, T.yuyuko, T.ran, T.yukari, T.nue, T.AL1S, T.aris ,T.momori, T.midori, T.yuzu, T.rio, T.yuuka, T.noa, T.koyuki, T.hifumi, T.azusa, T.ribbit1, T.ribbit2, T.ribbit3, T.ribbit4, T.fox1, T.fox2, T.fox3, T.fox4, T.yeya])
         t(T.hg, T.cy)
         t(T.f3, T.bA)
         t(T.e_, T.dN, T.tha6t2, T.yuriSuperControl)
@@ -36812,6 +36931,7 @@ C.fox1 = H.a(u([-1, 1, 0, 32, 40, 12, 28, 402]), [P.j])
 C.fox2 = H.a(u([30, 22, 41, 42, 34, 30, 36, 399]), [P.j])
 C.fox3 = H.a(u([40, 25, 20, 21, 13, 20, 44, 687]), [P.j])
 C.fox4 = H.a(u([3, 1, 24, 3, 30, -16, 33, 302]), [P.j])
+C.Squall = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.rio = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.yuuka = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.noa = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
