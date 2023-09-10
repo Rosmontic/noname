@@ -30076,12 +30076,10 @@ T.youzi1.prototype = {
 			d.a.push(T.e("[1]恢复了[0]生命", s, T.a1(this.r, u), null, null, 0, 1000, 100))
 			d.a.push($.v())
 			}		
-			}
-			
+			}		
 			}
 			else 
 			{
-			d.a.push(T.e("[0]超市1", this.r, this.r, null, null, 1, 1000, 100))
 			this.r.syln = 0
 			}
 			return a
