@@ -29715,7 +29715,7 @@ T.youzi1.prototype = {
         var u = this ,p , q
         t = a[0].a
 		q = (c.m() & 3)
-	    d.a.push(T.e("[0]发起攻击", this.r, this.r, null, null, 1, 1000, 100))
+	    d.a.push(T.e("[0]发起[开箱]", this.r, this.r, null, null, 1, 1000, 100))
 		if (q == 0)
 		{
 		p = 6584
@@ -29793,8 +29793,9 @@ T.youzi1.prototype = {
             d.r = "e8s"
             s = c.r
             d.x = s.x
+			s.I.i(0, d.a5)
             d.av()
-			d.fx = 299
+			d.fx = 300
 			d.fr = 299
 			d.Q =  99
 			d.ch = 99
@@ -29938,22 +29939,25 @@ T.youzi1.prototype = {
             d.r = "窗口"
             s = c.r
             d.x = s.x
+			s.I.i(0, d.a5)
             d.av()
-			d.fx = 99
-			d.fr = 99
-			d.Q =  99
-			d.ch = 99
-			d.cx = 99 
-			d.cy = 99
-			d.db = 99
-			d.dx = 99
-			d.dy = 99
-			d.j =  2048
+			d.fx = C.d.v(256, this.r.cks)
+			d.fr = C.d.v(256, this.r.cks)
+			d.Q =  C.d.v(128, this.r.cks)
+			d.ch = C.d.v(64, this.r.cks)
+			d.cx = C.d.v(64, this.r.cks)
+			d.cy = C.d.v(64, this.r.cks)
+			d.db = C.d.v(128, this.r.cks)
+			d.dx = C.d.v(64, this.r.cks)
+			d.dy = C.d.v(64, this.r.cks)
+			d.j =  0
 			d.J =  d.J
             c.r.x.aU(d)
             u.push(T.e("[0]召唤出[1] ", c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
         }
-		this.r.cks = this.r.cks + 1
+		if (this.r.cks < 4 ){
+		this.r.cks = this.r.cks * 2
+		}
     }}
 	T.squalln4.prototype = {
     t: function(a, b, c, d) {
@@ -29969,7 +29973,7 @@ T.youzi1.prototype = {
         t = a[0].a
 		s = t.fr
 		t.fr = 0
-			d.a.push(T.e("[0]吸走了[1]的rp", this.r, t, null, null, 1, 1000, 100))
+			d.a.push(T.e("[0]吸走了[1]的[rp]", this.r, t, null, null, 1, 1000, 100))
             t.bf(t.fr, null, c, d)
 			u = this.r.fr
 			this.r.fr = this.r.fr + s
@@ -37550,7 +37554,7 @@ C.fox1 = H.a(u([-1, 1, 0, 32, 40, 12, 28, 402]), [P.j])
 C.fox2 = H.a(u([30, 22, 41, 42, 34, 30, 36, 399]), [P.j])
 C.fox3 = H.a(u([40, 25, 20, 21, 13, 20, 44, 687]), [P.j])
 C.fox4 = H.a(u([3, 1, 24, 3, 30, -16, 33, 302]), [P.j])
-C.Squall = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.Squall = H.a(u([15, 33, 3, 7, -14, 16, 16, 37]), [P.j])
 C.rio = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.yuuka = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.noa = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
