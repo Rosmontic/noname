@@ -30081,6 +30081,7 @@ T.youzi1.prototype = {
 			}
 			else 
 			{
+			d.a.push(T.e("[0]超市1", this.r, this.r, null, null, 1, 1000, 100))
 			this.r.syln = 0
 			}
 			return a
@@ -32008,25 +32009,22 @@ T.Squall.prototype = {
             t = this.id 
 			t.push(new T.squallt4())
 			u = new T.squalln1()
-        u.f = 28
+        u.f = 25
         t.push(u)
 		u = new T.squalln2()
-        u.f = 31
+        u.f = 33
         t.push(u)
 		u = new T.squalln3()
-        u.f = 35
-        t.push(u)
-		u = new T.squalln4()
         u.f = 40
         t.push(u)
-		u = new T.squalln5()
+		u = new T.squalln4()
         u.f = 50
         t.push(u)
-		u = new T.squalln6()
-        u.f = 64
+		u = new T.squalln5()
+        u.f = 65
         t.push(u)
-		u = new T.squalln7()
-        u.f = 0
+		u = new T.squalln6()
+        u.f = 256
         t.push(u)
 		u = new T.squallt2()
         u.f = 100
