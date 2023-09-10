@@ -30009,8 +30009,33 @@ T.youzi1.prototype = {
     }
 	T.squallt2.prototype = {
         aK: function(a, b, c, d) {
-            var u, t, s
+            var u, t, s ,q		
+			if(this.r.tyx == 1)
+			{
+			q = (c.m() & 3)
+			this.r.syln = 0
+			if (q == 0)
+		{
+		d.a.push(T.e("[0][在上课]", this.r, this.r, null, null, 0, 1000, 100))
+		}
+		if (q == 1)
+		{
+		d.a.push(T.e("[0][在打音游]", this.r, this.r, null, null, 0, 1000, 100))
+		}
+		if (q == 2)
+		{
+		d.a.push(T.e("[0][在睡觉]", this.r, this.r, null, null, 0, 1000, 100))
+		}
+		if (q == 3)
+		{
+		d.a.push(T.e("[0][无事可做，决定回坑]", this.r, this.r, null, null, 0, 1000, 100))
+		this.r.tyx = 0
+		}
+		return 0 
+			}
 			if(this.r.syl != null)
+			{
+			if(this.r.syl.fr > 0)
 			{
 			this.r.syln = this.r.syln + 1
 			if(this.r.syln > 1 )
@@ -30030,6 +30055,10 @@ T.youzi1.prototype = {
 			d.a.push(T.e("[1]恢复了[0]生命", s, T.a1(this.r, u), null, null, 0, 1000, 100))
 			d.a.push($.v())
 			}		
+			}}
+			else 
+			{
+			this.r.syln = 0
 			}
 			return a
         },
