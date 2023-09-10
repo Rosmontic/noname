@@ -30009,9 +30009,11 @@ T.youzi1.prototype = {
     }
 	T.squallt2.prototype = {
         aK: function(a, b, c, d) {
-            var u, t, s ,q		
+            var u, t, s ,q
+            d.a.push(T.e("[0][在0]", this.r, this.r, null, null, 0, 1000, 100))			
 			if(this.r.tyx == 1)
 			{
+			d.a.push(T.e("[0][在1]", this.r, this.r, null, null, 0, 1000, 100))
 			q = (c.m() & 3)
 			this.r.syln = 0
 			if (q == 0)
@@ -30033,10 +30035,13 @@ T.youzi1.prototype = {
 		}
 		return 0 
 			}
+			
 			if(this.r.syl != null)
 			{
+			d.a.push(T.e("[0][在2]", this.r, this.r, null, null, 0, 1000, 100))
 			if(this.r.syl.fr > 0)
 			{
+			d.a.push(T.e("[0][在3]", this.r, this.r, null, null, 0, 1000, 100))
 			this.r.syln = this.r.syln + 1
 			if(this.r.syln > 1 )
 			{
@@ -30055,11 +30060,15 @@ T.youzi1.prototype = {
 			d.a.push(T.e("[1]恢复了[0]生命", s, T.a1(this.r, u), null, null, 0, 1000, 100))
 			d.a.push($.v())
 			}		
-			}}
+			}
+			
+			}
 			else 
 			{
+			d.a.push(T.e("[0][在4]", this.r, this.r, null, null, 0, 1000, 100))
 			this.r.syln = 0
 			}
+			d.a.push(T.e("[0][在5]", this.r, this.r, null, null, 0, 1000, 100))
 			return a
         },
         T: function() {
