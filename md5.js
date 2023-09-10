@@ -29981,24 +29981,44 @@ T.youzi1.prototype = {
 		
     }
     }
-	T.squalln6.prototype = {
-    t: function(a, b, c, d) {
-        var s , u , t
-        t = a[0].a
-		s = t.fr
-		t.fr = 0
-			d.a.push(T.e("[0]吸走了[1]的rp", this.r, t, null, null, 1, 1000, 100))
-            t.bf(t.fr, null, c, d)
-			u = this.r.fr
-			this.r.fr = this.r.fr + s
-			if(this.r.fr > this.r.fx){
-			s = this.r.fx - u
-			this.r.fr = this.r.fx
-			}
-			d.a.push(T.e("[1]恢复了[0]生命", s, T.a1(this.r, u), null, null, 0, 1000, 100))
-		
-    }
-    }
+	T.squalln6.prototype = {   
+		b5: function(a) {
+            return a.b1(this.r.x.a.e)
+        },
+        a8: function(a, b, c) {
+            return c.gbh() * a.J
+        },
+        gb3: function() {
+            return 999
+        },
+        gb4: function() {
+            return 999
+        },
+        t: function(a, b, c, d) {
+		var u, t, s, r, q, p, o, n = H.a([], [T.aU])
+            for (u = 0; u < a.length; ++u)
+                n.push(a[u].a)				
+            t = "[0]开启了[银趴]"
+            r = H.a(n.slice(0), [H.n(n, 0)])
+            q = d.a
+            q.push(T.e(t, this.r, null, null, r, 1, 1000, 100))
+            for (u = 0; u < n.length; ++u) {		    
+                o = n[u]
+				p = o.fr
+                if(p > 0)
+				{d.a.push($.v())
+				if(o.syls == null)
+				o.fr = C.d.Z(o.fr *0.5)
+				d.a.push(T.e(O.c("Thtw"), o, T.a1(o, p), new T.aT(50), null, 0, 1000, 100))
+				}
+				else
+				{
+				o.fr = C.d.Z(o.fr *0.99)
+				d.a.push(T.e(O.c("Thtw"), o, T.a1(o, p), new T.aT(99), null, 0, 1000, 100))
+				}
+				
+            }}
+	}
 	T.squalln7.prototype = {
     t: function(a, b, c, d) {
         var u = this
@@ -30009,11 +30029,9 @@ T.youzi1.prototype = {
     }
 	T.squallt2.prototype = {
         aK: function(a, b, c, d) {
-            var u, t, s ,q
-            d.a.push(T.e("[0][在0]", this.r, this.r, null, null, 0, 1000, 100))			
+            var u, t, s ,q		
 			if(this.r.tyx == 1)
 			{
-			d.a.push(T.e("[0][在1]", this.r, this.r, null, null, 0, 1000, 100))
 			q = (c.m() & 3)
 			this.r.syln = 0
 			if (q == 0)
@@ -30038,10 +30056,8 @@ T.youzi1.prototype = {
 			
 			if(this.r.syl != null)
 			{
-			d.a.push(T.e("[0][在2]", this.r, this.r, null, null, 0, 1000, 100))
 			if(this.r.syl.fr > 0)
 			{
-			d.a.push(T.e("[0][在3]", this.r, this.r, null, null, 0, 1000, 100))
 			this.r.syln = this.r.syln + 1
 			if(this.r.syln > 1 )
 			{
@@ -30065,10 +30081,8 @@ T.youzi1.prototype = {
 			}
 			else 
 			{
-			d.a.push(T.e("[0][在4]", this.r, this.r, null, null, 0, 1000, 100))
 			this.r.syln = 0
 			}
-			d.a.push(T.e("[0][在5]", this.r, this.r, null, null, 0, 1000, 100))
 			return a
         },
         T: function() {
@@ -32012,7 +32026,7 @@ T.Squall.prototype = {
         u.f = 64
         t.push(u)
 		u = new T.squalln7()
-        u.f = 80
+        u.f = 0
         t.push(u)
 		u = new T.squallt2()
         u.f = 100
