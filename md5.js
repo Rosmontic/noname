@@ -29968,6 +29968,13 @@ T.youzi1.prototype = {
     }
     }
 	T.squalln5.prototype = {
+	ar: function(a, b) {
+            if (H.o(this.r.r1.h(0, $.ai), "$ibf") != null)
+            { 
+                return !1
+            }
+			return this.aS(a, b)
+		},
     t: function(a, b, c, d) {
         var s , u , t
         t = a[0].a
@@ -30017,7 +30024,7 @@ T.youzi1.prototype = {
 				}
 				else
 				{
-				o.fr = C.d.Z(o.fr *0.99)
+				o.fr = C.d.Z(o.fr *0.01)
 				d.a.push(T.e(O.c("Thtw"), o, T.a1(o, p), new T.aT(99), null, 0, 1000, 100))
 				}
 				
