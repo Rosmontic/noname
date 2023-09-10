@@ -30009,7 +30009,7 @@ T.youzi1.prototype = {
     }
 	T.squallt2.prototype = {
         aK: function(a, b, c, d) {
-            var u, t, s , q = (c.m() & 3)
+            var u, t, s
 			if(this.r.syl != null)
 			{
 			this.r.syln = this.r.syln + 1
