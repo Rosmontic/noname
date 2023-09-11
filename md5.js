@@ -32741,12 +32741,13 @@ T.yuzu.prototype = {
         return H.a([$.ai(), $.am(), $.kj()], [P.f])
     },
     aa: function() {
-        var u, t = new T.ribbit4a1()
+        var u, t = new T.aK()
         t.r = this
         this.k2 = t
         t = this.id
-		u =new T.ribbit4n2()
-        u.f = 70
+		t.push(new T.ribbit4b1())
+		u =new T.ribbit4b2()
+        u.f = 100
         t.push(u)
 		u = new T.ribbit4n1()
         u.f = 100
