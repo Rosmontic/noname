@@ -22756,13 +22756,11 @@ T.tha8s1.prototype = {
 }
 T.ribbit3n2.prototype = {
     ar: function(a, b) {
-        if (this.r.heli == null)
-        { 
-		if (this.r.heli.fr <= 0)
-		{ 
+    if (this.r.heli != null || this.r.heli.fr <= 0 )
+        {
             return !1
         }
-	}
+	},
     return this.aS(a, b)
 },
             gb3: function() {
@@ -28972,13 +28970,11 @@ T.hifumib1.prototype = {
     $iD: 1
 }
 T.ribbit3b1.prototype = {
-     ar: function(a, b) {
-    if (this.r.heli != null)
-        { 
-		if (this.r.heli.fr <= 0)
-		{ 
+    ar: function(a, b) {
+    if (this.r.heli != null || this.r.heli.fr <= 0 )
+        {
             return !1
-        }}
+        }
 	},
     ak: function(a, b, c, d, e) {
         var u = a > 0 , n ,m
