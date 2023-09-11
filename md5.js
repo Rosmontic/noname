@@ -23329,9 +23329,10 @@ T.tha9n3.prototype = {
             return -1
         },
         al: function(a) {
+		    var u = this.x
             u.ch = C.d.v(u.ch, this.z)
 			u.dx = C.d.v(u.dx, this.z)
-			u.J = u.J * 4
+			u.J = u.J * this.z
         },
         aq: function(a, b) {
             if (--this.Q === 0)
