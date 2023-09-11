@@ -28960,12 +28960,12 @@ T.fox2b2.prototype = {
 	},
     ak: function(a, b, c, d, e) {
         var u = a > 0 , n ,m
-		if (this.r.heli == null )
+		if (this.r.BARi == null )
             { 
                 return u && J.Q(c, T.mA()) ? a : a
             }
-		e.a.push(T.e("[0]抵挡伤害", this.r.BAR, null, null, null, 0, 1000, 100))
-		this.r.heli.bL(a*64, !1 , b, T.a3(), d, e)
+		e.a.push(T.e("[0]抵挡伤害", this.r.BARi, null, null, null, 0, 1000, 100))
+		this.r.BARi.bL(a*64, !1 , b, T.a3(), d, e)
 		bug = tnt
         return u && J.Q(c, T.mA()) ? 0 : 0
     },
