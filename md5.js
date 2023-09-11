@@ -22004,7 +22004,8 @@ T.thb9t2.prototype = {
         s = T.u(u.r, !1, c) * 0.8
         d.a.push(T.e("[0]发起[压制射击]", u.r, t, null, null, 1, 1000, 100))
 		for (v = 0; v < 3; ++v){
-        t.a0(s, !1, u.r, T.a3(), c, d)
+		if(t.fr > 0){
+        t.a0(s, !1, u.r, T.a3(), c, d)}
 		}
 		
     }
@@ -24902,7 +24903,8 @@ n.r.bf(n.r.fr, null, c, d)
         aa: function() {
             var u = new T.noak()
             u.r = this
-            this.k2 = u
+            this.k2 = u	
+			this.id.push(new T.dX())
         },
         aR: function() {
             this.bv()
@@ -28951,13 +28953,6 @@ T.ribbit3b1.prototype = {
     $iD: 1
 }
 T.fox2b2.prototype = {
-    ar: function(a, b) {
-            if (this.r.BARi == null )
-            { 
-                return !1
-            }
-			return this.aS(a, b)
-	},
     ak: function(a, b, c, d, e) {
         var u = a > 0 , n ,m
 		if (this.r.BARi == null )
@@ -32820,7 +32815,6 @@ T.yuzu.prototype = {
 		u =new T.fox2n1()
         u.f = 100
         t.push(u)
-		t.push(new T.fox2b2())
     }, 
     bM: function() {
             var u, t = this
@@ -35420,8 +35414,8 @@ dk: function(a, b, c, d, e, f, g) {
 	T.zhsh.prototype = {
         dk: function(a, b, c, d, e, f, g) {
             var u, t, s = this
-			C.d.v(a, 2)
-			s.r.bL(u, !0, c, e, f, g)
+			u = C.d.v(a, 2)
+			s.r.bL(u, !1, c, e, f, g)
             return 0
         },
         T: function() {
