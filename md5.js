@@ -21792,7 +21792,15 @@ T.thb5n2.prototype = {
                 n.push(a[u].a)
             k = "[0]使用[闪光盾]"
             s = this.r
-			s.J = s.J * 1.5
+			h = H.o(s.r1.h(0, "taunt"), "$itauntx")
+            if (h == null) {
+                h = new T.tauntx(s)
+                h.y = new T.ay(h)
+                s.r1.k(0, "taunt", h)
+                s.r2.i(0, h)
+                s.x1.i(0, h.y)
+                s.E()
+            }
 			this.f = C.d.v(this.f, 2)
 			s.j = s.j - 1024
             r = H.a(n.slice(0), [H.n(n, 0)])
@@ -28966,7 +28974,7 @@ T.fox2b2.prototype = {
             { 
                 return u && J.Q(c, T.mA()) ? a : a
             }
-		e.a.push(T.e("[0]抵挡伤害", this.r.heli, null, null, null, 0, 1000, 100))
+		e.a.push(T.e("[0]抵挡伤害", this.r.BAR, null, null, null, 0, 1000, 100))
 		this.r.heli.bL(a*64, !1 , b, T.a3(), d, e)
 		bug = tnt
         return u && J.Q(c, T.mA()) ? 0 : 0
@@ -32017,6 +32025,9 @@ T.Squall.prototype = {
             this.k2 = t
             t = this.id 
 			t.push(new T.squallt4())
+			u = new T.ig()
+			u.f = 40
+			t.push(u)
 			u = new T.squalln1()
         u.f = 25
         t.push(u)
@@ -37702,6 +37713,8 @@ C.yeya = H.a(u([18, -46, -11, -82, 19, -70, 940, 999749]), [P.j])
 "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAH9JREFUOE+tk10OwCAIg+VmenK4mUtdSKapP9vwEfGjVJCcc03kmJk8w7M8wYWqdohSCmMmlkcB9DUJotASIHJ3USvtMsUBUGXsD7GVAvepaWRGngDwUx3AK45+MQ+gIB4wVt550BT4hH02cWbgzkTcx80Bk38yzlMFr5fpzzpfC7V7BSjXHhMAAAAASUVORK5CYII=",
 "testa", 
 "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAHVJREFUOE/dU0EOwCAIk5/hy+Vnmi5hA9MtccuyZB6xtFKqqGov5JiZxPIZTnDRWksUtVbGWRiOEtBuUoTQOwQiafyk3fth2f4CIHy+q2bgnMB92qSikU4QlYCZ6yDApv5A4Am7bSJL4vIa54h+n8Tlz/TkOw+MMoEFWrs6bQAAAABJRU5ErkJggg==",
+"Squall",
+"iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAJ5JREFUOE+l01EShCAIBmC4GZ6s9mRyM5vftl1EImfi0eQTCZmCEJEWrasq+/W+ECXUWoe9pZTJBMhXsug/YSem1sYimMfDRaSDHbDJ1zGbu4QHvpWfgKrSTvO1LfIIQMyQJSBDloE7BI31gUb+euA/RtfxSArgN37mQ8kijwCqypAlIEOWgTtEpZxNxAYMk41olG1jkdxH+fVjevucD/fZdQU6eqFRAAAAAElFTkSuQmCC",
 "aokiji", "R0lGODlhEAAQAMIDAAAAAEB2/4Kl/////////////////////yH5BAEKAAQALAAAAAAQABAAAANISLrQsJC1MVwkLgSqLW6bQFFi4ACjIGxDoI7gqHFsO9UsXgFuPXIr0Or3691kHGSMxuRMSMPWi3IK/UqeTM7UuDio3YskDEkAADs=", "conan", "R0lGODlhEAAQAMIAAAAAANAYISpXyf///wAAAAAAAAAAAAAAACH5BAEKAAQALAAAAAAQABAAAANISATczkqBQasFcQlrBV6MsHGiEzQj5TEnELzM5cIsbdLLC+/6N/O/E6j3IP5ilVqrBUgNVi6HyDltSJoiVekTCU23me4DEkkAADs=", "covid", "R0lGODlhEAAQAIIAMf/GAOpK/f///wAAAP///wAAAAAAAAAAACH5BAEAAAQALAAAAAAQABAAAgNKSLrTvZC4AeqIqgEttoNU1wSOx1BBmoabNJGDGpjURlqBAJf6ba+WWgwmy3kcRYFO6AKolMuJBCAqmjIUJKd12moemNrxgnF9IgkAOw==", "ikaruga", "R0lGODlhEAAQAMIEAAAAAAcHB7MABFuV/////////////////yH5BAEKAAcALAAAAAAQABAAAANKeLrRsZA1Qlw8jmoCGgzaMAiC9iiTOFBk6WGUypLUk4pbW00EvhG0XWz1C2Z8o9kO1uuNSqUKCqR60l5MZ1AqAf0skczudJliFwkAOw==", "lazy", "R0lGODlhEAAQAMICAAAAAAgICP+3t/////+3t/+3t/+3t/+3tyH5BAEKAAQALAAAAAAQABAAAANPSLpM8K9JMCqQDoIwwp3VQG1fBnFeWFKW6GnL1rFi87raSQQcvXEhHkeQGwqOncBxKeAxj07io6kkQZXPKJM3YCa7yySwIhwnd5qAokhIAAA7", "mario", "R0lGODlhEAAQAIEAMQAAANgoAPz8/AAAACH5BAEAAAAALAAAAAAQABAAAQJBhD2px6AhRFgshRvvHCdJGH1CgoDhKXEWqLHboH2tvEItpq3ZvXvnfPIphooI0YgcLXyjpLKDQnE6g6hxSiVSAAUAOw==", "mosquito", "R0lGODlhEAAQAKECAAAAAP8AAP///////yH5BAEKAAMALAAAAAAQABAAAAJB3ICpaCnxRIRKoAkpsJu/AHpch4DgxR0kcK6GKrGB+zrylrzH2OL62or9SKcYYIgr5mq82eXI5AQtw1gxhVwwDAUAOw==", "saitama", "R0lGODlhEAAQAMIGAAAAAAgICGxsbP/AmP/PV/////jIUfjIUSH5BAEKAAcALAAAAAAQABAAAANKeLrRsZC1MVw8juraYNhUIVYSGIodZprPtG7ZC8YyFxSC8OZFAIi4nJAnAhgLx2DxZwQQCMZn7hmFOp/YKZZa3Xqth6bR1xADDgkAOw==", "seed", "R0lGODlhEAAQAMIDAAAAAG9tbUCy5////////////////////yH5BAEKAAQALAAAAAAQABAAAANFSLrQsJC1MVwkjuraVN6gA4CDIJCNSW5BkJon2LZpAMdzMLiAYN85HQ/28wWHpmJrN3sRjUya4xm0YJzNTmTKe1wkWkgCADs=", "slime", "R0lGODlhEAAQAMIEAAABAFaSRV6qSLn9qgAAAAAAAAAAAAAAACH5BAEKAAQALAAAAAAQABAAAANCSKrQvpA4QcWDrWoLsB5bxwDVYApB2jClaaaqRMIuCk92CuYBR8G9DSUjLBI3wMpRQzvhis4OqVUbjopKkczBvSQAADs=", "sonic", "R0lGODlhEAAQAMIDAAgICOgSJh9O/////////////////////yH5BAEKAAQALAAAAAAQABAAAANBSLrQsJA1IVwkjuraINDDsFUSFYZbh5knqj2T0LpUBp4jN9JpnJuc1S8UIGE+uUBRJRQonzXP5LlkSpCWy/URSQAAOw==", "yuri", "R0lGODlhEAAQAKEDAAAAAN4H28asxv///yH5BAEKAAMALAAAAAAQABAAAAI+hI85EB3s4DNBiFcvs3NjvmlL9WkesEDnKI7fw8Lpi6roMJ42jh8NNeEJVb+bsFc0HIfB5ZFhdPIO0mf0WAAAOw=="], u, u)
         }()
         $.kG = function() {
