@@ -21985,7 +21985,7 @@ T.thb9t2.prototype = {
         s = T.u(u.r, !1, c)      
 		v = 0.5 + C.d.Z(u.r.yin *0.5)
 		if(u.r.yin > 2)
-		{   
+		{
         d.a.push(T.e("[0]发起狙击", u.r, t, null, null, 0, 1000, 100))
         t.bL(v*s, !0, u.r, T.a3(), c, d)
 		}
@@ -32741,11 +32741,12 @@ T.yuzu.prototype = {
         return H.a([$.ai(), $.am(), $.kj()], [P.f])
     },
     aa: function() {
-        var u, t = new T.aK()
+        var u, t = new T.ribbit4a1()
         t.r = this
         this.k2 = t
         t = this.id
 		t.push(new T.ribbit4b1())
+
 		u =new T.ribbit4b2()
         u.f = 100
         t.push(u)
