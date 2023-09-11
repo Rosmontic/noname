@@ -27656,7 +27656,7 @@ n.r.bf(n.r.fr, null, c, d)
                 return !a.$iav
             }
             return !0
-        },s
+        },
         t: function(a, b, c, d) {
             var k ,l, v, u, t, s, r, q, p, o = a[0].a
             k = "[0]使用[胆怯者的观测]"
