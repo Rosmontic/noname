@@ -22002,7 +22002,7 @@ T.thb9t2.prototype = {
         var u = this ,v
         t = a[0].a
         s = T.u(u.r, !1, c) * 0.8
-        d.a.push(T.e("[0]发起压制射击", u.r, t, null, null, 1, 1000, 100))
+        d.a.push(T.e("[0]发起[压制射击]", u.r, t, null, null, 1, 1000, 100))
 		for (v = 0; v < 3; ++v){
         t.a0(s, !1, u.r, T.a3(), c, d)
 		}
@@ -22737,7 +22737,7 @@ T.ribbit3n2.prototype = {
                 s = this.r
                 r = H.a(n.slice(0), [H.n(n, 0)])
                 q = d.a
-				q.push(T.e("[0]；[呼...呼...我要忍不住了]", s, null, null, r, 1, 1000, 100))
+				q.push(T.e("[0]；[呼...呼...我要忍不住了]", s, null, null, r, 0, 1000, 100))
                 q.push(T.e(t, s, null, null, r, 1, 1000, 100))
                 p = T.u(this.r, !0, c) * 1.5
                 for (u = 0; u < n.length; ++u) {
@@ -27656,13 +27656,13 @@ n.r.bf(n.r.fr, null, c, d)
                 return !a.$iav
             }
             return !0
-        },
+        },s
         t: function(a, b, c, d) {
             var k ,l, v, u, t, s, r, q, p, o = a[0].a
             k = "[0]使用[胆怯者的观测]"
             s = this.r
             q = d.a
-            q.push(T.e("[0]：[果然我是什么都不会的小垃姬...]", s, null, null, 0, 1000, 100))
+            q.push(T.e("[0]：[果然我是什么都不会的小垃姬...]", s, s, null, null, 0, 1000, 100))
             q.push(T.e(k, s, null, null, r, 1, 1000, 100))           
             q.push($.v())
             t = H.o(o.r1.h(0, "locks"), "$ilockx")
@@ -32707,7 +32707,7 @@ T.yuzu.prototype = {
         u.f = 200
         t.push(u)
         u = new T.ribbit3n2()
-        u.f = 300
+        u.f = 3000
         t.push(u)
 		u =new T.ribbit3b2()
         u.f = 100
@@ -35830,7 +35830,7 @@ dk: function(a, b, c, d, e, f, g) {
 			this.r.cy = 1.25 * this.r.cy
 			this.r.ch = 0.5 * this.r.ch
 			this.r.r11 = 0
-			d.a.push(T.e("ribbit1，Break through！", this.r , this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[ribbit1，Break through！]", this.r , this.r, null, null, 0, 1000, 100))
 			}
 			
 			if(this.r.R2 != null )
@@ -35839,7 +35839,7 @@ dk: function(a, b, c, d, e, f, g) {
 			{
 			this.r.R2.id[2].f = 55
 			this.r.R3.j = this.r.R3.j +1024
-			d.a.push(T.e("ribbit2，Volume up！", this.r.R2 , this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[ribbit2，Volume up！]", this.r.R2 , this.r, null, null, 0, 1000, 100))
 			}
 			else if(this.r.R2.fr < 0.5 * this.r.R2.fx && this.r.r12 == 1)
 			{
@@ -35848,7 +35848,7 @@ dk: function(a, b, c, d, e, f, g) {
 			this.r.R2.dx = this.r.R2.dx * 1.5
 			this.r.R2.id[1].f = 300
             this.r.r12 = 0
-			d.a.push(T.e("ribbit2，Cover！", this.r.R2 , this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[ribbit2，Cover！]", this.r.R2 , this.r, null, null, 0, 1000, 100))
 			}
 			}
 			
@@ -35856,13 +35856,13 @@ dk: function(a, b, c, d, e, f, g) {
 			{
 			if(this.r.R3.heli != null && this.r.R3.fr > 0){
 			this.r.R3.j = this.r.R3.j +1024
-			d.a.push(T.e("ribbit3，Fire suppression！", this.r.R3 , this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[ribbit3，Fire suppression！]", this.r.R3 , this.r, null, null, 0, 1000, 100))
 			}
 			if(this.r.R3.heli == null && this.r.R3.fr > 0 && this.r.R2.id[1].f == 0 && this.r.r13 == 1){
 			this.r.R3.id[0].f = 500
 			this.r.R3.j = this.r.R3.j -1024
 			this.r.r13 = 0
-			d.a.push(T.e("ribbit3，Maximum firepower！", this.r.R3 , this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[ribbit3，Maximum firepower！]", this.r.R3 , this.r, null, null, 0, 1000, 100))
 			}
 			}
 			
@@ -35873,7 +35873,7 @@ dk: function(a, b, c, d, e, f, g) {
 			this.r.R4.Q = 2 * this.r.R4.Q
 			this.r.R4.yin = this.r.R4.yin + 2
 			this.r.r14 = 0
-			d.a.push(T.e("ribbit4，Dormant！", this.r.R4 , this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[ribbit4，Dormant！]", this.r.R4 , this.r, null, null, 0, 1000, 100))
 			}}
 			}
             d.a.push($.v())
@@ -35890,7 +35890,7 @@ dk: function(a, b, c, d, e, f, g) {
 			u = (c.m() & 1)
 			if(u ==1 && this.r.fr < 0.5 * this.r.fx && this.r.heli == null)
 			{
-			d.a.push(T.e("[1]：食用了[高热量浓缩糖果]", this.r , this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[1]：食用了[高热量浓缩糖果]", this.r , this.r, null, null, 1, 1000, 100))
 			t = this.r.fr
 			v = C.d.Z(this.r.fx *0.15)
 		    this.r.fr = t + v
