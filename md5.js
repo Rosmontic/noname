@@ -27651,7 +27651,6 @@ n.r.bf(n.r.fr, null, c, d)
             k = "[0]使用[胆怯者的观测]"
             s = this.r
             q = d.a
-			this.f = 0
             q.push(T.e("[0]：[果然我是什么都不会的小垃姬...]", s, null, null, 0, 1000, 100))
             q.push(T.e(k, s, null, null, r, 1, 1000, 100))           
             o = a[0].a
@@ -27659,13 +27658,19 @@ n.r.bf(n.r.fr, null, c, d)
             this.r.j = this.r.j + 1024
             t = H.o(o.r1.h(0, "locks"), "$ilockx")
             if (t == null) {
+			    d.a.push(T.e("[0]被[锁定1]了", o, o, null, null, 0, 1000, 100))
                 t = new T.lockx(o)
+				d.a.push(T.e("[0]被[锁定2]了", o, o, null, null, 0, 1000, 100))
                 t.y = new T.ay(t)
+				d.a.push(T.e("[0]被[锁定3]了", o, o, null, null, 0, 1000, 100))
                 o.r1.k(0, "locks", t)
+				d.a.push(T.e("[0]被[锁定4]了", o, o, null, null, 0, 1000, 100))
                 o.r2.i(0, t)
+				d.a.push(T.e("[0]被[锁定5]了", o, o, null, null, 0, 1000, 100))
                 o.x1.i(0, t.y)
+				d.a.push(T.e("[0]被[锁定6]了", o, o, null, null, 0, 1000, 100))
                 o.E()
-				d.a.push(T.e("[0]被[锁定]了", o, o, null, null, 0, 1000, 100))
+				d.a.push(T.e("[0]被[锁定7]了", o, o, null, null, 0, 1000, 100))
             } 
 			else{
                 t.Q += 4
