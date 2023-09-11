@@ -27645,7 +27645,18 @@ n.r.bf(n.r.fr, null, c, d)
         }
 }   
     T.ribbit4n2.prototype = {
-	    
+	    am: function(a, b) {
+            var u
+            if (b) {
+                if (a.fr < 100)
+                    return !1
+                u = a.r1
+                if (u.h(0, "locks") != null)
+                    return !1
+                return !a.$iav
+            }
+            return !0
+        },
         t: function(a, b, c, d) {
             var k ,l, v, u, t, s, r, q, p, o
             k = "[0]使用[胆怯者的观测]"
@@ -27658,19 +27669,13 @@ n.r.bf(n.r.fr, null, c, d)
             this.r.j = this.r.j + 1024
             t = H.o(o.r1.h(0, "locks"), "$ilockx")
             if (t == null) {
-			    d.a.push(T.e("[0]被[锁定1]了", o, o, null, null, 0, 1000, 100))
+			    d.a.push(T.e("[0]被[锁定]了", o, o, null, null, 0, 1000, 100))
                 t = new T.lockx(o)
-				d.a.push(T.e("[0]被[锁定2]了", o, o, null, null, 0, 1000, 100))
                 t.y = new T.ay(t)
-				d.a.push(T.e("[0]被[锁定3]了", o, o, null, null, 0, 1000, 100))
                 o.r1.k(0, "locks", t)
-				d.a.push(T.e("[0]被[锁定4]了", o, o, null, null, 0, 1000, 100))
                 o.r2.i(0, t)
-				d.a.push(T.e("[0]被[锁定5]了", o, o, null, null, 0, 1000, 100))
                 o.x1.i(0, t.y)
-				d.a.push(T.e("[0]被[锁定6]了", o, o, null, null, 0, 1000, 100))
-                o.E()
-				d.a.push(T.e("[0]被[锁定7]了", o, o, null, null, 0, 1000, 100))
+                o.E()			
             } 
 			else{
                 t.Q += 4
