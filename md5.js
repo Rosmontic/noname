@@ -21574,6 +21574,7 @@ T.thb8s1.prototype = {
         t: function(a, b, c, d) {
             var w, k ,l, v, u, t, s, r, q, p, o, n = H.a([], [T.aU])
             for (u = 0; u < a.length; ++u)
+			     n.push(a[u].a)
             w = "[0]使用[ECCM对策]"		
             s = this.r
 			this.f = 0
@@ -21582,11 +21583,8 @@ T.thb8s1.prototype = {
             q = d.a
             q.push(T.e(w, s, null, null, r, 1, 1000, 100))
             for (u = 0; u < n.length; ++u) {
-			q.push(T.e(w, s, null, null, r, 1, 1000, 100))
             o = n[u]
-			 q.push(T.e(w, s, null, null, r, 1, 1000, 100))
 			d.a.push($.v())		
-			 q.push(T.e(w, s, null, null, r, 1, 1000, 100))
 			if(o.jixie != null){
             o.fr = 0
 			d.a.push(T.e("[0]被[瘫痪]了", o, o, null, null, 0, 1000, 100))
