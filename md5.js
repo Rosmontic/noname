@@ -27658,15 +27658,13 @@ n.r.bf(n.r.fr, null, c, d)
             return !0
         },
         t: function(a, b, c, d) {
-            var k ,l, v, u, t, s, r, q, p, o
+            var k ,l, v, u, t, s, r, q, p, o = a[0].a
             k = "[0]使用[胆怯者的观测]"
             s = this.r
             q = d.a
             q.push(T.e("[0]：[果然我是什么都不会的小垃姬...]", s, null, null, 0, 1000, 100))
             q.push(T.e(k, s, null, null, r, 1, 1000, 100))           
-            o = a[0].a
             q.push($.v())
-            this.r.j = this.r.j + 1024
             t = H.o(o.r1.h(0, "locks"), "$ilockx")
             if (t == null) {
 			    d.a.push(T.e("[0]被[锁定]了", o, o, null, null, 0, 1000, 100))
@@ -27675,7 +27673,8 @@ n.r.bf(n.r.fr, null, c, d)
                 o.r1.k(0, "locks", t)
                 o.r2.i(0, t)
                 o.x1.i(0, t.y)
-                o.E()			
+                o.E()
+				
             } 
 			else{
                 t.Q += 4
