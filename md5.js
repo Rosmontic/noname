@@ -27645,12 +27645,13 @@ n.r.bf(n.r.fr, null, c, d)
         }
 }   
     T.ribbit4n2.prototype = {
-	   
+	    
         t: function(a, b, c, d) {
             var k ,l, v, u, t, s, r, q, p, o
             k = "[0]使用[胆怯者的观测]"
             s = this.r
             q = d.a
+			this.f = 0
             q.push(T.e("[0]：[果然我是什么都不会的小垃姬...]", s, null, null, 0, 1000, 100))
             q.push(T.e(k, s, null, null, r, 1, 1000, 100))           
             o = a[0].a
@@ -27669,7 +27670,7 @@ n.r.bf(n.r.fr, null, c, d)
 			else{
                 t.Q += 4
 				t.z += 5
-                d.a.push(T.e("[0]被[锁定]了", o, o, null, null, 0, 1000, 100))   
+                d.a.push(T.e("[0]被再次[锁定]了", o, o, null, null, 0, 1000, 100))   
         }
 }}
     T.ribbit1t1.prototype = {
