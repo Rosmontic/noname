@@ -28843,11 +28843,7 @@ T.tha1b1.prototype = {
         var u = a > 0 , n ,m
 		this.r.yin = 0
 		e.a.push(T.e("[0]：[好痛！]", this.r, null, null, null, 1, 1000, 100))
-		if(a == 0)
-		{
-		return u && a
-		}
-        return u && C.b.v (a, 0.66)
+        return u && a
     },
     T: function() {
         this.r.y1.i(0, this)
@@ -35445,11 +35441,8 @@ dk: function(a, b, c, d, e, f, g) {
             if (c.fr <= 0)
                 return a
             v = 64 + this.r.yin * 16
-			this.r.yin = this.r.yin + 1
             if (f.m() < v && s.r.bq(f)) {
-                g.a.push(T.e("[0]被忽视了，免于伤害", s.r, c, null, null, 1, 1000, 100))
-                t = s.r
-                t.j = t.j + 256
+                g.a.push(T.e("[0][被忽视了，免于伤害]", s.r, c, null, null, 1, 1000, 100))
                 return 0
             }
             return a
