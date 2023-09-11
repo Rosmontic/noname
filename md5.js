@@ -32745,11 +32745,10 @@ T.yuzu.prototype = {
         t.r = this
         this.k2 = t
         t = this.id
-		t.push(new T.ribbit4b1())
 		u =new T.ribbit4n2()
         u.f = 70
         t.push(u)
-        u =new T.ribbit4b2()
+		u = new T.ribbit4n1()
         u.f = 100
         t.push(u)
         u =new T.ribbit4b3()
