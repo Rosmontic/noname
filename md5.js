@@ -8490,7 +8490,7 @@ tha7n1: function tha7n1() {
             var _ = this
             _.x = a
             _.y = null
-            _.z = 5
+            _.z = 10
             _.Q = 3
             _.c = _.b = _.a = null
         },
@@ -23331,7 +23331,7 @@ T.tha9n3.prototype = {
         al: function(a) {
             u.ch = C.d.v(u.ch, this.z)
 			u.dx = C.d.v(u.dx, this.z)
-			u.J = u.J * this.z
+			u.J = u.J * 4
         },
         aq: function(a, b) {
             if (--this.Q === 0)
@@ -27664,16 +27664,15 @@ n.r.bf(n.r.fr, null, c, d)
             q.push(T.e("[0]：[果然我是什么都不会的小垃姬...]", s, null, null, 0, 1000, 100))
             q.push(T.e(k, s, null, null, r, 1, 1000, 100))           
             q.push($.v())
-            
-			t = H.o(o.r1.h(0, "blindly"), "$iblindlyx")
+            t = H.o(o.r1.h(0, "locks"), "$ilockx")
             if (t == null) {
-                t = new T.blindlyx(o)
+                t = new T.lockx(o)
                 t.y = new T.ay(t)
-                o.r1.k(0, "blindly", t)
+                o.r1.k(0, "locks", t)
                 o.r2.i(0, t)
                 o.x1.i(0, t.y)
                 o.E()
-				d.a.push(T.e("[0]陷入[目盲]", o, o, null, null, 0, 1000, 100))
+				d.a.push(T.e("[0]被[锁定]了", o, o, null, null, 0, 1000, 100))
             }
 			else{
                 t.Q += 4
