@@ -32755,9 +32755,6 @@ T.yuzu.prototype = {
         u =new T.ribbit4b2()
         u.f = 100
         t.push(u)
-        u =new T.ribbit4b3()
-        u.f = 100
-        t.push(u)
     }, 
     bM: function() {
             var u, t = this
@@ -35440,7 +35437,7 @@ dk: function(a, b, c, d, e, f, g) {
             var v ,u, t, s = this
             if (c.fr <= 0)
                 return a
-            v = 64 + this.r.yin * 16
+            v = 96 + this.r.yin * 16
             if (f.m() < v && s.r.bq(f)) {
                 g.a.push(T.e("[0][被忽视了，免于伤害]", s.r, c, null, null, 1, 1000, 100))
                 return 0
