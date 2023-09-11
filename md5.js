@@ -21587,7 +21587,7 @@ T.thb8s1.prototype = {
 			d.a.push($.v())		
 			if(o.jixie != null){
             o.fr = 0
-			d.a.push(T.e("[0]被[瘫痪]了", o, o, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]被[瘫痪]", o, o, null, null, 0, 1000, 100))
 			o.bf(o.fr, null, c, d)
 			}
             }
@@ -22758,9 +22758,11 @@ T.ribbit3n2.prototype = {
     ar: function(a, b) {
         if (this.r.heli == null)
         { 
+		if (this.r.heli.fr <= 0)
+		{ 
             return !1
         }
-    
+	}
     return this.aS(a, b)
 },
             gb3: function() {
@@ -28970,12 +28972,13 @@ T.hifumib1.prototype = {
     $iD: 1
 }
 T.ribbit3b1.prototype = {
-    ar: function(a, b) {
-            if (this.r.heli == null )
-            { 
-                return !1
-            }
-			return this.aS(a, b)
+     ar: function(a, b) {
+    if (this.r.heli != null)
+        { 
+		if (this.r.heli.fr <= 0)
+		{ 
+            return !1
+        }}
 	},
     ak: function(a, b, c, d, e) {
         var u = a > 0 , n ,m
