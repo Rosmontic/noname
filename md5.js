@@ -32917,14 +32917,13 @@ T.yuzu.prototype = {
 		    d.a.push($.v())
 			d.a.push(T.e("[0]: [对……对不起！]", this, this.r, null, null, 0, 1000, 100))
 			}	
-        }
-    },
+        },
 	aX: function(a, b, c, d) {
             var u = this
               , t = u.fr		
             d.a.push(T.e("[0][1]: [对……对不起2！]", this, t, null, null, 0, 1000, 100))
             return !1
-    }
+    }}
 	T.fox4.prototype = {
     gah: function() {
         return C.fox4
