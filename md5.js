@@ -30166,7 +30166,7 @@ T.youzi1.prototype = {
     t: function(a, b, c, d) {
         var u ,t ,o = this.r ,s ,v
 		this.f = 0
-       	d.a.push(T.e("[0]使用[防弹挡板]", this.r ,o, null, null, 1, 1000, 100))
+       	d.a.push(T.e("[0]使用[防弹插板]", this.r ,o, null, null, 1, 1000, 100))
 		o.ch = o.ch * 4
         o.fd = 1		
 		o.go = o.go * 0.75
@@ -30182,8 +30182,7 @@ T.youzi1.prototype = {
         v = C.d.v(s, 37)	
         q.bL(v, !1, this.r, T.a3(), c, d)
 		d.a.push($.v())
-		d.a.push(T.e("迫击炮伤害过低，[0]，[愤怒了]！", this.r ,this.r, null, null, 0, 1000, 100))
-		
+		d.a.push(T.e("迫击炮伤害过低，[0]，[愤怒了]！", this.r ,this.r, null, null, 0, 1000, 100))	
 		t = H.o(this.r.r1.h(0, "anger"), "$iangerx")
             if (t == null) {
                 t = new T.angerx(this.r)
@@ -32919,6 +32918,12 @@ T.yuzu.prototype = {
 			d.a.push(T.e("[0]: [对……对不起！]", this, this.r, null, null, 0, 1000, 100))
 			}	
         }
+    },
+	aX: function(a, b, c, d) {
+            var u = this
+              , t = u.fr		
+            d.a.push(T.e("[0][1]: [对……对不起2！]", this, t, null, null, 0, 1000, 100))
+            return !1
     }
 	T.fox4.prototype = {
     gah: function() {
@@ -37613,7 +37618,7 @@ C.ribbit3 = H.a(u([47, 9, 39, 30, 12, -11, 20, 292]), [P.j])
 C.ribbit4 = H.a(u([10, 10, 10, 45, 20, 50, 8, 259]), [P.j])
 C.fox1 = H.a(u([-1, 1, 0, 32, 40, 12, 28, 402]), [P.j])
 C.fox2 = H.a(u([30, 22, 41, 42, 34, 30, 36, 399]), [P.j])
-C.fox3 = H.a(u([40, 25, 20, 21, 13, 20, 44, 687]), [P.j])
+C.fox3 = H.a(u([40, 25, 20, 21, 13, 20, 44, 487]), [P.j])
 C.fox4 = H.a(u([3, 1, 24, 3, 30, -16, 33, 302]), [P.j])
 C.Squall = H.a(u([15, 33, 3, 7, -14, 16, 16, 37]), [P.j])
 C.rio = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
