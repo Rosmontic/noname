@@ -22046,25 +22046,26 @@ T.thb9t2.prototype = {
     }
 	T.fox4a1.prototype = {
     t: function(a, b, c, d) {
-        var u = this ,v ,s = 0
+        var u = this ,v 
 		if(this.r.tager != null && this.r.tager.fr <= 0 )
 		{
 		t = a[0].a
 		this.r.aim = 0
 		this.r.tager = t
-		s = 1
+		d.a.push(T.e("[0]1", u.r, t, null, null, 0, 1000, 100))
 		}
 		if(this.r.tager == null)		
 		{
         t = a[0].a
 		this.r.aim = 0
 		this.r.tager = t
-		s = 1
+		d.a.push(T.e("[0]2", u.r, t, null, null, 0, 1000, 100))
 		}
 		if(s = 0)
 		{
 		t = this.r.tager
 		this.r.aim = this.r.aim + 1.2
+		d.a.push(T.e("[0]3", u.r, t, null, null, 0, 1000, 100))
 		}
         s = T.u(u.r, !1, c)      
 		v = this.r.aim
