@@ -25907,8 +25907,12 @@ n.r.bf(n.r.fr, null, c, d)
     }}
 	T.ribbit1n2.prototype = {
         ar: function(a, b) {
-                if (this.r.UAVi != null )
-                    return !1
+                if (this.r.UAVi != null){
+				if (this.r.UAVi.fr <= 0)
+				{
+				return !0
+				}
+                    return !1}
             return this.aS(a, b)
         },
         a9: function(a, b, c) {
@@ -26124,8 +26128,12 @@ n.r.bf(n.r.fr, null, c, d)
     }}
 	T.fox4n1.prototype = {
         ar: function(a, b) {
-                if (this.r.UAVi != null )
-                    return !1
+                if (this.r.UAVi != null){
+				if (this.r.UAVi.fr <= 0)
+				{
+				return !0
+				}
+                    return !1}
             return this.aS(a, b)
         },
         a9: function(a, b, c) {
