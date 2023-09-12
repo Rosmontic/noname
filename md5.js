@@ -22061,7 +22061,7 @@ T.thb9t2.prototype = {
 		this.r.tager = t
 		d.a.push(T.e("[0]2", u.r, t, null, null, 0, 1000, 100))
 		}
-		if(s = 0)
+		else
 		{
 		t = this.r.tager
 		this.r.aim = this.r.aim + 1.2
