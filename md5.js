@@ -29001,15 +29001,18 @@ T.tha1b1.prototype = {
     $iD: 1
     }
 	T.fox3b1.prototype = {
+	ga1: function() {
+        return 2000
+        },
     ak: function(a, b, c, d, e) {
         var u = a > 0 , n ,m
 		n = (d.m() & 7)
 		if (n > 4)
 		{
 		e.a.push(T.e("[0]使用[盾牌格挡]", this.r, null, null, null, 1, 1000, 100))
-		return u && 0
+		return 0
 		}	
-        return u && a
+        return a
     },
     T: function() {
         this.r.y1.i(0, this)
@@ -32974,8 +32977,9 @@ T.yuzu.prototype = {
 		u =new T.fox3n1()
         u.f = 100
         t.push(u)
-		t.push(new T.fox3b1())
-
+		u =new T.fox3b1()
+        u.f = 100
+        t.push(u)
     }, 
     bM: function() {
             var u, t = this
