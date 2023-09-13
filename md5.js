@@ -22091,17 +22091,17 @@ T.thb9t2.prototype = {
     }
 	T.fox4t1.prototype = {
     t: function(a, b, c, d) {
-        var u = this ,v 
+        var u = this ,v ,t
 		if(u.r.own.tager == null && u.r.own.tager.fr <= 0){
 		t = a[0].a
 		}
 		else{
 		t = u.r.own.tager
 		}
-	    t.ch =  C.d.Z(t.ch *0.7)
-		t.dx =  C.d.Z(t.dx *0.7)
+	    t.ch =  C.d.Z(t.ch *0.75)
+		t.dx =  C.d.Z(t.dx *0.75)
         s = T.u(u.r, !1, c)
-        d.a.push(T.e("[0]发起射击", u.r, t, null, null, 0, 1000, 100))
+        d.a.push(T.e("[0]射击", u.r, t, null, null, 0, 1000, 100))
         t.a0(s, !0, u.r, T.a3(), c, d)
     }
     }
