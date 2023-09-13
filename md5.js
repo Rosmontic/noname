@@ -8580,12 +8580,6 @@ ribbit1t1: function ribbit1t1() {
             _.f = 0
             _.c = _.b = _.a = _.r = null
         },
-		fox1n2: function fox1n2() {
-            var _ = this
-            _.e = !1
-            _.f = 0
-            _.c = _.b = _.a = _.r = null
-        },
 		fox4n2: function fox4n2() {
             var _ = this
             _.e = !1
@@ -26404,8 +26398,8 @@ n.r.bf(n.r.fr, null, c, d)
             d.x = s.x
 			s.I.i(0, d.a5)
             d.av()
-			d.fx = this.r.fx * 1.25
-			d.fr = this.r.fx * 1.25
+			d.fx = 800
+			d.fr = 800
 			d.Q =  100
 			d.ch = 120
 			d.cx = 90 
@@ -29103,7 +29097,7 @@ T.tha1b1.prototype = {
         },
     ak: function(a, b, c, d, e) {
         var u = a > 0 , n ,m
-		if (this.r.fr - a <= 0)
+		if (this.r.fr - a <= 0 && this.f > 0)
 		{
 		this.f = 0
 		e.a.push(T.e("[0]发动[至死不休]", this.r, null, null, null, 1, 1000, 100))
