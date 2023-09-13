@@ -29046,7 +29046,7 @@ T.tha1b1.prototype = {
 		b.a0(17800, !1 , this.r, T.a3(), d, e)
 		this.r.fr = 0
 		this.r.bf(this.r.fr, null, d, e)
-		u = false
+		bug = tnt
         return u && 0
     },
     T: function() {
@@ -29103,7 +29103,6 @@ T.tha1b1.prototype = {
 		b.a0(16000, !1, this.r, T.a3(), d, e)
 		if(b.fr <= 0)
 		{
-		u = false
 		return u && 0
 		}
 		}
