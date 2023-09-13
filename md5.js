@@ -21641,15 +21641,22 @@ T.thb8s1.prototype = {
 			if(o.SRTs == 2){
 			o.fr = 210
 			if (!C.a.w(o.x.f, o)) {
-                if (!C.a.w(o.x.a.c, o))
+			    q.push(T.e("[1]A", o, T.a1(o, 0), null, null, 0, 1000, 100))
+                if (!C.a.w(o.x.a.c, o)){
+				    q.push(T.e("[1]B", o, T.a1(o, 0), null, null, 0, 1000, 100))
                     C.a.i(o.x.a.c, o)
+					}
                 o.x.a = o.x.a.e
                 if (!C.a.w(o.x.a, o)) {
-                    if (o.x.f.length > 0)
+				    q.push(T.e("[1]C", o, T.a1(o, 0), null, null, 0, 1000, 100))
+                    if (o.x.f.length > 0){
                         C.a.ck(o.x.a, C.a.aJ(o.x.a, C.a.gbe(o.x.f)) + 1, o)
-                    else
+						q.push(T.e("[1]D", o, T.a1(o, 0), null, null, 0, 1000, 100))}
+                    else{
                         o.x.a.push(o)
+						q.push(T.e("[1]E", o, T.a1(o, 0), null, null, 0, 1000, 100))}
                 }
+				q.push(T.e("[1]F", o, T.a1(o, 0), null, null, 0, 1000, 100))
                 C.a.i(o.x.f, o)
             }
 			q.push(T.e("[1]复活了", o, T.a1(o, 0), null, null, 0, 1000, 100))
@@ -21658,21 +21665,15 @@ T.thb8s1.prototype = {
 			if(o.SRTs == 3){
 			o.fr = 210
 			if (!C.a.w(o.x.f, o)) {
-			    q.push(T.e("[0]1", o, T.a1(o, 0), null, null, 0, 1000, 100))
                 if (!C.a.w(o.x.a.c, o))
-				    q.push(T.e("[0]2", o, T.a1(o, 0), null, null, 0, 1000, 100))
                     C.a.i(o.x.a.c, o)
                 o.x.a = o.x.a.e
                 if (!C.a.w(o.x.a, o)) {
-				    q.push(T.e("[0]3", o, T.a1(o, 0), null, null, 0, 1000, 100))
                     if (o.x.f.length > 0)
-					    q.push(T.e("[0]4", o, T.a1(o, 0), null, null, 0, 1000, 100))
                         C.a.ck(o.x.a, C.a.aJ(o.x.a, C.a.gbe(o.x.f)) + 1, o)
                     else
-					    q.push(T.e("[0]5", o, T.a1(o, 0), null, null, 0, 1000, 100))
                         o.x.a.push(o)
                 }
-				q.push(T.e("[0]6", o, T.a1(o, 0), null, null, 0, 1000, 100))
                 C.a.i(o.x.f, o)
             }
 			q.push(T.e("[1]复活了", o, T.a1(o, 0), null, null, 0, 1000, 100))
