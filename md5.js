@@ -9807,6 +9807,7 @@ tha4n1: function tha4n1() {
             _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
             _.go = 1
             _.id = e
+			_.own = null
 			_.jixie = 1
             _.k2 = _.k1 = null
             _.k3 = f
@@ -22091,7 +22092,12 @@ T.thb9t2.prototype = {
 	T.fox4t1.prototype = {
     t: function(a, b, c, d) {
         var u = this ,v 
+		if(u.r.own.tager == null && u.r.own.tager.fr <= 0){
 		t = a[0].a
+		}
+		else{
+		t = u.r.own.tager
+		}
 	    t.ch =  C.d.Z(t.ch *0.7)
 		t.dx =  C.d.Z(t.dx *0.7)
         s = T.u(u.r, !1, c)
@@ -26264,6 +26270,7 @@ n.r.bf(n.r.fr, null, c, d)
 			d.dy = 50
 			d.j =  2048
 			d.J =  d.J * 0.5
+			d.own = c.r
 			this.r.UAVi = d
             c.r.x.aU(d)
             u.push(T.e("[1]已安放 ", c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
@@ -29031,11 +29038,12 @@ T.tha1b1.prototype = {
         },
     ak: function(a, b, c, d, e) {
         var u = a > 0 , n ,m
-		if (this.r.fr - a > 100)
+		if (this.r.fr - a < 1)
 		{
+		this.f = 0
 		e.a.push(T.e("[0]使用[至死不休]", this.r, null, null, null, 1, 1000, 100))
 		this.r.j = this.r.j + 4096
-		this.r.go = this.r.go * 3
+		this.r.go = this.r.go * 2
 		bug = tnt	
 		return 0
 		}
