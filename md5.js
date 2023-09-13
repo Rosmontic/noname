@@ -29104,7 +29104,8 @@ T.tha1b1.prototype = {
 		b.a0(16000, !1, this.r, T.a3(), d, e)
 		if(b.fr <= 0)
 		{
-		return
+		bug = tnt
+		return u && 0
 		}
 		}
 		if(this.r.fd == 1)
