@@ -23962,6 +23962,11 @@ T.tha4n1.prototype = {
         b5: function(a) {
             return a.b1(this.r.y.f)
         },
+		am: function(a, b) {
+            if (b)
+                return a.fr + 80 < a.fx && !a.$iav
+            return a.fr < a.fx && !a.$iav
+        },
         a8: function(a, b, c) {
             var u = {}
             if (b) {
@@ -23987,6 +23992,10 @@ T.tha4n1.prototype = {
             p.push(T.e(O.c("YmSv"), q.r, T.a1(u, r), new T.aG(t), null, 0, 1000, 100))
             u.bI(q.r, d)
 			u.j = u.j +1024
+			if(u.fr == u.fx)
+			{
+			u.go = u.go + 0.5
+			}
         }
     }
     T.tigerRecover.prototype = {
@@ -33218,7 +33227,7 @@ T.yuzu.prototype = {
         return H.a([$.ai(), $.am(), $.kj()], [P.f])
     },
     aa: function() {
-        var u, t = new T.fox2a1()
+        var u, t = new T.aK()
         t.r = this
         this.k2 = t
         t = this.id
@@ -33226,7 +33235,10 @@ T.yuzu.prototype = {
         u.f = 40
         t.push(u)
 		u =new T.fox2n1()
-        u.f = 100
+        u.f = 80
+        t.push(u)
+		u =new T.fox2a1()
+        u.f = 256
         t.push(u)
     }, 
     bM: function() {
