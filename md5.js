@@ -30428,25 +30428,13 @@ T.youzi1.prototype = {
     }
 	T.fox1a1.prototype = {
     t: function(a, b, c, d) {
-        var u ,s ,q ,t , v , w
-		q = a[0].a
-		w = q.ch
-		v = q.cy
-		if(this.r.hbw > 0){
-		t = 2
-       	d.a.push(T.e("[0]发动[近战压制]", this.r ,this.r, null, null, 1, 1000, 100))
-		q.ch = 0
-		q.cy = 0
-		}
-		else
-		{
-		t = 1
-		d.a.push(T.e("[0]发起攻击", this.r ,this.r, null, null, 0, 1000, 100))
-		}
-        s = T.u(this.r, !1, c)
-        q.a0(C.d.Z(s * t), !1, this.r, T.a3(), c, d)
-		q.ch = w
-		q.cy = v
+        var u ,s ,q ,t , v , w , o
+		o = a[0].a
+		s = this.r
+		d.a.push(T.e("[0]：[Foxbot！]", this.r ,this.r, null, null, 1, 1000, 100))
+			w = T.u(s, !1, c)
+			o.a0(w, !1, s, T.a3(), c, d)
+			
     }
     }
 	T.fox3a1.prototype = {
