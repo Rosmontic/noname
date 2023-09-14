@@ -21654,6 +21654,7 @@ T.thb8s1.prototype = {
             w = "[0]使用[破釜沉舟]"		
             s = this.r
 			this.f = 0
+			this.r.pfcz = 0
             r = H.a(n.slice(0), [H.n(n, 0)])
             q = d.a
             q.push(T.e(k, s, null, null, r, 0, 1000, 100))
@@ -29217,11 +29218,18 @@ T.tha1b1.prototype = {
 		if (this.r.fr - a <= 0 && this.f > 0)
 		{
 		this.f = 0
-		e.a.push(T.e("[0]发动[至死不休]", this.r, null, null, null, 1, 1000, 100))
+		e.a.push(T.e("[0]：[至死不休！]", this.r, null, null, null, 1, 1000, 100))
 		this.r.j = this.r.j + 4096
 		this.r.go = this.r.go * 2
-		this.r.pfcz = 1
+		this.r.pfcz = 4
+		e.a.push(T.e("[0]发动[绝境反击]", this.r, null, null, null, 0, 1000, 100))
+		b.a0(19200, !1, this.r, T.a3(), d, e)
 		bug = tnt	
+		return 0
+		}
+		if(this.r.pfcz > 1 )
+		{
+		this.r.pfcz = this.r.pfcz - 1
 		return 0
 		}
         return a
@@ -33232,10 +33240,10 @@ T.yuzu.prototype = {
         this.k2 = t
         t = this.id
         u =new T.fox2n2()
-        u.f = 40
+        u.f = 50
         t.push(u)
 		u =new T.fox2n1()
-        u.f = 80
+        u.f = 75
         t.push(u)
 		u =new T.fox2a1()
         u.f = 256
