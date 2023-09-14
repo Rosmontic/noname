@@ -30427,16 +30427,42 @@ T.youzi1.prototype = {
     }
     }
 	T.fox1a1.prototype = {
-    t: function(a, b, c, d) {
-        var u ,s ,q ,t , v , w , o
-		o = a[0].a
-		s = this.r
-		d.a.push(T.e("[0]：[Foxbot！]", this.r ,this.r, null, null, 1, 1000, 100))
-			w = T.u(s, !1, c)
-			o.a0(w, !1, s, T.a3(), c, d)
-			
-    }
-    }
+        t: function(a, b, c, d) {
+            var k ,l, v, u, t, s, r, q, p, o
+            k = "[0]：[FoxBot！]"
+            s = this.r
+            q = d.a
+            q.push(T.e(k, s, null, null, r, 1, 1000, 100))           
+            o = a[0].a
+			if (!o.a6("blindly", c)){
+                u = o.fr > 0 && !o.A && T.bd(s.db, o.dy + o.dx, c)}
+            else{
+                u = !0}
+            if (u) {			    
+			    d.a.push(T.e("[0]闪避了攻击", o, o, null, null, 20, 1000, 100))
+				s.j = s.j + 512
+                return
+            }
+            t = H.o(o.r1.h(0, "blindly"), "$iblindlyx")
+            if (t == null) {
+                t = new T.blindlyx(o)
+                t.y = new T.ay(t)
+                o.r1.k(0, "blindly", t)
+                o.r2.i(0, t)
+                o.x1.i(0, t.y)
+                o.E()
+				d.a.push(T.e("[0]陷入[目盲]", o, o, null, null, 0, 1000, 100))
+				w = T.u(this.r, !1, c)
+				o.a0(C.d.Z(w * 1.25) , !1, s, T.a3(), c, d)
+            } 
+			else{
+                t.Q += 3
+				t.z += 10
+                d.a.push(T.e("[0]陷入[目盲]", o, o, null, null, 0, 1000, 100))
+                w = T.u(this.r, !1, c)
+				o.a0(C.d.Z(w * 1.75) , !1, s, T.a3(), c, d)			
+        }
+    }}
 	T.fox3a1.prototype = {
     t: function(a, b, c, d) {
         var u ,s ,q ,t , v , w
