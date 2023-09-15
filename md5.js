@@ -12928,7 +12928,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
             _.y = _.x = _.r = _.f = _.e = null
             _.z = 0
             _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
-            _.go = 1
+            _.go = 1.4
             _.id = e
 			_.SRTs = 4
 			_.tager = null
@@ -12955,7 +12955,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
             _.q = s
             _.a_ = t
             _.V = _.O = _.L = 0
-            _.J = 32768
+            _.J = 36000
             _.j = 0
             _.X = _.W = !1
             _.F = null
@@ -21537,25 +21537,27 @@ T.thb8s1.prototype = {
 			if(o.SRT != null){
 			if(o.SRT == 1){
 			this.r.R1 = o
-			o.cy = o.cy * 1.3
+			o.cx = o.cx * 1.1
+			o.cy = o.cy * 1.1
 			o.f = o.f + 1024		
 			}
 			if(o.SRT == 2){
 			this.r.R2 = o
-			o.J = 1.5 * o.J
-			o.cy = o.cy * 1.3
+			o.J = 1.4 * o.J
+			o.cx = o.cx * 1.1
+			o.cy = o.cy * 1.1
             o.f = o.f + 1024			
 			}
 			if(o.SRT == 3){
 			this.r.R3 = o
-            o.cx = o.cx * 1.15
-			o.cy = o.cy * 1.15
+            o.cx = o.cx * 1.1
+			o.cy = o.cy * 1.1
 			o.f = o.f + 2048		
 			}
 			if(o.SRT == 4){
 			this.r.R4 = o
-			o.cx = o.cx * 1.15
-			o.cy = o.cy * 1.15
+			o.cx = o.cx * 1.1
+			o.cy = o.cy * 1.1
 			o.f = o.f + 2048
 			
 			}
@@ -21980,8 +21982,8 @@ T.thb5n2.prototype = {
                     o.r1.k(0, $.kl(), v)
                     o.y1.i(0, v)
                 }
-                    v.x = v.x + 65
-					h = 65
+                    v.x = v.x + 75
+					h = 75
 				    q.push(T.e("[0]获得[1]点[护盾]", o , h, null, null, 0, 1000, 100))
 			}           
                 }
@@ -26473,8 +26475,8 @@ n.r.bf(n.r.fr, null, c, d)
             s = c.r
             d.x = s.x
             d.av()
-			d.fx = 180
-			d.fr = 180
+			d.fx = 210
+			d.fr = 210
 			d.Q =  75
 			d.ch = 15
 			d.cx = 210 
@@ -30579,7 +30581,7 @@ T.youzi1.prototype = {
 		}
         s = T.u(this.r, !1, c)
 		for(u = 0 ;u < t ;u++){
-		if(q.fr > 0){
+		if(q.fr > 0 && this.r.fr > 0){
         q.a0(s , !1, this.r, T.a3(), c, d)
 		}
 		}
@@ -33309,7 +33311,7 @@ T.yuzu.prototype = {
 		    
             if(this.fr <= 0){
 		    d.a.push($.v())
-			d.a.push(T.e("[0]: [......终究还是失算了呢。]", this, this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]: [可以......放心把SRT交给后辈了吧。]", this, this.r, null, null, 0, 1000, 100))
 			}	
         }
     }
