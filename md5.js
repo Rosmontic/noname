@@ -8144,6 +8144,12 @@ tha5n1: function tha5n1() {
             _.f = 0
             _.c = _.b = _.a = _.r = null
         },
+		fox1n1: function fox1n1() {
+            var _ = this
+            _.e = !1
+            _.f = 0
+            _.c = _.b = _.a = _.r = null
+        },
 		ribbit2n1: function ribbit2n1() {
             var _ = this
             _.e = !1
@@ -21650,7 +21656,7 @@ T.thb8s1.prototype = {
 
             for (u = 0; u < a.length; ++u)
                 n.push(a[u].a)
-            k = "[0]: [狐小队，反击！反击！反击！]"
+            k = "[0]: [狐小队，全员集结！]"
             w = "[0]使用[破釜沉舟]"		
             s = this.r
 			this.f = 0
@@ -21665,7 +21671,7 @@ T.thb8s1.prototype = {
 			d.a.push($.v())
 			if(o.SRTs != null){
 			if(o.SRTs == 2){
-			o.fr = 210
+			o.fr = 246
 			if (!C.a.w(o.x.f, o)) {
 			    p = o.x.a
                 if (!C.a.w(p.c, o))
@@ -21681,10 +21687,11 @@ T.thb8s1.prototype = {
                 C.a.i(o.x.f, o)
             }
 			q.push(T.e("[1]复活了", o, T.a1(o, 0), null, null, 0, 1000, 100))
+			o.cy = o.cy * 3
 			o.f = o.f + 2048
 			}
 			if(o.SRTs == 3){
-			o.fr = 210
+			o.fr = 280
 			if (!C.a.w(o.x.f, o)) {
 			    p = o.x.a
                 if (!C.a.w(p.c, o))
@@ -21700,10 +21707,11 @@ T.thb8s1.prototype = {
                 C.a.i(o.x.f, o)
             }
 			q.push(T.e("[1]复活了", o, T.a1(o, 0), null, null, 0, 1000, 100))
-			o.f = o.f + 2048	
+			o.cx = o.cx * 1.5
+			o.f = o.f + 2048			
 			}
 			if(o.SRTs == 4){
-            o.fr = 210
+            o.fr = 234
 			if (!C.a.w(o.x.f, o)) {
 			    p = o.x.a
                 if (!C.a.w(p.c, o))
@@ -21719,7 +21727,8 @@ T.thb8s1.prototype = {
                 C.a.i(o.x.f, o)
             }
 			q.push(T.e("[1]复活了", o, T.a1(o, 0), null, null, 0, 1000, 100))
-			o.f = o.f + 2048
+			o.Q = o.Q * 2
+			o.f = o.f + 2048	
 			}
             }  
         }
@@ -22221,6 +22230,7 @@ T.thb9t2.prototype = {
 		if(v > 0)
 		{
         d.a.push(T.e("[0]发起[精准狙击]", u.r, t, null, null, 0, 1000, 100))
+		t.ch = C.d.v(t.ch, 2)
         t.bL(v*s, !0, u.r, T.a3(), c, d)
 		}
 		else{
@@ -22243,9 +22253,9 @@ T.thb9t2.prototype = {
     t: function(a, b, c, d) {
         var u = this ,v
         t = a[0].a
-        s = T.u(u.r, !1, c) * 0.7
+        s = T.u(u.r, !1, c) * 0.8
         d.a.push(T.e("[0]发起[压制射击]", u.r, t, null, null, 1, 1000, 100))
-		for (v = 0; v < 3; ++v){
+		for (v = 0; v < 2; ++v){
 		if(t.fr > 0){
         t.a0(s, !1, u.r, T.a3(), c, d)}
 		}
@@ -23018,6 +23028,36 @@ T.ribbit3n3.prototype = {
     if (o.fr > 0 ) {
     q.push($.v())
     o.a0(p, !1, this.r, T.a3(), c, d)
+    }                    
+    }
+    }   
+    }
+T.fox1n1.prototype = {
+            gb3: function() {
+                return 2
+            },
+            gb4: function() {
+                return 4
+            },
+            t: function(a, b, c, d) {
+                var v, u, t, s, r, q, p, o, n = H.a([], [T.aU])
+                for (u = 0; u < a.length; ++u)
+                    n.push(a[u].a)
+                s = this.r
+                r = H.a(n.slice(0), [H.n(n, 0)])
+                q = d.a
+				this.f = 0
+				q.push(T.e("[0]；[作为武器，不应抱有多余的情感]", s, null, null, r, 1, 1000, 100))
+                p = T.u(this.r, !0, c)
+                for (u = 0; u < n.length; ++u) {
+                    o = n[u]
+					v = o.ch
+    if (o.fr > 0 ) {
+    q.push($.v())
+	t = 1 + ((c.m() & 3)/2)
+	o.ch = 0
+    o.a0(C.d.Z(t*p), !1, this.r, T.a3(), c, d)
+	o.ch = v
     }                    
     }
     }   
@@ -23979,8 +24019,6 @@ T.tha4n1.prototype = {
         },
         t: function(a, b, c, d) {
             var u, t, s, r, q = this, p = q.f
-            if (p > 8)
-                q.f = p - 1
             u = a[0].a
             t = C.e.Z(T.u(q.r, !0, c) / 20)
             s = u.fx - u.fr
@@ -23993,7 +24031,7 @@ T.tha4n1.prototype = {
             p.push(T.e(O.c("YmSv"), q.r, T.a1(u, r), new T.aG(t), null, 0, 1000, 100))
             u.bI(q.r, d)
 			u.j = u.j +1024
-			if(u.fr == u.fx)
+			if(u.fr >= u.fx)
 			{
 			u.go = u.go + 0.5
 			}
@@ -26432,12 +26470,12 @@ n.r.bf(n.r.fr, null, c, d)
             s = c.r
             d.x = s.x
             d.av()
-			d.fx = 150
-			d.fr = 150
+			d.fx = 180
+			d.fr = 180
 			d.Q =  75
 			d.ch = 15
-			d.cx = 150 
-			d.cy = 150 
+			d.cx = 210 
+			d.cy = 210 
 			d.db = 15
 			d.dx = 15
 			d.dy = 50
@@ -29218,7 +29256,7 @@ T.tha1b1.prototype = {
 		if (this.r.fr - a <= 0 && this.f > 0)
 		{
 		this.f = 0
-		e.a.push(T.e("[0]：[至死不休！]", this.r, null, null, null, 1, 1000, 100))
+		e.a.push(T.e("[0]：[为了SRT的复兴！]", this.r, null, null, null, 1, 1000, 100))
 		this.r.j = this.r.j + 4096
 		this.r.go = this.r.go * 2
 		this.r.pfcz = 4
@@ -29228,7 +29266,7 @@ T.tha1b1.prototype = {
 		return 0
 		}
 		if(this.r.pfcz > 1 )
-		{
+		{ 
 		this.r.pfcz = this.r.pfcz - 1
 		return 0
 		}
@@ -30485,13 +30523,13 @@ T.youzi1.prototype = {
 	T.fox1a1.prototype = {
         t: function(a, b, c, d) {
             var k ,l, v, u, t, s, r, q, p, o
-            k = "[0]：[FoxBot！]"
+            k = "[0]：[FOXTROT]"
             s = this.r
             q = d.a
             q.push(T.e(k, s, null, null, r, 1, 1000, 100))           
             o = a[0].a
 			if (!o.a6("blindly", c)){
-                u = o.fr > 0 && !o.A && T.bd(s.db, o.dy + o.dx, c)}
+                u = o.fr > 0 && !o.A && T.bd(s.Q, o.cy + o.cx, c)}
             else{
                 u = !0}
             if (u) {			    
@@ -30509,14 +30547,14 @@ T.youzi1.prototype = {
                 o.E()
 				d.a.push(T.e("[0]陷入[目盲]", o, o, null, null, 0, 1000, 100))
 				w = T.u(this.r, !1, c)
-				o.a0(C.d.Z(w * 1.4) , !1, s, T.a3(), c, d)
+				o.a0(C.d.Z(w * 1.2) , !1, s, T.a3(), c, d)
             }
 			else{
                 t.Q += 3
 				t.z += 10
                 d.a.push(T.e("[0]陷入[目盲]", o, o, null, null, 0, 1000, 100))
                 w = T.u(this.r, !1, c)
-				o.a0(C.d.Z(w * 1.96) , !1, s, T.a3(), c, d)
+				o.a0(C.d.Z(w * 1.8) , !1, s, T.a3(), c, d)
         }
     }}
 	T.fox3a1.prototype = {
@@ -30527,7 +30565,7 @@ T.youzi1.prototype = {
 		v = q.cy
 		if(this.r.hbw > 0){
 		t = 2
-       	d.a.push(T.e("[0]发动[近战压制]", this.r ,this.r, null, null, 1, 1000, 100))
+       	d.a.push(T.e("[0]使用[双连击]", this.r ,this.r, null, null, 1, 1000, 100))
 		q.ch = 0
 		q.cy = 0
 		}
@@ -30537,7 +30575,11 @@ T.youzi1.prototype = {
 		d.a.push(T.e("[0]发起攻击", this.r ,this.r, null, null, 0, 1000, 100))
 		}
         s = T.u(this.r, !1, c)
-        q.a0(C.d.Z(s * t), !1, this.r, T.a3(), c, d)
+		for(u = 0 ;u < t ;u++){
+		if(q.fr > 0){
+        q.a0(s , !1, this.r, T.a3(), c, d)
+		}
+		}
 		q.ch = w
 		q.cy = v
     }
@@ -33209,6 +33251,9 @@ T.yuzu.prototype = {
 		u =new T.fox1b2()
         u.f = 1000
         t.push(u)
+		u =new T.fox1n1()
+        u.f = 60
+        t.push(u)
 
     }, 
     bM: function() {
@@ -33223,7 +33268,7 @@ T.yuzu.prototype = {
 		    
             if(this.fr <= 0){
 		    d.a.push($.v())
-			d.a.push(T.e("[0]: [对……对不起！]", this, this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]: [……但愿昨天的我们，没有做出错误的选择。]", this, this.r, null, null, 0, 1000, 100))
 			}	
         }
     }
@@ -33261,7 +33306,7 @@ T.yuzu.prototype = {
 		    
             if(this.fr <= 0){
 		    d.a.push($.v())
-			d.a.push(T.e("[0]: [对……对不起！]", this, this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]: [......终究还是失算了呢。]", this, this.r, null, null, 0, 1000, 100))
 			}	
         }
     }
@@ -33299,7 +33344,7 @@ T.yuzu.prototype = {
 		    
             if(this.fr <= 0){
 		    d.a.push($.v())
-			d.a.push(T.e("[0]: [对……对不起！]", this, this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]: [可恶的兔崽子！]", this, this.r, null, null, 0, 1000, 100))
 			}	
         },
 	aX: function(a, b, c, d) {
@@ -33339,7 +33384,7 @@ T.yuzu.prototype = {
 		    
             if(this.fr <= 0){
 		    d.a.push($.v())
-			d.a.push(T.e("[0]: [对……对不起！]", this, this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]: [狙击……！]", this, this.r, null, null, 0, 1000, 100))
 			}	
         }
     }
@@ -37603,7 +37648,7 @@ dk: function(a, b, c, d, e, f, g) {
         t(Z.hl, Z.ax)
         s(F.ab, [T.H, T.M, T.D, T.J, T.L, T.K, T.A, T.G, T.C, T.I])
         s(T.H, [T.y, T.youzi3, T.tao3, T.lv3, T.hJ, T.tha1b1, T.ribbit1t2, T.ribbit4b1, T.squallt4, T.ribbit1b1, T.ribbit1b2,  T.ribbit2b1, T.fox3b1, T.fox1b2, T.tha5b1, T.tha6b1, T.tha7b1, T.thb7b2, T.thb9b2,T.thb9b1,  T.tha10b1,T.tha12b1, T.thb5b2, T.thb7b1, T.ribbit4n1, T.ribbit4b3, T.hR, T.i0, T.i3, T.dU, T.dZ, T.bU, T.dQ, T.hZ, T.i5, T.thj7b1, T.dV, T.dX, T.zhsh, T.tha4b1,T.tha3b2,T.thb1b1,T.thb6b1, T.i9 ,T.hifumib1 , T.ribbit3b1, T.fox2b2, T.baals1b1 ,T.baals1b2 , T.i9m, T.thb7b3 , T.ih, T.kg, T.ribbit4b2, T.ribbit3b2, T.thb5b1, T.thb6b2, T.tha9b1,T.tha1b2, T.thb2b1 , T.im, T.tha3b1, T.io, T.tigerMillionPunch, T.darkRevive, T.hellDefend])
-        s(T.y, [T.dL, T.ribbit4a1, T.fox4a1, T.fox4t1, T.ribbit2a1, T.ribbit1n0, T.ribbit2n2, T.ribbit2n1, T.fox3n2 , T.fox3a1 , T.fox1a1, T.ribbit2n3, T.fox1n0, T.fox1n2, T.fox4n2, T.yuzun1, T.yuzun2, T.momorin1, T.momorin2, T.midorin1, T.midorin2, T.hifumia1, T.szja1, T.noak, T.youzi1, T.tao1, T.lv1, T.youzi2, T.tao2, T.lv2, T.hI ,T.tha6n1, T.thb8t1b, T.tha10t1, T.hK, T.hKm,T.thb9s1, T.thb7s1, T.baals1n2,  T.bx, T.hL, T.hM, T.dN, T.tha6t2, T.dO, T.dP, T.tha2n1, T.tha2ak, T.tha12ak, T.tha2n2, T.tha2n3, T.tha2b1, T.tha1n3, T.tha3n1, T.ba1a1, T.ba1n2, T.baals1n1, T.arisn1, T.arisn2, T.thb1n1, T.thb1s1, T.thb1n2, T.thb1n3, T.thb8t1a, T.thb2n1, T.thb2n2 ,T.thb2n3, T.thb2s1, T.thb2n1t, T.thb2n2t ,T.thb2n3t ,  T.tha3n2, T.tha3s1, T.tha6n2, T.tha6n3, T.tha5n1, T.tha7n1 ,T.tha7n2,T.tha8n1 ,T.tha8t1 ,T.tha8n2 ,T.tha8t2 ,T.tha8n3 ,T.tha8t3 ,T.tha8n4 ,T.tha8t4 ,T.tha8n5 ,T.tha8t5 ,T.tha8s1 , T.ribbit3n2, T.ribbit3n3, T.tha9n1,T.tha9n3,T.tha10n1,T.tha10n2,T.tha10s1,T.tha11n1,T.tha11n2, T.tha11n1t, T.tha11n2t, T.tha11t1, T.thb3n1,T.thb3n2,T.thb3n3,T.thb3n4,T.thb3n5,T.thb3n6,T.thb3n7,T.thb3n8,T.thb3n9,T.thb3s1 ,T.thb3s2 ,T.thb9t1 ,T.thb9t2 ,T.thb8n1, T.thb8t1 ,T.thb8t2 ,T.thb3t1,T.thb3t2,T.thb3t3,T.thb3t4,T.thb3t5,T.thb3t6,T.thb3t7,T.thb3t8, T.hS, T.thb4b1, T.thb4b2, T.hU, T.tha1n2, T.ba1n1 ,T.hV, T.bV, T.dR, T.hX, T.thb8s1, T.tha4n3, T.thb4n1, T.thb4n2,T.thb4s1, T.thb5s1, T.thb5n1, T.thb5n2, T.thb5n3, T.dS, T.tha4n1, T.tha4n2, T.baals1n3, T.baals1n5, T.baals1n6, T.baals1n4, T.hifumin1, T.hifumin2, T.ribbit1n2, T.ribbit3n1, T.fox2n2, T.fox2a1, T.fox2n1, T.fox3n1, T.ribbit1n3, T.fox4n1, T.tha4n2x, T.tha7t1, T.dT, T.i1, T.tha1n1, T.thb9n1, T.i6, T.i8, T.dW, T.ia ,T.tomb1 ,T.tha4s1, T.i7, T.ig, T.tha9n2, T.tha9n2t,T.yeye, T.ij, T.ribbit4n2, T.ribbit1t1, T.tha1s1, T.tha9s1, T.hW, T.hWalf, T.ik, T.il, T.tha5n3, T.thb9n2, T.tha6s1t, T.tha6s1, T.thb6n1, T.thb6n2, T.thb6n3, T.thb6s1, T.thb7n1, T.thb7t1, T.thb7n2, T.tha11s1, T.tha2s1, T.dM, T.tha5n2, T.tha5s1, T.tha7s1, T.hO, T.dc, T.hQ, T.i_, T.bI, T.i2, T.i4, T.ie, T.aK, T.bm, T.bn, T.hT, T.dY, T.ic, T.tigerAttack, T.tigerCheckHP, T.tigerIceAttack, T.tigerBlastPunch, T.tigerBlade, T.tigerRecover, T.tigerFastPunch, T.tigerWindAttack, T.tigerBlastKick, T.darkRecover, T.darkFastAttack, T.darkIron, T.darkHaste, T.darkLock, T.darkDemonSword, T.darkAttack, T.hellFireAttack, T.hellWindAttack, T.hellCutter, T.hellBehead, T.hellCheckHP, T.hellWindAttack, T.hellCutter, T.hellBehead, T.hellCheckHP, T.squalla1 ,T.squalln1 ,T.squalln2 ,T.squalln3 ,T.squalln4 ,T.squalln5 ,T.squalln6 ,T.squalln7 ,T.squallt2])
+        s(T.y, [T.dL, T.ribbit4a1, T.fox4a1, T.fox4t1, T.ribbit2a1, T.ribbit1n0, T.ribbit2n2, T.ribbit2n1, T.fox3n2 , T.fox3a1 , T.fox1a1, T.fox1n1, T.ribbit2n3, T.fox1n0, T.fox1n2, T.fox4n2, T.yuzun1, T.yuzun2, T.momorin1, T.momorin2, T.midorin1, T.midorin2, T.hifumia1, T.szja1, T.noak, T.youzi1, T.tao1, T.lv1, T.youzi2, T.tao2, T.lv2, T.hI ,T.tha6n1, T.thb8t1b, T.tha10t1, T.hK, T.hKm,T.thb9s1, T.thb7s1, T.baals1n2,  T.bx, T.hL, T.hM, T.dN, T.tha6t2, T.dO, T.dP, T.tha2n1, T.tha2ak, T.tha12ak, T.tha2n2, T.tha2n3, T.tha2b1, T.tha1n3, T.tha3n1, T.ba1a1, T.ba1n2, T.baals1n1, T.arisn1, T.arisn2, T.thb1n1, T.thb1s1, T.thb1n2, T.thb1n3, T.thb8t1a, T.thb2n1, T.thb2n2 ,T.thb2n3, T.thb2s1, T.thb2n1t, T.thb2n2t ,T.thb2n3t ,  T.tha3n2, T.tha3s1, T.tha6n2, T.tha6n3, T.tha5n1, T.tha7n1 ,T.tha7n2,T.tha8n1 ,T.tha8t1 ,T.tha8n2 ,T.tha8t2 ,T.tha8n3 ,T.tha8t3 ,T.tha8n4 ,T.tha8t4 ,T.tha8n5 ,T.tha8t5 ,T.tha8s1 , T.ribbit3n2, T.ribbit3n3, T.tha9n1,T.tha9n3,T.tha10n1,T.tha10n2,T.tha10s1,T.tha11n1,T.tha11n2, T.tha11n1t, T.tha11n2t, T.tha11t1, T.thb3n1,T.thb3n2,T.thb3n3,T.thb3n4,T.thb3n5,T.thb3n6,T.thb3n7,T.thb3n8,T.thb3n9,T.thb3s1 ,T.thb3s2 ,T.thb9t1 ,T.thb9t2 ,T.thb8n1, T.thb8t1 ,T.thb8t2 ,T.thb3t1,T.thb3t2,T.thb3t3,T.thb3t4,T.thb3t5,T.thb3t6,T.thb3t7,T.thb3t8, T.hS, T.thb4b1, T.thb4b2, T.hU, T.tha1n2, T.ba1n1 ,T.hV, T.bV, T.dR, T.hX, T.thb8s1, T.tha4n3, T.thb4n1, T.thb4n2,T.thb4s1, T.thb5s1, T.thb5n1, T.thb5n2, T.thb5n3, T.dS, T.tha4n1, T.tha4n2, T.baals1n3, T.baals1n5, T.baals1n6, T.baals1n4, T.hifumin1, T.hifumin2, T.ribbit1n2, T.ribbit3n1, T.fox2n2, T.fox2a1, T.fox2n1, T.fox3n1, T.ribbit1n3, T.fox4n1, T.tha4n2x, T.tha7t1, T.dT, T.i1, T.tha1n1, T.thb9n1, T.i6, T.i8, T.dW, T.ia ,T.tomb1 ,T.tha4s1, T.i7, T.ig, T.tha9n2, T.tha9n2t,T.yeye, T.ij, T.ribbit4n2, T.ribbit1t1, T.tha1s1, T.tha9s1, T.hW, T.hWalf, T.ik, T.il, T.tha5n3, T.thb9n2, T.tha6s1t, T.tha6s1, T.thb6n1, T.thb6n2, T.thb6n3, T.thb6s1, T.thb7n1, T.thb7t1, T.thb7n2, T.tha11s1, T.tha2s1, T.dM, T.tha5n2, T.tha5s1, T.tha7s1, T.hO, T.dc, T.hQ, T.i_, T.bI, T.i2, T.i4, T.ie, T.aK, T.bm, T.bn, T.hT, T.dY, T.ic, T.tigerAttack, T.tigerCheckHP, T.tigerIceAttack, T.tigerBlastPunch, T.tigerBlade, T.tigerRecover, T.tigerFastPunch, T.tigerWindAttack, T.tigerBlastKick, T.darkRecover, T.darkFastAttack, T.darkIron, T.darkHaste, T.darkLock, T.darkDemonSword, T.darkAttack, T.hellFireAttack, T.hellWindAttack, T.hellCutter, T.hellBehead, T.hellCheckHP, T.hellWindAttack, T.hellCutter, T.hellBehead, T.hellCheckHP, T.squalla1 ,T.squalln1 ,T.squalln2 ,T.squalln3 ,T.squalln4 ,T.squalln5 ,T.squalln6 ,T.squalln7 ,T.squallt2])
         s(T.M, [T.bf, T.co, T.dj ,T.sl , T.cG, T.sD, T.aN, T.hz, T.shenx, T.lockx, T.angerx, T.blindlyx, T.tauntx, T.darkHasteRun, T.darkSuperUpgrade])
         s(T.p, [T.dt, T.aQ, T.ii, T.h0, T.iT])
         s(T.w, [T.dC, T.av, T.cA, T.hc, T.hj, T.hk, T.he, T.cy])
