@@ -21618,7 +21618,7 @@ T.thb8s1.prototype = {
             o.cx = o.cx * 0.75
 			o.Q = o.Q * 3
 			o.cy = o.cy * 3
-			o.J = o.J / 16
+			o.J = o.J / 4
 			o.f = o.f + 2048
 			d.a.push(T.e("[0]：[Fox4，已就位。]", o, o, null, null, 0, 1000, 100))
 			}
@@ -21978,8 +21978,8 @@ T.thb5n2.prototype = {
                     o.r1.k(0, $.kl(), v)
                     o.y1.i(0, v)
                 }
-                    v.x = v.x + 80
-					h = 80
+                    v.x = v.x + 75
+					h = 75
 				    q.push(T.e("[0]获得[1]点[护盾]", o , h, null, null, 0, 1000, 100))
 					o.bI(s, d)
 			}           
@@ -22229,12 +22229,12 @@ T.thb9t2.prototype = {
 		v = this.r.aim
 		if(v > 0)
 		{
-        d.a.push(T.e("[0]发起[精准狙击]", u.r, t, null, null, 0, 1000, 100))
+        d.a.push(T.e("[0]发起[精准狙击]", u.r, t, null, null, 1, 1000, 100))
 		t.ch = C.d.v(t.ch, 2)
         t.bL(v*s, !0, u.r, T.a3(), c, d)
 		}
 		else{
-        d.a.push(T.e("[0]瞄准了[1]", u.r, t, null, null, 0, 1000, 100))
+        d.a.push(T.e("[0]瞄准了[1]", u.r, t, null, null, 1, 1000, 100))
 		}	
     }
     }
@@ -24021,15 +24021,15 @@ T.tha4n1.prototype = {
         t: function(a, b, c, d) {
             var u, t, s, r, q = this, p = q.f
             u = a[0].a
-            t = C.e.Z(T.u(q.r, !0, c) / 20)
+            t = C.e.Z(T.u(q.r, !0, c) / 25)
             s = u.fx - u.fr
             if (t > s)
                 t = s
             p = d.a
-            p.push(T.e("[0]使用了[稻荷寿司]", q.r, u, null, null, t, 1000, 100))
+            p.push(T.e("[0]制作了[稻荷寿司]", q.r, u, null, null, t, 1000, 100))
             r = u.fr
             u.fr = r + t
-            p.push(T.e(O.c("YmSv"), q.r, T.a1(u, r), new T.aG(t), null, 0, 1000, 100))
+            p.push(T.e("[0]为[1]回复体力[2]点", q.r, T.a1(u, r), new T.aG(t), null, 0, 1000, 100))
             u.bI(q.r, d)
 			u.j = u.j +1024
 			if(u.fr >= u.fx)
@@ -26276,7 +26276,7 @@ n.r.bf(n.r.fr, null, c, d)
         t: function(a, a0, a1, a2) {
             var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this, b = null, v
             u = a2.a
-            u.push(T.e("[0]: [全体隐蔽]", c.r, b, b, b, 60, 1000, 100))
+            u.push(T.e("[0]: [注意隐蔽]", c.r, b, b, b, 60, 1000, 100))
 			for(v =0 ; v < 1 ; v++){
 			u.push($.v())
             t = H.d(c.r.a) + "?" + H.d($.nn())
@@ -26424,7 +26424,7 @@ n.r.bf(n.r.fr, null, c, d)
             var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this, b = null, v
             u = a2.a
 			this.f = 0
-            u.push(T.e("[0]: [这样就不会担心被反狙击了吧]", c.r, b, b, b, 60, 1000, 100))
+            u.push(T.e("[0]: [这样就不会担心被反狙击了吧]", c.r, b, b, b, 0, 1000, 100))
 			for(v =0 ; v < 1 ; v++){
 			u.push($.v())
             t = H.d(c.r.a) + "?" + H.d($.nn())
@@ -26485,7 +26485,7 @@ n.r.bf(n.r.fr, null, c, d)
 			d.own = c.r
 			this.r.UAVi = d
             c.r.x.aU(d)
-            u.push(T.e("[1]已安放 ", c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
+            u.push(T.e("安放了[1] ", c.r, T.a1(d, d.fr), b, b, 1, 1000, 100))
 			
         }
     }}
@@ -30512,12 +30512,12 @@ T.youzi1.prototype = {
     t: function(a, b, c, d) {
         var u ,t ,o = this.r ,s ,v
 		this.f = 0
-       	d.a.push(T.e("[0]弃置了[盾牌]", this.r ,o, null, null, 1, 1000, 100))
+       	d.a.push(T.e("[0][弃置了盾牌]", this.r ,o, null, null, 1, 1000, 100))
 		d.a.push(T.e("[0]：[哼，稍微认真点吧]", this.r ,o, null, null, 1, 1000, 100))
-		o.ch = C.d.v(o.ch, 10)
+		o.ch = C.d.v(o.ch, 2)
         o.hbw = 1		
-		o.go = o.go * 1.5
-		o.cx = o.cx * 1.5
+		o.go = o.go * 1.4
+		o.cx = o.cx * 1.4
 		o.cy = o.cy * 6
 		o.j = o.j + 4096
     }
@@ -33287,10 +33287,10 @@ T.yuzu.prototype = {
         this.k2 = t
         t = this.id
         u =new T.fox2n2()
-        u.f = 50
+        u.f = 48
         t.push(u)
 		u =new T.fox2n1()
-        u.f = 75
+        u.f = 66
         t.push(u)
 		u =new T.fox2a1()
         u.f = 256
@@ -33325,10 +33325,10 @@ T.yuzu.prototype = {
         this.k2 = t
         t = this.id
 		u =new T.fox3n2()
-        u.f = 30
+        u.f = 20
         t.push(u)
 		u =new T.fox3n1()
-        u.f = 100
+        u.f = 120
         t.push(u)
 		u =new T.fox3b1()
         u.f = 100
@@ -33368,7 +33368,7 @@ T.yuzu.prototype = {
         this.k2 = t
         t = this.id
         u =new T.fox4n1()
-        u.f = 100
+        u.f = 200
         t.push(u)
 		u =new T.fox4n2()
         u.f = 1000
@@ -33386,7 +33386,7 @@ T.yuzu.prototype = {
 		    
             if(this.fr <= 0){
 		    d.a.push($.v())
-			d.a.push(T.e("[0]: [狙击点……！]", this, this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]: [狙击点……暴露了啊！]", this, this.r, null, null, 0, 1000, 100))
 			}	
         }
     }
