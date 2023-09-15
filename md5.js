@@ -23047,14 +23047,15 @@ T.fox1n1.prototype = {
                 r = H.a(n.slice(0), [H.n(n, 0)])
                 q = d.a
 				this.f = 0
-				q.push(T.e("[0]；[作为武器，不应抱有多余的情感]", s, null, null, r, 1, 1000, 100))
+				q.push(T.e("[0]；[作为武器，不应抱有多余的情感]", s, null, null, r, 0, 1000, 100))
+				q.push(T.e("[0]使用[破片炸弹]", s, null, null, r, 1, 1000, 100))
                 p = T.u(this.r, !0, c)
                 for (u = 0; u < n.length; ++u) {
                     o = n[u]
 					v = o.ch
     if (o.fr > 0 ) {
     q.push($.v())
-	t = 1 + ((c.m() & 3)/2)
+	t = 0.85 + (c.m() & 1)
 	o.ch = 0
     o.a0(C.d.Z(t*p), !1, this.r, T.a3(), c, d)
 	o.ch = v
@@ -29152,7 +29153,7 @@ T.tha1b1.prototype = {
         var u = a > 0 , n ,m
 		this.r.yin = 0
 		e.a.push(T.e("[0]被引爆", this.r, null, null, null, 0, 1000, 100))
-		b.a0(17800, !1 , this.r, T.a3(), d, e)
+		b.a0(14400, !1 , this.r, T.a3(), d, e)
 		this.r.fr = 0
 		this.r.bf(this.r.fr, null, d, e)
 		bug = tnt
@@ -29207,8 +29208,9 @@ T.tha1b1.prototype = {
 		}
 		if (n == 0)
 		{
+		e.a.push($.v())
 		e.a.push(T.e("[0]进行[反制速射]", this.r, null, null, null, 1, 1000, 100))
-		b.a0(16000, !1, this.r, T.a3(), d, e)
+		b.a0(14400, !1, this.r, T.a3(), d, e)
 		if(b.fr <= 0)
 		{
 		return u && 0
@@ -29256,11 +29258,11 @@ T.tha1b1.prototype = {
 		if (this.r.fr - a <= 0 && this.f > 0)
 		{
 		this.f = 0
-		e.a.push(T.e("[0]：[为了SRT的复兴！]", this.r, null, null, null, 1, 1000, 100))
+		e.a.push(T.e("[0]：[为了SRT的复兴！]", this.r, null, null, null, 0, 1000, 100))
 		this.r.j = this.r.j + 4096
 		this.r.go = this.r.go * 2
 		this.r.pfcz = 4
-		e.a.push(T.e("[0]发动[绝境反击]", this.r, null, null, null, 0, 1000, 100))
+		e.a.push(T.e("[0]发动[绝境反击]", this.r, null, null, null, 1, 1000, 100))
 		b.a0(19200, !1, this.r, T.a3(), d, e)
 		bug = tnt	
 		return 0
@@ -33252,7 +33254,7 @@ T.yuzu.prototype = {
         u.f = 1000
         t.push(u)
 		u =new T.fox1n1()
-        u.f = 60
+        u.f = 80
         t.push(u)
 
     }, 
@@ -33384,7 +33386,7 @@ T.yuzu.prototype = {
 		    
             if(this.fr <= 0){
 		    d.a.push($.v())
-			d.a.push(T.e("[0]: [狙击……！]", this, this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]: [狙击点……！]", this, this.r, null, null, 0, 1000, 100))
 			}	
         }
     }
