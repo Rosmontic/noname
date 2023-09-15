@@ -21587,16 +21587,17 @@ T.thb8s1.prototype = {
             q.push(T.e(k, s, null, null, r, 0, 1000, 100))
 			q.push($.v())
             q.push(T.e(w, s, null, null, r, 1, 1000, 100))
-            for (u = 0; u < n.length; ++u) {
-            o = n[u]
 			d.a.push($.v())
+			d.a.push(T.e("[0]：[这里是FOX1，作战开始，各小队队员务必坚守各自位置，随时报告情况]", this.r, this.r, null, null, 0, 1000, 100))
+            for (u = 0; u < n.length; ++u) {
+            o = n[u]	
 			if(o.SRTs != null){
 			if(o.SRTs == 1){
 			o.Q = o.Q * 1.5
 			o.go = o.go * 1.5
 			o.cy = o.cy * 1.5
 			o.f = o.f + 2048
-			d.a.push(T.e("[0]：[Fox1，已就位。]", o, o, null, null, 0, 1000, 100))
+			o.J = o.J / 2	
 			}
 			if(o.SRTs == 2){
 			o.dx = o.dx * 4
@@ -21604,7 +21605,7 @@ T.thb8s1.prototype = {
 			o.cy = o.cy * 2
 			o.J = o.J / 2
 			o.f = o.f + 2048
-			d.a.push(T.e("[0]：[Fox2，已就位。]", o, o, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]：[这里是FOX2，位处OSCAR地点，一切正常。]", o, o, null, null, 0, 1000, 100))
 			}
 			if(o.SRTs == 3){
             o.go = o.go * 0.5
@@ -21612,7 +21613,7 @@ T.thb8s1.prototype = {
 			o.dx = o.dx * 2
 			o.cy = o.cy * 2
 			o.f = o.f + 4096	
-			d.a.push(T.e("[0]：[Fox3，已就位。]", o, o, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]：[这里是FOX3，正在LIMA地点附近待机。]", o, o, null, null, 0, 1000, 100))
 			}
 			if(o.SRTs == 4){
             o.cx = o.cx * 0.75
@@ -21620,7 +21621,7 @@ T.thb8s1.prototype = {
 			o.cy = o.cy * 3
 			o.J = o.J / 4
 			o.f = o.f + 2048
-			d.a.push(T.e("[0]：[Fox4，已就位。]", o, o, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]：[这里是FOX4，于ALPHA地点观测到敌方单位。]", o, o, null, null, 0, 1000, 100))
 			}
             }
             
@@ -21978,8 +21979,8 @@ T.thb5n2.prototype = {
                     o.r1.k(0, $.kl(), v)
                     o.y1.i(0, v)
                 }
-                    v.x = v.x + 75
-					h = 75
+                    v.x = v.x + 60
+					h = 60
 				    q.push(T.e("[0]获得[1]点[护盾]", o , h, null, null, 0, 1000, 100))
 					o.bI(s, d)
 			}           
@@ -33328,7 +33329,7 @@ T.yuzu.prototype = {
         u.f = 20
         t.push(u)
 		u =new T.fox3n1()
-        u.f = 120
+        u.f = 160
         t.push(u)
 		u =new T.fox3b1()
         u.f = 100
@@ -33371,8 +33372,9 @@ T.yuzu.prototype = {
         u.f = 200
         t.push(u)
 		u =new T.fox4n2()
-        u.f = 1000
+        u.f = 80
         t.push(u)
+		
     }, 
     bM: function() {
             var u, t = this
