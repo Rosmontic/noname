@@ -21587,7 +21587,7 @@ T.thb8s1.prototype = {
             q.push(T.e(k, s, null, null, r, 0, 1000, 100))
 			q.push($.v())
             q.push(T.e(w, s, null, null, r, 1, 1000, 100))
-			d.a.push($.v())
+			q.push($.v())
 			d.a.push(T.e("[0]：[这里是FOX1，作战开始，各小队队员务必坚守各自位置，随时报告情况]", this.r, this.r, null, null, 0, 1000, 100))
             for (u = 0; u < n.length; ++u) {
             o = n[u]	
@@ -21597,7 +21597,7 @@ T.thb8s1.prototype = {
 			o.go = o.go * 1.5
 			o.cy = o.cy * 1.5
 			o.f = o.f + 2048
-			o.J = o.J / 2	
+			o.J = o.J / 4	
 			}
 			if(o.SRTs == 2){
 			o.dx = o.dx * 4
@@ -21605,24 +21605,26 @@ T.thb8s1.prototype = {
 			o.cy = o.cy * 2
 			o.J = o.J / 2
 			o.f = o.f + 2048
-			d.a.push(T.e("[0]：[这里是FOX2，位处OSCAR地点，一切正常。]", o, o, null, null, 0, 1000, 100))
+			q.push($.v())
+			d.a.push(T.e("[0]：[这里是FOX2，OSCAR地点一切正常。]", o, o, null, null, 0, 1000, 100))
+			}
+			if(o.SRTs == 4){
+            o.cx = o.cx * 0.75
+			o.Q = o.Q * 3
+			o.cy = o.cy * 3
+			o.f = o.f + 2048
+			q.push($.v())
+			d.a.push(T.e("[0]：[这里是FOX4，于ALPHA地点观测到敌方单位。]", o, o, null, null, 0, 1000, 100))
 			}
 			if(o.SRTs == 3){
             o.go = o.go * 0.5
 			o.ch = o.ch * 2
 			o.dx = o.dx * 2
 			o.cy = o.cy * 2
-			o.f = o.f + 4096	
+			o.f = o.f + 4096
+			q.push($.v())
 			d.a.push(T.e("[0]：[这里是FOX3，正在LIMA地点附近待机。]", o, o, null, null, 0, 1000, 100))
-			}
-			if(o.SRTs == 4){
-            o.cx = o.cx * 0.75
-			o.Q = o.Q * 3
-			o.cy = o.cy * 3
-			o.J = o.J / 4
-			o.f = o.f + 2048
-			d.a.push(T.e("[0]：[这里是FOX4，于ALPHA地点观测到敌方单位。]", o, o, null, null, 0, 1000, 100))
-			}
+			}	
             }
             
         }
@@ -21657,7 +21659,7 @@ T.thb8s1.prototype = {
 
             for (u = 0; u < a.length; ++u)
                 n.push(a[u].a)
-            k = "[0]: [狐小队，全员集结！]"
+            k = "[0]: [我需要重新集结小队]"
             w = "[0]使用[破釜沉舟]"		
             s = this.r
 			this.f = 0
@@ -21954,10 +21956,10 @@ T.thb5n2.prototype = {
             return c.gbh() * a.J
         },
         gb3: function() {
-            return 6
+            return 10
         },
         gb4: function() {
-            return 6
+            return 10
         },
         t: function(a, b, c, d) {
             var h ,k ,l, v, u, t, s, r, q, p, o, n = H.a([], [T.aU])
@@ -21979,10 +21981,9 @@ T.thb5n2.prototype = {
                     o.r1.k(0, $.kl(), v)
                     o.y1.i(0, v)
                 }
-                    v.x = v.x + 60
-					h = 60
+                    v.x = v.x + 65
+					h = 65
 				    q.push(T.e("[0]获得[1]点[护盾]", o , h, null, null, 0, 1000, 100))
-					o.bI(s, d)
 			}           
                 }
             
@@ -22198,7 +22199,7 @@ T.thb9t2.prototype = {
         var u = this ,v
         t = a[0].a
         s = T.u(u.r, !1, c)      
-		v = 0.75 + C.d.Z(u.r.yin *0.5)
+		v = 1 + C.d.Z(u.r.yin *0.5)
 		if(u.r.yin > 2)
 		{
         d.a.push(T.e("[0]发起[狙击]", u.r, t, null, null, 0, 1000, 100))
@@ -22232,10 +22233,11 @@ T.thb9t2.prototype = {
 		{
         d.a.push(T.e("[0]发起[精准狙击]", u.r, t, null, null, 1, 1000, 100))
 		t.ch = C.d.v(t.ch, 2)
-        t.bL(v*s, !0, u.r, T.a3(), c, d)
+        t.bL(C.d.Z(v*s), !1, u.r, T.a3(), c, d)
 		}
 		else{
         d.a.push(T.e("[0]瞄准了[1]", u.r, t, null, null, 1, 1000, 100))
+		this.r.j = this.r.j + 1024
 		}	
     }
     }
@@ -22243,8 +22245,8 @@ T.thb9t2.prototype = {
     t: function(a, b, c, d) {
         var u = this ,v ,t
 		t = a[0].a
-	    t.ch =  C.d.Z(t.ch *0.75)
-		t.dx =  C.d.Z(t.dx *0.75)
+	    t.ch =  C.d.Z(t.ch *0.7)
+		t.dx =  C.d.Z(t.dx *0.7)
         s = T.u(u.r, !1, c)
         d.a.push(T.e("[0]射击", u.r, t, null, null, 0, 1000, 100))
         t.a0(s, !1, u.r, T.a3(), c, d)
@@ -26324,14 +26326,14 @@ n.r.bf(n.r.fr, null, c, d)
             s = c.r
             d.x = s.x
             d.av()
-			d.fx = 300
-			d.fr = 300
+			d.fx = 240
+			d.fr = 240
 			d.Q =  100
 			d.ch = 100
 			d.cx = 1
 			d.cy = 1
 			d.db = 1
-			d.dx = 100
+			d.dx = 10
 			d.dy = 50
 			d.j = -204800
 			d.J =  d.J * 10		
@@ -27993,6 +27995,7 @@ n.r.bf(n.r.fr, null, c, d)
             k = "[0]使用[胆怯者的观测]"
             s = this.r
             q = d.a
+			s.j = s.j + 512
             q.push(T.e("[0]：[果然我是什么都不会的小垃姬...]", s, s, null, null, 0, 1000, 100))
             q.push(T.e(k, s, null, null, r, 1, 1000, 100))           
             q.push($.v())
@@ -29152,12 +29155,10 @@ T.tha1b1.prototype = {
         },
 	ak: function(a, b, c, d, e) {
         var u = a > 0 , n ,m
-		this.r.yin = 0
 		e.a.push(T.e("[0]被引爆", this.r, null, null, null, 0, 1000, 100))
 		b.a0(14400, !1 , this.r, T.a3(), d, e)
 		this.r.fr = 0
 		this.r.bf(this.r.fr, null, d, e)
-		bug = tnt
         return u && 0
     },
     T: function() {
@@ -29263,7 +29264,7 @@ T.tha1b1.prototype = {
 		this.r.j = this.r.j + 4096
 		this.r.go = this.r.go * 2
 		this.r.pfcz = 4
-		e.a.push(T.e("[0]发动[绝境反击]", this.r, null, null, null, 1, 1000, 100))
+		e.a.push(T.e("[0]发动[死线反击]", this.r, null, null, null, 1, 1000, 100))
 		b.a0(19200, !1, this.r, T.a3(), d, e)
 		bug = tnt	
 		return 0
@@ -35927,7 +35928,7 @@ dk: function(a, b, c, d, e, f, g) {
             var v ,u, t, s = this
             if (c.fr <= 0)
                 return a
-            v = 96 + this.r.yin * 16
+            v = 128 + this.r.yin * 16
             if (f.m() < v && s.r.bq(f)) {
                 g.a.push(T.e("[0][被忽视了，免于伤害]", s.r, c, null, null, 1, 1000, 100))
                 return 0
