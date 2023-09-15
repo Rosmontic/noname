@@ -8568,7 +8568,7 @@ tha7n1: function tha7n1() {
             _.f = 0
             _.c = _.b = _.a = _.r = null
         },
-ribbit1t1: function ribbit1t1() {
+		ribbit1t1: function ribbit1t1() {
             var _ = this
             _.e = !1
             _.f = 0
@@ -12665,7 +12665,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
             _.a_ = t
             _.V = _.O = _.L = 0
             _.J = 32768
-            _.j = 0
+            _.j = 2048
             _.X = _.W = !1
             _.F = null
         },
@@ -12831,7 +12831,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
             _.a_ = t
             _.V = _.O = _.L = 0
             _.J = 32768
-            _.j = 0
+            _.j = 2048
             _.X = _.W = !1
             _.F = null
         },
@@ -21593,15 +21593,15 @@ T.thb8s1.prototype = {
             o = n[u]	
 			if(o.SRTs != null){
 			if(o.SRTs == 1){
-			o.Q = o.Q * 1.5
+			o.Q = o.Q * 1.2
 			o.go = o.go * 1.5
 			o.cy = o.cy * 1.5
 			o.f = o.f + 2048
 			o.J = o.J / 4	
 			}
 			if(o.SRTs == 2){
-			o.dx = o.dx * 4
-			o.cx = o.cx * 1.5
+			o.dx = o.dx * 3
+			o.cx = o.cx * 1.2
 			o.cy = o.cy * 2
 			o.J = o.J / 2
 			o.f = o.f + 2048
@@ -21609,7 +21609,6 @@ T.thb8s1.prototype = {
 			d.a.push(T.e("[0]：[这里是FOX2，OSCAR地点一切正常。]", o, o, null, null, 0, 1000, 100))
 			}
 			if(o.SRTs == 4){
-            o.cx = o.cx * 0.75
 			o.Q = o.Q * 3
 			o.cy = o.cy * 3
 			o.f = o.f + 2048
@@ -21617,7 +21616,7 @@ T.thb8s1.prototype = {
 			d.a.push(T.e("[0]：[这里是FOX4，于ALPHA地点观测到敌方单位。]", o, o, null, null, 0, 1000, 100))
 			}
 			if(o.SRTs == 3){
-            o.go = o.go * 0.5
+            o.go = o.go * 0.75
 			o.ch = o.ch * 2
 			o.dx = o.dx * 2
 			o.cy = o.cy * 2
@@ -23058,7 +23057,7 @@ T.fox1n1.prototype = {
 					v = o.ch
     if (o.fr > 0 ) {
     q.push($.v())
-	t = 0.85 + (c.m() & 1)
+	t = 0.8 + (c.m() & 1)
 	o.ch = 0
     o.a0(C.d.Z(t*p), !1, this.r, T.a3(), c, d)
 	o.ch = v
@@ -26401,7 +26400,7 @@ n.r.bf(n.r.fr, null, c, d)
 			d.Q =  200
 			d.ch = 1
 			d.cx = 1 
-			d.cy = 200 
+			d.cy = 200
 			d.db = 1
 			d.dx = 1
 			d.dy = 50
@@ -28028,7 +28027,7 @@ n.r.bf(n.r.fr, null, c, d)
             q.push(T.e(k, s, null, null, r, 1, 1000, 100))           
             o = a[0].a
 			if (!o.a6("blindly", c)){
-                u = o.fr > 0 && !o.A && T.bd(s.db, o.dy + o.dx, c)}
+                u = o.fr > 0 && !o.A && T.bd(s.db, o.cy + o.dx, c)}
             else{
                 u = !0}
             if (u) {
@@ -29188,8 +29187,8 @@ T.tha1b1.prototype = {
 		this.r.jd = 1
 		e.a.push($.v())
 		e.a.push(T.e("[0]：[见识一下SRT的CQB技巧吧！]", this.r, null, null, null, 0, 1000, 100))
-		this.r.cy =  this.r.cy * 1.25
-		this.r.cx =  this.r.cx * 1.25
+		this.r.cy =  this.r.cy * 1.35
+		this.r.cx =  this.r.cx * 1.35
 		e.a.push(T.e("[0]使用[战术机动]回避了攻击", this.r, null, null, null, 1, 1000, 100))
 		bug = tnt
         return u && 0
@@ -30518,9 +30517,9 @@ T.youzi1.prototype = {
 		d.a.push(T.e("[0]：[哼，稍微认真点吧]", this.r ,o, null, null, 1, 1000, 100))
 		o.ch = C.d.v(o.ch, 2)
         o.hbw = 1		
-		o.go = o.go * 1.4
-		o.cx = o.cx * 1.4
-		o.cy = o.cy * 6
+		o.go = o.go * 1.5
+		o.cx = o.cx * 1.5
+		o.cy = o.cy * 5
 		o.j = o.j + 4096
     }
     }
@@ -30551,14 +30550,14 @@ T.youzi1.prototype = {
                 o.E()
 				d.a.push(T.e("[0]陷入[目盲]", o, o, null, null, 0, 1000, 100))
 				w = T.u(this.r, !1, c)
-				o.a0(C.d.Z(w * 1.2) , !1, s, T.a3(), c, d)
+				o.a0(C.d.Z(w * 1) , !1, s, T.a3(), c, d)
             }
 			else{
                 t.Q += 3
 				t.z += 10
                 d.a.push(T.e("[0]陷入[目盲]", o, o, null, null, 0, 1000, 100))
                 w = T.u(this.r, !1, c)
-				o.a0(C.d.Z(w * 1.8) , !1, s, T.a3(), c, d)
+				o.a0(C.d.Z(w * 1.5) , !1, s, T.a3(), c, d)
         }
     }}
 	T.fox3a1.prototype = {
@@ -33079,10 +33078,10 @@ T.yuzu.prototype = {
         u.f = 1000
         t.push(u)
 		u =new T.ribbit1n2()
-        u.f = 70
+        u.f = 60
         t.push(u)
 		u =new T.ribbit1n3()
-        u.f = 50
+        u.f = 40
         t.push(u)
 		u =new T.ribbit1b2()
         u.f = 100
@@ -33373,7 +33372,7 @@ T.yuzu.prototype = {
         u.f = 200
         t.push(u)
 		u =new T.fox4n2()
-        u.f = 80
+        u.f = 200
         t.push(u)
 		
     }, 
@@ -35683,7 +35682,7 @@ t.push(u)
 			if (!a.$iav){
 			u.push($.v())
 			u.push(T.e("[0]：[Tango Down!]", m.r, a, l, l, 1, 1000, 100))
-            this.r.go = this.r.go * 1.5
+            this.r.go = this.r.go + 0.5
 			this.r.j = this.r.j + 2048
 			}
             return !0
@@ -35928,7 +35927,7 @@ dk: function(a, b, c, d, e, f, g) {
             var v ,u, t, s = this
             if (c.fr <= 0)
                 return a
-            v = 128 + this.r.yin * 16
+            v = 96 + this.r.yin * 16
             if (f.m() < v && s.r.bq(f)) {
                 g.a.push(T.e("[0][被忽视了，免于伤害]", s.r, c, null, null, 1, 1000, 100))
                 return 0
