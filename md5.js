@@ -33398,9 +33398,6 @@ T.yuzu.prototype = {
         t.r = this
         this.k2 = t
         t = this.id
-		u =new T.fox4n2()
-        u.f = 0
-        t.push(u)
         u =new T.fox4n1()
         u.f = 200
         t.push(u)
@@ -36349,7 +36346,7 @@ dk: function(a, b, c, d, e, f, g) {
 			this.r.cy = 1.25 * this.r.cy
 			this.r.ch = 0.5 * this.r.ch
 			this.r.r11 = 0
-			d.a.push(T.e("[ribbit1，Break through！]", this.r , this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[Ribbit1，Break through！]", this.r , this.r, null, null, 0, 1000, 100))
 			}
 			
 			if(this.r.R2 != null )
@@ -36358,7 +36355,7 @@ dk: function(a, b, c, d, e, f, g) {
 			{
 			this.r.R2.id[2].f = 55
 			this.r.R3.j = this.r.R3.j +1024
-			d.a.push(T.e("[ribbit2，Volume up！]", this.r.R2 , this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[Ribbit2，Volume up！]", this.r.R2 , this.r, null, null, 0, 1000, 100))
 			}
 			else if(this.r.R2.fr < 0.5 * this.r.R2.fx && this.r.r12 == 1)
 			{
@@ -36367,7 +36364,7 @@ dk: function(a, b, c, d, e, f, g) {
 			this.r.R2.dx = this.r.R2.dx * 1.5
 			this.r.R2.id[1].f = 300
             this.r.r12 = 0
-			d.a.push(T.e("[ribbit2，Cover！]", this.r.R2 , this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[Ribbit2，Cover！]", this.r.R2 , this.r, null, null, 0, 1000, 100))
 			}
 			}
 			
@@ -36375,13 +36372,13 @@ dk: function(a, b, c, d, e, f, g) {
 			{
 			if(this.r.R3.heli != null && this.r.R3.fr > 0){
 			this.r.R3.j = this.r.R3.j +1024
-			d.a.push(T.e("[ribbit3，Fire suppression！]", this.r.R3 , this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[Ribbit3，Fire suppression！]", this.r.R3 , this.r, null, null, 0, 1000, 100))
 			}
 			if(this.r.R3.heli == null && this.r.R3.fr > 0 && this.r.R2.id[1].f == 0 && this.r.r13 == 1){
 			this.r.R3.id[0].f = 500
 			this.r.R3.j = this.r.R3.j -1024
 			this.r.r13 = 0
-			d.a.push(T.e("[ribbit3，Maximum firepower！]", this.r.R3 , this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[Ribbit3，Maximum firepower！]", this.r.R3 , this.r, null, null, 0, 1000, 100))
 			}
 			}
 			
@@ -36392,7 +36389,7 @@ dk: function(a, b, c, d, e, f, g) {
 			this.r.R4.Q = 2 * this.r.R4.Q
 			this.r.R4.yin = this.r.R4.yin + 2
 			this.r.r14 = 0
-			d.a.push(T.e("[ribbit4，Dormant！]", this.r.R4 , this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[Ribbit4，Dormant！]", this.r.R4 , this.r, null, null, 0, 1000, 100))
 			}}
 			}
             d.a.push($.v())
