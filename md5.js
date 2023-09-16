@@ -36408,13 +36408,14 @@ dk: function(a, b, c, d, e, f, g) {
             d.a.push(T.e("[1]:各单位，注意", this.r , this.r, null, null, 0, 1000, 100))
 			if(this.r.SR2 != null )
 			{
+			if(this.r.R3 != null){
 			if(this.r.R3.heli != null && this.r.R3.heli.fr > 0 && this.r.SR2.id[0].f == 0)
 			{
 			this.r.SR2.id[0].f = 256
 			this.r.R3.j = this.r.R3.j +1024
 			d.a.push(T.e("[FOX2，EMI！]", this.r.SR2 , this.r, null, null, 0, 1000, 100))
 			}
-			}
+			}}
 			if(this.r.SR3 != null)
 			{
 			if(this.r.SR3.hbw == 0 && this.r.SR3.id[0].f == 15 && this.r.SR3.id[1].f <= 40){
