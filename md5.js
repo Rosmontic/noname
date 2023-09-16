@@ -21577,6 +21577,12 @@ T.thb8s1.prototype = {
         }
 }}
     T.fox1n0.prototype = {
+	    b5: function(a) {
+            return a.b1(this.r.x.a.e)
+        },
+        a8: function(a, b, c) {
+            return c.gbh() * a.J
+        },
         gb3: function() {
             return 999
         },
@@ -22233,16 +22239,10 @@ T.thb9t2.prototype = {
 	T.fox4a1.prototype = {
     t: function(a, b, c, d) {
         var u = this ,v , t ,s ,w
-		w = (c.m() & 7)
 		if(this.r.tager != null && this.r.tager.fr > 0 )
 		{
 		t = this.r.tager
 		this.r.aim = this.r.aim + 1
-		if(this.r.aim >= w)
-		{
-		this.r.aim = this.r.aim + 1
-		this.r.id[0].f = 512
-		}
 		}
 		else
 		{
