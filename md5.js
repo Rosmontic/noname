@@ -22273,6 +22273,7 @@ T.thb9t2.prototype = {
         s = T.u(u.r, !1, c)
         d.a.push(T.e("[0]射击", u.r, t, null, null, 0, 1000, 100))
         t.a0(s, !1, u.r, T.a3(), c, d)
+		this.r.own.j = this.r.own.j + 1024
     }
     }
    T.ribbit2a1.prototype = {
@@ -23048,7 +23049,7 @@ T.ribbit3n3.prototype = {
                 q = d.a
 				this.f = 0
 				q.push(T.e("[0]；[诶嘿嘿...全弹发射！]", s, null, null, r, 1, 1000, 100))
-                p = T.u(this.r, !0, c) * 4
+                p = T.u(this.r, !0, c) * 3.5
                 for (u = 0; u < n.length; ++u) {
                     o = n[u]
     if (o.fr > 0 ) {
@@ -23056,7 +23057,8 @@ T.ribbit3n3.prototype = {
     o.a0(p, !1, this.r, T.a3(), c, d)
     }                    
     }
-    }   
+	s.go = 1
+    } 
     }
 T.fox1n1.prototype = {
             gb3: function() {
@@ -33411,10 +33413,10 @@ T.yuzu.prototype = {
                 u = t.bb = new T.cB(t)
             t.y2.i(0, u)
         },
-    ay: function(a, b, c, d) {
-		    
+    ay: function(a, b, c, d) {	    
             if(this.fr <= 0){
 		    d.a.push($.v())
+			this.tager = null
 			d.a.push(T.e("[0]: [狙击点……暴露了啊！]", this, this.r, null, null, 0, 1000, 100))
 			}	
         }
@@ -36429,6 +36431,7 @@ dk: function(a, b, c, d, e, f, g) {
 			{
 			if(this.r.SR4.tager != null){
 			this.r.SR4.aim = this.r.SR4.aim + 0.5
+			this.r.R3.j = this.r.R3.j + 1024
 			d.a.push(T.e("[FOX4，Spoiling attack！]", this.r.SR4 , this.r, null, null, 0, 1000, 100))
 			}}
 			}
