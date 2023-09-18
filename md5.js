@@ -23130,6 +23130,12 @@ T.fox1n1.prototype = {
 					{
 					a[u].a = this.r.tager
 					}
+					else
+					{
+					if(a[u].a == this.r.tager)
+					{
+					u = u -1}
+					}
                     n.push(a[u].a)
 					}
                 s = this.r
