@@ -12856,6 +12856,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
 			_.fo = 0
 			_.SRTs = 2
 			_.BARi = null
+			_.BARn = 0
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -22004,8 +22005,8 @@ T.thb5n2.prototype = {
                     o.r1.k(0, $.kl(), v)
                     o.y1.i(0, v)
                 }
-                    v.x = v.x + 75
-					h = 75
+                    v.x = v.x + 80
+					h = 80
 				    q.push(T.e("[0]获得[1]点[护盾]", o , h, null, null, 0, 1000, 100))
 			}           
                 }
@@ -24056,7 +24057,7 @@ T.tha4n1.prototype = {
         t: function(a, b, c, d) {
             var u, t, s, r, q = this, p = q.f
             u = a[0].a
-            t = C.e.Z(T.u(q.r, !0, c) / 25)
+            t = C.e.Z(T.u(q.r, !0, c) / 24)
             s = u.fx - u.fr
             if (t > s)
                 t = s
@@ -24069,7 +24070,7 @@ T.tha4n1.prototype = {
 			u.j = u.j +1024
 			if(u.fr >= u.fx)
 			{
-			u.go = u.go + 0.5
+			u.go = u.go + 0.4
 			}
         }
     }
@@ -25158,7 +25159,7 @@ n.r.bf(n.r.fr, null, c, d)
             return this.af.r
         },
 		gaQ: function() {
-            return H.a(["berserk", "charm", "ice", "poison", "curse", "fire", "disperse", "half", "exchange"], [P.f])
+            return H.a(["berserk", "charm", "ice", "poison", "curse", "fire", "disperse", "half", "exchange", "blindly"], [P.f])
         },
         aa: function() {
 		    var u = new T.noak()
@@ -25230,7 +25231,6 @@ n.r.bf(n.r.fr, null, c, d)
             u.r = this
             this.k2 = u
 			this.id.push(new T.ribbit1t2())
-			this.id.push(new T.zhsh())
         },
         aR: function() {
             this.bv()
@@ -26301,7 +26301,7 @@ n.r.bf(n.r.fr, null, c, d)
     }}
 	T.fox2n2.prototype = {
         ar: function(a, b) {
-                if (this.r.BARi != null )
+                if (this.r.BARi != null || this.r.BARn > 3)
                     return !1
             return this.aS(a, b)
         },
@@ -26312,6 +26312,7 @@ n.r.bf(n.r.fr, null, c, d)
             var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this, b = null, v
             u = a2.a
             u.push(T.e("[0]: [注意隐蔽]", c.r, b, b, b, 60, 1000, 100))
+			this.r.BARn = this.r.BARn + 1
 			for(v =0 ; v < 1 ; v++){
 			u.push($.v())
             t = H.d(c.r.a) + "?" + H.d($.nn())
@@ -29180,24 +29181,7 @@ T.tha1b1.prototype = {
     },
     $iD: 1
 	}
-	T.ribbit1t2.prototype = {
-    ai: function(a, b) {
-            this.r = a
-            this.f = 360
-        },
-	ak: function(a, b, c, d, e) {
-        var u = a > 0 , n ,m
-		e.a.push(T.e("[0]被引爆", this.r, null, null, null, 0, 1000, 100))
-		b.a0(14400, !1 , this.r, T.a3(), d, e)
-		this.r.fr = 0
-		this.r.bf(this.r.fr, null, d, e)
-        return u && 0
-    },
-    T: function() {
-        this.r.y1.i(0, this)
-    },
-    $iD: 1
-    }
+	
     T.ribbit4b1.prototype = {
     ak: function(a, b, c, d, e) {
         var u = a > 0 , n ,m
@@ -29222,6 +29206,24 @@ T.tha1b1.prototype = {
 				this.r.cy =  this.r.cy * 1.3
 				this.r.cx =  this.r.cx * 1.3
 		        g.a.push(T.e("[0]使用[战术机动]回避了攻击", this.r, null, null, null, 1, 1000, 100))
+                return 0
+        },
+        T: function() {
+            this.r.x2.i(0, this)
+        },
+        $iK: 1
+    }
+	T.ribbit1t2.prototype = {
+	     ai: function(a, b) {
+            this.r = a
+            this.f = 360
+        },
+        dk: function(a, b, c, d, e, f, g) {
+            var u, t, s = this
+				g.a.push(T.e("[0]被引爆", this.r, null, null, null, 20, 1500, 100))
+				c.a0(14400, !1, s.r, T.a3(), f, g)
+				this.r.fr = 0
+				this.r.bf(this.r.fr, null, f, g)
                 return 0
         },
         T: function() {
@@ -33114,7 +33116,7 @@ T.yuzu.prototype = {
         u.f = 60
         t.push(u)
 		u =new T.ribbit1n3()
-        u.f = 40
+        u.f = 30
         t.push(u)
 		u =new T.ribbit1b2()
         u.f = 100
@@ -33329,7 +33331,7 @@ T.yuzu.prototype = {
         u.f = 0
         t.push(u)
         u =new T.fox2n2()
-        u.f = 48
+        u.f = 55
         t.push(u)
 		u =new T.fox2n1()
         u.f = 66
