@@ -23034,6 +23034,13 @@ T.ribbit3n2.prototype = {
     }
 
 T.ribbit3n3.prototype = {
+            ar: function(a, b) {
+            if (this.r.dan == 0)
+            {
+                return !1
+            }
+			return this.aS(a, b)
+		    },
             gb3: function() {
                 return 5
             },
@@ -23047,9 +23054,9 @@ T.ribbit3n3.prototype = {
                 s = this.r
                 r = H.a(n.slice(0), [H.n(n, 0)])
                 q = d.a
-				this.f = 0
+				this.r.dan = 0
 				q.push(T.e("[0]；[诶嘿嘿...全弹发射！]", s, null, null, r, 1, 1000, 100))
-                p = T.u(this.r, !0, c) * 3.5
+                p = T.u(this.r, !0, c) * 3.2
                 for (u = 0; u < n.length; ++u) {
                     o = n[u]
     if (o.fr > 0 ) {
@@ -29203,28 +29210,25 @@ T.tha1b1.prototype = {
     },
     $iD: 1
     }
-    T.ribbit1b1.prototype = {
-    ak: function(a, b, c, d, e) {
-	    var u = a > 0 , n ,m
-	    if (this.r.jd == 1)
-		{
-		return u && C.b.v (a, 1.25)
-		}
-		this.r.jd = 1
-		e.a.push($.v())
-		e.a.push(T.e("[0]：[见识一下SRT的CQB技巧吧！]", this.r, null, null, null, 0, 1000, 100))
-		this.r.cy =  this.r.cy * 1.35
-		this.r.cx =  this.r.cx * 1.35
-		e.a.push(T.e("[0]使用[战术机动]回避了攻击", this.r, null, null, null, 1, 1000, 100))
-		bug = tnt
-        return u && 0
-    },
-    T: function() {
-        this.r.y1.i(0, this)
-    },
-    $iD: 1
+	T.ribbit1b1.prototype = {
+        dk: function(a, b, c, d, e, f, g) {
+            var u, t, s = this
+            if (this.r.jd == 1){
+                return a
+				}
+                this.r.jd = 1
+				g.a.push($.v())
+				g.a.push(T.e("[0]：[见识一下SRT的CQB技巧吧！]", this.r, null, null, null, 0, 1000, 100))
+				this.r.cy =  this.r.cy * 1.3
+				this.r.cx =  this.r.cx * 1.3
+		        g.a.push(T.e("[0]使用[战术机动]回避了攻击", this.r, null, null, null, 1, 1000, 100))
+                return 0
+        },
+        T: function() {
+            this.r.x2.i(0, this)
+        },
+        $iK: 1
     }
-	
    T.ribbit2b1.prototype = {
     ak: function(a, b, c, d, e) {
         var u = a > 0 , n ,m
@@ -30530,9 +30534,10 @@ T.youzi1.prototype = {
         var u ,t ,o = this.r ,s ,v
 		this.f = 0
        	d.a.push(T.e("[0]使用[防弹插板]", this.r ,o, null, null, 1, 1000, 100))
-		o.ch = o.ch * 4
+		o.ch = o.ch * 5
         o.fd = 1		
-		o.go = o.go * 0.75
+		o.go = o.go * 0.6
+		d.a.push(T.e("[0]的[受到的伤害大幅减少]", this.r ,this.r, null, null, 0, 1000, 100))
     }
     }
 	T.fox3n2.prototype = {
@@ -30588,12 +30593,13 @@ T.youzi1.prototype = {
     }}
 	T.fox3a1.prototype = {
     t: function(a, b, c, d) {
-        var u ,s ,q ,t , v , w
+        var u ,s ,q ,t , v , w , n
 		q = a[0].a
 		w = q.ch
 		v = q.cy
 		if(this.r.hbw > 0){
 		t = 2
+		n = 1.6
        	d.a.push(T.e("[0]使用[双连击]", this.r ,this.r, null, null, 1, 1000, 100))
 		q.ch = 0
 		q.cy = 0
@@ -30601,12 +30607,13 @@ T.youzi1.prototype = {
 		else
 		{
 		t = 1
+		n = 1
 		d.a.push(T.e("[0]发起攻击", this.r ,this.r, null, null, 0, 1000, 100))
 		}
         s = T.u(this.r, !1, c)
 		for(u = 0 ;u < t ;u++){
 		if(q.fr > 0 && this.r.fr > 0){
-        q.a0(s , !1, this.r, T.a3(), c, d)
+        q.a0(C.d.Z(n*s) , !1, this.r, T.a3(), c, d)
 		}
 		}
 		q.ch = w
@@ -30653,7 +30660,7 @@ T.youzi1.prototype = {
 		
     }
     }
-	T.szja1.prototype = {
+	T.szja1.prototype = {          
         gb3: function() {
             return 4
         },
@@ -33112,7 +33119,9 @@ T.yuzu.prototype = {
 		u =new T.ribbit1b2()
         u.f = 100
         t.push(u)	
-		t.push(new T.ribbit1b1())
+		u =new T.ribbit1b1()
+        u.f = 100
+        t.push(u)
 
     }, 
     bM: function() {
@@ -33187,7 +33196,7 @@ T.yuzu.prototype = {
         this.k2 = t
         t = this.id
 		u = new T.ribbit3n3()
-        u.f = 0
+        u.f = 256
         t.push(u)
         u = new T.ribbit3n1()
         u.f = 200
@@ -36377,7 +36386,7 @@ dk: function(a, b, c, d, e, f, g) {
 			d.a.push(T.e("[Ribbit3，Fire suppression！]", this.r.R3 , this.r, null, null, 0, 1000, 100))
 			}
 			if(this.r.R3.heli == null && this.r.R3.fr > 0 && this.r.R2.id[1].f == 0 && this.r.r13 == 1){
-			this.r.R3.id[0].f = 500
+			this.r.R3.dan = 1
 			this.r.R3.j = this.r.R3.j -1024
 			this.r.r13 = 0
 			d.a.push(T.e("[Ribbit3，Maximum firepower！]", this.r.R3 , this.r, null, null, 0, 1000, 100))
