@@ -23124,15 +23124,16 @@ T.fox1n1.prototype = {
 			return this.aS(a, b)
 		    },
         t: function(a, b, c, d) {
-                var v, u, t, s, r, q, p, o, n = H.a([], [T.aU])
-                v = a[0].a
+                var v, u, t, s, r, q, p, o, n = H.a([], [T.aU])       
 				a[0].a = this.r.tager
+				v = a[0].a
 				for (u = 1; u < a.length; ++u)
                     n.push(a[u].a)
                 s = this.r
 				s.aim = s.aim + 1
                 r = H.a(n.slice(0), [H.n(n, 0)])
                 q = d.a
+				q.push(T.e("[0],[1]", v, a[0].a ,null, null, r, 0, 1000, 100))
 				q.push(T.e("[0]；[三点一线]", s, null, null, r, 0, 1000, 100))
 				q.push(T.e("[0]发起[贯穿狙击]", s, null, null, r, 1, 1000, 100))
                 p = T.u(this.r, !0, c)
