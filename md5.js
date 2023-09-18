@@ -23134,8 +23134,10 @@ T.fox1n1.prototype = {
 					{
 					if(a[u].a == this.r.tager)
 					{
-					u = u -1}
+					u = u -1
+					continue
 					}
+					}		
                     n.push(a[u].a)
 					}
                 s = this.r
@@ -33470,7 +33472,7 @@ T.yuzu.prototype = {
         u.f = 200
         t.push(u)
 		u =new T.fox4n2()
-        u.f = 20
+        u.f = 200
         t.push(u)
 		
     }, 
