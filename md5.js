@@ -23124,8 +23124,9 @@ T.fox1n1.prototype = {
 			return this.aS(a, b)
 		    },
         t: function(a, b, c, d) {
-                var v, u, t, s, r, q, p, o, n = H.a([], [T.aU])
+                var w, v, u, t, s, r, q, p, o, n = H.a([], [T.aU])				
 				for (u = 0; u < a.length; ++u){
+				    w = 0
 				    if(u == 0)
 					{
 					a[u].a = this.r.tager
@@ -23135,10 +23136,12 @@ T.fox1n1.prototype = {
 					if(a[u].a == this.r.tager)
 					{
 					u = u -1
-					continue
+					w = 1
 					}
-					}		
+					}
+					if(w == 0){				
                     n.push(a[u].a)
+					}
 					}
                 s = this.r
 				s.aim = s.aim + 1
