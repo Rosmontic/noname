@@ -33475,7 +33475,7 @@ T.yuzu.prototype = {
         u.f = 200
         t.push(u)
 		u =new T.fox4n2()
-        u.f = 200
+        u.f = 0
         t.push(u)
 		
     }, 
