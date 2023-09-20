@@ -21630,8 +21630,8 @@ T.thb8s1.prototype = {
 			if(o.SRT != null){
 			if(o.SRT == 1){
 			this.r.R1 = o
-			o.cx = o.cx * 1.1
-			o.cy = o.cy * 1.1
+			o.cx = o.cx * 1.15
+			o.cy = o.cy * 1.15
 			o.f = o.f + 2024
 			q.push(T.e("[0]", o, null, null, r, 0, 1000, 100))
 			}
@@ -21646,22 +21646,22 @@ T.thb8s1.prototype = {
                 s.x1.i(0, h.y)
                 s.E()
             }
-			o.cx = o.cx * 1.1
-			o.cy = o.cy * 1.1
+			o.cx = o.cx * 1.15
+			o.cy = o.cy * 1.15
 			o.f = o.f + 512
 			q.push(T.e("[0]", o, null, null, r, 0, 1000, 100))
 			}
 			if(o.SRT == 3){
 			this.r.R3 = o
-            o.cx = o.cx * 1.1
-			o.cy = o.cy * 1.1
+            o.cx = o.cx * 1.15
+			o.cy = o.cy * 1.15
 			o.f = o.f + 2048		
 			q.push(T.e("[0]", o, null, null, r, 0, 1000, 100))
 			}
 			if(o.SRT == 4){
 			this.r.R4 = o
-			o.cx = o.cx * 1.1
-			o.cy = o.cy * 1.1
+			o.cx = o.cx * 1.15
+			o.cy = o.cy * 1.15
 			o.f = o.f + 2048
 			q.push(T.e("[0]", o, null, null, r, 0, 1000, 100))		
 			}
@@ -22311,9 +22311,9 @@ T.thb9t2.prototype = {
         var u = this ,v
         t = a[0].a
         s = T.u(u.r, !1, c)      
-		v = 0.5 + u.r.yin *0.5
+		v = 0.8 + u.r.yin *0.6
 		if(H.o(this.r.r1.h(0, "locks"), "$ilockx") != null){
-		v = v * 1.5
+		v = v * 1.6
 		}
 		if(u.r.yin > 2)
 		{
@@ -23114,7 +23114,7 @@ T.ribbit3n2.prototype = {
                 q = d.a
 				q.push(T.e("[0]；[呼...呼...我要忍不住了]", s, null, null, r, 0, 1000, 100))
                 q.push(T.e(t, s, null, null, r, 1, 1000, 100))
-                p = T.u(this.r, !0, c) * 1.5
+                p = T.u(this.r, !0, c) * 1.8
                 for (u = 0; u < n.length; ++u) {
                     o = n[u]
     if (o.fr > 0 ) {
@@ -23148,7 +23148,7 @@ T.ribbit3n3.prototype = {
                 q = d.a
 				this.r.dan = 0
 				q.push(T.e("[0]；[诶嘿嘿...全弹发射！]", s, null, null, r, 1, 1000, 100))
-                p = T.u(this.r, !0, c) * 3.2
+                p = T.u(this.r, !0, c) * 3.5
                 for (u = 0; u < n.length; ++u) {
                     o = n[u]
     if (o.fr > 0 ) {
@@ -23182,7 +23182,7 @@ T.ribbit3n3.prototype = {
 					v = o.ch
     if (o.fr > 0 ) {
     q.push($.v())
-	t = 1 + (c.m() & 1)
+	t = 0.8 + (c.m() & 1)
 	o.ch = 0
     o.a0(C.d.Z(t*p), !1, this.r, T.a3(), c, d)
 	o.ch = v
@@ -26423,6 +26423,7 @@ n.r.bf(n.r.fr, null, c, d)
             d.r = "自走式闪光无人机"
             s = c.r
             d.x = s.x
+			s.I.i(0, d.a5)
             d.av()
 			d.fx = 60
 			d.fr = 60
@@ -26523,7 +26524,9 @@ n.r.bf(n.r.fr, null, c, d)
         t: function(a, a0, a1, a2) {
             var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this, b = null, v
             u = a2.a
-			this.f = C.d.v((this.f + 1), 2)
+			if(this.f > 16){
+			this.f = this.f - 16
+			}
             u.push(T.e("[0]: [此面向敌]", c.r, b, b, b, 60, 1000, 100))
 			for(v =0 ; v < 1 ; v++){
 			u.push($.v())
@@ -26648,13 +26651,14 @@ n.r.bf(n.r.fr, null, c, d)
             d.r = "反侦察无人机"
             s = c.r
             d.x = s.x
+			s.I.i(0, d.a5)
             d.av()
-			d.fx = 210
-			d.fr = 210
-			d.Q =  75
+			d.fx = 160
+			d.fr = 160
+			d.Q =  70
 			d.ch = 15
-			d.cx = 210 
-			d.cy = 210 
+			d.cx = 240 
+			d.cy = 240 
 			d.db = 15
 			d.dx = 15
 			d.dy = 50
@@ -29363,7 +29367,7 @@ T.tha1b1.prototype = {
         dk: function(a, b, c, d, e, f, g) {
             var u, t, s = this
 				g.a.push(T.e("[0]被引爆", this.r, null, null, null, 20, 1500, 100))
-				c.a0(14400, !1, s.r, T.a3(), f, g)
+				c.a0(19200, !1, s.r, T.a3(), f, g)
 				this.r.fr = 0
 				this.r.bf(this.r.fr, null, f, g)
                 return 0
@@ -30745,7 +30749,7 @@ T.youzi1.prototype = {
 		v = q.cy
 		if(this.r.hbw > 0){
 		t = 2
-		n = 1.2
+		n = 1
        	d.a.push(T.e("[0]使用[双连击]", this.r ,this.r, null, null, 1, 1000, 100))
 		q.ch = 0
 		q.cy = 0
