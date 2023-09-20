@@ -12825,10 +12825,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
 			_.SR2 = null
 			_.SR3 = null
 			_.SR4 = null
-			_.R1 = null
-			_.R2 = null
 			_.R3 = null
-			_.R4 = null
 			_.pfcz = 0
 			_.fo = 0
             _.k2 = _.k1 = null
@@ -20500,22 +20497,8 @@ u.push($.v())
             k.push(T.e("[0]：[为了让它，与过去的责任与过去的SRT一埋葬与这深渊里......]", r.r, q, q, h, 0, 1000, 100))
 			k.push(T.e("[0][引爆液压弹......]", r.r, q, q, 1, 1000, 100))
             w = T.u(r.r, !0, c) * 20
-			for (u = 0; u < a.length; ++u) {
-			o = n[u]
-			if (o.STR =! null ){
-			if(o.STR == 1)
-			{
-			m = 1
-			this.r.R1 == o
-			}
-			}
-			}
             for (u = 0; u < a.length; ++u) {
 			o = n[u]
-			if (m == 1 && u = 0)
-			{
-			o = this.r.R1
-			}
             k.push($.v())
             if (o.fr > 0 ) {
             o.bL(w, !0, r.r, T.a3(), c, d)}               
@@ -36613,7 +36596,7 @@ dk: function(a, b, c, d, e, f, g) {
 			}
 			}
 			
-			if( this.r.SR4 != null)
+			if(this.r.SR4 != null)
 			{
 			if(this.r.SR4.tager != null && this.r.SR4.fr > 0){
 			this.r.SR4.go = this.r.SR4.go + 0.1
@@ -36621,8 +36604,8 @@ dk: function(a, b, c, d, e, f, g) {
 			d.a.push(T.e("[FOX4，Spoiling attack！]", this.r.SR4 , this.r, null, null, 0, 1000, 100))
 			}
 			if(this.r.SR4.tager == null && this.r.SR4.fr > 0){
-			this.r.SR4.j = this.r.SR4.j + 512
-			d.a.push(T.e("[FOX4，Spoiling attack！]", this.r.SR4 , this.r, null, null, 0, 1000, 100))
+			this.r.SR4.j = this.r.SR4.j + 1024
+			d.a.push(T.e("[FOX4，Target in sight！]", this.r.SR4 , this.r, null, null, 0, 1000, 100))
 			}
 			}
 			}
