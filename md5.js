@@ -21624,6 +21624,7 @@ T.thb8s1.prototype = {
             q = d.a
             q.push(T.e(k, s, null, null, r, 0, 1000, 100))
             q.push(T.e(w, s, null, null, r, 1, 1000, 100))
+			q.push($.v())
             for (u = 0; u < n.length; ++u) {
             o = n[u]
 			if(o.SRT != null){
@@ -36576,7 +36577,7 @@ dk: function(a, b, c, d, e, f, g) {
 			if(this.r.SR2 != null )
 			{
 			if(this.r.R3 != null){
-			if(this.r.R3.heli != null && this.r.R3.heli.fr > 0 && this.r.SR2.id[0].f == 0)
+			if(this.r.R3.heli != null && this.r.R3.heli.fr > 0 && this.r.SR2.id[0].f == 0 && this.r.SR2.fr > 0)
 			{
 			this.r.SR2.id[0].f = 1024
 			this.r.R3.j = this.r.R3.j +1024
@@ -36585,7 +36586,7 @@ dk: function(a, b, c, d, e, f, g) {
 			}}
 			if(this.r.SR3 != null)
 			{
-			if(this.r.SR3.hbw == 0 && this.r.SR3.id[0].f == 15 && this.r.SR3.id[1].f <= 40){
+			if(this.r.SR3.hbw == 0 && this.r.SR3.id[0].f == 15 && this.r.SR3.id[1].f <= 40 && this.r.SR3.fr > 0){
 			this.r.R3.id[0].f = 378
 			this.r.R3.j = this.r.R3.j + 1024
 			d.a.push(T.e("[FOX3，Gank！]", this.r.SR3 , this.r, null, null, 0, 1000, 100))
@@ -36594,7 +36595,7 @@ dk: function(a, b, c, d, e, f, g) {
 			
 			if( this.r.SR4 != null)
 			{
-			if(this.r.SR4.tager != null){
+			if(this.r.SR4.tager != null && this.r.SR34fr > 0){
 			this.r.SR4.aim = this.r.SR4.aim + 0.5
 			this.r.R3.j = this.r.R3.j + 1024
 			d.a.push(T.e("[FOX4，Spoiling attack！]", this.r.SR4 , this.r, null, null, 0, 1000, 100))
