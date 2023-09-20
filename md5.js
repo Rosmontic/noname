@@ -23129,14 +23129,17 @@ T.fox1n1.prototype = {
 				for (u = 0; u < a.length; ++u){
 				   	if(a[u].a == this.r.target)
 					{
+					q.push(T.e("[0]发1",a[u].a, null, null, 0, 1000, 100))
 					w = 1
 					}
                     n.push(a[u].a)			
 					}
-					if (w == 0)
-					{
-					a[0].a = this.r.target
-					}
+				if (w == 0)
+				{
+				q.push(T.e("[0]发1",a[0].a, null, null, 0, 1000, 100))
+				a[0].a = this.r.target
+				q.push(T.e("[0]发1",a[0].a, null, null, 0, 1000, 100))
+				}
                 s = this.r
 				s.aim = s.aim + 1.2
                 r = H.a(n.slice(0), [H.n(n, 0)])
