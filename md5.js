@@ -23124,32 +23124,26 @@ T.fox1n1.prototype = {
 			return this.aS(a, b)
 		    },
         t: function(a, b, c, d) {
-                var w, v, u, t, s, r, q, p, o, n = H.a([], [T.aU])				
+                var w, v, u, t, s, r, q, p, o, n = H.a([], [T.aU])
+				w = 0
 				for (u = 0; u < a.length; ++u){
-				    w = 0
-				    if(u == 0)
+				   	if(a[u].a == this.r.target)
 					{
-					a[u].a = this.r.tager
-					}
-					else
-					{
-					if(a[u].a == this.r.tager)
-					{
-					u = u -1
 					w = 1
 					}
+                    n.push(a[u].a)			
 					}
-					if(w == 0){				
-                    n.push(a[u].a)
-					}
+					if (w == 0)
+					{
+					a[0].a = this.r.target
 					}
                 s = this.r
-				s.aim = s.aim + 1
+				s.aim = s.aim + 1.2
                 r = H.a(n.slice(0), [H.n(n, 0)])
                 q = d.a
 				q.push(T.e("[0]；[三点一线]", s, null, null, r, 0, 1000, 100))
 				q.push(T.e("[0]发起[贯穿狙击]", s, null, null, r, 1, 1000, 100))
-                p = T.u(this.r, !0, c)
+                p = T.u(this.r, !1, c)
                 for (u = 0; u < n.length; ++u) {
                     o = n[u]
     if (o.fr > 0 ) {
@@ -23157,6 +23151,7 @@ T.fox1n1.prototype = {
     o.bL(C.d.Z(this.r.aim*p), !1, this.r, T.a3(), c, d)
     }                    
     }
+	this.r.target = null
     }   
     }
 T.tha7n1.prototype = {
@@ -26442,6 +26437,7 @@ n.r.bf(n.r.fr, null, c, d)
         t: function(a, a0, a1, a2) {
             var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this, b = null, v
             u = a2.a
+			this.f = C.d.v((this.f + 1), 2)
             u.push(T.e("[0]: [此面向敌]", c.r, b, b, b, 60, 1000, 100))
 			for(v =0 ; v < 1 ; v++){
 			u.push($.v())
@@ -33176,7 +33172,7 @@ T.yuzu.prototype = {
         u.f = 60
         t.push(u)
 		u =new T.ribbit1n3()
-        u.f = 30
+        u.f = 64
         t.push(u)
 		u =new T.ribbit1b2()
         u.f = 100
@@ -33475,7 +33471,7 @@ T.yuzu.prototype = {
         u.f = 200
         t.push(u)
 		u =new T.fox4n2()
-        u.f = 0
+        u.f = 100
         t.push(u)
 		
     }, 
