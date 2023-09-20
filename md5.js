@@ -36595,7 +36595,7 @@ dk: function(a, b, c, d, e, f, g) {
 			
 			if( this.r.SR4 != null)
 			{
-			if(this.r.SR4.tager != null && this.r.SR34fr > 0){
+			if(this.r.SR4.tager != null && this.r.SR4.fr > 0){
 			this.r.SR4.aim = this.r.SR4.aim + 0.5
 			this.r.R3.j = this.r.R3.j + 1024
 			d.a.push(T.e("[FOX4，Spoiling attack！]", this.r.SR4 , this.r, null, null, 0, 1000, 100))
