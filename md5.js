@@ -21780,8 +21780,6 @@ T.thb8s1.prototype = {
             r = H.a(n.slice(0), [H.n(n, 0)])
             q = d.a
             q.push(T.e(k, s, null, null, r, 0, 1000, 100))
-			q.push($.v())
-            q.push(T.e(w, s, null, null, r, 1, 1000, 100))
             for (u = 0; u < n.length; ++u) {
             o = n[u]
 			d.a.push($.v())
@@ -36572,23 +36570,23 @@ dk: function(a, b, c, d, e, f, g) {
         aK: function(a, b, c, d) {
             var v ,u, t, s, r = this
 			if(this.r.SR1 != null)
-			{
+			{		
             d.a.push(T.e("[1]:各单位，注意", this.r , this.r, null, null, 0, 1000, 100))
 			if(this.r.SR2 != null )
 			{
-			if(this.r.R3 != null){
-			if(this.r.R3.heli != null && this.r.R3.heli.fr > 0 && this.r.SR2.id[0].f == 0 && this.r.SR2.fr > 0)
+			if(this.r.R3 != null && this.r.SR2.fr > 0){
+			if(this.r.R3.heli != null && this.r.R3.heli.fr > 0 && this.r.SR2.id[0].f == 0)
 			{
 			this.r.SR2.id[0].f = 1024
-			this.r.R3.j = this.r.R3.j +1024
+			this.r.SR2.j = this.r.SR2.j +1024
 			d.a.push(T.e("[FOX2，EMI！]", this.r.SR2 , this.r, null, null, 0, 1000, 100))
 			}
 			}}
 			if(this.r.SR3 != null)
 			{
 			if(this.r.SR3.hbw == 0 && this.r.SR3.id[0].f == 15 && this.r.SR3.id[1].f <= 40 && this.r.SR3.fr > 0){
-			this.r.R3.id[0].f = 378
-			this.r.R3.j = this.r.R3.j + 1024
+			this.r.SR3.id[0].f = 378
+			this.r.SR3.j = this.r.SR3.j + 1024
 			d.a.push(T.e("[FOX3，Gank！]", this.r.SR3 , this.r, null, null, 0, 1000, 100))
 			}
 			}
@@ -36597,7 +36595,7 @@ dk: function(a, b, c, d, e, f, g) {
 			{
 			if(this.r.SR4.tager != null && this.r.SR4.fr > 0){
 			this.r.SR4.aim = this.r.SR4.aim + 0.5
-			this.r.R3.j = this.r.R3.j + 1024
+			this.r.SR4.j = this.r.SR4.j + 1024
 			d.a.push(T.e("[FOX4，Spoiling attack！]", this.r.SR4 , this.r, null, null, 0, 1000, 100))
 			}}
 			}
