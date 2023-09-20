@@ -24197,7 +24197,7 @@ T.tha4n1.prototype = {
         t: function(a, b, c, d) {
             var u, t, s, r, q = this, p = q.f
             u = a[0].a
-            t = C.e.Z(T.u(q.r, !0, c) / 20)
+            t = C.e.Z(T.u(q.r, !0, c) / 24)
             s = u.fx - u.fr
             if (t > s)
                 t = s
@@ -36586,7 +36586,6 @@ dk: function(a, b, c, d, e, f, g) {
 			{
 			if(this.r.SR3.hbw == 0 && this.r.SR3.id[0].f == 15 && this.r.SR3.id[1].f <= 40 && this.r.SR3.fr > 0){
 			this.r.SR3.id[0].f = 378
-			this.r.SR3.j = this.r.SR3.j + 1024
 			d.a.push(T.e("[FOX3，Gank！]", this.r.SR3 , this.r, null, null, 0, 1000, 100))
 			}
 			}
@@ -36595,7 +36594,6 @@ dk: function(a, b, c, d, e, f, g) {
 			{
 			if(this.r.SR4.tager != null && this.r.SR4.fr > 0){
 			this.r.SR4.aim = this.r.SR4.aim + 0.5
-			this.r.SR4.j = this.r.SR4.j + 1024
 			d.a.push(T.e("[FOX4，Spoiling attack！]", this.r.SR4 , this.r, null, null, 0, 1000, 100))
 			}}
 			}
@@ -36615,7 +36613,7 @@ dk: function(a, b, c, d, e, f, g) {
 			{
 			d.a.push(T.e("[1]：食用了[高热量浓缩糖果]", this.r , this.r, null, null, 1, 1000, 100))
 			t = this.r.fr
-			v = C.d.Z(this.r.fx *0.15)
+			v = C.d.Z(this.r.fx *0.2)
 		    this.r.fr = t + v
 			d.a.push(T.e("[1]回复生命[2]点", r.r, T.a1(r.r, t), new T.aG(v), null, 0, 1000, 100))
 			}
