@@ -23127,19 +23127,12 @@ T.fox1n1.prototype = {
                 var w, v, u, t, s, r, q, p, o, n = H.a([], [T.aU])
 				w = 0
 				for (u = 0; u < a.length; ++u){
-				   	if(a[u].a == this.r.target)
+				   	if(a[u].a == this.r.tager)
 					{
-					q.push(T.e("[0]发1",a[u].a, null, null, 0, 1000, 100))
 					w = 1
 					}
                     n.push(a[u].a)			
 					}
-				if (w == 0)
-				{
-				q.push(T.e("[0]发1",a[0].a, null, null, 0, 1000, 100))
-				a[0].a = this.r.target
-				q.push(T.e("[0]发1",a[0].a, null, null, 0, 1000, 100))
-				}
                 s = this.r
 				s.aim = s.aim + 1.2
                 r = H.a(n.slice(0), [H.n(n, 0)])
@@ -23149,6 +23142,10 @@ T.fox1n1.prototype = {
                 p = T.u(this.r, !1, c)
                 for (u = 0; u < n.length; ++u) {
                     o = n[u]
+					if(w == 0 && u == 0)
+					{
+					o = this.r.tager
+					}
     if (o.fr > 0 ) {
     q.push($.v())
     o.bL(C.d.Z(this.r.aim*p), !1, this.r, T.a3(), c, d)
