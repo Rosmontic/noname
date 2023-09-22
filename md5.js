@@ -20496,6 +20496,7 @@ u.push($.v())
 			k.push(T.e("[0]：[很可惜，这个弹头必须在这里起爆]", r.r, q, q, h, 0, 1000, 100))
 			k.push($.v())
             k.push(T.e("[0]：[为了让它，与过去的责任与过去的SRT一埋葬与这深渊里......]", r.r, q, q, h, 0, 1000, 100))
+			k.push($.v())
 			k.push(T.e("[0][引爆液压弹......]", r.r, q, q, 1, 1000, 100))
             w = T.u(r.r, !0, c) * 20
             for (u = 0; u < a.length; ++u) {
@@ -36590,7 +36591,7 @@ dk: function(a, b, c, d, e, f, g) {
 			if(this.r.R3.heli != null && this.r.R3.heli.fr > 0 && this.r.SR2.id[0].f == 0)
 			{
 			this.r.SR2.id[0].f = 1024
-			this.r.SR2.j = this.r.SR2.j + 768
+			this.r.SR2.j = this.r.SR2.j + 1024
 			d.a.push(T.e("[FOX2，EMI！]", this.r.SR2 , this.r, null, null, 0, 1000, 100))
 			}
 			}}
