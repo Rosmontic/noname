@@ -21711,7 +21711,7 @@ T.thb8s1.prototype = {
 			if(o.SRTs == 2){
 			this.r.SR2 = o
 			o.dx = o.dx * 2
-			o.db = o.db * 1.5
+			o.db = o.db * 2
 			o.cy = o.cy * 1.5
 			o.J = o.J / 2
 			o.f = o.f + 2048
@@ -23185,7 +23185,7 @@ T.ribbit3n3.prototype = {
 					v = o.ch
     if (o.fr > 0 ) {
     q.push($.v())
-	t = 0.8 + (c.m() & 1)
+	t = 1 + (c.m() & 1)
 	o.ch = 0
     o.a0(C.d.Z(t*p), !1, this.r, T.a3(), c, d)
 	o.ch = v
@@ -30740,14 +30740,14 @@ T.youzi1.prototype = {
                 o.E()
 				d.a.push(T.e("[0]陷入[目盲]", o, o, null, null, 0, 1000, 100))
 				w = T.u(this.r, !1, c)
-				o.a0(C.d.Z(w * 1) , !1, s, T.a3(), c, d)
+				o.a0(C.d.Z(w * 1.2) , !1, s, T.a3(), c, d)
             }
 			else{
                 t.Q += 3
 				t.z += 10
                 d.a.push(T.e("[0]陷入[目盲]", o, o, null, null, 0, 1000, 100))
                 w = T.u(this.r, !1, c)
-				o.a0(C.d.Z(w * 1.5) , !1, s, T.a3(), c, d)
+				o.a0(C.d.Z(w * 1.8) , !1, s, T.a3(), c, d)
         }
     }}
 	T.fox3a1.prototype = {
