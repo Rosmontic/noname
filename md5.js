@@ -20483,12 +20483,13 @@ u.push($.v())
                 r.fy = r.r
                 r.r.ry.i(0, r.fr)
                 k.push(T.e("[0][正在准备引爆液压弹]", r.r, r.fy, q, q, 1, 1000, 100))
-                this.r.j = this.r.j - 1024
+                this.r.j = this.r.j - 2048
             }
             else {
             r.ae(0)
 			m = 0
             n = H.a([], [T.aU])
+			this.r.pfcz = 0
             for (u = 0; u < a.length; ++u){
                 n.push(a[u].a)}
 			h = H.a(n.slice(0), [H.n(n, 0)])
@@ -36589,7 +36590,7 @@ dk: function(a, b, c, d, e, f, g) {
 			if(this.r.R3.heli != null && this.r.R3.heli.fr > 0 && this.r.SR2.id[0].f == 0)
 			{
 			this.r.SR2.id[0].f = 1024
-			this.r.SR2.j = this.r.SR2.j + 1024
+			this.r.SR2.j = this.r.SR2.j + 512
 			d.a.push(T.e("[FOX2，EMI！]", this.r.SR2 , this.r, null, null, 0, 1000, 100))
 			}
 			}}
