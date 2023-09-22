@@ -12678,7 +12678,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
             _.a_ = t
             _.V = _.O = _.L = 0
             _.J = 32768
-            _.j = 2048
+            _.j = 20480
             _.X = _.W = !1
             _.F = null
         },
@@ -12849,7 +12849,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
             _.a_ = t
             _.V = _.O = _.L = 0
             _.J = 32768
-            _.j = 2048
+            _.j = 20480
             _.X = _.W = !1
             _.F = null
         },
@@ -21595,7 +21595,7 @@ T.thb8s1.prototype = {
                 o.go = o.go * 1.5
                 o.cy = o.cy * 1.5
                 o.cx = o.cx * 1.25
-                o.f = o.f + 2048
+                o.f = 0
                 d.a.push(T.e("[0]：[Ribbit1，突击手，已就位。]", o, o, null, null, 0, 1000, 100)) 
             }
             }
@@ -21703,7 +21703,7 @@ T.thb8s1.prototype = {
 			o.Q = o.Q * 1.2
 			o.go = o.go * 1.5
 			o.cy = o.cy * 1.5
-			o.f = o.f + 2048
+			o.f = 0
 			o.J = o.J / 4	
 			}
 			if(o.SRTs == 2){
@@ -21748,7 +21748,7 @@ T.thb8s1.prototype = {
             return 999
         },
 		ar: function(a, b) {
-            if (this.r.pfcz == 0  )
+            if (this.r.pfcz > 1  )
             { 
                 return !1
             }
@@ -21774,7 +21774,7 @@ T.thb8s1.prototype = {
             w = "[0]使用[破釜沉舟]"		
             s = this.r
 			this.f = 0
-			this.r.pfcz = 0
+			this.r.pfcz = 1
             r = H.a(n.slice(0), [H.n(n, 0)])
             q = d.a
             q.push(T.e(k, s, null, null, r, 0, 1000, 100))
@@ -23115,7 +23115,7 @@ T.ribbit3n2.prototype = {
                 q = d.a
 				q.push(T.e("[0]；[呼...呼...我要忍不住了]", s, null, null, r, 0, 1000, 100))
                 q.push(T.e(t, s, null, null, r, 1, 1000, 100))
-                p = T.u(this.r, !0, c) * 1.8
+                p = T.u(this.r, !0, c) * 1.6
                 for (u = 0; u < n.length; ++u) {
                     o = n[u]
     if (o.fr > 0 ) {
@@ -24200,6 +24200,7 @@ T.tha4n1.prototype = {
             u = a[0].a
             t = C.e.Z(T.u(q.r, !0, c) / 24)
             s = u.fx - u.fr
+			this.f = C.e.Z(this.f  / 2)
             if (t > s)
                 t = s
             p = d.a
@@ -29452,6 +29453,11 @@ T.tha1b1.prototype = {
 		this.r.pfcz = this.r.pfcz - 1
 		return 0
 		}
+		if(this.r.pfcz == 1 && this.r.id[1].f == 0)
+		{
+		this.r.pfcz = 0
+		return 0
+		}
         return a
     },
     T: function() {
@@ -33265,7 +33271,7 @@ T.yuzu.prototype = {
         u.f = 60
         t.push(u)
 		u =new T.ribbit1n3()
-        u.f = 80
+        u.f = 64
         t.push(u)
 		u =new T.ribbit1b2()
         u.f = 100
@@ -33524,7 +33530,7 @@ T.yuzu.prototype = {
         this.k2 = t
         t = this.id
 		u =new T.fox3n2()
-        u.f = 15
+        u.f = 5
         t.push(u)
 		u =new T.fox3n1()
         u.f = 160
@@ -36125,7 +36131,7 @@ dk: function(a, b, c, d, e, f, g) {
             var v ,u, t, s = this
             if (c.fr <= 0)
                 return a
-            v = 108 + this.r.yin * 16
+            v = 96 + this.r.yin * 16
             if (f.m() < v && s.r.bq(f)) {
                 g.a.push(T.e("[0][被忽视了]", s.r, c, null, null, 1, 1000, 100))
                 return 0
@@ -36583,13 +36589,13 @@ dk: function(a, b, c, d, e, f, g) {
 			if(this.r.R3.heli != null && this.r.R3.heli.fr > 0 && this.r.SR2.id[0].f == 0)
 			{
 			this.r.SR2.id[0].f = 1024
-			this.r.SR2.j = this.r.SR2.j + 512
+			this.r.SR2.j = this.r.SR2.j + 1024
 			d.a.push(T.e("[FOX2，EMI！]", this.r.SR2 , this.r, null, null, 0, 1000, 100))
 			}
 			}}
 			if(this.r.SR3 != null)
 			{
-			if(this.r.SR3.hbw == 0 && this.r.SR3.id[0].f == 15 && this.r.SR3.id[1].f <= 40 && this.r.SR3.fr > 0){
+			if(this.r.SR3.hbw == 0 && this.r.SR3.id[0].f == 5 && this.r.SR3.id[1].f <= 40 && this.r.SR3.fr > 0){
 			this.r.SR3.id[0].f = 378
 			d.a.push(T.e("[FOX3，Gank！]", this.r.SR3 , this.r, null, null, 0, 1000, 100))
 			}
