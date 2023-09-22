@@ -20493,6 +20493,7 @@ u.push($.v())
             for (u = 0; u < a.length; ++u){
                 n.push(a[u].a)}
 			h = H.a(n.slice(0), [H.n(n, 0)])
+			this.f = 0
 			k.push(T.e("[0]：[很可惜，这个弹头必须在这里起爆]", r.r, q, q, h, 0, 1000, 100))
 			k.push($.v())
             k.push(T.e("[0]：[为了让它，与过去的责任与过去的SRT一埋葬与这深渊里......]", r.r, q, q, h, 0, 1000, 100))
