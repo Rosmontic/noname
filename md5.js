@@ -8545,7 +8545,7 @@ tha7n1: function tha7n1() {
             var _ = this
             _.x = a
             _.y = null
-            _.z = 2
+            _.z = 4
             _.Q = 4
             _.c = _.b = _.a = null
         },
@@ -21698,7 +21698,7 @@ T.thb8s1.prototype = {
 			q.push($.v())
 			d.a.push(T.e("[0]：[这里是FOX1，作战开始，各小队队员务必坚守各自位置，随时报告情况]", this.r, this.r, null, null, 0, 1000, 100))
             for (u = 0; u < n.length; ++u) {
-            o = n[u]	
+            o = n[u]
 			if(o.SRTs != null){
 			if(o.SRTs == 1){
 			this.r.SR1 = o
