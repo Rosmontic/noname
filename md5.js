@@ -29582,7 +29582,7 @@ T.tha1b1.prototype = {
         },
     ak: function(a, b, c, d, e) {
         var u = a > 0 , n ,m
-		if(this.r.sb1 == 0 && this.r.zt1 == 0){
+		if(this.r.sb1 == 0){
 		e.a.push(T.e("[0]：[只因你太美！]", this.r, null, null, null, 1, 1000, 100))
 		this.r.sb1 = 1
 		return 0
@@ -36697,7 +36697,7 @@ dk: function(a, b, c, d, e, f, g) {
     }
 	T.jntmb1.prototype = {
         aK: function(a, b, c, d) {
-            if(this.r.sb1 == 1 && this.r.zt1 == 0)
+            if(this.r.sb1 == 1)
 			{
 			d.a.push(T.e("[1]无法行动。", this.r , this.r, null, null, 0, 1000, 100))
 			return 0
