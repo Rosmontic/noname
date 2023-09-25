@@ -23234,6 +23234,7 @@ T.ribbit3n2.prototype = {
             },
             t: function(a, b, c, d) {
                 var u, t, s, r, q, p, o, n = H.a([], [T.aU])
+				this.r.sb1 = 0
                 for (u = 0; u < a.length; ++u)
                     n.push(a[u].a)
 				if(this.r.zt1 == 1){
@@ -23263,13 +23264,11 @@ T.ribbit3n2.prototype = {
     o = n[u]
     if (o.fr > 0 ) {
     q.push($.v())
-    o.a0(p, !1, this.r, T.a3(), c, d)
+    o.a0(p, !1, this.r, T.firea(), c, d)
     }                    
     }
 	}
-	this.r.sb1 = 0
 	}
-	
     }
 
 T.ribbit3n3.prototype = {
@@ -29583,7 +29582,6 @@ T.tha1b1.prototype = {
     ak: function(a, b, c, d, e) {
         var u = a > 0 , n ,m
 		if(this.r.sb1 == 0){
-		e.a.push(T.e("[0]：[只因你太美！]", this.r, null, null, null, 1, 1000, 100))
 		this.r.sb1 = 1
 		return 0
 		}
