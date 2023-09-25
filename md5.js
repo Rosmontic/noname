@@ -23267,8 +23267,9 @@ T.ribbit3n2.prototype = {
     }                    
     }
 	}
-	}
 	this.r.sb1 = 0
+	}
+	
     }
 
 T.ribbit3n3.prototype = {
