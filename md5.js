@@ -3945,7 +3945,7 @@
                         s = W.lO()
                         $.kD = s
                         W.cO(s, "load", F.qh(), !1)
-                        $.kD.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAAHdElNRQffDBoKDQEa1pWtAAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAALmSURBVHhe7ZsBjsIgEACt//+zV6pURGopkLSXmTEmxrK7QCeIEafbY34IlkWAVgem+REw/v/G31+vBYoCwFEAOAoARwHgKAAcBYCjAHAUAI4CwFEAOAoARwHg+HMwHFcAOJ4HmCHHuwLAUQA4CgBHAeAoABwFgKMAcBQAjgLAUQA4CgBHAeAoABzPA8BxBYDjeYAZcrwrABwFgKMAcBQAjgLAUQA4CgBHAeAoABwFgKMAcBQAjgLA8TwAHFcAOJ4HmCHHuwLAUQA4CgBHAeAoABwFgKMAcBQAjgLAUQA4CgBHAeAoABzPA8BxBYDjeYAZcrwrABwFgKMAcBQAjgLAUQA4CgBHAeAoABwFgKMAcBQAjgLA8TwAHFcAOK4AF8DzAHIaCgBHAeAoABwFgKMAcBQAjgLAUQA4CgBHAeAoABwFgOOvgXBcAeAoABwFgKMAcBQAjgLAUQA4CgBHAeAoABwFgKMAcBQAjgLAUQA4CgDn40DIY6o7GzI9nn9LDtTGbJHmCvTm2yOvV2KrD6XY2rZHx1UbH9q1zlmIXQT4SLCXK+nXWryt/pIrDvRQHyKxL0fbz6QTXJzA/K0kNrI5/lfbr7Ft5ayotfCrXX5tj9jHOfApQEOCUQJsTtAecQIa44bUDpRi0+uBX22O1o4MiL+vE9BAT+wXA1Ptktdqqb0XE66nz4vy3AS2dHDQoIZKdJAza1+Fa3wLOOM+XOne5x8XNbTEFPBr4MnEjWILPbERBYCjAHAUAI4CnMzZX8PHCHDGLjaN798L9dE7/pb7mMZ01H8K0JFg3YkeyZHHNhLiR+yEe+ipP6LvvfXvIwaw5qhJFZt21C3W6UjXFJvHHMnR09daQo30ucH7I2Cn4cpGuyoJYpPWmx/CCjk+ar/fruIrditH4XqMra6fXE/7/0Vslz9rebUNNT76VmD5Mej1unpT8avzezny2KMbmZ8TNzMi31aOvdqBUeM/0q50rSZ+eky3P8r5Dhdr5y92AAAAAElFTkSuQmCC"
+                        $.kD.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACAAgMAAAC+UIlYAAAADFBMVEX/AAD/AP8A/wD///8SU+EWAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wwaCg0BGtaVrQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAADHUlEQVRYw+2WPY6jMBTHLejhMNOu4BRkpTTp5xIgzQGmilKmSjFUkbZFCpp6tN3mHGikpAK8/r/nZwhxMlllViOtFsWxsX/2+7SNKj941E7r/lr5Q6BNuW5iqqtv3xLlBtKW67jpd3XY75SyAF4wAwMAwpqLAVgEADuDANOu4iahCQ7AIAaUSrBalbYEDCI+BESPiyJk0KukmCnlzMybHHVXLD4M9w35oIJC6R4FbVm6UNw2QB0UoQcIawGaoIg9QNwI0AZF6gHSVgAdFNoDmH4BXp88gOl7FeD92QOYvvcTYDBvAAE5ET4AYpySPgCKOjO9gDHVOcoLGGc5V3sB424XLC9gAvYZ+WAT1Joa0KahxEWWx/0AkKntAJhBQANApjYEcDZhx+kB2JKpdTQA2GEjoGLzEidCN0kVW4BmKCilegGedRttU0RTgBpKhQ544iC+DkADpWIHFJwGwQCY5SFGACwPMU5JUtAoKkDFZicjoI5gqjOTze5HAOeFA2r0hWOAM+tiLCQ3z2LxGedDnVSjnNwqFU3OKDho6KDTltu049SuhYtT3os4Bu0BKjuOrTCFdjPaOERHVinMxip0HsixPPKLYvmKTxS5M0aeVWxBnWzjJqrCOhks4B3nAAwCOgNEBJaXg4vFWBGiJBSUg4sVFSWtmc5UAGyqNdM6CsvKwWWdZR01cfXI3dbVk2BNA/Yp+WCX5TSPxncFiZAXB5ivALIGXwM+ALcuANQ/Ht5+ngHbsI4AoK7eHpKrK5zcmxd18FkhLicdrgGkw00ioOhVJcfA2Eynw6UVnA5j4CYzT4J1fz5cGnDfD38RkM+DLwTc7f/VwLXb/37g/nz4D/yTwEuWPWbmKTN6ynI5K7P5JkNZZtlMLbWe5Vp3m1x35jdfLg6zfL/q8l/fu4XWB7XW+ghgpQHoPTrzwwJtKoo6TGPNHUcZcIA0FlwfLgLTIitfBES3rwROlLQvh8VkkDyJP+PFPZy0niyPmly90XoON6/sLDuhWx8WRwrWS949IlAIGIK1ybs5grXer44U7pKjXdKfCTe9I9zzzew3hQ1VpfX/zmMAAAAASUVORK5CYII="
                         u = 2
                         return P.V($.lo().a, $async$fz)
                     case 2:
@@ -20446,7 +20446,7 @@ u = d.a
                     s = T.u(r.r, !0, c)
                     if (s > t)
                         t = s
-                    p.bL(t * 4, !0, r.r, T.a3(), c, d)}
+                    p.bL(t * 8, !0, r.r, T.a3(), c, d)}
 else{
 u = d.a
 u.push(T.e("[0]:[我将在此成为英雄！]", r.r, p, q, q, 1, 1000, 100))
@@ -23569,6 +23569,7 @@ T.tha9n3.prototype = {
         ak: function(a, b, c, d, e) {
             var u = this
             if (a > 0 && (d.m() & 63) < u.z) {
+			    e.a.push(T.e("[0],", u.z, u.x, null, null, 0, 1000, 100))
                 e.a.push(T.e(O.c("mlIs"), u.r, u.x, null, null, 0, 1000, 100))
                 a *= u.Q
             }
@@ -23641,6 +23642,7 @@ T.tha9n3.prototype = {
               , r = a[0].a
               , q = T.u(u.r, !0, c)
               , p = d.a
+			u.f = 1
             p.push(T.e(O.c("oFrY"), u.r, r, t, t, 20, 1000, 100))
             if (r.a6($.kj(), c)) {
                 p.push(T.e(O.c("vVob"), r, u.r, t, t, 20, 1000, 100))
@@ -33759,6 +33761,12 @@ T.rio.prototype = {
         t.r = this
         this.k2 = t
         t = this.id
+		u = new T.hM()
+u.f = 80
+t.push(u)
+u = new T.hS()
+u.f = 180
+t.push(u)
 		      
     }, 
     bM: function() {
@@ -34286,7 +34294,8 @@ t.push(u)
             u.r = t
             t.k2 = u
             u = t.id
-            u.push(new T.dZ())
+            u.push(new T.dR())
+			u.push(new T.dS())
                 
             
         },
@@ -38509,7 +38518,7 @@ C.fox2 = H.a(u([30, 22, 41, 42, 34, 30, 36, 399]), [P.j])
 C.fox3 = H.a(u([42, 25, 20, 21, 13, 20, 44, 487]), [P.j])
 C.fox4 = H.a(u([3, 1, 24, 2, 32, -16, 36, 302]), [P.j])
 C.Squall = H.a(u([15, 33, 3, 7, -14, 16, 16, 37]), [P.j])
-C.rio = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.rio = H.a(u([0, 0, 0, 300, 0, 0, 0, 400]), [P.j])
 C.yuuka = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.noa = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.koyuki = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
@@ -38625,7 +38634,7 @@ C.yeya = H.a(u([18, -46, -11, -82, 19, -70, 940, 999749]), [P.j])
 "ribbit3",
 "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAABaSURBVDhPY/x/n/M/AwWACUqTDTBdoPANygCCB1wQGpsYFFDsAuwGoNkCBtjEgIDGYYANEBUGIEXICtH5SGCweoEEMNgMIOR/EEBTgzCAGM0wgKSWwuzMwAAAr9QgbvMBONYAAAAASUVORK5CYII=",
 "ribbit4",
-"iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAABySURBVDhPY2RgYPj/Vc8QSJEOuC+dZ2AEav4P5ZMFMAzgungOymJg+KZvBKaxicEAE5QmG2A1AN0WEMAmBgIUuwBvGGADRIUBSBGyQnQ+MhjEXiAWYDWAkCuQAcVhgGIAMTajq4EbQIqzkdVSmJ3PMwAAEwAvE5QUikwAAAAASUVORK5CYII=",
+"iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAABiSURBVDhPY/yqZ/ifgQLABKXJBhgu4Lp4DspiYPimbwSmsYnBAMUuwGoAui0ggE0MBGgbBtgAUWEAUoSsEJ2PDAaxF4gFWA0g5ApkQHEYoBhAjM3oauAGkOJsZLUUZmcGBgDlrilpBtD8xgAAAABJRU5ErkJggg==",
 "fox1",
 "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAADUSURBVDhPY3RwcPjPQAFggtJYwdo7T8AYH8BpAEhjsIoMGOMzBK8LiAEYBuzfvx9Mw2yGuQQEYHLIAMUAmFORDUHXjO4dFAM8k6LBtLcWH4ptIDZIDARAaia2R4HZIIBiANehg2B667VPYBqkEWYQTAymBgZQDEC2FReAqYG5AiMQwUBeA4JhAJ2PBOAGEGM7CFw6MRtM51cuA9NwA97JqkJZQPDwBgTDABJfzyIVTMMAdi8QADKhXVAWkgGw+CYGIKtFcYGjoyOUhRugq6EwOzMwAAAMilKFLFXM+AAAAABJRU5ErkJggg==",
 "fox2",
