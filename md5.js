@@ -36657,6 +36657,7 @@ dk: function(a, b, c, d, e, f, g) {
     T.ih.prototype = {
         aK: function(a, b, c, d) {
             var v ,u, t, s, r = this
+			d.a.push(T.e("mp为[0]", this.r.fy , this.r, null, null, 0, 1000, 100))
             if (r.f > 0) {
                 u = H.o(r.r.r1.h(0, $.kl()), "$idK")
                 if (u == null) {
