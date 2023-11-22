@@ -20375,7 +20375,9 @@ tha4b1: function tha4b1() {
                         u.push(T.e(O.c("vVob"), p, r.r, q, q, 0, 1000, 100))
                         return
                     }
+					u.push(T.e("[0],[1]", t, t, q, q, 0, 1000, 100))
                     p.bL(t * 4, !0, r.r, T.a3(), c, d)
+					
                 }
             }
         },
