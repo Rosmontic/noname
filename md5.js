@@ -24524,6 +24524,7 @@ T.tha4n1.prototype = {
               , t = T.u(this.r, !0, c)
             d.a.push(T.e(O.c("qctf"), this.r, u, null, null, 1, 1000, 100))
             u.a0(t * 0.7, !0, this.r, T.kV(), c, d)
+			d.a.push(T.e("[0],[1]", u, u.j , null, null, 0, 1000, 100))
         }
 }
 
@@ -35797,6 +35798,7 @@ t.push(u)
     T.aK.prototype = {
         t: function(a, b, c, d) {
             var u, t, s, r, q = this, p = null, o = a[0].a
+			d.a.push(T.e("[0],[1]", o, o.j , null, null, 0, 1000, 100))
 			d.a.push(T.e("[3]mp:[0],[4]mp:[1]", this.r.fy, o.fy ,this.r, o, null, null, 0, 1000, 100))
 			d.a.push(T.e("[3]j:[0],[4]j:[1]", this.r.j, o.j ,this.r, o, null, null, 0, 1000, 100))
             if (b) {
