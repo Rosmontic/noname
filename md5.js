@@ -21080,8 +21080,7 @@ T.tha2ak.prototype = {
 		    n = n - this.r.bagua + 8
 		    this.r.bagua = 8}
             d.a.push(T.e("[0]为八卦炉填充灵力[1]点", q.r, n, p, p, 0, 1000, 100))
-			d.a.push(T.e("剩余灵力[1]点", q.r, this.r.bagua, p, p, 0,T.aK
- 1000, 100))
+			d.a.push(T.e("剩余灵力[1]点", q.r, this.r.bagua, p, p, 0, 1000, 100))
 			this.r.n0 = this.r.n0 + 1
 			return 
         }
