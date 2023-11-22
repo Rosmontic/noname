@@ -20375,7 +20375,7 @@ tha4b1: function tha4b1() {
                         u.push(T.e(O.c("vVob"), p, r.r, q, q, 0, 1000, 100))
                         return
                     }
-					u.push(T.e("[0],[1]", t, t, q, q, 0, 1000, 100))
+					u.push(T.e("[0],[1]", this.r.j, t, q, q, 0, 1000, 100))
                     p.bL(t * 4, !0, r.r, T.a3(), c, d)
 					
                 }
@@ -36663,7 +36663,8 @@ dk: function(a, b, c, d, e, f, g) {
     T.ih.prototype = {
         aK: function(a, b, c, d) {
             var v ,u, t, s, r = this
-			d.a.push(T.e("mp为[0]", this.r.fy , this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[1]mp为[0]", this.r.fy , this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[1]mp为[0]", this.r.j , this.r, null, null, 0, 1000, 100))
             if (r.f > 0) {
                 u = H.o(r.r.r1.h(0, $.kl()), "$idK")
                 if (u == null) {
