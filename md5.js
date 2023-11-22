@@ -20439,6 +20439,7 @@ if (r.r.fr > 199){
 u = d.a
                 u.push(T.e("[0]发动[真实的斩击]", r.r, p, q, q, 1, 1000, 100))
                 t = T.u(r.r, !0, c)
+				u.push(T.e("[0]:[1]", r.r, t, q, q, 1, 1000, 100))
                 s = T.u(r.r, !0, c)
 
                 if (s > t)
@@ -24265,9 +24266,8 @@ T.tha4n3.prototype = {
             if (p > 8)
                 q.f = p - 1
             u = a[0].a
-			
             t = C.e.Z(T.u(q.r, !0, c) / 60)
-			d.a.push(T.e("[0],", t, t, null, null, 0, 1000, 100))
+			
             s = u.fx - u.fr
             if (t > s)
                 t = s
@@ -24444,10 +24444,10 @@ T.tha4n1.prototype = {
                 u = t.y
                 if (u > 0) {
                     t.y = u - a
-                    return 0
+                    return 
                 } else if (a + t.r.j >= 2048) {
                     t.H(null, c)
-                    return 0
+                    return a
                 }
             }
             return a
