@@ -20144,7 +20144,9 @@ tha4b1: function tha4b1() {
             var u = a[0].a
               , t = T.u(this.r, !0, c)
             d.a.push(T.e(O.c("vFzm"), this.r, u, null, null, 1, 1000, 100))
-            u.a0(t * 1.3, !0, this.r, T.q7(), c, d)
+			d.a.push(T.e("[0]: [1]", this.r.y, t, null, null, 0, 1000, 100))
+			u.bL(t * 1, !0, this.r, T.q7(), c, d)
+            u.a0(t * 1, !0, this.r, T.q7(), c, d)
         }
     }
     T.hI.prototype = {
@@ -20439,7 +20441,6 @@ if (r.r.fr > 199){
 u = d.a
                 u.push(T.e("[0]发动[真实的斩击]", r.r, p, q, q, 1, 1000, 100))
                 t = T.u(r.r, !0, c)
-				u.push(T.e("[0]:[1]", r.r, t, q, q, 1, 1000, 100))
                 s = T.u(r.r, !0, c)
 
                 if (s > t)
@@ -24444,7 +24445,7 @@ T.tha4n1.prototype = {
                 u = t.y
                 if (u > 0) {
                     t.y = u - a
-                    return 
+                    return a
                 } else if (a + t.r.j >= 2048) {
                     t.H(null, c)
                     return a
