@@ -20420,7 +20420,7 @@ T.hKm.prototype = {
         t: function(a, b, c, d) {
             var u, t, s, r = this, q = null, p = r.fy
             if (p == null) {
-                r.fy = a[0].a
+                r.s = a[0].a
                 d.a.push(T.e("[0]发动[虚伪的剑闪]", r.r , p, q, q, 1, 1000, 100))
                 r.r.ry.i(0, r.fr)
                 p = r.r
@@ -24265,11 +24265,14 @@ T.tha4n3.prototype = {
             if (p > 8)
                 q.f = p - 1
             u = a[0].a
+			
             t = C.e.Z(T.u(q.r, !0, c) / 60)
+			d.a.push(T.e("[0],", t, t, null, null, 0, 1000, 100))
             s = u.fx - u.fr
             if (t > s)
                 t = s
             p = d.a
+			
             p.push(T.e(O.c("SsKC"), q.r, u, null, null, t, 1000, 100))
             r = u.fr
             u.fr = r + t
@@ -24477,10 +24480,10 @@ T.tha4n1.prototype = {
                 u = t.y
                 if (u > 0) {
                     t.y = u - a
-                    return 0
+                    return a
                 } else if (a + t.r.j >= 2048) {
                     t.H(null, c)
-                    return 0
+                    return a
                 }
             }
             return a
