@@ -20375,7 +20375,7 @@ tha4b1: function tha4b1() {
                         u.push(T.e(O.c("vVob"), p, r.r, q, q, 0, 1000, 100))
                         return
                     }
-					u.push(T.e("[0],[1]", this.r.j, t, q, q, 0, 1000, 100))
+					d.a.push(T.e("[0],[1]", this.r.j, this.r.fy , null, null, 0, 1000, 100))
                     p.bL(t * 4, !0, r.r, T.a3(), c, d)
 					
                 }
@@ -20842,7 +20842,9 @@ u.push($.v())
             u.r.r1.k(0, $.X(), u)
             u.r.E()
             s = u.r
+			d.a.push(T.e("[0],[1]", this.r.j, this.r.fy , null, null, 0, 1000, 100))
             s.fy = s.fy + 32
+			d.a.push(T.e("[0],[1]", this.r.j, this.r.fy , null, null, 0, 1000, 100))
         },
         aq: function(a, b) {
             if (--this.fy <= 0)
@@ -20919,6 +20921,7 @@ u.push($.v())
         },
         t: function(a, b, c, d) {
             var u, t, s = this, r = null, q = a[0].a, p = d.a
+			d.a.push(T.e("[0],[1]", this.r.j, this.r.fy , null, null, 0, 1000, 100))
             p.push(T.e(O.c("KesN"), s.r, q, r, r, 1, 1000, 100))
             if (!q.a6($.ai(), c))
                 u = q.fr > 0 && !q.A && T.bd(s.r.db, q.cy + q.dx, c)
@@ -20942,6 +20945,7 @@ u.push($.v())
             }
             if (s.r.r1.G(0, $.X()))
                 t.z += 3
+			d.a.push(T.e("[0],[1]", this.r.j, this.r.fy , null, null, 0, 1000, 100))
             p.push(T.e(C.c.K(O.c("aTZN"), $.l8()), s.r, q, r, r, 120, 1000, 100))
         }
     }
@@ -21013,6 +21017,7 @@ u.push($.v())
         },
         t: function(a, b, c, d) {
             var u, t, s, r, q = this, p = null
+			d.a.push(T.e("[0],[1]", this.r.j, this.r.fy , null, null, 0, 1000, 100))
             q.f = C.d.Z(q.f * 0.75)
             if (!q.r.r1.G(0, $.X())) {
                 u = q.r.u
@@ -21040,6 +21045,7 @@ u.push($.v())
             s.push(T.e(O.c("EIcZ"), T.lV(q.r), q.r, p, p, 60, 1000, 100))
             q.r.x.aU(r)
             s.push(T.e(O.c("Jggp"), q.r, T.a1(r, r.fr), p, p, 0, 1000, 100))
+			d.a.push(T.e("[0],[1]", this.r.j, this.r.fy , null, null, 0, 1000, 100))
         }
     }
     T.hN.prototype = {
@@ -21059,7 +21065,9 @@ u.push($.v())
             if (r > s)
                 s = r
             d.a.push(T.e(O.c("udkt"), u.r, t, null, null, 1, 1000, 100))
+			d.a.push(T.e("[0],[1]", this.r.j, this.r.fy , null, null, 0, 1000, 100))
             t.a0(s, !1, u.r, T.a3(), c, d)
+			d.a.push(T.e("[0],[1]", this.r.j, this.r.fy , null, null, 0, 1000, 100))
         }
 }
 T.tha2ak.prototype = {
