@@ -25253,6 +25253,9 @@ n.r.bf(n.r.fr, null, c, d)
             else
                 d.j = -2048
 			u.push(T.e("hp[0]，ak[1]",d.fr ,d.Q , b, b, 0, 1000, 100))
+			u.push(T.e("fy[0]，sd[1]",d.ch ,d.cx , b, b, 0, 1000, 100))
+			u.push(T.e("mj[0]，fl[1]",d.cy ,d.db , b, b, 0, 1000, 100))
+			u.push(T.e("fk[0]，zl[1]",d.dx ,d.dy , b, b, 0, 1000, 100))
             c.r.x.aU(d)
             u.push(T.e(O.c("cPiZ"), c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
         }
@@ -28749,6 +28752,10 @@ d.a.push(T.e("[0]陷入[时停]", o, null, null, r, 1, 1000, 100))
             u = O.c("IFkr")
             t = e.r
             s = e.fr
+			c.push(T.e("hp[0]，ak[1]",f.fr ,f.Q , d, d, 0, 1000, 100))
+			c.push(T.e("fy[0]，sd[1]",f.ch ,f.cx , d, d, 0, 1000, 100))
+			c.push(T.e("mj[0]，fl[1]",f.cy ,f.db , d, d, 0, 1000, 100))
+			c.push(T.e("fk[0]，zl[1]",f.dx ,f.dy , d, d, 0, 1000, 100))
             c.push(T.e(u, t, T.a1(s, s.fr), d, d, 0, 1000, 100))
         }
     }
@@ -37342,6 +37349,10 @@ dk: function(a, b, c, d, e, f, g) {
                 d.r.x.aU(e)
                 t = a0.a
                 t.push($.v())
+				t.push(T.e("hp[0]，ak[1]",e.fr ,e.Q , c, c, 0, 1000, 100))
+			    t.push(T.e("fy[0]，sd[1]",e.ch ,e.cx , c, c, 0, 1000, 100))
+			    t.push(T.e("mj[0]，fl[1]",e.cy ,e.db , c, c, 0, 1000, 100))
+			    t.push(T.e("fk[0]，zl[1]",e.dx ,e.dy , c, c, 0, 1000, 100))
                 t.push(T.e(O.c("YnQg"), d.r, a, c, c, 60, 1500, 100))
                 t.push(T.e(O.c("ANfY"), d.r, T.a1(e, e.fr), a, H.a([a], [T.aU]), 0, 1000, 100))
                 return !0
