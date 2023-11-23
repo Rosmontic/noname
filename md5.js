@@ -24878,6 +24878,7 @@ T.tha4n1.prototype = {
                 q.y = u - s
                 r = C.e.Z(s / (p.db + 64))
                 b.a.push(T.e(O.c("Pmsc"), q.r, p, null, null, 0, 1000, 100))
+				b.a.push(T.e("[0],[1]", this.r.j, this.r.fy , null, null, 0, 1000, 100))
                 p.aA(r, q.r, T.a3(), a, b)
                 if (--q.z === 0)
                     q.H(null, b)
@@ -25251,6 +25252,7 @@ n.r.bf(n.r.fr, null, c, d)
                 d.j = 2048
             else
                 d.j = -2048
+			u.push(T.e("hp[0]，ak[1]",d.fr ,d.Q , b, b, 0, 1000, 100))
             c.r.x.aU(d)
             u.push(T.e(O.c("cPiZ"), c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
         }
