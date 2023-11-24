@@ -23824,6 +23824,7 @@ T.tha9n3.prototype = {
             u = T.u(this.r, !0, c)
             t = r.b
             d.a.push(T.e(O.c("iksa"), this.r, s, null, null, 1, 1000, 100))
+			d.a.push(T.e("[0],[1]", this.r.fy, this.f , null, null, 0, 1000, 100))
             s.a0(u * (1.5 + t), !0, this.r, T.mC(), c, d)
         }
     }
@@ -28603,6 +28604,7 @@ d.a.push(T.e("[0]陷入[时停]", o, null, null, r, 1, 1000, 100))
             s = q.r
             r = s.fr
             s.fr = 0
+			p.push(T.e("[0],[1]", this.r.fy, this.f , null, null, 0, 1000, 100))
             p.a0(u * (4 + t), !0, s, T.mC(), c, d)
             q.r.bf(r, null, c, d)
         }
