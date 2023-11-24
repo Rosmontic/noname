@@ -24162,6 +24162,7 @@ T.blindlyx.prototype = {
                 t.z += 2
                 t.Q += 2
             }
+			d.a.push(T.e("[0],[1]", this.r.cy, this.r.cx , null, null, 0, 1000, 100))
             p.push(T.e(C.c.K(O.c("TxmT"), $.nf()), s.r, q, r, r, 0, 1000, 100))
         }
 }   
@@ -25165,6 +25166,7 @@ n.r.bf(n.r.fr, null, c, d)
                 t.aO(0)
             } else
                 t.fr += 4
+			d.a.push(T.e("[0],[1]", this.r, this.f , null, null, 0, 1000, 100))
             o.push(T.e(C.c.K(O.c("rWdW"), $.l7()), r.r, p, q, q, 0, 1000, 100))
             o = r.r
             s = o.fr
@@ -25257,6 +25259,7 @@ n.r.bf(n.r.fr, null, c, d)
 			u.push(T.e("mj[0]，fl[1]",d.cy ,d.db , b, b, 0, 1000, 100))
 			u.push(T.e("fk[0]，zl[1]",d.dx ,d.dy , b, b, 0, 1000, 100))
             c.r.x.aU(d)
+			u.push(T.e("fy[0]，sd[1]",d.ch ,d.cx , b, b, 0, 1000, 100))
             u.push(T.e(O.c("cPiZ"), c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
         }
     }
@@ -37165,7 +37168,7 @@ dk: function(a, b, c, d, e, f, g) {
                 return
             u = p > 63 ? 16 + (p - 63) : 16
             p = r.r.fr
-            if (p > 0 && p < u + (c.m() & 63) && (c.m() & 63) < r.f) {
+            if (p > 0 || p < u + (c.m() & 63) && (c.m() & 63) < r.f) {
                 r.r.r1.k(0, $.lg(), r)
                 r.r.r2.i(0, r.Q)
                 r.r.E()
