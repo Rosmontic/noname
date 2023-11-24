@@ -28600,11 +28600,12 @@ d.a.push(T.e("[0]陷入[时停]", o, null, null, r, 1, 1000, 100))
                 o = new T.aQ()
             u = T.u(q.r, !0, c)
             t = o.b
+			d.a.push(T.e("[0],[1]", this.r.fy, this.f , null, null, 0, 1000, 100))
             d.a.push(T.e(O.c("eSEF"), q.r, p, null, null, 0, 1000, 100))
             s = q.r
             r = s.fr
             s.fr = 0
-			p.push(T.e("[0],[1]", this.r.fy, this.f , null, null, 0, 1000, 100))
+			
             p.a0(u * (4 + t), !0, s, T.mC(), c, d)
             q.r.bf(r, null, c, d)
         }
