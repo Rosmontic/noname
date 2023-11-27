@@ -35817,7 +35817,6 @@ t.push(u)
     T.aK.prototype = {
         t: function(a, b, c, d) {
             var u, t, s, r, q = this, p = null, o = a[0].a
-
             if (b) {
                 u = q.r
                 u = u.db > u.Q
@@ -35929,7 +35928,7 @@ t.push(u)
                         u.cx = b
             } else {
                 u.ch = d
-                if ((c.m() < u.f) {
+                if (c.m() < u.f) {
                     u.cx = b
                     u.Q = !0
                     d.b.push(u.gdg())
