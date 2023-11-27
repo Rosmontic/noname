@@ -8465,7 +8465,7 @@ tha7n1: function tha7n1() {
             _.x = b
             _.y = null
             _.z = 42
-            _.Q = 2
+            _.Q = 20
             _.c = _.b = _.a = null
         },
         hS: function hS() {
@@ -24593,6 +24593,7 @@ T.tha4n1.prototype = {
         },
         al: function(a) {
             this.r.J *= 1.12
+			this.r.cy *= 12
         },
         gR: function() {
             return this.id
@@ -35923,15 +35924,21 @@ t.push(u)
         },
         ay: function(a, b, c, d) {
             var u = this
-            if (b.x == u.r.y && (c.m() & 63) < u.r.dy)
+            if (b.x == u.r.y && (c.m() & 1) < u.r.dy)
+			d.a.push(T.e("情况1", this.r, this.r , null, null, 0, 1000, 100))
                 return
             if (u.ch === d) {
+			    d.a.push(T.e("情况2", this.r, this.r , null, null, 0, 1000, 100))
                 if (u.Q && b != u.cx)
+				    d.a.push(T.e("情况21", this.r, this.r , null, null, 0, 1000, 100))
                     if ((c.m() & 127) < u.f)
+					    d.a.push(T.e("情况211", this.r, this.r , null, null, 0, 1000, 100))
                         u.cx = b
             } else {
                 u.ch = d
-                if (c.m() < u.f) {
+				d.a.push(T.e("情况3", this.r, this.r , null, null, 0, 1000, 100))
+                if ((c.m() & 1) < u.f) {
+				    d.a.push(T.e("情况3", this.r, this.r , null, null, 0, 1000, 100))
                     u.cx = b
                     u.Q = !0
                     d.b.push(u.gdg())
@@ -36036,7 +36043,7 @@ t.push(u)
         },
         bP: function(a, b, c) {
             var u, t, s, r, q, p, o, n, m = this, l = null
-            if ((b.m() & 63) < m.f) {
+            if ((b.m() & 1) < m.f) {
                 for (u = m.r.u,
                 t = u.length,
                 s = a.u,
@@ -36420,7 +36427,7 @@ dk: function(a, b, c, d, e, f, g) {
         },
         aX: function(a, b, c, d) {
             var u, t = this, s = c.m(), r = t.f
-            if ((s & 127) < r && !t.r.tigerCurse) {
+            if ((s & 1) < r && !t.r.tigerCurse) {
                 t.f = C.b.v(r + 1, 2)
                 s = C.c.K(O.c("fuXr"), $.lb())
                 r = t.r
@@ -37308,7 +37315,7 @@ dk: function(a, b, c, d, e, f, g) {
         },
         bP: function(a, b, a0) {
             var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d = this, c = null
-            if (!a.$iav && (b.m() & 63) < d.f && d.r.bq(b)) {
+            if (!a.$iav && (b.m() & 1) < d.f && d.r.bq(b)) {
                 a.r1.k(0, $.eE(), new T.iT())
                 u = H.d(d.r.a) + "?" + H.d($.nz())
                 t = d.r
