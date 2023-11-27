@@ -35818,9 +35818,7 @@ t.push(u)
     T.aK.prototype = {
         t: function(a, b, c, d) {
             var u, t, s, r, q = this, p = null, o = a[0].a
-			d.a.push(T.e("[0],[1]", o, o.j , null, null, 0, 1000, 100))
-			d.a.push(T.e("[3]mp:[0],[4]mp:[1]", this.r.fy, o.fy ,this.r, o, null, null, 0, 1000, 100))
-			d.a.push(T.e("[3]j:[0],[4]j:[1]", this.r.j, o.j ,this.r, o, null, null, 0, 1000, 100))
+
             if (b) {
                 u = q.r
                 u = u.db > u.Q
@@ -35924,21 +35922,15 @@ t.push(u)
         },
         ay: function(a, b, c, d) {
             var u = this
-            if (b.x == u.r.y && (c.m() & 1) < u.r.dy)
-			d.a.push(T.e("情况1", this.r, this.r , null, null, 0, 1000, 100))
+            if (b.x == u.r.y && (c.m() & 31) < u.r.dy)
                 return
             if (u.ch === d) {
-			    d.a.push(T.e("情况2", this.r, this.r , null, null, 0, 1000, 100))
                 if (u.Q && b != u.cx)
-				    d.a.push(T.e("情况21", this.r, this.r , null, null, 0, 1000, 100))
                     if ((c.m() & 127) < u.f)
-					    d.a.push(T.e("情况211", this.r, this.r , null, null, 0, 1000, 100))
                         u.cx = b
             } else {
                 u.ch = d
-				d.a.push(T.e("情况3", this.r, this.r , null, null, 0, 1000, 100))
-                if ((c.m() & 1) < u.f) {
-				    d.a.push(T.e("情况3", this.r, this.r , null, null, 0, 1000, 100))
+                if ((c.m() < u.f) {
                     u.cx = b
                     u.Q = !0
                     d.b.push(u.gdg())
