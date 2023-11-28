@@ -35922,7 +35922,7 @@ t.push(u)
         },
         ay: function(a, b, c, d) {
             var u = this
-            if (b.x == u.r.y && (c.m() & 1) < u.r.dy)
+            if (b.x == u.r.y && (c.m() & 36) < u.r.dy - 63)
                 return
             if (u.ch === d) {
                 if (u.Q && b != u.cx)
