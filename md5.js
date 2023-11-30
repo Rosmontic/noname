@@ -4672,7 +4672,7 @@
                     ++t.Q
                 }
                 if (u.h(0, $.X()) != null) {
-                    t.z += 10;
+                    t.z += 4;
                     ++t.Q
                 }
                 e.a.push(T.e(C.c.K(O.c("arnH"), $.n8()), a, b, null, null, 60, 1000, 100))
@@ -25132,6 +25132,10 @@ n.r.bf(n.r.fr, null, c, d)
     }
 
     T.i7.prototype = {
+	    ai:function(a,b){
+		   this.r=a
+           this.f= 300
+		},
         t: function(a, b, c, d) {
             var u, t, s, r = this, q = null, p = a[0].a, o = d.a
             o.push(T.e(O.c("vDpa"), r.r, p, q, q, 0, 1000, 100))
@@ -25147,10 +25151,10 @@ n.r.bf(n.r.fr, null, c, d)
             if (t == null) {
                 t = new T.bx()
                 t.r = p
-                t.fr = 4
+                t.fr = 10
                 t.aO(0)
             } else
-                t.fr += 4
+                t.fr += 10
             o.push(T.e(C.c.K(O.c("rWdW"), $.l7()), r.r, p, q, q, 0, 1000, 100))
             o = r.r
             s = o.fr
@@ -35951,7 +35955,7 @@ t.push(u)
             if (s.f <= 0 || s.ch.a != null)
                 return
             u = s.r
-            if (u.fr > 0 && !u.A && u.y.f.length > 1 && (c.m() & 63) < s.f) {
+            if (u.fr > 0 && !u.A && u.y.f.length > 0) {
                 s.r.r2.i(0, s.ch)
                 s.r.E()
                 u = O.c("cAAA")
@@ -36664,7 +36668,7 @@ dk: function(a, b, c, d, e, f, g) {
 				
                 if (t >= s)
                 {
-                    v = (c.au(1 + C.b.v(t * 3, 4)) + 1)
+                    v = (c.au(1 + C.b.v(t * 3, 4)) + 1)+ 180
                     u.x = s + v
                     d.a.push(T.e("[0]获得[1]点[护盾]", this.r , v, null, null, 0, 1000, 100))
                 }
@@ -37128,11 +37132,12 @@ dk: function(a, b, c, d, e, f, g) {
                 return
             u = p > 63 ? 16 + (p - 63) : 16
             p = r.r.fr
-            if (p > 0 && p < u + (c.m() & 63) && (c.m() & 63) < r.f) {
+            if (p > 0 ) {
                 r.r.r1.k(0, $.lg(), r)
                 r.r.r2.i(0, r.Q)
                 r.r.E()
                 p = d.a
+				this.f = 0
                 p.push($.v())
                 t = O.c("ZdkN")
                 s = r.r
