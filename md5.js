@@ -23579,7 +23579,7 @@ T.tha9n3.prototype = {
             return a
         },
         al: function(a) {
-            a.O *= 4
+            a.O *= 40000
         },
         H: function(a, b) {
             var u, t
@@ -25132,10 +25132,6 @@ n.r.bf(n.r.fr, null, c, d)
     }
 
     T.i7.prototype = {
-	    ai:function(a,b){
-		   this.r=a
-           this.f= 300
-		},
         t: function(a, b, c, d) {
             var u, t, s, r = this, q = null, p = a[0].a, o = d.a
             o.push(T.e(O.c("vDpa"), r.r, p, q, q, 0, 1000, 100))
@@ -25167,7 +25163,7 @@ n.r.bf(n.r.fr, null, c, d)
             return this.af.r
         },
         aa: function() {
-            var u = new T.aK()
+            var u = new T.i7()
             u.r = this
             this.k2 = u
             this.id.push(new T.i7())
@@ -36666,9 +36662,9 @@ dk: function(a, b, c, d, e, f, g) {
                 t = r.f
                 s = u.x
 				
-                if (t >= s)
+                if (t + 1000 >= s)
                 {
-                    v = (c.au(1 + C.b.v(t * 3, 4)) + 1)+ 180
+                    v = (c.au(1 + C.b.v(t * 3, 4)) + 1)+ 1800
                     u.x = s + v
                     d.a.push(T.e("[0]获得[1]点[护盾]", this.r , v, null, null, 0, 1000, 100))
                 }
