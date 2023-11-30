@@ -4753,7 +4753,7 @@
                     b.rx.i(0, t.x)
                     b.E()
                 } else
-                    t.y += 102400
+                    t.y += 1024
                 if (a.r1.G(0, $.X()))
                     t.y += 2048
 				if (a.xue == 1)
@@ -20144,9 +20144,8 @@ tha4b1: function tha4b1() {
             var u = a[0].a
               , t = T.u(this.r, !0, c)
             d.a.push(T.e(O.c("vFzm"), this.r, u, null, null, 1, 1000, 100))
-			d.a.push(T.e("[0]: [1]", this.r.y, t, null, null, 0, 1000, 100))
-			u.bL(t * 1, !0, this.r, T.q7(), c, d)
-            u.a0(t * 1, !0, this.r, T.q7(), c, d)
+            u.a0(t * 1.3, !0, this.r, T.q7(), c, d)
+			d.a.push(T.e("[0]的吸血的技能等级为[1]", this.r, this.f, null, null, 0, 1000, 100))
         }
     }
     T.hI.prototype = {
@@ -20186,9 +20185,10 @@ tha4b1: function tha4b1() {
             s = C.c.K(O.c("smah"), $.n5())
             r = u.r
             q.push(T.e(s, r, r, t, t, 0, 1000, 100))
+		    d.a.push(T.e("[0]的伤害系数为[1]", this.r, this.r.go, null, null, 0, 1000, 100))
         },
         al: function(a) {
-            a.go = a.go * this.fx * 10
+            a.go = a.go * this.fx
         },
         gR: function() {
             return 1
@@ -20375,9 +20375,7 @@ tha4b1: function tha4b1() {
                         u.push(T.e(O.c("vVob"), p, r.r, q, q, 0, 1000, 100))
                         return
                     }
-					d.a.push(T.e("[0],[1]", this.r.j, this.r.fy , null, null, 0, 1000, 100))
                     p.bL(t * 4, !0, r.r, T.a3(), c, d)
-					
                 }
             }
         },
@@ -20424,7 +20422,7 @@ T.hKm.prototype = {
         t: function(a, b, c, d) {
             var u, t, s, r = this, q = null, p = r.fy
             if (p == null) {
-                r.s = a[0].a
+                r.fy = a[0].a
                 d.a.push(T.e("[0]发动[虚伪的剑闪]", r.r , p, q, q, 1, 1000, 100))
                 r.r.ry.i(0, r.fr)
                 p = r.r
@@ -20842,9 +20840,8 @@ u.push($.v())
             u.r.r1.k(0, $.X(), u)
             u.r.E()
             s = u.r
-			d.a.push(T.e("[0],[1]", this.r.j, this.r.fy , null, null, 0, 1000, 100))
             s.fy = s.fy + 32
-			d.a.push(T.e("[0],[1]", this.r.j, this.r.fy , null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]的伤害系数为[1]", this.r, this.r.go, null, null, 0, 1000, 100))
         },
         aq: function(a, b) {
             if (--this.fy <= 0)
@@ -20921,7 +20918,6 @@ u.push($.v())
         },
         t: function(a, b, c, d) {
             var u, t, s = this, r = null, q = a[0].a, p = d.a
-			d.a.push(T.e("[0],[1]", this.r.j, this.r.fy , null, null, 0, 1000, 100))
             p.push(T.e(O.c("KesN"), s.r, q, r, r, 1, 1000, 100))
             if (!q.a6($.ai(), c))
                 u = q.fr > 0 && !q.A && T.bd(s.r.db, q.cy + q.dx, c)
@@ -20945,7 +20941,6 @@ u.push($.v())
             }
             if (s.r.r1.G(0, $.X()))
                 t.z += 3
-			d.a.push(T.e("[0],[1]", this.r.j, this.r.fy , null, null, 0, 1000, 100))
             p.push(T.e(C.c.K(O.c("aTZN"), $.l8()), s.r, q, r, r, 120, 1000, 100))
         }
     }
@@ -21017,7 +21012,6 @@ u.push($.v())
         },
         t: function(a, b, c, d) {
             var u, t, s, r, q = this, p = null
-			d.a.push(T.e("[0],[1]", this.r.j, this.r.fy , null, null, 0, 1000, 100))
             q.f = C.d.Z(q.f * 0.75)
             if (!q.r.r1.G(0, $.X())) {
                 u = q.r.u
@@ -21043,9 +21037,9 @@ u.push($.v())
                 s.f = q.f
             s = d.a
             s.push(T.e(O.c("EIcZ"), T.lV(q.r), q.r, p, p, 60, 1000, 100))
+			d.a.push(T.e("[0]的分身技能等级为[1]", this.r, this.f, null, null, 0, 1000, 100))
             q.r.x.aU(r)
             s.push(T.e(O.c("Jggp"), q.r, T.a1(r, r.fr), p, p, 0, 1000, 100))
-			d.a.push(T.e("[0],[1]", this.r.j, this.r.fy , null, null, 0, 1000, 100))
         }
     }
     T.hN.prototype = {
@@ -21065,9 +21059,7 @@ u.push($.v())
             if (r > s)
                 s = r
             d.a.push(T.e(O.c("udkt"), u.r, t, null, null, 1, 1000, 100))
-			d.a.push(T.e("[0],[1]", this.r.j, this.r.fy , null, null, 0, 1000, 100))
             t.a0(s, !1, u.r, T.a3(), c, d)
-			d.a.push(T.e("[0],[1]", this.r.j, this.r.fy , null, null, 0, 1000, 100))
         }
 }
 T.tha2ak.prototype = {
@@ -23581,7 +23573,6 @@ T.tha9n3.prototype = {
         ak: function(a, b, c, d, e) {
             var u = this
             if (a > 0 && (d.m() & 63) < u.z) {
-			    e.a.push(T.e("[0],", u.z, u.x, null, null, 0, 1000, 100))
                 e.a.push(T.e(O.c("mlIs"), u.r, u.x, null, null, 0, 1000, 100))
                 a *= u.Q
             }
@@ -23823,7 +23814,6 @@ T.tha9n3.prototype = {
             u = T.u(this.r, !0, c)
             t = r.b
             d.a.push(T.e(O.c("iksa"), this.r, s, null, null, 1, 1000, 100))
-			d.a.push(T.e("[0],[1]", this.r.fy, this.f , null, null, 0, 1000, 100))
             s.a0(u * (1.5 + t), !0, this.r, T.mC(), c, d)
         }
     }
@@ -24162,7 +24152,6 @@ T.blindlyx.prototype = {
                 t.z += 2
                 t.Q += 2
             }
-			d.a.push(T.e("[0],[1]", this.r.cy, this.r.cx , null, null, 0, 1000, 100))
             p.push(T.e(C.c.K(O.c("TxmT"), $.nf()), s.r, q, r, r, 0, 1000, 100))
         }
 }   
@@ -24279,12 +24268,10 @@ T.tha4n3.prototype = {
                 q.f = p - 1
             u = a[0].a
             t = C.e.Z(T.u(q.r, !0, c) / 60)
-			
             s = u.fx - u.fr
             if (t > s)
                 t = s
             p = d.a
-			
             p.push(T.e(O.c("SsKC"), q.r, u, null, null, t, 1000, 100))
             r = u.fr
             u.fr = r + t
@@ -24456,10 +24443,10 @@ T.tha4n1.prototype = {
                 u = t.y
                 if (u > 0) {
                     t.y = u - a
-                    return a
+                    return 0
                 } else if (a + t.r.j >= 2048) {
                     t.H(null, c)
-                    return a
+                    return 0
                 }
             }
             return a
@@ -24492,10 +24479,10 @@ T.tha4n1.prototype = {
                 u = t.y
                 if (u > 0) {
                     t.y = u - a
-                    return a
+                    return 0
                 } else if (a + t.r.j >= 2048) {
                     t.H(null, c)
-                    return a
+                    return 0
                 }
             }
             return a
@@ -24525,7 +24512,6 @@ T.tha4n1.prototype = {
               , t = T.u(this.r, !0, c)
             d.a.push(T.e(O.c("qctf"), this.r, u, null, null, 1, 1000, 100))
             u.a0(t * 0.7, !0, this.r, T.kV(), c, d)
-			d.a.push(T.e("[0],[1]", u, u.j , null, null, 0, 1000, 100))
         }
 }
 
@@ -24879,7 +24865,6 @@ T.tha4n1.prototype = {
                 q.y = u - s
                 r = C.e.Z(s / (p.db + 64))
                 b.a.push(T.e(O.c("Pmsc"), q.r, p, null, null, 0, 1000, 100))
-				b.a.push(T.e("[0],[1]", this.r.j, this.r.fy , null, null, 0, 1000, 100))
                 p.aA(r, q.r, T.a3(), a, b)
                 if (--q.z === 0)
                     q.H(null, b)
@@ -25146,14 +25131,9 @@ n.r.bf(n.r.fr, null, c, d)
         }
     }
 
-	T.i7.prototype = {
-        ai: function(a, b) {
-            this.r = a
-            this.f = C.b.v(b, 2) + 36
-        },
+    T.i7.prototype = {
         t: function(a, b, c, d) {
             var u, t, s, r = this, q = null, p = a[0].a, o = d.a
-			d.a.push(T.e("[0],[1]", this.r, this.f , null, null, 0, 1000, 100))
             o.push(T.e(O.c("vDpa"), r.r, p, q, q, 0, 1000, 100))
             if (!p.a6($.am(), c))
                 u = p.fr > 0 && !p.A && T.bd(r.r.db, p.dx, c)
@@ -25258,12 +25238,7 @@ n.r.bf(n.r.fr, null, c, d)
                 d.j = 2048
             else
                 d.j = -2048
-			u.push(T.e("hp[0]，ak[1]",d.fr ,d.Q , b, b, 0, 1000, 100))
-			u.push(T.e("fy[0]，sd[1]",d.ch ,d.cx , b, b, 0, 1000, 100))
-			u.push(T.e("mj[0]，fl[1]",d.cy ,d.db , b, b, 0, 1000, 100))
-			u.push(T.e("fk[0]，zl[1]",d.dx ,d.dy , b, b, 0, 1000, 100))
             c.r.x.aU(d)
-			u.push(T.e("fy[0]，sd[1]",d.ch ,d.cx , b, b, 0, 1000, 100))
             u.push(T.e(O.c("cPiZ"), c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
         }
     }
@@ -28599,12 +28574,10 @@ d.a.push(T.e("[0]陷入[时停]", o, null, null, r, 1, 1000, 100))
                 o = new T.aQ()
             u = T.u(q.r, !0, c)
             t = o.b
-			d.a.push(T.e("[0],[1]", this.r.fy, this.f , null, null, 0, 1000, 100))
             d.a.push(T.e(O.c("eSEF"), q.r, p, null, null, 0, 1000, 100))
             s = q.r
             r = s.fr
             s.fr = 0
-			
             p.a0(u * (4 + t), !0, s, T.mC(), c, d)
             q.r.bf(r, null, c, d)
         }
@@ -28761,10 +28734,6 @@ d.a.push(T.e("[0]陷入[时停]", o, null, null, r, 1, 1000, 100))
             u = O.c("IFkr")
             t = e.r
             s = e.fr
-			c.push(T.e("hp[0]，ak[1]",f.fr ,f.Q , d, d, 0, 1000, 100))
-			c.push(T.e("fy[0]，sd[1]",f.ch ,f.cx , d, d, 0, 1000, 100))
-			c.push(T.e("mj[0]，fl[1]",f.cy ,f.db , d, d, 0, 1000, 100))
-			c.push(T.e("fk[0]，zl[1]",f.dx ,f.dy , d, d, 0, 1000, 100))
             c.push(T.e(u, t, T.a1(s, s.fr), d, d, 0, 1000, 100))
         }
     }
@@ -33794,12 +33763,6 @@ T.rio.prototype = {
         t.r = this
         this.k2 = t
         t = this.id
-		u = new T.hM()
-u.f = 40
-t.push(u)
-u = new T.hS()
-u.f = 260
-t.push(u)
 		      
     }, 
     bM: function() {
@@ -33858,9 +33821,6 @@ T.noa.prototype = {
         t.r = this
         this.k2 = t
         t = this.id
-		u = new T.dP()
-		u.f = 512
-		t.push(u)
 		      
     }, 
     bM: function() {
@@ -35816,9 +35776,6 @@ t.push(u)
     T.aK.prototype = {
         t: function(a, b, c, d) {
             var u, t, s, r, q = this, p = null, o = a[0].a
-			d.a.push(T.e("[0],[1]", o, o.j , null, null, 0, 1000, 100))
-			d.a.push(T.e("[3]mp:[0],[4]mp:[1]", this.r.fy, o.fy ,this.r, o, null, null, 0, 1000, 100))
-			d.a.push(T.e("[3]j:[0],[4]j:[1]", this.r.j, o.j ,this.r, o, null, null, 0, 1000, 100))
             if (b) {
                 u = q.r
                 u = u.db > u.Q
@@ -35832,7 +35789,6 @@ t.push(u)
                     u.fy = s - t
                     r = T.u(u, !0, c)
                     d.a.push(T.e(O.c("zkrc"), q.r, o, p, p, 0, 1000, 100))
-					
                     o.a0(r, !0, q.r, T.a3(), c, d)
                     return
                 }
@@ -35922,7 +35878,7 @@ t.push(u)
         },
         ay: function(a, b, c, d) {
             var u = this
-            if (b.x == u.r.y && (c.m() & 36) < u.r.dy - 63)
+            if (b.x == u.r.y && (c.m() & 63) < u.r.dy)
                 return
             if (u.ch === d) {
                 if (u.Q && b != u.cx)
@@ -35930,7 +35886,7 @@ t.push(u)
                         u.cx = b
             } else {
                 u.ch = d
-                if (c.m() < u.f) {
+                if (c.m() < u.f + 255) {
                     u.cx = b
                     u.Q = !0
                     d.b.push(u.gdg())
@@ -35957,7 +35913,7 @@ t.push(u)
             return 2000
         },
         ak: function(a, b, c, d, e) {
-            if (d.m() < this.f && this.r.bq(d)) {
+            if (d.m() - 255 < this.f && this.r.bq(d)) {
                 e.a.push(T.e(O.c("zGKr"), this.r, b, null, null, 40, 1000, 100))
                 return C.b.v(a, 2)
             }
@@ -36035,7 +35991,7 @@ t.push(u)
         },
         bP: function(a, b, c) {
             var u, t, s, r, q, p, o, n, m = this, l = null
-            if ((b.m() & 63) < m.f) {
+            if ((b.m() & 63) - 63  < m.f) {
                 for (u = m.r.u,
                 t = u.length,
                 s = a.u,
@@ -36239,7 +36195,7 @@ t.push(u)
             return c.gbh()
         },
         cC: function(a) {
-            var u, t, s = this, r = s.a9(0, (a.m() & 127) < s.r.dy, a), q = r != null ? r[0].a : null, p = s.Q
+            var u, t, s = this, r = s.a9(0, (a.m() & 127)  - 127 < s.r.dy, a), q = r != null ? r[0].a : null, p = s.Q
             if (p == q)
                 return
             if (p != null) {
@@ -36274,7 +36230,7 @@ t.push(u)
             var u, t, s = this
             if (c.fr <= 0)
                 return a
-            if (f.m() < s.f && f.m() < 128 && s.r.bq(f) && !c.millionPower) {
+            if (f.m() < s.f + 255 && f.m() < 256 && s.r.bq(f) && !c.millionPower) {
                 u = T.u(s.r, !0, f) * 0.5
                 if (u > a)
                     u = a
@@ -36419,7 +36375,7 @@ dk: function(a, b, c, d, e, f, g) {
         },
         aX: function(a, b, c, d) {
             var u, t = this, s = c.m(), r = t.f
-            if ((s & 127) < r && !t.r.tigerCurse) {
+            if ((s & 127) - 100 < r && !t.r.tigerCurse) {
                 t.f = C.b.v(r + 1, 2)
                 s = C.c.K(O.c("fuXr"), $.lb())
                 r = t.r
@@ -36694,17 +36650,6 @@ dk: function(a, b, c, d, e, f, g) {
     T.ih.prototype = {
         aK: function(a, b, c, d) {
             var v ,u, t, s, r = this
-			d.a.push(T.e("[1]mp为[0]", this.r.fy , this.r, null, null, 0, 1000, 100))
-			d.a.push(T.e("[1]sp为[0]", this.r.j , this.r, null, null, 0, 1000, 100))
-			d.a.push(T.e("[1]攻击为[0]", this.r.Q , this.r, null, null, 0, 1000, 100))
-			d.a.push(T.e("[1]防御为[0]", this.r.ch , this.r, null, null, 0, 1000, 100))
-			d.a.push(T.e("[1]速度为[0]", this.r.cx , this.r, null, null, 0, 1000, 100))
-			d.a.push(T.e("[1]敏捷为[0]", this.r.cy , this.r, null, null, 0, 1000, 100))
-			d.a.push(T.e("[1]法力为[0]", this.r.db , this.r, null, null, 0, 1000, 100))
-			d.a.push(T.e("[1]法抗为[0]", this.r.dx , this.r, null, null, 0, 1000, 100))
-			d.a.push(T.e("[1]智力为[0]", this.r.dy , this.r, null, null, 0, 1000, 100))
-			d.a.push(T.e("[1]伤害系数为[0]", this.r.go , this.r, null, null, 0, 1000, 100))
-			d.a.push(T.e("[1]嘲讽为[0]", this.r.J , this.r, null, null, 0, 1000, 100))
             if (r.f > 0) {
                 u = H.o(r.r.r1.h(0, $.kl()), "$idK")
                 if (u == null) {
@@ -37183,7 +37128,7 @@ dk: function(a, b, c, d, e, f, g) {
                 return
             u = p > 63 ? 16 + (p - 63) : 16
             p = r.r.fr
-            if (p > 0 || p < u + (c.m() & 63) && (c.m() & 63) < r.f) {
+            if (p > 0 && p < u + (c.m() & 63) && (c.m() & 63) < r.f) {
                 r.r.r1.k(0, $.lg(), r)
                 r.r.r2.i(0, r.Q)
                 r.r.E()
@@ -37316,7 +37261,7 @@ dk: function(a, b, c, d, e, f, g) {
         },
         bP: function(a, b, a0) {
             var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d = this, c = null
-            if (!a.$iav && (b.m() & 63) < d.f && d.r.bq(b)) {
+            if (!a.$iav && (b.m() & 63) - 63 < d.f && d.r.bq(b)) {
                 a.r1.k(0, $.eE(), new T.iT())
                 u = H.d(d.r.a) + "?" + H.d($.nz())
                 t = d.r
@@ -37367,10 +37312,6 @@ dk: function(a, b, c, d, e, f, g) {
                 d.r.x.aU(e)
                 t = a0.a
                 t.push($.v())
-				t.push(T.e("hp[0]，ak[1]",e.fr ,e.Q , c, c, 0, 1000, 100))
-			    t.push(T.e("fy[0]，sd[1]",e.ch ,e.cx , c, c, 0, 1000, 100))
-			    t.push(T.e("mj[0]，fl[1]",e.cy ,e.db , c, c, 0, 1000, 100))
-			    t.push(T.e("fk[0]，zl[1]",e.dx ,e.dy , c, c, 0, 1000, 100))
                 t.push(T.e(O.c("YnQg"), d.r, a, c, c, 60, 1500, 100))
                 t.push(T.e(O.c("ANfY"), d.r, T.a1(e, e.fr), a, H.a([a], [T.aU]), 0, 1000, 100))
                 return !0
@@ -38573,7 +38514,7 @@ C.fox2 = H.a(u([30, 22, 41, 42, 34, 30, 36, 399]), [P.j])
 C.fox3 = H.a(u([42, 25, 20, 21, 13, 20, 44, 487]), [P.j])
 C.fox4 = H.a(u([3, 1, 24, 2, 32, -16, 36, 302]), [P.j])
 C.Squall = H.a(u([15, 33, 3, 7, -14, 16, 16, 37]), [P.j])
-C.rio = H.a(u([0, 0, 0, 300, 0, 0, 0, 400]), [P.j])
+C.rio = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.yuuka = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.noa = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.koyuki = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
