@@ -23657,7 +23657,7 @@ T.tha9n3.prototype = {
                 p.h(0, "Dt.iron").H(u.r, d)
             p = u.r
             if (!!r.$iav)
-                r.bL(q * 2, !0, p, T.mB(), c, d)
+                r.bL(q * 20, !0, p, T.mB(), c, d)
             else
                 r.bL(q, !0, p, T.mB(), c, d)
         }
@@ -36662,12 +36662,11 @@ dk: function(a, b, c, d, e, f, g) {
                 t = r.f
                 s = u.x
 				
-                if (t + 1000 >= s)
-                {
+                
                     v = (c.au(1 + C.b.v(t * 3, 4)) + 1)+ 1800
                     u.x = s + v
                     d.a.push(T.e("[0]获得[1]点[护盾]", this.r , v, null, null, 0, 1000, 100))
-                }
+                
                     d.a.push(T.e("[0]拥有[1]点[护盾]", this.r , u.x, null, null, 0, 1000, 100))
                 }
             return a
