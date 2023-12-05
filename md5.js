@@ -8465,7 +8465,7 @@ tha7n1: function tha7n1() {
             _.x = b
             _.y = null
             _.z = 42
-            _.Q = 2
+            _.Q = 20
             _.c = _.b = _.a = null
         },
         hS: function hS() {
@@ -20848,7 +20848,7 @@ u.push($.v())
                 this.H(null, b)
         },
         al: function(a) {
-            a.go *= 3
+            a.go *= 30
         },
         gR: function() {
             return 1
@@ -33792,6 +33792,12 @@ T.yuuka.prototype = {
         t.r = this
         this.k2 = t
         t = this.id
+		u = new T.hM()
+		u.f = 256
+		t.push(u)
+		u = new T.i9()
+		u.f = 256
+		t.push(u)
 		      
     }, 
     bM: function() {
@@ -33821,6 +33827,9 @@ T.noa.prototype = {
         t.r = this
         this.k2 = t
         t = this.id
+		u = new T.hU()
+		u.f = 256
+		t.push(u)
 		      
     }, 
     bM: function() {
@@ -33850,6 +33859,9 @@ T.koyuki.prototype = {
         t.r = this
         this.k2 = t
         t = this.id
+		u = new T.hS()
+		u.f = 256
+		t.push(u)
 		      
     }, 
     bM: function() {
@@ -38515,9 +38527,9 @@ C.fox3 = H.a(u([42, 25, 20, 21, 13, 20, 44, 487]), [P.j])
 C.fox4 = H.a(u([3, 1, 24, 2, 32, -16, 36, 302]), [P.j])
 C.Squall = H.a(u([15, 33, 3, 7, -14, 16, 16, 37]), [P.j])
 C.rio = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
-C.yuuka = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
-C.noa = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
-C.koyuki = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.yuuka = H.a(u([10, 0, 0, 0, 0, 0, 100, -100]), [P.j])
+C.noa = H.a(u([10, 0, 0, 0, 0, 0, 100, 1000]), [P.j])
+C.koyuki = H.a(u([0, 0, 0, 0, 0, 0, 0, 1000]), [P.j])
 C.hifumi = H.a(u([-4, 1, -8, 6, 48, 27, 31, 502]), [P.j])
 C.jntm = H.a(u([44, 30, 315, 39, 30, 25, 46, 117]), [P.j])
 C.azusa = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
