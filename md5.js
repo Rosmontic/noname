@@ -7875,7 +7875,7 @@ if (a == "patchouli") {
             _.r = a
             _.x = b
             _.y = null
-            _.z = 1
+            _.z = 20
             _.c = _.b = _.a = null
         },
         dN: function dN() {
@@ -25006,7 +25006,7 @@ T.tha4n1.prototype = {
         },
         t: function(a, b, c, d) {
             var u, t, s, r, q, p, o, n = this, m = null
-            n.f = C.b.v(n.f + 1, 2)
+            n.f = n.f * 3
             u = a[0].a
             t = C.e.Z(T.u(n.r, !0, c) / 75)
             s = u.fx
@@ -35898,7 +35898,7 @@ t.push(u)
                         u.cx = b
             } else {
                 u.ch = d
-                if (c.m() < u.f + 255) {
+                if (c.m() < u.f ) {
                     u.cx = b
                     u.Q = !0
                     d.b.push(u.gdg())
@@ -35925,7 +35925,7 @@ t.push(u)
             return 2000
         },
         ak: function(a, b, c, d, e) {
-            if (d.m() - 255 < this.f && this.r.bq(d)) {
+            if (d.m()  < this.f && this.r.bq(d)) {
                 e.a.push(T.e(O.c("zGKr"), this.r, b, null, null, 40, 1000, 100))
                 return C.b.v(a, 2)
             }
@@ -36242,7 +36242,7 @@ t.push(u)
             var u, t, s = this
             if (c.fr <= 0)
                 return a
-            if (f.m() < s.f + 255 && f.m() < 256 && s.r.bq(f) && !c.millionPower) {
+            if (f.m() < s.f && f.m() < 256 && s.r.bq(f) && !c.millionPower) {
                 u = T.u(s.r, !0, f) * 0.5
                 if (u > a)
                     u = a
@@ -36675,7 +36675,7 @@ dk: function(a, b, c, d, e, f, g) {
                 s = u.x
 				
                 
-                    v = (c.au(1 + C.b.v(t * 3, 4)) + 1)+ 1800
+                    v = (c.au(1 + C.b.v(t * 3, 4)) + 1)
                     u.x = s + v
                     d.a.push(T.e("[0]获得[1]点[护盾]", this.r , v, null, null, 0, 1000, 100))
                 
