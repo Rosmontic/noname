@@ -8465,7 +8465,7 @@ tha7n1: function tha7n1() {
             _.x = b
             _.y = null
             _.z = 42
-            _.Q = 2
+            _.Q = 20
             _.c = _.b = _.a = null
         },
         hS: function hS() {
@@ -20845,7 +20845,7 @@ u.push($.v())
                 this.H(null, b)
         },
         al: function(a) {
-            a.go *= 3
+            a.go *= 30
         },
         gR: function() {
             return 1
@@ -35174,7 +35174,7 @@ t.push(u)
             u.fr = new T.aN(u)
             u.fx = new T.ay(u)
             s.push(u)
-            u = new T.hI(1.7)
+            u = new T.hI(17)
             u.fr = new T.aN(u)
             s.push(u)
             u = new T.hK()
