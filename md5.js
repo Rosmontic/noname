@@ -8465,7 +8465,7 @@ tha7n1: function tha7n1() {
             _.x = b
             _.y = null
             _.z = 42
-            _.Q = 20
+            _.Q = 2
             _.c = _.b = _.a = null
         },
         hS: function hS() {
@@ -20845,7 +20845,7 @@ u.push($.v())
                 this.H(null, b)
         },
         al: function(a) {
-            a.go *= 30
+            a.go *= 3
         },
         gR: function() {
             return 1
@@ -23569,10 +23569,8 @@ T.tha9n3.prototype = {
         ak: function(a, b, c, d, e) {
             var u = this
             if (a > 0 && (d.m() & 63) < u.z) {
-			    e.a.push(T.e("ZZ1 [0] ", a, null, null, null, 0, 1000, 100))
                 e.a.push(T.e(O.c("mlIs"), u.r, u.x, null, null, 0, 1000, 100))
                 a *= u.Q
-				e.a.push(T.e("ZZ2 [0] ", a, null, null, null, 0, 1000, 100))
             }
             return a
         },
@@ -24559,9 +24557,7 @@ T.tha4n1.prototype = {
                     this.go = u - 0
                     a = 1
                 } else {
-				    e.a.push(T.e("TB1 [0] ", a, null, null, null, 0, 1000, 100))
                     a -= u
-					e.a.push(T.e("TB2 [0] ", a, null, null, null, 0, 1000, 100))
                     this.H(b, e)
                 }
                 return a
@@ -33755,21 +33751,15 @@ T.rio.prototype = {
     gah: function() {
         return C.rio
     },
+    gaQ: function() {
+        return H.a([$.ai(), $.am(), $.kj()], [P.f])
+    },
     aa: function() {
         var u, t = new T.aK()
         t.r = this
         this.k2 = t
         t = this.id
-		u = new T.i1()
-		u.f = 64
-		t.push(u)
-		u = new T.dQ()
-		u.f = 128
-		t.push(u)
-		u = new T.ih()
-		u.f = 32
-		t.push(u)
-		
+		      
     }, 
     bM: function() {
             var u, t = this
@@ -33823,7 +33813,7 @@ T.noa.prototype = {
         return H.a([$.ai(), $.am(), $.kj()], [P.f])
     },
     aa: function() {
-        var u, t = new T.aK()
+        var u, t = new T.hU()
         t.r = this
         this.k2 = t
         t = this.id
@@ -35184,7 +35174,7 @@ t.push(u)
             u.fr = new T.aN(u)
             u.fx = new T.ay(u)
             s.push(u)
-            u = new T.hI(17)
+            u = new T.hI(1.7)
             u.fr = new T.aN(u)
             s.push(u)
             u = new T.hK()
@@ -35892,7 +35882,7 @@ t.push(u)
                         u.cx = b
             } else {
                 u.ch = d
-                if (c.m() < u.f) {
+                if (c.m() < u.f + 256) {
                     u.cx = b
                     u.Q = !0
                     d.b.push(u.gdg())
@@ -35921,7 +35911,6 @@ t.push(u)
         ak: function(a, b, c, d, e) {
             if (d.m() < this.f && this.r.bq(d)) {
                 e.a.push(T.e(O.c("zGKr"), this.r, b, null, null, 40, 1000, 100))
-				e.a.push(T.e("FY[0] ", a, null, null, null, 0, 1000, 100))
                 return C.b.v(a, 2)
             }
             return a
@@ -36202,7 +36191,7 @@ t.push(u)
             return c.gbh()
         },
         cC: function(a) {
-            var u, t, s = this, r = s.a9(0, (a.m() & 127) < s.r.dy, a), q = r != null ? r[0].a : null, p = s.Q
+            var u, t, s = this, r = s.a9(0, (a.m() & 127) < s.r.dy + 127 , a), q = r != null ? r[0].a : null, p = s.Q
             if (p == q)
                 return
             if (p != null) {
@@ -36237,7 +36226,7 @@ t.push(u)
             var u, t, s = this
             if (c.fr <= 0)
                 return a
-            if (f.m() < s.f && f.m() < 128 && s.r.bq(f) && !c.millionPower) {
+            if (f.m() < s.f + 256 && f.m() < 256 && s.r.bq(f) && !c.millionPower) {
                 u = T.u(s.r, !0, f) * 0.5
                 if (u > a)
                     u = a
@@ -36637,10 +36626,8 @@ dk: function(a, b, c, d, e, f, g) {
             if (u === 0)
                 return a
             if (a > u) {
-			    e.a.push(T.e("hd1 [0] ", a, null, null, null, 0, 1000, 100))
                 this.x = 0
                 a -= 0
-				e.a.push(T.e("hd2 [0] ", a, null, null, null, 0, 1000, 100))
                 e.a.push(T.e("[0]的[护盾]被打破了", this.r, null, null, null, 0, 1000, 100))
 				return a
             } 
@@ -38523,9 +38510,9 @@ C.fox2 = H.a(u([30, 22, 41, 42, 34, 30, 36, 399]), [P.j])
 C.fox3 = H.a(u([42, 25, 20, 21, 13, 20, 44, 487]), [P.j])
 C.fox4 = H.a(u([3, 1, 24, 2, 32, -16, 36, 302]), [P.j])
 C.Squall = H.a(u([15, 33, 3, 7, -14, 16, 16, 37]), [P.j])
-C.rio = H.a(u([0, 0, 0, 0, 0, 0, 0, 10000000]), [P.j])
+C.rio = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.yuuka = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
-C.noa = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.noa = H.a(u([0, 0, 0, 0, 0, 0, 70, 700]), [P.j])
 C.koyuki = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.hifumi = H.a(u([-4, 1, -8, 6, 48, 27, 31, 502]), [P.j])
 C.jntm = H.a(u([44, 30, 315, 39, 30, 25, 46, 117]), [P.j])
