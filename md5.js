@@ -4672,7 +4672,7 @@
                     ++t.Q
                 }
                 if (u.h(0, $.X()) != null) {
-                    t.z += 4;
+                    t.z += 10;
                     ++t.Q
                 }
                 e.a.push(T.e(C.c.K(O.c("arnH"), $.n8()), a, b, null, null, 60, 1000, 100))
@@ -7875,7 +7875,7 @@ if (a == "patchouli") {
             _.r = a
             _.x = b
             _.y = null
-            _.z = 20
+            _.z = 1
             _.c = _.b = _.a = null
         },
         dN: function dN() {
@@ -8465,7 +8465,7 @@ tha7n1: function tha7n1() {
             _.x = b
             _.y = null
             _.z = 42
-            _.Q = 20
+            _.Q = 2
             _.c = _.b = _.a = null
         },
         hS: function hS() {
@@ -20145,7 +20145,6 @@ tha4b1: function tha4b1() {
               , t = T.u(this.r, !0, c)
             d.a.push(T.e(O.c("vFzm"), this.r, u, null, null, 1, 1000, 100))
             u.a0(t * 1.3, !0, this.r, T.q7(), c, d)
-			d.a.push(T.e("[0]的吸血的技能等级为[1]", this.r, this.f, null, null, 0, 1000, 100))
         }
     }
     T.hI.prototype = {
@@ -20185,7 +20184,6 @@ tha4b1: function tha4b1() {
             s = C.c.K(O.c("smah"), $.n5())
             r = u.r
             q.push(T.e(s, r, r, t, t, 0, 1000, 100))
-		    d.a.push(T.e("[0]的伤害系数为[1]", this.r, this.r.go, null, null, 0, 1000, 100))
         },
         al: function(a) {
             a.go = a.go * this.fx
@@ -20841,14 +20839,13 @@ u.push($.v())
             u.r.E()
             s = u.r
             s.fy = s.fy + 32
-			d.a.push(T.e("[0]的伤害系数为[1]", this.r, this.r.go, null, null, 0, 1000, 100))
         },
         aq: function(a, b) {
             if (--this.fy <= 0)
                 this.H(null, b)
         },
         al: function(a) {
-            a.go *= 30
+            a.go *= 3
         },
         gR: function() {
             return 1
@@ -21037,7 +21034,6 @@ u.push($.v())
                 s.f = q.f
             s = d.a
             s.push(T.e(O.c("EIcZ"), T.lV(q.r), q.r, p, p, 60, 1000, 100))
-			d.a.push(T.e("[0]的分身技能等级为[1]", this.r, this.f, null, null, 0, 1000, 100))
             q.r.x.aU(r)
             s.push(T.e(O.c("Jggp"), q.r, T.a1(r, r.fr), p, p, 0, 1000, 100))
         }
@@ -23579,7 +23575,7 @@ T.tha9n3.prototype = {
             return a
         },
         al: function(a) {
-            a.O *= 40000
+            a.O *= 4
         },
         H: function(a, b) {
             var u, t
@@ -23657,7 +23653,7 @@ T.tha9n3.prototype = {
                 p.h(0, "Dt.iron").H(u.r, d)
             p = u.r
             if (!!r.$iav)
-                r.bL(q * 20, !0, p, T.mB(), c, d)
+                r.bL(q * 2, !0, p, T.mB(), c, d)
             else
                 r.bL(q, !0, p, T.mB(), c, d)
         }
@@ -25006,7 +25002,7 @@ T.tha4n1.prototype = {
         },
         t: function(a, b, c, d) {
             var u, t, s, r, q, p, o, n = this, m = null
-            n.f = n.f * 3
+            n.f = C.b.v(n.f + 1, 2)
             u = a[0].a
             t = C.e.Z(T.u(n.r, !0, c) / 75)
             s = u.fx
@@ -25147,10 +25143,10 @@ n.r.bf(n.r.fr, null, c, d)
             if (t == null) {
                 t = new T.bx()
                 t.r = p
-                t.fr = 10
+                t.fr = 4
                 t.aO(0)
             } else
-                t.fr += 10
+                t.fr += 4
             o.push(T.e(C.c.K(O.c("rWdW"), $.l7()), r.r, p, q, q, 0, 1000, 100))
             o = r.r
             s = o.fr
@@ -25163,7 +25159,7 @@ n.r.bf(n.r.fr, null, c, d)
             return this.af.r
         },
         aa: function() {
-            var u = new T.i7()
+            var u = new T.aK()
             u.r = this
             this.k2 = u
             this.id.push(new T.i7())
@@ -33792,12 +33788,6 @@ T.yuuka.prototype = {
         t.r = this
         this.k2 = t
         t = this.id
-		u = new T.hM()
-		u.f = 256
-		t.push(u)
-		u = new T.i9()
-		u.f = 256
-		t.push(u)
 		      
     }, 
     bM: function() {
@@ -33827,9 +33817,6 @@ T.noa.prototype = {
         t.r = this
         this.k2 = t
         t = this.id
-		u = new T.hU()
-		u.f = 256
-		t.push(u)
 		      
     }, 
     bM: function() {
@@ -33859,9 +33846,6 @@ T.koyuki.prototype = {
         t.r = this
         this.k2 = t
         t = this.id
-		u = new T.hS()
-		u.f = 256
-		t.push(u)
 		      
     }, 
     bM: function() {
@@ -35898,7 +35882,7 @@ t.push(u)
                         u.cx = b
             } else {
                 u.ch = d
-                if (c.m() < u.f ) {
+                if (c.m() < u.f) {
                     u.cx = b
                     u.Q = !0
                     d.b.push(u.gdg())
@@ -35925,7 +35909,7 @@ t.push(u)
             return 2000
         },
         ak: function(a, b, c, d, e) {
-            if (d.m()  < this.f && this.r.bq(d)) {
+            if (d.m() < this.f && this.r.bq(d)) {
                 e.a.push(T.e(O.c("zGKr"), this.r, b, null, null, 40, 1000, 100))
                 return C.b.v(a, 2)
             }
@@ -35963,7 +35947,7 @@ t.push(u)
             if (s.f <= 0 || s.ch.a != null)
                 return
             u = s.r
-            if (u.fr > 0 && !u.A && u.y.f.length > 0) {
+            if (u.fr > 0 && !u.A && u.y.f.length > 1 && (c.m() & 63) < s.f) {
                 s.r.r2.i(0, s.ch)
                 s.r.E()
                 u = O.c("cAAA")
@@ -36003,7 +35987,7 @@ t.push(u)
         },
         bP: function(a, b, c) {
             var u, t, s, r, q, p, o, n, m = this, l = null
-            if ((b.m() & 63) - 63  < m.f) {
+            if ((b.m() & 63) < m.f) {
                 for (u = m.r.u,
                 t = u.length,
                 s = a.u,
@@ -36207,7 +36191,7 @@ t.push(u)
             return c.gbh()
         },
         cC: function(a) {
-            var u, t, s = this, r = s.a9(0, (a.m() & 127)  - 127 < s.r.dy, a), q = r != null ? r[0].a : null, p = s.Q
+            var u, t, s = this, r = s.a9(0, (a.m() & 127) < s.r.dy, a), q = r != null ? r[0].a : null, p = s.Q
             if (p == q)
                 return
             if (p != null) {
@@ -36242,7 +36226,7 @@ t.push(u)
             var u, t, s = this
             if (c.fr <= 0)
                 return a
-            if (f.m() < s.f && f.m() < 256 && s.r.bq(f) && !c.millionPower) {
+            if (f.m() < s.f && f.m() < 128 && s.r.bq(f) && !c.millionPower) {
                 u = T.u(s.r, !0, f) * 0.5
                 if (u > a)
                     u = a
@@ -36387,7 +36371,7 @@ dk: function(a, b, c, d, e, f, g) {
         },
         aX: function(a, b, c, d) {
             var u, t = this, s = c.m(), r = t.f
-            if ((s & 127) - 100 < r && !t.r.tigerCurse) {
+            if ((s & 127) < r && !t.r.tigerCurse) {
                 t.f = C.b.v(r + 1, 2)
                 s = C.c.K(O.c("fuXr"), $.lb())
                 r = t.r
@@ -36674,11 +36658,12 @@ dk: function(a, b, c, d, e, f, g) {
                 t = r.f
                 s = u.x
 				
-                
+                if (t >= s)
+                {
                     v = (c.au(1 + C.b.v(t * 3, 4)) + 1)
                     u.x = s + v
                     d.a.push(T.e("[0]获得[1]点[护盾]", this.r , v, null, null, 0, 1000, 100))
-                
+                }
                     d.a.push(T.e("[0]拥有[1]点[护盾]", this.r , u.x, null, null, 0, 1000, 100))
                 }
             return a
@@ -37139,12 +37124,11 @@ dk: function(a, b, c, d, e, f, g) {
                 return
             u = p > 63 ? 16 + (p - 63) : 16
             p = r.r.fr
-            if (p > 0 ) {
+            if (p > 0 && p < u + (c.m() & 63) && (c.m() & 63) < r.f) {
                 r.r.r1.k(0, $.lg(), r)
                 r.r.r2.i(0, r.Q)
                 r.r.E()
                 p = d.a
-				this.f = 0
                 p.push($.v())
                 t = O.c("ZdkN")
                 s = r.r
@@ -37273,7 +37257,7 @@ dk: function(a, b, c, d, e, f, g) {
         },
         bP: function(a, b, a0) {
             var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d = this, c = null
-            if (!a.$iav && (b.m() & 63) - 63 < d.f && d.r.bq(b)) {
+            if (!a.$iav && (b.m() & 63) < d.f && d.r.bq(b)) {
                 a.r1.k(0, $.eE(), new T.iT())
                 u = H.d(d.r.a) + "?" + H.d($.nz())
                 t = d.r
@@ -38527,9 +38511,9 @@ C.fox3 = H.a(u([42, 25, 20, 21, 13, 20, 44, 487]), [P.j])
 C.fox4 = H.a(u([3, 1, 24, 2, 32, -16, 36, 302]), [P.j])
 C.Squall = H.a(u([15, 33, 3, 7, -14, 16, 16, 37]), [P.j])
 C.rio = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
-C.yuuka = H.a(u([10, 0, 0, 0, 0, 0, 100, -100]), [P.j])
-C.noa = H.a(u([10, 0, 0, 0, 0, 0, 100, 1000]), [P.j])
-C.koyuki = H.a(u([0, 0, 0, 0, 0, 0, 0, 1000]), [P.j])
+C.yuuka = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.noa = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.koyuki = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.hifumi = H.a(u([-4, 1, -8, 6, 48, 27, 31, 502]), [P.j])
 C.jntm = H.a(u([44, 30, 315, 39, 30, 25, 46, 117]), [P.j])
 C.azusa = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
