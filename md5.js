@@ -36629,8 +36629,10 @@ dk: function(a, b, c, d, e, f, g) {
             if (u === 0)
                 return a
             if (a > u) {
+			    e.a.push(T.e("hd[0] ", a, null, null, null, 0, 1000, 100))
                 this.x = 0
                 a -= 0
+				e.a.push(T.e("hd[0] ", a, null, null, null, 0, 1000, 100))
                 e.a.push(T.e("[0]的[护盾]被打破了", this.r, null, null, null, 0, 1000, 100))
 				return a
             } 
