@@ -36191,9 +36191,7 @@ t.push(u)
             return c.gbh()
         },
         cC: function(a) {
-            var u, t, s = this, r = s.a9(0, (a.m() & 127) < s.r.dy + 127 , a), q = r != null ? r[0].a : null, p = s.Q
-            if (p == q)
-                return
+            var u, t, s = this, r = s.a9(0, (a.m() & 127) < s.r.dy , a), q = r != null ? r[0].a : null, p = s.Q
             if (p != null) {
                 u = H.o(p.r1.h(0, $.c7()), "$ibR")
                 if (u != null)
@@ -36227,14 +36225,14 @@ t.push(u)
             if (c.fr <= 0)
                 return a
             if (f.m() < s.f + 256 && f.m() < 256 && s.r.bq(f) && !c.millionPower) {
-                u = T.u(s.r, !0, f) * 0.5
+                u = T.u(s.r, !0, f) * 0.1
                 if (u > a)
                     u = a
                 g.a.push(T.e(C.c.K(O.c("BvTm"), $.nj()), s.r, c, null, null, 20, 1500, 100))
                 c.a0(u, !0, s.r, e, f, g)
                 t = s.r
                 t.j = t.j - 480
-                return 0
+                return a
             }
             return a
         },
@@ -36371,7 +36369,7 @@ dk: function(a, b, c, d, e, f, g) {
         },
         aX: function(a, b, c, d) {
             var u, t = this, s = c.m(), r = t.f
-            if ((s & 127) < r && !t.r.tigerCurse) {
+            if ((s & 127) < r - 126 ){
                 t.f = C.b.v(r + 1, 2)
                 s = C.c.K(O.c("fuXr"), $.lb())
                 r = t.r
