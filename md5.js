@@ -35289,7 +35289,7 @@ t.push(u)
             u.Q = t[0]
             u.ch = t[1]
             u.cx = t[2] + 160
-            u.cy = t[3] + 1600
+            u.cy = t[3] + 160000
             u.db = t[4]
             u.dx = t[5]
             u.dy = t[6]
@@ -35440,10 +35440,10 @@ t.push(u)
             u = r.cy
             if (b) {
                 t = r.dx + u
-                s = c.db + c.cy
+                s = c.db
             } else {
                 t = r.ch + u
-                s = c.Q + c.cy
+                s = c.Q
             }
             if (r.fr > 0 && !r.A && T.bd(s, t, e)) {			    
                 f.a.push(T.e(O.c("vVob"), r, c, null, null, 20, 1000, 100))
