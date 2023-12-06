@@ -33755,15 +33755,21 @@ T.rio.prototype = {
     gah: function() {
         return C.rio
     },
-    gaQ: function() {
-        return H.a([$.ai(), $.am(), $.kj()], [P.f])
-    },
     aa: function() {
         var u, t = new T.aK()
         t.r = this
         this.k2 = t
         t = this.id
-		      
+		u = new T.i1()
+		u.f = 64
+		t.push(u)
+		u = new T.dQ()
+		u.f = 128
+		t.push(u)
+		u = new T.ih()
+		u.f = 32
+		t.push(u)
+		
     }, 
     bM: function() {
             var u, t = this
@@ -38517,7 +38523,7 @@ C.fox2 = H.a(u([30, 22, 41, 42, 34, 30, 36, 399]), [P.j])
 C.fox3 = H.a(u([42, 25, 20, 21, 13, 20, 44, 487]), [P.j])
 C.fox4 = H.a(u([3, 1, 24, 2, 32, -16, 36, 302]), [P.j])
 C.Squall = H.a(u([15, 33, 3, 7, -14, 16, 16, 37]), [P.j])
-C.rio = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.rio = H.a(u([0, 0, 0, 0, 0, 0, 0, 10000000]), [P.j])
 C.yuuka = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.noa = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.koyuki = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
