@@ -23569,8 +23569,10 @@ T.tha9n3.prototype = {
         ak: function(a, b, c, d, e) {
             var u = this
             if (a > 0 && (d.m() & 63) < u.z) {
+			    e.a.push(T.e("ZZ1 [0] ", this.r, null, null, null, 0, 1000, 100))
                 e.a.push(T.e(O.c("mlIs"), u.r, u.x, null, null, 0, 1000, 100))
                 a *= u.Q
+				e.a.push(T.e("ZZ2 [0] ", this.r, null, null, null, 0, 1000, 100))
             }
             return a
         },
@@ -24557,9 +24559,9 @@ T.tha4n1.prototype = {
                     this.go = u - 0
                     a = 1
                 } else {
-				    e.a.push(T.e("TB1[0] ", a, null, null, null, 0, 1000, 100))
+				    e.a.push(T.e("TB1 [0] ", a, null, null, null, 0, 1000, 100))
                     a -= u
-					e.a.push(T.e("TB2[0] ", a, null, null, null, 0, 1000, 100))
+					e.a.push(T.e("TB2 [0] ", a, null, null, null, 0, 1000, 100))
                     this.H(b, e)
                 }
                 return a
@@ -36629,10 +36631,10 @@ dk: function(a, b, c, d, e, f, g) {
             if (u === 0)
                 return a
             if (a > u) {
-			    e.a.push(T.e("hd[0] ", a, null, null, null, 0, 1000, 100))
+			    e.a.push(T.e("hd1 [0] ", a, null, null, null, 0, 1000, 100))
                 this.x = 0
                 a -= 0
-				e.a.push(T.e("hd[0] ", a, null, null, null, 0, 1000, 100))
+				e.a.push(T.e("hd2 [0] ", a, null, null, null, 0, 1000, 100))
                 e.a.push(T.e("[0]的[护盾]被打破了", this.r, null, null, null, 0, 1000, 100))
 				return a
             } 
