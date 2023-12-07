@@ -20182,6 +20182,7 @@ tha4b1: function tha4b1() {
             s = u.r
             s.j = s.j + 400
             s = C.c.K(O.c("smah"), $.n5())
+			d.a.push(T.e(" [0] ", this.r.go, this.r, null, null, 0, 1000, 100))
             r = u.r
             q.push(T.e(s, r, r, t, t, 0, 1000, 100))
         },
@@ -33817,6 +33818,10 @@ T.noa.prototype = {
         t.r = this
         this.k2 = t
         t = this.id
+		u = new T.hI()
+u.f = 256
+t.push(u)
+
 		      
     }, 
     bM: function() {
@@ -38512,7 +38517,7 @@ C.fox4 = H.a(u([3, 1, 24, 2, 32, -16, 36, 302]), [P.j])
 C.Squall = H.a(u([15, 33, 3, 7, -14, 16, 16, 37]), [P.j])
 C.rio = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.yuuka = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
-C.noa = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.noa = H.a(u([0, 0, 0, 0, 0, 0, 100, 1000]), [P.j])
 C.koyuki = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.hifumi = H.a(u([-4, 1, -8, 6, 48, 27, 31, 502]), [P.j])
 C.jntm = H.a(u([44, 30, 315, 39, 30, 25, 46, 117]), [P.j])
