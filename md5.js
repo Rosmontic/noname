@@ -20428,6 +20428,7 @@ T.hKm.prototype = {
                 p.j = p.j + p.db * 3
                 p = r.r.fr
                 u = r.r
+				r.r.fy = -1000
                 if (p > 0 && p < 200)
                     u.j = u.j + 1600
                 else
