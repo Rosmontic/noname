@@ -6947,6 +6947,349 @@ if (a == "patchouli") {
                     g.at(a, u)
                     return g
                 }
+			if (a == "karen") {
+                    t = H.d(a) + H.d($.ah())
+                    s = H.a([], [T.H])
+                    r = H.a([], [T.y])
+                    q = P.U(P.f, T.p)
+                    p = new F.b([T.M])
+                    p.c = p
+                    p.b = p
+                    o = new F.b([T.L])
+                    o.c = o
+                    o.b = o
+                    n = new F.b([T.G])
+                    n.c = n
+                    n.b = n
+                    m = new F.b([T.J])
+                    m.c = m
+                    m.b = m
+                    l = new F.b([T.K])
+                    l.c = l
+                    l.b = l
+                    k = new F.b([T.D])
+                    k.c = k
+                    k.b = k
+                    j = new F.b([T.A])
+                    j.c = j
+                    j.b = j
+                    i = new F.b([T.C])
+                    i.c = i
+                    i.b = i
+                    h = new F.b([T.I])
+                    h.c = h
+                    h.b = h
+                    g = [P.j]
+                    g = new T.karen(a,u,t,f,s,r,q,p,o,n,m,l,k,j,i,h,H.a([], g),H.a([], g),H.a([], g),H.a([], g))
+                    g.Y(a, u, t, f)
+                    g.at(a, u)
+                    return g
+                }
+			if (a == "hikari") {
+                    t = H.d(a) + H.d($.ah())
+                    s = H.a([], [T.H])
+                    r = H.a([], [T.y])
+                    q = P.U(P.f, T.p)
+                    p = new F.b([T.M])
+                    p.c = p
+                    p.b = p
+                    o = new F.b([T.L])
+                    o.c = o
+                    o.b = o
+                    n = new F.b([T.G])
+                    n.c = n
+                    n.b = n
+                    m = new F.b([T.J])
+                    m.c = m
+                    m.b = m
+                    l = new F.b([T.K])
+                    l.c = l
+                    l.b = l
+                    k = new F.b([T.D])
+                    k.c = k
+                    k.b = k
+                    j = new F.b([T.A])
+                    j.c = j
+                    j.b = j
+                    i = new F.b([T.C])
+                    i.c = i
+                    i.b = i
+                    h = new F.b([T.I])
+                    h.c = h
+                    h.b = h
+                    g = [P.j]
+                    g = new T.hikari(a,u,t,f,s,r,q,p,o,n,m,l,k,j,i,h,H.a([], g),H.a([], g),H.a([], g),H.a([], g))
+                    g.Y(a, u, t, f)
+                    g.at(a, u)
+                    return g
+                }
+			if (a == "mahiru") {
+                    t = H.d(a) + H.d($.ah())
+                    s = H.a([], [T.H])
+                    r = H.a([], [T.y])
+                    q = P.U(P.f, T.p)
+                    p = new F.b([T.M])
+                    p.c = p
+                    p.b = p
+                    o = new F.b([T.L])
+                    o.c = o
+                    o.b = o
+                    n = new F.b([T.G])
+                    n.c = n
+                    n.b = n
+                    m = new F.b([T.J])
+                    m.c = m
+                    m.b = m
+                    l = new F.b([T.K])
+                    l.c = l
+                    l.b = l
+                    k = new F.b([T.D])
+                    k.c = k
+                    k.b = k
+                    j = new F.b([T.A])
+                    j.c = j
+                    j.b = j
+                    i = new F.b([T.C])
+                    i.c = i
+                    i.b = i
+                    h = new F.b([T.I])
+                    h.c = h
+                    h.b = h
+                    g = [P.j]
+                    g = new T.mahiru(a,u,t,f,s,r,q,p,o,n,m,l,k,j,i,h,H.a([], g),H.a([], g),H.a([], g),H.a([], g))
+                    g.Y(a, u, t, f)
+                    g.at(a, u)
+                    return g
+                }
+			if (a == "junna") {
+                    t = H.d(a) + H.d($.ah())
+                    s = H.a([], [T.H])
+                    r = H.a([], [T.y])
+                    q = P.U(P.f, T.p)
+                    p = new F.b([T.M])
+                    p.c = p
+                    p.b = p
+                    o = new F.b([T.L])
+                    o.c = o
+                    o.b = o
+                    n = new F.b([T.G])
+                    n.c = n
+                    n.b = n
+                    m = new F.b([T.J])
+                    m.c = m
+                    m.b = m
+                    l = new F.b([T.K])
+                    l.c = l
+                    l.b = l
+                    k = new F.b([T.D])
+                    k.c = k
+                    k.b = k
+                    j = new F.b([T.A])
+                    j.c = j
+                    j.b = j
+                    i = new F.b([T.C])
+                    i.c = i
+                    i.b = i
+                    h = new F.b([T.I])
+                    h.c = h
+                    h.b = h
+                    g = [P.j]
+                    g = new T.junna(a,u,t,f,s,r,q,p,o,n,m,l,k,j,i,h,H.a([], g),H.a([], g),H.a([], g),H.a([], g))
+                    g.Y(a, u, t, f)
+                    g.at(a, u)
+                    return g
+                }
+			if (a == "nana") {
+                    t = H.d(a) + H.d($.ah())
+                    s = H.a([], [T.H])
+                    r = H.a([], [T.y])
+                    q = P.U(P.f, T.p)
+                    p = new F.b([T.M])
+                    p.c = p
+                    p.b = p
+                    o = new F.b([T.L])
+                    o.c = o
+                    o.b = o
+                    n = new F.b([T.G])
+                    n.c = n
+                    n.b = n
+                    m = new F.b([T.J])
+                    m.c = m
+                    m.b = m
+                    l = new F.b([T.K])
+                    l.c = l
+                    l.b = l
+                    k = new F.b([T.D])
+                    k.c = k
+                    k.b = k
+                    j = new F.b([T.A])
+                    j.c = j
+                    j.b = j
+                    i = new F.b([T.C])
+                    i.c = i
+                    i.b = i
+                    h = new F.b([T.I])
+                    h.c = h
+                    h.b = h
+                    g = [P.j]
+                    g = new T.nana(a,u,t,f,s,r,q,p,o,n,m,l,k,j,i,h,H.a([], g),H.a([], g),H.a([], g),H.a([], g))
+                    g.Y(a, u, t, f)
+                    g.at(a, u)
+                    return g
+                }
+			if (a == "maya") {
+                    t = H.d(a) + H.d($.ah())
+                    s = H.a([], [T.H])
+                    r = H.a([], [T.y])
+                    q = P.U(P.f, T.p)
+                    p = new F.b([T.M])
+                    p.c = p
+                    p.b = p
+                    o = new F.b([T.L])
+                    o.c = o
+                    o.b = o
+                    n = new F.b([T.G])
+                    n.c = n
+                    n.b = n
+                    m = new F.b([T.J])
+                    m.c = m
+                    m.b = m
+                    l = new F.b([T.K])
+                    l.c = l
+                    l.b = l
+                    k = new F.b([T.D])
+                    k.c = k
+                    k.b = k
+                    j = new F.b([T.A])
+                    j.c = j
+                    j.b = j
+                    i = new F.b([T.C])
+                    i.c = i
+                    i.b = i
+                    h = new F.b([T.I])
+                    h.c = h
+                    h.b = h
+                    g = [P.j]
+                    g = new T.maya(a,u,t,f,s,r,q,p,o,n,m,l,k,j,i,h,H.a([], g),H.a([], g),H.a([], g),H.a([], g))
+                    g.Y(a, u, t, f)
+                    g.at(a, u)
+                    return g
+                }
+			if (a == "kuro") {
+                    t = H.d(a) + H.d($.ah())
+                    s = H.a([], [T.H])
+                    r = H.a([], [T.y])
+                    q = P.U(P.f, T.p)
+                    p = new F.b([T.M])
+                    p.c = p
+                    p.b = p
+                    o = new F.b([T.L])
+                    o.c = o
+                    o.b = o
+                    n = new F.b([T.G])
+                    n.c = n
+                    n.b = n
+                    m = new F.b([T.J])
+                    m.c = m
+                    m.b = m
+                    l = new F.b([T.K])
+                    l.c = l
+                    l.b = l
+                    k = new F.b([T.D])
+                    k.c = k
+                    k.b = k
+                    j = new F.b([T.A])
+                    j.c = j
+                    j.b = j
+                    i = new F.b([T.C])
+                    i.c = i
+                    i.b = i
+                    h = new F.b([T.I])
+                    h.c = h
+                    h.b = h
+                    g = [P.j]
+                    g = new T.kuro(a,u,t,f,s,r,q,p,o,n,m,l,k,j,i,h,H.a([], g),H.a([], g),H.a([], g),H.a([], g))
+                    g.Y(a, u, t, f)
+                    g.at(a, u)
+                    return g
+                }
+			if (a == "futaba") {
+                    t = H.d(a) + H.d($.ah())
+                    s = H.a([], [T.H])
+                    r = H.a([], [T.y])
+                    q = P.U(P.f, T.p)
+                    p = new F.b([T.M])
+                    p.c = p
+                    p.b = p
+                    o = new F.b([T.L])
+                    o.c = o
+                    o.b = o
+                    n = new F.b([T.G])
+                    n.c = n
+                    n.b = n
+                    m = new F.b([T.J])
+                    m.c = m
+                    m.b = m
+                    l = new F.b([T.K])
+                    l.c = l
+                    l.b = l
+                    k = new F.b([T.D])
+                    k.c = k
+                    k.b = k
+                    j = new F.b([T.A])
+                    j.c = j
+                    j.b = j
+                    i = new F.b([T.C])
+                    i.c = i
+                    i.b = i
+                    h = new F.b([T.I])
+                    h.c = h
+                    h.b = h
+                    g = [P.j]
+                    g = new T.futaba(a,u,t,f,s,r,q,p,o,n,m,l,k,j,i,h,H.a([], g),H.a([], g),H.a([], g),H.a([], g))
+                    g.Y(a, u, t, f)
+                    g.at(a, u)
+                    return g
+                }
+			if (a == "kaoruko") {
+                    t = H.d(a) + H.d($.ah())
+                    s = H.a([], [T.H])
+                    r = H.a([], [T.y])
+                    q = P.U(P.f, T.p)
+                    p = new F.b([T.M])
+                    p.c = p
+                    p.b = p
+                    o = new F.b([T.L])
+                    o.c = o
+                    o.b = o
+                    n = new F.b([T.G])
+                    n.c = n
+                    n.b = n
+                    m = new F.b([T.J])
+                    m.c = m
+                    m.b = m
+                    l = new F.b([T.K])
+                    l.c = l
+                    l.b = l
+                    k = new F.b([T.D])
+                    k.c = k
+                    k.b = k
+                    j = new F.b([T.A])
+                    j.c = j
+                    j.b = j
+                    i = new F.b([T.C])
+                    i.c = i
+                    i.b = i
+                    h = new F.b([T.I])
+                    h.c = h
+                    h.b = h
+                    g = [P.j]
+                    g = new T.kaoruko(a,u,t,f,s,r,q,p,o,n,m,l,k,j,i,h,H.a([], g),H.a([], g),H.a([], g),H.a([], g))
+                    g.Y(a, u, t, f)
+                    g.at(a, u)
+                    return g
+                }
+			
             if (a == "testa") {
                     t = H.d(a) + H.d($.ah())
                     s = H.a([], [T.H])
@@ -13338,6 +13681,376 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
             _.X = _.W = !1
             _.F = null
         },
+		karen: function karen(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+            var _ = this
+            _.aI = 0
+            _.aP = _.bb = _.af = null
+            _.a = a
+            _.b = b
+            _.c = c
+            _.d = d
+            _.y = _.x = _.r = _.f = _.e = null
+            _.z = 0
+            _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
+            _.go = 1
+            _.id = e
+			_.SR1 = 1
+			_.SR2 = 1
+			_.SR0 = 0
+            _.k2 = _.k1 = null
+            _.k3 = f
+            _.k4 = null
+            _.r1 = g
+            _.r2 = h
+            _.rx = i
+            _.ry = j
+            _.x1 = k
+            _.x2 = l
+            _.y1 = m
+            _.y2 = n
+            _.I = o
+            _.N = p
+            _.A = !1
+            _.u = q
+            _.U = null
+            _.D = r
+            _.q = s
+            _.a_ = t
+            _.V = _.O = _.L = 0
+            _.J = 32768
+            _.j = 0
+            _.X = _.W = !1
+            _.F = null
+        },
+		hikari: function hikari(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+            var _ = this
+            _.aI = 0
+            _.aP = _.bb = _.af = null
+            _.a = a
+            _.b = b
+            _.c = c
+            _.d = d
+            _.y = _.x = _.r = _.f = _.e = null
+            _.z = 0
+            _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
+            _.go = 1
+            _.id = e
+			_.SR1 = 1
+			_.SR2 = 1
+			_.SR0 = 0
+            _.k2 = _.k1 = null
+            _.k3 = f
+            _.k4 = null
+            _.r1 = g
+            _.r2 = h
+            _.rx = i
+            _.ry = j
+            _.x1 = k
+            _.x2 = l
+            _.y1 = m
+            _.y2 = n
+            _.I = o
+            _.N = p
+            _.A = !1
+            _.u = q
+            _.U = null
+            _.D = r
+            _.q = s
+            _.a_ = t
+            _.V = _.O = _.L = 0
+            _.J = 32768
+            _.j = 0
+            _.X = _.W = !1
+            _.F = null
+        },
+		mahiru: function mahiru(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+            var _ = this
+            _.aI = 0
+            _.aP = _.bb = _.af = null
+            _.a = a
+            _.b = b
+            _.c = c
+            _.d = d
+            _.y = _.x = _.r = _.f = _.e = null
+            _.z = 0
+            _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
+            _.go = 1
+            _.id = e
+			_.SR1 = 1
+			_.SR2 = 1
+			_.SR0 = 0
+            _.k2 = _.k1 = null
+            _.k3 = f
+            _.k4 = null
+            _.r1 = g
+            _.r2 = h
+            _.rx = i
+            _.ry = j
+            _.x1 = k
+            _.x2 = l
+            _.y1 = m
+            _.y2 = n
+            _.I = o
+            _.N = p
+            _.A = !1
+            _.u = q
+            _.U = null
+            _.D = r
+            _.q = s
+            _.a_ = t
+            _.V = _.O = _.L = 0
+            _.J = 32768
+            _.j = 0
+            _.X = _.W = !1
+            _.F = null
+        },
+		junna: function junna(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+            var _ = this
+            _.aI = 0
+            _.aP = _.bb = _.af = null
+            _.a = a
+            _.b = b
+            _.c = c
+            _.d = d
+            _.y = _.x = _.r = _.f = _.e = null
+            _.z = 0
+            _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
+            _.go = 1
+            _.id = e
+			_.SR1 = 1
+			_.SR2 = 1
+			_.SR0 = 0
+            _.k2 = _.k1 = null
+            _.k3 = f
+            _.k4 = null
+            _.r1 = g
+            _.r2 = h
+            _.rx = i
+            _.ry = j
+            _.x1 = k
+            _.x2 = l
+            _.y1 = m
+            _.y2 = n
+            _.I = o
+            _.N = p
+            _.A = !1
+            _.u = q
+            _.U = null
+            _.D = r
+            _.q = s
+            _.a_ = t
+            _.V = _.O = _.L = 0
+            _.J = 32768
+            _.j = 0
+            _.X = _.W = !1
+            _.F = null
+        },
+		nana: function nana(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+            var _ = this
+            _.aI = 0
+            _.aP = _.bb = _.af = null
+            _.a = a
+            _.b = b
+            _.c = c
+            _.d = d
+            _.y = _.x = _.r = _.f = _.e = null
+            _.z = 0
+            _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
+            _.go = 1
+            _.id = e
+			_.SR1 = 1
+			_.SR2 = 1
+			_.SR0 = 0
+            _.k2 = _.k1 = null
+            _.k3 = f
+            _.k4 = null
+            _.r1 = g
+            _.r2 = h
+            _.rx = i
+            _.ry = j
+            _.x1 = k
+            _.x2 = l
+            _.y1 = m
+            _.y2 = n
+            _.I = o
+            _.N = p
+            _.A = !1
+            _.u = q
+            _.U = null
+            _.D = r
+            _.q = s
+            _.a_ = t
+            _.V = _.O = _.L = 0
+            _.J = 32768
+            _.j = 0
+            _.X = _.W = !1
+            _.F = null
+        },
+		maya: function maya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+            var _ = this
+            _.aI = 0
+            _.aP = _.bb = _.af = null
+            _.a = a
+            _.b = b
+            _.c = c
+            _.d = d
+            _.y = _.x = _.r = _.f = _.e = null
+            _.z = 0
+            _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
+            _.go = 1
+            _.id = e
+			_.SR1 = 1
+			_.SR2 = 1
+			_.SR0 = 0
+            _.k2 = _.k1 = null
+            _.k3 = f
+            _.k4 = null
+            _.r1 = g
+            _.r2 = h
+            _.rx = i
+            _.ry = j
+            _.x1 = k
+            _.x2 = l
+            _.y1 = m
+            _.y2 = n
+            _.I = o
+            _.N = p
+            _.A = !1
+            _.u = q
+            _.U = null
+            _.D = r
+            _.q = s
+            _.a_ = t
+            _.V = _.O = _.L = 0
+            _.J = 32768
+            _.j = 0
+            _.X = _.W = !1
+            _.F = null
+        },
+		kuro: function kuro(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+            var _ = this
+            _.aI = 0
+            _.aP = _.bb = _.af = null
+            _.a = a
+            _.b = b
+            _.c = c
+            _.d = d
+            _.y = _.x = _.r = _.f = _.e = null
+            _.z = 0
+            _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
+            _.go = 1
+            _.id = e
+			_.SR1 = 1
+			_.SR2 = 1
+			_.SR0 = 0
+            _.k2 = _.k1 = null
+            _.k3 = f
+            _.k4 = null
+            _.r1 = g
+            _.r2 = h
+            _.rx = i
+            _.ry = j
+            _.x1 = k
+            _.x2 = l
+            _.y1 = m
+            _.y2 = n
+            _.I = o
+            _.N = p
+            _.A = !1
+            _.u = q
+            _.U = null
+            _.D = r
+            _.q = s
+            _.a_ = t
+            _.V = _.O = _.L = 0
+            _.J = 32768
+            _.j = 0
+            _.X = _.W = !1
+            _.F = null
+        },
+		futaba: function futaba(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+            var _ = this
+            _.aI = 0
+            _.aP = _.bb = _.af = null
+            _.a = a
+            _.b = b
+            _.c = c
+            _.d = d
+            _.y = _.x = _.r = _.f = _.e = null
+            _.z = 0
+            _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
+            _.go = 1
+            _.id = e
+			_.SR1 = 1
+			_.SR2 = 1
+			_.SR0 = 0
+            _.k2 = _.k1 = null
+            _.k3 = f
+            _.k4 = null
+            _.r1 = g
+            _.r2 = h
+            _.rx = i
+            _.ry = j
+            _.x1 = k
+            _.x2 = l
+            _.y1 = m
+            _.y2 = n
+            _.I = o
+            _.N = p
+            _.A = !1
+            _.u = q
+            _.U = null
+            _.D = r
+            _.q = s
+            _.a_ = t
+            _.V = _.O = _.L = 0
+            _.J = 32768
+            _.j = 0
+            _.X = _.W = !1
+            _.F = null
+        },
+		kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
+            var _ = this
+            _.aI = 0
+            _.aP = _.bb = _.af = null
+            _.a = a
+            _.b = b
+            _.c = c
+            _.d = d
+            _.y = _.x = _.r = _.f = _.e = null
+            _.z = 0
+            _.fy = _.fx = _.fr = _.dy = _.dx = _.db = _.cy = _.cx = _.ch = _.Q = null
+            _.go = 1
+            _.id = e
+			_.SR1 = 1
+			_.SR2 = 1
+			_.SR0 = 0
+            _.k2 = _.k1 = null
+            _.k3 = f
+            _.k4 = null
+            _.r1 = g
+            _.r2 = h
+            _.rx = i
+            _.ry = j
+            _.x1 = k
+            _.x2 = l
+            _.y1 = m
+            _.y2 = n
+            _.I = o
+            _.N = p
+            _.A = !1
+            _.u = q
+            _.U = null
+            _.D = r
+            _.q = s
+            _.a_ = t
+            _.V = _.O = _.L = 0
+            _.J = 32768
+            _.j = 0
+            _.X = _.W = !1
+            _.F = null
+        },
+		
         f1: function f1(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
             var _ = this
             _.a = a
@@ -20182,7 +20895,6 @@ tha4b1: function tha4b1() {
             s = u.r
             s.j = s.j + 400
             s = C.c.K(O.c("smah"), $.n5())
-			d.a.push(T.e(" [0] ", this.r.go, this.r, null, null, 0, 1000, 100))
             r = u.r
             q.push(T.e(s, r, r, t, t, 0, 1000, 100))
         },
@@ -20428,7 +21140,6 @@ T.hKm.prototype = {
                 p.j = p.j + p.db * 3
                 p = r.r.fr
                 u = r.r
-				r.r.fy = -1000
                 if (p > 0 && p < 200)
                     u.j = u.j + 1600
                 else
@@ -20847,7 +21558,7 @@ u.push($.v())
                 this.H(null, b)
         },
         al: function(a) {
-            a.go *= 30
+            a.go *= 3
         },
         gR: function() {
             return 1
@@ -33819,10 +34530,6 @@ T.noa.prototype = {
         t.r = this
         this.k2 = t
         t = this.id
-		u = new T.hI()
-        u.f = 256
-t.push(u)
-
 		      
     }, 
     bM: function() {
@@ -34086,6 +34793,277 @@ t.push(u)
 		t.push(u)
 		
     }}
+	T.karen.prototype = {
+    gah: function() {
+        return C.karen
+    },
+    gaQ: function() {
+        return H.a([$.ai(), $.am(), $.kj()], [P.f])
+    },
+    aa: function() {
+        var u, t = new T.aK()
+        t.r = this
+        this.k2 = t
+        t = this.id
+		      
+    }, 
+    bM: function() {
+            var u, t = this
+            t.dK()
+            u = t.bb
+            if (u == null)
+                u = t.bb = new T.cB(t)
+            t.y2.i(0, u)
+        },
+    ay: function(a, b, c, d) {
+		    
+            if(this.fr <= 0 ){
+			d.a.push($.v())
+			d.a.push(T.e("[0]: [...]", this, this.r, null, null, 0, 1000, 100))
+			}	
+        }
+}
+    T.hikari.prototype = {
+    gah: function() {
+        return C.hikari
+    },
+    gaQ: function() {
+        return H.a([$.ai(), $.am(), $.kj()], [P.f])
+    },
+    aa: function() {
+        var u, t = new T.aK()
+        t.r = this
+        this.k2 = t
+        t = this.id
+		      
+    }, 
+    bM: function() {
+            var u, t = this
+            t.dK()
+            u = t.bb
+            if (u == null)
+                u = t.bb = new T.cB(t)
+            t.y2.i(0, u)
+        },
+    ay: function(a, b, c, d) {
+		    
+            if(this.fr <= 0 ){
+			d.a.push($.v())
+			d.a.push(T.e("[0]: [...]", this, this.r, null, null, 0, 1000, 100))
+			}	
+        }
+}
+    T.mahiru.prototype = {
+    gah: function() {
+        return C.mahiru
+    },
+    gaQ: function() {
+        return H.a([$.ai(), $.am(), $.kj()], [P.f])
+    },
+    aa: function() {
+        var u, t = new T.aK()
+        t.r = this
+        this.k2 = t
+        t = this.id
+		      
+    }, 
+    bM: function() {
+            var u, t = this
+            t.dK()
+            u = t.bb
+            if (u == null)
+                u = t.bb = new T.cB(t)
+            t.y2.i(0, u)
+        },
+    ay: function(a, b, c, d) {
+		    
+            if(this.fr <= 0 ){
+			d.a.push($.v())
+			d.a.push(T.e("[0]: [...]", this, this.r, null, null, 0, 1000, 100))
+			}	
+        }
+}
+    T.junna.prototype = {
+    gah: function() {
+        return C.junna
+    },
+    gaQ: function() {
+        return H.a([$.ai(), $.am(), $.kj()], [P.f])
+    },
+    aa: function() {
+        var u, t = new T.aK()
+        t.r = this
+        this.k2 = t
+        t = this.id
+		      
+    }, 
+    bM: function() {
+            var u, t = this
+            t.dK()
+            u = t.bb
+            if (u == null)
+                u = t.bb = new T.cB(t)
+            t.y2.i(0, u)
+        },
+    ay: function(a, b, c, d) {
+		    
+            if(this.fr <= 0 ){
+			d.a.push($.v())
+			d.a.push(T.e("[0]: [...]", this, this.r, null, null, 0, 1000, 100))
+			}	
+        }
+}
+    T.nana.prototype = {
+    gah: function() {
+        return C.nana
+    },
+    gaQ: function() {
+        return H.a([$.ai(), $.am(), $.kj()], [P.f])
+    },
+    aa: function() {
+        var u, t = new T.aK()
+        t.r = this
+        this.k2 = t
+        t = this.id
+		      
+    }, 
+    bM: function() {
+            var u, t = this
+            t.dK()
+            u = t.bb
+            if (u == null)
+                u = t.bb = new T.cB(t)
+            t.y2.i(0, u)
+        },
+    ay: function(a, b, c, d) {
+		    
+            if(this.fr <= 0 ){
+			d.a.push($.v())
+			d.a.push(T.e("[0]: [...]", this, this.r, null, null, 0, 1000, 100))
+			}	
+        }
+}
+    T.maya.prototype = {
+    gah: function() {
+        return C.maya
+    },
+    gaQ: function() {
+        return H.a([$.ai(), $.am(), $.kj()], [P.f])
+    },
+    aa: function() {
+        var u, t = new T.aK()
+        t.r = this
+        this.k2 = t
+        t = this.id
+		      
+    }, 
+    bM: function() {
+            var u, t = this
+            t.dK()
+            u = t.bb
+            if (u == null)
+                u = t.bb = new T.cB(t)
+            t.y2.i(0, u)
+        },
+    ay: function(a, b, c, d) {
+		    
+            if(this.fr <= 0 ){
+			d.a.push($.v())
+			d.a.push(T.e("[0]: [...]", this, this.r, null, null, 0, 1000, 100))
+			}	
+        }
+}
+    T.kuro.prototype = {
+    gah: function() {
+        return C.kuro
+    },
+    gaQ: function() {
+        return H.a([$.ai(), $.am(), $.kj()], [P.f])
+    },
+    aa: function() {
+        var u, t = new T.aK()
+        t.r = this
+        this.k2 = t
+        t = this.id
+		      
+    }, 
+    bM: function() {
+            var u, t = this
+            t.dK()
+            u = t.bb
+            if (u == null)
+                u = t.bb = new T.cB(t)
+            t.y2.i(0, u)
+        },
+    ay: function(a, b, c, d) {
+		    
+            if(this.fr <= 0 ){
+			d.a.push($.v())
+			d.a.push(T.e("[0]: [...]", this, this.r, null, null, 0, 1000, 100))
+			}	
+        }
+}
+    T.futaba.prototype = {
+    gah: function() {
+        return C.futaba
+    },
+    gaQ: function() {
+        return H.a([$.ai(), $.am(), $.kj()], [P.f])
+    },
+    aa: function() {
+        var u, t = new T.aK()
+        t.r = this
+        this.k2 = t
+        t = this.id
+		      
+    }, 
+    bM: function() {
+            var u, t = this
+            t.dK()
+            u = t.bb
+            if (u == null)
+                u = t.bb = new T.cB(t)
+            t.y2.i(0, u)
+        },
+    ay: function(a, b, c, d) {
+		    
+            if(this.fr <= 0 ){
+			d.a.push($.v())
+			d.a.push(T.e("[0]: [...]", this, this.r, null, null, 0, 1000, 100))
+			}	
+        }
+}
+    T.kaoruko.prototype = {
+    gah: function() {
+        return C.kaoruko
+    },
+    gaQ: function() {
+        return H.a([$.ai(), $.am(), $.kj()], [P.f])
+    },
+    aa: function() {
+        var u, t = new T.aK()
+        t.r = this
+        this.k2 = t
+        t = this.id
+		      
+    }, 
+    bM: function() {
+            var u, t = this
+            t.dK()
+            u = t.bb
+            if (u == null)
+                u = t.bb = new T.cB(t)
+            t.y2.i(0, u)
+        },
+    ay: function(a, b, c, d) {
+		    
+            if(this.fr <= 0 ){
+			d.a.push($.v())
+			d.a.push(T.e("[0]: [...]", this, this.r, null, null, 0, 1000, 100))
+			}	
+        }
+}
+    
     T.i4.prototype = {
         gR: function() {
             return 1
@@ -38122,7 +39100,7 @@ dk: function(a, b, c, d, e, f, g) {
         s(T.D, [T.cg, T.dF, T.el])
         s(T.J, [T.dE, T.fire, T.ay])
         s(T.av, [T.hh,T.hha4n2, T.alf, T.youzi, T.tao, T.lv, T.pll, T.hel, T.UAV1, T.UAV2, T.LAN, T.BAR, T.szj, T.hha7t1, T.hha11t1 ,T.hha9n2,T.hhb3n1 ,T.hhb3n2 ,T.hhb3n3 ,T.hhb3n4 ,T.hhb3n5 ,T.hhb3n6 ,T.hhb3n7 ,T.hhb3n8 ,T.hhb3n9 ,T.hhb8n1 ,T.hhb8t1a ,T.hhb8t1b ,T.hhb8t2 , T.hi, T.ho, T.E8s, T.Syl, T.Windows])
-        s(T.cA, [T.eY, T.eZ, T.f_, T.f0, T.d7, T.d8, T.f1, T.f2, T.bA, T.f4, T.f6, T.tigershark, T.dark, T.hell, T.yuri2, T.yuriy, T.megia, T.tomb, T.testa, T.rumia, T.daiyousei, T.cirno , T.hong , T.testa , T.koakuma , T.patchouli , T.sakuya, T.reimu, T.Squall, T.marisa, T.remilia, T.flandre, T.rin, T.letty, T.chen, T.alice, T.lilywhite, T.phantom, T.youmu, T.yuyuko, T.ran, T.yukari, T.nue, T.AL1S, T.aris ,T.momori, T.midori, T.yuzu, T.rio, T.yuuka, T.noa, T.koyuki, T.hifumi, T.azusa, T.ribbit1, T.ribbit2, T.ribbit3, T.ribbit4, T.fox1, T.fox2, T.fox3, T.fox4, T.jntm, T.yeya])
+        s(T.cA, [T.eY, T.eZ, T.f_, T.f0, T.d7, T.d8, T.f1, T.f2, T.bA, T.f4, T.f6, T.tigershark, T.dark, T.hell, T.yuri2, T.yuriy, T.megia, T.tomb, T.testa, T.rumia, T.daiyousei, T.cirno , T.hong , T.testa , T.koakuma , T.patchouli , T.sakuya, T.reimu, T.Squall, T.marisa, T.remilia, T.flandre, T.rin, T.letty, T.chen, T.alice, T.lilywhite, T.phantom, T.youmu, T.yuyuko, T.ran, T.yukari, T.nue, T.AL1S, T.aris ,T.momori, T.midori, T.yuzu, T.rio, T.yuuka, T.noa, T.koyuki, T.hifumi, T.azusa, T.karen, T.hikari, T.mahiru, T.junna, T.nana, T.maya, T.kuro, T.futaba, T.kaoruko, T.ribbit1, T.ribbit2, T.ribbit3, T.ribbit4, T.fox1, T.fox2, T.fox3, T.fox4, T.jntm, T.yeya])
         t(T.hg, T.cy)
         t(T.f3, T.bA)
         t(T.e_, T.dN, T.tha6t2, T.yuriSuperControl)
@@ -38518,11 +39496,20 @@ C.fox4 = H.a(u([3, 1, 24, 2, 32, -16, 36, 302]), [P.j])
 C.Squall = H.a(u([15, 33, 3, 7, -14, 16, 16, 37]), [P.j])
 C.rio = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.yuuka = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
-C.noa = H.a(u([0, 0, 0, 0, 0, 0, 100, 1000]), [P.j])
+C.noa = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.koyuki = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.hifumi = H.a(u([-4, 1, -8, 6, 48, 27, 31, 502]), [P.j])
 C.jntm = H.a(u([44, 30, 315, 39, 30, 25, 46, 117]), [P.j])
 C.azusa = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.karen = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.hikari = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.mahiru = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.junna = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.nana = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.maya = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.kuro = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.futaba = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
+C.kaoruko = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.yeya = H.a(u([18, -46, -11, -82, 19, -70, 940, 999749]), [P.j])
         C.V = H.a(u(["*::class", "*::dir", "*::draggable", "*::hidden", "*::id", "*::inert", "*::itemprop", "*::itemref", "*::itemscope", "*::lang", "*::spellcheck", "*::title", "*::translate", "A::accesskey", "A::coords", "A::hreflang", "A::name", "A::shape", "A::tabindex", "A::target", "A::type", "AREA::accesskey", "AREA::alt", "AREA::coords", "AREA::nohref", "AREA::shape", "AREA::tabindex", "AREA::target", "AUDIO::controls", "AUDIO::loop", "AUDIO::mediagroup", "AUDIO::muted", "AUDIO::preload", "BDO::dir", "BODY::alink", "BODY::bgcolor", "BODY::link", "BODY::text", "BODY::vlink", "BR::clear", "BUTTON::accesskey", "BUTTON::disabled", "BUTTON::name", "BUTTON::tabindex", "BUTTON::type", "BUTTON::value", "CANVAS::height", "CANVAS::width", "CAPTION::align", "COL::align", "COL::char", "COL::charoff", "COL::span", "COL::valign", "COL::width", "COLGROUP::align", "COLGROUP::char", "COLGROUP::charoff", "COLGROUP::span", "COLGROUP::valign", "COLGROUP::width", "COMMAND::checked", "COMMAND::command", "COMMAND::disabled", "COMMAND::label", "COMMAND::radiogroup", "COMMAND::type", "DATA::value", "DEL::datetime", "DETAILS::open", "DIR::compact", "DIV::align", "DL::compact", "FIELDSET::disabled", "FONT::color", "FONT::face", "FONT::size", "FORM::accept", "FORM::autocomplete", "FORM::enctype", "FORM::method", "FORM::name", "FORM::novalidate", "FORM::target", "FRAME::name", "H1::align", "H2::align", "H3::align", "H4::align", "H5::align", "H6::align", "HR::align", "HR::noshade", "HR::size", "HR::width", "HTML::version", "IFRAME::align", "IFRAME::frameborder", "IFRAME::height", "IFRAME::marginheight", "IFRAME::marginwidth", "IFRAME::width", "IMG::align", "IMG::alt", "IMG::border", "IMG::height", "IMG::hspace", "IMG::ismap", "IMG::name", "IMG::usemap", "IMG::vspace", "IMG::width", "INPUT::accept", "INPUT::accesskey", "INPUT::align", "INPUT::alt", "INPUT::autocomplete", "INPUT::autofocus", "INPUT::checked", "INPUT::disabled", "INPUT::inputmode", "INPUT::ismap", "INPUT::list", "INPUT::max", "INPUT::maxlength", "INPUT::min", "INPUT::multiple", "INPUT::name", "INPUT::placeholder", "INPUT::readonly", "INPUT::required", "INPUT::size", "INPUT::step", "INPUT::tabindex", "INPUT::type", "INPUT::usemap", "INPUT::value", "INS::datetime", "KEYGEN::disabled", "KEYGEN::keytype", "KEYGEN::name", "LABEL::accesskey", "LABEL::for", "LEGEND::accesskey", "LEGEND::align", "LI::type", "LI::value", "LINK::sizes", "MAP::name", "MENU::compact", "MENU::label", "MENU::type", "METER::high", "METER::low", "METER::max", "METER::min", "METER::value", "OBJECT::typemustmatch", "OL::compact", "OL::reversed", "OL::start", "OL::type", "OPTGROUP::disabled", "OPTGROUP::label", "OPTION::disabled", "OPTION::label", "OPTION::selected", "OPTION::value", "OUTPUT::for", "OUTPUT::name", "P::align", "PRE::width", "PROGRESS::max", "PROGRESS::min", "PROGRESS::value", "SELECT::autocomplete", "SELECT::disabled", "SELECT::multiple", "SELECT::name", "SELECT::required", "SELECT::size", "SELECT::tabindex", "SOURCE::type", "TABLE::align", "TABLE::bgcolor", "TABLE::border", "TABLE::cellpadding", "TABLE::cellspacing", "TABLE::frame", "TABLE::rules", "TABLE::summary", "TABLE::width", "TBODY::align", "TBODY::char", "TBODY::charoff", "TBODY::valign", "TD::abbr", "TD::align", "TD::axis", "TD::bgcolor", "TD::char", "TD::charoff", "TD::colspan", "TD::headers", "TD::height", "TD::nowrap", "TD::rowspan", "TD::scope", "TD::valign", "TD::width", "TEXTAREA::accesskey", "TEXTAREA::autocomplete", "TEXTAREA::cols", "TEXTAREA::disabled", "TEXTAREA::inputmode", "TEXTAREA::name", "TEXTAREA::placeholder", "TEXTAREA::readonly", "TEXTAREA::required", "TEXTAREA::rows", "TEXTAREA::tabindex", "TEXTAREA::wrap", "TFOOT::align", "TFOOT::char", "TFOOT::charoff", "TFOOT::valign", "TH::abbr", "TH::align", "TH::axis", "TH::bgcolor", "TH::char", "TH::charoff", "TH::colspan", "TH::headers", "TH::height", "TH::nowrap", "TH::rowspan", "TH::scope", "TH::valign", "TH::width", "THEAD::align", "THEAD::char", "THEAD::charoff", "THEAD::valign", "TR::align", "TR::bgcolor", "TR::char", "TR::charoff", "TR::valign", "TRACK::default", "TRACK::kind", "TRACK::label", "TRACK::srclang", "UL::compact", "UL::type", "VIDEO::controls", "VIDEO::height", "VIDEO::loop", "VIDEO::mediagroup", "VIDEO::muted", "VIDEO::preload", "VIDEO::width"]), [P.f])
         C.W = H.a(u([10, -6, 1000, 0, 10, -15, 6, 0]), [P.j])
@@ -38642,9 +39629,9 @@ C.yeya = H.a(u([18, -46, -11, -82, 19, -70, 940, 999749]), [P.j])
 "fox4",
 "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAADFSURBVDhPY3RwcPjPQAFggtJYgfuKe2CMD+A0AKRxZ4QSGKMbMuXBAzAGAbwuwAZgGkEAxMYwYP/+/WAaZjPMJSAAk0MGWF2AbAg+zSCA1YB1a5NRNIDYIDF0kKOgwIARjbhsgoGriopgGqQZBFBcQEgzCGjfv89ws8cJysPhhfhTlmAMA+j8oOC5UBaSAcTYjg2AwwAUnyCnkQIcHR3BNNwF2EKZGAA3QL1kH5RFGMBsBwGwAbAogUURPoCsGQQozM4MDACW51Iz925UsAAAAABJRU5ErkJggg==",
 "rio",
-"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",
+"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",
 "yuuka",
-"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",
+"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",
 "jntm",
 "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAB+SURBVDhP7ZPBDoAgDEOHF/j/r+WmdqGmLqKgV1+iKdlapoG07lijlNLUPbXWpsyOgGjWJtCrL3ixGE1XsIeelHP2CVCY+QT2+gQjO0fo8QCiQdD6ENXgFPCGP6CdA/7ZmXMA0O8TjBoVevwucIFk1UqvxyfQkZ6IG3y8zmYb5UJZo3IBP3QAAAAASUVORK5CYII=",
 "noa",
