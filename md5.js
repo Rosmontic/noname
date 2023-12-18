@@ -38524,9 +38524,10 @@ dk: function(a, b, c, d, e, f, g) {
             var u, t, s, r = this , v ,w ,q = null 
 			if(this.r.SR0 == 1 && this.r.watch != null)
 			{
-			if(this.r.watch.fr > 0)
+			if(this.r.watch.SRm == 0)
 			{
-			return 0
+			d.a.push(T.e("[0]S2", this.r, this.r, q, q, 60, 1500, 100))
+			return
 			}
 			}
 			return a
