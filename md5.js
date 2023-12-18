@@ -22682,16 +22682,16 @@ T.thb8s1.prototype = {
         t: function(a, b, c, d) {
             var w, k ,l, v, u, t, s, r, q, p, o, n = H.a([], [T.aU])
             for (u = 0; u < a.length; ++u)
-                n.push(a[u].a)			
-			v = 0
+                n.push(a[u].a)
             r = H.a(n.slice(0), [H.n(n, 0)])
             q = d.a
+			v = 0
             for (u = 0; u < n.length; ++u) {
             o = n[u]
 			if(o.SR0 != null)
 			{
 			o.watch = this.r
-			if(this.r.SR0 == 1)	
+			if(o.SR0 == 1)	
 			{
 			v = 1
 			}			
