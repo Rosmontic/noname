@@ -22559,6 +22559,13 @@ T.thb8s1.prototype = {
         }
 }}  
     T.RevueStarlightstart.prototype = {
+	    ar: function(a, b) {
+            if (this.r.SR0 > 0)
+            { 
+                return !1
+            }
+			return this.aS(a, b)
+		},
 	    b5: function(a) {
             return a.b1(this.r.x.a.e)
         },
@@ -22583,6 +22590,46 @@ T.thb8s1.prototype = {
             q = d.a
             for (u = 0; u < n.length; ++u) {
             o = n[u]
+			if(this.r.e == "kaoruko@!" && o.e == "futaba@!" )
+			{
+			d.a.push(T.e("[0]：[歌唱舞蹈来来回回]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[一起走过来的二人路]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[然而我也找到了]", o, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[耸立夜空的一人路]", o, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[99期生 石动双叶]", o, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[鼓起干劲 一冲到底！]", o, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[花柳香子99期生 花柳香子]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[我要你陪伴我到最后！]", this.r, this.r, null, null, 0, 1000, 100))
+			n.SR0 = 1
+			return
+			}
+			if(o.e == "kaoruko@!" && this.r.e == "futaba@!" )
+			{
+			d.a.push(T.e("[0]：[歌唱舞蹈来来回回]", o, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[一起走过来的二人路]", o, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[然而我也找到了]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[耸立夜空的一人路]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[99期生 石动双叶]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[鼓起干劲 一冲到底！]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[花柳香子99期生 花柳香子]", o, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[我要你陪伴我到最后！]", o, this.r, null, null, 0, 1000, 100))
+			n.SR0 = 1
+			return
+			}
 			}
 			if (this.r.e == "karen@!"){
 			d.a.push(T.e("[0]：[星屑翩舞的舞台上]", this.r, this.r, null, null, 0, 1000, 100))
@@ -22595,7 +22642,7 @@ T.thb8s1.prototype = {
 			d.a.push($.v())
 			d.a.push(T.e("[0]：[99期生 爱城华恋]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
-			d.a.push(T.e("[0]：[我会让大家星光闪耀的]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]：[我会让大家星光闪耀的！]", this.r, this.r, null, null, 0, 1000, 100))
 			}
 			else if (this.r.e == "hikari@!"){
 			d.a.push(T.e("[0]：[从用力举起的手中滑落]", this.r, this.r, null, null, 0, 1000, 100))
@@ -22634,7 +22681,7 @@ T.thb8s1.prototype = {
 			d.a.push($.v())
 			d.a.push(T.e("[0]：[99期生 星见纯那]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
-			d.a.push(T.e("[0]：[我定会抓住 自己的星]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]：[我定会抓住 自己的星！]", this.r, this.r, null, null, 0, 1000, 100))
 			}
 			else if (this.r.e == "nana@!"){
 			d.a.push(T.e("[0]：[舞台上结出的丰硕果实]", this.r, this.r, null, null, 0, 1000, 100))
@@ -22645,7 +22692,7 @@ T.thb8s1.prototype = {
 			d.a.push($.v())
 			d.a.push(T.e("[0]：[99期生 大场奈奈]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
-			d.a.push(T.e("[0]：[由我来守护 永远 无论多少次]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]：[由我来守护 永远 无论多少次。]", this.r, this.r, null, null, 0, 1000, 100))
 			}
 			else if (this.r.e == "maya@!"){
 			d.a.push(T.e("[0]：[月之光 星的爱]", this.r, this.r, null, null, 0, 1000, 100))
@@ -22667,7 +22714,7 @@ T.thb8s1.prototype = {
 			d.a.push($.v())
 			d.a.push(T.e("[0]：[99期生次席 西条克洛迪娜]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
-			d.a.push(T.e("[0]：[要成为Star的 是我]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]：[要成为Star的 是我！]", this.r, this.r, null, null, 0, 1000, 100))
 			}
 			else if (this.r.e == "futaba@!"){
 			d.a.push(T.e("[0]：[那一天 我找到了]", this.r, this.r, null, null, 0, 1000, 100))
@@ -22693,7 +22740,7 @@ T.thb8s1.prototype = {
 			d.a.push($.v())
 			d.a.push(T.e("[0]：[99期生 花柳香子]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
-			d.a.push(T.e("[0]：[我会陪你，走到最后一刻]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]：[我会陪你，走到最后一刻！！]", this.r, this.r, null, null, 0, 1000, 100))
 			}
 }}
     T.fox1n2.prototype = {
