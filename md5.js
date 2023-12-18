@@ -22607,7 +22607,7 @@ T.thb8s1.prototype = {
 			d.a.push(T.e("[0]：[花柳香子99期生 花柳香子]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
 			d.a.push(T.e("[0]：[我要你陪伴我到最后！]", this.r, this.r, null, null, 0, 1000, 100))
-			n.SR0 = 1
+			o.SR0 = 1
 			return
 			}
 			if(o.e == "kaoruko@!" && this.r.e == "futaba@!" )
@@ -22624,10 +22624,10 @@ T.thb8s1.prototype = {
 			d.a.push($.v())
 			d.a.push(T.e("[0]：[鼓起干劲 一冲到底！]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
-			d.a.push(T.e("[0]：[花柳香子99期生 花柳香子]", o, this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]：[99期生 花柳香子]", o, this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
 			d.a.push(T.e("[0]：[我要你陪伴我到最后！]", o, this.r, null, null, 0, 1000, 100))
-			n.SR0 = 1
+			o.SR0 = 1
 			return
 			}
 			}
