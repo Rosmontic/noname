@@ -22691,7 +22691,7 @@ T.thb8s1.prototype = {
 			if(o.SR0 != null)
 			{
 			o.watch = this.r
-			if(o.SR0 == 1)	
+			if(o.SR0 == 0)	
 			{
 			v = 1
 			}			
@@ -38522,7 +38522,7 @@ dk: function(a, b, c, d, e, f, g) {
 	T.RevueStarlightready.prototype = {
         aK: function(a, b, c, d) {
             var u, t, s, r = this , v ,w ,q = null 
-			if(this.r.SR0 == 0 && this.r.watch != null)
+			if(this.r.SR0 == 1 && this.r.watch != null)
 			{
 			if(this.r.watch.fr > 0)
 			{
