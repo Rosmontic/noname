@@ -22686,6 +22686,7 @@ T.thb8s1.prototype = {
             r = H.a(n.slice(0), [H.n(n, 0)])
             q = d.a
 			v = 0
+			d.a.push(T.e("[0]: [R0]", this.r, this.r, null, null, 0, 1000, 100))
             for (u = 0; u < n.length; ++u) {
             o = n[u]
 			if(o.SR0 != null)
@@ -22697,10 +22698,11 @@ T.thb8s1.prototype = {
 			}			
 			}
 			}
+			d.a.push(T.e("[0]: [R1]", this.r, this.r, null, null, 0, 1000, 100))
 			if(v == 0)
 			{
 			this.r.SRm = 1
-			d.a.push(T.e("[0]: [R1]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]: [R2]", this.r, this.r, null, null, 0, 1000, 100))
 			this.r.fr = 0
 			this.r.bf(this.r.fr, null, c, d)
 			}
@@ -38524,8 +38526,10 @@ dk: function(a, b, c, d, e, f, g) {
             var u, t, s, r = this , v ,w ,q = null 
 			if(this.r.SR0 == 1 && this.r.watch != null)
 			{
+			d.a.push(T.e("[0] S1 ", this.r, this.r, q, q, 60, 1500, 100))
 			if(this.r.watch.fr > 0)
 			{
+			d.a.push(T.e("[0] S2 ", this.r, this.r, q, q, 60, 1500, 100))
 			return 0
 			}
 			}
