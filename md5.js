@@ -13703,6 +13703,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
 			_.SR1 = 1
 			_.SR2 = 1
 			_.SR0 = 0
+			_.enemy = 0
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -13744,6 +13745,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
 			_.SR1 = 1
 			_.SR2 = 1
 			_.SR0 = 0
+			_.enemy = 0
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -13785,6 +13787,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
 			_.SR1 = 1
 			_.SR2 = 1
 			_.SR0 = 0
+			_.enemy = 0
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -13826,6 +13829,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
 			_.SR1 = 1
 			_.SR2 = 1
 			_.SR0 = 0
+			_.enemy = 0
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -13867,6 +13871,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
 			_.SR1 = 1
 			_.SR2 = 1
 			_.SR0 = 0
+			_.enemy = 0
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -13908,6 +13913,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
 			_.SR1 = 1
 			_.SR2 = 1
 			_.SR0 = 0
+			_.enemy = 0
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -13949,6 +13955,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
 			_.SR1 = 1
 			_.SR2 = 1
 			_.SR0 = 0
+			_.enemy = 0
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -13990,6 +13997,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
 			_.SR1 = 1
 			_.SR2 = 1
 			_.SR0 = 0
+			_.enemy = 0
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -14031,6 +14039,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
 			_.SR1 = 1
 			_.SR2 = 1
 			_.SR0 = 0
+			_.enemy = 0
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -22588,6 +22597,7 @@ T.thb8s1.prototype = {
 			this.r.SR0 = 1
             r = H.a(n.slice(0), [H.n(n, 0)])
             q = d.a
+			this.r.enemy = n.length - this.r.y.f.length
             for (u = 0; u < n.length; ++u) {
             o = n[u]
 			if(this.r.e == "kaoruko@!" && o.e == "futaba@!" )
@@ -22608,6 +22618,7 @@ T.thb8s1.prototype = {
 			d.a.push($.v())
 			d.a.push(T.e("[0]：[我要你陪伴我到最后！]", this.r, this.r, null, null, 0, 1000, 100))
 			o.SR0 = 1
+			o.enemy = n.length - o.y.f.length
 			return
 			}
 			if(o.e == "kaoruko@!" && this.r.e == "futaba@!" )
@@ -22628,9 +22639,47 @@ T.thb8s1.prototype = {
 			d.a.push($.v())
 			d.a.push(T.e("[0]：[我要你陪伴我到最后！]", o, this.r, null, null, 0, 1000, 100))
 			o.SR0 = 1
+			o.enemy = n.length - o.y.f.length
 			return
 			}
+			if(this.r.e == "karen@!" && o.e == "hikari@!" )
+			{
+			d.a.push(T.e("[0]：[从用力举起的手中]", o, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[可人绽放的爱之花]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[哪怕最后要以悲剧告终]", o, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[跳入闪耀之舞台]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[99期生 神乐光]", o, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[99期生 爱城华恋]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0] / [1]：[我会让大家星光闪耀！]", this.r, o, null, null, 0, 1000, 100))
+			o.SR0 = 1
+			o.enemy = n.length - o.y.f.length
+			return
 			}
+			if(o.e == "karen@!" && this.r.e == "hikari@!" )
+			{
+			d.a.push(T.e("[0]：[从用力举起的手中]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[可人绽放的爱之花]", o, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[哪怕最后要以悲剧告终]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[跳入闪耀之舞台]", o, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[99期生 神乐光]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[99期生 爱城华恋]", o, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0] / [1]：[我会让大家星光闪耀！]", this.r, o, null, null, 0, 1000, 100))
+			o.SR0 = 1
+			o.enemy = n.length - o.y.f.length
+			return
+			}}
 			if (this.r.e == "karen@!"){
 			d.a.push(T.e("[0]：[星屑翩舞的舞台上]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
