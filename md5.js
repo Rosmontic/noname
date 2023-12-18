@@ -38526,8 +38526,8 @@ dk: function(a, b, c, d, e, f, g) {
 			{
 			if(this.r.watch.SRm == 0)
 			{
-			d.a.push(T.e("[0]S2", this.r, this.r, q, q, 60, 1500, 100))
-			return
+			bug = bug
+			return 0
 			}
 			}
 			return a
