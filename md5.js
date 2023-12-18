@@ -22598,15 +22598,103 @@ T.thb8s1.prototype = {
 			d.a.push(T.e("[0]：[我会让大家星光闪耀的]", this.r, this.r, null, null, 0, 1000, 100))
 			}
 			else if (this.r.e == "hikari@!"){
-			d.a.push(T.e("[0]：[从用力举起的手中滑落
-坠入奈落的往昔誓言
-再度登上命运之舞台
-哪怕最后要以悲剧告终
-99期生 神乐光
-一切为了Starlight！]", this.r, this.r, null, null, 0, 1000, 100))
-			
+			d.a.push(T.e("[0]：[从用力举起的手中滑落]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[坠入奈落的往昔誓言]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[再度登上命运之舞台]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[哪怕最后要以悲剧告终]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[99期生 神乐光]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[一切为了Starlight！]", this.r, this.r, null, null, 0, 1000, 100))
 			}
-			
+			else if (this.r.e == "mahiru@!"){
+			d.a.push(T.e("[0]：[我喜欢闪耀的舞台]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[更喜欢闪耀的你]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[愿我们跳起这支圆舞曲]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[今生今世永不停息]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[99期生 露崎真昼]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[一直在你身边的……是我哦。]", this.r, this.r, null, null, 0, 1000, 100))
+			}
+			else if (this.r.e == "junna@!"){
+			d.a.push(T.e("[0]：[人有命中注定的一颗星]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[烁星 明星 流星——]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[就算见不到我的那颗星]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[从今天起 我不再做只懂仰望的自己]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[99期生 星见纯那]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[我定会抓住 自己的星]", this.r, this.r, null, null, 0, 1000, 100))
+			}
+			else if (this.r.e == "nana@!"){
+			d.a.push(T.e("[0]：[舞台上结出的丰硕果实]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[可是大家太过柔嫩]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[必须有人来守护]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[99期生 大场奈奈]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[由我来守护 永远 无论多少次]", this.r, this.r, null, null, 0, 1000, 100))
+			}
+			else if (this.r.e == "maya@!"){
+			d.a.push(T.e("[0]：[月之光 星的爱]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[今让我集众多光芒]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[递给你的心]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[天堂真矢99期首席 天堂真矢]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[今夜 将闪耀带给你！]", this.r, this.r, null, null, 0, 1000, 100))
+			}
+			else if (this.r.e == "kuro@!"){
+			d.a.push(T.e("[0]：[闪耀的机会 众人平等]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[我会用爱之舞跳得比任何人更热情]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[以自由之翼飞得比任何人更高]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[99期生次席 西条克洛迪娜]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[要成为Star的 是我]", this.r, this.r, null, null, 0, 1000, 100))
+			}
+			else if (this.r.e == "futaba@!"){
+			d.a.push(T.e("[0]：[那一天 我找到了]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[在花瓣飞舞的舞台上的二人戏码]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[那是从此往后不容任何人染指]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[格杀勿论的一人道！]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[99期生 石动双叶]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[鼓起干劲 一冲到底！！]", this.r, this.r, null, null, 0, 1000, 100))
+			}
+			else if (this.r.e == "kaoruko@!"){
+			d.a.push(T.e("[0]：[唱歌舞蹈来来去去]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[相互竞争的往日岁月]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[再度交锋的舞台之刃]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[如花盛开的热情 此刻正逢其时]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[99期生 花柳香子]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[我会陪你，走到最后一刻]", this.r, this.r, null, null, 0, 1000, 100))
+			}
 }}
     T.fox1n2.prototype = {
         gb3: function() {
