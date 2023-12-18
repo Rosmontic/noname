@@ -22577,42 +22577,36 @@ T.thb8s1.prototype = {
                 n.push(a[u].a)	
             s = this.r
 			this.f = 0
+			w = 0
 			this.r.SR0 = 1
             r = H.a(n.slice(0), [H.n(n, 0)])
             q = d.a
-			if (this.r.e == "karen@!"){
-			d.a.push(T.e("[0]：[A1!]", this.r, this.r, null, null, 0, 1000, 100))
-			}
-			else if (this.r.e == "hikari@!"){
-			d.a.push(T.e("[0]：[A2!]", this.r, this.r, null, null, 0, 1000, 100))
-			}
-			else if (this.r.e == "mahiru@!"){
-			d.a.push(T.e("[0]：[A3!]", this.r, this.r, null, null, 0, 1000, 100))
-			}
-			else if (this.r.e == "junna@!"){
-			d.a.push(T.e("[0]：[A4!]", this.r, this.r, null, null, 0, 1000, 100))
-			}
-			else if (this.r.e == "nana@!"){
-			d.a.push(T.e("[0]：[A5!]", this.r, this.r, null, null, 0, 1000, 100))
-			}
-			else if (this.r.e == "maya@!"){
-			d.a.push(T.e("[0]：[A6!]", this.r, this.r, null, null, 0, 1000, 100))
-			}
-			else if (this.r.e == "kuro@!"){
-			d.a.push(T.e("[0]：[A7!]", this.r, this.r, null, null, 0, 1000, 100))
-			}
-			else if (this.r.e == "futaba@!"){
-			d.a.push(T.e("[0]：[A8!]", this.r, this.r, null, null, 0, 1000, 100))
-			}
-			else if (this.r.e == "kaoruko@!"){
-			d.a.push(T.e("[0]：[A9!]", this.r, this.r, null, null, 0, 1000, 100))
-			}
-
             for (u = 0; u < n.length; ++u) {
             o = n[u]
+			}
+			if (this.r.e == "karen@!"){
+			d.a.push(T.e("[0]：[星屑翩舞的舞台上]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[可人绽放的爱之花]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[身披重获新生的自己]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[跳入闪耀之舞台]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[99期生 爱城华恋]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
+			d.a.push(T.e("[0]：[我会让大家星光闪耀的]", this.r, this.r, null, null, 0, 1000, 100))
+			}
+			else if (this.r.e == "hikari@!"){
+			d.a.push(T.e("[0]：[从用力举起的手中滑落
+坠入奈落的往昔誓言
+再度登上命运之舞台
+哪怕最后要以悲剧告终
+99期生 神乐光
+一切为了Starlight！]", this.r, this.r, null, null, 0, 1000, 100))
 			
-            
-        }
+			}
+			
 }}
     T.fox1n2.prototype = {
         gb3: function() {
