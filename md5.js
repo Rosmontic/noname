@@ -22708,20 +22708,28 @@ T.thb8s1.prototype = {
 			switch (w) {
             case 0:
 			d.a.push(T.e("[0]: [激昂的Revue，Start]", this.r, this.r, null, null, 0, 1000, 100))
+			break
 			case 1:
 			d.a.push(T.e("[0]: [渴望的Revue，Start]", this.r, this.r, null, null, 0, 1000, 100))
+			break
 			case 2:
 			d.a.push(T.e("[0]: [傲慢的Revue，Start]", this.r, this.r, null, null, 0, 1000, 100))
+			break
 			case 3:
 			d.a.push(T.e("[0]: [嫉妒的Revue，Start]", this.r, this.r, null, null, 0, 1000, 100))
+			break
 			case 4:
 			d.a.push(T.e("[0]: [约定的Revue，Start]", this.r, this.r, null, null, 0, 1000, 100))
+			break
 			case 5:
 			d.a.push(T.e("[0]: [孤独的Revue，Start]", this.r, this.r, null, null, 0, 1000, 100))
+			break
 			case 6:
 			d.a.push(T.e("[0]: [羁绊的Revue，Start]", this.r, this.r, null, null, 0, 1000, 100))
+			break
 			case 7:
 			d.a.push(T.e("[0]: [命运的Revue，Start]", this.r, this.r, null, null, 0, 1000, 100))
+			break
 			}
 			for (u = 0; u < n.length; ++u) {
             o = n[u]
@@ -22731,6 +22739,7 @@ T.thb8s1.prototype = {
 			o.cx = o.cx * 2
 			o.ch = C.d.v(o.ch, 2)
 			o.dx = C.d.v(o.dx, 2)
+			break
 			case 1:
 			o.Q = o.Q * 4
 			o.db = o.db * 4
@@ -22739,13 +22748,15 @@ T.thb8s1.prototype = {
 			o.Q = o.Q + o.ch
 			o.db = o.db + o.dx
 			o.ch = 1
-			o.dx = 1		
+			o.dx = 1
+			break
 			case 3:
 			o.J = o.J * C.d.v((o.Q + o.cx + o.cy + o.ch + o.db + o.dx + o.dy + o.fx), 1024)
 			o.j = o.j - (4096 + 12*o.cx)
 			case 4:
 			o.ch = o.ch * 3
 			o.dx = o.dx * 3
+			break
 			case 5:
 			if(o.y.f.length == 1)
 			{
@@ -22756,14 +22767,20 @@ T.thb8s1.prototype = {
 			o.ch = o.ch * 2
 			o.dx = o.dx * 2
 			}
+			d.a.push(T.e("[0]: [孤独的Revue，Start]", this.r, this.r, null, null, 0, 1000, 100))
+			break
 			case 6:
 			if(o.y.f.length > 1)
 			{
 			o.go = o.go * 2
 			o.j = o.j + 4096
 			}
+			d.a.push(T.e("[0]: [羁绊的Revue，Start]", this.r, this.r, null, null, 0, 1000, 100))
+			break
 			case 7:
 			o.j = 0
+			d.a.push(T.e("[0]: [命运的Revue，Start]", this.r, this.r, null, null, 0, 1000, 100))
+			break
 			}
 			}
 			this.r.fr = 0
