@@ -37006,7 +37006,7 @@ t.push(u)
             var u, t, s = this, r = d.a
             r.push($.v())
             u = this.tigerCurse ? "[1]被一百万匹力量轰散，永不超生" : s.cw()
-			if(this.r.SRm == 1){
+			if(this.SRm == 1){
 			u = "[1]：わかります"
 			}
             t = new T.ch()
