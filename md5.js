@@ -22695,12 +22695,77 @@ T.thb8s1.prototype = {
 			{
 			v = 1
 			}			
+			else if(o.SR0 == 1)
+			{
+			o.j = 0
+			}
 			}
 			}
 			if(v == 0)
 			{
 			this.r.SRm = 1
-			d.a.push(T.e("[0]: [R2]", this.r, this.r, null, null, 0, 1000, 100))
+			w = (c.m() & 7)
+			switch (w) {
+            case 0:
+			d.a.push(T.e("[0]: [激昂的Revue，Start]", this.r, this.r, null, null, 0, 1000, 100))
+			case 1:
+			d.a.push(T.e("[0]: [渴望的Revue，Start]", this.r, this.r, null, null, 0, 1000, 100))
+			case 2:
+			d.a.push(T.e("[0]: [傲慢的Revue，Start]", this.r, this.r, null, null, 0, 1000, 100))
+			case 3:
+			d.a.push(T.e("[0]: [嫉妒的Revue，Start]", this.r, this.r, null, null, 0, 1000, 100))
+			case 4:
+			d.a.push(T.e("[0]: [约定的Revue，Start]", this.r, this.r, null, null, 0, 1000, 100))
+			case 5:
+			d.a.push(T.e("[0]: [孤独的Revue，Start]", this.r, this.r, null, null, 0, 1000, 100))
+			case 6:
+			d.a.push(T.e("[0]: [羁绊的Revue，Start]", this.r, this.r, null, null, 0, 1000, 100))
+			case 7:
+			d.a.push(T.e("[0]: [命运的Revue，Start]", this.r, this.r, null, null, 0, 1000, 100))
+			}
+			for (u = 0; u < n.length; ++u) {
+            o = n[u]
+			switch (w) {
+            case 0:
+			o.go = o.go * 1.5
+			o.cx = o.cx * 2
+			o.ch = C.d.v(o.ch, 2)
+			o.dx = C.d.v(o.dx, 2)
+			case 1:
+			o.Q = o.Q * 4
+			o.db = o.db * 4
+			o.cy = C.d.v(o.cy, 4)
+			case 2:
+			o.Q = o.Q + o.ch
+			o.db = o.db + o.dx
+			o.ch = 1
+			o.dx = 1		
+			case 3:
+			o.J = o.J * C.d.v((o.Q + o.cx + o.cy + o.ch + o.db + o.dx + o.dy + o.fx), 1024)
+			o.j = o.j - (4096 + 12*o.cx)
+			case 4:
+			o.ch = o.ch * 3
+			o.dx = o.dx * 3
+			case 5:
+			if(o.y.f.length == 1)
+			{
+			o.Q = o.Q * 2
+			o.db = o.db * 2
+			o.cx = o.cx * 2
+			o.cy = o.cy * 2
+			o.ch = o.ch * 2
+			o.dx = o.dx * 2
+			}
+			case 6:
+			if(o.y.f.length > 1)
+			{
+			o.go = o.go * 2
+			o.j = o.j + 4096
+			}
+			case 7:
+			o.j = 0
+			}
+			}
 			this.r.fr = 0
 			this.r.bf(this.r.fr, null, c, d)
 			}
@@ -22794,7 +22859,7 @@ T.thb8s1.prototype = {
 			d.a.push($.v())
 			d.a.push(T.e("[0]：[99期生 爱城华恋]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
-			d.a.push(T.e("[0] / [1]：[我会让大家星光闪耀！]", this.r, o, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0] [1]：[我会让大家星光闪耀！]", this.r, o, null, null, 0, 1000, 100))
 			o.SR0 = 1
 			o.enemy = n.length - o.y.f.length
 			return
@@ -39940,7 +40005,7 @@ C.koyuki = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.hifumi = H.a(u([-4, 1, -8, 6, 48, 27, 31, 502]), [P.j])
 C.jntm = H.a(u([44, 30, 315, 39, 30, 25, 46, 117]), [P.j])
 C.azusa = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
-C.Kirin = H.a(u([0, 0, 1000, 0, 0, 0, 100, 0]), [P.j])
+C.Kirin = H.a(u([0, 0, 2048, 0, 0, 0, 100, 0]), [P.j])
 C.karen = H.a(u([0, 0, 0, 0, 0, 0, 100, 0]), [P.j])
 C.hikari = H.a(u([0, 0, 0, 0, 0, 0, 100, 0]), [P.j])
 C.mahiru = H.a(u([0, 0, 0, 0, 0, 0, 100, 0]), [P.j])
