@@ -22728,6 +22728,7 @@ T.thb8s1.prototype = {
 			d.a.push(T.e("[0]: [羁绊的Revue，Start]", this.r, this.r, null, null, 0, 1000, 100))
 			break
 			case 7:
+			k = (c.m() & 511)
 			d.a.push(T.e("[0]: [命运的Revue，Start]", this.r, this.r, null, null, 0, 1000, 100))
 			break
 			}
@@ -22767,7 +22768,6 @@ T.thb8s1.prototype = {
 			o.ch = o.ch * 2
 			o.dx = o.dx * 2
 			}
-			d.a.push(T.e("[0]: [孤独的Revue，Start]", this.r, this.r, null, null, 0, 1000, 100))
 			break
 			case 6:
 			if(o.y.f.length > 1)
@@ -22775,11 +22775,16 @@ T.thb8s1.prototype = {
 			o.go = o.go * 2
 			o.j = o.j + 4096
 			}
-			d.a.push(T.e("[0]: [羁绊的Revue，Start]", this.r, this.r, null, null, 0, 1000, 100))
 			break
 			case 7:
-			o.j = 0
-			d.a.push(T.e("[0]: [命运的Revue，Start]", this.r, this.r, null, null, 0, 1000, 100))
+			o.fx = k + 1
+			o.fr = o.fx
+			o.Q = C.d.v(k + 1, 2)
+			o.db = C.d.v(k + 1, 2)
+			o.cx = C.d.v(k + 1, 2)
+			o.cy = C.d.v(k + 1, 2)
+			o.ch = C.d.v(k + 1, 2)
+			o.dx = C.d.v(k + 1, 2)
 			break
 			}
 			}
@@ -40165,7 +40170,7 @@ C.yeya = H.a(u([18, -46, -11, -82, 19, -70, 940, 999749]), [P.j])
 "hifumi",
 "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAJkUExURf/sqP3rqfvoqfrnpv3qp//sp/jmruvYr+LMsNrCqt7Ir+nXufPit/7rqPPhtuDKuN3Gu9rBtdS5rNrCtuXTx+bUx+jVufrnqvfovOfUxt7EuOTNw9/HvN/Hu+LNwezbz+TPwtrBtOvWtPnnre7ezO3d0uvZzezaz+fVyu7e0+rZzeTOw+TOwtvBs9zDsvXhqf/tqOzWsOXOxOXNwe/c0vHh1+rWzO7Z0OjSyOTPxefTyeDJvdO1pubNovzop+TJsOfRyOLHvOzVzOzVzeXPx+bSzOfRyenUy+fUy+XRyNe7rta5mvvnp/nkpd+/qebPxubQx+7b1O3Y0caxrKqTi8GpoerWz97Fu9a4qta6p+3YrP7rp/rkpdu3nta1qbmgmdHAuvjs5vLo5OHKt9S6qunUzOK9tdm2q9W9tMqymOfUm/3qpuPEotOuoL2ckN7Lvf328P/38vzm2vHa0O7b0/HX0dvCveDSzZyGapeHZvnmpO7Tn9Ktm9q1ovji1v707/zu6fvq4/fp4vbk3dOypb+jmd/EnO/YhN7AcPvjmvjjo+fKmvHZo/zq0Pno5PbOzP3q5v/v6fXZ0dGwkdCwktq7mt/HgseqcPzno/Xhq+rSxPXh2OfSwvjY0cCsq4R5aN7Gl9S3ps+3ptS+rejSq+TKo8ell56GfqmNhbiiqGVidYiIkdPItt/GptzFueTRyPHfopeHfVpSXZeTm5qMmm1rhcXGz+Pi5eHb4+PUuu3YqNC5qta/sv/sqbesklNUaWhpfJ2drVdaerKzwN3c38G+xfPx9dbKxebVr7yvsNLApP///1OwEpAAAAABYktHRMuEswZwAAAAB3RJTUUH5wgPCDk6aR3fvQAAAP9JREFUGNNjYAADRiZmFlYGOGBj5+Dk4uZhgnJ5+fgFBIWERUTFxCECEpJS0jKycvIKikq8IL6yiqqauoamlraOrp6+AVDA0MjYxNTM3MLSytrGFsi3s3dwdHJ2cXVz9/D08vZhYPD18w8IDAoOCQ0Lt4yIjIpmiImNi09ITEpOSU1Lz8jM4mXIzsnNyy8oLCouKS0rr6isYjCorqmtq29obGpuaW1r7+hkMOjq7unt658wcdLkKVOnTZ8BtMfAYOas2XPmzpu/YOGixUvAbl26bPmKlatWr1m7bv16kIoNGzdt3rJ12/YdO3ft3gMU2Ltv/4GDhw4fOXrs+ImTpwDbi1IMmaiW1gAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wOC0xNVQwODo1Nzo1NCswMDowMLSdjkMAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDgtMTVUMDg6NTc6NTQrMDA6MDDFwDb/AAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTA4LTE1VDA4OjU3OjU4KzAwOjAwVXV9VAAAAABJRU5ErkJggg==",
 "Kirin",
-"/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/CABEIABAAEAMBEQACEQEDEQH/xAAsAAADAQAAAAAAAAAAAAAAAAAGBwgJAQEAAwAAAAAAAAAAAAAAAAAAAQID/9oADAMBAAIQAxAAAABrbiEruGPVn//EAB8QAAICAwEBAQEBAAAAAAAAAAQFAwYCBwgJARQVI//aAAgBAQABPwDj7y0svMPnXhvjUPP+k9y9VXOqH2i+3zdTiOKHUGvC9eqrex+a/SHV6yK7FZ4oGE38OM8SKuyFKlBTtM6xJOin6U8uNTdpeXlD6REqdSrPViTm+e/NLPTK2dT4mVu1T9wSXurWNaz+Yn/lzaSGYMsigwhQjw3zVYgUYnKgFHj36scz9O8p0DS+yNrVDVm9aPr8bW2wqveSQQVF8rqwD+Rm9ChPPWjflIhLgEiLhOk/EIfEon+zl/4gK/VR5w7wl0DzDe1uL7Z2yluwVOmnA7BPNnGlsTkmlmuXyszYluv2eN1fKNhbEdF2VLVASExiIgIgs23Jwof/xAAhEQABAwQBBQAAAAAAAAAAAAABAgMRABIhMWETQXKx0f/aAAgBAgEBPwBxw3WgwkYMbJyCJ7RwZpLhSq3JTMSd042q4lIkHP2umSUK8SffFf/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8AH//Z",
+"iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAABfSURBVDhPY2RgYPgPxBQBSgz4zwRlkA1gXiDHK2A9KAZcq14GpAgDrdYoEAXWQ7EXhoEBKIEIEoAB9ACFBhwywAhEkAAM4wIYagZXGCADXKkSqzpciokB8KRMJmBgAACwqRgTJTw+jgAAAABJRU5ErkJggg==",
 "karen",
 "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACZSURBVDhPpZNBDgIhDEXbAk5mNJ7ApffkZC4cMgsP4xm+ZQRWxgn0bwoJ76VtAjFNED6BBiOOmZ7rg9Q0LNnhlBJILBL6SlhrufdHaicWiZdglwTyReLHJRle02brRHM4ji79ML/gxkmp/7I/ft/u7dybOgJUAhf6d9KADMcYcV4MkgxnyWzoBJMj4HXFon+ndylVwhevMIg+xKtH8CqX1MwAAAAASUVORK5CYII=",
 "hikari",
