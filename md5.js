@@ -22710,35 +22710,43 @@ T.thb8s1.prototype = {
 			switch (w) {
             case 0:
 			d.a.push(T.e("[0]: [第一天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
 			d.a.push(T.e("[0]: [「激昂的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
 			break
 			case 1:
 			d.a.push(T.e("[0]: [第二天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
 			d.a.push(T.e("[0]: [「渴望的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
 			break
 			case 2:
 			d.a.push(T.e("[0]: [第三天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
 			d.a.push(T.e("[0]: [「傲慢的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
 			break
 			case 3:
 			d.a.push(T.e("[0]: [第四天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
 			d.a.push(T.e("[0]: [「嫉妒的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
 			break
 			case 4:
 			d.a.push(T.e("[0]: [第五天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
 			d.a.push(T.e("[0]: [「约定的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
 			break
 			case 5:
 			d.a.push(T.e("[0]: [第六天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
 			d.a.push(T.e("[0]: [「孤独的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
 			break
 			case 6:
 			d.a.push(T.e("[0]: [第七天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
 			d.a.push(T.e("[0]: [「羁绊的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
 			break
 			case 7:
 			k = (c.m() & 511)
 			d.a.push(T.e("[0]: [第八天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push($.v())
 			d.a.push(T.e("[0]: [「命运的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
 			break
 			}
@@ -22754,7 +22762,7 @@ T.thb8s1.prototype = {
 			o.cx = o.cx * 2
 			o.ch = C.d.v(o.ch, 2)
 			o.dx = C.d.v(o.dx, 2)
-			if (this.r.e == "karen@!"){
+			if (o.e == "karen@!"){
 			o.Q = o.Q * 2
 			o.cy = o.cy * 2
 			o.ch = 1
@@ -22765,7 +22773,7 @@ T.thb8s1.prototype = {
 			o.Q = o.Q * 4
 			o.db = o.db * 4
 			o.cy = C.d.v(o.cy, 4)
-			if (this.r.e == "junna@!"){
+			if (o.e == "junna@!"){
 			o.cx = o.cx * 2
 			o.db = o.db * 2
 			o.dx = o.dx * 2
@@ -22777,25 +22785,27 @@ T.thb8s1.prototype = {
 			o.db = o.db + o.dx
 			o.ch = 1
 			o.dx = 1
-			if (this.r.e == "maya@!"){
+			if (o.e == "maya@!"){
 			o.Q = o.Q * 2
 			o.db = o.db * 2
+			o.cx = o.cx * 2
+			o.cy = o.cy * 2
 			}
-			if (this.r.e == "kuro@!"){
-			o.ch = o.Q
-			o.dx = o.db
+			if (o.e == "kuro@!"){
+			o.ch = o.Q * 2
+			o.dx = o.db * 2
 			}
 			break
 			case 3:
 			o.J = o.J * C.d.v((o.Q + o.cx + o.cy + o.ch + o.db + o.dx + o.dy + o.fx), 256)
-			if (this.r.e != "mahiru@!"){
+			if (o.e != "mahiru@!"){
 			o.j = o.j - (4096 + 12*o.cx)
 			}
 			break
 			case 4:
 			o.ch = o.ch * 3
 			o.dx = o.dx * 3
-			if ((this.r.e == "futaba@!" && this.r.partner != null) || (this.r.e == "kaoruko@!" && this.r.partner != null)){
+			if ((o.e == "futaba@!" && o.partner != null) || (o.e == "kaoruko@!" && o.partner != null)){
 			o.ch = o.ch * 3
 			o.dx = o.dx * 3
 			}
@@ -22809,7 +22819,7 @@ T.thb8s1.prototype = {
 			o.cy = o.cy * 2
 			o.ch = o.ch * 2
 			o.dx = o.dx * 2
-			if (this.r.e == "karen@!"  || this.r.e == "hikari@!" || this.r.e == "nana@!" ){
+			if (o.e == "karen@!"  || o.e == "hikari@!" || o.e == "nana@!" ){
 			o.go = o.go * 2
 			}}
 			break
@@ -22818,16 +22828,16 @@ T.thb8s1.prototype = {
 			{
 			o.go = o.go * 2
 			o.j = o.j + 4096
-			if (this.r.e == "karen@!"  || this.r.e == "hikari@!" ){
+			if (o.e == "karen@!"  || o.e == "hikari@!" ){
 			o.go = o.go * 2
 			}
 			}
-			else if(o.y.f.length == 1 && this.r.e == "nana@!"){
+			else if(o.y.f.length == 1 && o.e == "nana@!"){
 			o.go = o.go * 2
 			}
 			break
 			case 7:
-			if(this.r.e != "Kirin@!"){
+			if(o.SRm = null){
 			l = o.fr
 			o.fx = k + 1
 			o.fr = o.fx
