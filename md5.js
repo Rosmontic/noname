@@ -14090,6 +14090,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
 			_.SR0 = 0
 			_.enemy = 0
 			_.watch = null
+			_.partner = null
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -14133,6 +14134,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
 			_.SR0 = 0
 			_.enemy = 0
 			_.watch = null
+			_.partner = null
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -22707,28 +22709,36 @@ T.thb8s1.prototype = {
 			w = (c.m() & 7)
 			switch (w) {
             case 0:
+			d.a.push(T.e("[0]: [第一天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push(T.e("[0]: [「激昂的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
 			break
 			case 1:
+			d.a.push(T.e("[0]: [第二天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push(T.e("[0]: [「渴望的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
 			break
 			case 2:
+			d.a.push(T.e("[0]: [第三天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push(T.e("[0]: [「傲慢的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
 			break
 			case 3:
+			d.a.push(T.e("[0]: [第四天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push(T.e("[0]: [「嫉妒的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
 			break
 			case 4:
+			d.a.push(T.e("[0]: [第五天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push(T.e("[0]: [「约定的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
 			break
 			case 5:
+			d.a.push(T.e("[0]: [第六天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push(T.e("[0]: [「孤独的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
 			break
 			case 6:
+			d.a.push(T.e("[0]: [第七天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push(T.e("[0]: [「羁绊的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
 			break
 			case 7:
 			k = (c.m() & 511)
+			d.a.push(T.e("[0]: [第八天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push(T.e("[0]: [「命运的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
 			break
 			}
@@ -22744,23 +22754,51 @@ T.thb8s1.prototype = {
 			o.cx = o.cx * 2
 			o.ch = C.d.v(o.ch, 2)
 			o.dx = C.d.v(o.dx, 2)
+			if (this.r.e != "karen@!"){
+			o.Q = o.Q * 2
+			o.cy = o.cy * 2
+			o.ch = 1
+			o.dx = 1
+			}
 			break
 			case 1:
 			o.Q = o.Q * 4
 			o.db = o.db * 4
 			o.cy = C.d.v(o.cy, 4)
+			if (this.r.e != "junna@!"){
+			o.cx = o.cx * 4
+			o.db = o.db * 2
+			o.dx = o.dx * 2
+			o.ch = o.ch * 2
+			o.cy = 1
+			}
 			case 2:
 			o.Q = o.Q + o.ch
 			o.db = o.db + o.dx
 			o.ch = 1
 			o.dx = 1
+			if (this.r.e != "maya@!"){
+			o.Q = o.Q * 2
+			o.db = o.db * 2
+			}
+			if (this.r.e != "kuro@!"){
+			o.ch = o.Q
+			o.dx = o.db
+			}
 			break
 			case 3:
 			o.J = o.J * C.d.v((o.Q + o.cx + o.cy + o.ch + o.db + o.dx + o.dy + o.fx), 256)
+			if (this.r.e != "mahiru@!"){
 			o.j = o.j - (4096 + 12*o.cx)
+			}
+			break
 			case 4:
 			o.ch = o.ch * 3
 			o.dx = o.dx * 3
+			if ((this.r.e == "futaba@!" && this.r.partner != null) || (this.r.e == "kaoruko@!" && this.r.partner != null)){
+			o.ch = o.ch * 3
+			o.dx = o.dx * 3
+			}
 			break
 			case 5:
 			if(o.y.f.length == 1)
@@ -22771,13 +22809,21 @@ T.thb8s1.prototype = {
 			o.cy = o.cy * 2
 			o.ch = o.ch * 2
 			o.dx = o.dx * 2
-			}
+			if (this.r.e == "karen@!"  || this.r.e == "hikari@!" || this.r.e == "nana@!" ){
+			o.go = o.go * 2
+			}}
 			break
 			case 6:
 			if(o.y.f.length > 1)
 			{
 			o.go = o.go * 2
 			o.j = o.j + 4096
+			if (this.r.e == "karen@!"  || this.r.e == "hikari@!" ){
+			o.go = o.go * 2
+			}
+			}
+			else if(o.y.f.length == 1 && this.r.e == "nana@!"){
+			o.go = o.go * 2
 			}
 			break
 			case 7:
@@ -22850,6 +22896,10 @@ T.thb8s1.prototype = {
 			d.a.push(T.e("[0]：[我要你陪伴我到最后！]", this.r, this.r, null, null, 0, 1000, 100))
 			o.SR0 = 1
 			o.enemy = n.length - o.y.f.length
+			if(this.r.y == o.y){
+			this.r.partner = o
+			o.partner = this.r
+			}
 			return
 			}
 			if(o.e == "kaoruko@!" && this.r.e == "futaba@!" )
@@ -22871,9 +22921,13 @@ T.thb8s1.prototype = {
 			d.a.push(T.e("[0]：[我要你陪伴我到最后！]", o, this.r, null, null, 0, 1000, 100))
 			o.SR0 = 1
 			o.enemy = n.length - o.y.f.length
+			if(this.r.y == o.y){
+			this.r.partner = o
+			o.partner = this.r
+			}
 			return
 			}
-			if(this.r.e == "karen@!" && o.e == "hikari@!" )
+			if(this.r.e == "karen@!" && o.e == "hikari@!"  && this.r.y == o.y)
 			{
 			d.a.push(T.e("[0]：[从用力举起的手中]", o, this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
@@ -22892,7 +22946,7 @@ T.thb8s1.prototype = {
 			o.enemy = n.length - o.y.f.length
 			return
 			}
-			if(o.e == "karen@!" && this.r.e == "hikari@!" )
+			if(o.e == "karen@!" && this.r.e == "hikari@!" && this.r.y == o.y)
 			{
 			d.a.push(T.e("[0]：[从用力举起的手中]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
