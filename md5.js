@@ -22837,7 +22837,7 @@ T.thb8s1.prototype = {
 			}
 			break
 			case 7:
-			if(o.SRm = null){
+			if(o.SRm == null){
 			l = o.fr
 			o.fx = k + 1
 			o.fr = o.fx
@@ -37096,6 +37096,7 @@ t.push(u)
             for (u = this.N,
             u = new F.ar(u,u.b,[H.n(u, 0)]); u.p(); )
                 if (u.b.bP(a, b, c))
+				    c.a.push(T.e("[0]: [position zero!]", this, this, null, null, 0, 1000, 100))
                     break
         },
         l: function(a) {
