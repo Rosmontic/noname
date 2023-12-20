@@ -37087,7 +37087,10 @@ t.push(u)
                     break
             if (s.fr > 0)
                 return
-			d.a.push(T.e("[0]: [1]", this, s.x.d9(s), null, null, 50, 1000, 100))
+			if(s.x.d9(s) != null && b.SR0 != null)
+			{
+			d.a.push(T.e("[0]: [position zero!]", b, b, null, null, 50, 1000, 100))
+			}
             s.x.d9(s)
             if (b != null && b.fr > 0)
                 b.bP(s, c, d)
