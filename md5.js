@@ -37087,6 +37087,7 @@ t.push(u)
                     break
             if (s.fr > 0)
                 return
+			d.a.push(T.e("[0]: [1]", this, s.x.d9(s), null, null, 50, 1000, 100))
             s.x.d9(s)
             if (b != null && b.fr > 0)
                 b.bP(s, c, d)
@@ -37096,7 +37097,6 @@ t.push(u)
             for (u = this.N,
             u = new F.ar(u,u.b,[H.n(u, 0)]); u.p(); )
                 if (u.b.bP(a, b, c))
-				    c.a.push(T.e("[0]: [position zero!]", this, this, null, null, 0, 1000, 100))
                     break
         },
         l: function(a) {
