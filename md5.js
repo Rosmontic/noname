@@ -22754,7 +22754,7 @@ T.thb8s1.prototype = {
 			o.cx = o.cx * 2
 			o.ch = C.d.v(o.ch, 2)
 			o.dx = C.d.v(o.dx, 2)
-			if (this.r.e != "karen@!"){
+			if (this.r.e == "karen@!"){
 			o.Q = o.Q * 2
 			o.cy = o.cy * 2
 			o.ch = 1
@@ -22765,23 +22765,23 @@ T.thb8s1.prototype = {
 			o.Q = o.Q * 4
 			o.db = o.db * 4
 			o.cy = C.d.v(o.cy, 4)
-			if (this.r.e != "junna@!"){
-			o.cx = o.cx * 4
+			if (this.r.e == "junna@!"){
+			o.cx = o.cx * 2
 			o.db = o.db * 2
 			o.dx = o.dx * 2
 			o.ch = o.ch * 2
-			o.cy = 1
+			o.cy = C.d.v(o.cy, 2)
 			}
 			case 2:
 			o.Q = o.Q + o.ch
 			o.db = o.db + o.dx
 			o.ch = 1
 			o.dx = 1
-			if (this.r.e != "maya@!"){
+			if (this.r.e == "maya@!"){
 			o.Q = o.Q * 2
 			o.db = o.db * 2
 			}
-			if (this.r.e != "kuro@!"){
+			if (this.r.e == "kuro@!"){
 			o.ch = o.Q
 			o.dx = o.db
 			}
@@ -22827,17 +22827,19 @@ T.thb8s1.prototype = {
 			}
 			break
 			case 7:
+			if(this.r.e != "Kirin@!"){
 			l = o.fr
 			o.fx = k + 1
 			o.fr = o.fx
-			d.a.push(T.e("[1]", o, T.a1(o, l), null, null, 0, 1000, 100))
 			d.a.push($.v())
+			d.a.push(T.e("[1]", o, T.a1(o, l), null, null, 0, 1000, 100))
 			o.Q = C.d.v(k + 1, 2)
 			o.db = C.d.v(k + 1, 2)
 			o.cx = C.d.v(k + 1, 2)
 			o.cy = C.d.v(k + 1, 2)
 			o.ch = C.d.v(k + 1, 2)
 			o.dx = C.d.v(k + 1, 2)
+			}
 			break
 			}
 			}
