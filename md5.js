@@ -22697,9 +22697,9 @@ T.thb8s1.prototype = {
 			{
 			v = 1
 			}			
-			else if(o.SR0 == 1 || o.SRO == null)
+			else if((o.SR0 == 1 || o.SR0 == null) && o.SRm == null)
 			{
-			o.j = -2048
+			o.j = - 10240
 			}
 			}
 			}
@@ -22771,9 +22771,9 @@ T.thb8s1.prototype = {
 			}
 			break
 			case 1:
-			o.Q = o.Q * 4
-			o.db = o.db * 4
-			o.cy = C.d.v(o.cy, 4)
+			o.Q = o.Q * 3
+			o.db = o.db * 3
+			o.cy = C.d.v(o.cy, 3)
 			if (o.e == "junna@!"){
 			o.cx = o.cx * 2
 			o.db = o.db * 2
@@ -22807,9 +22807,9 @@ T.thb8s1.prototype = {
 			o.ch = o.ch * 3
 			o.dx = o.dx * 3
 			if ((o.e == "futaba@!" && o.partner != null) || (o.e == "kaoruko@!" && o.partner != null)){
-			
-			o.ch = o.ch * 2
-			o.dx = o.dx * 2
+			o.go = o.go * 1.5
+			o.ch = o.ch * 2.5
+			o.dx = o.dx * 2.5
 			}
 			break
 			case 5:
