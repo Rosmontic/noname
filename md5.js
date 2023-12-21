@@ -22697,15 +22697,15 @@ T.thb8s1.prototype = {
 			{
 			v = 1
 			}			
-			else if(o.SR0 == 1)
+			else if(o.SR0 == 1 || o.SRO == null)
 			{
-			o.j = 0
+			o.j = -2048
 			}
 			}
 			}
 			if(v == 0)
 			{
-			this.r.SRm = 1
+			this.r.SRm = 1		
 			w = (c.m() & 7)
 			switch (w) {
             case 0:
@@ -22756,6 +22756,7 @@ T.thb8s1.prototype = {
 			d.a.push(T.e("[0]：[歌词，舞蹈，相互争夺吧]", this.r, this.r, null, null, 0, 1000, 100))
 			for (u = 0; u < n.length; ++u) {
             o = n[u]
+			o.j = 0
 			switch (w) {
             case 0:
 			o.go = o.go * 2
@@ -22806,8 +22807,9 @@ T.thb8s1.prototype = {
 			o.ch = o.ch * 3
 			o.dx = o.dx * 3
 			if ((o.e == "futaba@!" && o.partner != null) || (o.e == "kaoruko@!" && o.partner != null)){
-			o.ch = o.ch * 3
-			o.dx = o.dx * 3
+			
+			o.ch = o.ch * 2
+			o.dx = o.dx * 2
 			}
 			break
 			case 5:
@@ -22909,6 +22911,8 @@ T.thb8s1.prototype = {
 			d.a.push($.v())
 			d.a.push(T.e("[0]：[我要你陪伴我到最后！]", this.r, this.r, null, null, 0, 1000, 100))
 			o.SR0 = 1
+			this.r.db = 3 * this.r.db
+			o.Q = 3 * o.Q
 			o.enemy = n.length - o.y.f.length
 			if(this.r.y == o.y){
 			this.r.partner = o
@@ -22934,6 +22938,8 @@ T.thb8s1.prototype = {
 			d.a.push($.v())
 			d.a.push(T.e("[0]：[我要你陪伴我到最后！]", o, this.r, null, null, 0, 1000, 100))
 			o.SR0 = 1
+			o.db = 3 * o.db
+			this.r.Q = 3 * this.r.Q
 			o.enemy = n.length - o.y.f.length
 			if(this.r.y == o.y){
 			this.r.partner = o
