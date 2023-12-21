@@ -26245,7 +26245,7 @@ T.tha4n1.prototype = {
             return a.b1(this.r.y.e)
         },
         am: function(a, b) {
-            return a.fr <= 0 && !a.$iav && !a.r1.G(0, $.eE()) && !a.tigerCurse
+            return a.fr <= 0 && !a.$iav && !a.r1.G(0, $.eE()) && !a.tigerCurse && !a.SRm
         },
         a8: function(a, b, c) {
             if (b)
@@ -26287,7 +26287,7 @@ T.tha4n1.prototype = {
             return a.b1(this.r.y.e)
         },
         am: function(a, b) {
-            return a.fr <= 0 && !a.$iav
+            return a.fr <= 0 && !a.$iav && !a.r1.G(0, $.eE()) && !a.tigerCurse && !a.SRm
         },
 		a8: function(a, b, c) {
             return a.L * a.J
@@ -26378,8 +26378,11 @@ r.push(T.e("[1]灵力散尽", n.r, T.a1(n.r, n.r.fr) , m, m, 0, 1000, 100))
 n.r.bf(n.r.fr, null, c, d)
         }
     }
-
     T.i7.prototype = {
+	    ai: function(a, b) {
+            this.r = a
+            this.f = 36
+        },
         t: function(a, b, c, d) {
             var u, t, s, r = this, q = null, p = a[0].a, o = d.a
             o.push(T.e(O.c("vDpa"), r.r, p, q, q, 0, 1000, 100))
@@ -35337,7 +35340,7 @@ t.push(u)
         return C.Kirin
     },
     gaQ: function() {
-        return H.a([$.ai(), $.am(), $.kj()], [P.f])
+        return H.a([], [P.f])
     },
     aa: function() {
         var u, t = new T.noak()
@@ -35353,7 +35356,7 @@ t.push(u)
         return C.karen
     },
     gaQ: function() {
-        return H.a([$.ai(), $.am(), $.kj()], [P.f])
+        return H.a([], [P.f])
     },
     aa: function() {
         var u, t = new T.aK()
@@ -35386,7 +35389,7 @@ t.push(u)
         return C.hikari
     },
     gaQ: function() {
-        return H.a([$.ai(), $.am(), $.kj()], [P.f])
+        return H.a([], [P.f])
     },
     aa: function() {
         var u, t = new T.aK()
@@ -35419,7 +35422,7 @@ t.push(u)
         return C.mahiru
     },
     gaQ: function() {
-        return H.a([$.ai(), $.am(), $.kj()], [P.f])
+        return H.a([], [P.f])
     },
     aa: function() {
         var u, t = new T.aK()
@@ -35452,7 +35455,7 @@ t.push(u)
         return C.junna
     },
     gaQ: function() {
-        return H.a([$.ai(), $.am(), $.kj()], [P.f])
+        return H.a([], [P.f])
     },
     aa: function() {
         var u, t = new T.aK()
@@ -35485,7 +35488,7 @@ t.push(u)
         return C.nana
     },
     gaQ: function() {
-        return H.a([$.ai(), $.am(), $.kj()], [P.f])
+        return H.a([], [P.f])
     },
     aa: function() {
         var u, t = new T.aK()
@@ -35518,7 +35521,7 @@ t.push(u)
         return C.maya
     },
     gaQ: function() {
-        return H.a([$.ai(), $.am(), $.kj()], [P.f])
+        return H.a([], [P.f])
     },
     aa: function() {
         var u, t = new T.aK()
@@ -35551,7 +35554,7 @@ t.push(u)
         return C.kuro
     },
     gaQ: function() {
-        return H.a([$.ai(), $.am(), $.kj()], [P.f])
+        return H.a([], [P.f])
     },
     aa: function() {
         var u, t = new T.aK()
@@ -35584,7 +35587,7 @@ t.push(u)
         return C.futaba
     },
     gaQ: function() {
-        return H.a([$.ai(), $.am(), $.kj()], [P.f])
+        return H.a([], [P.f])
     },
     aa: function() {
         var u, t = new T.aK()
@@ -35620,7 +35623,7 @@ t.push(u)
         return C.kaoruko
     },
     gaQ: function() {
-        return H.a([$.ai(), $.am(), $.kj()], [P.f])
+        return H.a([], [P.f])
     },
     aa: function() {
         var u, t = new T.aK()
@@ -40145,7 +40148,7 @@ C.junna = H.a(u([0, 0, 0, 0, 0, 0, 100, 0]), [P.j])
 C.nana = H.a(u([0, 0, 0, 0, 0, 0, 100, 0]), [P.j])
 C.maya = H.a(u([0, 0, 0, 0, 0, 0, 100, 0]), [P.j])
 C.kuro = H.a(u([0, 0, 0, 0, 0, 0, 100, 0]), [P.j])
-C.futaba = H.a(u([52, 4, 14, 14, -16, 11, 160, 29]), [P.j])
+C.futaba = H.a(u([52, 4, 14, 14, -16, 11, 100, 89]), [P.j])
 C.kaoruko = H.a(u([-10, 21, -1, 21, 32, 1, 100, -1]), [P.j])
 C.yeya = H.a(u([18, -46, -11, -82, 19, -70, 940, 999749]), [P.j])
         C.V = H.a(u(["*::class", "*::dir", "*::draggable", "*::hidden", "*::id", "*::inert", "*::itemprop", "*::itemref", "*::itemscope", "*::lang", "*::spellcheck", "*::title", "*::translate", "A::accesskey", "A::coords", "A::hreflang", "A::name", "A::shape", "A::tabindex", "A::target", "A::type", "AREA::accesskey", "AREA::alt", "AREA::coords", "AREA::nohref", "AREA::shape", "AREA::tabindex", "AREA::target", "AUDIO::controls", "AUDIO::loop", "AUDIO::mediagroup", "AUDIO::muted", "AUDIO::preload", "BDO::dir", "BODY::alink", "BODY::bgcolor", "BODY::link", "BODY::text", "BODY::vlink", "BR::clear", "BUTTON::accesskey", "BUTTON::disabled", "BUTTON::name", "BUTTON::tabindex", "BUTTON::type", "BUTTON::value", "CANVAS::height", "CANVAS::width", "CAPTION::align", "COL::align", "COL::char", "COL::charoff", "COL::span", "COL::valign", "COL::width", "COLGROUP::align", "COLGROUP::char", "COLGROUP::charoff", "COLGROUP::span", "COLGROUP::valign", "COLGROUP::width", "COMMAND::checked", "COMMAND::command", "COMMAND::disabled", "COMMAND::label", "COMMAND::radiogroup", "COMMAND::type", "DATA::value", "DEL::datetime", "DETAILS::open", "DIR::compact", "DIV::align", "DL::compact", "FIELDSET::disabled", "FONT::color", "FONT::face", "FONT::size", "FORM::accept", "FORM::autocomplete", "FORM::enctype", "FORM::method", "FORM::name", "FORM::novalidate", "FORM::target", "FRAME::name", "H1::align", "H2::align", "H3::align", "H4::align", "H5::align", "H6::align", "HR::align", "HR::noshade", "HR::size", "HR::width", "HTML::version", "IFRAME::align", "IFRAME::frameborder", "IFRAME::height", "IFRAME::marginheight", "IFRAME::marginwidth", "IFRAME::width", "IMG::align", "IMG::alt", "IMG::border", "IMG::height", "IMG::hspace", "IMG::ismap", "IMG::name", "IMG::usemap", "IMG::vspace", "IMG::width", "INPUT::accept", "INPUT::accesskey", "INPUT::align", "INPUT::alt", "INPUT::autocomplete", "INPUT::autofocus", "INPUT::checked", "INPUT::disabled", "INPUT::inputmode", "INPUT::ismap", "INPUT::list", "INPUT::max", "INPUT::maxlength", "INPUT::min", "INPUT::multiple", "INPUT::name", "INPUT::placeholder", "INPUT::readonly", "INPUT::required", "INPUT::size", "INPUT::step", "INPUT::tabindex", "INPUT::type", "INPUT::usemap", "INPUT::value", "INS::datetime", "KEYGEN::disabled", "KEYGEN::keytype", "KEYGEN::name", "LABEL::accesskey", "LABEL::for", "LEGEND::accesskey", "LEGEND::align", "LI::type", "LI::value", "LINK::sizes", "MAP::name", "MENU::compact", "MENU::label", "MENU::type", "METER::high", "METER::low", "METER::max", "METER::min", "METER::value", "OBJECT::typemustmatch", "OL::compact", "OL::reversed", "OL::start", "OL::type", "OPTGROUP::disabled", "OPTGROUP::label", "OPTION::disabled", "OPTION::label", "OPTION::selected", "OPTION::value", "OUTPUT::for", "OUTPUT::name", "P::align", "PRE::width", "PROGRESS::max", "PROGRESS::min", "PROGRESS::value", "SELECT::autocomplete", "SELECT::disabled", "SELECT::multiple", "SELECT::name", "SELECT::required", "SELECT::size", "SELECT::tabindex", "SOURCE::type", "TABLE::align", "TABLE::bgcolor", "TABLE::border", "TABLE::cellpadding", "TABLE::cellspacing", "TABLE::frame", "TABLE::rules", "TABLE::summary", "TABLE::width", "TBODY::align", "TBODY::char", "TBODY::charoff", "TBODY::valign", "TD::abbr", "TD::align", "TD::axis", "TD::bgcolor", "TD::char", "TD::charoff", "TD::colspan", "TD::headers", "TD::height", "TD::nowrap", "TD::rowspan", "TD::scope", "TD::valign", "TD::width", "TEXTAREA::accesskey", "TEXTAREA::autocomplete", "TEXTAREA::cols", "TEXTAREA::disabled", "TEXTAREA::inputmode", "TEXTAREA::name", "TEXTAREA::placeholder", "TEXTAREA::readonly", "TEXTAREA::required", "TEXTAREA::rows", "TEXTAREA::tabindex", "TEXTAREA::wrap", "TFOOT::align", "TFOOT::char", "TFOOT::charoff", "TFOOT::valign", "TH::abbr", "TH::align", "TH::axis", "TH::bgcolor", "TH::char", "TH::charoff", "TH::colspan", "TH::headers", "TH::height", "TH::nowrap", "TH::rowspan", "TH::scope", "TH::valign", "TH::width", "THEAD::align", "THEAD::char", "THEAD::charoff", "THEAD::valign", "TR::align", "TR::bgcolor", "TR::char", "TR::charoff", "TR::valign", "TRACK::default", "TRACK::kind", "TRACK::label", "TRACK::srclang", "UL::compact", "UL::type", "VIDEO::controls", "VIDEO::height", "VIDEO::loop", "VIDEO::mediagroup", "VIDEO::muted", "VIDEO::preload", "VIDEO::width"]), [P.f])
