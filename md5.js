@@ -35630,7 +35630,8 @@ t.push(u)
 		t.push(new T.RevueStarlightready())
 		u =new T.RevueStarlightstart()
         u.f = 1024
-        t.push(u)       
+        t.push(u)
+		
     }, 
     bM: function() {
             var u, t = this
@@ -38694,13 +38695,35 @@ dk: function(a, b, c, d, e, f, g) {
         }
 	T.RevueStarlightready.prototype = {
         aK: function(a, b, c, d) {
-            var u, t, s, r = this , v ,w ,q = null 
+            var u, t, s, r = this , p, o, l, v ,w ,q = null 
 			if(this.r.SR0 == 1 && this.r.watch != null)
 			{
 			if(this.r.watch.SRm == 0)
 			{
 			d.a.push(T.e("[0]：......", this.r.watch , this.r, q, q, 60, 1500, 100))
 			return 0
+			}	
+			}
+			if(this.r.e == "kaoruko@!" && this.r.partner != null)
+			{
+			if(this.r.partner.fr <= 0){
+			o = this.r.partner
+            if (!C.a.w(o.x.f, o)) {
+			    p = o.x.a
+                if (!C.a.w(p.c, o))
+                    C.a.i(p.c, o)
+                p = p.e
+                if (!C.a.w(p, o)) {
+				    l = o.x.f
+                    if (l.length > 0)
+                        C.a.ck(p, C.a.aJ(p, C.a.gbe(l)) + 1, o)
+                    else
+                        p.push(o)
+                }
+                C.a.i(o.x.f, o)
+            }
+			d.a.push(T.e("[1]复活了", o, T.a1(o, 0), null, null, 0, 1000, 100))
+			o.f = o.f + 2048
 			}
 			}
 			return a
