@@ -22753,7 +22753,7 @@ T.thb8s1.prototype = {
 			d.a.push($.v())
 			d.a.push(T.e("[0]: [以TopStar为目标]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
-			d.a.push(T.e("[0]: [歌词，舞蹈，争夺吧]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]: [歌词，舞蹈，相互争夺吧]", this.r, this.r, null, null, 0, 1000, 100))
 			for (u = 0; u < n.length; ++u) {
             o = n[u]
 			switch (w) {
@@ -22853,6 +22853,7 @@ T.thb8s1.prototype = {
 			break
 			}
 			}
+			this.f = 0
 			this.r.fr = 0
 			this.r.bf(this.r.fr, null, c, d)
 			}
@@ -37074,9 +37075,11 @@ t.push(u)
         bf: function(a, b, c, d) {
             var u, t, s = this, r = d.a
             r.push($.v())
-            u = this.tigerCurse ? "[1]被一百万匹力量轰散，永不超生" : s.cw()
-			if(this.SRm == 1){
-			u = "[1]：わかります"
+			u = this.tigerCurse ? "[1]被一百万匹力量轰散，永不超生" : s.cw()
+			switch (this.e) {
+			case "Kirin@!":
+			u = "[1]：眩しい"
+			break
 			}
             t = new T.ch()
             t.a = s.e
@@ -37087,7 +37090,6 @@ t.push(u)
                     break
             if (s.fr > 0)
                 return
-			d.a.push(T.e("[0]: [1]", b, !s.x.d9(s), null, null, 50, 1000, 100))
             s.x.d9(s)
             if (b != null && b.fr > 0)
                 b.bP(s, c, d)
