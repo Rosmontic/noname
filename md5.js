@@ -22709,51 +22709,51 @@ T.thb8s1.prototype = {
 			w = (c.m() & 7)
 			switch (w) {
             case 0:
-			d.a.push(T.e("[0]: [第一天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]：[第一天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
-			d.a.push(T.e("[0]: [「激昂的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
+			d.a.push(T.e("[0]：[「激昂的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
 			break
 			case 1:
-			d.a.push(T.e("[0]: [第二天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]：[第二天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
-			d.a.push(T.e("[0]: [「渴望的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
+			d.a.push(T.e("[0]：[「渴望的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
 			break
 			case 2:
-			d.a.push(T.e("[0]: [第三天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]：[第三天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
-			d.a.push(T.e("[0]: [「傲慢的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
+			d.a.push(T.e("[0]：[「傲慢的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
 			break
 			case 3:
-			d.a.push(T.e("[0]: [第四天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]：[第四天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
-			d.a.push(T.e("[0]: [「嫉妒的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
+			d.a.push(T.e("[0]：[「嫉妒的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
 			break
 			case 4:
-			d.a.push(T.e("[0]: [第五天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]：[第五天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
 			d.a.push(T.e("[0]: [「约定的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
 			break
 			case 5:
-			d.a.push(T.e("[0]: [第六天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]：[第六天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
-			d.a.push(T.e("[0]: [「孤独的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
+			d.a.push(T.e("[0]：[「孤独的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
 			break
 			case 6:
-			d.a.push(T.e("[0]: [第七天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]：[第七天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
-			d.a.push(T.e("[0]: [「羁绊的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
+			d.a.push(T.e("[0]：[「羁绊的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
 			break
 			case 7:
-			k = (c.m() & 511)
-			d.a.push(T.e("[0]: [第八天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
+			k = 256 + c.m()
+			d.a.push(T.e("[0]：[第八天的选拔]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
-			d.a.push(T.e("[0]: [「命运的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
+			d.a.push(T.e("[0]：[「命运的Revue」上演]", this.r, this.r, null, null, 1, 1000, 100))
 			break
 			}
 			d.a.push($.v())
-			d.a.push(T.e("[0]: [以TopStar为目标]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]：[以TopStar为目标]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
-			d.a.push(T.e("[0]: [歌词，舞蹈，相互争夺吧]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]：[歌词，舞蹈，相互争夺吧]", this.r, this.r, null, null, 0, 1000, 100))
 			for (u = 0; u < n.length; ++u) {
             o = n[u]
 			switch (w) {
@@ -35340,13 +35340,13 @@ t.push(u)
         return H.a([$.ai(), $.am(), $.kj()], [P.f])
     },
     aa: function() {
-        var u, t = new T.Kirin1()
+        var u, t = new T.noak()
         t.r = this
         this.k2 = t
         t = this.id
 		u =new T.Kirin1()
         u.f = 1024
-        t.push(u)   
+        t.push(u)
     }}
 	T.karen.prototype = {
     gah: function() {
@@ -35363,7 +35363,7 @@ t.push(u)
 		t.push(new T.RevueStarlightready())
 		u =new T.RevueStarlightstart()
         u.f = 1024
-        t.push(u)   
+        t.push(u)  
     }, 
     bM: function() {
             var u, t = this
@@ -35378,7 +35378,7 @@ t.push(u)
             if(this.fr <= 0 ){
 			d.a.push($.v())
 			d.a.push(T.e("[0]: [...]", this, this.r, null, null, 0, 1000, 100))
-			}	
+			}
         }
 }
     T.hikari.prototype = {
@@ -35594,7 +35594,10 @@ t.push(u)
 		t.push(new T.RevueStarlightready())
 		u =new T.RevueStarlightstart()
         u.f = 1024
-        t.push(u)       
+        t.push(u)
+        u = new T.dV()
+        u.f = 256
+        t.push(u)		
     }, 
     bM: function() {
             var u, t = this
@@ -37078,7 +37081,7 @@ t.push(u)
 			u = this.tigerCurse ? "[1]被一百万匹力量轰散，永不超生" : s.cw()
 			switch (this.e) {
 			case "Kirin@!":
-			u = "[1]：眩しい"
+			u = "[1]：[眩しい]"
 			break
 			}
             t = new T.ch()
@@ -37763,6 +37766,10 @@ t.push(u)
         },
         cC: function(a) {
             var u, t, s = this, r = s.a9(0, (a.m() & 127) < s.r.dy, a), q = r != null ? r[0].a : null, p = s.Q
+			if(this.r.e == "futaba@!" && this.r.partner != null)
+			{
+			q = this.r.partner
+			}
             if (p == q)
                 return
             if (p != null) {
