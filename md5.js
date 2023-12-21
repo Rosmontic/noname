@@ -22695,11 +22695,15 @@ T.thb8s1.prototype = {
 			o.watch = this.r
 			if(o.SR0 == 0)	
 			{
+			o.j = 2048
 			v = 1
 			}			
-			else if((o.SR0 == 1 || o.SR0 == null) && o.SRm == null)
+			if(o.SR0 == 1 || o.SR0 == null)
 			{
-			o.j = - 10240
+			if(o.SRm == null){
+			d.a.push(T.e("[0]：1", o, this.r, null, null, 0, 1000, 100))
+			o.j = - 4096
+			}
 			}
 			}
 			}
