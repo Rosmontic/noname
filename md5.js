@@ -22692,7 +22692,6 @@ T.thb8s1.prototype = {
             o = n[u]
 			if(o.SRm == null)
 			{
-			d.a.push(T.e("[0]：1", o, this.r, null, null, 0, 1000, 100))
 			o.j = - 8192
 			}
 			if(o.SR0 != null)
@@ -22759,6 +22758,7 @@ T.thb8s1.prototype = {
 			for (u = 0; u < n.length; ++u) {
             o = n[u]
 			o.j = 0
+			w = 7
 			switch (w) {
             case 0:
 			o.go = o.go * 2
@@ -22845,8 +22845,7 @@ T.thb8s1.prototype = {
 			l = o.fr
 			o.fx = k + 1
 			o.fr = o.fx
-			d.a.push($.v())
-			d.a.push(T.e("[1]", o, T.a1(o, l), null, null, 0, 1000, 100))
+			T.lV(o)
 			o.Q = C.d.v(k + 1, 2)
 			o.db = C.d.v(k + 1, 2)
 			o.cx = C.d.v(k + 1, 2)
@@ -22913,8 +22912,8 @@ T.thb8s1.prototype = {
 			d.a.push($.v())
 			d.a.push(T.e("[0]：[我要你陪伴我到最后！]", this.r, this.r, null, null, 0, 1000, 100))
 			o.SR0 = 1
-			this.r.db = 3 * this.r.db
-			o.Q = 3 * o.Q
+			this.r.db = 1 * this.r.db
+			o.Q = 1 * o.Q
 			o.enemy = n.length - o.y.f.length
 			if(this.r.y == o.y){
 			this.r.partner = o
@@ -22940,8 +22939,8 @@ T.thb8s1.prototype = {
 			d.a.push($.v())
 			d.a.push(T.e("[0]：[我要你陪伴我到最后！]", o, this.r, null, null, 0, 1000, 100))
 			o.SR0 = 1
-			o.db = 3 * o.db
-			this.r.Q = 3 * this.r.Q
+			o.db = 1 * o.db
+			this.r.Q = 1 * this.r.Q
 			o.enemy = n.length - o.y.f.length
 			if(this.r.y == o.y){
 			this.r.partner = o
@@ -37544,7 +37543,6 @@ t.push(u)
         aK: function(a, b, c, d) {
             var u = this.ch
             if (u.a != null) {
-			    d.a.push(T.e("[0]从隐匿中解除", this.r, this.r, null, null, 10, 1000, 100))
                 u.C()
                 this.r.E()
             }
@@ -38218,7 +38216,7 @@ dk: function(a, b, c, d, e, f, g) {
             if (a > u) {
                 this.x = 0
                 a -= 0
-                e.a.push(T.e("[0]的[护盾]被打破了", this.r, null, null, null, 0, 1000, 100))
+                
 				return a
             } 
 			else {
@@ -38252,9 +38250,9 @@ dk: function(a, b, c, d, e, f, g) {
                 {
                     v = (c.au(1 + C.b.v(t * 3, 4)) + 1)
                     u.x = s + v
-                    d.a.push(T.e("[0]获得[1]点[护盾]", this.r , v, null, null, 0, 1000, 100))
+                    
                 }
-                    d.a.push(T.e("[0]拥有[1]点[护盾]", this.r , u.x, null, null, 0, 1000, 100))
+                    
                 }
             return a
         },
@@ -38736,6 +38734,8 @@ dk: function(a, b, c, d, e, f, g) {
 			o.fr = o.fx
 			d.a.push(T.e("[0]复活了[1]", this.r, T.a1(o, 0), null, null, 0, 1000, 100))
 			o.f = o.f + 2048
+			this.r.bI(this.r, d)
+			o.bI(o, d)
 			}
 			}
 			return a
@@ -40148,7 +40148,7 @@ C.koyuki = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.hifumi = H.a(u([-4, 1, -8, 6, 48, 27, 31, 502]), [P.j])
 C.jntm = H.a(u([44, 30, 315, 39, 30, 25, 46, 117]), [P.j])
 C.azusa = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
-C.Kirin = H.a(u([2018, 2018, 2018, 2018, 2018, 2018, 2018, -177]), [P.j])
+C.Kirin = H.a(u([2018, 2018, 20018, 2018, 2018, 2018, 2018, -177]), [P.j])
 C.karen = H.a(u([0, 0, 0, 0, 0, 0, 100, 0]), [P.j])
 C.hikari = H.a(u([0, 0, 0, 0, 0, 0, 100, 0]), [P.j])
 C.mahiru = H.a(u([0, 0, 0, 0, 0, 0, 100, 0]), [P.j])
@@ -40309,7 +40309,7 @@ C.yeya = H.a(u([18, -46, -11, -82, 19, -70, 940, 999749]), [P.j])
 "futaba",
 "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAADCSURBVDhPpZHhCcIwEEa/tNI/VqWCS2ST7qAjOIAghMyiO7hJ14l3RxJtiG1sHxQu4b7HXQoFuKaGw0KqQwXc7gZ7Evm7SR79c9RHAwBHmuBKEmttvEtJg8zldf70dko5Y4zbzUySE0U6CrOkdJ0sJy+hcoWkamSVLdRySYuN433bugmSMFWR1A3DIGH/aHLmj2vp8GR/GcHNUmitEWqGz0TM/RIwUZLyLZkSMLOSOQEzkvhgoCQvZB/wX1YLmEQAvAEtCFcDr+3WqwAAAABJRU5ErkJggg==",
 "kaoruko",
-"iVBORw0KGgoAAAANSUhEUgAAAA8AAAAQCAYAAADJViUEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAC3SURBVDhPrZDLDcIwDEDtFiEhPhJInYVTlugqDJCNWCInZuHIAMZ2k6ghhkLEkxoncp9jBxohWTrdNtIiUwhB499vlnl0JoN0q4IxJojRDaKm5vksOuckTH+8oLYUmRWoxLy8IbduiYvs+jXR9ZbeIBdbZAtI3nuSAnz8XmQmEVaVFDuxOURx6PTGirlcDL/n3IPjwN/deJhCHM9Fni5+Q0eO8WxStS2tqoj4URSsmenU//aiAABPlE5S8p6x2UUAAAAASUVORK5CYII=",
+"iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAC8SURBVDhPtZDNDcIwDIXtFiEhfiSQOgunLMEqDJCNWCInZuHIAMY2TtQ2CdBIfFL7GrnvxTY0QqbQmTbTEkAhBFV5/aUDSU4zzoi3J9A0Qox+IGppXE9m55xI9kNEEyRoFFI0C6WASBqjZv7Krl8T3e5xJynwJ7aA5L0nCeHjMjPzNsMqM1pHdQ5mHjq9OWMeMFnInutP1oGfR2FZYzNeznn96jd0ZLVzkeII0raaET+ahdoO6NQv3zQAwAvSAVLyRJiTIQAAAABJRU5ErkJggg==",
 "yeya",
 "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAH9JREFUOE+tk10OwCAIg+VmenK4mUtdSKapP9vwEfGjVJCcc03kmJk8w7M8wYWqdohSCmMmlkcB9DUJotASIHJ3USvtMsUBUGXsD7GVAvepaWRGngDwUx3AK45+MQ+gIB4wVt550BT4hH02cWbgzkTcx80Bk38yzlMFr5fpzzpfC7V7BSjXHhMAAAAASUVORK5CYII=",
 "testa", 
