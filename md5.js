@@ -22690,6 +22690,11 @@ T.thb8s1.prototype = {
 			v = 0
             for (u = 0; u < n.length; ++u) {
             o = n[u]
+			if(o.SRm == null)
+			{
+			d.a.push(T.e("[0]：1", o, this.r, null, null, 0, 1000, 100))
+			o.j = - 8192
+			}
 			if(o.SR0 != null)
 			{
 			o.watch = this.r
@@ -22697,14 +22702,7 @@ T.thb8s1.prototype = {
 			{
 			o.j = 2048
 			v = 1
-			}			
-			if(o.SR0 == 1 || o.SR0 == null)
-			{
-			if(o.SRm == null){
-			d.a.push(T.e("[0]：1", o, this.r, null, null, 0, 1000, 100))
-			o.j = - 4096
-			}
-			}
+			}	
 			}
 			}
 			if(v == 0)
