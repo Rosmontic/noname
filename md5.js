@@ -38719,17 +38719,19 @@ dk: function(a, b, c, d, e, f, g) {
 			{
 			if(this.r.partner.fr <= 0){
 			o = this.r.partner
-            if (!C.a.w(o.x.f, o)) {
+            if (!C.a.w(o.x.f, this.r)) {
 			    p = o.x.a
-                if (!C.a.w(p.c, o))
-                    C.a.i(p.c, o)
+                if (!C.a.w(p.c, this.r))
+                    C.a.i(p.c, this.r)
                 p = p.e
-                if (!C.a.w(p, o)) {
+                if (!C.a.w(p, this.r)) {
 				    l = o.x.f
                     if (l.length > 0)
                         C.a.ck(p, C.a.aJ(p, C.a.gbe(l)) + 1, o)
+						d.a.push(T.e("[0]pp1", this.r, this.r, null, null, 0, 1000, 100))
                     else
-                        p.push(o)
+                        p.push(this.r)
+						d.a.push(T.e("[0]pp2", this.r, this.r, null, null, 0, 1000, 100))
                 }
 				d.a.push(T.e("[0]ppp", this.r, this.r, null, null, 0, 1000, 100))
                 C.a.i(o.x.f, this.r)
