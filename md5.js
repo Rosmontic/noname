@@ -22772,9 +22772,10 @@ T.thb8s1.prototype = {
 			}
 			break
 			case 1:
-			o.Q = o.Q * 3
-			o.db = o.db * 3
-			o.cy = C.d.v(o.cy, 3)
+			o.Q = o.Q * 2
+			o.db = o.db * 2
+			o.cx = o.cx * 2
+			o.cy = C.d.v(o.cy, 6)
 			if (o.e == "junna@!"){
 			o.cx = o.cx * 2
 			o.db = o.db * 2
@@ -22822,7 +22823,7 @@ T.thb8s1.prototype = {
 			o.cy = o.cy * 2
 			o.ch = o.ch * 2
 			o.dx = o.dx * 2
-			if (o.e == "karen@!"  || o.e == "hikari@!" || o.e == "nana@!" ){
+			if (o.e == "hikari@!" || o.e == "nana@!" ){
 			o.go = o.go * 2
 			}}
 			break
@@ -22846,7 +22847,7 @@ T.thb8s1.prototype = {
 			o.fr = o.fx
 			d.a.push($.v())
 			T.a1(o, l)
-			d.a.push(T.e("[0],[1]", T.a1(o, l), T.lV(o), null, null, 0, 1000, 100))
+			d.a.push(T.e("[1]", T.a1(o, l), T.lV(o), null, null, 0, 1000, 100))
 			o.Q = C.d.v(k, 4)
 			o.db = C.d.v(k, 4)
 			o.cx = C.d.v(k, 4)
@@ -22916,7 +22917,7 @@ T.thb8s1.prototype = {
 			this.r.db = 1 * this.r.db
 			o.Q = 1 * o.Q
 			o.enemy = n.length - o.y.f.length
-			if(this.r.y == o.y){
+			if(this.r.y == o.y || this.r.y != o.y){
 			this.r.partner = o
 			o.partner = this.r
 			}
@@ -22943,7 +22944,7 @@ T.thb8s1.prototype = {
 			o.db = 1 * o.db
 			this.r.Q = 1 * this.r.Q
 			o.enemy = n.length - o.y.f.length
-			if(this.r.y == o.y){
+			if(this.r.y == o.y || this.r.y != o.y){
 			this.r.partner = o
 			o.partner = this.r
 			}
@@ -23837,7 +23838,7 @@ T.thb3s2.prototype = {
    q.push($.v())
    w = o.dx
    o.dx = 0
-   for (v = 0; v < l; ++v){
+   for (v = 0; v < l; ++v){F
    if(o.fr > 0){
    o.bL(p, !0, this.r, T.a3(), c, d)}}
    o.dx = w
@@ -38733,6 +38734,7 @@ dk: function(a, b, c, d, e, f, g) {
                 C.a.i(o.x.f, o)
             }
 			o.fr = o.fx
+			o.x = this.r.x
 			d.a.push(T.e("[0]复活了[1]", this.r, T.a1(o, 0), null, null, 0, 1000, 100))
 			o.f = o.f + 2048
 			this.r.bI(this.r, d)
