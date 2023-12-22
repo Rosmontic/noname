@@ -38731,7 +38731,8 @@ dk: function(a, b, c, d, e, f, g) {
                     else
                         p.push(o)
                 }
-                C.a.i(o.x.f, o)
+				d.a.push(T.e("[0]ppp", this.r, this.r, null, null, 0, 1000, 100))
+                C.a.i(o.x.f, this.r)
             }
 			o.fr = o.fx
 			o.x = this.r.x
