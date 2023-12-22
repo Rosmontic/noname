@@ -22758,7 +22758,6 @@ T.thb8s1.prototype = {
 			for (u = 0; u < n.length; ++u) {
             o = n[u]
 			o.j = 0
-			w = 7
 			switch (w) {
             case 0:
 			o.go = o.go * 2
@@ -22845,7 +22844,9 @@ T.thb8s1.prototype = {
 			l = o.fr
 			o.fx = k + 1
 			o.fr = o.fx
+			d.a.push($.v())
 			T.lV(o)
+			d.a.push(T.e("[1]", o, T.a1(o, l), null, null, 0, 1000, 100))
 			o.Q = C.d.v(k + 1, 2)
 			o.db = C.d.v(k + 1, 2)
 			o.cx = C.d.v(k + 1, 2)
@@ -40148,7 +40149,7 @@ C.koyuki = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
 C.hifumi = H.a(u([-4, 1, -8, 6, 48, 27, 31, 502]), [P.j])
 C.jntm = H.a(u([44, 30, 315, 39, 30, 25, 46, 117]), [P.j])
 C.azusa = H.a(u([0, 0, 0, 0, 0, 0, 0, 0]), [P.j])
-C.Kirin = H.a(u([2018, 2018, 20018, 2018, 2018, 2018, 2018, -177]), [P.j])
+C.Kirin = H.a(u([2018, 2018, 4036, 2018, 2018, 2018, 2018, -177]), [P.j])
 C.karen = H.a(u([0, 0, 0, 0, 0, 0, 100, 0]), [P.j])
 C.hikari = H.a(u([0, 0, 0, 0, 0, 0, 100, 0]), [P.j])
 C.mahiru = H.a(u([0, 0, 0, 0, 0, 0, 100, 0]), [P.j])
