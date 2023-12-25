@@ -40454,18 +40454,18 @@ C.yeya = H.a(u([18, -46, -11, -82, 19, -70, 940, 999749]), [P.j])
         })
         u($, "tf", "lp", function() {
             var t = W.f8()
-            t.height = t.width = 16
+            t.height = t.width = 32
             return t
         })
         u($, "th", "km", function() {
             var t = W.f8()
-            t.height = t.width = 16
+            t.height = t.width = 32
             return t
         })
         u($, "ti", "ca", function() {
             var t = $.km()
             t = (t && C.H).geC(t)
-            return (t && C.m).eG(t, 16, 16)
+            return (t && C.m).eG(t, 32, 32)
         })
         u($, "tG", "nW", function() {
             return P.m4()
