@@ -4393,7 +4393,7 @@
         p1: function(a, b) {
             var u, t, s, r
             F.m5(a, $.kE[b], H.a([64, 64, 64], [P.j]))
-            u = P.kQ(a.getImageData(0, 0, 16, 16))
+            u = P.kQ(a.getImageData(0, 0, 32, 32))
             t = $.m6[b]
             for (s = J.aA(u),
             r = 0; r < 256; ++r)
