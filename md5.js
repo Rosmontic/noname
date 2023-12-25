@@ -39497,7 +39497,7 @@ dk: function(a, b, c, d, e, f, g) {
                 r = 0; r < 1024; ++r) {
                     q = b[r % o]
                     p = u[r]
-                    s = s + p + q & 1024
+                    s = s + p + q & 255
                     u[r] = u[s]
                     u[s] = p
                 }
