@@ -22914,8 +22914,6 @@ T.thb8s1.prototype = {
 			d.a.push($.v())
 			d.a.push(T.e("[0]：[我要你陪伴我到最后！]", this.r, this.r, null, null, 0, 1000, 100))
 			o.SR0 = 1
-			this.r.db = 1 * this.r.db
-			o.Q = 1 * o.Q
 			o.enemy = n.length - o.y.f.length
 			if(this.r.y == o.y || this.r.y != o.y){
 			this.r.partner = o
@@ -22941,8 +22939,6 @@ T.thb8s1.prototype = {
 			d.a.push($.v())
 			d.a.push(T.e("[0]：[我要你陪伴我到最后！]", o, this.r, null, null, 0, 1000, 100))
 			o.SR0 = 1
-			o.db = 1 * o.db
-			this.r.Q = 1 * this.r.Q
 			o.enemy = n.length - o.y.f.length
 			if(this.r.y == o.y || this.r.y != o.y){
 			this.r.partner = o
@@ -37106,6 +37102,7 @@ t.push(u)
                     break
             if (s.fr > 0)
                 return
+			d.a.push(T.e("[0]: [1]",this.r.y.f.length  , this.r.x.a.e.length , null, null, 0, 1000, 100))
             s.x.d9(s)
             if (b != null && b.fr > 0)
                 b.bP(s, c, d)
@@ -39494,7 +39491,7 @@ dk: function(a, b, c, d, e, f, g) {
             for (u = this.c,
             t = 0; t < c; ++t)
                 for (s = 0,
-                r = 0; r < 1024; ++r) {
+                r = 0; r < 256; ++r) {
                     q = b[r % o]
                     p = u[r]
                     s = s + p + q & 255
@@ -40287,7 +40284,7 @@ C.yeya = H.a(u([18, -46, -11, -82, 19, -70, 940, 999749]), [P.j])
 "jntm",
 "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAB+SURBVDhP7ZPBDoAgDEOHF/j/r+WmdqGmLqKgV1+iKdlapoG07lijlNLUPbXWpsyOgGjWJtCrL3ixGE1XsIeelHP2CVCY+QT2+gQjO0fo8QCiQdD6ENXgFPCGP6CdA/7ZmXMA0O8TjBoVevwucIFk1UqvxyfQkZ6IG3y8zmYb5UJZo3IBP3QAAAAASUVORK5CYII=",
 "noa",
-"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",
+"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",
 "koyuki",
 "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAL6UExURf/6+15qiDo/SNu/zuCSrNiAn9zKxdC0uf///9F4l76+zoqRptGEoP+evvu+2ffA2vzX6vrP4/PF29elxdyryMyavaWRrZqhrMfAubqvq6SZlnRva/iqyv/g8PzY6vXL4e260++70/S/1u+709Oqw4uHj3pzcraoo1tVVSwuMfLQ5dbH2du70PK/172ZsG9hamleXTI0OBckM7+hu1pwiaeHoPW81L2RqDQyN0A/Q3dqa1lfafCzzJpujDU9Te2xyo9tiCEyRbmCnz5MWrypwNCYtcWHnsZ2nUpecaSpubFykq90mNaRrrp9mJtOgUrs/+7u9MFukAAAANOrteKywuOuwsB0k3Z7oMHF2MV2l+Xk0tm7vMibqOPGxfTe2LeFpLq91M3P4MvO38V0laWXqMRwkgoXP11nf8FukLe3yfHw9KGmtL1rjt/g6Pb2+cpzlLpmjeHm6fX1+JWKnvO/1fW/1vC60vbB1uq3zuu3zTY1OPfB1/K60fC70fnJ2vXJ2fC3zfG4z6uFnklMZdaju/rE2PXH1vjQ2/nM2vK/zu6zyrKYmaKdoap1j3ZuhuWsxfbG2fzT4PfR3vLL0uy+yPjF1efDyuW0w0dPYFljdM6Uq8y+z+WsxvS70vrH2vTF1vHN0uPAxfC/zcqssK6Nk9CTq0VSZFdkd+Knv+qowvrA19OjtbKUmODKyfDP0uC+vtOztdPV3uOatfW70sibq72Wm+3V0vro4fzp4PHX0vn6/OGYtPHMzf3s4/zs4/3v5ebAxNrc6OScuPnp4OHKybZ2j8HE2N6xttuztaOesGBmgU9genCBmLG3yeTl7u7v9d+Tr9rU29O1vMu2woSOpCRCWy9ScnCPvdTb6vHx9tSCoFtogYGMnre1xeXEw6+qtitBWzx4q0qZ2nWdvb3Bycx1lvLz9YuZtUlZdW59lMnP2Li8zUlXdTdumFNuhXZ7i6Wnsvz8/fr7+9LZ54+arldlfX+XrYu/4YKQrDU9TmBiccbJ2eTl7////81RVMsAAABzdFJOUwAAAAAAAAAAAAAAAAAAj063lCQVLC+Bk02APhMLWaq2ms7l5/m1r+3AK4PJ0fDjoP2dG/Pt7/3GoOD23OlLvfy29pS4/v79WiPQtH3uvRcBrYQCbfP9jg7Cewc/Wq/+04Gn9nGEazbpaAw9vGSE8/xVQOd1mp8IAAAAAWJLR0QIht6VegAAAAd0SU1FB+cIDwA7BJRZ8SwAAAEbSURBVBjTARAB7/4ADg8QERITFBUWFxgZGhsAAQAcHR4fICEiIyRzJSYnKCkCACorLC10dXZ3eHkuLzB6MTIAMzQ1Nnt8fX5/gIE3ODk6OwCCg4R1hXSGh4iJijw9PouMAI2Oj5CRkpOUlZaXP0BBmJkAmpucnZ6foKGio6SlQkOmpwCoREWpqqusra6vsEZHSEmxALJKS0yztLW2t7i5TU5PULoAu1FSU1RVvL2+v8BWA1dYwQDCWQRaW1xdXsPExV9gYWLGALJjBQYHCGTHyMnKy8zNzs8A0GUJCgtmZ9HS09TV1tfY2QDaaAxpamvb3N3e3+Dh4uPkAOVsDW1u5ufo6err7O3u7/AAb3BxcvHy8/T19vf4+fr7/MEyfiKlJ87hAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIzLTA4LTE1VDAwOjU4OjQ0KzAwOjAw0z8GPQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMy0wOC0xNVQwMDo1ODo0NCswMDowMKJivoEAAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjMtMDgtMTVUMDA6NTk6MDQrMDA6MDCe//qaAAAAAElFTkSuQmCC",
 "azusa",
