@@ -4396,7 +4396,7 @@
             u = P.kQ(a.getImageData(0, 0, 32, 32))
             t = $.m6[b]
             for (s = J.aA(u),
-            r = 0; r < 256; ++r)
+            r = 0; r < 1024; ++r)
                 s.gbK(u)[r * 4 + 3] = t[r]
             C.m.dl(a, u, 0, 0)
         },
