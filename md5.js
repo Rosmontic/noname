@@ -22915,7 +22915,7 @@ T.thb8s1.prototype = {
 			d.a.push(T.e("[0]：[我要你陪伴我到最后！]", this.r, this.r, null, null, 0, 1000, 100))
 			o.SR0 = 1
 			o.enemy = n.length - o.y.f.length
-			if(this.r.y == o.y){
+			if(this.r.y == o.y || this.r.y != o.y){
 			this.r.partner = o
 			o.partner = this.r
 			}
@@ -22940,7 +22940,7 @@ T.thb8s1.prototype = {
 			d.a.push(T.e("[0]：[我要你陪伴我到最后！]", o, this.r, null, null, 0, 1000, 100))
 			o.SR0 = 1
 			o.enemy = n.length - o.y.f.length
-			if(this.r.y == o.y){
+			if(this.r.y == o.y || this.r.y != o.y){
 			this.r.partner = o
 			o.partner = this.r
 			}
@@ -37102,6 +37102,10 @@ t.push(u)
                     break
             if (s.fr > 0)
                 return
+			if(this.y.f.length == this.x.a.e.length)
+			{
+			d.a.push(T.e("[1]：[position zero]", this, this, null, null, 0, 1000, 100))
+			}
             s.x.d9(s)
             if (b != null && b.fr > 0)
                 b.bP(s, c, d)
@@ -37373,7 +37377,6 @@ t.push(u)
                 }
             }
             r = T.u(q.r, !1, c)
-			d.a.push(T.e("[0]: [1]",this.r.y.f.length , this.r.x.a.e.length , null, null, 0, 1000, 100))
             d.a.push(T.e(O.c("Ukql"), q.r, o, p, p, 0, 1000, 100))
             o.a0(r, !1, q.r, T.mA(), c, d)
         }
@@ -38732,6 +38735,7 @@ dk: function(a, b, c, d, e, f, g) {
                 C.a.i(o.x.f, this.r)
             }
 			o.fr = o.fx
+			o.y = this.r
 			d.a.push(T.e("[0]复活了[1]", this.r, T.a1(o, 0), null, null, 0, 1000, 100))
 			o.f = o.f + 2048
 			this.r.bI(this.r, d)
