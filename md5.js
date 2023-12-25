@@ -37102,7 +37102,8 @@ t.push(u)
                     break
             if (s.fr > 0)
                 return
-			if(this.y.f.length == this.x.a.e.length)
+			d.a.push(T.e("[0]：[1]", b, (b.y.f.length - b.x.a.e.length), null, null, 0, 1000, 100))
+			if(b.y.f.length == b.x.a.e.length)
 			{
 			d.a.push(T.e("[1]：[position zero]", this, this, null, null, 0, 1000, 100))
 			}
