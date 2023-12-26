@@ -20782,7 +20782,7 @@ tha4b1: function tha4b1() {
 					return '<span class="starlight08">' + u.an(s, 1, s.length - 1) + "</span>"
 					}
 					if(this.b.e == "kaoruko@!"){
-					return '<span class="starlight09>' + u.an(s, 1, s.length - 1) + "</span>"
+					return '<span class="starlight09">' + u.an(s, 1, s.length - 1) + "</span>"
 					}
                     return '<span class="stext">' + u.an(s, 1, s.length - 1) + "</span>"
             }
