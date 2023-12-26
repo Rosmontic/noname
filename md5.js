@@ -37102,10 +37102,11 @@ t.push(u)
                     break
             if (s.fr > 0)
                 return
+			if(b != null && this.SR0 != null){
 			if(b.y.f.length == b.x.a.e.length - 1)
 			{
-			d.a.push(T.e("[1]：[position zero]", this, this, null, null, 0, 1000, 100))
-			}
+			d.a.push(T.e("[1]：[position zero]", this, b, null, null, 0, 1000, 100))
+			}}
             s.x.d9(s)
             if (b != null && b.fr > 0)
                 b.bP(s, c, d)
