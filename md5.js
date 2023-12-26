@@ -20782,7 +20782,7 @@ tha4b1: function tha4b1() {
 					return '<span class="starlight08">' + u.an(s, 1, s.length - 1) + "</span>"
 					}
 					if(this.b.e == "kaoruko@!"){
-					return '<span class="starlight019>' + u.an(s, 1, s.length - 1) + "</span>"
+					return '<span class="starlight09>' + u.an(s, 1, s.length - 1) + "</span>"
 					}
                     return '<span class="stext">' + u.an(s, 1, s.length - 1) + "</span>"
             }
@@ -37136,7 +37136,8 @@ t.push(u)
 			if(b.y.f.length == b.x.a.e.length - 1)
 			{
 			d.a.push($.v())
-			d.a.push(T.e("[1]：[position zero]", this, b, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]：[position zero！]", b, b, null, null, 0, 1000, 100))
+			
 			}}
             s.x.d9(s)
             if (b != null && b.fr > 0)
