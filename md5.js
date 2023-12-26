@@ -20754,7 +20754,7 @@ tha4b1: function tha4b1() {
                 if (!!t.b.$idJ)
                     return '<span class="sctext">' + u.an(s, 1, s.length - 1) + "</span>"
                 else
-				    if(this.r.e == "karen@!"){
+				    if(this.b.e == "karen@!"){
 					return '<span class="starlight01">' + u.an(s, 1, s.length - 1) + "</span>"
 					}
                     return '<span class="stext">' + u.an(s, 1, s.length - 1) + "</span>"
