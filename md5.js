@@ -20754,8 +20754,35 @@ tha4b1: function tha4b1() {
                 if (!!t.b.$idJ)
                     return '<span class="sctext">' + u.an(s, 1, s.length - 1) + "</span>"
                 else
+				    if(this.b.e == "Kirin@!"){
+					return '<span class="starlight00">' + u.an(s, 1, s.length - 1) + "</span>"
+					}
 				    if(this.b.e == "karen@!"){
 					return '<span class="starlight01">' + u.an(s, 1, s.length - 1) + "</span>"
+					}
+					if(this.b.e == "hikari@!"){
+					return '<span class="starlight02">' + u.an(s, 1, s.length - 1) + "</span>"
+					}
+					if(this.b.e == "mahiru@!"){
+					return '<span class="starlight03">' + u.an(s, 1, s.length - 1) + "</span>"
+					}
+					if(this.b.e == "junna@!"){
+					return '<span class="starlight04">' + u.an(s, 1, s.length - 1) + "</span>"
+					}
+					if(this.b.e == "nana@!"){
+					return '<span class="starlight05">' + u.an(s, 1, s.length - 1) + "</span>"
+					}
+					if(this.b.e == "maya@!"){
+					return '<span class="starlight06">' + u.an(s, 1, s.length - 1) + "</span>"
+					}
+					if(this.b.e == "kuro@!"){
+					return '<span class="starlight07">' + u.an(s, 1, s.length - 1) + "</span>"
+					}
+					if(this.b.e == "futaba@!"){
+					return '<span class="starlight08">' + u.an(s, 1, s.length - 1) + "</span>"
+					}
+					if(this.b.e == "kaoruko@!"){
+					return '<span class="starlight019>' + u.an(s, 1, s.length - 1) + "</span>"
 					}
                     return '<span class="stext">' + u.an(s, 1, s.length - 1) + "</span>"
             }
@@ -37108,6 +37135,7 @@ t.push(u)
 			if(b != null && this.SR0 != null){
 			if(b.y.f.length == b.x.a.e.length - 1)
 			{
+			d.a.push($.v())
 			d.a.push(T.e("[1]：[position zero]", this, b, null, null, 0, 1000, 100))
 			}}
             s.x.d9(s)
