@@ -31052,10 +31052,10 @@ T.tha1b1.prototype = {
     ak: function(a, b, c, d, e) {
         var u = a > 0 , n ,m
 		n = d.m()
-		e.a.push(T.e("[0]使用[盾牌格挡]", this.r, null, null, null, 0, 1000, 100))
+		e.a.push(T.e("[0]n=[1]", this.r, this.r.ror, null, null, 0, 1000, 100))
 		if(this.r.e == "junna@!")
 		{
-		m = 1 - 0.2 * this.r.rar
+		m = 1 - 0.1 * this.r.rar
 		return C.d.Z(a * m)
 		}
         return a
