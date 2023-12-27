@@ -26667,6 +26667,7 @@ n.r.bf(n.r.fr, null, c, d)
             var u = new T.noak()
             u.r = this
             this.k2 = u
+			this.id.push(new T.zhsh())
 			this.id.push(new T.RevueStarlightzz())
         },
         aR: function() {
@@ -38166,6 +38167,10 @@ dk: function(a, b, c, d, e, f, g) {
 	T.RevueStarlightzz.prototype = {
         ga1: function() {
             return 10
+        },
+		ai: function(a, b) {
+            this.r = a
+            this.f = 300
         },
         aX: function(a, b, c, d) {
             var u, t = this, s = c.m()
