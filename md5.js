@@ -31046,23 +31046,19 @@ T.tha1b1.prototype = {
     $iD: 1
     }
 	T.RevueStarlightdefense.prototype = {
-	ga1: function() {
-        return 2000
+        ga1: function() {
+            return 2000
         },
-    ak: function(a, b, c, d, e) {
-        var u = a > 0 , n ,m
-		n = d.m()
-		if(this.r.e == "junna@!")
-		{
-		m = 1 + 0.5 * this.r.ror
-		return C.b.v(a, m)
-		}
-        return a
-    },
-    T: function() {
-        this.r.y1.i(0, this)
-    },
-    $iD: 1
+        ak: function(a, b, c, d, e) {
+            if (this.r.ror != null && this.r.ror > 0) {
+                return C.b.v(a, 2)
+            }
+            return a
+        },
+        T: function() {
+            this.r.y1.i(0, this)
+        },
+        $iD: 1
     }
 	T.jntmb2.prototype = {
 	ga1: function() {
