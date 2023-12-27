@@ -31055,7 +31055,7 @@ T.tha1b1.prototype = {
 		if(this.r.e == "junna@!")
 		{
 		m = 1 + 0.5 * this.r.ror
-		return C.d.v(a, m)
+		return C.b.v(a, m)
 		}
         return a
     },
