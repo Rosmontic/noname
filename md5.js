@@ -13963,6 +13963,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
 			_.SR0 = 0
 			_.enemy = 0
 			_.ror = 0
+			_.rorn = 0
 			_.watch = null
             _.k2 = _.k1 = null
             _.k3 = f
@@ -26578,7 +26579,7 @@ n.r.bf(n.r.fr, null, c, d)
     }
 	T.junna1.prototype = {
         ar: function(a, b) {
-		    if (this.r.ror > 3)
+		    if (this.r.ror > 3 || this.r.rorn > 9)
                     return !1
             if (b)
                 if (this.r.fr < 40)
@@ -26650,12 +26651,9 @@ n.r.bf(n.r.fr, null, c, d)
 			d.j = 0
 			d.J = C.d.Z(d.J *1.4)
             c.r.x.aU(d)
-			if(w == 2)
-			{
-			u.push($.v())
-			}
 			this.r.ror = this.r.ror + 1
-			u.push(T.e("召唤了[1]", c.r, T.a1(d, d.fr), b, b, 1, 1000, 100))
+			this.r.rorn = this.r.rorn + 1
+			u.push(T.e("[0]召唤了[1]", c.r, T.a1(d, d.fr), b, b, 1, 1000, 100))
 			d.owner = this.r
 			}
 			this.r.j = this.r.j + (1536 - v* 512) 
@@ -35651,7 +35649,7 @@ t.push(u)
         u.f = 1024
         t.push(u)
 		u = new T.junna1()
-        u.f = 64
+        u.f = 32
         t.push(u) 
     }, 
     bM: function() {
@@ -38171,8 +38169,10 @@ dk: function(a, b, c, d, e, f, g) {
         },
         aX: function(a, b, c, d) {
             var u, t = this, s = c.m()
-			    if(this.r.owner.fr > 0 && this.r.owner.e == "junna@!")
+			d.a.push(T.e("[0]:A", this.r, this.r, null, null, 0, 1000, 100))
+			    if(this.r.owner.e == "junna@!")
 				{
+				d.a.push(T.e("[0]:B", this.r, this.r, null, null, 0, 1000, 100))
 			    this.r.owner.ror = this.r.owner.ror - 1
 				}
                 return !0
