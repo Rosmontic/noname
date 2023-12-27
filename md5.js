@@ -31052,6 +31052,7 @@ T.tha1b1.prototype = {
     ak: function(a, b, c, d, e) {
         var u = a > 0 , n ,m
 		n = d.m()
+		e.a.push(T.e("[0]使用[盾牌格挡]", this.r, null, null, null, 0, 1000, 100))
 		if(this.r.e == "junna@!")
 		{
 		m = 1 - 0.2 * this.r.rar
@@ -38134,6 +38135,7 @@ dk: function(a, b, c, d, e, f, g) {
         dk: function(a, b, c, d, e, f, g) {
             var u, t, s = this
 			u = C.d.v(a, 1)
+			g.a.push(T.e("[0][被忽视了]", s.r, c, null, null, 0, 1000, 100))
 			s.r.bL(u, !1, c, e, f, g)
             return 0
         },
