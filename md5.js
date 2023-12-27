@@ -26336,10 +26336,10 @@ T.tha4n1.prototype = {
         }}
 		T.junna2.prototype = {
         gb3: function() {
-            return 5
+            return 3
         },
         gb4: function() {
-            return 5
+            return 3
         },
         t: function(a, b, c, d) {
             var u, t, s, r, q, p, o, n, m = this, l = null, k = 1 + this.r.ror
@@ -26356,16 +26356,16 @@ T.tha4n1.prototype = {
                 p = a[s]
                 o = p.a
                 if (o.fr <= 0)
-                    r -= 1.5
+                    r -= 2
                 else {
                     q = T.u(q, !0, c)
                     n = p.b
                     p.b = n + 1
-                    if (o.a0(q * (1 - n * 0.1), !0, m.r, T.a3(), c, d) <= -100)
+					u.push($.v())
+                    if (o.a0(q * (1 - n * 0.1), !0, m.r, T.a3(), c, d) <= -1)
                         return
-                    u.push($.v())
                 }
-                s = C.b.a3(s + (c.m() & 3), a.length)
+                s = C.b.a3(3 , a.length)
             }
         }}
     T.ia.prototype = {
@@ -37355,12 +37355,11 @@ t.push(u)
                     break
             if (s.fr > 0)
                 return
-			if(b != null && this.SR0 != null){
+			if(b != null && b.SR0 != null){
 			if(b.y.f.length == b.x.a.e.length - 1)
 			{
 			d.a.push($.v())
-			d.a.push(T.e("[0]：[position zero！]", b, b, null, null, 0, 1000, 100))
-			
+			d.a.push(T.e("[0]：[position zero！]", b, b, null, null, 0, 1000, 100))		
 			}}
             s.x.d9(s)
             if (b != null && b.fr > 0)
