@@ -26365,8 +26365,6 @@ T.tha4n1.prototype = {
                     n = p.b
                     p.b = n + 1
                     if (o.a0(q * (0.9 - n * 0.1), !0, m.r, T.a3(), c, d) <= 0){
-					    u.push($.v())
-						d.a.push(T.e("[0][引弦]", this.r, this.r, null, null, 1, 1000, 100))
 						this.r.knowledge = this.r.knowledge + 1
 					    this.r.j = this.r.j + 1024
                         return}
