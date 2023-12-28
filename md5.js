@@ -26693,7 +26693,7 @@ n.r.bf(n.r.fr, null, c, d)
 			d.dx = 4
 			d.dy = 100
 			d.j = 0
-			d.J = C.d.Z(d.J *1.4)
+			d.J = C.d.Z(d.J *1.25)
             c.r.x.aU(d)
 			this.r.ror = this.r.ror + 1
 			this.r.knowledge = this.r.knowledge + 1
@@ -35709,7 +35709,7 @@ t.push(u)
         u.f = 1024
         t.push(u)
 		u =new T.RevueStarlightdefense()
-        u.f = 1024
+        u.f = 0
         t.push(u)
 		u = new T.junna1()
         u.f = 50
