@@ -35708,12 +35708,13 @@ t.push(u)
 		u =new T.RevueStarlightstart()
         u.f = 1024
         t.push(u)
+		u =new T.RevueStarlightdefense()
+        u.f = 1024
+        t.push(u)
 		u = new T.junna1()
         u.f = 50
         t.push(u)
-		u = new T.junna2()
-        u.f = 150
-        t.push(u)
+
     }, 
     bM: function() {
             var u, t = this
