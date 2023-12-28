@@ -26346,7 +26346,6 @@ T.tha4n1.prototype = {
 			d.a.push(T.e("[0][射击]", this.r, this.r, null, null, 1, 1000, 100))	
             if (a.length > 3)
                 a = (a && C.a).a4(a, 0, 3)
-			d.a.push(T.e("[0][1]", this.r, a.length, null, null, 0, 1000, 100))
             for (u = a.length,
             t = 0; t < u; ++t)
                 a[t].b = 0
@@ -26354,19 +26353,22 @@ T.tha4n1.prototype = {
             s = 0,
             r = 0; r < k; ++r) {
                 q = m.r
-                if (!(q.fr > 0))
-                    return
+                if (q.fr <= 0){
+				    d.a.push(T.e("[0][射击b]", this.r, this.r, null, null, 1, 1000, 100))
+                    return}
                 p = a[s]
                 o = p.a
-                if (o.fr <= 0)
+                if (o.fr <= 0){
                     r -= 1
+					d.a.push(T.e("[0][射击a]", this.r, this.r, null, null, 1, 1000, 100))}
                 else {
                     q = T.u(q, !0, c)
                     n = p.b
                     p.b = n + 1
-                    if (o.a0(q * (0.9 - n * 0.1), !0, m.r, T.a3(), c, d) <= 0)
+                    if (o.a0(q * (0.9 - n * 0.1), !0, m.r, T.a3(), c, d) <= 0){
+					    d.a.push(T.e("[0][射击s]", this.r, this.r, null, null, 1, 1000, 100))
 					    this.r.j = this.r.j + 1024
-                        return
+                        return}
                     u.push($.v())
                 }
                 s = C.b.a3(s + (c.m() & 3), a.length)
