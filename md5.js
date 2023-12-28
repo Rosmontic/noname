@@ -26343,10 +26343,10 @@ T.tha4n1.prototype = {
         },
         t: function(a, b, c, d) {
             var u, t, s, r, q, p, o, n, m = this, l = null, k = this.r.ror + 1
-			d.a.push(T.e("[0][射击]", this.r, this.r, null, null, 1, 1000, 100))
-			d.a.push(T.e("[0][1]", this.r, k, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0][射击]", this.r, this.r, null, null, 1, 1000, 100))	
             if (a.length > 3)
                 a = (a && C.a).a4(a, 0, 3)
+			d.a.push(T.e("[0][1]", this.r, a.length, null, null, 0, 1000, 100))
             for (u = a.length,
             t = 0; t < u; ++t)
                 a[t].b = 0
