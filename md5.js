@@ -31051,7 +31051,7 @@ T.tha1b1.prototype = {
         },
         ak: function(a, b, c, d, e) {
             if (this.r.ror != null && this.r.ror > 0) {
-                return C.b.v(a, 2)
+                return 0
             }
             return a
         },
