@@ -26343,7 +26343,7 @@ T.tha4n1.prototype = {
         },
         t: function(a, b, c, d) {
             var u, t, s, r, q, p, o, n, m = this, l = null, k = this.r.ror + 1
-			d.a.push(T.e("[0][射击]", this.r, this.r, null, null, 1, 1000, 100))	
+			d.a.push(T.e("[0][射击]", this.r, this.r, null, null, 1, 1000, 100))
             if (a.length > 3)
                 a = (a && C.a).a4(a, 0, 3)
             for (u = a.length,
@@ -26353,21 +26353,18 @@ T.tha4n1.prototype = {
             s = 0,
             r = 0; r < k; ++r) {
                 q = m.r
-                if (q.fr <= 0){
-				    
-                    return}
+                if (!(q.fr > 0 && !q.A))
+                    return
                 p = a[s]
                 o = p.a
-                if (o.fr <= 0){
-                    r -= 1
-					}
+                if (o.fr <= 0)
+                    r -= 0.5
                 else {
-                    q = T.u(q, !0, c)
+                    q = T.u(q, !1, c)
                     n = p.b
                     p.b = n + 1
-                    if (o.a0(q * (0.9 - n * 0.1), !0, m.r, T.a3(), c, d) <= 0){
-					    this.r.j = this.r.j + 1024
-                        return}
+                    if (o.a0(q * (0.75 - n * 0.15), !1, m.r, T.a3(), c, d) <= 0)
+                        return
                     u.push($.v())
                 }
                 s = C.b.a3(s + (c.m() & 3), a.length)
