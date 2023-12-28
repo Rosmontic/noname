@@ -26343,7 +26343,8 @@ T.tha4n1.prototype = {
         },
         t: function(a, b, c, d) {
             var u, t, s, r, q, p, o, n, m = this, l = null, k = this.r.ror + 1
-			d.a.push(T.e("[0][射击]", this.r, this.r, null, null, 1, 1000, 100))	
+			d.a.push(T.e("[0][射击]", this.r, this.r, null, null, 1, 1000, 100))
+            this.r.knowledge = this.r.knowledge + 1	
             if (a.length > 3)
                 a = (a && C.a).a4(a, 0, 3)
             for (u = a.length,
@@ -26354,18 +26355,18 @@ T.tha4n1.prototype = {
             r = 0; r < k; ++r) {
                 q = m.r
                 if (q.fr <= 0){
+				    
                     return}
                 p = a[s]
                 o = p.a
                 if (o.fr <= 0){
                     r -= 1
-					}
+					
                 else {
                     q = T.u(q, !0, c)
                     n = p.b
                     p.b = n + 1
-                    if (o.a0(q * (0.9 - n * 0.1), !0, m.r, T.a3(), c, d) <= 0){
-						this.r.knowledge = this.r.knowledge + 1
+                    if (o.a0(q * (0.9 - n * 0.1), !0, m.r, T.a3(), c, d) <= 0){    
 					    this.r.j = this.r.j + 1024
                         return}
                     u.push($.v())
@@ -26413,7 +26414,8 @@ T.tha4n1.prototype = {
                 C.a.i(q.f, u)
             }
             r.push(T.e(O.c("YmSv"), n.r, T.a1(u, 0), new T.aG(t), m, 0, 1000, 100))
-        }} 
+        }
+}   
     T.tomb1.prototype = {
         b5: function(a) {
             return a.b1(this.r.y.e)
@@ -26641,6 +26643,7 @@ n.r.bf(n.r.fr, null, c, d)
             var w ,v, u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this, b = null
             u = a2.a
 			v = (a1.m() & 1) + 1
+			this.r.knowledge = this.r.knowledge + 1
 			for(w = 0; w < v ; w++){
             t = H.d(c.r.a) + "?" + H.d($.nn())
             s = c.r
@@ -26700,7 +26703,6 @@ n.r.bf(n.r.fr, null, c, d)
 			d.J = C.d.Z(d.J *1.25)
             c.r.x.aU(d)
 			this.r.ror = this.r.ror + 1
-			this.r.knowledge = this.r.knowledge + 1
 			u.push(T.e("[0][召唤了][1]", c.r, T.a1(d, d.fr), b, b, 1, 1000, 100))
 			d.owner = this.r
 			}
