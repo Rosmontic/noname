@@ -26342,8 +26342,9 @@ T.tha4n1.prototype = {
             return 5
         },
         t: function(a, b, c, d) {
-            var u, t, s, r, q, p, o, n, m = this, l = null, k = this.r.ror
+            var u, t, s, r, q, p, o, n, m = this, l = null, k = this.r.ror + 1
 			d.a.push(T.e("[0][射击]", this.r, this.r, null, null, 1, 1000, 100))
+			d.a.push(T.e("[0][1]", this.r, k, null, null, 0, 1000, 100))
             if (a.length > 3)
                 a = (a && C.a).a4(a, 0, 3)
             for (u = a.length,
@@ -35715,10 +35716,10 @@ t.push(u)
         u.f = 1024
         t.push(u)
 		u = new T.junna1()
-        u.f = 50
+        u.f = 64
         t.push(u)
 		u = new T.junna2()
-        u.f = 150
+        u.f = 192
         t.push(u)
 
 
