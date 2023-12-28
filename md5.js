@@ -26354,19 +26354,20 @@ T.tha4n1.prototype = {
             r = 0; r < k; ++r) {
                 q = m.r
                 if (q.fr <= 0){
-				    d.a.push(T.e("[0][射击b]", this.r, this.r, null, null, 1, 1000, 100))
                     return}
                 p = a[s]
                 o = p.a
                 if (o.fr <= 0){
                     r -= 1
-					d.a.push(T.e("[0][射击a]", this.r, this.r, null, null, 1, 1000, 100))}
+					}
                 else {
                     q = T.u(q, !0, c)
                     n = p.b
                     p.b = n + 1
                     if (o.a0(q * (0.9 - n * 0.1), !0, m.r, T.a3(), c, d) <= 0){
-					    d.a.push(T.e("[0][射击s]", this.r, this.r, null, null, 1, 1000, 100))
+					    u.push($.v())
+						d.a.push(T.e("[0][引弦]", this.r, this.r, null, null, 1, 1000, 100))
+						this.r.knowledge = this.r.knowledge + 1
 					    this.r.j = this.r.j + 1024
                         return}
                     u.push($.v())
@@ -26414,8 +26415,7 @@ T.tha4n1.prototype = {
                 C.a.i(q.f, u)
             }
             r.push(T.e(O.c("YmSv"), n.r, T.a1(u, 0), new T.aG(t), m, 0, 1000, 100))
-        }
-}   
+        }} 
     T.tomb1.prototype = {
         b5: function(a) {
             return a.b1(this.r.y.e)
