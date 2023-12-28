@@ -26334,19 +26334,20 @@ T.tha4n1.prototype = {
                 s = C.b.a3(s + (c.m() & 3), a.length)
             }
         }}
-		T.junna2.prototype = {
+	T.junna2.prototype = {
         gb3: function() {
             return 3
         },
         gb4: function() {
-            return 3
+            return 5
         },
         t: function(a, b, c, d) {
             var u, t, s, r, q, p, o, n, m = this, l = null, k = 1 + this.r.ror
+            if (a.length > 3)
+                a = (a && C.a).a4(a, 0, 3)
             for (u = a.length,
             t = 0; t < u; ++t)
                 a[t].b = 0
-			d.a.push(T.e("[0][射击]", this.r, this.r, null, null, 1, 1000, 100))
             for (u = d.a,
             s = 0,
             r = 0; r < k; ++r) {
@@ -26356,16 +26357,21 @@ T.tha4n1.prototype = {
                 p = a[s]
                 o = p.a
                 if (o.fr <= 0)
-                    r -= 2
+                    r -= 1
                 else {
                     q = T.u(q, !0, c)
                     n = p.b
                     p.b = n + 1
+                    if (r === 0)
+					{
+                        u.push(T.e("[0][射击]", this.r, this.r, null, null, 1, 1000, 100))
+                    }
 					u.push($.v())
-                    if (o.a0(q * (1 - n * 0.1), !0, m.r, T.a3(), c, d) <= -1)
+                    if (o.a0(q * (1 - n * 0.1), !0, m.r, T.a3(), c, d) <= 0)
+					    this.r.j+ = 1024 
                         return
                 }
-                s = C.b.a3(3 , a.length)
+                s = C.b.a3(s + 3, a.length)
             }
         }}
     T.ia.prototype = {
@@ -35714,6 +35720,10 @@ t.push(u)
 		u = new T.junna1()
         u.f = 50
         t.push(u)
+		u = new T.junna2()
+        u.f = 150
+        t.push(u)
+
 
     }, 
     bM: function() {
