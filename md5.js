@@ -22946,16 +22946,10 @@ T.thb8s1.prototype = {
 			if (t == null) {
                 t = new T.prosceniumx(o)
                 t.y = new T.ay(t)
-				t.z8 = 200
-                o.r1.k(0, "proscenium", t)
-                o.r2.i(0, t)
-                o.x1.i(0, t.y)
-                o.E()
-            }
-			switch (w) {
+				switch (w) {
             case 0:
-			t.z8 = 20
-			t.z3 = 20
+			t.z8 = 2
+			t.z3 = 2
 			t.z4 = 0.5
 			if (o.e == "karen@!"){
 			t.z8 = 2.5
@@ -23000,8 +22994,8 @@ T.thb8s1.prototype = {
 			t.z6 = 3
 			if ((o.e == "futaba@!" && o.partner != null) || (o.e == "kaoruko@!" && o.partner != null)){
 			t.z8 = 1.5
-			t.z5 = 60
-			t.z6 = 60
+			t.z5 = 6
+			t.z6 = 6
 			}
 			break
 			case 5:
@@ -23047,7 +23041,11 @@ T.thb8s1.prototype = {
 			}
 			break
 			}
-			d.a.push(T.e("[0]:[1]:", t.z8 ,t.z8, null, null, 0, 1000, 100))
+                o.r1.k(0, "proscenium", t)
+                o.r2.i(0, t)
+                o.x1.i(0, t.y)
+                o.E()
+            }
 			}
 			this.f = 0
 			this.r.fr = 0
