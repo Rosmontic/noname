@@ -22942,82 +22942,91 @@ T.thb8s1.prototype = {
 		    for (u = 0; u < n.length; ++u) {
             o = n[u]
 			o.j = 0
+			t = H.o(o.r1.h(0, "proscenium"), "$iprosceniumx")
+            if (t == null) {
+                t = new T.prosceniumx(o)
+                t.y = new T.ay(t)
+                o.r1.k(0, "proscenium", t)
+                o.r2.i(0, t)
+                o.x1.i(0, t.y)
+                o.E()
+            }
 			switch (w) {
             case 0:
-			this.z8 = 2
-			this.z3 = 2
-			this.z4 = 0.5
+			t.z8 = 2
+			t.z3 = 2
+			t.z4 = 0.5
 			if (o.e == "karen@!"){
-			this.z8 = 2.5
-			this.z3 = 2.5
+			t.z8 = 2.5
+			t.z3 = 2.5
 			}
 			break
 			case 1:
-			this.z1 = 0.5
-			this.z5 = 0.5
-			this.z4 = 4
+			t.z1 = 0.5
+			t.z5 = 0.5
+			t.z4 = 4
 			if (o.e == "junna@!"){
-			this.z1 = 1
-			this.z5 = 1
-			this.z4 = 3
+			t.z1 = 1
+			t.z5 = 1
+			t.z4 = 3
 			}
 			case 2:
-			this.z1 = 2
-			this.z5 = 2
-			this.z2 = 0.5
-			this.z6 = 0.5
+			t.z1 = 2
+			t.z5 = 2
+			t.z2 = 0.5
+			t.z6 = 0.5
 			if (o.e == "maya@!"){
-			this.z1 = 3
-			this.z5 = 3
-			this.z2 = 1
-			this.z6 = 1
+			t.z1 = 3
+			t.z5 = 3
+			t.z2 = 1
+			t.z6 = 1
 			}
 			if (o.e == "kuro@!"){
-			this.z1 = 1.5
-			this.z5 = 1.5
-			this.z2 = 1.5
-			this.z6 = 1.5
+			t.z1 = 1.5
+			t.z5 = 1.5
+			t.z2 = 1.5
+			t.z6 = 1.5
 			}
 			break
 			case 3:
-			this.z9 = 4
+			t.z9 = 4
 			if (o.e != "mahiru@!"){
 			o.j = o.j - (4096 + 16 *o.cx)
 			}
 			break
 			case 4:
-			this.z5 = 3
-			this.z6 = 3
+			t.z5 = 3
+			t.z6 = 3
 			if ((o.e == "futaba@!" && o.partner != null) || (o.e == "kaoruko@!" && o.partner != null)){
-			this.z8 = 1.5
-			this.z5 = 5
-			this.z6 = 5
+			t.z8 = 1.5
+			t.z5 = 6
+			t.z6 = 6
 			}
 			break
 			case 5:
 			if(o.y.f.length == 1)
 			{
-			this.z1 = 2
-			this.z5 = 2
-			this.z3 = 2
-			this.z4 = 2
-			this.z2 = 2
-			this.z6 = 2
+			t.z1 = 2
+			t.z5 = 2
+			t.z3 = 2
+			t.z4 = 2
+			t.z2 = 2
+			t.z6 = 2
 			if (o.e == "hikari@!" || o.e == "nana@!" ){
-			this.z8 = 2
+			t.z8 = 2
 			}}
 			break
 			case 6:
 			if(o.y.f.length > 1)
 			{
-			this.z8 = 2
+			t.z8 = 2
 			o.j = o.j + 4096
 			if (o.e == "karen@!"  || o.e == "hikari@!" ){
-			this.z8 = 3
+			t.z8 = 3
 			}
 			}
 			else if(o.y.f.length == 1 && o.e == "nana@!"){
-			this.z8 = 2.5
+			t.z8 = 2.5
 			}
 			break
 			case 7:
@@ -23036,18 +23045,8 @@ T.thb8s1.prototype = {
 			o.dx = C.d.v(k, 4)
 			}
 			break
+			}	
 			}
-			t = H.o(o.r1.h(0, "proscenium"), "$iprosceniumx")
-            if (t == null) {
-                t = new T.prosceniumx(o)
-                t.y = new T.ay(t)
-                o.r1.k(0, "proscenium", t)
-                o.r2.i(0, t)
-                o.x1.i(0, t.y)
-                o.E()
-            }
-			}
-			
 			this.f = 0
 			this.r.fr = 0
 			this.r.bf(this.r.fr, null, c, d)
