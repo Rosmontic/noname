@@ -8985,7 +8985,7 @@ tha7n1: function tha7n1() {
             var _ = this
             _.x = a
             _.y = null
-			_.z = 0
+			_.z = 1
             _.z1 = 1
             _.z2 = 1
 			_.z3 = 1
@@ -22946,6 +22946,7 @@ T.thb8s1.prototype = {
 			if (t == null) {
                 t = new T.prosceniumx(o)
                 t.y = new T.ay(t)
+				t.z8 = 200
                 o.r1.k(0, "proscenium", t)
                 o.r2.i(0, t)
                 o.x1.i(0, t.y)
