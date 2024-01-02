@@ -8981,6 +8981,23 @@ tha7n1: function tha7n1() {
             _.Q = 4
             _.c = _.b = _.a = null
         },
+		prosceniumx: function prosceniumx(a) {
+            var _ = this
+            _.x = a
+            _.y = null
+			_.z = 0
+            _.z1 = 1
+            _.z2 = 1
+			_.z3 = 1
+			_.z4 = 1
+			_.z5 = 1
+			_.z6 = 1
+			_.z7 = 1
+			_.z8 = 1
+			_.z9 = 1
+			_.Q = 99
+            _.c = _.b = _.a = null
+        },
         darkSuperUpgrade: function darkSuperUpgrade(a) {
             var _ = this
             _.x = a
@@ -21417,7 +21434,7 @@ u.push($.v())
     }
 	T.junna3.prototype = {
         ar: function(a, b) {
-            if (this.r.knowledge > 9)
+            if (this.r.knowledge < 9)
                 return !1
             return this.aS(a, b)
         },
@@ -25397,6 +25414,36 @@ T.tha9n3.prototype = {
         },
         $ip: 1
     }
+	T.prosceniumx.prototype = {
+        gR: function() {
+            return 0
+        },
+        al: function(a) {
+            var u = this.x
+            u.Q = u.Q * this.z1
+			u.ch = u.ch * this.z2
+			u.cx = u.cx * this.z3
+			u.cy = u.cy * this.z4
+			u.db = u.db * this.z5
+			u.dx = u.dx * this.z6
+			u.dy = u.dy * this.z7
+			u.go = u.go * this.z8
+			u.J = u.J * this.z9
+        },
+        aq: function(a, b) {
+            if (--this.Q === 0 || this.r.fr <= 0)
+                this.H(null, b)
+        },
+        H: function(a, b) {
+            var u, t
+            this.C()
+            u = this.x
+            u.r1.S(0,"proscenium")
+            this.y.C()
+            u.E()
+        },
+        $ip: 1
+    }
 T.blindlyx.prototype = {
         gR: function() {
             return -1
@@ -26436,7 +26483,7 @@ T.tha4n1.prototype = {
                     q = T.u(q, !1, c)
                     n = p.b
                     p.b = n + 1
-                    if (o.a0(q * (0.75 - n * 0.15), !1, m.r, T.a3(), c, d) <= 0)
+                    if (o.a0(q * (0.99 - n * 0.11), !1, m.r, T.a3(), c, d) <= 0)
 					    this.r.j = this.r.j + 1024
                         return
                     u.push($.v())
@@ -40097,7 +40144,7 @@ dk: function(a, b, c, d, e, f, g) {
         s(F.ab, [T.H, T.M, T.D, T.J, T.L, T.K, T.A, T.G, T.C, T.I])
         s(T.H, [T.y, T.youzi3, T.tao3, T.lv3, T.hJ, T.tha1b1, T.ribbit1t2, T.ribbit4b1, T.squallt4, T.ribbit1b1, T.ribbit1b2, T.fox1b1,  T.ribbit2b1, T.fox3b1, T.fox1b2, T.tha5b1, T.tha6b1, T.tha7b1, T.thb7b2, T.thb9b2,T.thb9b1,  T.tha10b1,T.tha12b1, T.thb5b2, T.thb7b1, T.ribbit4n1, T.ribbit4b3, T.hR, T.i0, T.i3, T.dU, T.dZ, T.bU, T.dQ, T.hZ, T.i5, T.thj7b1, T.dV, T.dX, T.zhsh, T.tha4b1,T.tha3b2,T.thb1b1,T.thb6b1, T.i9 ,T.RevueStarlightzz ,T.hifumib1 , T.ribbit3b1, T.fox2b2, T.baals1b1 ,T.baals1b2 , T.i9m, T.thb7b3 , T.ih, T.kg, T.ribbit4b2, T.ribbit3b2, T.thb5b1, T.thb6b2, T.tha9b1,T.tha1b2, T.thb2b1 , T.im, T.tha3b1, T.io, T.tigerMillionPunch, T.darkRevive, T.hellDefend , T.jntmb1, T.jntmb2 ,T.RevueStarlightready ,T.RevueStarlightdefense])
         s(T.y, [T.dL, T.ribbit4a1, T.fox4a1, T.fox4t1, T.fox1n3, T.ribbit2a1, T.ribbit1n0, T.ribbit2n2, T.ribbit2n1, T.fox3n2 , T.fox3a1 , T.fox1a1, T.fox1n1, T.ribbit2n3, T.fox1n0, T.fox1n2, T.fox2n3, T.yuzun1, T.yuzun2, T.momorin1, T.momorin2, T.midorin1, T.midorin2, T.hifumia1, T.szja1, T.noak, T.youzi1, T.tao1, T.lv1, T.youzi2, T.tao2, T.lv2, T.hI ,T.tha6n1, T.thb8t1b, T.tha10t1, T.hK, T.hKm,T.thb9s1, T.thb7s1, T.baals1n2,  T.bx, T.hL, T.hM, T.dN, T.tha6t2, T.dO, T.dP, T.tha2n1, T.tha2ak, T.tha12ak, T.tha2n2, T.tha2n3, T.tha2b1, T.tha1n3, T.tha3n1, T.ba1a1, T.ba1n2, T.baals1n1, T.arisn1, T.arisn2, T.thb1n1, T.thb1s1, T.thb1n2, T.thb1n3, T.thb8t1a, T.thb2n1, T.thb2n2 ,T.thb2n3, T.thb2s1, T.thb2n1t, T.thb2n2t ,T.thb2n3t ,  T.tha3n2, T.tha3s1, T.tha6n2, T.tha6n3, T.tha5n1, T.tha7n1 ,T.tha7n2,T.tha8n1 ,T.tha8t1 ,T.tha8n2 ,T.tha8t2 ,T.tha8n3 ,T.tha8t3 ,T.tha8n4 ,T.tha8t4 ,T.tha8n5 ,T.tha8t5 ,T.tha8s1 , T.ribbit3n2, T.ribbit3n3, T.tha9n1,T.tha9n3,T.tha10n1,T.tha10n2,T.tha10s1,T.tha11n1,T.tha11n2, T.tha11n1t, T.tha11n2t, T.tha11t1, T.thb3n1,T.thb3n2,T.thb3n3,T.thb3n4,T.thb3n5,T.thb3n6,T.thb3n7,T.thb3n8,T.thb3n9,T.thb3s1 ,T.thb3s2 ,T.thb9t1 ,T.thb9t2 ,T.thb8n1, T.thb8t1 ,T.thb8t2 ,T.thb3t1,T.thb3t2,T.thb3t3,T.thb3t4,T.thb3t5,T.thb3t6,T.thb3t7,T.thb3t8, T.hS, T.thb4b1, T.thb4b2, T.hU, T.tha1n2, T.ba1n1 ,T.hV, T.bV, T.dR, T.hX, T.thb8s1, T.tha4n3, T.thb4n1, T.thb4n2,T.thb4s1, T.thb5s1, T.thb5n1, T.thb5n2, T.thb5n3, T.dS, T.tha4n1, T.tha4n2, T.baals1n3, T.baals1n5, T.baals1n6, T.baals1n4, T.hifumin1, T.hifumin2, T.ribbit1n2, T.ribbit3n1, T.fox2n2, T.fox2a1, T.fox2n1, T.fox3n1, T.ribbit1n3, T.fox4n1, T.fox4n2, T.tha4n2x, T.tha7t1, T.dT, T.i1, T.tha1n1, T.thb9n1, T.i6, T.i8, T.dW , T.junna2, T.ia ,T.tomb1 ,T.tha4s1, T.i7, T.ig, T.junna1, T.junna3, T.tha9n2, T.tha9n2t,T.yeye, T.ij, T.ribbit4n2, T.ribbit1t1, T.tha1s1, T.tha9s1, T.hW, T.hWalf, T.ik, T.il, T.tha5n3, T.thb9n2, T.tha6s1t, T.tha6s1, T.thb6n1, T.thb6n2, T.thb6n3, T.thb6s1, T.thb7n1, T.thb7t1, T.thb7n2, T.tha11s1, T.tha2s1, T.dM, T.tha5n2, T.tha5s1, T.tha7s1, T.hO, T.dc, T.hQ, T.i_, T.bI, T.i2, T.i4, T.ie, T.aK, T.bm, T.bn, T.hT, T.dY, T.ic, T.tigerAttack, T.tigerCheckHP, T.tigerIceAttack, T.tigerBlastPunch, T.tigerBlade, T.tigerRecover, T.tigerFastPunch, T.tigerWindAttack, T.tigerBlastKick, T.darkRecover, T.darkFastAttack, T.darkIron, T.darkHaste, T.darkLock, T.darkDemonSword, T.darkAttack, T.hellFireAttack, T.hellWindAttack, T.hellCutter, T.hellBehead, T.hellCheckHP, T.hellWindAttack, T.hellCutter, T.hellBehead, T.hellCheckHP, T.squalla1 ,T.squalln1 ,T.squalln2 ,T.squalln3 ,T.squalln4 ,T.squalln5 ,T.squalln6 ,T.squalln7 ,T.squallt2 ,T.jntmn1 ,T.RevueStarlightstart ,T.Kirin1])
-        s(T.M, [T.bf, T.co, T.dj ,T.sl , T.cG, T.sD, T.aN, T.hz, T.shenx, T.lockx, T.angerx, T.blindlyx, T.tauntx, T.darkHasteRun, T.darkSuperUpgrade])
+        s(T.M, [T.bf, T.co, T.dj ,T.sl , T.cG, T.sD, T.aN, T.hz, T.shenx, T.lockx, T.angerx, T.blindlyx, T.tauntx, T.proscenium, T.darkHasteRun, T.darkSuperUpgrade])
         s(T.p, [T.dt, T.aQ, T.ii, T.h0, T.iT])
         s(T.w, [T.dC, T.av, T.cA, T.hc, T.hj, T.hk, T.he, T.cy])
         s(T.D, [T.cg, T.dF, T.el])
