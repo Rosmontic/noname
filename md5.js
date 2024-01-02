@@ -22961,7 +22961,6 @@ T.thb8s1.prototype = {
 			t.z1 = 0.5
 			t.z5 = 0.5
 			t.z4 = 4
-			t.z8 = 25
 			if (o.e == "junna@!"){
 			t.z1 = 1
 			t.z5 = 1
@@ -22996,8 +22995,8 @@ T.thb8s1.prototype = {
 			t.z6 = 3
 			if ((o.e == "futaba@!" && o.partner != null) || (o.e == "kaoruko@!" && o.partner != null)){
 			t.z8 = 1.5
-			t.z5 = 60
-			t.z6 = 60
+			t.z5 = 6
+			t.z6 = 6
 			}
 			break
 			case 5:
@@ -39138,9 +39137,9 @@ dk: function(a, b, c, d, e, f, g) {
                     else
                         p.push(o)
                 }
-				d.a.push(T.e("[0]ppp", this.r, this.r, null, null, 0, 1000, 100))
                 C.a.i(o.x.f, this.r)
             }
+			o.e = T.du(this.r)
 			o.fr = o.fx
 			d.a.push(T.e("[0]复活了[1]", this.r, T.a1(o, 0), null, null, 0, 1000, 100))
 			o.f = o.f + 2048
