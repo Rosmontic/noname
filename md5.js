@@ -22939,89 +22939,85 @@ T.thb8s1.prototype = {
 			d.a.push(T.e("[0]：[以TopStar为目标]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
 			d.a.push(T.e("[0]：[歌词，舞蹈，相互争夺吧]", this.r, this.r, null, null, 0, 1000, 100))
-			for (u = 0; u < n.length; ++u) {
+		    for (u = 0; u < n.length; ++u) {
             o = n[u]
 			o.j = 0
 			switch (w) {
             case 0:
-			o.go = o.go * 2
-			o.cx = o.cx * 2
-			o.ch = C.d.v(o.ch, 2)
-			o.dx = C.d.v(o.dx, 2)
+			this.z8 = 2
+			this.z3 = 2
+			this.z4 = 0.5
 			if (o.e == "karen@!"){
-			o.Q = o.Q * 2
-			o.cy = o.cy * 2
-			o.ch = 1
-			o.dx = 1
+			this.z8 = 2.5
+			this.z3 = 2.5
 			}
 			break
 			case 1:
-			o.Q = o.Q * 2
-			o.db = o.db * 2
-			o.cx = o.cx * 2
-			o.cy = C.d.v(o.cy, 6)
+			this.z1 = 0.5
+			this.z5 = 0.5
+			this.z4 = 4
 			if (o.e == "junna@!"){
-			o.cx = o.cx * 2
-			o.db = o.db * 2
-			o.dx = o.dx * 2
-			o.ch = o.ch * 2
-			o.cy = C.d.v(o.cy, 2)
+			this.z1 = 1
+			this.z5 = 1
+			this.z4 = 3
 			}
 			case 2:
-			o.Q = o.Q + o.ch
-			o.db = o.db + o.dx
-			o.ch = 1
-			o.dx = 1
+			this.z1 = 2
+			this.z5 = 2
+			this.z2 = 0.5
+			this.z6 = 0.5
 			if (o.e == "maya@!"){
-			o.Q = o.Q * 2
-			o.db = o.db * 2
-			o.cx = o.cx * 2
-			o.cy = o.cy * 2
+			this.z1 = 3
+			this.z5 = 3
+			this.z2 = 1
+			this.z6 = 1
 			}
 			if (o.e == "kuro@!"){
-			o.ch = o.Q * 2
-			o.dx = o.db * 2
+			this.z1 = 1.5
+			this.z5 = 1.5
+			this.z2 = 1.5
+			this.z6 = 1.5
 			}
 			break
 			case 3:
-			o.J = o.J * C.d.v((o.Q + o.cx + o.cy + o.ch + o.db + o.dx + o.dy + o.fx), 256)
+			this.z9 = 4
 			if (o.e != "mahiru@!"){
-			o.j = o.j - (4096 + 12*o.cx)
+			o.j = o.j - (4096 + 16 *o.cx)
 			}
 			break
 			case 4:
-			o.ch = o.ch * 3
-			o.dx = o.dx * 3
+			this.z5 = 3
+			this.z6 = 3
 			if ((o.e == "futaba@!" && o.partner != null) || (o.e == "kaoruko@!" && o.partner != null)){
-			o.go = o.go * 1.5
-			o.ch = o.ch * 2.5
-			o.dx = o.dx * 2.5
+			this.z8 = 1.5
+			this.z5 = 5
+			this.z6 = 5
 			}
 			break
 			case 5:
 			if(o.y.f.length == 1)
 			{
-			o.Q = o.Q * 2
-			o.db = o.db * 2
-			o.cx = o.cx * 2
-			o.cy = o.cy * 2
-			o.ch = o.ch * 2
-			o.dx = o.dx * 2
+			this.z1 = 2
+			this.z5 = 2
+			this.z3 = 2
+			this.z4 = 2
+			this.z2 = 2
+			this.z6 = 2
 			if (o.e == "hikari@!" || o.e == "nana@!" ){
-			o.go = o.go * 2
+			this.z8 = 2
 			}}
 			break
 			case 6:
 			if(o.y.f.length > 1)
 			{
-			o.go = o.go * 2
+			this.z8 = 2
 			o.j = o.j + 4096
 			if (o.e == "karen@!"  || o.e == "hikari@!" ){
-			o.go = o.go * 2
+			this.z8 = 3
 			}
 			}
 			else if(o.y.f.length == 1 && o.e == "nana@!"){
-			o.go = o.go * 2
+			this.z8 = 2.5
 			}
 			break
 			case 7:
@@ -23041,7 +23037,17 @@ T.thb8s1.prototype = {
 			}
 			break
 			}
+			t = H.o(o.r1.h(0, "proscenium"), "$iprosceniumx")
+            if (t == null) {
+                t = new T.prosceniumx(o)
+                t.y = new T.ay(t)
+                o.r1.k(0, "proscenium", t)
+                o.r2.i(0, t)
+                o.x1.i(0, t.y)
+                o.E()
+            }
 			}
+			
 			this.f = 0
 			this.r.fr = 0
 			this.r.bf(this.r.fr, null, c, d)
