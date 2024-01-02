@@ -13870,6 +13870,8 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
 			_.SR0 = 0
 			_.enemy = 0
 			_.watch = null
+			_.rev = 0
+			_.sch = 1
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -13913,6 +13915,8 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
 			_.SR0 = 0
 			_.enemy = 0
 			_.watch = null
+			_.rev = 0
+			_.sch = 1
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -13956,6 +13960,8 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
 			_.SR0 = 0
 			_.enemy = 0
 			_.watch = null
+			_.rev = 0
+			_.sch = 1
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -14001,6 +14007,8 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
 			_.ror = 0
 			_.knowledge = 0
 			_.watch = null
+			_.rev = 0
+			_.sch = 1
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -14044,6 +14052,8 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
 			_.SR0 = 0
 			_.enemy = 0
 			_.watch = null
+			_.rev = 0
+			_.sch = 1
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -14087,6 +14097,8 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
 			_.SR0 = 0
 			_.enemy = 0
 			_.watch = null
+			_.rev = 0
+			_.sch = 1
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -14130,6 +14142,8 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
 			_.SR0 = 0
 			_.enemy = 0
 			_.watch = null
+			_.rev = 0
+			_.sch = 1
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -14174,6 +14188,8 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
 			_.enemy = 0
 			_.watch = null
 			_.partner = null
+			_.rev = 0
+			_.sch = 1
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -14218,6 +14234,8 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
 			_.enemy = 0
 			_.watch = null
 			_.partner = null
+			_.rev = 0
+			_.sch = 1
             _.k2 = _.k1 = null
             _.k3 = f
             _.k4 = null
@@ -14243,7 +14261,6 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
             _.X = _.W = !1
             _.F = null
         },
-		
         f1: function f1(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) {
             var _ = this
             _.a = a
@@ -21440,7 +21457,7 @@ u.push($.v())
         },
         am: function(a, b) {
             if (b)
-                return a.fr > 140
+                return a.fr > 9
             return !0
         },
         a8: function(a, b, c) {
@@ -21459,18 +21476,18 @@ u.push($.v())
                 r.r.ry.i(0, r.fr)
                 p = r.r
                 u = r.r
-                u.j = u.j + 1536
+                u.j = u.j + 1800
             } else {
                 r.ae(0)
                 if (p.fr > 0) {
                     u = d.a
 					this.r.knowledge = 0
                     d.a.push(T.e("[0][蓄力射击]", this.r, this.r, null, null, 1, 1000, 100))
-                    t = T.u(r.r, !0, c) * 1.2
-                    s = T.u(r.r, !0, c) * 1.3
+                    t = T.u(r.r, !0, c) * 1.33
+                    s = T.u(r.r, !0, c) * 1.33
                     if (s > t)
                         t = s
-                    s = T.u(r.r, !0, c) * 1.4
+                    s = T.u(r.r, !0, c) * 1.34
                     if (s > t)
                         t = s
                     p.bL(t * 4.4, !0, r.r, T.a3(), c, d)
@@ -22948,6 +22965,7 @@ T.thb8s1.prototype = {
                 t.y = new T.ay(t)
 				switch (w) {
             case 0:
+			o.rev = 1
 			t.z8 = 2
 			t.z3 = 2
 			t.z4 = 0.5
@@ -22958,6 +22976,7 @@ T.thb8s1.prototype = {
 			}
 			break
 			case 1:
+			o.rev = 2
 			t.z1 = 0.5
 			t.z5 = 0.5
 			t.z4 = 4
@@ -22967,6 +22986,7 @@ T.thb8s1.prototype = {
 			t.z4 = 3
 			}
 			case 2:
+			o.rev = 3
 			t.z1 = 2
 			t.z5 = 2
 			t.z2 = 0.5
@@ -22985,12 +23005,14 @@ T.thb8s1.prototype = {
 			}
 			break
 			case 3:
+			o.rev = 4
 			t.z9 = 4
 			if (o.e != "mahiru@!"){
 			o.j = o.j - (4096 + 16 *o.cx)
 			}
 			break
 			case 4:
+			o.rev = 5
 			t.z5 = 3
 			t.z6 = 3
 			if ((o.e == "futaba@!" && o.partner != null) || (o.e == "kaoruko@!" && o.partner != null)){
@@ -23000,6 +23022,7 @@ T.thb8s1.prototype = {
 			}
 			break
 			case 5:
+			o.rev = 6
 			if(o.y.f.length == 1)
 			{
 			t.z1 = 2
@@ -23013,6 +23036,7 @@ T.thb8s1.prototype = {
 			}}
 			break
 			case 6:
+			o.rev = 7
 			if(o.y.f.length > 1)
 			{
 			t.z8 = 2
@@ -23026,6 +23050,7 @@ T.thb8s1.prototype = {
 			}
 			break
 			case 7:
+			o.rev = 8
 			if(o.SRm == null){
 			l = o.fr
 			o.fx = k
@@ -38377,6 +38402,7 @@ dk: function(a, b, c, d, e, f, g) {
 			    if(this.r.owner.e == "junna@!")
 				{
 			    this.r.owner.ror = this.r.owner.ror - 1
+				this.r.owner.j = this.r.owner.j + 1024
 				}
                 return !0
         },
@@ -39125,10 +39151,10 @@ dk: function(a, b, c, d, e, f, g) {
 			{
 			if(this.r.partner.fr <= 0){
 			o = this.r.partner
-            if (!C.a.w(o.x.f, this.r)) {
+            if (!C.a.w(o.x.f, o)) {
 			    p = o.x.a
-                if (!C.a.w(p.c, this.r))
-                    C.a.i(p.c, this.r)
+                if (!C.a.w(p.c, o))
+                    C.a.i(p.c, o)
                 p = p.e
                 if (!C.a.w(p, o)) {
 				    l = o.x.f
@@ -39137,7 +39163,7 @@ dk: function(a, b, c, d, e, f, g) {
                     else
                         p.push(o)
                 }
-                C.a.i(o.x.f, this.r)
+                C.a.i(o.x.f, o)
             }
 			o.fr = o.fx
 			d.a.push(T.e("[0]复活了[1]", this.r, T.a1(o, 0), null, null, 0, 1000, 100))
