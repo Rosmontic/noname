@@ -39139,12 +39139,13 @@ dk: function(a, b, c, d, e, f, g) {
                 }
                 C.a.i(o.x.f, this.r)
             }
-			o.e = T.du(this.r)
 			o.fr = o.fx
 			d.a.push(T.e("[0]复活了[1]", this.r, T.a1(o, 0), null, null, 0, 1000, 100))
 			o.f = o.f + 2048
+			d.a.push(T.e("[0]: [1]", this.r.y.f.length, o.y.f.length, null, null, 0, 1000, 100))
 			this.r.bI(this.r, d)
 			o.bI(o, d)
+			
 			}
 			}
 			return a
