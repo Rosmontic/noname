@@ -22952,14 +22952,16 @@ T.thb8s1.prototype = {
 			t.z3 = 2
 			t.z4 = 0.5
 			if (o.e == "karen@!"){
-			t.z8 = 2.5
-			t.z3 = 2.5
+			t.z8 = 4
+			t.z3 = 4
+			t.z4 = 0.25
 			}
 			break
 			case 1:
 			t.z1 = 0.5
 			t.z5 = 0.5
 			t.z4 = 4
+			t.z8 = 25
 			if (o.e == "junna@!"){
 			t.z1 = 1
 			t.z5 = 1
@@ -22971,16 +22973,16 @@ T.thb8s1.prototype = {
 			t.z2 = 0.5
 			t.z6 = 0.5
 			if (o.e == "maya@!"){
-			t.z1 = 3
-			t.z5 = 3
+			t.z1 = 4
+			t.z5 = 4
 			t.z2 = 1
 			t.z6 = 1
 			}
 			if (o.e == "kuro@!"){
-			t.z1 = 1.5
-			t.z5 = 1.5
-			t.z2 = 1.5
-			t.z6 = 1.5
+			t.z1 = 2
+			t.z5 = 2
+			t.z2 = 2
+			t.z6 = 2
 			}
 			break
 			case 3:
@@ -22994,8 +22996,8 @@ T.thb8s1.prototype = {
 			t.z6 = 3
 			if ((o.e == "futaba@!" && o.partner != null) || (o.e == "kaoruko@!" && o.partner != null)){
 			t.z8 = 1.5
-			t.z5 = 6
-			t.z6 = 6
+			t.z5 = 60
+			t.z6 = 60
 			}
 			break
 			case 5:
