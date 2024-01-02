@@ -22943,6 +22943,14 @@ T.thb8s1.prototype = {
             o = n[u]
 			o.j = 0
 			t = H.o(o.r1.h(0, "proscenium"), "$iprosceniumx")
+			if (t == null) {
+                t = new T.prosceniumx(o)
+                t.y = new T.ay(t)
+                o.r1.k(0, "proscenium", t)
+                o.r2.i(0, t)
+                o.x1.i(0, t.y)
+                o.E()
+            }
 			switch (w) {
             case 0:
 			t.z8 = 20
@@ -23038,20 +23046,7 @@ T.thb8s1.prototype = {
 			}
 			break
 			}
-			d.a.push(T.e("[0]:[1]:", t.z1 ,t.z2, null, null, 0, 1000, 100))
-			d.a.push(T.e("[0]:[1]:", t.z3 ,t.z4, null, null, 0, 1000, 100))
-			d.a.push(T.e("[0]:[1]", t.z5 ,t.z6, null, null, 0, 1000, 100))
-			if (t == null) {
-                t = new T.prosceniumx(o)
-                t.y = new T.ay(t)
-                o.r1.k(0, "proscenium", t)
-                o.r2.i(0, t)
-                o.x1.i(0, t.y)
-                o.E()
-            }
-			d.a.push(T.e("[0]:[1]:", t.z1 ,t.z2, null, null, 0, 1000, 100))
-			d.a.push(T.e("[0]:[1]:", t.z3 ,t.z4, null, null, 0, 1000, 100))
-			d.a.push(T.e("[0]:[1]", t.z5 ,t.z6, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]:[1]:", t.z8 ,t.z8, null, null, 0, 1000, 100))
 			}
 			this.f = 0
 			this.r.fr = 0
