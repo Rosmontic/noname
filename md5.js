@@ -15015,10 +15015,9 @@ tha4b1: function tha4b1() {
         },
 		RevueStarlightready: function RevueStarlightready() {
             var _ = this
-			_.r = a
             _.e = !1
             _.f = 0
-            _.c = _.b = _.a = null
+            _.c = _.b = _.a = _.r = null
         },
         im: function im() {
             var _ = this
@@ -39135,19 +39134,6 @@ dk: function(a, b, c, d, e, f, g) {
         $iG: 1
         }
 	T.RevueStarlightready.prototype = {
-	    ff: function(a, b, c) {
-            var u, t = this
-            if (a > 0) {
-            if(this.r.SR0 == 1 && this.r.watch != null)
-			{
-			if(this.r.watch.SRm == 0)
-			{
-			return 0
-			}
-			}
-            }
-            return a
-        },
         aK: function(a, b, c, d) {
             var u, t, s, r = this , p, o, l, v ,w ,q = null 
 			v = c.m()
