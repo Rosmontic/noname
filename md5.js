@@ -23006,15 +23006,16 @@ T.thb8s1.prototype = {
 			break
 			case 3:
 			o.rev = 4
-			t.z9 = 4
+			t.z9 = 6
+			t.z8 = 3
 			if (o.e != "mahiru@!"){
-			o.j = o.j - (4096 + 16 *o.cx)
+			o.j = o.j - (4096 + 64 *o.cx)
 			}
 			break
 			case 4:
 			o.rev = 5
-			t.z5 = 3
-			t.z6 = 3
+			t.z5 = 4
+			t.z6 = 4
 			if ((o.e == "futaba@!" && o.partner != null) || (o.e == "kaoruko@!" && o.partner != null)){
 			t.z8 = 1.5
 			t.z5 = 6
@@ -23194,7 +23195,8 @@ T.thb8s1.prototype = {
 			o.SR0 = 1
 			o.enemy = n.length - o.y.f.length
 			return
-			}}
+			}
+			}
 			if (this.r.e == "karen@!"){
 			d.a.push(T.e("[0]：[星屑翩舞的舞台上]", this.r, this.r, null, null, 0, 1000, 100))
 			d.a.push($.v())
@@ -23776,11 +23778,7 @@ T.thb5n3.prototype = {
 			o.j = o.j - 1024
             q.push(T.e("[0]的行动延后了", o , o, null, null, 0, 1000, 100))
 			}
-			}
-
-                    
-                }
-            
+			}} 
         }}
     T.thb9t1.prototype = {
 	    b5: function(a) {
@@ -26848,7 +26846,7 @@ n.r.bf(n.r.fr, null, c, d)
 			d.dx = 4
 			d.dy = 100
 			d.j = 0
-			d.J = C.d.Z(d.J *1.25)
+			d.J = C.d.Z(c.r.J *1.5)
             c.r.x.aU(d)
 			this.r.ror = this.r.ror + 1
 			u.push(T.e("[0][召唤了][1]", c.r, T.a1(d, d.fr), b, b, 1, 1000, 100))
@@ -39171,7 +39169,6 @@ dk: function(a, b, c, d, e, f, g) {
 			d.a.push(T.e("[0]: [1]", this.r.y.f.length, o.y.f.length, null, null, 0, 1000, 100))
 			this.r.bI(this.r, d)
 			o.bI(o, d)
-			
 			}
 			}
 			return a
