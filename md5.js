@@ -21452,7 +21452,7 @@ u.push($.v())
     }
 	T.junna3.prototype = {
         ar: function(a, b) {
-            if (this.r.knowledge < 9)
+            if (this.r.knowledge < 8)
                 return !1
             return this.aS(a, b)
         },
@@ -26884,11 +26884,11 @@ n.r.bf(n.r.fr, null, c, d)
 		this.r.knowledge = this.r.knowledge + 2
 		s = T.u(u.r, !0, c)
 		t.a0(s, !1, u.r, T.a3(), c, d)
-		if(this.r.ror > 0)
+		if(this.r.ror > 0 )
 		{
 		for(v = 0 ;v < this.r.ror ;v++)
 		{
-		if(u.r.zhao1[v] == null)
+		if(u.r.zhao1[v] == null || t.fr <= 0 )
 		{
 		return
 		}
@@ -26937,7 +26937,7 @@ n.r.bf(n.r.fr, null, c, d)
         },
         ay: function(a, b, c, d) {
 		    
-            if(this.fr <= 0){			
+            if(this.fr <= 0){	
             this.af.r.alfn = this.af.r.alfn - 1    
 			}		
         }
