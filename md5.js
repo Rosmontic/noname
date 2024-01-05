@@ -26513,43 +26513,27 @@ T.tha4n1.prototype = {
             }
         }}
 	T.junna2.prototype = {
-        gb3: function() {
-            return 3
-        },
-        gb4: function() {
-            return 5
-        },
         t: function(a, b, c, d) {
-            var u, t, s, r, q, p, o, n, m = this, l = null, k = this.r.ror + 1
-			d.a.push(T.e("[0][射击]", this.r, this.r, null, null, 1, 1000, 100))
-			this.r.knowledge = this.r.knowledge + 1
-            if (a.length > 3)
-                a = (a && C.a).a4(a, 0, 3)
-            for (u = a.length,
-            t = 0; t < u; ++t)
-                a[t].b = 0
-            for (u = d.a,
-            s = 0,
-            r = 0; r < k; ++r) {
-                q = m.r
-                if (!(q.fr > 0 && !q.A))
-                    return
-                p = a[s]
-                o = p.a
-                if (o.fr <= 0)
-                    r -= 0.5
-                else {
-                    q = T.u(q, !1, c)
-                    n = p.b
-                    p.b = n + 1
-                    if (o.a0(q * (0.99 - n * 0.11), !1, m.r, T.a3(), c, d) <= 0)
-					    this.r.j = this.r.j + 1024
-                        return
-                    u.push($.v())
+            var u, t, s, r, q, p, o, n = this, m = null, l = a[0].a, k = d.a
+            d.a.push(T.e("[0][射击]", this.r, this.r, null, null, 1, 1000, 100))
+            u = 1 + this.r.ror
+            t = 100 + n.r.cy
+            for (s = !1,
+            r = 0; r < u; ++r) {
+                q = n.r
+                if (q.fr > 0 && !q.A && l.fr > 0) {
+                    k.push($.v())
+                    t -= 15
+                    q = T.u(n.r, !0, c)
+                    p = k.length
+                    o = n.r
+                    if (l.aA(l.ak(C.e.Z(q * 0.7 / T.cc(l, !0, c)), o, T.a3(), c, d), o, T.a3(), c, d) > 0)
+                        s = !0
+                    k[p].b = 300
                 }
-                s = C.b.a3(s + (c.m() & 3), a.length)
             }
-        }}
+        }
+    }
     T.ia.prototype = {
         b5: function(a) {
             return a.b1(this.r.y.e)
@@ -26861,7 +26845,7 @@ n.r.bf(n.r.fr, null, c, d)
             d.a5 = new T.cj(d)
             d.af = c
             d.e = T.du(c.r)
-            d.r = "“镜子”"
+            d.r = "镜子"
             s = c.r
             d.x = s.x
             s.I.i(0, d.a5)
@@ -26879,7 +26863,12 @@ n.r.bf(n.r.fr, null, c, d)
 			d.J = C.d.Z(c.r.J *1.5)
             c.r.x.aU(d)
 			this.r.ror = this.r.ror + 1
+			if(w == 1){
 			u.push(T.e("[0][召唤了][1]", c.r, T.a1(d, d.fr), b, b, 1, 1000, 100))
+			}
+			else{
+			u.push(T.e("[1]", c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
+			}
 			d.owner = this.r
 			}
 			this.r.j = this.r.j + (1536 - v* 512) 
