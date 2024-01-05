@@ -23109,6 +23109,12 @@ T.thb8s1.prototype = {
 			this.r.SR0 = 1
             r = H.a(n.slice(0), [H.n(n, 0)])
             q = d.a
+			if(this.r.watch != null){
+			this.r.j = - 4096
+			}
+			else{
+			this.r.j = 2048
+			}
 			this.r.enemy = n.length - this.r.y.f.length
             for (u = 0; u < n.length; ++u) {
             o = n[u]
@@ -23133,6 +23139,12 @@ T.thb8s1.prototype = {
 			o.enemy = n.length - o.y.f.length
 			this.r.partner = o
 			o.partner = this.r
+			if(this.r.watch != null){
+			o.j = - 4096
+			}
+			else{
+			o.j = 2048
+			}
 			return
 			}
 			if(o.e == "kaoruko@!" && this.r.e == "futaba@!" && this.r.y == o.y)
@@ -23156,6 +23168,12 @@ T.thb8s1.prototype = {
 			o.enemy = n.length - o.y.f.length
 			this.r.partner = o
 			o.partner = this.r
+			if(this.r.watch != null){
+			o.j = - 4096
+			}
+			else{
+			o.j = 2048
+			}
 			return
 			}
 			if(this.r.e == "karen@!" && o.e == "hikari@!"  && this.r.y == o.y)
@@ -23175,6 +23193,12 @@ T.thb8s1.prototype = {
 			d.a.push(T.e("[0] / [1]：[我会让大家星光闪耀！]", this.r, o, null, null, 0, 1000, 100))
 			o.SR0 = 1
 			o.enemy = n.length - o.y.f.length
+			if(this.r.watch != null){
+			o.j = - 4096
+			}
+			else{
+			o.j = 2048
+			}
 			return
 			}
 			if(o.e == "karen@!" && this.r.e == "hikari@!" && this.r.y == o.y)
@@ -23194,6 +23218,12 @@ T.thb8s1.prototype = {
 			d.a.push(T.e("[0] / [1]：[我会让大家星光闪耀！]", this.r, o, null, null, 0, 1000, 100))
 			o.SR0 = 1
 			o.enemy = n.length - o.y.f.length
+			if(this.r.watch != null){
+			o.j = - 4096
+			}
+			else{
+			o.j = 2048
+			}
 			return
 			}
 			}
@@ -31205,7 +31235,7 @@ T.tha1b1.prototype = {
             if (this.r.ror != null && this.r.ror > 0) {
                 return 0
             }
-            return a
+            return C.d.Z(this.r.fx *1.5)
         },
         T: function() {
             this.r.y1.i(0, this)
