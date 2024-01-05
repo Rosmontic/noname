@@ -26783,6 +26783,10 @@ n.r.bf(n.r.fr, null, c, d)
             var w ,v, u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this, b = null
             u = a2.a
 			v = (a1.m() & 1) + 1
+			if(this.r.ror == 3)
+			{
+			v = 1
+			}
 			this.r.knowledge = this.r.knowledge + 1
 			for(w = 0; w < v ; w++){
             t = H.d(c.r.a) + "?" + H.d($.nn())
@@ -26874,21 +26878,22 @@ n.r.bf(n.r.fr, null, c, d)
     }
 	T.junna2.prototype = {
     t: function(a, b, c, d) {
-        var v, u = this
+        var w, v, u = this
         t = a[0].a
 		d.a.push(T.e("[0][射击]", u.r, t, null, null, 1, 1000, 100))
+		this.r.knowledge = this.r.knowledge + 2
 		s = T.u(u.r, !0, c)
-		t.a0(s, !0, u.r, T.a3(), c, d)
+		t.a0(s, !1, u.r, T.a3(), c, d)
 		if(this.r.ror > 0)
 		{
 		for(v = 0 ;v < this.r.ror ;v++)
 		{
 		if(u.r.zhao1[v] == null)
 		{
-		d.a.push(T.e("[0][ssj]", u.r, t, null, null, 0, 1000, 100))
 		return
 		}
-		t.a0(s * 0.6, !0, u.r.zhao1[v], T.a3(), c, d)
+		w = ((c.m() & 7)+3)/10
+		t.a0(s * w, !0, u.r.zhao1[v], T.a3(), c, d)
 		}
 		}
     }
@@ -31760,7 +31765,7 @@ T.youzi1.prototype = {
             r = H.a(n.slice(0), [H.n(n, 0)])
             q = d.a
             q.push(T.e(t, s, null, null, r, 1, 1000, 100))
-            p = T.u(this.r, !0, c) * v * 0.75
+            p = T.u(this.r, !0, c) * v * 0.6
             for (u = 0; u < n.length; ++u) {
                 o = n[u]
             if (o.fr > 0 ) {
@@ -31800,7 +31805,7 @@ T.youzi1.prototype = {
             r = H.a(n.slice(0), [H.n(n, 0)])
             q = d.a
             q.push(T.e(t, s, null, null, r, 1, 1000, 100))
-            p = T.u(this.r, !0, c) * 5
+            p = T.u(this.r, !0, c) * 4.5
             for (u = 0; u < n.length; ++u) {
                 o = n[u]
             if (o.fr > 0 ) {
