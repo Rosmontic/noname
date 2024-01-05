@@ -14006,6 +14006,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
 			_.enemy = 0
 			_.ror = 0
 			_.knowledge = 0
+			_.zhao1 = []
 			_.watch = null
 			_.rev = 0
 			_.sch = 1
@@ -26512,28 +26513,7 @@ T.tha4n1.prototype = {
                 s = C.b.a3(s + (c.m() & 3), a.length)
             }
         }}
-	T.junna2.prototype = {
-        t: function(a, b, c, d) {
-            var u, t, s, r, q, p, o, n = this, m = null, l = a[0].a, k = d.a
-            d.a.push(T.e("[0][射击]", this.r, this.r, null, null, 1, 1000, 100))
-            u = 1 + this.r.ror
-            t = 100 + n.r.cy
-            for (s = !1,
-            r = 0; r < u; ++r) {
-                q = n.r
-                if (q.fr > 0 && !q.A && l.fr > 0) {
-                    k.push($.v())
-                    t -= 15
-                    q = T.u(n.r, !0, c)
-                    p = k.length
-                    o = n.r
-                    if (l.aA(l.ak(C.e.Z(q * 0.7 / T.cc(l, !0, c)), o, T.a3(), c, d), o, T.a3(), c, d) > 0)
-                        s = !0
-                    k[p].b = 300
-                }
-            }
-        }
-    }
+	
     T.ia.prototype = {
         b5: function(a) {
             return a.b1(this.r.y.e)
@@ -26869,6 +26849,7 @@ n.r.bf(n.r.fr, null, c, d)
 			else{
 			u.push(T.e("[1]", c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
 			}
+			this.r.zhao1[this.r.ror - 1] = d
 			d.owner = this.r
 			}
 			this.r.j = this.r.j + (1536 - v* 512) 
@@ -26891,6 +26872,27 @@ n.r.bf(n.r.fr, null, c, d)
             u[7] = C.d.v(u[7], 1)
         }
     }
+	T.junna2.prototype = {
+    t: function(a, b, c, d) {
+        var v, u = this
+        t = a[0].a
+		d.a.push(T.e("[0][射击]", u.r, t, null, null, 1, 1000, 100))
+		s = T.u(u.r, !0, c)
+		t.a0(s, !0, u.r, T.a3(), c, d)
+		if(this.r.ror > 0)
+		{
+		for(v = 0 ;v < this.r.ror ;v++)
+		{
+		if(u.r.zhao1[v - 1] == null)
+		{
+		d.a.push(T.e("[0][ssj]", u.r, t, null, null, 0, 1000, 100))
+		return
+		}
+		t.a0(s * 0.5, !0, u.r.zhao1[v - 1], T.a3(), c, d)
+		}
+		}
+    }
+}
     T.hha4n2.prototype = {
         gaj: function() {
             return this.af.r
