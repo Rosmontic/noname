@@ -31232,10 +31232,13 @@ T.tha1b1.prototype = {
             return 2000
         },
         ak: function(a, b, c, d, e) {
-            if (this.r.ror != null && this.r.ror > 0) {
-                return 0
-            }
-            return C.d.Z(this.r.fx *1.5)
+		    if (this.r.e == "junna@!" ){
+            if (this.r.ror > 0) {
+                return 0}
+			else{
+			return C.d.Z(a *1.5)}
+			}
+            return a
         },
         T: function() {
             this.r.y1.i(0, this)
