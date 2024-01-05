@@ -26843,7 +26843,7 @@ n.r.bf(n.r.fr, null, c, d)
 			d.J = C.d.Z(c.r.J *1.5)
             c.r.x.aU(d)
 			this.r.ror = this.r.ror + 1
-			if(w == 1){
+			if(w == 0){
 			u.push(T.e("[0][召唤了][1]", c.r, T.a1(d, d.fr), b, b, 1, 1000, 100))
 			}
 			else{
@@ -26883,12 +26883,12 @@ n.r.bf(n.r.fr, null, c, d)
 		{
 		for(v = 0 ;v < this.r.ror ;v++)
 		{
-		if(u.r.zhao1[v - 1] == null)
+		if(u.r.zhao1[v] == null)
 		{
 		d.a.push(T.e("[0][ssj]", u.r, t, null, null, 0, 1000, 100))
 		return
 		}
-		t.a0(s * 0.5, !0, u.r.zhao1[v - 1], T.a3(), c, d)
+		t.a0(s * 0.6, !0, u.r.zhao1[v], T.a3(), c, d)
 		}
 		}
     }
