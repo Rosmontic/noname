@@ -27993,7 +27993,7 @@ n.r.bf(n.r.fr, null, c, d)
 			d.dy = 90
 			}
 			
-            c.r.x.aU(d)
+           
 			if(v == 1){
             u.push(T.e("[邦邦！][1]作为伙伴加入了队伍！", this.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
 			}
@@ -38466,7 +38466,7 @@ dk: function(a, b, c, d, e, f, g) {
                 r = t.r
                 u = d.a
 				u.push($.v())
-				u.push(T.e("[0]: [王女...]", r, r, null, null, 0, 1000, 100))
+				u.push(T.e("[0]: [王女......]", r, r, null, null, 0, 1000, 100))
 				u.push($.v())
 				u.push(T.e("[<<< Key System logout >>> ]", r, r, null, null, 0, 1000, 100))
 				u.push($.v())
