@@ -31767,7 +31767,7 @@ T.youzi1.prototype = {
             r = H.a(n.slice(0), [H.n(n, 0)])
             q = d.a
             q.push(T.e(t, s, null, null, r, 1, 1000, 100))
-            p = T.u(this.r, !0, c) * v * 0.6
+            p = T.u(this.r, !0, c) * v * 0.5
             for (u = 0; u < n.length; ++u) {
                 o = n[u]
             if (o.fr > 0 ) {
@@ -31807,7 +31807,7 @@ T.youzi1.prototype = {
             r = H.a(n.slice(0), [H.n(n, 0)])
             q = d.a
             q.push(T.e(t, s, null, null, r, 1, 1000, 100))
-            p = T.u(this.r, !0, c) * 4.5
+            p = T.u(this.r, !0, c) * 4
             for (u = 0; u < n.length; ++u) {
                 o = n[u]
             if (o.fr > 0 ) {
@@ -38475,8 +38475,8 @@ dk: function(a, b, c, d, e, f, g) {
 				if(this.r.alfm[g].fr > 0){
 				this.r.alfm[g].fr = 0
 				u.push(T.e("[0]瘫痪了", this.r.alfm[g], null, null, null, 0, 1000, 100))
-				u.push($.v())
 				this.r.alfm[g].bf(this.r.alfm[g].fr, null, c, d)
+				u.push($.v())				
 				}
 				}
                 u.push(T.e("[0]正在使用[凤凰治疗包]", r, r, null, null, 0, 1000, 100))
