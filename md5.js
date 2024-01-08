@@ -27899,7 +27899,7 @@ n.r.bf(n.r.fr, null, c, d)
 			this.f = 0
 			for(v =0 ; v < 3 ; v++){
 			u.push($.v())
-            t = H.d(c.r.a) + "?" + H.d($.nn())
+            t = H.d(a) + "?" + H.d($.nn())
             s = c.r
             r = s.b
             s = s.c
@@ -27992,8 +27992,7 @@ n.r.bf(n.r.fr, null, c, d)
 			d.dx = 75
 			d.dy = 90
 			}
-			
-           
+            c.r.x.aU(d)
 			if(v == 1){
             u.push(T.e("[邦邦！][1]作为伙伴加入了队伍！", this.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
 			}
