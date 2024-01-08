@@ -12973,6 +12973,7 @@ sakuya: function sakuya(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s,
 			_.tai = 1
 			_.zhao = 1
 			_.alfn = 0
+			_.alfm = []
 			_.yxb = 4
             _.k2 = _.k1 = null
             _.k3 = f
@@ -22638,17 +22639,17 @@ T.thb8s1.prototype = {
 			if(o.yxb == 1){
             o.Q = o.Q * 1.5
 			o.go = o.go * 2
-			o.f = o.f + 4096
+			o.j = o.j + 2048
 			d.a.push(T.e("[邦邦咔邦！][0]的[输出能力]大幅度提升！", o, o, null, null, 0, 1000, 100))
 			}
 			if(o.yxb == 2){
-            o.cx = o.cx * 3
-			o.f = o.f + 4096
+            o.cx = o.cx * 2.5
+			o.j = o.j + 2048
 			d.a.push(T.e("[邦邦咔邦！][0]的[移动速度]大幅度提升！", o, o, null, null, 0, 1000, 100))
 			}
 			if(o.yxb == 3){
             o.cy = o.cy * 7.5
-			o.f = o.f + 4096
+			o.j = o.j + 2048
 			o.J = o.J * 0.5
 			d.a.push(T.e("[邦邦咔邦！][0]的[回避点数]大幅度提升！", o, o, null, null, 0, 1000, 100))
 			}
@@ -22657,7 +22658,7 @@ T.thb8s1.prototype = {
 			o.dx = o.dx * 5
 			o.J = o.J * 2
 			o.go = o.go * 0.5
-			o.f = o.f + 2048
+			o.j = o.j + 2048
 			d.a.push(T.e("[邦邦咔邦！][0]由[光属性adc]转职为[坦克]！", o, o, null, null, 0, 1000, 100))
 			}
             }
@@ -27873,6 +27874,7 @@ n.r.bf(n.r.fr, null, c, d)
 			d.j = 2048
 			d.J = d.J * 1.25
             c.r.x.aU(d)
+			c.r.alfm.push(d)
             u.push(T.e("激活了[1]", c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
 			this.r.alfn = this.r.alfn + 1
         }
@@ -37537,7 +37539,7 @@ t.push(u)
             if (s.fr > 0)
                 return
 			if(b != null && b.SR0 != null){
-			if(b.y.f.length == b.x.a.e.length - 1)
+			if(b.y.f.length == b.x.a.e.length - 1 && H.o(b.r1.h(0, $.ai()), "$ibf") == null)
 			{
 			d.a.push($.v())
 			d.a.push(T.e("[0]：[position zero！]", b, b, null, null, 0, 1000, 100))		
@@ -38443,7 +38445,7 @@ dk: function(a, b, c, d, e, f, g) {
             return 10
         },
         aX: function(a, b, c, d) {
-            var v, u, t = this, s = c.m(), r = t.f
+            var g ,m ,v, u, t = this, s = c.m(), r = t.f
             if ( r > 0) {
 			    if (this.r.tai == 1){
                 r = t.r
@@ -38468,6 +38470,15 @@ dk: function(a, b, c, d, e, f, g) {
 				u.push($.v())
 				u.push(T.e("[<<< Key System logout >>> ]", r, r, null, null, 0, 1000, 100))
 				u.push($.v())
+				for(g = 0 ;g < this.r.alfm.length ; g++)
+				{
+				if(this.r.alfm[g].fr > 0){
+				this.r.alfm[g].fr = 0
+				u.push(T.e("[0]瘫痪了", this.r.alfm[g], null, null, null, 0, 1000, 100))
+				u.push($.v())
+				this.r.alfm[g].bf(this.r.alfm[g].fr, null, c, d)
+				}
+				}
                 u.push(T.e("[0]正在使用[凤凰治疗包]", r, r, null, null, 0, 1000, 100))
 				u.push($.v())
 				u.push(T.e("[0]: [必灭者啊，不能就这样放弃。]", r, r, null, null, 1, 1000, 100))
