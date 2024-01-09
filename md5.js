@@ -26751,8 +26751,6 @@ n.r.bf(n.r.fr, null, c, d)
             f.b = f
             e = [P.j]
             d = new T.hh(t,r,s,b,q,p,o,n,m,l,k,j,i,h,g,f,H.a([], e),H.a([], e),H.a([], e),H.a([], e))
-			u.push(T.e("[0]: [1]", o, n, null, null, 0, 1000, 100))
-			u.push(T.e("[0]: [1]", m, l, null, null, 0, 1000, 100))
             d.Y(t, r, s, b)
             d.a5 = new T.cj(d)
             d.af = c
@@ -26767,6 +26765,8 @@ n.r.bf(n.r.fr, null, c, d)
             else
                 d.j = -2048
             c.r.x.aU(d)
+			u.push(T.e("[0]: [1]", o, n, null, null, 0, 1000, 100))
+			u.push(T.e("[0]: [1]", m, l, null, null, 0, 1000, 100))
             u.push(T.e(O.c("cPiZ"), c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
         }
     }
