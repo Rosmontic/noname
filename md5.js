@@ -26751,6 +26751,9 @@ n.r.bf(n.r.fr, null, c, d)
             f.b = f
             e = [P.j]
             d = new T.hh(t,r,s,b,q,p,o,n,m,l,k,j,i,h,g,f,H.a([], e),H.a([], e),H.a([], e),H.a([], e))
+			u.push(T.e("[0]: [1]", t, r, null, null, 0, 1000, 100))
+			u.push(T.e("[0]: [1]", s, b, null, null, 0, 1000, 100))
+			u.push(T.e("[0]: [1]", q, p, null, null, 0, 1000, 100))
             d.Y(t, r, s, b)
             d.a5 = new T.cj(d)
             d.af = c
@@ -27899,7 +27902,7 @@ n.r.bf(n.r.fr, null, c, d)
 			this.f = 0
 			for(v =0 ; v < 3 ; v++){
 			u.push($.v())
-            t = H.d(a)+ H.d($.ah())
+            t = H.d(c.r.a) + "?" + H.d($.nn())
             s = c.r
             r = s.b
             s = s.c
@@ -31822,7 +31825,7 @@ T.youzi1.prototype = {
     t: function(a, b, c, d) {
         var u = this
         t = a[0].a
-        s = T.u(u.r, !1, c)* 2.75
+        s = T.u(u.r, !1, c)* 3.25
         d.a.push(T.e("[0]: [像打像素游戏一样细致...]", u.r, t, null, null, 1, 1000, 100))
 		d.a.push($.v())
         t.bL(s, !1, u.r, T.qc(), c, d)
