@@ -26765,8 +26765,7 @@ n.r.bf(n.r.fr, null, c, d)
             else
                 d.j = -2048
             c.r.x.aU(d)
-			u.push(T.e("[0]: [1]", o, n, null, null, 0, 1000, 100))
-			u.push(T.e("[0]: [1]", m, l, null, null, 0, 1000, 100))
+			u.push(T.e("[0]: [1]", d.r.e, d.r.id, null, null, 0, 1000, 100))
             u.push(T.e(O.c("cPiZ"), c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
         }
     }
@@ -32107,18 +32106,6 @@ T.youzi1.prototype = {
     t: function(a, b, c, d) {
         var u = this
         t = a[0].a
-		d.a.push(T.e("[0]: [1]", this.r.l, this.r.l, null, null, 0, 1000, 100))
-		d.a.push($.v())
-		d.a.push(T.e("[0]: [1]", this.r.V, this.r.O, null, null, 0, 1000, 100))
-		d.a.push($.v())
-		d.a.push(T.e("[0]: [1]", this.r.L, this.r.X, null, null, 0, 1000, 100))
-		d.a.push($.v())
-		d.a.push(T.e("[0]: [1]", this.r.W, this.r.A, null, null, 0, 1000, 100))
-		d.a.push($.v())
-		d.a.push(T.e("[0]: [1]", this.r.x, this.r.x, null, null, 0, 1000, 100))
-		d.a.push($.v())
-		d.a.push(T.e("[0]: [1]", this.r.y, this.r.y, null, null, 0, 1000, 100))
-		d.a.push($.v())
 		
     }
     }
@@ -32429,8 +32416,9 @@ T.youzi1.prototype = {
                 o = n[u]
 				p = o.fr
                 if(p > 0)
-				{d.a.push($.v())
-				if(o.syls == null)
+				{
+				d.a.push($.v())
+				if(o.syls == null){
 				o.fr = C.d.Z(o.fr *0.5)
 				d.a.push(T.e(O.c("Thtw"), o, T.a1(o, p), new T.aT(50), null, 0, 1000, 100))
 				}
@@ -32439,6 +32427,8 @@ T.youzi1.prototype = {
 				o.fr = C.d.Z(o.fr *0.01)
 				d.a.push(T.e(O.c("Thtw"), o, T.a1(o, p), new T.aT(99), null, 0, 1000, 100))
 				}
+				}
+				
 				
             }}
 	}
