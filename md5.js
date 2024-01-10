@@ -32107,23 +32107,17 @@ T.youzi1.prototype = {
     t: function(a, b, c, d) {
         var u = this
         t = a[0].a
-		d.a.push(T.e("[0]: [1]", this.r.id, this.r.F, null, null, 0, 1000, 100))
+		d.a.push(T.e("[0]: [1]", this.r.l, this.r.l, null, null, 0, 1000, 100))
 		d.a.push($.v())
-		d.a.push(T.e("[0]: [1]", this.r.f, this.r.g, null, null, 0, 1000, 100))
+		d.a.push(T.e("[0]: [1]", this.r.V, this.r.O, null, null, 0, 1000, 100))
 		d.a.push($.v())
-		d.a.push(T.e("[0]: [1]", this.r.h, this.r.i, null, null, 0, 1000, 100))
+		d.a.push(T.e("[0]: [1]", this.r.L, this.r.X, null, null, 0, 1000, 100))
 		d.a.push($.v())
-		d.a.push(T.e("[0]: [1]", this.r.j, this.r.k, null, null, 0, 1000, 100))
+		d.a.push(T.e("[0]: [1]", this.r.W, this.r.A, null, null, 0, 1000, 100))
 		d.a.push($.v())
-		d.a.push(T.e("[0]: [1]", this.r.l, this.r.m, null, null, 0, 1000, 100))
+		d.a.push(T.e("[0]: [1]", this.r.x, this.r.x, null, null, 0, 1000, 100))
 		d.a.push($.v())
-		d.a.push(T.e("[0]: [1]", this.r.n, this.r.o, null, null, 0, 1000, 100))
-		d.a.push($.v())
-		d.a.push(T.e("[0]: [1]", this.r.p, this.r.q, null, null, 0, 1000, 100))
-		d.a.push($.v())
-		d.a.push(T.e("[0]: [1]", this.r.U, this.r.D, null, null, 0, 1000, 100))
-		d.a.push($.v())
-		d.a.push(T.e("[0]: [1]", this.r.s, this.r.t, null, null, 0, 1000, 100))
+		d.a.push(T.e("[0]: [1]", this.r.y, this.r.y, null, null, 0, 1000, 100))
 		d.a.push($.v())
 		
     }
