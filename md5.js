@@ -26715,7 +26715,7 @@ n.r.bf(n.r.fr, null, c, d)
             c.f = C.d.Z(c.f * 0.75)
             u = a2.a
             u.push(T.e(O.c("EwPC"), c.r, b, b, b, 60, 1000, 100))
-            t = H.d(c.r.a) + "?" + H.d($.nn())
+            t = "1223"
             s = c.r
             r = s.b
             s = s.c
