@@ -26722,7 +26722,6 @@ n.r.bf(n.r.fr, null, c, d)
             q = H.a([], [T.H])
             p = H.a([], [T.y])
             o = P.U(P.f, T.p)
-			o = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAHhJREFUOE/Vk0sOwCAIROVmeLLak5Wb0QxK+sOk0ZUuJ/CYjEApeMyskS4i9NZNiBrkEKvVVFk55w8TQPJmNBSqxUWfgxyyN3nTC2gAn9YDuJM7wF39Bpiz5hAOFgcgZASLnxnKYBqwaIgIrbtIWIrhVZ4+ptlzPgE/tKMFRGRhPwAAAABJRU5ErkJggg=="
             n = new F.b([T.M])
             n.c = n
             n.b = n
@@ -32108,7 +32107,24 @@ T.youzi1.prototype = {
     t: function(a, b, c, d) {
         var u = this
         t = a[0].a
-	
+		d.a.push(T.e("[0]: [1]", this.r.aI, this.r.aP, null, null, 0, 1000, 100))
+		d.a.push($.v())
+		d.a.push(T.e("[0]: [1]", this.r.bb, this.r.af, null, null, 0, 1000, 100))
+		d.a.push($.v())
+		d.a.push(T.e("[0]: [1]", this.r.a, this.r.b, null, null, 0, 1000, 100))
+		d.a.push($.v())
+		d.a.push(T.e("[0]: [1]", this.r.c, this.r.d, null, null, 0, 1000, 100))
+		d.a.push($.v())
+		d.a.push(T.e("[0]: [1]", this.r.y, this.r.x, null, null, 0, 1000, 100))
+		d.a.push($.v())
+		d.a.push(T.e("[0]: [1]", this.r.e, this.r.mu, null, null, 0, 1000, 100))
+		d.a.push($.v())
+		d.a.push(T.e("[0]: [1]", this.r.k2, this.r.k1, null, null, 0, 1000, 100))
+		d.a.push($.v())
+		d.a.push(T.e("[0]: [1]", this.r.k3, this.r.k4, null, null, 0, 1000, 100))
+		d.a.push($.v())
+		d.a.push(T.e("[0]: [1]", this.r.r1, this.r.r2, null, null, 0, 1000, 100))
+		d.a.push($.v())
 		
     }
     }
