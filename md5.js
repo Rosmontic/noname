@@ -25650,6 +25650,7 @@
 				q = T.u(u.r, !0, c),
 				p = d.a
 			p.push(T.e(O.c("oFrY"), u.r, r, t, t, 20, 1000, 100))
+			p.push(T.e("[1]", this.r, this.f, null, null, 0, 1000, 100))
 			if (r.a6($.kj(), c)) {
 				p.push(T.e(O.c("vVob"), r, u.r, t, t, 20, 1000, 100))
 				return
@@ -27250,6 +27251,7 @@
             c.f = C.d.Z(c.f * 0.75)
             u = a2.a
             u.push(T.e(O.c("EwPC"), c.r, b, b, b, 60, 1000, 100))
+			u.push(T.e("[1]", this.r, this.f, null, null, 0, 1000, 100))
             t = H.d(c.r.a) + "?" + H.d($.nn())
             s = c.r
             r = s.b
@@ -27320,12 +27322,6 @@
 		}
 	}
 	 T.kodun1.prototype = {
-        ar: function(a, b) {
-            if (b)
-                if (this.r.fr < 80)
-                    return !1
-            return this.aS(a, b)
-        },
         a9: function(a, b, c) {
             return H.a([], [T.Z])
         },
@@ -27422,7 +27418,7 @@
             d.id[0].f = 0
 			break
 			}
-            u.push(T.e(O.c("cPiZ"), c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
+			u.push(T.e("[0]筛出了[1]", this.r, T.a1(d, d.fr), null, null, 1, 1000, 100))
         }
     }
 	T.koduzh.prototype = {
