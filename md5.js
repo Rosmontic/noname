@@ -27329,6 +27329,7 @@
 			d.a5 = new T.cj(d)
 			d.af = c
 			d.e = T.du(c.r)
+			u.push(T.e("[很不幸，1]", this.r, this.r, null, null, 0, 1000, 100))
 			switch (v) {
 			case 1:
 			d.r = "幻术号"
@@ -27340,6 +27341,7 @@
 			d.r = "瘟疫号"
 			break
 			}
+			u.push(T.e("[很不幸，2]", this.r, this.r, null, null, 0, 1000, 100))
 			s = c.r
 			d.x = s.x
 			s.I.i(0, d.a5)
@@ -27355,6 +27357,7 @@
 			d.dx = (a1.m() & 63)
 			d.dy = (a1.m() & 63)
 			d.j = (a1.m() & 255) * 4 - 512
+			u.push(T.e("[很不幸，3]", this.r, this.r, null, null, 0, 1000, 100))
 			switch (v) {
 			case 1:
 			d.id[0].f = 35 + (a1.m() & 63)
@@ -27372,7 +27375,7 @@
             d.id[0].f = 0
 			break
 			}
-			
+			u.push(T.e("[很不幸，4]", this.r, this.r, null, null, 0, 1000, 100))
 			u.push($.v())
 			u.push(T.e(O.c("cPiZ"), c.r, T.a1(d, d.fr), b, b, 1, 1000, 100))
 		}
