@@ -27329,30 +27329,22 @@
 			d.a5 = new T.cj(d)
 			d.af = c
 			d.e = T.du(c.r)
+			switch (v) {
+			case 1:
+			d.r = "幻术号"
+			break
+			case 2:
+			d.r = "净化号"
+			break
+			case 3:
+			d.r = "瘟疫号"
+			break
+			}
 			s = c.r
 			d.x = s.x
 			s.I.i(0, d.a5)
 			d.av()
-			switch (v) {
-			case 0:
-			d.r = "幻术号"
-			d.id[0].f = 35 + (a1.m() & 63)
-            d.id[1].f = 0
-            d.id[2].f = 0
-			break
-			case 1:
-			d.r = "净化号"
-			d.id[1].f = 35 + (a1.m() & 63)
-            d.id[0].f = 0
-            d.id[2].f = 0
-			break
-			case 2:
-			d.r = "瘟疫号"
-			d.id[2].f = 35 + (a1.m() & 63)
-            d.id[1].f = 0
-            d.id[0].f = 0
-			break
-			}
+			c.r.x.aU(d)
 			d.fx = (a1.m() & 255)
 			d.fr = d.fx
 			d.Q = (a1.m() & 63)
@@ -27363,7 +27355,24 @@
 			d.dx = (a1.m() & 63)
 			d.dy = (a1.m() & 63)
 			d.j = (a1.m() & 255) * 4 - 512
-			c.r.x.aU(d)
+			switch (v) {
+			case 1:
+			d.id[0].f = 35 + (a1.m() & 63)
+            d.id[1].f = 0
+            d.id[2].f = 0
+			break
+			case 2:
+			d.id[1].f = 35 + (a1.m() & 63)
+            d.id[0].f = 0
+            d.id[2].f = 0
+			break
+			case 3:
+			d.id[2].f = 35 + (a1.m() & 63)
+            d.id[1].f = 0
+            d.id[0].f = 0
+			break
+			}
+			
 			u.push($.v())
 			u.push(T.e(O.c("cPiZ"), c.r, T.a1(d, d.fr), b, b, 1, 1000, 100))
 		}
