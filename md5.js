@@ -27235,6 +27235,74 @@
 			o.bf(s, q, c, d)
 		}
 	}
+	T.ig.prototype = {
+        ar: function(a, b) {
+            if (b)
+                if (this.r.fr < 80)
+                    return !1
+            return this.aS(a, b)
+        },
+        a9: function(a, b, c) {
+            return H.a([], [T.Z])
+        },
+        t: function(a, a0, a1, a2) {
+            var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this, b = null
+            c.f = C.d.Z(c.f * 0.75)
+            u = a2.a
+            u.push(T.e(O.c("EwPC"), c.r, b, b, b, 60, 1000, 100))
+            t = H.d(c.r.a) + "?" + H.d($.nn())
+            s = c.r
+            r = s.b
+            s = s.c
+            q = H.a([], [T.H])
+            p = H.a([], [T.y])
+            o = P.U(P.f, T.p)
+            n = new F.b([T.M])
+            n.c = n
+            n.b = n
+            m = new F.b([T.L])
+            m.c = m
+            m.b = m
+            l = new F.b([T.G])
+            l.c = l
+            l.b = l
+            k = new F.b([T.J])
+            k.c = k
+            k.b = k
+            j = new F.b([T.K])
+            j.c = j
+            j.b = j
+            i = new F.b([T.D])
+            i.c = i
+            i.b = i
+            h = new F.b([T.A])
+            h.c = h
+            h.b = h
+            g = new F.b([T.C])
+            g.c = g
+            g.b = g
+            f = new F.b([T.I])
+            f.c = f
+            f.b = f
+            e = [P.j]
+            d = new T.hh(t,r,s,b,q,p,o,n,m,l,k,j,i,h,g,f,H.a([], e),H.a([], e),H.a([], e),H.a([], e))
+            d.Y(t, r, s, b)
+            d.a5 = new T.cj(d)
+            d.af = c
+            d.e = T.du(c.r)
+            d.r = O.c("xRWn")
+            s = c.r
+            d.x = s.x
+            s.I.i(0, d.a5)
+            d.av()
+            if (c.r.r1.G(0, $.X()))
+                d.j = 2048
+            else
+                d.j = -2048
+            c.r.x.aU(d)
+            u.push(T.e(O.c("cPiZ"), c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
+        }
+    }
 	T.hh.prototype = {
 		gaj: function() {
 			return this.af.r
@@ -27311,7 +27379,6 @@
             d.a5 = new T.cj(d)
             d.af = c
             d.e = T.du(c.r)
-			u.push(T.e("[很不幸，1]", this.r, this.r, null, null, 0, 1000, 100))
             switch (v) {
 			case 1:
 			d.r = "幻术号"
@@ -27323,7 +27390,6 @@
 			d.r = "瘟疫号"
 			break
 			}
-			u.push(T.e("[很不幸，2]", this.r, this.r, null, null, 0, 1000, 100))
             s = c.r
             d.x = s.x
             s.I.i(0, d.a5)
@@ -27336,28 +27402,26 @@
 			d.cy = (a1.m() & 63)
 			d.db = (a1.m() & 63)
 			d.dx = (a1.m() & 63)
-			d.dy = (a1.m() & 63)
+			d.dy = (a1.m() & 63) + 100
 			d.j = (a1.m() & 255) * 4 - 512
             c.r.x.aU(d)
-			u.push(T.e("[很不幸，3]", this.r, this.r, null, null, 0, 1000, 100))
 			switch (v) {
 			case 1:
-			d.id[0].f = 35 + (a1.m() & 63)
+			d.id[0].f = 350 + (a1.m() & 63)
             d.id[1].f = 0
             d.id[2].f = 0
 			break
 			case 2:
-			d.id[1].f = 35 + (a1.m() & 63)
+			d.id[1].f = 350 + (a1.m() & 63)
             d.id[0].f = 0
             d.id[2].f = 0
 			break
 			case 3:
-			d.id[2].f = 35 + (a1.m() & 63)
+			d.id[2].f = 350 + (a1.m() & 63)
             d.id[1].f = 0
             d.id[0].f = 0
 			break
 			}
-			u.push(T.e("[很不幸，4]", this.r, this.r, null, null, 0, 1000, 100))
             u.push(T.e(O.c("cPiZ"), c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
         }
     }
