@@ -27333,7 +27333,7 @@
 			d.x = s.x
 			s.I.i(0, d.a5)
 			d.av()
-			switch (u) {
+			switch (v) {
 			case 0:
 			d.r = "幻术号"
 			d.id[0].f = 35 + (a1.m() & 63)
