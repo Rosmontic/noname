@@ -27244,8 +27244,6 @@
 			u.r = this
 			this.k2 = u
 			this.id.push(new T.i7())
-			this.id.push(new T.i7())
-			this.id.push(new T.i7())
 		},
 		aR: function() {
 			this.bv()
@@ -27291,6 +27289,7 @@
 			u.push(T.e("[很不幸，没有出号]", this.r, this.r, null, null, 1, 1000, 100))
 			return 0
 			}
+			u.push(T.e("[很不幸，0]", this.r, this.r, null, null, 0, 1000, 100))
 			s = c.r
 			r = s.b
 			s = s.c
@@ -27325,7 +27324,8 @@
 			f.c = f
 			f.b = f
 			e = [P.j]
-			d = new T.hh(t, r, s, b, q, p, o, n, m, l, k, j, i, h, g, f, H.a([], e), H.a([], e), H.a([], e), H.a([], e))
+			u.push(T.e("[很不幸，1.3]", this.r, this.r, null, null, 0, 1000, 100))
+			d = new T.koduzh(t, r, s, b, q, p, o, n, m, l, k, j, i, h, g, f, H.a([], e), H.a([], e), H.a([], e), H.a([], e))
 			d.Y(t, r, s, b)
 			d.a5 = new T.cj(d)
 			d.af = c
