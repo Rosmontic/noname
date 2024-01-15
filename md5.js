@@ -27251,7 +27251,7 @@
 			u[7] = C.d.v(u[7], 2)
 		}
 	}
-	 T.ig.prototype = {
+	 T.kodun1.prototype = {
         ar: function(a, b) {
             if (b)
                 if (this.r.fr < 80)
@@ -27262,10 +27262,8 @@
             return H.a([], [T.Z])
         },
         t: function(a, a0, a1, a2) {
-            var v, u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this, b = null
-            c.f = C.d.Z(c.f * 0.75)
+            var v, u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this, b = null     
             u = a2.a
-            u.push(T.e(O.c("EwPC"), c.r, b, b, b, 60, 1000, 100))
             t = H.d(c.r.a) + "?" + H.d($.nn())
 			v = (a1.m() & 3)
 			u.push(T.e("[0]开始[测号]", this.r, this.r, null, null, 1, 1000, 100))
