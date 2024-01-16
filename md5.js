@@ -25650,7 +25650,6 @@
 				q = T.u(u.r, !0, c),
 				p = d.a
 			p.push(T.e(O.c("oFrY"), u.r, r, t, t, 20, 1000, 100))
-			p.push(T.e("[1]", this.r, this.f, null, null, 0, 1000, 100))
 			if (r.a6($.kj(), c)) {
 				p.push(T.e(O.c("vVob"), r, u.r, t, t, 20, 1000, 100))
 				return
@@ -27237,74 +27236,74 @@
 		}
 	}
 	T.ig.prototype = {
-        ar: function(a, b) {
-            if (b)
-                if (this.r.fr < 80)
-                    return !1
-            return this.aS(a, b)
-        },
-        a9: function(a, b, c) {
-            return H.a([], [T.Z])
-        },
-        t: function(a, a0, a1, a2) {
-            var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this, b = null
-            c.f = C.d.Z(c.f * 0.75)
-            u = a2.a
-            u.push(T.e(O.c("EwPC"), c.r, b, b, b, 60, 1000, 100))
-			u.push(T.e("[1]", this.r, this.f, null, null, 0, 1000, 100))
-            t = H.d(c.r.a) + "?" + H.d($.nn())
-            s = c.r
-            r = s.b
-            s = s.c
-            q = H.a([], [T.H])
-            p = H.a([], [T.y])
-            o = P.U(P.f, T.p)
-            n = new F.b([T.M])
-            n.c = n
-            n.b = n
-            m = new F.b([T.L])
-            m.c = m
-            m.b = m
-            l = new F.b([T.G])
-            l.c = l
-            l.b = l
-            k = new F.b([T.J])
-            k.c = k
-            k.b = k
-            j = new F.b([T.K])
-            j.c = j
-            j.b = j
-            i = new F.b([T.D])
-            i.c = i
-            i.b = i
-            h = new F.b([T.A])
-            h.c = h
-            h.b = h
-            g = new F.b([T.C])
-            g.c = g
-            g.b = g
-            f = new F.b([T.I])
-            f.c = f
-            f.b = f
-            e = [P.j]
-            d = new T.hh(t,r,s,b,q,p,o,n,m,l,k,j,i,h,g,f,H.a([], e),H.a([], e),H.a([], e),H.a([], e))
-            d.Y(t, r, s, b)
-            d.a5 = new T.cj(d)
-            d.af = c
-            d.e = T.du(c.r)
-            d.r = O.c("xRWn")
-            s = c.r
-            d.x = s.x
-            s.I.i(0, d.a5)
-            d.av()
-            if (c.r.r1.G(0, $.X()))
-                d.j = 2048
-            else
-                d.j = -2048
-            c.r.x.aU(d)
-            u.push(T.e(O.c("cPiZ"), c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
-        }
-    }
+		ar: function(a, b) {
+			if (b)
+				if (this.r.fr < 80)
+					return !1
+			return this.aS(a, b)
+		},
+		a9: function(a, b, c) {
+			return H.a([], [T.Z])
+		},
+		t: function(a, a0, a1, a2) {
+			var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this,
+				b = null
+			c.f = C.d.Z(c.f * 0.75)
+			u = a2.a
+			u.push(T.e(O.c("EwPC"), c.r, b, b, b, 60, 1000, 100))
+			t = H.d(c.r.a) + "?" + H.d($.nn())
+			s = c.r
+			r = s.b
+			s = s.c
+			q = H.a([], [T.H])
+			p = H.a([], [T.y])
+			o = P.U(P.f, T.p)
+			n = new F.b([T.M])
+			n.c = n
+			n.b = n
+			m = new F.b([T.L])
+			m.c = m
+			m.b = m
+			l = new F.b([T.G])
+			l.c = l
+			l.b = l
+			k = new F.b([T.J])
+			k.c = k
+			k.b = k
+			j = new F.b([T.K])
+			j.c = j
+			j.b = j
+			i = new F.b([T.D])
+			i.c = i
+			i.b = i
+			h = new F.b([T.A])
+			h.c = h
+			h.b = h
+			g = new F.b([T.C])
+			g.c = g
+			g.b = g
+			f = new F.b([T.I])
+			f.c = f
+			f.b = f
+			e = [P.j]
+			d = new T.hh(t, r, s, b, q, p, o, n, m, l, k, j, i, h, g, f, H.a([], e), H.a([], e), H.a([], e), H.a([], e))
+			d.Y(t, r, s, b)
+			d.a5 = new T.cj(d)
+			d.af = c
+			d.e = T.du(c.r)
+			d.r = O.c("xRWn")
+			s = c.r
+			d.x = s.x
+			s.I.i(0, d.a5)
+			d.av()
+			if (c.r.r1.G(0, $.X()))
+				d.j = 2048
+			else
+				d.j = -2048
+			c.r.x.aU(d)
+			u.push(T.e(O.c("cPiZ"), c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
+		}
+	}
 	T.hh.prototype = {
 		gaj: function() {
 			return this.af.r
@@ -27321,75 +27320,75 @@
 			u[7] = C.d.v(u[7], 2)
 		}
 	}
-	 T.kodun1.prototype = {
-        a9: function(a, b, c) {
-            return H.a([], [T.Z])
-        },
-        t: function(a, a0, a1, a2) {
-            var v, u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this, b = null     
-            u = a2.a
-            t = H.d(c.r.a) + "?" + H.d($.nn())
+	T.kodun1.prototype = {
+		a9: function(a, b, c) {
+			return H.a([], [T.Z])
+		},
+		t: function(a, a0, a1, a2) {
+			var v, u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this,
+				b = null
+			u = a2.a
+			t = H.d(c.r.a) + "?" + H.d($.nn())
 			v = (a1.m() & 3)
 			u.push(T.e("[0]开始[测号]", this.r, this.r, null, null, 1, 1000, 100))
-			if(v == 0)
-			{
-			u.push(T.e("[很不幸，没有出号]", this.r, this.r, null, null, 1, 1000, 100))
-			return 0
+			if (v == 0) {
+				u.push(T.e("[很不幸，没有出号]", this.r, this.r, null, null, 1, 1000, 100))
+				return 0
 			}
-            s = c.r
-            r = s.b
-            s = s.c
-            q = H.a([], [T.H])
-            p = H.a([], [T.y])
-            o = P.U(P.f, T.p)
-            n = new F.b([T.M])
-            n.c = n
-            n.b = n
-            m = new F.b([T.L])
-            m.c = m
-            m.b = m
-            l = new F.b([T.G])
-            l.c = l
-            l.b = l
-            k = new F.b([T.J])
-            k.c = k
-            k.b = k
-            j = new F.b([T.K])
-            j.c = j
-            j.b = j
-            i = new F.b([T.D])
-            i.c = i
-            i.b = i
-            h = new F.b([T.A])
-            h.c = h
-            h.b = h
-            g = new F.b([T.C])
-            g.c = g
-            g.b = g
-            f = new F.b([T.I])
-            f.c = f
-            f.b = f
-            e = [P.j]
-            d = new T.koduzh(t,r,s,b,q,p,o,n,m,l,k,j,i,h,g,f,H.a([], e),H.a([], e),H.a([], e),H.a([], e))
-            d.Y(t, r, s, b)
-            d.a5 = new T.cj(d)
-            d.af = c
-            d.e = T.du(c.r)
-            switch (v) {
-			case 1:
-			d.r = "幻术号"
-			break
-			case 2:
-			d.r = "净化号"
-			break
-			case 3:
-			d.r = "瘟疫号"
-			break
+			s = c.r
+			r = s.b
+			s = s.c
+			q = H.a([], [T.H])
+			p = H.a([], [T.y])
+			o = P.U(P.f, T.p)
+			n = new F.b([T.M])
+			n.c = n
+			n.b = n
+			m = new F.b([T.L])
+			m.c = m
+			m.b = m
+			l = new F.b([T.G])
+			l.c = l
+			l.b = l
+			k = new F.b([T.J])
+			k.c = k
+			k.b = k
+			j = new F.b([T.K])
+			j.c = j
+			j.b = j
+			i = new F.b([T.D])
+			i.c = i
+			i.b = i
+			h = new F.b([T.A])
+			h.c = h
+			h.b = h
+			g = new F.b([T.C])
+			g.c = g
+			g.b = g
+			f = new F.b([T.I])
+			f.c = f
+			f.b = f
+			e = [P.j]
+			d = new T.koduzh(t, r, s, b, q, p, o, n, m, l, k, j, i, h, g, f, H.a([], e), H.a([], e), H.a([], e), H.a([], e))
+			d.Y(t, r, s, b)
+			d.a5 = new T.cj(d)
+			d.af = c
+			d.e = T.du(c.r)
+			switch (v) {
+				case 1:
+					d.r = "幻术号"
+					break
+				case 2:
+					d.r = "净化号"
+					break
+				case 3:
+					d.r = "瘟疫号"
+					break
 			}
-            s = c.r
-            d.x = s.x
-            s.I.i(0, d.a5)
-            d.av()
+			s = c.r
+			d.x = s.x
+			s.I.i(0, d.a5)
+			d.av()
 			d.fx = (a1.m() & 255)
 			d.fr = d.fx
 			d.Q = (a1.m() & 63)
@@ -27398,29 +27397,29 @@
 			d.cy = (a1.m() & 63)
 			d.db = (a1.m() & 63)
 			d.dx = (a1.m() & 63)
-			d.dy = (a1.m() & 63) + 100
+			d.dy = (a1.m() & 63)
 			d.j = (a1.m() & 255) * 4 - 512
-            c.r.x.aU(d)
+			c.r.x.aU(d)
 			switch (v) {
-			case 1:
-			d.id[0].f = 350 + (a1.m() & 63)
-            d.id[1].f = 0
-            d.id[2].f = 0
-			break
-			case 2:
-			d.id[1].f = 350 + (a1.m() & 63)
-            d.id[0].f = 0
-            d.id[2].f = 0
-			break
-			case 3:
-			d.id[2].f = 350 + (a1.m() & 63)
-            d.id[1].f = 0
-            d.id[0].f = 0
-			break
+				case 1:
+					d.id[0].f = 35 + (a1.m() & 63)
+					d.id[1].f = 0
+					d.id[2].f = 0
+					break
+				case 2:
+					d.id[1].f = 35 + (a1.m() & 63)
+					d.id[0].f = 0
+					d.id[2].f = 0
+					break
+				case 3:
+					d.id[2].f = 35 + (a1.m() & 63)
+					d.id[1].f = 0
+					d.id[0].f = 0
+					break
 			}
 			u.push(T.e("[0]筛出了[1]", this.r, T.a1(d, d.fr), null, null, 1, 1000, 100))
-        }
-    }
+		}
+	}
 	T.koduzh.prototype = {
 		gaj: function() {
 			return this.af.r
@@ -41657,9 +41656,9 @@
 		$.ac = P.cs(P.f, Z.ax)
 		$.or = function() {
 			var u = P.f
-			return P.dq(["tigershark", "R0lGODlhEAAQAJEAAP8AAP///wAAAP///yH5BAEAAAMALAAAAAAQABAAAAI9nCepeS0AIxQNyQuoeSBgn1lQAI5lEpGSOnHjKqEgS2dPOad2l3fmTgoKg8ChccczsigcJUgjwkwqiyq0AAA7", "hell", "R0lGODlhEAAQAJEAAHb9/wAAAP///wAAACH5BAEAAAIALAAAAAAQABAAAAIslB2px5IAY2ov2omC3QBrvgUOCFbk9Z1SqnasarbiW2awaJf4EUNY41D8DAUAOw==", "dark", "R0lGODlhEAAQALMAAPr6+wQEAf7+/QwKAhEQDf38+xEODP79/f////z8/Pn5+QAAAP///wAAAAAAAAAAACH5BAEAAAwALAAAAAAQABAAAARIkEm5qp2YjYW6rxn3Wd0yiYhVGUFJlWpFcCZKpncFo7io9x3ADecpqkYdwY5HRAgSMV4NUTgUryaGbeii+EgKEOZnzGa0sUwEADs=", "yurix", "R0lGODlhEAAQAKEDAAAAAN4H28asxv///yH5BAEKAAMALAAAAAAQABAAAAI+hI85EB3s4DNBiFcvs3NjvmlL9WkesEDnKI7fw8Lpi6roMJ42jh8NNeEJVb+bsFc0HIfB5ZFhdPIO0mf0WAAAOw==", "yuriy",
-				"iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAIBJREFUOE/tk8ENwCAIRWUzmKzdTDazAUuiCAfttdwkvBfzFShBIWKL+swMvq+NCKiVp1kiXJwiBIM9EN1g7JlQBbuwiUTyC94MkGsa+tWWp9dZKK0gUQ9xVyCw/p8TgcFHghHeFnh4EughCVJCzOAeZrJMJrzfvZTAfOkyfV3nB0mLXAWp5kJ6AAAAAElFTkSuQmCC",
-				"KODU",				"iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAF/SURBVDhPpVNNSwMxEJ1kV3uSXUF/jDct1UPBCrYFWy9e/Fueiqj4RQ+iInj1t7TF7kHEmi9nJknXliJIH2Rnku68efsyFVmWOVgCTFCvnfGmd9UAKVPOd4aaY8TrZgrd1i3nFgzHx5dTkJwFxGLCc+6FxUg4vz7EtY9FSThBkIJO88ZZq12ENcptD2bXPLT5clQ7VSBEySpQCXVOhZxR8BuJrPiEWP6CtTZkHlYbjtpOSgVkWFzVoWViAM2mnRyRcf5MKQXVd8uxNvLi+bklP1iqkgKecgPYAIv77PbEWOi2L8G4b9grBBfFSGCCN7cG9XECuRLQGK2gHwJkWr4ErgKJWF14M14HdnlYN/CJPvY3FB/1Lg4gRUV0ZXR9Ti1WwINUFEXY/g95ngcFC0CGklm7A2/ePOJUMgHax5sIvCqOJFULPSOZQCbHcWaCTuueGSORTP1QkVkJvjI/TMftOxDhaPoJxNhteiINYz6jzgZ/oejQaEJs4oKoJf/OAD/Wegah1odBNAAAAABJRU5ErkJggg==",
+			return P.dq(["tigershark", "R0lGODlhEAAQAJEAAP8AAP///wAAAP///yH5BAEAAAMALAAAAAAQABAAAAI9nCepeS0AIxQNyQuoeSBgn1lQAI5lEpGSOnHjKqEgS2dPOad2l3fmTgoKg8ChccczsigcJUgjwkwqiyq0AAA7", "hell", "R0lGODlhEAAQAJEAAHb9/wAAAP///wAAACH5BAEAAAIALAAAAAAQABAAAAIslB2px5IAY2ov2omC3QBrvgUOCFbk9Z1SqnasarbiW2awaJf4EUNY41D8DAUAOw==", "dark", "R0lGODlhEAAQALMAAPr6+wQEAf7+/QwKAhEQDf38+xEODP79/f////z8/Pn5+QAAAP///wAAAAAAAAAAACH5BAEAAAwALAAAAAAQABAAAARIkEm5qp2YjYW6rxn3Wd0yiYhVGUFJlWpFcCZKpncFo7io9x3ADecpqkYdwY5HRAgSMV4NUTgUryaGbeii+EgKEOZnzGa0sUwEADs=", "yurix", "R0lGODlhEAAQAKEDAAAAAN4H28asxv///yH5BAEKAAMALAAAAAAQABAAAAI+hI85EB3s4DNBiFcvs3NjvmlL9WkesEDnKI7fw8Lpi6roMJ42jh8NNeEJVb+bsFc0HIfB5ZFhdPIO0mf0WAAAOw==",
+				"yuriy", "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAIBJREFUOE/tk8ENwCAIRWUzmKzdTDazAUuiCAfttdwkvBfzFShBIWKL+swMvq+NCKiVp1kiXJwiBIM9EN1g7JlQBbuwiUTyC94MkGsa+tWWp9dZKK0gUQ9xVyCw/p8TgcFHghHeFnh4EughCVJCzOAeZrJMJrzfvZTAfOkyfV3nB0mLXAWp5kJ6AAAAAElFTkSuQmCC",
+				"KODU", "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAF/SURBVDhPpVNNSwMxEJ1kV3uSXUF/jDct1UPBCrYFWy9e/Fueiqj4RQ+iInj1t7TF7kHEmi9nJknXliJIH2Rnku68efsyFVmWOVgCTFCvnfGmd9UAKVPOd4aaY8TrZgrd1i3nFgzHx5dTkJwFxGLCc+6FxUg4vz7EtY9FSThBkIJO88ZZq12ENcptD2bXPLT5clQ7VSBEySpQCXVOhZxR8BuJrPiEWP6CtTZkHlYbjtpOSgVkWFzVoWViAM2mnRyRcf5MKQXVd8uxNvLi+bklP1iqkgKecgPYAIv77PbEWOi2L8G4b9grBBfFSGCCN7cG9XECuRLQGK2gHwJkWr4ErgKJWF14M14HdnlYN/CJPvY3FB/1Lg4gRUV0ZXR9Ti1WwINUFEXY/g95ngcFC0CGklm7A2/ePOJUMgHax5sIvCqOJFULPSOZQCbHcWaCTuueGSORTP1QkVkJvjI/TMftOxDhaPoJxNhteiINYz6jzgZ/oejQaEJs4oKoJf/OAD/Wegah1odBNAAAAABJRU5ErkJggg==",
 				"megia", "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAJNJREFUOE+1k9ENgCAMRO1mdR+NruJEMIT7YAppUsthUCKfLfcODkoTWMycUD3GSL6eC0gQQsh7aS0SPueKKUBSsQqQs0JsT4EZgMQH3U+7L/WtBAIBXqzOHgIBVryl4mprFlIBkFjdEaQJUGcfqEKkL8H+BxBnf4quK/jAXoeIArM5dD1jC/L4kUT0+SsPD9PoOF9zsoUFTaO/mQAAAABJRU5ErkJggg==",
 				"tomb",
 				"iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAB7SURBVDhP5ZNREoAgCEShe3l6DmYtiYMWpdVf78NQ2Z1tIs4bVGDmUl3jJFQNIBYRPbwjpVRNFiwzYoBeS4s1mxjOI/j+xmCWg8FPE+hn7DlLEqVTA3+JGolGzoBOYjRI1hTdYRrfv0L/A6HR4uLp694E2m/mYN8+gWgFhNtgWIIuqzYAAAAASUVORK5CYII=",
@@ -41740,7 +41739,7 @@
 				"jntm",
 				"iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAB+SURBVDhP7ZPBDoAgDEOHF/j/r+WmdqGmLqKgV1+iKdlapoG07lijlNLUPbXWpsyOgGjWJtCrL3ixGE1XsIeelHP2CVCY+QT2+gQjO0fo8QCiQdD6ENXgFPCGP6CdA/7ZmXMA0O8TjBoVevwucIFk1UqvxyfQkZ6IG3y8zmYb5UJZo3IBP3QAAAAASUVORK5CYII=",
 				"noa",
-				"iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAdNJREFUOI2lkk9IFAEUxn8z7qrrajZZkdKhQA/WIcsowlv052AdiqKoJbQET5EZRhoSpIcwgs2VlYKKINoKopN4CTwIdegQZX/AQDwUW7vrLjaM46wz8zot7tb6Z+m7vcf7vvfxvadUgPAfUAF0UHRQVkvKnlczzUKcZM8q+YitHR3g2DwKDa0o9o/AswcP2f1lAgyDb7saiRsGtp3mfNe1vAJqdnGxr5+Gr5/xvH+Hd/w1teNj7EnEODQ6wpPw4PIOhsPD7ItFqb4fItl8jN+1dYgLGyY+oj2NEO25yq91G/mkukwZFsHe3sVATrVdkMnbt2QBxPIhJki09Zz8OHlC5v2IuVYRvUYTHSTecla+B+/I43tDUgHiAVhT6qNyepp0Ffxs78Rju1QPBFG94Dowc/w0MzsbKUnbbLp7g4X6emKGu5jBnGWR2rYdxwbt1QtMTSPdtBe1zEORC5T7qXn5HMUV3vSHGalcz83rXbkZDAyG2G+ZlCYTmFu3sLnnMsUJi9n2NpTULN5kgg9Hj9B86crSZzx8JoDiVTnQsIOmuXkoLuJtiZ9UPI5W5qOzu3vlP8jgYCCA7TiMRSJ5z5cjoC8jtBQyHDW7UQg5x0Ehm//GHxintr7vM5exAAAAAElFTkSuQmCC",
+				"iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAPJJREFUOE9jZGBk/M9AAWAcnAZkp6aAPXXz0SOGPTt34fUghhdm1NUyqH75BNZ0m4cPrnnNyZNYDUMxAGRzEC83A/OVqwzMe/cx/HV2Yvirow3m37CwZMhoasZwDdwAmM1sEyeDFf3KzwXTMMNgfJCrLj9/DpabOnsOA9gAF3c3hkptTQaYZpAkyHawAXv3odgKcxXIIJCLwAbAnA4yAGYTumEgr4AATM26z19xuwBkCMzpMNeAXAISh3kB5HwQgIcBzBUw98JcAPMKSBxbQKLEAigsQCDE3BwlKkGBpispyYAtKnEmZZhhJCckUvPVwGcmANhbfyGR5AxtAAAAAElFTkSuQmCC",
 				"koyuki",
 				"iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAL6UExURf/6+15qiDo/SNu/zuCSrNiAn9zKxdC0uf///9F4l76+zoqRptGEoP+evvu+2ffA2vzX6vrP4/PF29elxdyryMyavaWRrZqhrMfAubqvq6SZlnRva/iqyv/g8PzY6vXL4e260++70/S/1u+709Oqw4uHj3pzcraoo1tVVSwuMfLQ5dbH2du70PK/172ZsG9hamleXTI0OBckM7+hu1pwiaeHoPW81L2RqDQyN0A/Q3dqa1lfafCzzJpujDU9Te2xyo9tiCEyRbmCnz5MWrypwNCYtcWHnsZ2nUpecaSpubFykq90mNaRrrp9mJtOgUrs/+7u9MFukAAAANOrteKywuOuwsB0k3Z7oMHF2MV2l+Xk0tm7vMibqOPGxfTe2LeFpLq91M3P4MvO38V0laWXqMRwkgoXP11nf8FukLe3yfHw9KGmtL1rjt/g6Pb2+cpzlLpmjeHm6fX1+JWKnvO/1fW/1vC60vbB1uq3zuu3zTY1OPfB1/K60fC70fnJ2vXJ2fC3zfG4z6uFnklMZdaju/rE2PXH1vjQ2/nM2vK/zu6zyrKYmaKdoap1j3ZuhuWsxfbG2fzT4PfR3vLL0uy+yPjF1efDyuW0w0dPYFljdM6Uq8y+z+WsxvS70vrH2vTF1vHN0uPAxfC/zcqssK6Nk9CTq0VSZFdkd+Knv+qowvrA19OjtbKUmODKyfDP0uC+vtOztdPV3uOatfW70sibq72Wm+3V0vro4fzp4PHX0vn6/OGYtPHMzf3s4/zs4/3v5ebAxNrc6OScuPnp4OHKybZ2j8HE2N6xttuztaOesGBmgU9genCBmLG3yeTl7u7v9d+Tr9rU29O1vMu2woSOpCRCWy9ScnCPvdTb6vHx9tSCoFtogYGMnre1xeXEw6+qtitBWzx4q0qZ2nWdvb3Bycx1lvLz9YuZtUlZdW59lMnP2Li8zUlXdTdumFNuhXZ7i6Wnsvz8/fr7+9LZ54+arldlfX+XrYu/4YKQrDU9TmBiccbJ2eTl7////81RVMsAAABzdFJOUwAAAAAAAAAAAAAAAAAAj063lCQVLC+Bk02APhMLWaq2ms7l5/m1r+3AK4PJ0fDjoP2dG/Pt7/3GoOD23OlLvfy29pS4/v79WiPQtH3uvRcBrYQCbfP9jg7Cewc/Wq/+04Gn9nGEazbpaAw9vGSE8/xVQOd1mp8IAAAAAWJLR0QIht6VegAAAAd0SU1FB+cIDwA7BJRZ8SwAAAEbSURBVBjTARAB7/4ADg8QERITFBUWFxgZGhsAAQAcHR4fICEiIyRzJSYnKCkCACorLC10dXZ3eHkuLzB6MTIAMzQ1Nnt8fX5/gIE3ODk6OwCCg4R1hXSGh4iJijw9PouMAI2Oj5CRkpOUlZaXP0BBmJkAmpucnZ6foKGio6SlQkOmpwCoREWpqqusra6vsEZHSEmxALJKS0yztLW2t7i5TU5PULoAu1FSU1RVvL2+v8BWA1dYwQDCWQRaW1xdXsPExV9gYWLGALJjBQYHCGTHyMnKy8zNzs8A0GUJCgtmZ9HS09TV1tfY2QDaaAxpamvb3N3e3+Dh4uPkAOVsDW1u5ufo6err7O3u7/AAb3BxcvHy8/T19vf4+fr7/MEyfiKlJ87hAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIzLTA4LTE1VDAwOjU4OjQ0KzAwOjAw0z8GPQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMy0wOC0xNVQwMDo1ODo0NCswMDowMKJivoEAAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjMtMDgtMTVUMDA6NTk6MDQrMDA6MDCe//qaAAAAAElFTkSuQmCC",
 				"azusa",
