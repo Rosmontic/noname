@@ -38426,7 +38426,7 @@
 			return p.cn(a, u, b, d, e)
 		},
 		cn: function(a, b, c, d, e) {
-			var u
+			var u ,v
 			for (u = this.y2,
 				u = new F.ar(u, u.b, [H.n(u, 0)]); u.p();)
 				u.b.ay(a, c, d, e)
@@ -38435,6 +38435,17 @@
 					this.tigerCurse = true
 				}
 				this.bf(b, c, d, e)
+				if(c.e == "nana@!" && c.fr > 0 && !this.$iav)
+				{
+				v = c.fr
+				c.fr = c.fr + C.d.Z(this.fx *0.5)
+				if(c.fr > c.fx)
+				{
+				c.fr = c.fx
+				}
+				e.a.push($.v())
+				e.a.push("[0][汲取了][1][点生命]", T.a1(c, v), c.fr - v, null, null, 0, 1000, 100)
+				}
 				return b
 			} else
 				return a
@@ -41609,7 +41620,7 @@
 		C.hikari = H.a(u([10, -7, 20, 40, 20, -2, 100, -69]), [P.j])
 		C.mahiru = H.a(u([29, 9, -7, -18, 22, 8, 100, 57]), [P.j])
 		C.junna = H.a(u([29, -18, 5, 24, 27, -1, 100, 3]), [P.j])
-		C.nana = H.a(u([39, 19, 17, 15, 5, 28, 100, 117]), [P.j])
+		C.nana = H.a(u([139, 119, 117, 115, 15, 128, 100, 117]), [P.j])
 		C.maya = H.a(u([44, 11, 4, 9, 12, 8, 100, 18]), [P.j])
 		C.kuro = H.a(u([43, 25, 23, 36, 21, 33, 100, 32]), [P.j])
 		C.futaba = H.a(u([57, 9, 14, 14, -16, 11, 100, 89]), [P.j])
