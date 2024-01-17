@@ -38434,7 +38434,6 @@
 				if (c.millionPower) {
 					this.tigerCurse = true
 				}
-				this.bf(b, c, d, e)
 				if(c.e == "nana@!" && c.fr > 0 && !this.$iav)
 				{
 				v = c.fr
@@ -38443,9 +38442,9 @@
 				{
 				c.fr = c.fx
 				}
-				e.a.push($.v())
-				e.a.push("[0][汲取了][1][点生命]", T.a1(c, v), c.fr - v, null, null, 0, 1000, 100)
+				e.a.push(T.e("[0][汲取了][1][点生命]", T.a1(c, v), c.fr - v, null, null, 0, 1000, 100))
 				}
+				this.bf(b, c, d, e)
 				return b
 			} else
 				return a
