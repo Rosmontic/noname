@@ -14376,6 +14376,8 @@
 				_.enemy = 0
 				_.watch = null
 				_.rev = 0
+				_.revue = []
+				_.revus = []
 				_.sch = 1
 				_.k2 = _.k1 = null
 				_.k3 = f
@@ -23628,7 +23630,7 @@
 			return 999
 		},
 		t: function(a, b, c, d) {
-			var w, k, l, v, u, t, s, r, q, p, o, n = H.a([], [T.aU])
+			var x ,w, k, l, v, u, t, s, r, q, p, o, n = H.a([], [T.aU])
 			for (u = 0; u < a.length; ++u)
 				n.push(a[u].a)
 			s = this.r
@@ -23645,6 +23647,14 @@
 			this.r.enemy = n.length - this.r.y.f.length
 			for (u = 0; u < n.length; ++u) {
 				o = n[u]
+				if (this.r.e == "nana@!" && this.r.y.f.length == 1 && o.SR0 != null)
+				{
+				this.r.revue[u] = o
+				for (x = 0; x < o.id.length; ++x) {
+                    this.r.revus[x] = o.id[x].f
+					d.a.push(T.e("[1]", this.r, this.r.revus[x], null, null, 0, 1000, 100))
+                }
+				}
 				if (this.r.e == "kaoruko@!" && o.e == "futaba@!" && this.r.y == o.y) {
 					d.a.push(T.e("[0]：[歌唱舞蹈来来回回]", this.r, this.r, null, null, 0, 1000, 100))
 					d.a.push($.v())
@@ -38442,7 +38452,7 @@
 				{
 				c.fr = c.fx
 				}
-				e.a.push(T.e("[0][汲取了][1][点生命]", T.a1(c, v), c.fr - v, null, null, 0, 1000, 100))
+				e.a.push(T.e("[0]汲取了[1]点生命", T.a1(c, v), new T.aG(c.fr - v), null, null, 0, 1000, 100))
 				}
 				this.bf(b, c, d, e)
 				return b
