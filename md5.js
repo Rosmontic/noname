@@ -24022,10 +24022,7 @@
 			}
 			d.a.push(T.e("[1]复活了", this.r, T.a1(o, 0), null, null, 0, 1000, 100))
 			}
-			for(w = 0; w < o.id.length ; w++){
-			o.id[w].f = this.r.revus[q]
-			q = q + 1
-			}
+
 			}
 		}
 	}
@@ -38551,14 +38548,16 @@
 				if (b.y.f.length == b.x.a.e.length - 1 && H.o(b.r1.h(0, $.ai()), "$ibf") == null && b.fr > 0) {
 					d.a.push($.v())
 					d.a.push(T.e("[0]：[position zero！]", b, b, null, null, 0, 1000, 100))
+					if(b.e == "nana@!" )
+					{
+					if(b.revue.length > )
+					{
+					b.rondo = b.rondo + 1
+					return 0
+					}}
 				}
 			}
-			if(b.e != "nana@!" && b.y.f.length != b.x.a.e.length - 1){
 			s.x.d9(s)
-			}
-			else{
-			b.rondo = b.rondo + 1
-			}
 			if (b != null && b.fr > 0)
 				b.bP(s, c, d)
 		},
