@@ -14377,7 +14377,7 @@
 				_.watch = null
 				_.rev = 0
 				_.revue = []
-				_.revus = []
+				_.revus = [][]
 				_.sch = 1
 				_.k2 = _.k1 = null
 				_.k3 = f
@@ -23630,7 +23630,7 @@
 			return 999
 		},
 		t: function(a, b, c, d) {
-			var x ,w, k, l, v, u, t, s, r, q, p, o, n = H.a([], [T.aU])
+			var i ,w, k, l, v, u, t, s, r, q, p, o, n = H.a([], [T.aU])
 			for (u = 0; u < a.length; ++u)
 				n.push(a[u].a)
 			s = this.r
@@ -23650,11 +23650,8 @@
 				if (this.r.e == "nana@!" && this.r.y.f.length == 1 && o.SR0 != null)
 				{
 				this.r.revue[u] = o
-				for (x = 0; x < o.id.length; ++x) {
-                    this.r.revus[u][x] = o.id[x].f
-					if(x == 1){
-					this.r.revus[u][x] = 1024
-					}
+				for (i = 0; i < o.id.length; ++i) {
+                    this.r.revus[u][i] = o.id[i].f
                 }
 				}
 				if (this.r.e == "kaoruko@!" && o.e == "futaba@!" && this.r.y == o.y) {
