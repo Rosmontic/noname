@@ -23999,6 +23999,7 @@
 		t: function(a, b, c, d) {
 			var w, k, l, v, u, t, s, r, q, p, o, n = H.a([], [T.aU])
             q = 0
+			this.f = 0
 			for (u = 0; u < a.length; ++u)
 				n.push(a[u].a)
 			d.a.push(T.e("[0]：[再演]", this.r, this.r, null, null, 0, 1000, 100))
@@ -36878,7 +36879,7 @@
 			u.f = 1024
 			t.push(u)
 			u = new T.nana3()
-			u.f = 1024
+			u.f = 0
 			t.push(u)
 		},
 		bM: function() {
@@ -38549,13 +38550,12 @@
 				if (b.y.f.length == b.x.a.e.length - 1 && H.o(b.r1.h(0, $.ai()), "$ibf") == null && b.fr > 0) {
 					d.a.push($.v())
 					d.a.push(T.e("[0]：[position zero！]", b, b, null, null, 0, 1000, 100))
-					if(b.e == "nana@!" )
+					if(b.e == "nana@!" && this.SR0 != null && b.rondo < 12)
 					{
-					if(b.revue.length >  1)
-					{
+					b.id[2].f = 1024
 					b.rondo = b.rondo + 1
 					return 0
-					}}
+					}
 				}
 			}
 			s.x.d9(s)
