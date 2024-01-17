@@ -24022,6 +24022,7 @@
 			}
 			d.a.push(T.e("[1]复活了", this.r, T.a1(o, 0), null, null, 0, 1000, 100))
 			}
+			o.bI(o, d)
 
 			}
 		}
@@ -38550,7 +38551,7 @@
 					d.a.push(T.e("[0]：[position zero！]", b, b, null, null, 0, 1000, 100))
 					if(b.e == "nana@!" )
 					{
-					if(b.revue.length > )
+					if(b.revue.length >  1)
 					{
 					b.rondo = b.rondo + 1
 					return 0
