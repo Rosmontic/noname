@@ -38553,7 +38553,7 @@
 					d.a.push(T.e("[0]：[position zero！]", b, b, null, null, 0, 1000, 100))
 				}
 			}
-			if(b.e != "nana@! && b.y.f.length != b.x.a.e.length - 1){
+			if(b.e != "nana@!" && b.y.f.length != b.x.a.e.length - 1){
 			s.x.d9(s)
 			}
 			else{
