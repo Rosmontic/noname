@@ -38489,7 +38489,7 @@
 					d.a.push(T.e("[0]：[position zero！]", b, b, null, null, 0, 1000, 100))
 				}
 			}
-			if(b.e == "nana@!" && b.revue.length > 1)
+			if(b.e == "nana@!" && b.revue.length > 1 && b.y.f.length == b.x.a.e.length - 1 )
 			{
 			d.a.push(T.e("[0]：[再演]", b, b, null, null, 0, 1000, 100))
 			for(v = 0; v < b.revue.length ; v++){
