@@ -14377,7 +14377,7 @@
 				_.watch = null
 				_.rev = 0
 				_.revue = []
-				_.revus = [][]
+				_.revus = []
 				_.sch = 1
 				_.k2 = _.k1 = null
 				_.k3 = f
@@ -23651,7 +23651,7 @@
 				{
 				this.r.revue[u] = o
 				for (i = 0; i < o.id.length; ++i) {
-                    this.r.revus[u][i] = o.id[i].f
+                    this.r.revus[i] = o.id[i].f
                 }
 				}
 				if (this.r.e == "kaoruko@!" && o.e == "futaba@!" && this.r.y == o.y) {
@@ -38462,7 +38462,7 @@
 			return O.c("mfiz")
 		},
 		bf: function(a, b, c, d) {
-			var o ,w, v, u, t, s = this,
+			var o ,w, v , p, l, u, t, s = this, q = 0
 				r = d.a
 			r.push($.v())
 			u = this.tigerCurse ? "[1]被一百万匹力量轰散，永不超生" : s.cw()
@@ -38485,6 +38485,36 @@
 					d.a.push($.v())
 					d.a.push(T.e("[0]：[position zero！]", b, b, null, null, 0, 1000, 100))
 				}
+			}
+			if(b.e == "nana@!" && b.revue.length > 1 && b.y.f.length == b.x.a.e.length - 1 )
+			{
+			d.a.push(T.e("[0]：[再演]", b, b, null, null, 0, 1000, 100))
+			for(v = 0; v < b.revue.length ; v++){
+			o = b.revue[v]
+			o.fr = o.fx
+			if(o.e != "nana@!){
+			if (!C.a.w(o.x.f, o)) {
+							p = o.x.a
+							if (!C.a.w(p.c, o))
+								C.a.i(p.c, o)
+							p = p.e
+							if (!C.a.w(p, o)) {
+								l = o.x.f
+								if (l.length > 0)
+									C.a.ck(p, C.a.aJ(p, C.a.gbe(l)) + 1, o)
+								else
+									p.push(o)
+							}
+							C.a.i(o.x.f, o)
+			}
+			d.a.push(T.e("[1]复活了", b, T.a1(o, 0), null, null, 0, 1000, 100))
+			}
+			for(w = 0; w < o.id.length ; w++){
+			o.id[w].f = b.revus[q]
+			q = q + 1
+			}
+			}
+			return 0
 			}
 			s.x.d9(s)
 			if (b != null && b.fr > 0)
