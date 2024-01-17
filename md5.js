@@ -14377,7 +14377,7 @@
 				_.watch = null
 				_.rev = 0
 				_.revue = []
-				_.revus = [][]
+				_.revus = []
 				_.sch = 1
 				_.k2 = _.k1 = null
 				_.k3 = f
@@ -38489,7 +38489,6 @@
 					d.a.push(T.e("[0]：[position zero！]", b, b, null, null, 0, 1000, 100))
 				}
 			}
-			
 			s.x.d9(s)
 			if (b != null && b.fr > 0)
 				b.bP(s, c, d)
