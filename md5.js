@@ -23654,12 +23654,19 @@
 			this.r.enemy = n.length - this.r.y.f.length
 			for (u = 0; u < n.length; ++u) {
 				o = n[u]
-				if (this.r.e == "nana@!" && this.r.y.f.length == 1 && o.SR0 != null)
+				if (this.r.e == "nana@!" && this.r.y.f.length == 1)
 				{
+				if(o.SR0 != null){
 				this.r.revue[u] = o
 				for (i = 0; i < o.id.length; ++i) {
                     this.r.revus[i] = o.id[i].f
+					d.a.push(T.e("[0]", this.r.revus[i], this.r, null, null, 0, 1000, 100))
                 }
+				}
+				if(o.SR0 == null && o.SRm == null)
+				{
+				this.r.rondo = -12
+				}
 				}
 				if (this.r.e == "kaoruko@!" && o.e == "futaba@!" && this.r.y == o.y) {
 					d.a.push(T.e("[0]：[歌唱舞蹈来来回回]", this.r, this.r, null, null, 0, 1000, 100))
@@ -24022,6 +24029,7 @@
 							C.a.i(o.x.f, o)
 			}
 			}
+			
 			o.bI(o, d)
 			d.a.push($.v())
 			d.a.push(T.e("[0][回到起点]", T.lV(o), T.a1(o, o.fx), null, null, 0, 1000, 100))
@@ -38550,7 +38558,7 @@
 				if (b.y.f.length == b.x.a.e.length - 1 && H.o(b.r1.h(0, $.ai()), "$ibf") == null && b.fr > 0) {
 					d.a.push($.v())
 					d.a.push(T.e("[0]：[position zero！]", b, b, null, null, 0, 1000, 100))
-					if(b.e == "nana@!" && b.rondo < 12)
+					if(b.e == "nana@!" && b.rondo < 12 && b.rondo > -12)
 					{
 					b.id[2].f = 1024
 					b.rondo = b.rondo + 1
