@@ -24021,10 +24021,10 @@
 							}
 							C.a.i(o.x.f, o)
 			}
-			d.a.push(T.e("[1]复活了", this.r, T.a1(o, 0), null, null, 0, 1000, 100))
 			}
 			o.bI(o, d)
-
+			d.a.push($.v())
+			d.a.push(T.e("[0][回到起点]", T.lV(o), T.a1(o, o.fx), null, null, 0, 1000, 100))
 			}
 		}
 	}
@@ -38528,7 +38528,7 @@
 			return O.c("mfiz")
 		},
 		bf: function(a, b, c, d) {
-			var o ,w, v , p, l, u, t, s = this, q = 0
+			var  w, v , p, l, u, t, s = this, q = 0 , o = 0
 				r = d.a
 			r.push($.v())
 			u = this.tigerCurse ? "[1]被一百万匹力量轰散，永不超生" : s.cw()
@@ -38550,15 +38550,17 @@
 				if (b.y.f.length == b.x.a.e.length - 1 && H.o(b.r1.h(0, $.ai()), "$ibf") == null && b.fr > 0) {
 					d.a.push($.v())
 					d.a.push(T.e("[0]：[position zero！]", b, b, null, null, 0, 1000, 100))
-					if(b.e == "nana@!" && this.SR0 != null && b.rondo < 12)
+					if(b.e == "nana@!" && b.rondo < 12)
 					{
 					b.id[2].f = 1024
 					b.rondo = b.rondo + 1
-					return 0
+					o = 1
 					}
 				}
 			}
+			if(o == 0){
 			s.x.d9(s)
+			}
 			if (b != null && b.fr > 0)
 				b.bP(s, c, d)
 		},
