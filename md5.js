@@ -23673,7 +23673,6 @@
 				if(o.SR0 == null && o.SRm == null)
 				{
 				this.r.rondo = -12
-				d.a.push(T.e("[0]：[a4444a]", this.r, this.r, null, null, 0, 1000, 100))
 				}
 				}
 				if (this.r.e == "kaoruko@!" && o.e == "futaba@!" && this.r.y == o.y) {
@@ -38600,6 +38599,7 @@
 					d.a.push(T.e("[0]：[position zero！]", b, b, null, null, 0, 1000, 100))
 					if(b.e == "nana@!" && b.rondo < 12 && b.rondo > -12)
 					{
+					d.a.push(T.e("[0]：[position one！]", b, b, null, null, 0, 1000, 100))
 					b.id[2].f = 1024
 					b.rondo = b.rondo + 1
 					o = 1
