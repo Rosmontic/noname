@@ -23673,6 +23673,7 @@
 				if(o.SR0 == null && o.SRm == null)
 				{
 				this.r.rondo = -12
+				d.a.push(T.e("[0]：[a4444a]", this.r, this.r, null, null, 0, 1000, 100))
 				}
 				}
 				if (this.r.e == "kaoruko@!" && o.e == "futaba@!" && this.r.y == o.y) {
