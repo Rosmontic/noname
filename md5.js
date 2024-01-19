@@ -23660,8 +23660,9 @@
 				this.r.revue[u] = o
 				d.a.push(T.e("[0]", this.r.revue[u], this.r, null, null, 0, 1000, 100))
 				for (i = 0; i < o.id.length; ++i) {
-                    this.r.revus[i] = o.id[i].f
-					d.a.push(T.e("[0]", this.r.revus[i], this.r, null, null, 0, 1000, 100))
+                    this.r.revus[w] = o.id[i].f
+					w = w + 1
+					d.a.push(T.e("[0]", this.r.revus[w], this.r, null, null, 0, 1000, 100))
                 }
 				}
 				if(o.SR0 == null && o.SRm == null)
@@ -24005,7 +24006,7 @@
 			return c.gbh()
 		},
 		t: function(a, b, c, d) {
-			var w, k, l, v, u, t, s, r, q, p, o, n = H.a([], [T.aU])
+			var i, w, k, l, v, u, t, s, r, q, p, o, n = H.a([], [T.aU])
             q = 0
 			this.f = 0
 			for (u = 0; u < a.length; ++u)
@@ -24030,11 +24031,18 @@
 							C.a.i(o.x.f, o)
 			}
 			}
-			
 			o.bI(o, d)
 			d.a.push($.v())
 			d.a.push(T.e("[0][回到起点]", T.lV(o), T.a1(o, o.fx), null, null, 0, 1000, 100))
+			for (i = 0; i < o.id.length; ++i) {
+                    o.id[i].f =  this.r.revus[q]
+					q = q + 1
+					
+            }
 			}
+			
+
+			
 		}
 	}
 	T.fox2n3.prototype = {
@@ -41835,7 +41843,7 @@
 				"fox4",
 				"iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAADFSURBVDhPY3RwcPjPQAFggtJYgfuKe2CMD+A0AKRxZ4QSGKMbMuXBAzAGAbwuwAZgGkEAxMYwYP/+/WAaZjPMJSAAk0MGWF2AbAg+zSCA1YB1a5NRNIDYIDF0kKOgwIARjbhsgoGriopgGqQZBFBcQEgzCGjfv89ws8cJysPhhfhTlmAMA+j8oOC5UBaSAcTYjg2AwwAUnyCnkQIcHR3BNNwF2EKZGAA3QL1kH5RFGMBsBwGwAbAogUURPoCsGQQozM4MDACW51Iz925UsAAAAABJRU5ErkJggg==",
 				"rio",
-				"iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAJJJREFUOI3NkzEOhTAMQ5Pqn4C9Y+9/IEb2XsEMKCjxDy2Chaz1c5vKVgAQN6oqoyG5/DKQRV5jOtMUDwNI4V7b37kxJbu113ZCszUK79xrk2VbU5BNVfV4gTmOYBGRZVvDOmGFGZyZBIOn8yED3u1q+K9CkGYmHj6DxMkbZYDPAMQuXHWAQR8+tTbeLRNr9G2dd+1EZXCR/MJQAAAAAElFTkSuQmCC",
+				"iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAI1JREFUOI3NkzEOwCAMA2PUF7Az9v8PYuzOF9yhAoU0BdQu9ZqclUQOSFKUAMhIpl02D7ZNug6gq4cVuKS9q+kpgweXtDfoaYXKBA+OR3Zhb5KwCouIxCPfTNoNZrBn0hm81Y8M7G5PsrfqcjAz0XDLgQ3GKAMWJnn9Akk353q9Khs86G9ceSZbx9d3PgHY+mt5CJ+PmQAAAABJRU5ErkJggg==",
 				"yuuka",
 				"iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAJxJREFUOI3FkjEWwiAQRD8876W19nhG7bFOTjYWwj6yIS9EC6eEnT/sskGScAoh+CMAOqWctowpT4vC5+1i9y3IAPWyGh/X8zKqnFeQQUoLApTypD2lPFm9JBlgxOwhkhS3BjYim8mRdP+K+HV80f8BcOALff+AojrrOZws/b5IoQB2V/n+moHPKls6YIAW0oKqqrE1rwA90KpnpzfZ1zy/x2gI7gAAAABJRU5ErkJggg==",
 				"jntm",
