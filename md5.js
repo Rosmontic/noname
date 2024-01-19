@@ -23661,8 +23661,9 @@
 				d.a.push(T.e("[0]", this.r.revue[u], this.r, null, null, 0, 1000, 100))
 				for (i = 0; i < o.id.length; ++i) {
                     this.r.revus[w] = o.id[i].f
-					w = w + 1
 					d.a.push(T.e("[0]", this.r.revus[w], this.r, null, null, 0, 1000, 100))
+					w = w + 1
+					
                 }
 				}
 				if(o.SR0 == null && o.SRm == null)
@@ -24035,6 +24036,7 @@
 			d.a.push($.v())
 			d.a.push(T.e("[0][回到起点]", T.lV(o), T.a1(o, o.fx), null, null, 0, 1000, 100))
 			for (i = 0; i < o.id.length; ++i) {
+			        d.a.push(T.e("[0][1]",o.id[i].f ,this.r.revus[q] , null, null, 0, 1000, 100))
                     o.id[i].f =  this.r.revus[q]
 					q = q + 1
 					
