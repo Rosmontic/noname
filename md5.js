@@ -24047,6 +24047,29 @@
 					
             }
 			}
+			if(this.r.watch != null){
+			o = this.r.watch
+			o.fr = o.fx
+			if (!C.a.w(o.x.f, o)) {
+							p = o.x.a
+							if (!C.a.w(p.c, o))
+								C.a.i(p.c, o)
+							p = p.e
+							if (!C.a.w(p, o)) {
+								l = o.x.f
+								if (l.length > 0)
+									C.a.ck(p, C.a.aJ(p, C.a.gbe(l)) + 1, o)
+								else
+									p.push(o)
+							}
+							C.a.i(o.x.f, o)
+			}	
+			o.bI(o, d)
+			d.a.push($.v())
+			d.a.push(T.e("[0][我懂！]", T.lV(o), T.a1(o, o.fx), null, null, 0, 1000, 100))
+			o.id[1].f = 1024
+			o.j = 2048
+			}
 			
 
 			
