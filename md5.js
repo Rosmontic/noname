@@ -24000,7 +24000,7 @@
 			return this.aS(a, b)
 		},
 		b5: function(a) {
-            return a.b1(this.r.revue)
+            return a.b1(this.r.y.e)
         },
 		am: function(a, b) {
 			return a.fr <= 0 && !a.$iav && !a.r1.G(0, $.eE()) && !a.tigerCurse
@@ -38599,7 +38599,6 @@
 					d.a.push(T.e("[0]：[position zero！]", b, b, null, null, 0, 1000, 100))
 					if(b.e == "nana@!" && b.rondo < 12 && b.rondo > -12)
 					{
-					d.a.push(T.e("[0]：[position one！]", b, b, null, null, 0, 1000, 100))
 					b.id[2].f = 1024
 					b.rondo = b.rondo + 1
 					o = 1
