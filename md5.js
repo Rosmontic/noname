@@ -23665,7 +23665,6 @@
 					{
 					this.r.revus[w] = 1024
 					}
-					d.a.push(T.e("[0]", this.r.revus[w], this.r, null, null, 0, 1000, 100))
 					w = w + 1
 					
                 }
@@ -24040,7 +24039,6 @@
 			d.a.push($.v())
 			d.a.push(T.e("[0][回到起点]", T.lV(o), T.a1(o, o.fx), null, null, 0, 1000, 100))
 			for (i = 0; i < o.id.length; ++i) {
-			        d.a.push(T.e("[0],[1]",o.id[i].f ,this.r.revus[q] , null, null, 0, 1000, 100))
                     o.id[i].f =  this.r.revus[q]
 					o.SR0 = 0
 					q = q + 1
@@ -24066,6 +24064,7 @@
 			}	
 			o.bI(o, d)
 			d.a.push($.v())
+			o.SRm = 0
 			d.a.push(T.e("[0][我懂！]", T.lV(o), T.a1(o, o.fx), null, null, 0, 1000, 100))
 			o.id[1].f = 1024
 			o.j = 2048
