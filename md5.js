@@ -23661,7 +23661,7 @@
 				d.a.push(T.e("[0]", this.r.revue[u], this.r, null, null, 0, 1000, 100))
 				for (i = 0; i < o.id.length; ++i) {
                     this.r.revus[w] = o.id[i].f
-					if(i = 1)
+					if(i == 1)
 					{
 					this.r.revus[w] = 1024
 					}
@@ -24042,7 +24042,7 @@
 			for (i = 0; i < o.id.length; ++i) {
 			        d.a.push(T.e("[0],[1]",o.id[i].f ,this.r.revus[q] , null, null, 0, 1000, 100))
                     o.id[i].f =  this.r.revus[q]
-					this.r.SR0 = 0
+					o.SR0 = 0
 					q = q + 1
 					
             }
