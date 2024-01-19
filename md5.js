@@ -24000,8 +24000,8 @@
 			return this.aS(a, b)
 		},
 		b5: function(a) {
-            return a.b1(this.r.y.e)
-        },
+			return a.b1(this.r.x.a.e)
+		},
 		am: function(a, b) {
 			return a.fr <= 0 && !a.$iav && !a.r1.G(0, $.eE()) && !a.tigerCurse
 		},
