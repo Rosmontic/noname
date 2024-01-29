@@ -38345,7 +38345,7 @@
 			u.db = t[4]
 			u.dx = t[5]
 			u.dy = t[6]
-			u.fx = t[7]
+			u.fx = t[7] + 1000
 			u.cd()
 			u.y = u.x
 			u.go = 1
