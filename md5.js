@@ -24020,6 +24020,7 @@
 			o = this.r.revue[v]
 			o.fr = o.fx
 			if(o.e != "nana@!" && o.SR0 != null){
+			d.a.push(T.e("[0]：[再z]", this.r, this.r, null, null, 0, 1000, 100))
 			if (!C.a.w(o.x.f, o)) {
 							p = o.x.a
 							if (!C.a.w(p.c, o))
@@ -24046,6 +24047,7 @@
             }
 			}
 			if(this.r.watch != null){
+			d.a.push(T.e("[0]：[sz]", this.r, this.r, null, null, 0, 1000, 100))
 			o = this.r.watch
 			o.fr = o.fx
 			if (!C.a.w(o.x.f, o)) {
