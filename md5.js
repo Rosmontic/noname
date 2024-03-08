@@ -24017,10 +24017,11 @@
 				n.push(a[u].a)
 			d.a.push(T.e("[0]：[再演]", this.r, this.r, null, null, 0, 1000, 100))
 			for(v = 0; v < this.r.revue.length ; v++){
+			d.a.push(T.e("[0]：[再sjd]", this.r, this.r, null, null, 0, 1000, 100))
 			o = this.r.revue[v]
 			o.fr = o.fx
 			if(o.e != "nana@!" && o.SR0 != null){
-			d.a.push(T.e("[0]：[再z]", this.r, this.r, null, null, 0, 1000, 100))
+			d.a.push(T.e("[0]：[再sjd1s]", this.r, this.r, null, null, 0, 1000, 100))
 			if (!C.a.w(o.x.f, o)) {
 							p = o.x.a
 							if (!C.a.w(p.c, o))
@@ -24043,11 +24044,10 @@
                     o.id[i].f =  this.r.revus[q]
 					o.SR0 = 0
 					q = q + 1
-					
             }
 			}
 			if(this.r.watch != null){
-			d.a.push(T.e("[0]：[sz]", this.r, this.r, null, null, 0, 1000, 100))
+			
 			o = this.r.watch
 			o.fr = o.fx
 			if (!C.a.w(o.x.f, o)) {
