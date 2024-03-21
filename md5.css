@@ -5,7 +5,7 @@ html {
 body {
  margin: 0;
  font-family: "Microsoft YaHei", Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
- font-size: 15px;
+ font-size: 30px;
  line-height: 32x;
  width:100%;
  height:100%;
@@ -100,7 +100,7 @@ td.namdtd {
 .sgl{
  position: relative;
  width:32px;
- height:32x;
+ height:32xp;
  image-rendering: pixelated;
 }
 
