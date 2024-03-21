@@ -147,7 +147,7 @@ td > .plr_list, td > .plr_body {
  position: relative;
 }
 .plr_body {
- line-height:28px;
+ line-height:36px;
  margin-left: 4px;
  position: relative;
 }
@@ -214,7 +214,7 @@ td > .plr_list, td > .plr_body {
  height:3px;
  position: absolute;
  left: 36px;
- top: 30px;
+ top: 2px;
 }
 .oldhp{
  background: #f66;
