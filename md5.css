@@ -5,8 +5,8 @@ html {
 body {
  margin: 0;
  font-family: "Microsoft YaHei", Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
- font-size: 28px;
- line-height: 15px;
+ font-size: 15px;
+ line-height: 16px;
  width:100%;
  height:100%;
 }
@@ -28,7 +28,7 @@ p {
  line-height: 24px;
 }
 table {
-  margin:32px 0 0 0;
+  margin:16px 0 0 0;
   padding:0;
   border-spacing:0;
 }
@@ -55,7 +55,7 @@ td.namdtd {
  top:0;
  left:0;
  padding:2px;
-  width: 390px;
+  width: 195px;
   height: 100%;
   overflow: auto;
   border-right-color: #6cc4ec;
@@ -68,8 +68,8 @@ td.namdtd {
 .hbody{
  position: absolute;
  top:0;
- width: calc(100% - 410px);
- left:410px;
+ width: calc(100% - 200px);
+ left:200px;
  height: 100%;
  overflow: auto;
 }
@@ -99,8 +99,8 @@ td.namdtd {
 }
 .sgl{
  position: relative;
- width:32px;
- height:32px;
+ width:16px;
+ height:16px;
  image-rendering: pixelated;
 }
 
@@ -147,7 +147,7 @@ td > .plr_list, td > .plr_body {
  position: relative;
 }
 .plr_body {
- line-height:36px;
+ line-height:14px;
  margin-left: 4px;
  position: relative;
 }
@@ -179,60 +179,30 @@ td > .plr_list, td > .plr_body {
 .sctext {
  color: #bb7700;
 }
-.starlight00 {
- color: #080808;
-}
-.starlight01 {
- color: #FB5458;
-}
-.starlight02 {
- color: #6292E9;
-}
-.starlight03 {
- color: #61BF99;
-}
-.starlight04 {
- color: #95CAEE;
-}
-.starlight05 {
- color: #FDD162;
-}
-.starlight06 {
- color: #CBC6CC;
-}
-.starlight07 {
- color: #FE9952;
-}
-.starlight08 {
- color: #8C67AA;
-}
-.starlight09 {
- color: #E08696;
-}
 .maxhp{
  background: #ddddd0;
- height:3px;
+ height:2px;
  position: absolute;
- left: 36px;
- top: 2px;
+ left: 18px;
+ top: 0;
 }
 .oldhp{
  background: #f66;
- height:3px;
+ height:2px;
  position: absolute;
  -webkit-transition: width 0.5s ease-in 1s; /* Safari */
  transition: width 0.5s ease-in 1s;
 }
 .hp{
  background: #4c4;
- height:3px;
+ height:2px;
  position: absolute;
  -webkit-transition: width 1s; /* Safari */
  transition: width 1s;
 }
 .healhp{
  background: #08f;
- height:3px;
+ height:2px;
  position: absolute;
 }
 .hbody > div {
