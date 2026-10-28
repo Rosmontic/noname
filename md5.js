@@ -5301,7 +5301,7 @@
 				var u, t, s, r
 				if (c > 0 && !(a.fr <= 0))
 				{
-					u = C.b.v(c + 1, 2)
+					u = c
 					t = a.fx
 					s = a.fr
 					r = t - s
@@ -5321,6 +5321,7 @@
 					{
 						u = new T.bx()
 						u.r = b
+						u.fr = 1 + (d.m() & 1)
 						u.aO(0)
 						e.a.push(T.e(C.c.K(O.c("rWdW"), $.l7()), a, b, null, null, 60, 1000, 100))
 					}
@@ -5412,8 +5413,8 @@
 					}
 					if (u.h(0, $.X()) != null)
 					{
-						t.z += 10;
-						++t.Q
+						t.z += 20;
+						t.Q += 2
 					}
 					e.a.push(T.e(C.c.K(O.c("arnH"), $.n8()), a, b, null, null, 60, 1000, 100))
 				}
@@ -5432,10 +5433,7 @@
 						q = u.h(0, s[r])
 						if (q.gR() > 0) q.H(a, e)
 					}
-					u = b.fy
-					if (u > 64) b.fy = u - 64
-					else if (u > 32) b.fy = 0
-					else b.fy = u - 32
+					b.fy -= 64
 				}
 			},
 			pb: function(a, b, c, d, e)
@@ -5471,8 +5469,8 @@
 						b.rx.i(0, t.x)
 						b.E()
 					}
-					else t.y += 1024
-					if (a.r1.G(0, $.X())) t.y += 2048
+					else t.y += 1440
+					if (a.r1.G(0, $.X())) t.y += 2656
 					u = T.e(C.c.K(O.c("lZqU"), $.ng()), a, b, null, null, 40, 1000, 100)
 					e.a.push(u)
 				}
@@ -5488,13 +5486,13 @@
 					if (t == null)
 					{
 						t = new T.dE(a, b)
-						t.y = T.u(a, !0, d) * 1.2
+						t.y = T.u(a, !0, d) * 1.8
 						u.k(0, $.b9(), t)
 						b.x1.i(0, t)
 					}
 					else
 					{
-						t.y = t.y + T.u(a, !0, d) * 1.2
+						t.y = t.y + T.u(a, !0, d) * 1.8
 						t.z = 4
 						t.r = a
 					}
@@ -7041,8 +7039,8 @@
 				_.r = a
 				_.x = b
 				_.y = null
-				_.z = 42
-				_.Q = 2
+				_.z = 64
+				_.Q = 2.35
 				_.c = _.b = _.a = null
 			},
 			hS: function hS()
@@ -7089,7 +7087,7 @@
 				var _ = this
 				_.x = a
 				_.y = null
-				_.z = 2
+				_.z = 2.6
 				_.Q = 3
 				_.c = _.b = _.a = null
 			},
@@ -7116,7 +7114,7 @@
 				var _ = this
 				_.r = a
 				_.x = null
-				_.y = 1024
+				_.y = 1440
 				_.c = _.b = _.a = null
 			},
 			dT: function dT()
@@ -15398,7 +15396,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 			var u = a[0].a,
 				t = T.u(this.r, !0, c)
 			d.a.push(T.e(O.c("vFzm"), this.r, u, null, null, 1, 1000, 100))
-			u.a0(t * 1.3, !0, this.r, T.q7(), c, d)
+			u.a0(t * 1.5, !0, this.r, T.q7(), c, d)
 		}
 	}
 	T.hI.prototype = {
@@ -15430,10 +15428,11 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 			u.r.r1.k(0, $.kh(), u)
 			if (u.r.r1.G(0, $.X()))
 			{
-				++u.fx
+				u.fx += 1.6
 				s = u.r
 				s.j = s.j + 500
 			}
+			u.r.bI(null, d)
 			u.r.E()
 			s = u.r
 			s.j = s.j + 400
@@ -15461,7 +15460,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 				u.push($.v())
 				u.push(T.ap(O.c("xFHA"), a, t.r))
 			}
-			t.fx = 1.6
+			t.fx = 2.1
 		},
 		$ip: 1
 	}
@@ -15496,10 +15495,10 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 				d.a.push(T.e(O.c("xAej"), r.r, r.fy, q, q, 1, 1000, 100))
 				r.r.ry.i(0, r.fr)
 				p = r.r
-				p.j = p.j + p.db * 3
+				p.j = p.j + p.db * 6
 				p = p.r1.G(0, $.X())
 				u = r.r
-				if (p) u.j = u.j + 1600
+				if (p) u.j = u.j + 2200
 				else u.y2.i(0, r.fx)
 			}
 			else
@@ -15519,7 +15518,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 						u.push(T.e(O.c("vVob"), p, r.r, q, q, 0, 1000, 100))
 						return
 					}
-					p.bL(t * 4, !0, r.r, T.a3(), c, d)
+					p.bL(t * 5.6, !0, r.r, T.a3(), c, d)
 				}
 			}
 		},
@@ -15586,7 +15585,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 			u = a[0].a
 			t = T.u(s.r, !1, c)
 			d.a.push(T.e(O.c("wSMx"), s.r, u, null, null, 0, 1000, 100))
-			u.a0(t * 1.2, !1, s.r, T.a3(), c, d)
+			u.a0(t * 1.2 * (u === s.r ? 1.5 : 1), !1, s.r, T.a3(), c, d)
 			if (s.fr === 0) s.H(null, d)
 		},
 		$ip: 1,
@@ -15613,7 +15612,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 			var u = a[0].a,
 				t = T.u(this.r, !0, c)
 			d.a.push(T.e(O.c("Cbzd"), this.r, u, null, null, 1, 1000, 100))
-			u.a0(t, !0, this.r, T.q8(), c, d)
+			u.a0(t * 1.25, !0, this.r, T.q8(), c, d)
 		}
 	}
 	T.hM.prototype = {
@@ -15640,7 +15639,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 			u.r.r1.k(0, $.X(), u)
 			u.r.E()
 			s = u.r
-			s.fy = s.fy + 32
+			s.fy = s.fy + 64
 		},
 		aq: function(a, b)
 		{
@@ -15734,7 +15733,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 				q = a[0].a,
 				p = d.a
 			p.push(T.e(O.c("KesN"), s.r, q, r, r, 1, 1000, 100))
-			if (!q.a6($.ai(), c)) u = q.fr > 0 && !q.A && T.bd(s.r.db, q.cy + q.dx, c)
+			if (!q.a6($.ai(), c)) u = q.fr > 0 && !q.A && T.bd(s.r.db * (s.r.r1.G(0, $.X()) ? 3 : 2), q.cy + q.dx, c)
 			else u = !0
 			if (u)
 			{
@@ -15801,32 +15800,36 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 		t: function(a, b, c, d)
 		{
 			var u, t, s, r, q = this,
-				p = null
+				p = null,
+				a0, a1
 			q.f = C.d.Z(q.f * 0.75)
 			if (!q.r.r1.G(0, $.X()))
 			{
 				u = q.r.u
-				for (t = 0; t < 6; ++t) u[t] = C.d.Z(u[t] * 0.6)
-				u[7] = C.d.Z(u[7] * 0.5)
+				u[7] = C.d.Z(u[7] * 0.75)
 				s = q.r
-				s.fr = C.d.Z(s.fr * 0.5)
+				s.fr = C.d.Z(s.fr * 0.75)
 				q.r.cd()
 				q.r.E()
 			}
 			q.r.j = c.m() * 4 + 1024
-			r = T.m_(q.r)
-			r.x = q.r.x
-			r.av()
-			r.j = c.m() * 4 + 600
 			s = q.r
-			r.fr = s.fr
 			if (s.fr + s.db < c.m()) q.f = C.b.ao(q.f, 1) + 1
-			s = C.a.dc(r.id, new T.hN())
-			if (s != null) s.f = q.f
-			s = d.a
-			s.push(T.e(O.c("EIcZ"), T.lV(q.r), q.r, p, p, 60, 1000, 100))
-			q.r.x.aU(r)
-			s.push(T.e(O.c("Jggp"), q.r, T.a1(r, r.fr), p, p, 0, 1000, 100))
+			a0 = q.r.r1.G(0, $.X()) ? 2 : 1
+			for (a1 = 0; a1 < a0; ++a1)
+			{
+				r = T.m_(q.r)
+				r.x = q.r.x
+				r.av()
+				r.j = c.m() * 4 + 600
+				r.fr = s.fr
+				t = C.a.dc(r.id, new T.hN())
+				if (t != null) t.f = q.f
+				u = d.a
+				u.push(T.e(O.c("EIcZ"), T.lV(q.r), q.r, p, p, 60, 1000, 100))
+				q.r.x.aU(r)
+				u.push(T.e(O.c("Jggp"), q.r, T.a1(r, r.fr), p, p, 0, 1000, 100))
+			}
 		}
 	}
 	T.hN.prototype = {
@@ -15840,10 +15843,10 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 		{
 			var u = this,
 				t = a[0].a,
-				s = T.u(u.r, !1, c) * 1.15,
-				r = T.u(u.r, !1, c) * 1.2
+				s = T.u(u.r, !1, c) * 2.07,
+				r = T.u(u.r, !1, c) * 2.16
 			if (r > s) s = r
-			r = T.u(u.r, !1, c) * 1.25
+			r = T.u(u.r, !1, c) * 2.25
 			if (r > s) s = r
 			d.a.push(T.e(O.c("udkt"), u.r, t, null, null, 1, 1000, 100))
 			t.a0(s, !1, u.r, T.a3(), c, d)
@@ -15912,7 +15915,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 			var u = a[0].a,
 				t = T.u(this.r, !0, c)
 			d.a.push(T.e(O.c("kkUh"), this.r, u, null, null, 1, 1000, 100))
-			u.a0(t, !0, this.r, T.qa(), c, d)
+			u.a0(t * 1.5, !0, this.r, T.qa(), c, d)
 		}
 	}
 	T.hU.prototype = {
@@ -15941,7 +15944,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 			if (p.G(0, "Dt.iron")) p.h(0, "Dt.iron")
 				.H(u.r, d)
 			p = u.r
-			if (!!r.$iav) r.bL(q * 2, !0, p, T.mB(), c, d)
+			if (!!r.$iav) r.bL(q * 3, !0, p, T.mB(), c, d)
 			else r.bL(q, !0, p, T.mB(), c, d)
 		}
 	}
@@ -15964,7 +15967,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 			u = a[0].a
 			t = d.a
 			t.push(T.e(O.c("rQjs"), n.r, u, m, m, 1, 1000, 100))
-			if (!u.a6($.c4(), c)) s = u.fr > 0 && !u.A && !n.r.r1.G(0, $.X()) && T.bd(n.r.db, u.dx + u.ch + u.cy, c)
+			if (!u.a6($.c4(), c)) s = u.fr > 0 && !u.A && !n.r.r1.G(0, $.X()) && T.bd(n.r.db * 2, u.dx + u.ch + u.cy, c)
 			else s = !0
 			if (s)
 			{
@@ -15974,8 +15977,8 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 			if (n.r.r1.G(0, $.X()))
 			{
 				s = n.r
-				s.j = s.j + u.j
-				u.j = 0
+				s.j = s.j + u.j + 2048
+				u.j = -2048
 			}
 			s = n.r
 			r = s.fr
@@ -16004,7 +16007,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 			u = T.u(this.r, !0, c)
 			t = r.b
 			d.a.push(T.e(O.c("iksa"), this.r, s, null, null, 1, 1000, 100))
-			s.a0(u * (1.5 + t), !0, this.r, T.mC(), c, d)
+			s.a0(u * (1.8 + t * 1.6), !0, this.r, T.mC(), c, d)
 		}
 	}
 	T.dR.prototype = {
@@ -16024,8 +16027,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 				n = a[0].a,
 				m = d.a
 			m.push(T.e(O.c("xyNS"), p.r, n, o, o, 1, 1000, 100))
-			u = C.b.v(400 - n.fr, 3)
-			if (u < 0) u = 0
+			u = C.b.v(Math.max(400 - n.fr, 150), 3)
 			if (!n.a6($.d4(), c)) t = n.fr > 0 && !n.A && !p.r.r1.G(0, $.X()) && T.bd(u, n.dx + n.cy, c)
 			else t = !0
 			if (t)
@@ -16127,7 +16129,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 			else t.Q += 4
 			if (s.r.r1.G(0, $.X()))
 			{
-				t.z += 2
+				t.z += 3.2
 				t.Q += 2
 			}
 			p.push(T.e(C.c.K(O.c("TxmT"), $.nf()), s.r, q, r, r, 0, 1000, 100))
@@ -16160,7 +16162,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 				p = q.f
 			if (p > 8) q.f = p - 1
 			u = a[0].a
-			t = C.e.Z(T.u(q.r, !0, c) / 60)
+			t = C.e.Z(T.u(q.r, !0, c) * 1.7 / 60)
 			s = u.fx - u.fr
 			if (t > s) t = s
 			p = d.a
@@ -16233,7 +16235,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 			var u = a[0].a,
 				t = T.u(this.r, !0, c)
 			d.a.push(T.e(O.c("qctf"), this.r, u, null, null, 1, 1000, 100))
-			u.a0(t * 0.7, !0, this.r, T.kV(), c, d)
+			u.a0(t * 0.9, !0, this.r, T.kV(), c, d)
 		}
 	}
 	T.i1.prototype = {
@@ -16265,11 +16267,11 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 			u.r.E()
 			u.id = 3
 			r = u.r
-			u.go = 110 + r.db
+			u.go = 110 + r.db * 2
 			if (r.r1.G(0, $.X()))
 			{
 				u.id += 4
-				u.go = u.go + (240 + u.r.db * 4)
+				u.go = u.go + (230 + u.r.db * 8)
 			}
 			s = u.r
 			s.j = s.j - 256
@@ -16309,7 +16311,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 		},
 		al: function(a)
 		{
-			this.r.J *= 1.12
+			this.r.J *= 1.4
 		},
 		gR: function()
 		{
@@ -16395,7 +16397,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 		},
 		t: function(a, b, c, d)
 		{
-			var u, t, s, r, q, p = c.m() < 128 ? 5 : 4,
+			var u, t, s, r, q, p = c.m() < 128 ? 6 : 5,
 				o = H.a([], [T.aU]),
 				n = 0
 			while (!0)
@@ -16417,7 +16419,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 				if (q.fr > 0)
 				{
 					r.push($.v())
-					q.a0(u * 2.44 / (t + 0.6), !0, this.r, T.a3(), c, d)
+					q.a0(u * 3.2 / (t + 0.6), !0, this.r, T.a3(), c, d)
 				}
 			}
 		}
@@ -16435,9 +16437,9 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 		{
 			var u, t, s, r, q, p, o, n, m = this,
 				l = null,
-				k = c.m() < 128 ? 3 : 2
-			if (a.length > 3) a = (a && C.a)
-				.a4(a, 0, 3)
+				k = c.m() < 128 ? 4 : 3
+			if (a.length > 4) a = (a && C.a)
+				.a4(a, 0, 4)
 			for (u = a.length, t = 0; t < u; ++t) a[t].b = 0
 			for (u = d.a, s = 0, r = 0; r < k; ++r)
 			{
@@ -16453,7 +16455,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 					p.b = n + 1
 					if (r === 0) u.push(T.e(O.c("ESgO"), m.r, o, l, l, 0, 1000, 100))
 					else u.push(T.e(O.c("zzGK"), m.r, o, l, l, 1, 1000, 100))
-					if (o.a0(q * (0.75 - n * 0.15), !1, m.r, T.a3(), c, d) <= 0) return
+					if (o.a0(q * (0.75 + n * 0.25), !1, m.r, T.a3(), c, d) <= 0) return
 					u.push($.v())
 				}
 				s = C.b.a3(s + (c.m() & 3), a.length)
@@ -16480,13 +16482,16 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 				m = null
 			n.f = C.b.v(n.f + 1, 2)
 			u = a[0].a
-			t = C.e.Z(T.u(n.r, !0, c) / 75)
+			t = n.r.r1.G(0, $.X()) ? u.fx : C.e.Z(T.u(n.r, !0, c) / 25)
 			s = u.fx
 			if (t > s) t = s
 			r = d.a
 			r.push(T.e(O.c("hryQ"), n.r, u, m, m, 1, 1000, 100))
 			r.push(T.e(C.c.K(O.c("ldpQ"), $.lb()), n.r, u, m, m, t + 60, 1000, 100))
 			u.fr = t
+			u.j += 1024
+			u.fy += 48
+			u.bI(n.r, d)
 			q = u.x
 			if (!C.a.w(q.f, u))
 			{
@@ -16517,7 +16522,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 				p = a[0].a,
 				o = d.a
 			o.push(T.e(O.c("vDpa"), r.r, p, q, q, 0, 1000, 100))
-			if (!p.a6($.am(), c)) u = p.fr > 0 && !p.A && T.bd(r.r.db, p.dx, c)
+			if (!p.a6($.am(), c)) u = p.fr > 0 && !p.A && T.bd(r.r.db * 2, p.dx, c)
 			else u = !0
 			if (u)
 			{
@@ -16572,60 +16577,62 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 		},
 		t: function(a, a0, a1, a2)
 		{
-			var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, c = this,
+			var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d, a3, a4, c = this,
 				b = null
 			c.f = C.d.Z(c.f * 0.75)
 			u = a2.a
 			u.push(T.e(O.c("EwPC"), c.r, b, b, b, 60, 1000, 100))
-			t = H.d(c.r.a) + "?" + H.d($.nn())
-			s = c.r
-			r = s.b
-			s = s.c
-			q = H.a([], [T.H])
-			p = H.a([], [T.y])
-			o = P.U(P.f, T.p)
-			n = new F.b([T.M])
-			n.c = n
-			n.b = n
-			m = new F.b([T.L])
-			m.c = m
-			m.b = m
-			l = new F.b([T.G])
-			l.c = l
-			l.b = l
-			k = new F.b([T.J])
-			k.c = k
-			k.b = k
-			j = new F.b([T.K])
-			j.c = j
-			j.b = j
-			i = new F.b([T.D])
-			i.c = i
-			i.b = i
-			h = new F.b([T.A])
-			h.c = h
-			h.b = h
-			g = new F.b([T.C])
-			g.c = g
-			g.b = g
-			f = new F.b([T.I])
-			f.c = f
-			f.b = f
-			e = [P.j]
-			d = new T.hh(t, r, s, b, q, p, o, n, m, l, k, j, i, h, g, f, H.a([], e), H.a([], e), H.a([], e), H.a([], e))
-			d.Y(t, r, s, b)
-			d.a5 = new T.cj(d)
-			d.af = c
-			d.e = T.du(c.r)
-			d.r = O.c("xRWn")
-			s = c.r
-			d.x = s.x
-			s.I.i(0, d.a5)
-			d.av()
-			if (c.r.r1.G(0, $.X())) d.j = 2048
-			else d.j = -2048
-			c.r.x.aU(d)
-			u.push(T.e(O.c("cPiZ"), c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
+			for (a3 = c.r.r1.G(0, $.X()) ? 3 : 1 + (a1.m() & 1), a4 = 0; a4 < a3; ++a4)
+			{
+				t = H.d(c.r.a) + "?" + H.d($.nn())
+				s = c.r
+				r = s.b
+				s = s.c
+				q = H.a([], [T.H])
+				p = H.a([], [T.y])
+				o = P.U(P.f, T.p)
+				n = new F.b([T.M])
+				n.c = n
+				n.b = n
+				m = new F.b([T.L])
+				m.c = m
+				m.b = m
+				l = new F.b([T.G])
+				l.c = l
+				l.b = l
+				k = new F.b([T.J])
+				k.c = k
+				k.b = k
+				j = new F.b([T.K])
+				j.c = j
+				j.b = j
+				i = new F.b([T.D])
+				i.c = i
+				i.b = i
+				h = new F.b([T.A])
+				h.c = h
+				h.b = h
+				g = new F.b([T.C])
+				g.c = g
+				g.b = g
+				f = new F.b([T.I])
+				f.c = f
+				f.b = f
+				e = [P.j]
+				d = new T.hh(t, r, s, b, q, p, o, n, m, l, k, j, i, h, g, f, H.a([], e), H.a([], e), H.a([], e), H.a([], e))
+				d.Y(t, r, s, b)
+				d.a5 = new T.cj(d)
+				d.af = c
+				d.e = T.du(c.r)
+				d.r = O.c("xRWn")
+				s = c.r
+				d.x = s.x
+				s.I.i(0, d.a5)
+				d.av()
+				d.j = c.r.r1.G(0, $.X()) ? 2048 : 0
+				c.r.x.aU(d)
+				u.push(T.e(O.c("cPiZ"), c.r, T.a1(d, d.fr), b, b, 0, 1000, 100))
+			}
 		}
 	}
 	T.cG.prototype = {
@@ -16636,7 +16643,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 		al: function(a)
 		{
 			var u = this.x
-			u.cx = C.b.v(u.cx, 2)
+			u.cx *= 0.3
 		},
 		aq: function(a, b)
 		{
@@ -16695,7 +16702,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 				p.push(T.e(O.c("vVob"), q, s.r, r, r, 20, 1000, 100))
 				return
 			}
-			q.j = q.j - (q.cx + 64)
+			q.j = q.j - (q.cx + 1024)
 			u = q.r1
 			t = H.o(u.h(0, $.aC()), "$icG")
 			if (t == null)
@@ -16725,7 +16732,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 			s = q.r
 			r = s.fr
 			s.fr = 0
-			p.a0(u * (4 + t), !0, s, T.mC(), c, d)
+			p.a0(u * (8 + t), !0, s, T.mC(), c, d)
 			q.r.bf(r, null, c, d)
 		}
 	}
@@ -16740,6 +16747,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 			this.bv()
 			u = this.u
 			u[7] = C.d.v(u[7], 3)
+			u[7] += 80
 			u[0] = 0
 			t = this.af.r.u
 			u[1] = t[1]
@@ -16748,7 +16756,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 		},
 		aa: function()
 		{
-			var u = new T.aK()
+			var u = new T.bV()
 			u.r = this
 			this.k2 = u
 			u = this.id
@@ -16863,6 +16871,8 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 			{
 				e.fr.bb.C()
 				e.fr.j = 2048
+				for (r = 0; r < 7; ++r) e.fr.u[r] += C.d.Z(e.r.u[r] * 0.8)
+				e.fr.E()
 			}
 			e.r.x.aU(e.fr)
 			u = O.c("IFkr")
@@ -16879,8 +16889,8 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 				l = a[0].a,
 				k = d.a
 			k.push(T.e(O.c("pOmC"), n.r, l, m, m, 1, 1000, 100))
-			u = 3 + (c.m() & 3)
-			t = 100 + n.r.cy
+			u = 6 + (c.m() & 3)
+			t = 120 + n.r.cy
 			for (s = !1, r = 0; r < u; ++r)
 			{
 				q = n.r
@@ -16897,7 +16907,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 					q = T.u(n.r, !0, c)
 					p = k.length
 					o = n.r
-					if (l.aA(l.ak(C.e.Z(q * 0.36 / T.cc(l, !0, c)), o, T.a3(), c, d), o, T.a3(), c, d) > 0) s = !0
+					if (l.aA(l.ak(C.e.Z(q * 0.42 / T.cc(l, !0, c)), o, T.a3(), c, d), o, T.a3(), c, d) > 0) s = !0
 					k[p].b = 300
 				}
 			}
@@ -18882,7 +18892,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 			u.fr = new T.aN(u)
 			u.fx = new T.ay(u)
 			s.push(u)
-			u = new T.hI(1.7)
+			u = new T.hI(2.2)
 			u.fr = new T.aN(u)
 			s.push(u)
 			u = new T.hK()
@@ -19526,7 +19536,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 		ay: function(a, b, c, d)
 		{
 			var u = this
-			if (b.x == u.r.y && (c.m() & 63) < u.r.dy) return
+			if (b.x == u.r.y && (c.m() & 63) < u.r.dy + 32) return
 			if (u.ch === d)
 			{
 				if (u.Q && b != u.cx)
@@ -19535,7 +19545,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 			else
 			{
 				u.ch = d
-				if (c.m() < u.f)
+				if (c.m() < u.f + 64)
 				{
 					u.cx = b
 					u.Q = !0
@@ -19550,7 +19560,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 			r.ch = null
 			if (r.cx.fr > 0 && r.r.bq(a))
 			{
-				u = T.u(r.r, !1, a)
+				u = T.u(r.r, !1, a) * 1.2
 				t = $.v()
 				s = b.a
 				s.push(t)
@@ -19567,10 +19577,10 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 		},
 		ak: function(a, b, c, d, e)
 		{
-			if (d.m() < this.f && this.r.bq(d))
+			if (d.m() < this.f + 64 && this.r.bq(d))
 			{
 				e.a.push(T.e(O.c("zGKr"), this.r, b, null, null, 40, 1000, 100))
-				return C.b.v(a, 2)
+				return C.b.v(a, 4)
 			}
 			return a
 		},
@@ -19592,7 +19602,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 			var u, t, s = this
 			if (s.f <= 0 || s.ch.a != null) return
 			u = s.r
-			if (u.fr > 0 && !u.A && u.y.f.length > 1 && (c.m() & 63) < s.f)
+			if (u.fr > 0 && !u.A && u.y.f.length > 1 && (c.m() & 63) < s.f + 24)
 			{
 				s.r.r2.i(0, s.ch)
 				s.r.E()
@@ -19615,9 +19625,9 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 			var u, t, s = this.r
 			s.J /= 10
 			u = this.f
-			if (u > 63)
+			if (u > 31)
 			{
-				t = u - 63
+				t = u - 31
 				s.cy = s.cy + t
 				s.ch = s.ch + t
 				s.dx = s.dx + t
@@ -19640,7 +19650,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 		{
 			var u, t, s, r, q, p, o, n, m = this,
 				l = null
-			if ((b.m() & 63) < m.f)
+			if ((b.m() & 63) < m.f + 24)
 			{
 				for (u = m.r.u, t = u.length, s = a.u, r = !1, q = 0; q < t; ++q)
 				{
@@ -19693,6 +19703,8 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 				if (r)
 				{
 					a.r1.k(0, $.eE(), new T.h0())
+					u = m.r.u
+					for (q = 0; q < 6; ++q) u[q] += 30
 					m.r.E()
 					u = c.a
 					u.push($.v())
@@ -19758,6 +19770,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 			{
 				u = t.r
 				g.a.push(T.e(O.c("JpqK"), u, d, null, null, 40, 1000, 100))
+				d.j += 720
 				a = u.dj(a, b, c, e, f, g)
 				if (a === 0) return 0
 				u.aA(u.ak(C.e.eO(a * 0.5 / T.cc(u, b, f)), c, e, f, g), c, e, f, g)
@@ -19827,16 +19840,16 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 	T.dX.prototype = {
 		dk: function(a, b, c, d, e, f, g)
 		{
-			var u, t, s = this
+			var u, s = this
 			if (c.fr <= 0) return a
-			if (f.m() < s.f && f.m() < 128 && s.r.bq(f))
+			if (f.m() < s.f + 32 && f.m() < 128 && s.r.bq(f))
 			{
-				u = T.u(s.r, !0, f) * 0.5
+				u = T.u(s.r, !0, f)
 				if (u > a) u = a
 				g.a.push(T.e(C.c.K(O.c("BvTm"), $.nj()), s.r, c, null, null, 20, 1500, 100))
 				c.a0(u, !0, s.r, e, f, g)
-				t = s.r
-				t.j = t.j - 480
+				c.fy -= 24
+				s.f *= 0.75
 				return 0
 			}
 			return a
@@ -19857,14 +19870,14 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 			var u, t = this,
 				s = c.m(),
 				r = t.f
-			if ((s & 127) < r)
+			if ((s & 127) < r + 24)
 			{
-				t.f = C.b.v(r + 1, 2)
+				t.f = 0.8 * (r + 1)
 				s = C.c.K(O.c("fuXr"), $.lb())
 				r = t.r
 				u = d.a
 				u.push(T.e(s, r, r, null, null, 80, 1500, 100))
-				t.r.fr = (c.m() & 15) + 1
+				t.r.fr = ((c.m() & 15) + 1) * 2
 				r = O.c("YmSv")
 				s = t.r
 				u.push(T.e(r, s, T.a1(s, 0), new T.aG(t.r.fr), null, 0, 1000, 100))
@@ -19926,7 +19939,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 				}
 				t = r.f
 				s = u.x
-				if (t >= s) u.x = s + (c.au(1 + C.b.v(t * 3, 4)) + 1)
+				if (t >= s + 50) u.x = s + (c.au(1 + C.b.v(t * 7, 5)) + 1)
 			}
 			return a
 		},
@@ -19963,7 +19976,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 				t = r.r
 				p.push(T.e(s, t, t, q, q, 0, 1000, 100))
 				t = r.r
-				t.j = t.j + 400
+				t.j = t.j + 1800
 			}
 		},
 		gR: function()
@@ -19985,14 +19998,15 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 		},
 		al: function(a)
 		{
-			var u = this.r
-			u.Q = u.Q + 30
-			u.ch = u.ch + 30
-			u.cy = u.cy + 30
-			u.db = u.db + 30
-			u.dx = u.dx + 30
-			u.cx = u.cx + 20
-			u.dy = u.dy + 20
+			var u = this.r,
+				t = u.fr < 5 ? 120 : 60
+			u.Q += t
+			u.ch += t
+			u.cy += t
+			u.db += t
+			u.dx += t
+			u.cx += t
+			u.dy += t
 		},
 		$ip: 1,
 		$iA: 1
@@ -20034,6 +20048,12 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 			u[0] = 0
 			u[6] = 0
 			u[7] = C.d.v(u[7], 2)
+			u[7] += 100
+		},
+		E: function()
+		{
+			T.w.prototype.E.call(this)
+			this.J *= 2
 		}
 	}
 	T.iT.prototype = {
@@ -20051,7 +20071,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 		{
 			var u, t, s, r, q, p, o, n, m, l, k, j, i, h, g, f, e, d = this,
 				c = null
-			if (!a.$iav && (b.m() & 63) < d.f && d.r.bq(b))
+			if (!a.$iav && (b.m() & 63) < d.f + 32 && d.r.bq(b))
 			{
 				a.r1.k(0, $.eE(), new T.iT())
 				u = H.d(d.r.a) + "?" + H.d($.nz())
@@ -20099,7 +20119,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 				e.x = t.x
 				t.I.i(0, e.a5)
 				e.av()
-				e.j = b.m() * 4
+				e.j = 2048
 				d.r.x.aU(e)
 				t = a0.a
 				t.push($.v())
