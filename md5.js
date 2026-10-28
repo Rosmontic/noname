@@ -15863,7 +15863,7 @@ kaoruko: function kaoruko(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
 			if (a > 0 && (d.m() & 63) < u.z)
 			{
 				e.a.push(T.e(O.c("mlIs"), u.r, u.x, null, null, 0, 1000, 100))
-				a *= u.Q
+				a = C.b.v(a * u.Q, 1)
 			}
 			return a
 		},
